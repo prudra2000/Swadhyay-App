@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાક ઊંઘી ગયા છે - Ketalak unghi gaya chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalak unghi gaya chhe</h1>
+                <div class="gujarati-title">કેટલાક ઊંઘી ગયા છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 207</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(207) keṭalāka ūṃghī gayā che ne vaḻī kathāmāṃ ūṃghaśe ane keṭalāka divase na ūṃghyā hoya to paṇa jāge che ne vaḻī kathāmāṃya jāgaśe. deha sāmuṃ joīe to prabhu na bhajāya. māṭe koī sāmuṃ na jovuṃ ne bhagavāna sāmuṃ jovuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(207) કેટલાક ઊંઘી ગયા છે ને વળી કથામાં ઊંઘશે અને કેટલાક દિવસે ન ઊંઘ્યા હોય તો પણ જાગે છે ને વળી કથામાંય જાગશે. દેહ સામું જોઈએ તો પ્રભુ ન ભજાય. માટે કોઈ સામું ન જોવું ને ભગવાન સામું જોવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16206.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tyare ek jan kahe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16208.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bai-bhai bhela thasho</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '207');
+            localStorage.setItem('lastVisitedVatFile', 'ch16207.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

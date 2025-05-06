@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ કહે, વિષયનો - Maharaj kahe, vishayno</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj kahe, vishayno</h1>
+                <div class="gujarati-title">મહારાજ કહે, વિષયનો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 225</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(225) mahārāja kahe, “viṣayano sparśa karavo ja nahi eṭale mana paṇa indriyuṃ lagaṇa āve ja nahi; māṭe viṣayathī cheṭe rahevuṃ. ne bhagavāna paṇa maḻavā hatā evā maḻyā che; have āvā jogamāṃ jo viṣayanī āsakti rahī to bahu khoṭa jāśe. ne moṭā moṭāno paṇa viṣayathī cheṭe rahevāno ja mata che.” tyāre koīke kahyuṃ je, ‘viṣaya jaṇātā nathī.’ tyāre svāmī bolyā je, ‘gaḻyuṃ, khāṭuṃ, khāruṃ, sāruṃ jaṇāya che ke nahi ? e to jaṇāya, paṇa jīvane mūkavuṃ nathī. are, garaja ja kyāṃ che ? jone garaje gadheḍāne paṇa bāpa kahe che, te ā jīve hāḍakāṃ, māṃsa ne naraka temāṃ ja māla mānyo che; te raheśe nahīṃ.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૨૫) મહારાજ કહે, “વિષયનો સ્પર્શ કરવો જ નહિ એટલે મન પણ ઇન્દ્રિયું લગણ આવે જ નહિ; માટે વિષયથી છેટે રહેવું. ને ભગવાન પણ મળવા હતા એવા મળ્યા છે; હવે આવા જોગમાં જો વિષયની આસક્તિ રહી તો બહુ ખોટ જાશે. ને મોટા મોટાનો પણ વિષયથી છેટે રહેવાનો જ મત છે.” ત્યારે કોઈકે કહ્યું જે, ‘વિષય જણાતા નથી.’ ત્યારે સ્વામી બોલ્યા જે, ‘ગળ્યું, ખાટું, ખારું, સારું જણાય છે કે નહિ ? એ તો જણાય, પણ જીવને મૂકવું નથી. અરે, ગરજ જ ક્યાં છે ? જોને ગરજે ગધેડાને પણ બાપ કહે છે, તે આ જીવે હાડકાં, માંસ ને નરક તેમાં જ માલ માન્યો છે; તે રહેશે નહીં.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6224.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Magashar masma swamie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6226.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa lok to dukhrup chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '225');
+            localStorage.setItem('lastVisitedVatFile', 'ch6225.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

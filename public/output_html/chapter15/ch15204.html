@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોક્ષમાં વિઘ્ન ન આવવા - Mokshma vighn na avava</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mokshma vighn na avava</h1>
+                <div class="gujarati-title">મોક્ષમાં વિઘ્ન ન આવવા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 204</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(204) mokṣamāṃ vighna na āvavā de te ḍāhyo. te upara kuśāgrabuddhi ne muśaḻāgrabuddhinī vāta karī je, dīvānajīnī ne desāībhāīnī vyavahāramāṃ kuśāgrabuddhi ne nātha bhaktanī muśaḻāgrabuddhi che. ane olyānī bhagavānamāṃ muśaḻāgrabuddhi che ne nātha bhaktanī kuśāgrabuddhi che. te vyavahāramāṃ paḍe to kuśāgrabuddhi hoya paṇa muśaḻāgra thaī jāya che. te upara ‘ghaṭameṃ kubuddhi kesī bhaī.’ e sākhī bolyā. jīvamāṃ to kapaṭa, māna, īrṣyā vagere ghaṇuṃ che. te upara cāra gāṃṭhuṃnuṃ vacanāmṛta vaṃcāvyuṃ ne vāta karī je, rāṇanī gāṃṭha hoya to kuvāḍī gare nahi. tema beno saṃbaṃdha che te to rāṇanī gāṃṭha jevo che ne āṃhī beno to saṃbaṃdha ja nathī. paṇa māṃhī aṃkura che te joga thāya tyāre jhāḍa thāya. pachī bolyā je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(204) મોક્ષમાં વિઘ્ન ન આવવા દે તે ડાહ્યો. તે ઉપર કુશાગ્રબુદ્ધિ ને મુશળાગ્રબુદ્ધિની વાત કરી જે, દીવાનજીની ને દેસાઈભાઈની વ્યવહારમાં કુશાગ્રબુદ્ધિ ને નાથ ભક્તની મુશળાગ્રબુદ્ધિ છે. અને ઓલ્યાની ભગવાનમાં મુશળાગ્રબુદ્ધિ છે ને નાથ ભક્તની કુશાગ્રબુદ્ધિ છે. તે વ્યવહારમાં પડે તો કુશાગ્રબુદ્ધિ હોય પણ મુશળાગ્ર થઈ જાય છે. તે ઉપર ‘ઘટમેં કુબુદ્ધિ કેસી ભઈ.’ એ સાખી બોલ્યા. જીવમાં તો કપટ, માન, ઈર્ષ્યા વગેરે ઘણું છે. તે ઉપર ચાર ગાંઠુંનું વચનામૃત વંચાવ્યું ને વાત કરી જે, રાણની ગાંઠ હોય તો કુવાડી ગરે નહિ. તેમ બેનો સંબંધ છે તે તો રાણની ગાંઠ જેવો છે ને આંહી બેનો તો સંબંધ જ નથી. પણ માંહી અંકુર છે તે જોગ થાય ત્યારે ઝાડ થાય. પછી બોલ્યા જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15203.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kaik khava malyu e</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15205.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kriya karavavi tema</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '204');
+            localStorage.setItem('lastVisitedVatFile', 'ch15204.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

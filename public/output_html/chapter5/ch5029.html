@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગ કરતાં પ્રથમ - Satsang karata pratham</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsang karata pratham</h1>
+                <div class="gujarati-title">સત્સંગ કરતાં પ્રથમ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 29</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(29) satsaṃga karatāṃ prathama viveka āve, tethī satya-asatya samajāya, tyāra pachī āve, tethī strī ādikanī icchā ṭaḻī jāya, pachī kriyā āvaḍe kahetāṃ satsaṃganī rīta pramāṇe sarvane maḻatī kriyā āvaḍe, tyāra pachī sarvathī para evuṃ potānuṃ svarūpa brahmarūpa manāya, tyāra pachī bhagavāna vare; tyāra pachī jema jīva dehanī rakṣā kare che, strī potānā svāmīnī sevā kare che, tema bhagavāna sarva prakāre rakṣā kare.@ 1 vimoka= strī-puruṣane paraspara āsaktirahita rahevuṃ, rāgarahitanī sthiti.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(29) સત્સંગ કરતાં પ્રથમ વિવેક આવે, તેથી સત્ય-અસત્ય સમજાય, ત્યાર પછી આવે, તેથી સ્ત્રી આદિકની ઇચ્છા ટળી જાય, પછી ક્રિયા આવડે કહેતાં સત્સંગની રીત પ્રમાણે સર્વને મળતી ક્રિયા આવડે, ત્યાર પછી સર્વથી પર એવું પોતાનું સ્વરૂપ બ્રહ્મરૂપ મનાય, ત્યાર પછી ભગવાન વરે; ત્યાર પછી જેમ જીવ દેહની રક્ષા કરે છે, સ્ત્રી પોતાના સ્વામીની સેવા કરે છે, તેમ ભગવાન સર્વ પ્રકારે રક્ષા કરે.@ 1 વિમોક= સ્ત્રી-પુરુષને પરસ્પર આસક્તિરહિત રહેવું, રાગરહિતની સ્થિતિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5028.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gopalanandswamini kaheli vat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5030.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jeno samagam malavani</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '29');
+            localStorage.setItem('lastVisitedVatFile', 'ch5029.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

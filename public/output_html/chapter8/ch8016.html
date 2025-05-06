@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંવત 1886ની સાલમાં - Samvat 1886ni salma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samvat 1886ni salma</h1>
+                <div class="gujarati-title">સંવત 1886ની સાલમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.8</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 16</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(16) saṃvata 1886nī sālamāṃ jyāre śrījīmahārāja svadhāma padhāravānā thayā, tyāre āgaḻathī maṃdavāḍa grahaṇa karyo ne amane kahyuṃ je, ‘tame jūnāgaḍha jāo.’ tyāre amārā manamāṃ ema thayuṃ je, have mahārāja deha nahi rākhe, ema jāṇī udāsa thaī gayā ne āṃkhomāṃ pāṇī āvī gayāṃ. te joī mahārāja bolyā je, ‘amāre nāhavā che te pāṇī ūnāṃ karo.’ pachī pāṇī ūnuṃ karyuṃ ne ame aṃga coḻīne navarāvavā māṃḍyā. temāṃ mahārāje eṭaluṃ sukha āpyuṃ ne eṭalo rājīpo jaṇāvyo ne pachī mahārāja amārā sāmuṃ joīne kahe je, ‘śā sāru mūṃjhāva cho ? e vakhata āvaśe tyāre huṃ bolāvī laīśa, paṇa hamaṇāṃ jāo.’ $tarasyāne jema pāṇīḍuṃ vahāluṃ, bhūkhyāne bhojana ho. mīṭhā0 $(kīrtana muktāvali : 198) 1 bahirbhūmie gayā= jājarū gayā, khāḍe gayā. $2 dhrokaḍa bhāḻī= dhro, pavitra ghāsa-dharo joī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(16) સંવત 1886ની સાલમાં જ્યારે શ્રીજીમહારાજ સ્વધામ પધારવાના થયા, ત્યારે આગળથી મંદવાડ ગ્રહણ કર્યો ને અમને કહ્યું જે, ‘તમે જૂનાગઢ જાઓ.’ ત્યારે અમારા મનમાં એમ થયું જે, હવે મહારાજ દેહ નહિ રાખે, એમ જાણી ઉદાસ થઈ ગયા ને આંખોમાં પાણી આવી ગયાં. તે જોઈ મહારાજ બોલ્યા જે, ‘અમારે નાહવા છે તે પાણી ઊનાં કરો.’ પછી પાણી ઊનું કર્યું ને અમે અંગ ચોળીને નવરાવવા માંડ્યા. તેમાં મહારાજે એટલું સુખ આપ્યું ને એટલો રાજીપો જણાવ્યો ને પછી મહારાજ અમારા સામું જોઈને કહે જે, ‘શા સારુ મૂંઝાવ છો ? એ વખત આવશે ત્યારે હું બોલાવી લઈશ, પણ હમણાં જાઓ.’ $તરસ્યાને જેમ પાણીડું વહાલું, ભૂખ્યાને ભોજન હો. મીઠા0 $(કીર્તન મુક્તાવલિ : 198) 1 બહિર્ભૂમિએ ગયા= જાજરૂ ગયા, ખાડે ગયા. $2 ધ્રોકડ ભાળી= ધ્રો, પવિત્ર ઘાસ-ધરો જોઈ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter8/ch8015.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Samvat 1911ni salma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter8/ch8017.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek vakhate swamie vat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '8');
+            localStorage.setItem('lastVisitedVat', '16');
+            localStorage.setItem('lastVisitedVatFile', 'ch8016.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

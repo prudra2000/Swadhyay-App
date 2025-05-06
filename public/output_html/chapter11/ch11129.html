@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વળી બીજી વાત કરી જે - Vali biji vata kari je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vali biji vata kari je</h1>
+                <div class="gujarati-title">વળી બીજી વાત કરી જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 129</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(129) vaḻī bījī vāta karī je, eka same kāḻamāṃ kāṭhīnā chokarā sādhu bhegā rahyā hatā, te gujarātamāṃ gayā. tyāṃ rāṇyuṃ (rāyaṇuṃ) khādhāmāṃ āvī te joīne kahe je, ‘ā che to līṃboḻī, paṇa āṃhīṃ āne rāṇya (rāyaṇa) bhaṇatā se ?’ pachī koīke kahyuṃ je, ‘līṃboḻī to nānī hoya ne ā to bahu moṭī ne gaḻī paṇa bahu che.’ tyāre te kahe je, ‘e to dharatī phere moṭī ne gaḻī hoya, paṇa che to līṃboḻī.’ ema mahārāja puruṣottama sarvoparī maḻyā che, to paṇa bījā avatāra jevā jāṇī bhaje che, jema līṃboḻī che ema dhārīne khāya che; paṇa rāṇyanī (rāyaṇanī) jāta ja nokhī che ema jāṇatā nathī tema; māṭe mahārāja to sarvethī judā svayaṃ puruṣottama che ema jāṇavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(129) વળી બીજી વાત કરી જે, એક સમે કાળમાં કાઠીના છોકરા સાધુ ભેગા રહ્યા હતા, તે ગુજરાતમાં ગયા. ત્યાં રાણ્યું (રાયણું) ખાધામાં આવી તે જોઈને કહે જે, ‘આ છે તો લીંબોળી, પણ આંહીં આને રાણ્ય (રાયણ) ભણતા સે ?’ પછી કોઈકે કહ્યું જે, ‘લીંબોળી તો નાની હોય ને આ તો બહુ મોટી ને ગળી પણ બહુ છે.’ ત્યારે તે કહે જે, ‘એ તો ધરતી ફેરે મોટી ને ગળી હોય, પણ છે તો લીંબોળી.’ એમ મહારાજ પુરુષોત્તમ સર્વોપરી મળ્યા છે, તો પણ બીજા અવતાર જેવા જાણી ભજે છે, જેમ લીંબોળી છે એમ ધારીને ખાય છે; પણ રાણ્યની (રાયણની) જાત જ નોખી છે એમ જાણતા નથી તેમ; માટે મહારાજ તો સર્વેથી જુદા સ્વયં પુરુષોત્તમ છે એમ જાણવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11128.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dahyabhaktne sakarni prasadi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11130.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dhorajina mandirma agavad</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '129');
+            localStorage.setItem('lastVisitedVatFile', 'ch11129.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

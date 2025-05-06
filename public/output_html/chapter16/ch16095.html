@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવદીમાં આત્મબુદ્ધિ  - Bhagavadima atmabuddhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavadima atmabuddhi</h1>
+                <div class="gujarati-title">ભગવદીમાં આત્મબુદ્ધિ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 95</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(95) bhagavadīmāṃ ātmabuddhi karavī ne ā dehamāṃ ātmabuddhi karī che temāṃ śuṃ nīkaḻavānuṃ che ? temāṃthī to aṃte du:kha thāvānuṃ che. dāna dānamāṃ paṇa phera che. te eka to dāna evuṃ che je thoḍuṃ kare ne ghaṇuṃka thaī paḍe ne eka to ghaṇuṃ kare ne thoḍuṃ thāya. te upara vāta karī je, pāṃḍavanā yajñamāṃ noḻiyo sonāno na thayo ne ṛṣie sāthavo jamāḍyo temāṃ āḻoṭyo to noḻiyo sonāno thayo ne ghaṇuṃ kare ne baḻī jāya te upara āpānā puṇyanī vāta karī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(95) ભગવદીમાં આત્મબુદ્ધિ કરવી ને આ દેહમાં આત્મબુદ્ધિ કરી છે તેમાં શું નીકળવાનું છે ? તેમાંથી તો અંતે દુ:ખ થાવાનું છે. દાન દાનમાં પણ ફેર છે. તે એક તો દાન એવું છે જે થોડું કરે ને ઘણુંક થઈ પડે ને એક તો ઘણું કરે ને થોડું થાય. તે ઉપર વાત કરી જે, પાંડવના યજ્ઞમાં નોળિયો સોનાનો ન થયો ને ઋષિએ સાથવો જમાડ્યો તેમાં આળોટ્યો તો નોળિયો સોનાનો થયો ને ઘણું કરે ને બળી જાય તે ઉપર આપાના પુણ્યની વાત કરી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16094.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Adhikari thaya hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16096.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa lokma koi padarthma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '95');
+            localStorage.setItem('lastVisitedVatFile', 'ch16095.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

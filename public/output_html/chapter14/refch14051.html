@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(51) rādhikājīe traṇa janma sudhī dākhaḍo karyo, tyāre bhagavāna tene vaśa thaī gayā; paṇa jīvamāṃthī tenā aṃkura nahotā ṭaḻyā to vighna thayuṃ. māṭe guṇātīta thāya tyāre aṃkura ṭaḻe ne nityānaṃda thāya, akhaṃḍānaṃda thāya, brahmānaṃda thāya ane akṣarānaṃda thāya tyāre chūṭako thāya ane avināśī akṣaradhāmane pāme. bījā dhāmane kāḻa bhamāvī nākhe che, paṇa akṣaradhāma āgaḻa kāḻanuṃ cālatuṃ nathī. māṭe mahārājane pāṃca vāta karāvavī che, te karāvavāne arthe āṭalo ādara che; te hamaṇāṃ jo āpaṇe karavā māṃḍaśuṃ to, hamaṇāṃ to bhagavānamāṃ rahevuṃ kaṭhaṇa paḍaśe paṇa pachī to nīkaḻavuṃ kaṭhaṇa paḍaśe.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(51) રાધિકાજીએ ત્રણ જન્મ સુધી દાખડો કર્યો, ત્યારે ભગવાન તેને વશ થઈ ગયા; પણ જીવમાંથી તેના અંકુર નહોતા ટળ્યા તો વિઘ્ન થયું. માટે ગુણાતીત થાય ત્યારે અંકુર ટળે ને નિત્યાનંદ થાય, અખંડાનંદ થાય, બ્રહ્માનંદ થાય અને અક્ષરાનંદ થાય ત્યારે છૂટકો થાય અને અવિનાશી અક્ષરધામને પામે. બીજા ધામને કાળ ભમાવી નાખે છે, પણ અક્ષરધામ આગળ કાળનું ચાલતું નથી. માટે મહારાજને પાંચ વાત કરાવવી છે, તે કરાવવાને અર્થે આટલો આદર છે; તે હમણાં જો આપણે કરવા માંડશું તો, હમણાં તો ભગવાનમાં રહેવું કઠણ પડશે પણ પછી તો નીકળવું કઠણ પડશે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

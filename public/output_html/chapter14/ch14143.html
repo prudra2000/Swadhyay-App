@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સત્સંગ છે તે   - Aa satsang chhe te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa satsang chhe te</h1>
+                <div class="gujarati-title">આ સત્સંગ છે તે  </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 143</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(143) ā satsaṃga che te to brahmarūpa che ne akaḻa che; kema je, ā kāḻamāṃ brahmacarya koīthī na rahe, chatāṃ brahmacarya rākhe che te bahu moṭā che; māṭe ā satsaṃgane viśe ātmabuddhi karavī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(143) આ સત્સંગ છે તે તો બ્રહ્મરૂપ છે ને અકળ છે; કેમ જે, આ કાળમાં બ્રહ્મચર્ય કોઈથી ન રહે, છતાં બ્રહ્મચર્ય રાખે છે તે બહુ મોટા છે; માટે આ સત્સંગને વિશે આત્મબુદ્ધિ કરવી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14142.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dehma dukh ave tyare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14144.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jog hoy to prabhu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '143');
+            localStorage.setItem('lastVisitedVatFile', 'ch14143.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

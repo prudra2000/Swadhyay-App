@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રૂપિયા મેલાય - Rupiya melay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rupiya melay</h1>
+                <div class="gujarati-title">રૂપિયા મેલાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 53</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(53) rūpiyā melāya, bāyaḍī melāya, sarvano tyāga thāya, paṇa eka raheṇīe rahevuṃ bahu kaṭhaṇa che. te śuṃ ? je, ā bhagavāna ne ā sādhune viśe sarvoparīpaṇānī niṣṭhā ne divyabhāva phare nahi te kaṭhaṇa jaṇāya che. kaḍavuṃ veṇa kahyā vinā aṃtarano roga jāya nahi ne addhara vacananā jhīlanārā upara bhagavāna bahu rājī thāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(53) રૂપિયા મેલાય, બાયડી મેલાય, સર્વનો ત્યાગ થાય, પણ એક રહેણીએ રહેવું બહુ કઠણ છે. તે શું ? જે, આ ભગવાન ને આ સાધુને વિશે સર્વોપરીપણાની નિષ્ઠા ને દિવ્યભાવ ફરે નહિ તે કઠણ જણાય છે. કડવું વેણ કહ્યા વિના અંતરનો રોગ જાય નહિ ને અદ્ધર વચનના ઝીલનારા ઉપર ભગવાન બહુ રાજી થાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9052.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Agna, upasana ne </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9054.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa vahevar chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '53');
+            localStorage.setItem('lastVisitedVatFile', 'ch9053.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

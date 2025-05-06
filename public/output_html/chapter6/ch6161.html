@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ દેહ જેવું તો કોઈ - Aa deh jevu to koi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa deh jevu to koi</h1>
+                <div class="gujarati-title">આ દેહ જેવું તો કોઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 161</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(161) ā deha jevuṃ to koī vahāluṃ ja nathī. te khūṇe jaīne suvāḍī mūke, pachī koīka dravya laī jāya, lūgaḍāṃ ādika padārtha laī jāya, are ! māthuṃ paṇa kāpī jāya to paṇa khabara paḍatī nathī, ema deha sāru thāya che. te dehanuṃ je poṣaṇa kare temāṃ ne je dehanī kare temāṃ heta thayā vagara rahe ja kema? ne deha to kāle paḍī jāśe, māṭe ethī nokhuṃ paḍavuṃ. pachī, $te tākyā vastīe vasavā, bāṃdhī sau sāthe āśajī. jenuṃ0 $jene re gamatī jīraṇa kaṃthā, jevuṃ tevuṃ jaḻa ṭhāmajī; $teṇe re raṃgyāṃ rūḍāṃ tuṃbaḍāṃ, gamatāṃ vastra māge gāmogāmajī. jenuṃ0 $(kīrtana muktāvali : 484) $teṇe re karyo sneha śiṣyaśuṃ, līdho parano saṃtāpajī. jenuṃ0 $(kīrtana muktāvali : 484) 1 śuśrūṣā= sevācākarī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૬૧) આ દેહ જેવું તો કોઈ વહાલું જ નથી. તે ખૂણે જઈને સુવાડી મૂકે, પછી કોઈક દ્રવ્ય લઈ જાય, લૂગડાં આદિક પદાર્થ લઈ જાય, અરે ! માથું પણ કાપી જાય તો પણ ખબર પડતી નથી, એમ દેહ સારુ થાય છે. તે દેહનું જે પોષણ કરે તેમાં ને જે દેહની કરે તેમાં હેત થયા વગર રહે જ કેમ? ને દેહ તો કાલે પડી જાશે, માટે એથી નોખું પડવું. પછી, $તે તાક્યા વસ્તીએ વસવા, બાંધી સૌ સાથે આશજી. જેનું૦ $જેને રે ગમતી જીરણ કંથા, જેવું તેવું જળ ઠામજી; $તેણે રે રંગ્યાં રૂડાં તુંબડાં, ગમતાં વસ્ત્ર માગે ગામોગામજી. જેનું૦ $(કીર્તન મુક્તાવલિ : ૪૮૪) $તેણે રે કર્યો સ્નેહ શિષ્યશું, લીધો પરનો સંતાપજી. જેનું૦ $(કીર્તન મુક્તાવલિ : ૪૮૪) 1 શુશ્રૂષા= સેવાચાકરી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6160.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jiv to gharma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6162.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nagar gavaiya pase</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '161');
+            localStorage.setItem('lastVisitedVatFile', 'ch6161.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઝીણાભાઈ જ્ઞાની હતા - Zinabhai gnani hata</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Zinabhai gnani hata</h1>
+                <div class="gujarati-title">ઝીણાભાઈ જ્ઞાની હતા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 278</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(278) jhīṇābhāī jñānī hatā. temanuṃ aṃga je, ‘rakhe bhagavāna vinā bīje coṃṭī javāya nahi.’ ane nājā jogīā je ā ghanaśyāmadāsa, tene temaṇe dhotī joṭo āpyo ne kahyuṃ ke, ‘mane mahārāja āgaḻa ghaḍī ne paḻe saṃbhārajo, ke jethī māruṃ aṃta:karaṇa akhaṃḍa bhagavānanī smṛtimāṃ rahe ne sāruṃ thāya.’ tethī harakoī prasaṃge vāre ghaḍīe ghanaśyāmadāsa jhīṇābhāīnāṃ vakhāṇa kare. tethī mahārāje pūchyuṃ ke, ‘śuṃ kāṃī lāṃca āpī che ? te jhīṇābhāīnāṃ bahu vakhāṇa karo cho ?’ tyāre kahe, ‘hā, mahārāja ! ā dhotī joṭo āpyo che ne kahyuṃ che ke, mahārāja āgaḻa mane saṃbhārajo ke māruṃ sāruṃ rahe.’ pachī mahārāja kahe, ‘sācuṃ, ame temane saṃbhārīe to sāruṃ thāya; te ame amārā bhaktanuṃ bhajana eṭalā māṭe ja karīe chīe.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(278) ઝીણાભાઈ જ્ઞાની હતા. તેમનું અંગ જે, ‘રખે ભગવાન વિના બીજે ચોંટી જવાય નહિ.’ અને નાજા જોગીઆ જે આ ઘનશ્યામદાસ, તેને તેમણે ધોતી જોટો આપ્યો ને કહ્યું કે, ‘મને મહારાજ આગળ ઘડી ને પળે સંભારજો, કે જેથી મારું અંત:કરણ અખંડ ભગવાનની સ્મૃતિમાં રહે ને સારું થાય.’ તેથી હરકોઈ પ્રસંગે વારે ઘડીએ ઘનશ્યામદાસ ઝીણાભાઈનાં વખાણ કરે. તેથી મહારાજે પૂછ્યું કે, ‘શું કાંઈ લાંચ આપી છે ? તે ઝીણાભાઈનાં બહુ વખાણ કરો છો ?’ ત્યારે કહે, ‘હા, મહારાજ ! આ ધોતી જોટો આપ્યો છે ને કહ્યું છે કે, મહારાજ આગળ મને સંભારજો કે મારું સારું રહે.’ પછી મહારાજ કહે, ‘સાચું, અમે તેમને સંભારીએ તો સારું થાય; તે અમે અમારા ભક્તનું ભજન એટલા માટે જ કરીએ છીએ.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11277.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa brahmand chhe tema</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11279.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jyare sau sadhune khataras</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '278');
+            localStorage.setItem('lastVisitedVatFile', 'ch11278.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

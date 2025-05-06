@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનને વરણીય થાય - Bhagavanne varaniy thay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanne varaniy thay</h1>
+                <div class="gujarati-title">ભગવાનને વરણીય થાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 295</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā vadi navamīne divase svāmīe vāta karī je, $(295) bhagavānane varaṇīya thāya che tenāṃ lakṣaṇa je āhāra śuddhi karyethī aṃta:karaṇanī śuddhi thāya, pachī dhruvānusmṛti rahe; paṇa eka smṛti karavī temāṃ karoḍa vānāṃ joīe. jīva śūḻīe caḍe, jhāṭakā khāya ne ūṃcethī pachaḍāya paṇa bhagavānanī smṛti na kare. hamaṇāṃ vṛtti rākhavā māṃḍe to koṭi sādhana thaī jāya ne pachī evāne jo bījo saṃkalpa thāya to baḻabaḻato ḍāma de evuṃ vasamuṃ lāge. kṛpānaṃdasvāmīne upavāsa paḍe to deha paḍī jāya, lomaṣa ṛṣinā āśramamāṃ māyā na vyāpe ne priyavratane teje karīne sau namī gayā. ā to bheḻā rahe ne kaḍākaḍī ūḍe che, satsaṃgamāṃ kusaṃga che tenuṃ to rūpa ughāḍuṃ thāya che. te eka jaṇe eka gāma kusaṃgī karyuṃ ne bījāno ādara che. te, ‘kahiye to mā mārī jāya, ne na kahiye to bāpa kuttā khāya.’ $āpe te upara rākhe mahera, na āpe ī kaḍavo jhera.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા વદિ નવમીને દિવસે સ્વામીએ વાત કરી જે, $(295) ભગવાનને વરણીય થાય છે તેનાં લક્ષણ જે આહાર શુદ્ધિ કર્યેથી અંત:કરણની શુદ્ધિ થાય, પછી ધ્રુવાનુસ્મૃતિ રહે; પણ એક સ્મૃતિ કરવી તેમાં કરોડ વાનાં જોઈએ. જીવ શૂળીએ ચડે, ઝાટકા ખાય ને ઊંચેથી પછડાય પણ ભગવાનની સ્મૃતિ ન કરે. હમણાં વૃત્તિ રાખવા માંડે તો કોટિ સાધન થઈ જાય ને પછી એવાને જો બીજો સંકલ્પ થાય તો બળબળતો ડામ દે એવું વસમું લાગે. કૃપાનંદસ્વામીને ઉપવાસ પડે તો દેહ પડી જાય, લોમષ ઋષિના આશ્રમમાં માયા ન વ્યાપે ને પ્રિયવ્રતને તેજે કરીને સૌ નમી ગયા. આ તો ભેળા રહે ને કડાકડી ઊડે છે, સત્સંગમાં કુસંગ છે તેનું તો રૂપ ઉઘાડું થાય છે. તે એક જણે એક ગામ કુસંગી કર્યું ને બીજાનો આદર છે. તે, ‘કહિયે તો મા મારી જાય, ને ન કહિયે તો બાપ કુત્તા ખાય.’ $આપે તે ઉપર રાખે મહેર, ન આપે ઈ કડવો ઝેર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10294.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi divas jive bhagavan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10296.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Deh hoya te ekado </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '295');
+            localStorage.setItem('lastVisitedVatFile', 'ch10295.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

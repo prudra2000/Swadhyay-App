@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રગટ ભગવાન છે - Pragat bhagavan chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pragat bhagavan chhe</h1>
+                <div class="gujarati-title">પ્રગટ ભગવાન છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 60</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(60) pragaṭa bhagavāna che, pragaṭa sādhu che, pragaṭa mokṣa che; māṭe dharmamāṃ rahīne āvaradā pūrī karavī. bahu ja moṭo lābha thayo che tene sācavavo, nīkara jema ciṃtāmaṇine koīka āṃkhamāṃ dhūḍa nākhīne laī jāya tema laī jāśe. ne bhagavānano eṭalo paraco che je, bhagavāna vinā bījāthī āṭalā jīvanāṃ aṃtara śuddha thāya nahi. bhagavāna hoya te aṃtara jhāle ne ā to bahu ja moṭo lābha thayo che, te śuṃ? je, mahārājanuṃ pragaṭa thāvuṃ ne tevāmāṃ āpaṇo janma thāvo, tyāre ā vātuṃ maḻī che, te to bahu ja lābha thayo che. ema ghaṇī vakhata kahyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(60) પ્રગટ ભગવાન છે, પ્રગટ સાધુ છે, પ્રગટ મોક્ષ છે; માટે ધર્મમાં રહીને આવરદા પૂરી કરવી. બહુ જ મોટો લાભ થયો છે તેને સાચવવો, નીકર જેમ ચિંતામણિને કોઈક આંખમાં ધૂડ નાખીને લઈ જાય તેમ લઈ જાશે. ને ભગવાનનો એટલો પરચો છે જે, ભગવાન વિના બીજાથી આટલા જીવનાં અંતર શુદ્ધ થાય નહિ. ભગવાન હોય તે અંતર ઝાલે ને આ તો બહુ જ મોટો લાભ થયો છે, તે શું? જે, મહારાજનું પ્રગટ થાવું ને તેવામાં આપણો જન્મ થાવો, ત્યારે આ વાતું મળી છે, તે તો બહુ જ લાભ થયો છે. એમ ઘણી વખત કહ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4059.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gam devarajiyama vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4061.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Samadhithi nirgun na thaya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '60');
+            localStorage.setItem('lastVisitedVatFile', 'ch4060.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવને ઐશ્ર્વર્ય ને માનમાં - Jivne aishrvary ne manma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivne aishrvary ne manma</h1>
+                <div class="gujarati-title">જીવને ઐશ્ર્વર્ય ને માનમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 196</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(196) jīvane aiśrvarya ne mānamāṃ heta che, te game tevo moṭo thāya paṇa sāṃkhya vinā e pāpa haiyāmāṃthī nīkaḻe nahi. sāṃkhya vinā ekalo yoga kare to vighna naḍe. mahārāja ne sūrākhācara kāriyāṇīmāṃ paṭe ramyā hatā; te vāta karī kahyuṃ je, paṭānā ramanārā hoya te indriyuṃnā, mananā koīnā lāgamāṃ na āve; tema sāṃkhyavāḻo koī viṣayanā lāgamāṃ na āve.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(196) જીવને ઐશ્ર્વર્ય ને માનમાં હેત છે, તે ગમે તેવો મોટો થાય પણ સાંખ્ય વિના એ પાપ હૈયામાંથી નીકળે નહિ. સાંખ્ય વિના એકલો યોગ કરે તો વિઘ્ન નડે. મહારાજ ને સૂરાખાચર કારિયાણીમાં પટે રમ્યા હતા; તે વાત કરી કહ્યું જે, પટાના રમનારા હોય તે ઇન્દ્રિયુંના, મનના કોઈના લાગમાં ન આવે; તેમ સાંખ્યવાળો કોઈ વિષયના લાગમાં ન આવે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14195.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aishrvary na joie eva</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14197.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Madhyanu 49mu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '196');
+            localStorage.setItem('lastVisitedVatFile', 'ch14196.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

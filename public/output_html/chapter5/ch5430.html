@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રાત્રિએ વાત કરી જે - Ratrie vat kari je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ratrie vat kari je</h1>
+                <div class="gujarati-title">રાત્રિએ વાત કરી જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 430</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(430) rātrie vāta karī je, ‘vahevāra bahu vadhī gayo, teṇe aṃtara ujharaḍāī jāya che. jema ṭoparuṃ khamaṇīe karīne ujharaḍāya che, temāṃ ṭoparāno ākāra paṇa raheto nathī, tema ujharaḍāī jāya che ne vaḻī maṃdirano vahevāra kahevāya to nirguṇa, ema paṇa thaī jāya che ane jñāna to eka āno thāya che ne paṃdara ānā vahevāra thāya che; paṇa niraṃtara vātuṃ thāya to āṃhīṃ rahyā akṣaradhāma mūrtimāna dekhāya ne sukha āve. paṇa ā vāta bolāya evī nathī, ā to rāta che te bolī gayā. māṭe karavānuṃ to sārā moṭā ekāṃtika sādhuno saṃga ja che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(430) રાત્રિએ વાત કરી જે, ‘વહેવાર બહુ વધી ગયો, તેણે અંતર ઉઝરડાઈ જાય છે. જેમ ટોપરું ખમણીએ કરીને ઉઝરડાય છે, તેમાં ટોપરાનો આકાર પણ રહેતો નથી, તેમ ઉઝરડાઈ જાય છે ને વળી મંદિરનો વહેવાર કહેવાય તો નિર્ગુણ, એમ પણ થઈ જાય છે અને જ્ઞાન તો એક આનો થાય છે ને પંદર આના વહેવાર થાય છે; પણ નિરંતર વાતું થાય તો આંહીં રહ્યા અક્ષરધામ મૂર્તિમાન દેખાય ને સુખ આવે. પણ આ વાત બોલાય એવી નથી, આ તો રાત છે તે બોલી ગયા. માટે કરવાનું તો સારા મોટા એકાંતિક સાધુનો સંગ જ છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5429.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shriji padharya swadham</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5431.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa lidhu ne aa levu chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '430');
+            localStorage.setItem('lastVisitedVatFile', 'ch5430.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

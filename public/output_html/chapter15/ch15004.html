@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેનો કસબ હોય તે  - Jeno kasab hoy te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jeno kasab hoy te</h1>
+                <div class="gujarati-title">જેનો કસબ હોય તે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 4</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvat 1919nā pahelā śrāvaṇa sudi dvitīyāne divase svāmīe vāta karī je, $(4) jeno hoya te temāṃ jāṇe. ghoḍānuṃ pārakhuṃ te ā ghanaśyāmadāsajī jāṇe ne pṛthvīnuṃ pārakhuṃ to kheḍūta jāṇe. tema jīvane, moṭā hoya te jāṇe je ā jīvane āṭalo khapa che, āṭalo dākhaḍo karaśuṃ tyāre āgaḻa āvo thāśe; paṇa jo jīvane kahenārā na hoya to eṭalethī satsaṃga jāto rahe ne svabhāva to jīvano evo che je mana-īndriyuṃne kāraso na game. moṭāne to tenuṃ managamatuṃ mukāvavuṃ hoya ne jīvamāṃ je baḍavāla (baḍavāḻa) hoya tene ā sādhu jāṇe che. evā moṭā maḻyā tene bhagavāna maḻyā ema jāṇavuṃ ne evā manāya tyāre enā haiyāmāṃ bhagavāna āve ane vāto paṇa nokhī nokhī che. koīne niṣkāmanī kahevī joīe, koīne nirlobhanī kahevī joīe, koīne ni:svādanī joīe, paṇa te badhuṃ sādhu vinā koṇa oḻakhāve ?@ 1 kasaba= kaḻā, kaḻākuśaḻatā, nipuṇatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત્ 1919ના પહેલા શ્રાવણ સુદિ દ્વિતીયાને દિવસે સ્વામીએ વાત કરી જે, $(4) જેનો હોય તે તેમાં જાણે. ઘોડાનું પારખું તે આ ઘનશ્યામદાસજી જાણે ને પૃથ્વીનું પારખું તો ખેડૂત જાણે. તેમ જીવને, મોટા હોય તે જાણે જે આ જીવને આટલો ખપ છે, આટલો દાખડો કરશું ત્યારે આગળ આવો થાશે; પણ જો જીવને કહેનારા ન હોય તો એટલેથી સત્સંગ જાતો રહે ને સ્વભાવ તો જીવનો એવો છે જે મન-ઈન્દ્રિયુંને કારસો ન ગમે. મોટાને તો તેનું મનગમતું મુકાવવું હોય ને જીવમાં જે બડવાલ (બડવાળ) હોય તેને આ સાધુ જાણે છે. એવા મોટા મળ્યા તેને ભગવાન મળ્યા એમ જાણવું ને એવા મનાય ત્યારે એના હૈયામાં ભગવાન આવે અને વાતો પણ નોખી નોખી છે. કોઈને નિષ્કામની કહેવી જોઈએ, કોઈને નિર્લોભની કહેવી જોઈએ, કોઈને નિ:સ્વાદની જોઈએ, પણ તે બધું સાધુ વિના કોણ ઓળખાવે ?@ 1 કસબ= કળા, કળાકુશળતા, નિપુણતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15003.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Katha, kirtan, dhyan </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15005.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pitha dhadhalne gadanu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '4');
+            localStorage.setItem('lastVisitedVatFile', 'ch15004.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

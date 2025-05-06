@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દામોદરે નથુ ભટ્ટને - Damodare nathu bhattne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Damodare nathu bhattne</h1>
+                <div class="gujarati-title">દામોદરે નથુ ભટ્ટને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 14</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(14) dāmodare nathu bhaṭṭane śrījīmahārājanā niśrcayanī vāta karī je, ‘śrījīmahārāja sarva avatāranā avatārī che ne rāmānaṃdasvāmī te uddhavano avatāra che.’ te vāta sāṃbhaḻīne te nathu bhaṭṭa atiśe ākaḻā thaī gayā. pachī te be jaṇa varatāle śrījīmahārāja pāse āvyā ne kahyuṃ je, ‘he mahārāja ! ā dāmodara rāmānaṃdasvāmīne uddhava kema kahe che ?’ pachī śrījīmahārāja bolyā je, “tame rāmānaṃdasvāmīnuṃ dhyāna karo eṭale jema che tema tamane jaṇāśe.”</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૪) દામોદરે નથુ ભટ્ટને શ્રીજીમહારાજના નિશ્ર્ચયની વાત કરી જે, ‘શ્રીજીમહારાજ સર્વ અવતારના અવતારી છે ને રામાનંદસ્વામી તે ઉદ્ધવનો અવતાર છે.’ તે વાત સાંભળીને તે નથુ ભટ્ટ અતિશે આકળા થઈ ગયા. પછી તે બે જણ વરતાલે શ્રીજીમહારાજ પાસે આવ્યા ને કહ્યું જે, ‘હે મહારાજ ! આ દામોદર રામાનંદસ્વામીને ઉદ્ધવ કેમ કહે છે ?’ પછી શ્રીજીમહારાજ બોલ્યા જે, “તમે રામાનંદસ્વામીનું ધ્યાન કરો એટલે જેમ છે તેમ તમને જણાશે.”</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7013.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gam vandhiyama paroksh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7015.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gadhadama Shrijimaharaje ek</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '14');
+            localStorage.setItem('lastVisitedVatFile', 'ch7014.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

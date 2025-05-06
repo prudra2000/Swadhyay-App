@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંત કહે તેમ કરવું  - Sant kahe tem karavu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sant kahe tem karavu</h1>
+                <div class="gujarati-title">સંત કહે તેમ કરવું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 8</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(8) saṃta kahe tema karavuṃ to te vaśa thaī jāya che. te upara vāta karī je, aṣṭa paṭarāṇīoe draupadīne pūchyuṃ je, pāṃce pāṃḍavo tamāre vaśa che te tamoe kaṃī mādaḻiyuṃ bāṃdhyuṃ che ke jaṃtaramaṃtara karyā che ke śāṇe karīne vaśa karyā che ? ame to soḻa hajāra ekaso ne āṭha chīe ne bhagavāna to eka ja che, to paṇa vaśa thātā nathī ne tamo to ekalāṃ cho ne pāṃceyane vaśa karyāṃ te śī rīte karyāṃ ? te kaho, tyāre te kahe je, huṃ pāṃceyane vaśa thāuṃ chuṃ ne kahe tema karuṃ chuṃ tethī te vaśa thayā che, kaṃī maṃtra ke doro-dhāgo kaṃīpaṇa ame to karyuṃ nathī; māṭe moṭā kahe tema karīe to te vaśa thāya che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(8) સંત કહે તેમ કરવું તો તે વશ થઈ જાય છે. તે ઉપર વાત કરી જે, અષ્ટ પટરાણીઓએ દ્રૌપદીને પૂછ્યું જે, પાંચે પાંડવો તમારે વશ છે તે તમોએ કંઈ માદળિયું બાંધ્યું છે કે જંતરમંતર કર્યા છે કે શાણે કરીને વશ કર્યા છે ? અમે તો સોળ હજાર એકસો ને આઠ છીએ ને ભગવાન તો એક જ છે, તો પણ વશ થાતા નથી ને તમો તો એકલાં છો ને પાંચેયને વશ કર્યાં તે શી રીતે કર્યાં ? તે કહો, ત્યારે તે કહે જે, હું પાંચેયને વશ થાઉં છું ને કહે તેમ કરું છું તેથી તે વશ થયા છે, કંઈ મંત્ર કે દોરો-ધાગો કંઈપણ અમે તો કર્યું નથી; માટે મોટા કહે તેમ કરીએ તો તે વશ થાય છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15007.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan bhajie to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15009.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chitr te bhinte thay</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '8');
+            localStorage.setItem('lastVisitedVatFile', 'ch15008.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

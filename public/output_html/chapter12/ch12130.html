@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવા ભગવાન પ્રગટ - Aava bhagavan pragat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aava bhagavan pragat</h1>
+                <div class="gujarati-title">આવા ભગવાન પ્રગટ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 130</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha sudi caturdaśīne divase svāmīe vāta karī je, $(130) āvā bhagavāna pragaṭa thayā ne āvā saṃta maḻyā, paṇa yathārtha oḻakhāṇā nahi tene ‘vuṭhe mehe kāḻa’ paḍyo kahevāya ne sarve jagatane to aṃdhakāra che, te niyama na maḻe ne dharma paṇa na maḻe ne jagata to sūī gayuṃ che, ne matapaṃthīrūpī taṃtīmāṃ baṃdhāī rahyā che ne āpaṇe śuṃ che ? je, dehābhimāna, paṃcaviṣaya, loka ne pakṣa emāṃ baṃdhāī rahyā chīe ne prabhu bhajavāno ādara karyo che temāṃ koṭānakoṭi vighna rahyāṃ che ne bījā matapaṃthamāṃ jāo, tenuṃ jagatane kāṃī nahi; paṇa ā satsaṃgamāṃ na jāvuṃ, evuṃ kusaṃganuṃ rūpa che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ સુદિ ચતુર્દશીને દિવસે સ્વામીએ વાત કરી જે, $(130) આવા ભગવાન પ્રગટ થયા ને આવા સંત મળ્યા, પણ યથાર્થ ઓળખાણા નહિ તેને ‘વુઠે મેહે કાળ’ પડ્યો કહેવાય ને સર્વે જગતને તો અંધકાર છે, તે નિયમ ન મળે ને ધર્મ પણ ન મળે ને જગત તો સૂઈ ગયું છે, ને મતપંથીરૂપી તંતીમાં બંધાઈ રહ્યા છે ને આપણે શું છે ? જે, દેહાભિમાન, પંચવિષય, લોક ને પક્ષ એમાં બંધાઈ રહ્યા છીએ ને પ્રભુ ભજવાનો આદર કર્યો છે તેમાં કોટાનકોટિ વિઘ્ન રહ્યાં છે ને બીજા મતપંથમાં જાઓ, તેનું જગતને કાંઈ નહિ; પણ આ સત્સંગમાં ન જાવું, એવું કુસંગનું રૂપ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12129.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Suratma mandal gaya </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12131.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavan kai rupiya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '130');
+            localStorage.setItem('lastVisitedVatFile', 'ch12130.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

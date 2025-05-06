@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે બાઈ ભાઈની સભા - Maharaje bai bhaini sabha </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje bai bhaini sabha </h1>
+                <div class="gujarati-title">મહારાજે બાઈ ભાઈની સભા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 222</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(222) mahārāje bāī bhāīnī sabhā nokhī karī te kaṭhaṇa paḍyuṃ, roṭalā hāthe karī khāvānuṃ kahyuṃ te kaṭhaṇa paḍyuṃ, bhaṇavānuṃ kahyuṃ to te paṇa saṃsāra melavā jevuṃ kaṭhaṇa paḍyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(222) મહારાજે બાઈ ભાઈની સભા નોખી કરી તે કઠણ પડ્યું, રોટલા હાથે કરી ખાવાનું કહ્યું તે કઠણ પડ્યું, ભણવાનું કહ્યું તો તે પણ સંસાર મેલવા જેવું કઠણ પડ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10221.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chhokarane paline moto</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10223.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">He sari suraj Maharaj</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '222');
+            localStorage.setItem('lastVisitedVatFile', 'ch10222.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

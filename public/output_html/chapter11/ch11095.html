@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવમાં અવગુણ તો હોય  - Jivma avagun to hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivma avagun to hoy</h1>
+                <div class="gujarati-title">જીવમાં અવગુણ તો હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 95</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(95) jīvamāṃ avaguṇa to hoya paṇa bhagavāna ne bhagavānanā janathī na hoya to enā doṣa ṭaḻatā jāya, māṭe suhṛdapaṇāno pāyo sāco hoya, to bījī phikara nahi. be vānāmāṃthī jīva nokho paḍī jāya; eka paṃcaviṣayamāṃ ṭokāya ne bījuṃ dhāryuṃ mukāve, teṇe karīne uthaḍaka thaī javāya. temāṃ je khapavāḻo hoya to nabhe, ane khame kharo ane khapa ūpajyāno hetu satpuruṣa ne satśāstra che, te jo eno saṃga rākhe to badhā guṇa āve. ane satsaṃgamāṃ sārā sādhu ane sārā harijana hoya paṇa khoḻe nahi; potā jevā khoḻe tyāre jīvane kema jñāna thāya ? te to jyāre vyākaraṇanā jema ghoṣa kare che tema kare tyāre mahādākhaḍe jñāna thāya ne bījā doṣa to dhīre dhīre ṭaḻatā jāya. 1 uthaḍaka= uparacoṭiyuṃ, baṃdhabesatuṃ ke coṃṭatuṃ na hoya tevuṃ. $2 aṃtaravāsa nākhīne= vacce kapaḍāno āḍo kaṭako rākhīne. $3 haiyābhara tāṇe= ‘bhagavāna bhūlīne kriyārūpa na thāvuṃ.’ evo bhāva.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(95) જીવમાં અવગુણ તો હોય પણ ભગવાન ને ભગવાનના જનથી ન હોય તો એના દોષ ટળતા જાય, માટે સુહૃદપણાનો પાયો સાચો હોય, તો બીજી ફિકર નહિ. બે વાનામાંથી જીવ નોખો પડી જાય; એક પંચવિષયમાં ટોકાય ને બીજું ધાર્યું મુકાવે, તેણે કરીને ઉથડક થઈ જવાય. તેમાં જે ખપવાળો હોય તો નભે, અને ખમે ખરો અને ખપ ઊપજ્યાનો હેતુ સત્પુરુષ ને સત્શાસ્ત્ર છે, તે જો એનો સંગ રાખે તો બધા ગુણ આવે. અને સત્સંગમાં સારા સાધુ અને સારા હરિજન હોય પણ ખોળે નહિ; પોતા જેવા ખોળે ત્યારે જીવને કેમ જ્ઞાન થાય ? તે તો જ્યારે વ્યાકરણના જેમ ઘોષ કરે છે તેમ કરે ત્યારે મહાદાખડે જ્ઞાન થાય ને બીજા દોષ તો ધીરે ધીરે ટળતા જાય. 1 ઉથડક= ઉપરચોટિયું, બંધબેસતું કે ચોંટતું ન હોય તેવું. $2 અંતરવાસ નાખીને= વચ્ચે કપડાનો આડો કટકો રાખીને. $3 હૈયાભર તાણે= ‘ભગવાન ભૂલીને ક્રિયારૂપ ન થાવું.’ એવો ભાવ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11094.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi sarama jiva bandhavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11096.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prathamna panchma vachanamrutma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '95');
+            localStorage.setItem('lastVisitedVatFile', 'ch11095.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

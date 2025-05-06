@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવ તો વિષયમાંથી - Aa jiv to vishaymathi </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jiv to vishaymathi </h1>
+                <div class="gujarati-title">આ જીવ તો વિષયમાંથી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 142</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(142) ā jīva to viṣayamāṃthī nokho paḍato ja nathī, paṇa ā bhajana karāvīe chīe, teṇe karīne jarāka paḻa, be paḻa nokho paḍe, to temāṃthī nirguṇabhāvane pāmī jāya. ne jīvane to ‘vacanāmṛta’māṃ laṃbakarṇa5 jevo kahyo che, paṇa je ā vartamāna pāḻe che, e to jīva sārā haśe. ne brahmāṃḍamāṃ evo koī puruṣa nathī jene strī na joīe, ne evī koī strī nathī jene puruṣa na joīe. temāṃthī nokhā paḍavāno to mahārāje eka ja śrloka lakhyo che je, nijātmānaṃ brahmarūpaṃ | jema gujarātanī pṛthvīmāṃ pātāḻa sudhī khodīe to paṇa pāṇo na maḻe; tema brahmarūpa thavuṃ temāṃ koī doṣa ja na maḻe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(142) આ જીવ તો વિષયમાંથી નોખો પડતો જ નથી, પણ આ ભજન કરાવીએ છીએ, તેણે કરીને જરાક પળ, બે પળ નોખો પડે, તો તેમાંથી નિર્ગુણભાવને પામી જાય. ને જીવને તો ‘વચનામૃત’માં લંબકર્ણ5 જેવો કહ્યો છે, પણ જે આ વર્તમાન પાળે છે, એ તો જીવ સારા હશે. ને બ્રહ્માંડમાં એવો કોઈ પુરુષ નથી જેને સ્ત્રી ન જોઈએ, ને એવી કોઈ સ્ત્રી નથી જેને પુરુષ ન જોઈએ. તેમાંથી નોખા પડવાનો તો મહારાજે એક જ શ્ર્લોક લખ્યો છે જે, નિજાત્માનં બ્રહ્મરૂપં । જેમ ગુજરાતની પૃથ્વીમાં પાતાળ સુધી ખોદીએ તો પણ પાણો ન મળે; તેમ બ્રહ્મરૂપ થવું તેમાં કોઈ દોષ જ ન મળે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1141.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tapasine joyu to jivane </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1143.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">More to bhagavanne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '142');
+            localStorage.setItem('lastVisitedVatFile', 'ch1142.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

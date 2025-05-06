@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રુચિનું લોયાનું ૧૪મું - Ruchinu loyanu 14mu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ruchinu loyanu 14mu</h1>
+                <div class="gujarati-title">રુચિનું લોયાનું ૧૪મું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 49</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(49) ‘rucinuṃ’ loyānuṃ 14muṃ vacanāmṛta vaṃcāvīne kahe je, ‘ā to khapavāḻāne3 kahyuṃ che ane jene khapa nathī te to lāga āve tyāre joī le ne svāda karī le, ene to ema ja bhajana thāya je kyāre lāga āve ? evāne to mahārāje vacanāmṛtamāṃ jevo ne kūtarā jevo kahyo che. heta hoya tene ā vāta sārī lāge, nīkara marane (bhale) lākho vātuṃ karīe, paṇa ema na manāya.’ 1 labāḍa= jūṭhuṃ bolavānī ṭevavāḻo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૪૯) ‘રુચિનું’ લોયાનું ૧૪મું વચનામૃત વંચાવીને કહે જે, ‘આ તો ખપવાળાને૩ કહ્યું છે અને જેને ખપ નથી તે તો લાગ આવે ત્યારે જોઈ લે ને સ્વાદ કરી લે, એને તો એમ જ ભજન થાય જે ક્યારે લાગ આવે ? એવાને તો મહારાજે વચનામૃતમાં જેવો ને કૂતરા જેવો કહ્યો છે. હેત હોય તેને આ વાત સારી લાગે, નીકર મરને (ભલે) લાખો વાતું કરીએ, પણ એમ ન મનાય.’ 1 લબાડ= જૂઠું બોલવાની ટેવવાળો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6048.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje to </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6050.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa loknu het to kevu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '49');
+            localStorage.setItem('lastVisitedVatFile', 'ch6049.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

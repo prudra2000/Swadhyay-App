@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોક્ષ ન સુધાર્યો ત્યારે  - Moksha na sudharyo tyare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Moksha na sudharyo tyare</h1>
+                <div class="gujarati-title">મોક્ષ ન સુધાર્યો ત્યારે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 179</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>pūnamanī bapore vāta karī je, $(179) mokṣa na sudhāryo tyāre śuṃ thayuṃ ? ne paṃcaviṣayanī āsakti che tyāṃ sudhī koī divasa sukhiyuṃ na thāvāya ne dehābhimāna to doṣamātrane rahevānī kothaḻī che, ne dehane potānuṃ rūpa na mānavuṃ ne indriyuṃnā dorāyā na dorāvuṃ; ne ema mānyatā karavī je, ā deha māruṃ rūpa nathī, huṃ to brahmarūpa chuṃ, te ā pragaṭa brahmanā saṃbaṃdhathī thayo chuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>પૂનમની બપોરે વાત કરી જે, $(179) મોક્ષ ન સુધાર્યો ત્યારે શું થયું ? ને પંચવિષયની આસક્તિ છે ત્યાં સુધી કોઈ દિવસ સુખિયું ન થાવાય ને દેહાભિમાન તો દોષમાત્રને રહેવાની કોથળી છે, ને દેહને પોતાનું રૂપ ન માનવું ને ઇન્દ્રિયુંના દોરાયા ન દોરાવું; ને એમ માન્યતા કરવી જે, આ દેહ મારું રૂપ નથી, હું તો બ્રહ્મરૂપ છું, તે આ પ્રગટ બ્રહ્મના સંબંધથી થયો છું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11178.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetalo mandirno, acharyno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11180.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chara vatno kajiyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '179');
+            localStorage.setItem('lastVisitedVatFile', 'ch11179.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

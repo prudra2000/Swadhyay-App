@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જ્યાં વિષય આવ્યા ત્યાં  - Jya vishay Avya tya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jya vishay Avya tya</h1>
+                <div class="gujarati-title">જ્યાં વિષય આવ્યા ત્યાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 36</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bījā śrāvaṇa sudi cothane divasa svāmīe vāta karī je,$(36) jyāṃ viṣaya āvyā tyāṃ bhagavānanī smṛti rahe ja nahīṃ. brahmāne paṇa ema thayuṃ ane akrūrane paṇa ema thayuṃ. māṭe e vastu evī che, te samādhivāḻānuṃ paṇa ṭhekāṇuṃ rahevā dīdhuṃ nahi. strīmāṃ brahmanā sukhathī paṇa vadhu ānaṃda manāya che evo e viṣaya baḻavāna che. māṭe ekāṃtamāṃ mā, bahena ane dīkarī saṃgāthe paṇa na rahevuṃ. $(satsaṃgijīvana : pra.3-a.59-manusmṛti-2-215) $artha :- mātā, bahena, putrī sāthe ekāṃtamāṃ na besavuṃ. prabala indriya samūha vidvānane paṇa ākarṣe che. 1 bījī sāraṃgī= bījī strī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના બીજા શ્રાવણ સુદિ ચોથને દિવસ સ્વામીએ વાત કરી જે,$(36) જ્યાં વિષય આવ્યા ત્યાં ભગવાનની સ્મૃતિ રહે જ નહીં. બ્રહ્માને પણ એમ થયું અને અક્રૂરને પણ એમ થયું. માટે એ વસ્તુ એવી છે, તે સમાધિવાળાનું પણ ઠેકાણું રહેવા દીધું નહિ. સ્ત્રીમાં બ્રહ્મના સુખથી પણ વધુ આનંદ મનાય છે એવો એ વિષય બળવાન છે. માટે એકાંતમાં મા, બહેન અને દીકરી સંગાથે પણ ન રહેવું. $(સત્સંગિજીવન : પ્ર.3-અ.59-મનુસ્મૃતિ-2-215) $અર્થ :- માતા, બહેન, પુત્રી સાથે એકાંતમાં ન બેસવું. પ્રબલ ઇન્દ્રિય સમૂહ વિદ્વાનને પણ આકર્ષે છે. 1 બીજી સારંગી= બીજી સ્ત્રી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13035.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Je sant potana hrudayma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13037.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsangimathi kai levu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '36');
+            localStorage.setItem('lastVisitedVatFile', 'ch13036.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

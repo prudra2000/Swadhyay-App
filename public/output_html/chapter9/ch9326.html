@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અભેસિંહભાઈ આગળ  - Abhesinhbhai agal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Abhesinhbhai agal</h1>
+                <div class="gujarati-title">અભેસિંહભાઈ આગળ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 326</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(326) abhesiṃhabhāī āgaḻa vāta karī je, ‘ghaḍī bhajana karavuṃ, ghaḍī kīrtana gavarāvavāṃ, ghaḍī kathā sāṃbhaḻavī ne ghaḍī dhyāna karavuṃ, ema ne ema karyā karavuṃ paṇa bhagavānanī vismṛti thāvā devī nahīṃ. dharamapuravāḻāṃ kuśaḻakuṃvarabāī āṭha dahāḍe rājyamāṃ āvatāṃ to paṇa vahevāra cālyo jāto; māṭe ema karavuṃ; kāṃ je, bhagavāna jevo to bījā koīmāṃ māla ja nathī. tamāre ema saṃkalpa thāto nathī je, ūṃṭa bharīne be maṇa photarāṃ laī jaīe; paṇa sonuṃ hoya to to bharī jāo kharā, paṇa māla to bhagavānamāṃ ja che, ema samajāṇuṃ hoya to bhagavāna kema visarāya ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(326) અભેસિંહભાઈ આગળ વાત કરી જે, ‘ઘડી ભજન કરવું, ઘડી કીર્તન ગવરાવવાં, ઘડી કથા સાંભળવી ને ઘડી ધ્યાન કરવું, એમ ને એમ કર્યા કરવું પણ ભગવાનની વિસ્મૃતિ થાવા દેવી નહીં. ધરમપુરવાળાં કુશળકુંવરબાઈ આઠ દહાડે રાજ્યમાં આવતાં તો પણ વહેવાર ચાલ્યો જાતો; માટે એમ કરવું; કાં જે, ભગવાન જેવો તો બીજા કોઈમાં માલ જ નથી. તમારે એમ સંકલ્પ થાતો નથી જે, ઊંટ ભરીને બે મણ ફોતરાં લઈ જઈએ; પણ સોનું હોય તો તો ભરી જાઓ ખરા, પણ માલ તો ભગવાનમાં જ છે, એમ સમજાણું હોય તો ભગવાન કેમ વિસરાય ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9325.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Char thekane bhagavanni </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9327.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sodhina koline sukhpurma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '326');
+            localStorage.setItem('lastVisitedVatFile', 'ch9326.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બોચાસણના પાટીદાર - Bochasanna patidar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bochasanna patidar</h1>
+                <div class="gujarati-title">બોચાસણના પાટીદાર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 225</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(225) bocāsaṇanā pāṭīdāra kāśīdāsane mahārājano aḍaga niśrcaya hato. temanā māthe karaja hatuṃ tethī leṇadāroe phariyāda karīne temane jelamāṃ nakhāvyā. kāśīdāse amaladārane kahyuṃ ke, ‘huṃ haribhakta chuṃ ne bhāgī nahi jāuṃ, māṭe mane nadīe nahāvānī rajā āpo.’ tethī rajā āpī. eka divasa nahātī vakhate mahārājane saṃbhārīne ḍūbakī mārī, te bocāsaṇamāṃthī teo gaḍhaḍānā pādaramāṃ nīkaḻyā ne hātha-pagamāṃthī beḍī adṛśya thaī gaī, pachī tyāṃthī te mahārāja pāse āvyā. mahārāje temane gaḍhaḍe cha mahinā rākhyā. bocāsaṇamāṃ sipāīoe pāṇīmāṃ tema ja ājubājunī jāyagāomāṃ bahu joyuṃ paṇa kyāṃya koī dekhāṇuṃ nahi, tema ja beḍī paṇa hātha āvī nahi āthī saue jāṇyuṃ ke, kāśīdāsa kharā bhakta che te bhagavāne rakṣā karī lāge che. cha mahinā pachī mahārāje kāśīdāsane bocāsaṇa mokalyā. ā banāvathī leṇadārone kāśīdāsa māṭe māna thayuṃ ne teo kāṃī bolyā nahi; ūlaṭī māphī māgī ke, ‘amāro aparādha thayo che to māpha karo.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(225) બોચાસણના પાટીદાર કાશીદાસને મહારાજનો અડગ નિશ્ર્ચય હતો. તેમના માથે કરજ હતું તેથી લેણદારોએ ફરિયાદ કરીને તેમને જેલમાં નખાવ્યા. કાશીદાસે અમલદારને કહ્યું કે, ‘હું હરિભક્ત છું ને ભાગી નહિ જાઉં, માટે મને નદીએ નહાવાની રજા આપો.’ તેથી રજા આપી. એક દિવસ નહાતી વખતે મહારાજને સંભારીને ડૂબકી મારી, તે બોચાસણમાંથી તેઓ ગઢડાના પાદરમાં નીકળ્યા ને હાથ-પગમાંથી બેડી અદૃશ્ય થઈ ગઈ, પછી ત્યાંથી તે મહારાજ પાસે આવ્યા. મહારાજે તેમને ગઢડે છ મહિના રાખ્યા. બોચાસણમાં સિપાઈઓએ પાણીમાં તેમ જ આજુબાજુની જાયગાઓમાં બહુ જોયું પણ ક્યાંય કોઈ દેખાણું નહિ, તેમ જ બેડી પણ હાથ આવી નહિ આથી સૌએ જાણ્યું કે, કાશીદાસ ખરા ભક્ત છે તે ભગવાને રક્ષા કરી લાગે છે. છ મહિના પછી મહારાજે કાશીદાસને બોચાસણ મોકલ્યા. આ બનાવથી લેણદારોને કાશીદાસ માટે માન થયું ને તેઓ કાંઈ બોલ્યા નહિ; ઊલટી માફી માગી કે, ‘અમારો અપરાધ થયો છે તો માફ કરો.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9224.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sudariyanana hemaraj shah</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9226.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Suratna bhalchandra shethne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '225');
+            localStorage.setItem('lastVisitedVatFile', 'ch9225.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

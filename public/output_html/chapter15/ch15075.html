@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અમને અથાણાંની બરણી - Amane athanani barani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Amane athanani barani</h1>
+                <div class="gujarati-title">અમને અથાણાંની બરણી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 75</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(75) amane athāṇāṃnī baraṇī laīne dharamapurathī mokalyā te mahārāja kāriyāṇīmāṃ bāvīśa vāra maḻyā. pachī mahārāje baraṇī ughāḍī tyāṃ nī gaṃdha āvī eṭale mahārāja kahe je, ukaraḍe nākhī āvo. tyāre prāgajī dave kahe je, mahārāja nākhī deśo mā. athāṇuṃ bahu sarasa che te huṃ dhoīne khāīśa. pachī prāgajī davene baraṇī āpī te laī gayā. sādhu kahe je, dhośe eṭale svāda nahi rahe. tyāre mahārāja kahe je, khādhānā je svādiyā hoya te śuṃ dhotāṃ haśe ? e te dhoyā vinā ema ne ema khāśe !@ 1 vaghāraṇī= dāḻa-śākanā vaghāramāṃ nākhavānī vastu, hīṃga.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(75) અમને અથાણાંની બરણી લઈને ધરમપુરથી મોકલ્યા તે મહારાજ કારિયાણીમાં બાવીશ વાર મળ્યા. પછી મહારાજે બરણી ઉઘાડી ત્યાં ની ગંધ આવી એટલે મહારાજ કહે જે, ઉકરડે નાખી આવો. ત્યારે પ્રાગજી દવે કહે જે, મહારાજ નાખી દેશો મા. અથાણું બહુ સરસ છે તે હું ધોઈને ખાઈશ. પછી પ્રાગજી દવેને બરણી આપી તે લઈ ગયા. સાધુ કહે જે, ધોશે એટલે સ્વાદ નહિ રહે. ત્યારે મહારાજ કહે જે, ખાધાના જે સ્વાદિયા હોય તે શું ધોતાં હશે ? એ તે ધોયા વિના એમ ને એમ ખાશે !@ 1 વઘારણી= દાળ-શાકના વઘારમાં નાખવાની વસ્તુ, હીંગ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15074.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sadhu olakhava e ghani</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15076.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje kahyu chhe je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '75');
+            localStorage.setItem('lastVisitedVatFile', 'ch15075.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

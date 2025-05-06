@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વાતું કરવાથી માખીમાંથી - Vatu karavathi makhimathi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vatu karavathi makhimathi</h1>
+                <div class="gujarati-title">વાતું કરવાથી માખીમાંથી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 336</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(336) vātuṃ karavāthī mākhīmāṃthī sūrya thāya ne sūryamāṃthī mākhī thāya, jo vātuṃ karatāṃ āvaḍe to. ‘vātana kī vāta to baḍī karāmata hai.’ ā sarve satsaṃga vātuṃ karīne karāvyo che. ā sarve vātuṃe karīne che. bījuṃ kāṃī nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(336) વાતું કરવાથી માખીમાંથી સૂર્ય થાય ને સૂર્યમાંથી માખી થાય, જો વાતું કરતાં આવડે તો. ‘વાતન કી વાત તો બડી કરામત હૈ.’ આ સર્વે સત્સંગ વાતું કરીને કરાવ્યો છે. આ સર્વે વાતુંએ કરીને છે. બીજું કાંઈ નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5335.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Charotarna ek gamna</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5337.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsang, sadhu ane bhagavan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '336');
+            localStorage.setItem('lastVisitedVatFile', 'ch5336.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

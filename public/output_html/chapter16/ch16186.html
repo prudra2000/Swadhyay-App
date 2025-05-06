@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ દેહ તો રહેવાનો  - Aa deh to rahevano</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa deh to rahevano</h1>
+                <div class="gujarati-title">આ દેહ તો રહેવાનો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 186</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(186) ā deha to rahevāno nathī ne kalyāṇamāṃ khoṭa āvī jāśe māṭe āpaṇe gāphalāī mūkī devī. ā lokamāṃ bharāī gayā chīe, paṇa emāṃ kaṃī nīkaḻavānuṃ nathī. māṭe mokṣane mārage cāle te ja ḍāhyo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(186) આ દેહ તો રહેવાનો નથી ને કલ્યાણમાં ખોટ આવી જાશે માટે આપણે ગાફલાઈ મૂકી દેવી. આ લોકમાં ભરાઈ ગયા છીએ, પણ એમાં કંઈ નીકળવાનું નથી. માટે મોક્ષને મારગે ચાલે તે જ ડાહ્યો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16185.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Avi vatu na hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16187.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jene bhagavanma priti</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '186');
+            localStorage.setItem('lastVisitedVatFile', 'ch16186.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

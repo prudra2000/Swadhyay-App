@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવ દેહરૂપી ખાણમાં - Aa jiv dehrupi khanma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jiv dehrupi khanma</h1>
+                <div class="gujarati-title">આ જીવ દેહરૂપી ખાણમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 174</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(174) ā jīva deharūpī khāṇamāṃ paḍyo che tene vakhāṇe tyāre rājī thāya. te bhagavānanā gharamāṃ pārijātakanāṃ jhāḍa ne phūla sāru kajiyo thayo ne maṇi sāru to keṭalāka kaleśa thayā; ema paṃcaviṣayanā ṭaṃṭā sarva ṭhekāṇe che. uttama vaktā hoya tyāre sarvoparī upāsanā thāya, nahi to samāgama vinā adhūruṃ rahī jāya ne bījā dhāmamāṃ jāvuṃ paḍe ne olyā deśamāṃ naranārāyaṇane ja vaḻagyā che. ne rahyā tene koīne pāghaḍī maḻī che ? te to kharekharā ekāṃtika thāśuṃ tyāre rājī thāśe ne jyāre kharekharā bhagavānane rājī karavā tyāre te kāṃī sukha rākhye rājī thāya ? te upara sākhī bolyā je, 1 jāḻāne oṭhe ūbhā= māyānāṃ kapaṭano āśaro karyo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(174) આ જીવ દેહરૂપી ખાણમાં પડ્યો છે તેને વખાણે ત્યારે રાજી થાય. તે ભગવાનના ઘરમાં પારિજાતકનાં ઝાડ ને ફૂલ સારુ કજિયો થયો ને મણિ સારુ તો કેટલાક કલેશ થયા; એમ પંચવિષયના ટંટા સર્વ ઠેકાણે છે. ઉત્તમ વક્તા હોય ત્યારે સર્વોપરી ઉપાસના થાય, નહિ તો સમાગમ વિના અધૂરું રહી જાય ને બીજા ધામમાં જાવું પડે ને ઓલ્યા દેશમાં નરનારાયણને જ વળગ્યા છે. ને રહ્યા તેને કોઈને પાઘડી મળી છે ? તે તો ખરેખરા એકાંતિક થાશું ત્યારે રાજી થાશે ને જ્યારે ખરેખરા ભગવાનને રાજી કરવા ત્યારે તે કાંઈ સુખ રાખ્યે રાજી થાય ? તે ઉપર સાખી બોલ્યા જે, 1 જાળાને ઓઠે ઊભા= માયાનાં કપટનો આશરો કર્યો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12173.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jiv karakano kido </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12175.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jivne mrutyu ado</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '174');
+            localStorage.setItem('lastVisitedVatFile', 'ch12174.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સાધુ તો લોંઠાએ  - Aa sadhu to lothae </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa sadhu to lothae </h1>
+                <div class="gujarati-title">આ સાધુ તો લોંઠાએ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 235</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(235) ā sādhu to loṃṭhāe prabhu bhajāve che paṇa koīne sata caḍatuṃ nathī. eka bāī aṃjāramāṃ potānā dhaṇī sāthe baḻī maravā, ‘je aṃbe ! je aṃbe !’ karatī nīkaḻī; paṇa smaśānamāṃ gaī tyāṃ sata ūtarī gayuṃ, pachī kahe, ‘huṃ to nahi baḻuṃ ne ghera āvīśa.’ pachī , tyāre tenā kuṭuṃbīe lājanī khātara parāṇe upāḍīne citāmāṃ nākhī, te baḻī mūī. tema ā sādhu loṃṭhāe prabhu bhajāve che, paṇa āpaṇane lagāreya kalyāṇano khapa nathī.@ 1 pānyamāṃ saṃtāṇī= nadīmāṃ thatā eka prakāranā ghāsamāṃ saṃtāī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(235) આ સાધુ તો લોંઠાએ પ્રભુ ભજાવે છે પણ કોઈને સત ચડતું નથી. એક બાઈ અંજારમાં પોતાના ધણી સાથે બળી મરવા, ‘જે અંબે ! જે અંબે !’ કરતી નીકળી; પણ સ્મશાનમાં ગઈ ત્યાં સત ઊતરી ગયું, પછી કહે, ‘હું તો નહિ બળું ને ઘેર આવીશ.’ પછી , ત્યારે તેના કુટુંબીએ લાજની ખાતર પરાણે ઉપાડીને ચિતામાં નાખી, તે બળી મૂઈ. તેમ આ સાધુ લોંઠાએ પ્રભુ ભજાવે છે, પણ આપણને લગારેય કલ્યાણનો ખપ નથી.@ 1 પાન્યમાં સંતાણી= નદીમાં થતા એક પ્રકારના ઘાસમાં સંતાઈ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9234.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa vatunu kahenaru </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9236.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Manne dharye koi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '235');
+            localStorage.setItem('lastVisitedVatFile', 'ch9235.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

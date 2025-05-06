@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શાસ્ત્રમાં ચાર પ્રકારની  - Shastrma char prakarani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shastrma char prakarani</h1>
+                <div class="gujarati-title">શાસ્ત્રમાં ચાર પ્રકારની </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 297</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(297) śāstramāṃ cāra prakāranī vātuṃ hoya. te adhikārī pramāṇe vātuṃ ne kathā karavī; dhanāḍhya ke moṭuṃ māṇasa satsaṃga kare to sādhu pāse sevā karāve. te śelaṇā bhāmodrānī jāna gaḍhaḍe āvī eṭale tene khaḍa, jogāṇa, jamavānuṃ, utārā, pāgaraṇa vagere badhī sevā sādhune karavī paḍī. te jāna cālī tyāre vāsīduṃ paṇa sādhune kāḍhavuṃ paḍyuṃ. māṭe enuṃ pramāṇa karī rākhavuṃ je, emāṃ to sukha ja nathī. eke kahyuṃ je, badhuṃ nāśa pāmo paṇa dravya thāo ne eka rabārīe kahyuṃ je, te to koyalā dūdhe dhovā jevuṃ, te ūlaṭuṃ dūdha kāḻuṃ thāya, te benī buddhi kāṃī sarakhī ? olyāne rāga che tevo rabārīne nahi ne te rabārīe kahyuṃ tema vāṇiyo na kare. kema je, dravyano māla teṇe jīvamāṃ ghālyo che. te dravyanī āsaktimāṃ eṭalo phera che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(297) શાસ્ત્રમાં ચાર પ્રકારની વાતું હોય. તે અધિકારી પ્રમાણે વાતું ને કથા કરવી; ધનાઢ્ય કે મોટું માણસ સત્સંગ કરે તો સાધુ પાસે સેવા કરાવે. તે શેલણા ભામોદ્રાની જાન ગઢડે આવી એટલે તેને ખડ, જોગાણ, જમવાનું, ઉતારા, પાગરણ વગેરે બધી સેવા સાધુને કરવી પડી. તે જાન ચાલી ત્યારે વાસીદું પણ સાધુને કાઢવું પડ્યું. માટે એનું પ્રમાણ કરી રાખવું જે, એમાં તો સુખ જ નથી. એકે કહ્યું જે, બધું નાશ પામો પણ દ્રવ્ય થાઓ ને એક રબારીએ કહ્યું જે, તે તો કોયલા દૂધે ધોવા જેવું, તે ઊલટું દૂધ કાળું થાય, તે બેની બુદ્ધિ કાંઈ સરખી ? ઓલ્યાને રાગ છે તેવો રબારીને નહિ ને તે રબારીએ કહ્યું તેમ વાણિયો ન કરે. કેમ જે, દ્રવ્યનો માલ તેણે જીવમાં ઘાલ્યો છે. તે દ્રવ્યની આસક્તિમાં એટલો ફેર છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15296.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa deshma vidya na male</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15298.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gharmathi udas thaya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '297');
+            localStorage.setItem('lastVisitedVatFile', 'ch15297.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

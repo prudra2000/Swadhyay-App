@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કુરૂપવાન સ્ત્રીમાં મન - Kurupavan strima man</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kurupavan strima man</h1>
+                <div class="gujarati-title">કુરૂપવાન સ્ત્રીમાં મન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 107</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(107) kurūpavāna strīmāṃ mana taṇāya nahi ne svarūpavāna strīmāṃ mana taṇāya che, evo jīvano svabhāva che. ne māla to e beyamāṃ eka ja che, paṇa temāṃ svarūpavāna strī jevī baṃdhanakārī che tevī kurūpavāna strī baṃdhanakārī nathī. tema ja sāruṃ ghoḍuṃ temāṃ du:kha che evuṃ ūtaratāmāṃ nathī; kema je, paḍīe to thoḍuṃ vāge ne bājaro- khaḍa paṇa thoḍāṃ joīe ne tenuṃ jhājhuṃ rakṣaṇa karavuṃ na paḍe. tema ja sāruṃ khāvāmāṃ, sārāṃ lūgaḍāṃmāṃ e ādika aneka viṣaya che, te sarvemāṃ jevuṃ sārāmāṃ baṃdhana che evuṃ ūtaratāmāṃ nathī; paṇa jīvane jyāṃ sudhī rāga che ne jñānanī kasara hoya tyāṃ sudhī ā vāta samajāya nahīṃ. ne padārthano vicāra ādi-aṃtano karavo, paṇa madhyamāṃ na jovuṃ. madhyamāṃ to moha rahyo che e ajñāna che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(107) કુરૂપવાન સ્ત્રીમાં મન તણાય નહિ ને સ્વરૂપવાન સ્ત્રીમાં મન તણાય છે, એવો જીવનો સ્વભાવ છે. ને માલ તો એ બેયમાં એક જ છે, પણ તેમાં સ્વરૂપવાન સ્ત્રી જેવી બંધનકારી છે તેવી કુરૂપવાન સ્ત્રી બંધનકારી નથી. તેમ જ સારું ઘોડું તેમાં દુ:ખ છે એવું ઊતરતામાં નથી; કેમ જે, પડીએ તો થોડું વાગે ને બાજરો- ખડ પણ થોડાં જોઈએ ને તેનું ઝાઝું રક્ષણ કરવું ન પડે. તેમ જ સારું ખાવામાં, સારાં લૂગડાંમાં એ આદિક અનેક વિષય છે, તે સર્વેમાં જેવું સારામાં બંધન છે એવું ઊતરતામાં નથી; પણ જીવને જ્યાં સુધી રાગ છે ને જ્ઞાનની કસર હોય ત્યાં સુધી આ વાત સમજાય નહીં. ને પદાર્થનો વિચાર આદિ-અંતનો કરવો, પણ મધ્યમાં ન જોવું. મધ્યમાં તો મોહ રહ્યો છે એ અજ્ઞાન છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2106.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chokhkhu gnan thavanu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2108.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Upasana chokhkhi samajavi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '107');
+            localStorage.setItem('lastVisitedVatFile', 'ch2107.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

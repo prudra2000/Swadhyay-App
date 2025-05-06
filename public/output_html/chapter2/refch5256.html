@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(256) eka manuṣyane khāvā na maḻe ne eka baḻada lāḍavāne paṇa khāya nahīṃ. pachī e manuṣye tapa karavā māṃḍyuṃ tyāre maḻavā māṃḍyo, tyāre kahe je, ‘huṃ tapa karuṃ chuṃ tene roṭalā maḻatā nathī ne ā baḻadane lāḍavā kema maḻe che ?’ tyāre kahyuṃ je, ‘āgaḻa teṃ kāṃī karyuṃ nathī te have tapa karīśa te pachī maḻaśe. ne ā baḻade to bahu karyuṃ che paṇa koī saṃskārathī baḻadano deha āvyo che. te deha mūkīne bhagavānanā dhāmamāṃ jāśe. e rīte jñāne karīne tathā tape karīne muktamāṃ adhika-nyūnapaṇuṃ che. prahlādanuṃ deha bhagavāne jīvanā jevuṃ karyuṃ tethī baḻe nahi, saḍe nahi ne śastra paṇa vāge nahi, evuṃ thāya tyāṃ bhagavānanuṃ kartavya jāṇavuṃ. evuṃ bhaktithī potā vate thāya nahīṃ. ne dehadhārīmāṃ to śrīkṛṣṇane bāṇa vāgyāṃ ne prahlādane bāṇa na vāgyāṃ, e bhagavānanuṃ kartavya samajavuṃ. ne pāṇīmāṃ tare ema pṛthvī pāṇīmāṃ tare che ne pāśerano pāṇo ḍūbī jāya ne ā keṭalāya parvata che paṇa ḍūbatā nathī e bhagavānanuṃ kartavya che.’ ema jaṭharāgni tathā varasādanā māhātmyanī vāta karī.@ 1 khoro loṭa= jūno thavāthī bagaḍela svādavāḻo loṭa. $2 chāṇuṃ= baḻataṇa māṭe thāpīne sūkaveluṃ chāṇa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(256) એક મનુષ્યને ખાવા ન મળે ને એક બળદ લાડવાને પણ ખાય નહીં. પછી એ મનુષ્યે તપ કરવા માંડ્યું ત્યારે મળવા માંડ્યો, ત્યારે કહે જે, ‘હું તપ કરું છું તેને રોટલા મળતા નથી ને આ બળદને લાડવા કેમ મળે છે ?’ ત્યારે કહ્યું જે, ‘આગળ તેં કાંઈ કર્યું નથી તે હવે તપ કરીશ તે પછી મળશે. ને આ બળદે તો બહુ કર્યું છે પણ કોઈ સંસ્કારથી બળદનો દેહ આવ્યો છે. તે દેહ મૂકીને ભગવાનના ધામમાં જાશે. એ રીતે જ્ઞાને કરીને તથા તપે કરીને મુક્તમાં અધિક-ન્યૂનપણું છે. પ્રહ્લાદનું દેહ ભગવાને જીવના જેવું કર્યું તેથી બળે નહિ, સડે નહિ ને શસ્ત્ર પણ વાગે નહિ, એવું થાય ત્યાં ભગવાનનું કર્તવ્ય જાણવું. એવું ભક્તિથી પોતા વતે થાય નહીં. ને દેહધારીમાં તો શ્રીકૃષ્ણને બાણ વાગ્યાં ને પ્રહ્લાદને બાણ ન વાગ્યાં, એ ભગવાનનું કર્તવ્ય સમજવું. ને પાણીમાં તરે એમ પૃથ્વી પાણીમાં તરે છે ને પાશેરનો પાણો ડૂબી જાય ને આ કેટલાય પર્વત છે પણ ડૂબતા નથી એ ભગવાનનું કર્તવ્ય છે.’ એમ જઠરાગ્નિ તથા વરસાદના માહાત્મ્યની વાત કરી.@ 1 ખોરો લોટ= જૂનો થવાથી બગડેલ સ્વાદવાળો લોટ. $2 છાણું= બળતણ માટે થાપીને સૂકવેલું છાણ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

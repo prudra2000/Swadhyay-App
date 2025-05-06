@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આંટી ઉપર વશરામભાઈના - Ati upar vasharamabhaina </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ati upar vasharamabhaina </h1>
+                <div class="gujarati-title">આંટી ઉપર વશરામભાઈના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 149</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(149) āṃṭī upara vaśarāmabhāīnā bāpanī vāta karī je, ghāṇīe ghālīne pīlī nākhe to paṇa svāminārāyaṇanuṃ bhajana mūkavuṃ nahi; kema je, talanā ne śeraḍīnā avatāra āvyā haśe tyāre nahi pilāṇā hoīe ? māṭe bhagavānanā niśrcayarūpī āṃṭī mūkavī nahi ne e āṃṭī mūkavī e to jīvatāṃ maravuṃ evuṃ che; paṇa pāṃce viṣaya ḍokāṃ kāḍhī rahyā che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(149) આંટી ઉપર વશરામભાઈના બાપની વાત કરી જે, ઘાણીએ ઘાલીને પીલી નાખે તો પણ સ્વામિનારાયણનું ભજન મૂકવું નહિ; કેમ જે, તલના ને શેરડીના અવતાર આવ્યા હશે ત્યારે નહિ પિલાણા હોઈએ ? માટે ભગવાનના નિશ્ર્ચયરૂપી આંટી મૂકવી નહિ ને એ આંટી મૂકવી એ તો જીવતાં મરવું એવું છે; પણ પાંચે વિષય ડોકાં કાઢી રહ્યા છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9148.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apanama khalpurush </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9150.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Manna rog jevo to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '149');
+            localStorage.setItem('lastVisitedVatFile', 'ch9149.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

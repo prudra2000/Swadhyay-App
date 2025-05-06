@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ધર્મશાળાનો તાલ - Dharmashalano tal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dharmashalano tal</h1>
+                <div class="gujarati-title">ધર્મશાળાનો તાલ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 191</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(191) dharmaśāḻāno tāla, lākaḍāṃ ne pāṇāmāṃ kāṃī nathī. e badhuṃ kahīe chīe to niṃdā jevuṃ kahevāya che, paṇa āvī vātuṃ vinā parabhāvane nahi pamāya. te śukajīne dekhīne gopīoe vastra na paheryāṃ ne vyāsajīne dekhīne paheryāṃ; kāṃ je, one strī-puruṣano bhāva nahi, māṭe sthūḻa, sūkṣma ne kāraṇa e traṇathī to vāraṃvāra nokhuṃ ja paḍavuṃ ane evī bhāvanāe karīne mūkyāṃ tyāre prakṛtiparyaṃta āvī gayuṃ ne te para guṇātīta evuṃ svarūpa thayuṃ, māṭe te vagara koī kāḻe chūṭako nathī. $artha : dharma ane adharmano tyāga kara. tema ja satya ane anṛtano tyāga kara. satya ne anṛtano tyāga karyā pachī je kaṃī choḍī śakāya te choḍa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૯૧) ધર્મશાળાનો તાલ, લાકડાં ને પાણામાં કાંઈ નથી. એ બધું કહીએ છીએ તો નિંદા જેવું કહેવાય છે, પણ આવી વાતું વિના પરભાવને નહિ પમાય. તે શુકજીને દેખીને ગોપીઓએ વસ્ત્ર ન પહેર્યાં ને વ્યાસજીને દેખીને પહેર્યાં; કાં જે, ઓને સ્ત્રી-પુરુષનો ભાવ નહિ, માટે સ્થૂળ, સૂક્ષ્મ ને કારણ એ ત્રણથી તો વારંવાર નોખું જ પડવું અને એવી ભાવનાએ કરીને મૂક્યાં ત્યારે પ્રકૃતિપર્યંત આવી ગયું ને તે પર ગુણાતીત એવું સ્વરૂપ થયું, માટે તે વગર કોઈ કાળે છૂટકો નથી. $અર્થ : ધર્મ અને અધર્મનો ત્યાગ કર. તેમ જ સત્ય અને અનૃતનો ત્યાગ કર. સત્ય ને અનૃતનો ત્યાગ કર્યા પછી જે કંઈ છોડી શકાય તે છોડ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6190.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pustakma to vatu lakhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6192.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jivne satsang thay nahi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '191');
+            localStorage.setItem('lastVisitedVatFile', 'ch6191.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

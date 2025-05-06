@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વાત કરવી તે સ્થાન - Vat karavi te sthan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vat karavi te sthan</h1>
+                <div class="gujarati-title">વાત કરવી તે સ્થાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 242</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(242) vāta karavī te sthāna joīne karavī, deśakāḻa joīne karavī, manuṣya joīne karavī, paṇa jojo koī siddhāī jaṇāvatā nahi ! emāṃthī to keṭalāyanī che ne hajī paṇa e mārage cālaśe tenī jhoḻī ṭapakaśe; emāṃ phera nathī. niṣkuḻānaṃdasvāmī koīnī mahobatamāṃ levāya nahi ne karīmabhāī levāya. viṣaya chātī upara caḍī beṭhā che te śuṃ ? je, strī, dhana ne svāda tenī ja vāsanā che, paṇa dhananī vāsanāe karīne sāpa thāvuṃ paḍaśe. $dekhī māraṇane mana māne re, anya jovā āṃkha mīṃcī che. $(kīrtana muktāvali : 1041) $lāvanatā kara le liyā, tīna loka mukha māṃya. $tīna loka mukha māṃya, triyāko ajaba tamāso; $kaika raya sira kūṭa, chūṭa nahi sakyā grahyāso. $dākhata brahmānaṃda, prabala khelāḍa paṭāṃkī; $khalaka mulakakuṃ khāya, sīṃghaṇī śravaṇa phaṭāṃkī. $(brahmānaṃda kāvya : kuṃḍaliyā) 1 jhoḻīuṃ ṭapakyuṃ che= paṃca vartamānanuṃ ṭhekāṇuṃ nathī rahyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(242) વાત કરવી તે સ્થાન જોઈને કરવી, દેશકાળ જોઈને કરવી, મનુષ્ય જોઈને કરવી, પણ જોજો કોઈ સિદ્ધાઈ જણાવતા નહિ ! એમાંથી તો કેટલાયની છે ને હજી પણ એ મારગે ચાલશે તેની ઝોળી ટપકશે; એમાં ફેર નથી. નિષ્કુળાનંદસ્વામી કોઈની મહોબતમાં લેવાય નહિ ને કરીમભાઈ લેવાય. વિષય છાતી ઉપર ચડી બેઠા છે તે શું ? જે, સ્ત્રી, ધન ને સ્વાદ તેની જ વાસના છે, પણ ધનની વાસનાએ કરીને સાપ થાવું પડશે. $દેખી મારણને મન માને રે, અન્ય જોવા આંખ મીંચી છે. $(કીર્તન મુક્તાવલિ : 1041) $લાવનતા કર લે લિયા, તીન લોક મુખ માંય. $તીન લોક મુખ માંય, ત્રિયાકો અજબ તમાસો; $કૈક રય સિર કૂટ, છૂટ નહિ સક્યા ગ્રહ્યાસો. $દાખત બ્રહ્માનંદ, પ્રબલ ખેલાડ પટાંકી; $ખલક મુલકકું ખાય, સીંઘણી શ્રવણ ફટાંકી. $(બ્રહ્માનંદ કાવ્ય : કુંડલિયા) 1 ઝોળીઉં ટપક્યું છે= પંચ વર્તમાનનું ઠેકાણું નથી રહ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9241.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Agna ne upasana e </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9243.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Badhi kalamu chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '242');
+            localStorage.setItem('lastVisitedVatFile', 'ch9242.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

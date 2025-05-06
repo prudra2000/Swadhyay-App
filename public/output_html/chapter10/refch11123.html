@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(123) vāṇiyāvāḻī vaṇathaḻīnā becara śrīmāḻī brāhmaṇa amadāvāda gayā. temane sabhāmāṃ ayodhyāprasādajī mahārāje kahyuṃ je, ‘svāmī to bahu vātuṃ kare che!’ tyāre becarabhāī kahe, ‘hā, vātuṃ to kare che, paṇa tamārā bāpanā ja guṇa gāya che ane puruṣottamapaṇānuṃ ne brahmarūpa thāvānuṃ nirūpaṇa karī sarvoparīpaṇāno pragaṭa pramāṇa ḍaṃko de che, tevo mahimā mahārājano koī jāṇatuṃ nathī ne tethī kahetā paṇa nathī. ne jūnāgaḍhamāṃ to evī vātuṃno sopo paḍato ja nathī.’ tyāre mahānubhāvānaṃdasvāmī kahe, ‘ḍabhāṇanā yajñamāṃ mūṃḍyā hatā te meṃ dekhyā e ja ne ?’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(123) વાણિયાવાળી વણથળીના બેચર શ્રીમાળી બ્રાહ્મણ અમદાવાદ ગયા. તેમને સભામાં અયોધ્યાપ્રસાદજી મહારાજે કહ્યું જે, ‘સ્વામી તો બહુ વાતું કરે છે!’ ત્યારે બેચરભાઈ કહે, ‘હા, વાતું તો કરે છે, પણ તમારા બાપના જ ગુણ ગાય છે અને પુરુષોત્તમપણાનું ને બ્રહ્મરૂપ થાવાનું નિરૂપણ કરી સર્વોપરીપણાનો પ્રગટ પ્રમાણ ડંકો દે છે, તેવો મહિમા મહારાજનો કોઈ જાણતું નથી ને તેથી કહેતા પણ નથી. ને જૂનાગઢમાં તો એવી વાતુંનો સોપો પડતો જ નથી.’ ત્યારે મહાનુભાવાનંદસ્વામી કહે, ‘ડભાણના યજ્ઞમાં મૂંડ્યા હતા તે મેં દેખ્યા એ જ ને ?’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

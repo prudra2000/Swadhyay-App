@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક પઠાણ ઝીંઝાવદરની સીમમાં - Ek pathan zinzavadarni simma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek pathan zinzavadarni simma</h1>
+                <div class="gujarati-title">એક પઠાણ ઝીંઝાવદરની સીમમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 12</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(12) eka paṭhāṇa jhīṃjhāvadaranī sīmamāṃ āvyo, tyāre tenā mananā saṃkalpa sarve baṃdha thaī gayā ne aṃtaramāṃ ṭāḍhuṃ thaī gayuṃ. tethī jāṇyuṃ je, ‘ā gāmamāṃ koī moṭāpuruṣa che.’ pachī teṇe gāmamāṃ āvīne alaiyākhācarane pūchyuṃ je, ‘ā gāmamāṃ koī moṭāpuruṣa che tenāṃ darśana mane karāvo; kema je, te moṭāpuruṣe māruṃ mana kheṃcī līdhuṃ che.’ tyāre te paṭhāṇane śrījīmahārājanāṃ darśana karāvyāṃ. te darśanamātre karīne te paṭhāṇane samādhi thaī ne akṣaradhāmane viśe anaṃta mukte sevātā evā śrījīmahārājanuṃ darśana thātuṃ havuṃ. pachī śrījīmahārāja tene potānī dṛṣṭimātre karīne jagāḍatā havā. pachī te paṭhāṇe śrījīmahārājane pūchyuṃ je, ‘he mahārāja ! tame to sarvoparī bhagavāna cho. māṭe tamārā svarūpanuṃ jñāna bījā koīne kahuṃ ?’ tyāre śrījīmahārāje kahyuṃ je, “tama jevā hoya tene kahejo.”</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૨) એક પઠાણ ઝીંઝાવદરની સીમમાં આવ્યો, ત્યારે તેના મનના સંકલ્પ સર્વે બંધ થઈ ગયા ને અંતરમાં ટાઢું થઈ ગયું. તેથી જાણ્યું જે, ‘આ ગામમાં કોઈ મોટાપુરુષ છે.’ પછી તેણે ગામમાં આવીને અલૈયાખાચરને પૂછ્યું જે, ‘આ ગામમાં કોઈ મોટાપુરુષ છે તેનાં દર્શન મને કરાવો; કેમ જે, તે મોટાપુરુષે મારું મન ખેંચી લીધું છે.’ ત્યારે તે પઠાણને શ્રીજીમહારાજનાં દર્શન કરાવ્યાં. તે દર્શનમાત્રે કરીને તે પઠાણને સમાધિ થઈ ને અક્ષરધામને વિશે અનંત મુક્તે સેવાતા એવા શ્રીજીમહારાજનું દર્શન થાતું હવું. પછી શ્રીજીમહારાજ તેને પોતાની દૃષ્ટિમાત્રે કરીને જગાડતા હવા. પછી તે પઠાણે શ્રીજીમહારાજને પૂછ્યું જે, ‘હે મહારાજ ! તમે તો સર્વોપરી ભગવાન છો. માટે તમારા સ્વરૂપનું જ્ઞાન બીજા કોઈને કહું ?’ ત્યારે શ્રીજીમહારાજે કહ્યું જે, “તમ જેવા હોય તેને કહેજો.”</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7011.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhadarama Shrijimaharaj pase</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7013.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gam vandhiyama paroksh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '12');
+            localStorage.setItem('lastVisitedVatFile', 'ch7012.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

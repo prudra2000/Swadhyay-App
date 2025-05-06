@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણામાં કેટલાકને - Apanama ketalakne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apanama ketalakne</h1>
+                <div class="gujarati-title">આપણામાં કેટલાકને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 236</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(236) āpaṇāmāṃ keṭalākane brāhmaṇanī kriyā hoya, sonīnī, vāṇiyānī, kaṇabīnī, koḻīnī, kṣatriyanī evī judī judī kriyāyuṃ hoya. te kriyā sāmuṃ joīe to mokṣa thāya ja nahi, māṭe te kriyā sāmuṃ jovuṃ nahi, bhagavāna sāmuṃ jovuṃ. bhagavānanī āgaḻa kriyāno śo bhāra che ? ne vāsanāno śo bhāra che ? māṭe haribhaktamāṃ tathā sādhumāṃ rajoguṇī, tamoguṇī ne sattvaguṇī kriyāo hoya te joīne avaguṇa levo nahīṃ. jene bhagavānano āśaro dṛḍha thayo che te to guṇātīta thaī rahyo che. ne rajoguṇī, tamoguṇī ne sattvaguṇī e traṇeya prakāranā jīvone bhagavānano saṃbaṃdha thāya to guṇātīta thaī jāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(236) આપણામાં કેટલાકને બ્રાહ્મણની ક્રિયા હોય, સોનીની, વાણિયાની, કણબીની, કોળીની, ક્ષત્રિયની એવી જુદી જુદી ક્રિયાયું હોય. તે ક્રિયા સામું જોઈએ તો મોક્ષ થાય જ નહિ, માટે તે ક્રિયા સામું જોવું નહિ, ભગવાન સામું જોવું. ભગવાનની આગળ ક્રિયાનો શો ભાર છે ? ને વાસનાનો શો ભાર છે ? માટે હરિભક્તમાં તથા સાધુમાં રજોગુણી, તમોગુણી ને સત્ત્વગુણી ક્રિયાઓ હોય તે જોઈને અવગુણ લેવો નહીં. જેને ભગવાનનો આશરો દૃઢ થયો છે તે તો ગુણાતીત થઈ રહ્યો છે. ને રજોગુણી, તમોગુણી ને સત્ત્વગુણી એ ત્રણેય પ્રકારના જીવોને ભગવાનનો સંબંધ થાય તો ગુણાતીત થઈ જાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5235.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gnanpralay karavo tethi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5237.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa samama apano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '236');
+            localStorage.setItem('lastVisitedVatFile', 'ch5236.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

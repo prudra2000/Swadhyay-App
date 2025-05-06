@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે આપણને સરળ - Maharaje apanne saral</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje apanne saral</h1>
+                <div class="gujarati-title">મહારાજે આપણને સરળ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 134</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(134) mahārāje āpaṇane saraḻa paḍe tema bhakti māraga calāvyo che. āja ā bhakti māraganuṃ bījabaḻa āgaḻa thāśe. premānaṃdasvāmīne dhyānamāṃ be pahora besārī rākhyā. māṭe dhyāna jevuṃ kāṃī kaṭhaṇa nathī te karatāṃ caṃcaḻa na thāvuṃ te kaṭhaṇa che. māṭe ema dhyāna bhajana karavā śīkhavuṃ. ne jema pāṇīmāṃthī agni pedā thāya tema ā pravṛttinī kriyā che. paṇa temāṃthī bhajana, smaraṇa karavā śīkhavuṃ. eka jaṇa cāra mahinā māṃdo rahyo. pachī khāṃḍanī rasoī taiyāra thaī tyāre tene kahyuṃ je, ‘tame khāśo nahi.’ to paṇa khādhuṃ, te marī gayo. māṭe jīvanuṃ avaḻuṃ kamaḻa che te sūjhe nahi ne du:khamāṃ sukha manāī gayuṃ che. māṭe viṣayamāṃ guṇadhyāna che ne uttama viṣayamāṃ rāga che; paṇa baraphī āvī tyāre to mota āvyuṃ jāṇavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(134) મહારાજે આપણને સરળ પડે તેમ ભક્તિ મારગ ચલાવ્યો છે. આજ આ ભક્તિ મારગનું બીજબળ આગળ થાશે. પ્રેમાનંદસ્વામીને ધ્યાનમાં બે પહોર બેસારી રાખ્યા. માટે ધ્યાન જેવું કાંઈ કઠણ નથી તે કરતાં ચંચળ ન થાવું તે કઠણ છે. માટે એમ ધ્યાન ભજન કરવા શીખવું. ને જેમ પાણીમાંથી અગ્નિ પેદા થાય તેમ આ પ્રવૃત્તિની ક્રિયા છે. પણ તેમાંથી ભજન, સ્મરણ કરવા શીખવું. એક જણ ચાર મહિના માંદો રહ્યો. પછી ખાંડની રસોઈ તૈયાર થઈ ત્યારે તેને કહ્યું જે, ‘તમે ખાશો નહિ.’ તો પણ ખાધું, તે મરી ગયો. માટે જીવનું અવળું કમળ છે તે સૂઝે નહિ ને દુ:ખમાં સુખ મનાઈ ગયું છે. માટે વિષયમાં ગુણધ્યાન છે ને ઉત્તમ વિષયમાં રાગ છે; પણ બરફી આવી ત્યારે તો મોત આવ્યું જાણવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12133.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prakrutipurushna lok sudhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12135.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Uttam bhogni ruchi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '134');
+            localStorage.setItem('lastVisitedVatFile', 'ch12134.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

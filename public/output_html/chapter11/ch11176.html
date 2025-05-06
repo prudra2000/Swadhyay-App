@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેશકાળ ન લાગે એવા  - Deshakal na lage eva</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Deshakal na lage eva</h1>
+                <div class="gujarati-title">દેશકાળ ન લાગે એવા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 176</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(176) deśakāḻa na lāge evā manuṣya jhājhā maḻe nahi. e upara prāgajī bhaktanī vāta karī je, amārā svarūpanī pravṛtti karavā ghaṇī upādhi sahana kare che. satsaṃgamāṃ kusaṃgīe temanuṃ bahu apamāna karyuṃ, paṇa koī tiraskārane na gaṇatāṃ ughāḍe choge amane mūḻaakṣara kahyā. te pavitrānaṃdasvāmīne paga dābatāṃ dābatāṃ kānamāṃ kahyuṃ ke, ‘ā svāmīne mūḻaakṣara samajī mahārājanī niṣṭhā karaśo to ja akṣaranuṃ sādharmyapaṇuṃ āvaśe ne mahārājanī sevāmāṃ rahevāśe !’ āvī sācī vāta evā moṭerāne bījāthī na kahevāya; paṇa āne to hareka prakāre brahmajñāna pravartāvavānuṃ ja tāna. te ā koṭhārano dhābo nākhatāṃ bole ane ame pāse ūbhā haiīe, te amārā sāmā hātha karī bījāne batāve, ne kahe je, ‘mahārājanā akhaṃḍa saṃbaṃdhe,’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(176) દેશકાળ ન લાગે એવા મનુષ્ય ઝાઝા મળે નહિ. એ ઉપર પ્રાગજી ભક્તની વાત કરી જે, અમારા સ્વરૂપની પ્રવૃત્તિ કરવા ઘણી ઉપાધિ સહન કરે છે. સત્સંગમાં કુસંગીએ તેમનું બહુ અપમાન કર્યું, પણ કોઈ તિરસ્કારને ન ગણતાં ઉઘાડે છોગે અમને મૂળઅક્ષર કહ્યા. તે પવિત્રાનંદસ્વામીને પગ દાબતાં દાબતાં કાનમાં કહ્યું કે, ‘આ સ્વામીને મૂળઅક્ષર સમજી મહારાજની નિષ્ઠા કરશો તો જ અક્ષરનું સાધર્મ્યપણું આવશે ને મહારાજની સેવામાં રહેવાશે !’ આવી સાચી વાત એવા મોટેરાને બીજાથી ન કહેવાય; પણ આને તો હરેક પ્રકારે બ્રહ્મજ્ઞાન પ્રવર્તાવવાનું જ તાન. તે આ કોઠારનો ધાબો નાખતાં બોલે અને અમે પાસે ઊભા હૈઈએ, તે અમારા સામા હાથ કરી બીજાને બતાવે, ને કહે જે, ‘મહારાજના અખંડ સંબંધે,’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11175.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Krupanandswami kaheta je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11177.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sattvika sevya vina</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '176');
+            localStorage.setItem('lastVisitedVatFile', 'ch11176.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

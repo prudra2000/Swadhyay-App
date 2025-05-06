@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આમાં જે છે તેને - Aama je chhe tene</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aama je chhe tene</h1>
+                <div class="gujarati-title">આમાં જે છે તેને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 106</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(106) āmāṃ je che tene khādhānuṃ ke lūgaḍāṃnuṃ du:kha nathī, tene to viṣayanuṃ du:kha che, te sāru nīkaḻī jāya che. jene viṣayanuṃ dhyāna thayuṃ tethī prabhu nahi bhajāya, māṭe jīvamāṃthī niṣedha karīne kākaviṣṭā ne saḍela śrvāna jevuṃ karī nākhavuṃ. bāḻaka jema agni, talavāra ke kāḻā nāgane jhālavā jāya che tema āpaṇe viṣaya māṭe jhaḍapuṃ nākhīe chīe, te kevaḻa ajñāna che. keṭalākanā śrvāsa gaṃdhāya che. laghuśaṃkāmāṃthī ā deha thayuṃ che te sāru sādhu sāthe ne satsaṃgī sāthe vera thāya che ne kāṃṭhe āvyuṃ vahāṇa boḻāya che. moha che te kāma bagāḍī deśe. dehamāṃ ātmabuddhi che te paśubuddhi che ne jīva nīkaḻī jāya tyāre maḍāne koī aḍe nahi.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(106) આમાં જે છે તેને ખાધાનું કે લૂગડાંનું દુ:ખ નથી, તેને તો વિષયનું દુ:ખ છે, તે સારુ નીકળી જાય છે. જેને વિષયનું ધ્યાન થયું તેથી પ્રભુ નહિ ભજાય, માટે જીવમાંથી નિષેધ કરીને કાકવિષ્ટા ને સડેલ શ્ર્વાન જેવું કરી નાખવું. બાળક જેમ અગ્નિ, તલવાર કે કાળા નાગને ઝાલવા જાય છે તેમ આપણે વિષય માટે ઝડપું નાખીએ છીએ, તે કેવળ અજ્ઞાન છે. કેટલાકના શ્ર્વાસ ગંધાય છે. લઘુશંકામાંથી આ દેહ થયું છે તે સારુ સાધુ સાથે ને સત્સંગી સાથે વેર થાય છે ને કાંઠે આવ્યું વહાણ બોળાય છે. મોહ છે તે કામ બગાડી દેશે. દેહમાં આત્મબુદ્ધિ છે તે પશુબુદ્ધિ છે ને જીવ નીકળી જાય ત્યારે મડાને કોઈ અડે નહિ.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14105.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jadabharat eva mota</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14107.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jiv badhayna</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '106');
+            localStorage.setItem('lastVisitedVatFile', 'ch14106.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

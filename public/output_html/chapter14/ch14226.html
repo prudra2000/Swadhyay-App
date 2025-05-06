@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ ઝાડમાંથી કોંટા - Jem zadmathi konta</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem zadmathi konta</h1>
+                <div class="gujarati-title">જેમ ઝાડમાંથી કોંટા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 226</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi amāsane divase svāmīe vāta karī je, $(226) jema jhāḍamāṃthī koṃṭā phūṭe ne jema mahuḍāṃ khare, tema ā jīvanā haiyāmāṃ ā lokanā saṃkalpa thayā kare che. prathama himāḻā jevuṃ ṭāḍhuṃ hoya, paṇa saṃkalpa thāvā māṃḍe tyāre haiyuṃ dhagavā māṃḍe. haiyāmāṃ hoya tevuṃ bahāra nīkaḻī jāya. te upara vāṇiye kahyuṃ je, ‘rū, pā’ e vāta karī. māṭe have manane rokatāṃ śīkhavuṃ. jene bahu rūpiyā ne bahu garāsa ne bahu saṃtāna hoya te to jīvatāṃ ja bhūta jevo che. māṭe ā lokamāṃthī thoḍuṃ ne sādhāraṇa maḻe to bhagavānano pāḍa mānavo. jagatanā saṃkalpano niṣedha karyā vinā te ṭaḻatā nathī. jemāṃ rāga che tenā ja saṃkalpa thāya che, jeno rāga nathī teno saṃkalpeya nathī. te svapnamāṃ paṇa koī divasa dhūḍa khavātī nathī, sākara hoya to khavāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ અમાસને દિવસે સ્વામીએ વાત કરી જે, $(226) જેમ ઝાડમાંથી કોંટા ફૂટે ને જેમ મહુડાં ખરે, તેમ આ જીવના હૈયામાં આ લોકના સંકલ્પ થયા કરે છે. પ્રથમ હિમાળા જેવું ટાઢું હોય, પણ સંકલ્પ થાવા માંડે ત્યારે હૈયું ધગવા માંડે. હૈયામાં હોય તેવું બહાર નીકળી જાય. તે ઉપર વાણિયે કહ્યું જે, ‘રૂ, પા’ એ વાત કરી. માટે હવે મનને રોકતાં શીખવું. જેને બહુ રૂપિયા ને બહુ ગરાસ ને બહુ સંતાન હોય તે તો જીવતાં જ ભૂત જેવો છે. માટે આ લોકમાંથી થોડું ને સાધારણ મળે તો ભગવાનનો પાડ માનવો. જગતના સંકલ્પનો નિષેધ કર્યા વિના તે ટળતા નથી. જેમાં રાગ છે તેના જ સંકલ્પ થાય છે, જેનો રાગ નથી તેનો સંકલ્પેય નથી. તે સ્વપ્નમાં પણ કોઈ દિવસ ધૂડ ખવાતી નથી, સાકર હોય તો ખવાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14225.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prakruti kem tale</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14227.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jevo sang tevo jiv</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '226');
+            localStorage.setItem('lastVisitedVatFile', 'ch14226.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભટજીએ હાટ માંડ્યાના  - Bhatajie hat mandyana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhatajie hat mandyana</h1>
+                <div class="gujarati-title">ભટજીએ હાટ માંડ્યાના </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 105</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(105) bhaṭajīe hāṭa māṃḍyānā sama khādhā tenī vāta karī. te evuṃ sāṃkhyavāḻāne sūjhe ne jogavāḻāthī pāchuṃ na vaḻāya. ne prapaṃcī manuṣya hoya tene āpaṇe na oḻakhīe ne eka brāhmaṇa hato te māṃgaroḻa gayo ne kapaṭa karīne pūjā līdhī ne āṃhīṃ āvato ne jamīne cālyo jāto pachī tene ūtaryānā sama dīdhā tyāre keḍa mūkyo. ne amadāvādamāṃthī tyāgīe ḍośī pāsethī pagalāṃ līdhāṃ tenī vāta karī. māṭe ‘kāma, krodha ne lobhanī laherī e traṇathī tobā trāya.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(105) ભટજીએ હાટ માંડ્યાના સમ ખાધા તેની વાત કરી. તે એવું સાંખ્યવાળાને સૂઝે ને જોગવાળાથી પાછું ન વળાય. ને પ્રપંચી મનુષ્ય હોય તેને આપણે ન ઓળખીએ ને એક બ્રાહ્મણ હતો તે માંગરોળ ગયો ને કપટ કરીને પૂજા લીધી ને આંહીં આવતો ને જમીને ચાલ્યો જાતો પછી તેને ઊતર્યાના સમ દીધા ત્યારે કેડ મૂક્યો. ને અમદાવાદમાંથી ત્યાગીએ ડોશી પાસેથી પગલાં લીધાં તેની વાત કરી. માટે ‘કામ, ક્રોધ ને લોભની લહેરી એ ત્રણથી તોબા ત્રાય.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16104.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Yadyapi sudhdham</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16106.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Madhyanu satnu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '105');
+            localStorage.setItem('lastVisitedVatFile', 'ch16105.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

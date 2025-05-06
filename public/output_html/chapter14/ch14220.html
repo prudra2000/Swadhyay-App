@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ખેડુ બધાને જીવાડે  - Khedu badhane jivade</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Khedu badhane jivade</h1>
+                <div class="gujarati-title">ખેડુ બધાને જીવાડે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 220</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(220) kheḍu badhāne jīvāḍe che paṇa vāṇiyānī kaḻāmāṃ na jāṇe, vāṇiyo sonīnī kaḻāmāṃ na jāṇe ne sonī vaheraṇiyānī kaḻāmāṃ na jāṇe; tema mahārājane ke moṭāne jīvuṃnāṃ kalyāṇa karatāṃ āvaḍe; bījā to nāḻa karatāṃ gaḻuṃ kare !@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(220) ખેડુ બધાને જીવાડે છે પણ વાણિયાની કળામાં ન જાણે, વાણિયો સોનીની કળામાં ન જાણે ને સોની વહેરણિયાની કળામાં ન જાણે; તેમ મહારાજને કે મોટાને જીવુંનાં કલ્યાણ કરતાં આવડે; બીજા તો નાળ કરતાં ગળું કરે !@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14219.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ju viyay tyare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14221.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Have to niyam rakhava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '220');
+            localStorage.setItem('lastVisitedVatFile', 'ch14220.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ કહે  અમે ચાર  - Maharaj kahe ame char</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj kahe ame char</h1>
+                <div class="gujarati-title">મહારાજ કહે  અમે ચાર </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 272</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(272) mahārāja kahe, ‘ame cāra vātathī dharātā nathī; te kathā, kīrtana, vārtā ne dhyāna.’ e cārathī je na thāke teno to ṭharāva sāco che ne je thāke che tene satsaṃga thayo ja nathī. ne satsaṃga thāya tyāre koī viṣayano aṃtaramāṃ bhāra rahe ja nahīṃ. ne dehane kāraso devo te mūā jevī vāta che. śrījīmahārāja kacarāvāḻā hoya tene maḻatā; kema ke, jyāre maṃdira caṇātuṃ ne gomatī khodatā temāṃ je sevā karatā tene ja maḻatā. eka jaṇa śarīre khoṭo gāro bhūṃsīne mahārāja āgaḻa gayo, tyāre mahārāja tene maḻyā nahi ne kahyuṃ je, ‘cheṭe ūbho raheje !’ māṭe dehane kāraso deśe te upara bhagavāna rājī thāśe. ane jyāre ghera hoya tyāre khātara bhare, ukaraḍā uthāme, paṇa āṃhīṃ āvyā pachī jāṇe kāṃīnā kāṃī thaī gayā ! te bhagavāna māṭe paṇa kāraso na khame.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(272) મહારાજ કહે, ‘અમે ચાર વાતથી ધરાતા નથી; તે કથા, કીર્તન, વાર્તા ને ધ્યાન.’ એ ચારથી જે ન થાકે તેનો તો ઠરાવ સાચો છે ને જે થાકે છે તેને સત્સંગ થયો જ નથી. ને સત્સંગ થાય ત્યારે કોઈ વિષયનો અંતરમાં ભાર રહે જ નહીં. ને દેહને કારસો દેવો તે મૂઆ જેવી વાત છે. શ્રીજીમહારાજ કચરાવાળા હોય તેને મળતા; કેમ કે, જ્યારે મંદિર ચણાતું ને ગોમતી ખોદતા તેમાં જે સેવા કરતા તેને જ મળતા. એક જણ શરીરે ખોટો ગારો ભૂંસીને મહારાજ આગળ ગયો, ત્યારે મહારાજ તેને મળ્યા નહિ ને કહ્યું જે, ‘છેટે ઊભો રહેજે !’ માટે દેહને કારસો દેશે તે ઉપર ભગવાન રાજી થાશે. અને જ્યારે ઘેર હોય ત્યારે ખાતર ભરે, ઉકરડા ઉથામે, પણ આંહીં આવ્યા પછી જાણે કાંઈના કાંઈ થઈ ગયા ! તે ભગવાન માટે પણ કારસો ન ખમે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11271.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gharada hoy tene vicharvu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11273.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bija sadhan ghana chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '272');
+            localStorage.setItem('lastVisitedVatFile', 'ch11272.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

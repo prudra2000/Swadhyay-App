@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ લોકનો આ જીવને - Aa lokno aa jivne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa lokno aa jivne</h1>
+                <div class="gujarati-title">આ લોકનો આ જીવને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 98</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(98) ā lokano ā jīvane phera caḍī gayo che. te vāta sāṃbhaḻe tyāre jema pāṇī upara lākaḍī māre, te nokhuṃ thaīne pāchuṃ bheḻuṃ thaī jāya che, tema ā lokamāṃ pāchuṃ bhaḻī javāya che; evo ā jīvano ḍhāḻo che.@ 1 śevāḻa= līla.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(98) આ લોકનો આ જીવને ફેર ચડી ગયો છે. તે વાત સાંભળે ત્યારે જેમ પાણી ઉપર લાકડી મારે, તે નોખું થઈને પાછું ભેળું થઈ જાય છે, તેમ આ લોકમાં પાછું ભળી જવાય છે; એવો આ જીવનો ઢાળો છે.@ 1 શેવાળ= લીલ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2097.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharajne gamati ruchi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2099.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aagna pale etali vasana</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '98');
+            localStorage.setItem('lastVisitedVatFile', 'ch2098.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

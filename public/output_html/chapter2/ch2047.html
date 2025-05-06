@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંસારમાં સુખ જેવું જણાય - Sansarma sukh jevu janay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sansarma sukh jevu janay</h1>
+                <div class="gujarati-title">સંસારમાં સુખ જેવું જણાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 47</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(47) saṃsāramāṃ sukha jevuṃ jaṇāya che paṇa temāṃ to du:kha ja che. jema śeraḍīnā sāṃṭhāmāṃ iyaḻa paḍe te sukha māne che, paṇa bhūkā nīsaraśe. te jema kāgaḍāne soḻa divasanuṃ sukha ne pachī baṃdhūkanī goḻī khāvānī che tema.@ 1 cicoḍāmāṃ= śeraḍī pilavānā yaṃtramāṃ. $2 śrāddha= pitṛonī tṛpti māṭe bhādaravā māsanā kṛṣṇapakṣamāṃ karātī tarpaṇa kriyā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(47) સંસારમાં સુખ જેવું જણાય છે પણ તેમાં તો દુ:ખ જ છે. જેમ શેરડીના સાંઠામાં ઇયળ પડે તે સુખ માને છે, પણ ભૂકા નીસરશે. તે જેમ કાગડાને સોળ દિવસનું સુખ ને પછી બંધૂકની ગોળી ખાવાની છે તેમ.@ 1 ચિચોડામાં= શેરડી પિલવાના યંત્રમાં. $2 શ્રાદ્ધ= પિતૃઓની તૃપ્તિ માટે ભાદરવા માસના કૃષ્ણપક્ષમાં કરાતી તર્પણ ક્રિયા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2046.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharaje aath mahina</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2048.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Firangi nity kavayat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '47');
+            localStorage.setItem('lastVisitedVatFile', 'ch2047.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવા સાધુનો સમાગમ - Ava sadhuno samagam</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ava sadhuno samagam</h1>
+                <div class="gujarati-title">આવા સાધુનો સમાગમ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 206</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(206) āvā sādhuno samāgama thāya tyāre jīvanā haiyāmāṃ dharma āve ne sādhunā guṇa paṇa āve, māṭe ā sādhu ne ā sthānamāṃ jene sad‌bhāva thāśe te karīne akṣaradhāmamāṃ jāśe ane jene ā sādhu ne ā sthānamāṃ prīti nahi thāya te karīne bījā lokane pāmaśe ne jene asad‌bhāva thāśe te bhūtayonine pāmaśe. $mo saṃga pyāra udāra sadā mana, nāma uccāra ahoniśa laihe; $saṃta sacce jagamāṃhī phire, tinakuṃ du:kha āya niraṃtara daihe; $brahmamuni bhagavaṃta kahe soya, moya bhajata puni narkameṃ jāhe. $(kīrtana muktāvali : nāśavaṃta deha viśe) 1 arci māraga= sūryano uttarāyaṇano mārga, tejavāḻo mārga, sācā jñānavāḻo mārga.$2 dhūmra māraga= dhumāḍiyā mārge, dhuṃdhaḻā aṃdhakāramaya mārge, sācā jñāna vinānā mārge.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(206) આવા સાધુનો સમાગમ થાય ત્યારે જીવના હૈયામાં ધર્મ આવે ને સાધુના ગુણ પણ આવે, માટે આ સાધુ ને આ સ્થાનમાં જેને સદ્‌ભાવ થાશે તે કરીને અક્ષરધામમાં જાશે અને જેને આ સાધુ ને આ સ્થાનમાં પ્રીતિ નહિ થાય તે કરીને બીજા લોકને પામશે ને જેને અસદ્‌ભાવ થાશે તે ભૂતયોનિને પામશે. $મો સંગ પ્યાર ઉદાર સદા મન, નામ ઉચ્ચાર અહોનિશ લૈહે; $સંત સચ્ચે જગમાંહી ફિરે, તિનકું દુ:ખ આય નિરંતર દૈહે; $બ્રહ્મમુનિ ભગવંત કહે સોય, મોય ભજત પુનિ નર્કમેં જાહે. $(કીર્તન મુક્તાવલિ : નાશવંત દેહ વિશે) 1 અર્ચિ મારગ= સૂર્યનો ઉત્તરાયણનો માર્ગ, તેજવાળો માર્ગ, સાચા જ્ઞાનવાળો માર્ગ.$2 ધૂમ્ર મારગ= ધુમાડિયા માર્ગે, ધુંધળા અંધકારમય માર્ગે, સાચા જ્ઞાન વિનાના માર્ગે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10205.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tyag, tapni vat ave</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10207.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koi jivne prabhu sathe </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '206');
+            localStorage.setItem('lastVisitedVatFile', 'ch10206.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

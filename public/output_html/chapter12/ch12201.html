@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શૂરવીર, ડાહ્યો, ધીરજવાન - Shuravir, dahyo, dhirajavan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shuravir, dahyo, dhirajavan</h1>
+                <div class="gujarati-title">શૂરવીર, ડાહ્યો, ધીરજવાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 201</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha vadi dvādaśīne divase svāmīe vāta karī je, $(201) śūravīra, ḍāhyo, dhīrajavāna ne buddhivāna to tene kahīe je, jeṇe je vāta dhārī hoya temāṃ vighna na āvavā de. tema mahārāja ne ā sādhuno evo ṭharāva karavo. temāṃ nāmīe sahita sarvoparī upāsanā, jñāna, bhajana, smaraṇa svāminārāyaṇanuṃ karavuṃ evo ṭharāva dṛḍha kare te bhakta ḍāhyo che ne akṣarabrahma je ā sādhu jemāṃ akhaṃḍa mahārāja rahyā che tenā saṃbaṃdhathī pote brahmarūpa thaī mahārājanī akhaṃḍa upāsanā karavī, e ṭharāva karavānuṃ anusaṃdhāna niraṃtara rākhavuṃ; paṇa maratī maratī kāna halāve temāṃ kāṃī na thāya. ne jema hāthīne navarāve pachī dhūḍa māthe nākhe, tema be divasa dhyāna, bhajana karyuṃ ne pachī mūkī de, te evuṃ kahevāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ વદિ દ્વાદશીને દિવસે સ્વામીએ વાત કરી જે, $(201) શૂરવીર, ડાહ્યો, ધીરજવાન ને બુદ્ધિવાન તો તેને કહીએ જે, જેણે જે વાત ધારી હોય તેમાં વિઘ્ન ન આવવા દે. તેમ મહારાજ ને આ સાધુનો એવો ઠરાવ કરવો. તેમાં નામીએ સહિત સર્વોપરી ઉપાસના, જ્ઞાન, ભજન, સ્મરણ સ્વામિનારાયણનું કરવું એવો ઠરાવ દૃઢ કરે તે ભક્ત ડાહ્યો છે ને અક્ષરબ્રહ્મ જે આ સાધુ જેમાં અખંડ મહારાજ રહ્યા છે તેના સંબંધથી પોતે બ્રહ્મરૂપ થઈ મહારાજની અખંડ ઉપાસના કરવી, એ ઠરાવ કરવાનું અનુસંધાન નિરંતર રાખવું; પણ મરતી મરતી કાન હલાવે તેમાં કાંઈ ન થાય. ને જેમ હાથીને નવરાવે પછી ધૂડ માથે નાખે, તેમ બે દિવસ ધ્યાન, ભજન કર્યું ને પછી મૂકી દે, તે એવું કહેવાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12200.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jene tyagi thavu chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12202.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jivno evo svabhav</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '201');
+            localStorage.setItem('lastVisitedVatFile', 'ch12201.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

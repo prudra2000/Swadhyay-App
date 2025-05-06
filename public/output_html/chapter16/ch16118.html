@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગૃહસ્થ છે તે આજ્ઞાએ  - Gruhasth chhe te agnae</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gruhasth chhe te agnae</h1>
+                <div class="gujarati-title">ગૃહસ્થ છે તે આજ્ઞાએ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 118</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(118) gṛhastha che te ājñāe karīne strī rākhe che, rūpiyā-meḍī rākhe che ne bādha nathī lāgato. māṭe ājñā bhaḻī eṭale kāṃī bādha na kare ne bījāne bādha kare. ne jene kartavya sāmī najara nahi te ḍāhyo nahi ne bījī so so kriyāo kare paṇa potānuṃ kartavya hoya te na thāya ne jagatanā jīva che te gurumāṃ badhā doṣa hoya tevāne paṇa guru mānīne beṭhā che te mūrakha che ne mūrakhe to ‘dūdhe dhoyā koyalā ujalā na hoyalā’ te jevuṃ karyuṃ ne gurunuṃ lakṣaṇa śuṃ ? je kāmādika śatru jitāve ne ā to mūḻagā vadhārī dīdhā, te śenā guru kahevāya ?@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(118) ગૃહસ્થ છે તે આજ્ઞાએ કરીને સ્ત્રી રાખે છે, રૂપિયા-મેડી રાખે છે ને બાધ નથી લાગતો. માટે આજ્ઞા ભળી એટલે કાંઈ બાધ ન કરે ને બીજાને બાધ કરે. ને જેને કર્તવ્ય સામી નજર નહિ તે ડાહ્યો નહિ ને બીજી સો સો ક્રિયાઓ કરે પણ પોતાનું કર્તવ્ય હોય તે ન થાય ને જગતના જીવ છે તે ગુરુમાં બધા દોષ હોય તેવાને પણ ગુરુ માનીને બેઠા છે તે મૂરખ છે ને મૂરખે તો ‘દૂધે ધોયા કોયલા ઉજલા ન હોયલા’ તે જેવું કર્યું ને ગુરુનું લક્ષણ શું ? જે કામાદિક શત્રુ જિતાવે ને આ તો મૂળગા વધારી દીધા, તે શેના ગુરુ કહેવાય ?@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16117.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharajani nadi ramdase</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16119.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ne marane aishvary</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '118');
+            localStorage.setItem('lastVisitedVatFile', 'ch16118.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

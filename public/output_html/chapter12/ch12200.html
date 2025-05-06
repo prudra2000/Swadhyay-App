@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેને ત્યાગી થાવું છે  - Jene tyagi thavu chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jene tyagi thavu chhe</h1>
+                <div class="gujarati-title">જેને ત્યાગી થાવું છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 200</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(200) jene tyāgī thāvuṃ che tene koṇa rokanāruṃ che ? te daśa-vīsa vāra bhāgīe eṭale pharī gharanā teḍavā na āve. amadāvādamāṃ mahārāja lāḍu pīrasatā hatā, temāṃthī sādhue lāḍu saṃtāḍyā, ne pachī mahārājane kahyuṃ je, ‘lāḍu thaī rahyā !’ te sāṃbhaḻī trāṃsa mūkīne mahārāja vahyā gayā. bīje divasa ghumaṭamāṃ sādhu lāḍu vaheṃcī khātā hatā tyāṃ ame gayā, tyāre amārī āgaḻa dharyā. pachī samādhivāḻāe amane kahyuṃ je, ‘meṃ kāle samādhimāṃ sādhune lāḍu letāṃ dīṭhā hatā.’ tyāre ame kahyuṃ je, ‘dhūḍa paḍī tārī samādhimāṃ ! kāle mahārājane kema kahyuṃ nahi ? ane kahyuṃ hota to mahārāja rājī thāta. tārī samādhi śuṃ kāma āvī ?’ ema kahī ame lāḍu phagāvī vahyā gayā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(200) જેને ત્યાગી થાવું છે તેને કોણ રોકનારું છે ? તે દશ-વીસ વાર ભાગીએ એટલે ફરી ઘરના તેડવા ન આવે. અમદાવાદમાં મહારાજ લાડુ પીરસતા હતા, તેમાંથી સાધુએ લાડુ સંતાડ્યા, ને પછી મહારાજને કહ્યું જે, ‘લાડુ થઈ રહ્યા !’ તે સાંભળી ત્રાંસ મૂકીને મહારાજ વહ્યા ગયા. બીજે દિવસ ઘુમટમાં સાધુ લાડુ વહેંચી ખાતા હતા ત્યાં અમે ગયા, ત્યારે અમારી આગળ ધર્યા. પછી સમાધિવાળાએ અમને કહ્યું જે, ‘મેં કાલે સમાધિમાં સાધુને લાડુ લેતાં દીઠા હતા.’ ત્યારે અમે કહ્યું જે, ‘ધૂડ પડી તારી સમાધિમાં ! કાલે મહારાજને કેમ કહ્યું નહિ ? અને કહ્યું હોત તો મહારાજ રાજી થાત. તારી સમાધિ શું કામ આવી ?’ એમ કહી અમે લાડુ ફગાવી વહ્યા ગયા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12199.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Biji vatu avade</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12201.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shuravir, dahyo, dhirajavan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '200');
+            localStorage.setItem('lastVisitedVatFile', 'ch12200.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કારખાનાં કરવાની રીત - Karakhana karavani rit</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Karakhana karavani rit</h1>
+                <div class="gujarati-title">કારખાનાં કરવાની રીત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 122</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(122) kārakhānāṃ karavānī rīta mahārāje kahela je, ‘sāvaja hoya te divasamāṃ traṇa , ne temāṃ āhāra maḻe te khāya ne che te to ākho divasa doḍatā phare. tema kārakhānuṃ karavuṃ te sāvajanī peṭhe eka mahino karavuṃ ne pachī pāchuṃ cha mahine ke varasa dahāḍe bījuṃ karavuṃ, paṇa nāraḍāṃnī peṭhe niraṃtara bāre māsa na karavuṃ.’ ema kahyuṃ hatuṃ.@ 1 talapuṃ nākhe= śikāra karavā chalāṃga māravī te. $2 nāraḍāṃ= varūnī eka jāta. (ba.va.)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(122) કારખાનાં કરવાની રીત મહારાજે કહેલ જે, ‘સાવજ હોય તે દિવસમાં ત્રણ , ને તેમાં આહાર મળે તે ખાય ને છે તે તો આખો દિવસ દોડતા ફરે. તેમ કારખાનું કરવું તે સાવજની પેઠે એક મહિનો કરવું ને પછી પાછું છ મહિને કે વરસ દહાડે બીજું કરવું, પણ નારડાંની પેઠે નિરંતર બારે માસ ન કરવું.’ એમ કહ્યું હતું.@ 1 તલપું નાખે= શિકાર કરવા છલાંગ મારવી તે. $2 નારડાં= વરૂની એક જાત. (બ.વ.)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2121.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mota sadhu sathe jiva</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2123.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pratilompane hrudayama sankalp</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '122');
+            localStorage.setItem('lastVisitedVatFile', 'ch2122.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

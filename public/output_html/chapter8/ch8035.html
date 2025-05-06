@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અધ્યાત્મવાર્તામાં પુરુષોત્તમ - Adhyatmvartama purushottam</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Adhyatmvartama purushottam</h1>
+                <div class="gujarati-title">અધ્યાત્મવાર્તામાં પુરુષોત્તમ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.8</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 35</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(35) puruṣottama bhagavāna, mūḻaakṣara-akṣarabrahma, māyā, īśrvara ane jīva e pāṃcanā anvaya, vyatirekapaṇānī vikti yathārtha samajātī nathī, tethī bhramī javāya che. sāmānya rīte jīva, īśrvara, māyā ne brahma e cāra bhedamāṃ śaṃkā thātī nathī; paṇa pāṃcamo bheda samajī śakāto nathī. śāstro bahudhā mūḻapuruṣane ja puruṣottamabrahma ke akṣarabrahma tarīke varṇave che. $(bhagavad gītā : 15/16) $artha :- ā lokamāṃ kṣara-nāśavaṃta ane akṣara-avināśī evā be puruṣo che. temāṃ sarva bhūto e nāśavaṃta puruṣa che. temanāmāṃ rahelo je aṃtaryāmī (kūṭastha) puruṣa te akṣara-avināśī kahevāya che. 1 adhyātmavārtāmāṃ= ātmā-paramātmāsaṃbaṃdhī jñānamāṃ- brahmajñānamāṃ - ātmajñānamāṃ. $2 nirannamukta= annanī jene jarūriyāta nathī evī vyakti.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(35) પુરુષોત્તમ ભગવાન, મૂળઅક્ષર-અક્ષરબ્રહ્મ, માયા, ઈશ્ર્વર અને જીવ એ પાંચના અન્વય, વ્યતિરેકપણાની વિક્તિ યથાર્થ સમજાતી નથી, તેથી ભ્રમી જવાય છે. સામાન્ય રીતે જીવ, ઈશ્ર્વર, માયા ને બ્રહ્મ એ ચાર ભેદમાં શંકા થાતી નથી; પણ પાંચમો ભેદ સમજી શકાતો નથી. શાસ્ત્રો બહુધા મૂળપુરુષને જ પુરુષોત્તમબ્રહ્મ કે અક્ષરબ્રહ્મ તરીકે વર્ણવે છે. $(ભગવદ્ ગીતા : 15/16) $અર્થ :- આ લોકમાં ક્ષર-નાશવંત અને અક્ષર-અવિનાશી એવા બે પુરુષો છે. તેમાં સર્વ ભૂતો એ નાશવંત પુરુષ છે. તેમનામાં રહેલો જે અંતર્યામી (કૂટસ્થ) પુરુષ તે અક્ષર-અવિનાશી કહેવાય છે. 1 અધ્યાત્મવાર્તામાં= આત્મા-પરમાત્માસંબંધી જ્ઞાનમાં- બ્રહ્મજ્ઞાનમાં - આત્મજ્ઞાનમાં. $2 નિરન્નમુક્ત= અન્નની જેને જરૂરિયાત નથી એવી વ્યક્તિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter8/ch8034.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanna svarupnu nirupan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter8/ch8036.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa panchabhutnu sharir</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '8');
+            localStorage.setItem('lastVisitedVat', '35');
+            localStorage.setItem('lastVisitedVatFile', 'ch8035.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

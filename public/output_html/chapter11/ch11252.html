@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે આદ્રેજમાં દિવાળી  - Maharaje adrejma divali</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje adrejma divali</h1>
+                <div class="gujarati-title">મહારાજે આદ્રેજમાં દિવાળી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 252</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(252) mahārāje ādrejamāṃ divāḻī karī hatī tyāre icchārāma nāmano haribhakta ghoḍīe caḍīne mahārājane darśane āvato hato. te ghoḍī gāma bhaṇī tāṇe ne icchārāmane mahārāja pāse āvavuṃ. te tāṇakheṃca joī mahārāje be pāḻā mokalyā ne kahyuṃ ke, ‘ghoḍīne mārīne āṃhīṃ laī āvo.’ pachī te laī āvyā. ema nidrā che te sūvānī kora tāṇe che ne bhagavānanā bhakta che tene mahārājanāṃ darśana karavānī kheṃca rahe che. pahora rāte ūṭhatā haśe tene kāṃī nahi ane traṇa ṭāṇāṃ khāto hato tene be ṭāṇāṃ khāvā maḻe te kaṭhaṇa paḍe; paṇa je eka ṭāṇuṃ khāto hoya tene kāṃī nahi. tema je pahora rāta sudhī jāge tene ūṃgha pīḍe nahi, paṇa samī sāṃjathī sūtā hoya tene kaṭhaṇa che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(252) મહારાજે આદ્રેજમાં દિવાળી કરી હતી ત્યારે ઇચ્છારામ નામનો હરિભક્ત ઘોડીએ ચડીને મહારાજને દર્શને આવતો હતો. તે ઘોડી ગામ ભણી તાણે ને ઇચ્છારામને મહારાજ પાસે આવવું. તે તાણખેંચ જોઈ મહારાજે બે પાળા મોકલ્યા ને કહ્યું કે, ‘ઘોડીને મારીને આંહીં લઈ આવો.’ પછી તે લઈ આવ્યા. એમ નિદ્રા છે તે સૂવાની કોર તાણે છે ને ભગવાનના ભક્ત છે તેને મહારાજનાં દર્શન કરવાની ખેંચ રહે છે. પહોર રાતે ઊઠતા હશે તેને કાંઈ નહિ અને ત્રણ ટાણાં ખાતો હતો તેને બે ટાણાં ખાવા મળે તે કઠણ પડે; પણ જે એક ટાણું ખાતો હોય તેને કાંઈ નહિ. તેમ જે પહોર રાત સુધી જાગે તેને ઊંઘ પીડે નહિ, પણ સમી સાંજથી સૂતા હોય તેને કઠણ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11251.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chyavanni pethe bhalene</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11253.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sant sukhi sansarme</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '252');
+            localStorage.setItem('lastVisitedVatFile', 'ch11252.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

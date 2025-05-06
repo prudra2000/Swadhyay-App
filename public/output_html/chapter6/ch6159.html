@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અહો ! જુઓને, પરદેશથી - Aho! Juone, paradeshthi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aho! Juone, paradeshthi</h1>
+                <div class="gujarati-title">અહો ! જુઓને, પરદેશથી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 159</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(159) aho ! juone, paradeśathī vātuṃ sāṃbhaḻavā āve che ne ā āṃhīṃnā meḍe ne bīje beṭhā rahe che; te śuṃ samajyā ? kharekharo thaīne sādhumāṃ vaḻage to kāmādika śatru baḻī jāya ne bhagavānamāṃ joḍāya ne jene khāvā maḻatuṃ hoya ne bhagavānane na bhaje e jevo koī pāpī nahi, adharmī nahi, mūrakha nahi ne aṇasamaju nahīṃ. aho! āvā mahārāja maḻyā ne evī khoṭa rahī jāya che, e jevuṃ śuṃ che ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૫૯) અહો ! જુઓને, પરદેશથી વાતું સાંભળવા આવે છે ને આ આંહીંના મેડે ને બીજે બેઠા રહે છે; તે શું સમજ્યા ? ખરેખરો થઈને સાધુમાં વળગે તો કામાદિક શત્રુ બળી જાય ને ભગવાનમાં જોડાય ને જેને ખાવા મળતું હોય ને ભગવાનને ન ભજે એ જેવો કોઈ પાપી નહિ, અધર્મી નહિ, મૂરખ નહિ ને અણસમજુ નહીં. અહો! આવા મહારાજ મળ્યા ને એવી ખોટ રહી જાય છે, એ જેવું શું છે ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6158.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek var Maharaje ubha</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6160.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jiv to gharma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '159');
+            localStorage.setItem('lastVisitedVatFile', 'ch6159.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

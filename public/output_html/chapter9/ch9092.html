@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રામદાસજીભાઈ કહે - Ramadasjibhai kahe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ramadasjibhai kahe</h1>
+                <div class="gujarati-title">રામદાસજીભાઈ કહે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 92</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(92) rāmadāsajībhāī kahe, ‘tyāgīne eka roṭalānī bhūkha rākhīne sūvuṃ.’ ne ā to māthuṃ na caḍyuṃ hoya toya kaheśe je caḍyuṃ che. te ajayānaṃda copaḍīne bese, pachī koī kriyā cīṃdhe to kaheśe je, ‘māṃdo chuṃ.’ vaḻī umānī vāta karī je tenī mā kahe je, ‘umā ! ā gharamāṃ .’ to kahe je, ‘merī to kamara dukhatī hai.’ pachī kahe je, ‘umā ! pāṇī kā maṭakā laī āva.’ to kahe je, ‘merā to śira dukhatā hai.’ pachī kahe je, ‘umā ! kucha khāyegī ?’ to kahe je, ‘hāṃ hāṃ, baḍī tagārī merī !’ ema kriyā karavāmāṃ bahānāṃ kāḍhe ne pattaraṭāṇe sau morethī taiyāra thāya, evī jīvamāṃ bharī che.@ 1 tīkhāṃ= marī-sūṃṭha. $2 buvārī kāḍhya= vāsīduṃ kāḍhavānī kriyā. $3 nāgaḍadāī= nāgāī-luccāī-naphphaṭāī-dāṃḍāī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(92) રામદાસજીભાઈ કહે, ‘ત્યાગીને એક રોટલાની ભૂખ રાખીને સૂવું.’ ને આ તો માથું ન ચડ્યું હોય તોય કહેશે જે ચડ્યું છે. તે અજયાનંદ ચોપડીને બેસે, પછી કોઈ ક્રિયા ચીંધે તો કહેશે જે, ‘માંદો છું.’ વળી ઉમાની વાત કરી જે તેની મા કહે જે, ‘ઉમા ! આ ઘરમાં .’ તો કહે જે, ‘મેરી તો કમર દુખતી હૈ.’ પછી કહે જે, ‘ઉમા ! પાણી કા મટકા લઈ આવ.’ તો કહે જે, ‘મેરા તો શિર દુખતા હૈ.’ પછી કહે જે, ‘ઉમા ! કુછ ખાયેગી ?’ તો કહે જે, ‘હાં હાં, બડી તગારી મેરી !’ એમ ક્રિયા કરવામાં બહાનાં કાઢે ને પત્તરટાણે સૌ મોરેથી તૈયાર થાય, એવી જીવમાં ભરી છે.@ 1 તીખાં= મરી-સૂંઠ. $2 બુવારી કાઢ્ય= વાસીદું કાઢવાની ક્રિયા. $3 નાગડદાઈ= નાગાઈ-લુચ્ચાઈ-નફ્ફટાઈ-દાંડાઈ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9091.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetala jene vishay </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9093.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mandharyu muke e </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '92');
+            localStorage.setItem('lastVisitedVatFile', 'ch9092.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

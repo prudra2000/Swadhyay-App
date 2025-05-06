@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(276) dhyāna karatāṃ bījuṃ kare to dhyāna na thāya; tema ja bhaṇavānuṃ jāṇavuṃ. upale ḍoḻe kāṃī na thāya, ekāṃtika paṇa na thāvāya. te to, $aṃtara kapaṭa meṭake apanā, le unakuṃ mana dīje. ho 0 $(kīrtana muktāvali : 142) $vyotata jyuṃ darajī paṭa phārake, kāṣṭha kuṃ bāḍha sutāra banāve; $pātra kulāla śīlākara pāhana, loha luhāra sudhāra hi lāve; $yuṃ śiṣyakuṃ gurudeva sudhārata, so brahmānaṃda ānaṃda pāve. $(kīrtana muktāvali : guru ko aṃga) 1 paṇa leta nahi= pratijñā-ṭeka leta nahi. $2 kāpaḍīne veśe= sādhu-saṃnyāsīnā veśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(276) ધ્યાન કરતાં બીજું કરે તો ધ્યાન ન થાય; તેમ જ ભણવાનું જાણવું. ઉપલે ડોળે કાંઈ ન થાય, એકાંતિક પણ ન થાવાય. તે તો, $અંતર કપટ મેટકે અપના, લે ઉનકું મન દીજે. હો 0 $(કીર્તન મુક્તાવલિ : 142) $વ્યોતત જ્યું દરજી પટ ફારકે, કાષ્ઠ કું બાઢ સુતાર બનાવે; $પાત્ર કુલાલ શીલાકર પાહન, લોહ લુહાર સુધાર હિ લાવે; $યું શિષ્યકું ગુરુદેવ સુધારત, સો બ્રહ્માનંદ આનંદ પાવે. $(કીર્તન મુક્તાવલિ : ગુરુ કો અંગ) 1 પણ લેત નહિ= પ્રતિજ્ઞા-ટેક લેત નહિ. $2 કાપડીને વેશે= સાધુ-સંન્યાસીના વેશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

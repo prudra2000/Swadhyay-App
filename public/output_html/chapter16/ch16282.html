@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રેમજી સુતારને પ્રથમ - Premji sutarne pratham</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Premji sutarne pratham</h1>
+                <div class="gujarati-title">પ્રેમજી સુતારને પ્રથમ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 282</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(282) premajī sutārane prathama bhīḍa jevuṃ te mahārāje roṭalā bheḻā karyā. tenī vāta karī je, gaḍhaḍāmāṃ gurjara sutāra premajī hatā teno vyavahāra bahu durbaḻa, te mahārāja kahe, ‘kema che premajī ?’ tyāre hātha joḍī kahe, ‘mahārāja roṭalā, lugaḍāṃnuṃ pūruṃ thātuṃ nathī. māṃḍa māṃḍa pūruṃ thāya che.’ mahārāja kahe, ‘kaṃṭhī, māḻāo utāro (banāvo) to tamāro nirvāha cāle ne ame saṃta, haribhaktone paheravānī ājñā karelī che.’ tyāre premajī kahe, ‘mane āvaḍe nahi.’ tyāre mahārāje traṇa pāṃkhaḍīnī śāraḍī karāvavānuṃ batāvyuṃ ke luhāra pāse āvī karāvī utāro to āvaḍaśe ne pache śāraḍī karāvīne kācalīnī kaṃṭhī utārī mahārājane āpī. te joī mahārāja ne saṃta, haribhakto sahu rājī thayā. pachī mahārāja kahe, ‘kācalīnī na paherāya tuḻasī ke sukhaḍanī hoya to paherāya, māṭe tenī banāvo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(282) પ્રેમજી સુતારને પ્રથમ ભીડ જેવું તે મહારાજે રોટલા ભેળા કર્યા. તેની વાત કરી જે, ગઢડામાં ગુર્જર સુતાર પ્રેમજી હતા તેનો વ્યવહાર બહુ દુર્બળ, તે મહારાજ કહે, ‘કેમ છે પ્રેમજી ?’ ત્યારે હાથ જોડી કહે, ‘મહારાજ રોટલા, લુગડાંનું પૂરું થાતું નથી. માંડ માંડ પૂરું થાય છે.’ મહારાજ કહે, ‘કંઠી, માળાઓ ઉતારો (બનાવો) તો તમારો નિર્વાહ ચાલે ને અમે સંત, હરિભક્તોને પહેરવાની આજ્ઞા કરેલી છે.’ ત્યારે પ્રેમજી કહે, ‘મને આવડે નહિ.’ ત્યારે મહારાજે ત્રણ પાંખડીની શારડી કરાવવાનું બતાવ્યું કે લુહાર પાસે આવી કરાવી ઉતારો તો આવડશે ને પછે શારડી કરાવીને કાચલીની કંઠી ઉતારી મહારાજને આપી. તે જોઈ મહારાજ ને સંત, હરિભક્તો સહુ રાજી થયા. પછી મહારાજ કહે, ‘કાચલીની ન પહેરાય તુળસી કે સુખડની હોય તો પહેરાય, માટે તેની બનાવો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16281.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketalik janapanani vatu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16283.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mati ho mand, khai khai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '282');
+            localStorage.setItem('lastVisitedVatFile', 'ch16282.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

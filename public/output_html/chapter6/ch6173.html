@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સાધુને કોઈકે પૂછ્યું જે - Sadhune koike puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sadhune koike puchhyu je</h1>
+                <div class="gujarati-title">સાધુને કોઈકે પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 173</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(173) sādhune koīke pūchyuṃ je, ‘svāminārāyaṇa pragaṭyā teno śuṃ abhiprāya che ?’ te to mahārāje kahyuṃ che je, “jīvuṃne mūḻa ajñāna che teno nāśa karīne akṣaradhāmamāṃ laī javā, e abhiprāya che.” te upara dṛṣṭāṃta che je, eka uṃdarīyuṃ varasa thayuṃ, te uṃdara khetara khāīne baḻiyā thayā. pachī temaṇe vicāra karyo je, āpaṇā śatru mīṃdaḍāṃ che tene mārī nākhīe. pachī to thoḍāka kahe, ame enuṃ peṭa khāśuṃ; thoḍāka kahe, ame paga; thoḍāka kahe, ame pūchaḍuṃ; paṇa koīe moḍhānuṃ na kahyuṃ, ema che; paṇa koī moḍhe caḍīne pūchatuṃ nathī. $dāvalathī dedā bhalā jeṇe paḍhīne kīdhā pīra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૭૩) સાધુને કોઈકે પૂછ્યું જે, ‘સ્વામિનારાયણ પ્રગટ્યા તેનો શું અભિપ્રાય છે ?’ તે તો મહારાજે કહ્યું છે જે, “જીવુંને મૂળ અજ્ઞાન છે તેનો નાશ કરીને અક્ષરધામમાં લઈ જવા, એ અભિપ્રાય છે.” તે ઉપર દૃષ્ટાંત છે જે, એક ઉંદરીયું વરસ થયું, તે ઉંદર ખેતર ખાઈને બળિયા થયા. પછી તેમણે વિચાર કર્યો જે, આપણા શત્રુ મીંદડાં છે તેને મારી નાખીએ. પછી તો થોડાક કહે, અમે એનું પેટ ખાશું; થોડાક કહે, અમે પગ; થોડાક કહે, અમે પૂછડું; પણ કોઈએ મોઢાનું ન કહ્યું, એમ છે; પણ કોઈ મોઢે ચડીને પૂછતું નથી. $દાવલથી દેદા ભલા જેણે પઢીને કીધા પીર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6172.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aho! Bhadarave mahine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6174.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek haribhakt khambhatthi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '173');
+            localStorage.setItem('lastVisitedVatFile', 'ch6173.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

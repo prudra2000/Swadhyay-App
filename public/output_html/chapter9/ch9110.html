@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સ્ત્રીઓને સત્સંગ કરાવવાની - Strione satsang karavavani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Strione satsang karavavani</h1>
+                <div class="gujarati-title">સ્ત્રીઓને સત્સંગ કરાવવાની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 110</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(110) strīone satsaṃga karāvavānī lālaca na ja rākhavī. $(śrīmad bhāgavata : 7/12/9) $artha : kharekhara suṃdara strī agni samāna che ane puruṣa ghī bharelā ghaḍā jevo che āthī ane ekāṃtamāṃ to ene potānī kdhayā (putrī) sāthe paṇa rahevuṃ joīe nahi tathā bīje paṇa jeṭaluṃ prayojana hoya eṭalī vāra sudhī ja rahevuṃ. $(satsaṃgijīvana : pra.3, a.59; manusmṛti : 2/215) $artha : mātā, bahena, putrī sāthe ekāṃtamāṃ na besavuṃ. prabala indriya samūha vidvānane paṇa ākarṣe che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(110) સ્ત્રીઓને સત્સંગ કરાવવાની લાલચ ન જ રાખવી. $(શ્રીમદ્ ભાગવત : 7/12/9) $અર્થ : ખરેખર સુંદર સ્ત્રી અગ્નિ સમાન છે અને પુરુષ ઘી ભરેલા ઘડા જેવો છે આથી અને એકાંતમાં તો એને પોતાની ક્ધયા (પુત્રી) સાથે પણ રહેવું જોઈએ નહિ તથા બીજે પણ જેટલું પ્રયોજન હોય એટલી વાર સુધી જ રહેવું. $(સત્સંગિજીવન : પ્ર.3, અ.59; મનુસ્મૃતિ : 2/215) $અર્થ : માતા, બહેન, પુત્રી સાથે એકાંતમાં ન બેસવું. પ્રબલ ઇન્દ્રિય સમૂહ વિદ્વાનને પણ આકર્ષે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9109.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gayna vachhadane </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9111.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gnan vinano prem</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '110');
+            localStorage.setItem('lastVisitedVatFile', 'ch9110.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

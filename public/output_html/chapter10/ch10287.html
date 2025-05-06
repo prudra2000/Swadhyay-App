@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જ્ઞાન વિના બધું અધૂરું - Gnan vina badhu adhuru</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gnan vina badhu adhuru</h1>
+                <div class="gujarati-title">જ્ઞાન વિના બધું અધૂરું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 287</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(287) jñāna vinā badhuṃ adhūruṃ che, chokaruṃ hoya tene mā-bāpamāṃ prīti hoya paṇa jñāna nahi. tema koī hetane laīne saṃta sāthe prīti to thāya, paṇa viśrvāsa nahi. rādhikājīne kajiyo thayo; kāraṇa ke, ajñāna; paṇa gopāḻānaṃdasvāmīne to dhoḻāṃ paherāvyānuṃ karyuṃ to paṇa kajiyo na karyo. māṭe ā jñāna che te sarvathī adhika che. sayājīrāvano dīkaro thayo ne mūḻā sāru rove, tema āśaro thayo to paṇa jñāna vinā to kāṃī nahi ! baḻadeva, akrūra ne satyabhāmāne kajiyo thayo ne rukmiṇīne na thayo; māṭe jñānīne adhika kahyo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(287) જ્ઞાન વિના બધું અધૂરું છે, છોકરું હોય તેને મા-બાપમાં પ્રીતિ હોય પણ જ્ઞાન નહિ. તેમ કોઈ હેતને લઈને સંત સાથે પ્રીતિ તો થાય, પણ વિશ્ર્વાસ નહિ. રાધિકાજીને કજિયો થયો; કારણ કે, અજ્ઞાન; પણ ગોપાળાનંદસ્વામીને તો ધોળાં પહેરાવ્યાનું કર્યું તો પણ કજિયો ન કર્યો. માટે આ જ્ઞાન છે તે સર્વથી અધિક છે. સયાજીરાવનો દીકરો થયો ને મૂળા સારુ રોવે, તેમ આશરો થયો તો પણ જ્ઞાન વિના તો કાંઈ નહિ ! બળદેવ, અક્રૂર ને સત્યભામાને કજિયો થયો ને રુક્મિણીને ન થયો; માટે જ્ઞાનીને અધિક કહ્યો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10286.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Balak hoy te pratham</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10288.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek var Maharaj</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '287');
+            localStorage.setItem('lastVisitedVatFile', 'ch10287.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

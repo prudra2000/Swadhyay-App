@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનમાં જોડાણા હોય ને  - Bhagavanma jodana hoya ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanma jodana hoya ne</h1>
+                <div class="gujarati-title">ભગવાનમાં જોડાણા હોય ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 7</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(7) bhagavānamāṃ joḍāṇā hoya ne bhagavānanī ājñāmāṃ rahetā hoya ne bhagavānanī marajīne jāṇatā hoya, evā sādhu sāthe potānā jīvane bāṃdhavo; te thakī dharma, jñāna, vairāgya, bhakti ane mahimā sahita e sarve guṇa pamāya paṇa te vinā kyāṃthī pamāya ? ne jevā sādhune seve tevā guṇa āve; te mumukṣu hoya te paṇa ghaṭī jāya ne pāmara hoya te vadhī jāya, māṭe sarvenuṃ kāraṇa saṃga che. $( vaca.ga.aṃ. 38, vaca.lo. 6 )@ 1 upāsanā= iṣṭadevanā svarūpākāra aṃta:karaṇanī vṛtti, jethī temanī vāta samajī te pramāṇe vartavuṃ te; ne je thakī ātmānuṃ āsana māyānā lokamāṃthī ūṭhīne upara akṣarādhipati samīpe javā pāme te ja upāsanā.;</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(7) ભગવાનમાં જોડાણા હોય ને ભગવાનની આજ્ઞામાં રહેતા હોય ને ભગવાનની મરજીને જાણતા હોય, એવા સાધુ સાથે પોતાના જીવને બાંધવો; તે થકી ધર્મ, જ્ઞાન, વૈરાગ્ય, ભક્તિ અને મહિમા સહિત એ સર્વે ગુણ પમાય પણ તે વિના ક્યાંથી પમાય ? ને જેવા સાધુને સેવે તેવા ગુણ આવે; તે મુમુક્ષુ હોય તે પણ ઘટી જાય ને પામર હોય તે વધી જાય, માટે સર્વેનું કારણ સંગ છે. $( વચ.ગ.અં. 38, વચ.લો. 6 )@ 1 ઉપાસના= ઇષ્ટદેવના સ્વરૂપાકાર અંત:કરણની વૃત્તિ, જેથી તેમની વાત સમજી તે પ્રમાણે વર્તવું તે; ને જે થકી આત્માનું આસન માયાના લોકમાંથી ઊઠીને ઉપર અક્ષરાધિપતિ સમીપે જવા પામે તે જ ઉપાસના.;</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1006.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Motane sevya hoy ne tena gun</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1008.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Indriyaram hoya te dabay </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '7');
+            localStorage.setItem('lastVisitedVatFile', 'ch1007.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વૈરાગ્ય હોય, ધર્મ હોય - Vairagy hoy, dharm hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vairagy hoy, dharm hoy</h1>
+                <div class="gujarati-title">વૈરાગ્ય હોય, ધર્મ હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 45</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(45) vairāgya hoya, dharma hoya, bhakti hoya te bījāne śīkhavavuṃ. te jhāḍa hoya te paṇa potānī sugaṃdhī āpe tyāre sādhu potānā guṇa kema na āpe? ne kema pravartāvyā vinā rahe ? ne marīne jenī bheguṃ rahevuṃ tenī hāre hamaṇāṃ jīvatāṃ na rahevāya te kevuṃ viparīta ? ne deha sāthe ne indriyuṃ sāthe vera nahi ne ā sādhu sāthe vera ! māṭe besavānī ḍāḻa kāpe evo jīva che. ne amāro raṃtidevanā jevo svabhāva che, te amāre du:kha thāya, paṇa bhagavānanā bhaktane sukhiyā karavā; māṭe amārī bheḻā rahetā hoya tene to sukhiyā karavā che.@ 1 mara= bhale.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(45) વૈરાગ્ય હોય, ધર્મ હોય, ભક્તિ હોય તે બીજાને શીખવવું. તે ઝાડ હોય તે પણ પોતાની સુગંધી આપે ત્યારે સાધુ પોતાના ગુણ કેમ ન આપે? ને કેમ પ્રવર્તાવ્યા વિના રહે ? ને મરીને જેની ભેગું રહેવું તેની હારે હમણાં જીવતાં ન રહેવાય તે કેવું વિપરીત ? ને દેહ સાથે ને ઇન્દ્રિયું સાથે વેર નહિ ને આ સાધુ સાથે વેર ! માટે બેસવાની ડાળ કાપે એવો જીવ છે. ને અમારો રંતિદેવના જેવો સ્વભાવ છે, તે અમારે દુ:ખ થાય, પણ ભગવાનના ભક્તને સુખિયા કરવા; માટે અમારી ભેળા રહેતા હોય તેને તો સુખિયા કરવા છે.@ 1 મર= ભલે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12044.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanna sant vina</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12046.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nirvikalppane bhagavanni</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '45');
+            localStorage.setItem('lastVisitedVatFile', 'ch12045.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>લોયાનું 13મું વચનામૃત - Loyanu 13mu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Loyanu 13mu vachanamrut</h1>
+                <div class="gujarati-title">લોયાનું 13મું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 57</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(57) loyānuṃ 13muṃ vacanāmṛta vaṃcāvīne siddhāṃta karyuṃ je, ‘strī bheḻā rahīne to eka bhagavāna ja nirlepa rahe ane bījuṃ siddhāṃta e je, akṣaradhāmane viśe je bhagavāna rahyā che tevā koī bījāne na kahevāya ane anādi mūḻaakṣara che te jevā koī akṣaramuktane na kahevāya.’ ne tevā koīke jāṇyā ne koīke na jāṇyā ne āja paṇa ema dekhāya che je, keṭalākane e ghaḍa beṭhī che ne keṭalākane nathī beṭhī. ne ā je prāpti thaī che tenī khumārī rahetī nathī ne manuṣyabhāva āve che ne bhagavadīne viśe paṇa manuṣyabhāva āve che teṇe karīne vṛddhi pamātuṃ nathī, paṇa manuṣyākṛti dhāraṇa karī hoya tyāre bhagavānamāṃ manuṣyabhāva dekhāya ne moṭā sādhumāṃ paṇa manuṣyabhāva dekhāya. eka to jīvano satsaṃga che ne eka to mā-bāpano ke māyāno satsaṃga che paṇa satpuruṣanā samāgamamāṃthī sarve vāta samajāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(57) લોયાનું 13મું વચનામૃત વંચાવીને સિદ્ધાંત કર્યું જે, ‘સ્ત્રી ભેળા રહીને તો એક ભગવાન જ નિર્લેપ રહે અને બીજું સિદ્ધાંત એ જે, અક્ષરધામને વિશે જે ભગવાન રહ્યા છે તેવા કોઈ બીજાને ન કહેવાય અને અનાદિ મૂળઅક્ષર છે તે જેવા કોઈ અક્ષરમુક્તને ન કહેવાય.’ ને તેવા કોઈકે જાણ્યા ને કોઈકે ન જાણ્યા ને આજ પણ એમ દેખાય છે જે, કેટલાકને એ ઘડ બેઠી છે ને કેટલાકને નથી બેઠી. ને આ જે પ્રાપ્તિ થઈ છે તેની ખુમારી રહેતી નથી ને મનુષ્યભાવ આવે છે ને ભગવદીને વિશે પણ મનુષ્યભાવ આવે છે તેણે કરીને વૃદ્ધિ પમાતું નથી, પણ મનુષ્યાકૃતિ ધારણ કરી હોય ત્યારે ભગવાનમાં મનુષ્યભાવ દેખાય ને મોટા સાધુમાં પણ મનુષ્યભાવ દેખાય. એક તો જીવનો સત્સંગ છે ને એક તો મા-બાપનો કે માયાનો સત્સંગ છે પણ સત્પુરુષના સમાગમમાંથી સર્વે વાત સમજાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9056.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa satsangma to ghana </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9058.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanne marage to </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '57');
+            localStorage.setItem('lastVisitedVatFile', 'ch9057.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

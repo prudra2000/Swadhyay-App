@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેશવજીવનદાસજીએ સ્વામીને - Keshavjivandasjie swamine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Keshavjivandasjie swamine</h1>
+                <div class="gujarati-title">કેશવજીવનદાસજીએ સ્વામીને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 393</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(393) keśavajīvanadāsajīe svāmīne kahyuṃ je, ‘prāgajī vagere tamane mūḻaakṣara kahe che, te mane samajātuṃ nathī. ne huṃ viśrvāsī chuṃ te jema hoya tema kaho.’ tyāre svāmī kahe, ‘huṃ mūḻaakṣara chuṃ ema tuṃ jāṇa. ne bījo mūḻaakṣara haśe to māre ne tene paṃcāta che. tuṃ māro viśrvāsa rākha !’ ema be-traṇa vakhata kahyuṃ. (juo prakaraṇa 11nī vāta 124)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(393) કેશવજીવનદાસજીએ સ્વામીને કહ્યું જે, ‘પ્રાગજી વગેરે તમને મૂળઅક્ષર કહે છે, તે મને સમજાતું નથી. ને હું વિશ્ર્વાસી છું તે જેમ હોય તેમ કહો.’ ત્યારે સ્વામી કહે, ‘હું મૂળઅક્ષર છું એમ તું જાણ. ને બીજો મૂળઅક્ષર હશે તો મારે ને તેને પંચાત છે. તું મારો વિશ્ર્વાસ રાખ !’ એમ બે-ત્રણ વખત કહ્યું. (જુઓ પ્રકરણ 11ની વાત 124)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5392.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aksharnu tej dekhay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5394.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj swadham </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '393');
+            localStorage.setItem('lastVisitedVatFile', 'ch5393.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

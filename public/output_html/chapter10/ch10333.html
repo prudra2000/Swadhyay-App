@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>માન દે તે જ સારું લાગે - Man de te j saru lage</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Man de te j saru lage</h1>
+                <div class="gujarati-title">માન દે તે જ સારું લાગે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 333</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(333) māna de te ja sāruṃ lāge che, sāruṃ khādhānuṃ, sāruṃ lūgaḍuṃ te upara saheje ruci che, jyāṃ viṣayano jhājho joga tyāṃ sahu rahe. te bhajanānaṃdasvāmīne lāḍavā āpyā. maṃḍaḻamāṃ pāṃca śera, daśa śera baraphī to paḍī ja hoya, tevuṃ maṃḍaḻa kone na game ? ne suratamāṃ ekalā bhaṇavā jatā hatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(333) માન દે તે જ સારું લાગે છે, સારું ખાધાનું, સારું લૂગડું તે ઉપર સહેજે રુચિ છે, જ્યાં વિષયનો ઝાઝો જોગ ત્યાં સહુ રહે. તે ભજનાનંદસ્વામીને લાડવા આપ્યા. મંડળમાં પાંચ શેર, દશ શેર બરફી તો પડી જ હોય, તેવું મંડળ કોને ન ગમે ? ને સુરતમાં એકલા ભણવા જતા હતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10332.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gam terama Maharaje zoli</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10334.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Loyanu 17mu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '333');
+            localStorage.setItem('lastVisitedVatFile', 'ch10333.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

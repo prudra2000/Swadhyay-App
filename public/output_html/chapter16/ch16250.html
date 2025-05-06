@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાકે એવી ટેવ પાડી  - Ketalake evi tev padi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalake evi tev padi</h1>
+                <div class="gujarati-title">કેટલાકે એવી ટેવ પાડી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 250</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(250) keṭalāke evī ṭeva pāḍī che ke, vāhara vinā ūṃgha na āve ne amāre to jyāṃ sūīe tyāṃ nidrā āvī jāya. āpaṇe jo khāīne sūī raheśuṃ ne śikṣāpatrīmāṃ divase tyāgīne suvānī nā pāḍī che ne gharaḍāṃ thayā te suvāya ema manamukhī thaī sūī rahīe to āpaṇī keḍenā śuṃ karaśe ? māṭe khabaḍadāra rahejo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(250) કેટલાકે એવી ટેવ પાડી છે કે, વાહર વિના ઊંઘ ન આવે ને અમારે તો જ્યાં સૂઈએ ત્યાં નિદ્રા આવી જાય. આપણે જો ખાઈને સૂઈ રહેશું ને શિક્ષાપત્રીમાં દિવસે ત્યાગીને સુવાની ના પાડી છે ને ઘરડાં થયા તે સુવાય એમ મનમુખી થઈ સૂઈ રહીએ તો આપણી કેડેના શું કરશે ? માટે ખબડદાર રહેજો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16249.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Lava ne padashahni</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16251.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Balamukundanandswamini vat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '250');
+            localStorage.setItem('lastVisitedVatFile', 'ch16250.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હરિશંકરભાઈએ પૂછ્યું  - Harishankarbhaie puchhyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Harishankarbhaie puchhyu</h1>
+                <div class="gujarati-title">હરિશંકરભાઈએ પૂછ્યું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 163</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(163) hariśaṃkarabhāīe pūchyuṃ je, ‘have gopāḻānaṃdasvāmī jevā haśe ke nahi hoya ?’ tyāre kahe, ‘vācharuṃ hoya te gāyane dhāvīne baḻa pāme che, tema ā sādhu thakī baḻa pāmyā che evā ghaṇā che. jyāre macchavedha thayo tyāre arjuna kāpaḍīne veśe hatā te koīe jāṇyā nahi; paṇa jyāre dhanuṣya līdhuṃ ne macchavedha karyo tyāre droṇācārye jāṇyuṃ je rakhe arjuna hoya ? ne bījāne to kaḻyāmāṃ ya na āvyuṃ; tema evā kaḻāya nahi.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(163) હરિશંકરભાઈએ પૂછ્યું જે, ‘હવે ગોપાળાનંદસ્વામી જેવા હશે કે નહિ હોય ?’ ત્યારે કહે, ‘વાછરું હોય તે ગાયને ધાવીને બળ પામે છે, તેમ આ સાધુ થકી બળ પામ્યા છે એવા ઘણા છે. જ્યારે મચ્છવેધ થયો ત્યારે અર્જુન કાપડીને વેશે હતા તે કોઈએ જાણ્યા નહિ; પણ જ્યારે ધનુષ્ય લીધું ને મચ્છવેધ કર્યો ત્યારે દ્રોણાચાર્યે જાણ્યું જે રખે અર્જુન હોય ? ને બીજાને તો કળ્યામાં ય ન આવ્યું; તેમ એવા કળાય નહિ.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14162.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gajavela hoy teno ghat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14164.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aava santna darshan </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '163');
+            localStorage.setItem('lastVisitedVatFile', 'ch14163.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

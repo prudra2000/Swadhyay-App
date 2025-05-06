@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આકૃતિચિતિચાપલ્યરહિતા - Aakrutichitichapalyarahita</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aakrutichitichapalyarahita</h1>
+                <div class="gujarati-title">આકૃતિચિતિચાપલ્યરહિતા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 186</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(186) $ākuticiticāpalyarahitā niṣparigrahāḥ | $bodhane nipuṇā ātmaniṣṭhā: sarvopakāriṇa: || $(satsaṃgijīvana : 1/32/28) $artha :- śrīhari bhaktimātāne kahe che :‘he sati ! mumukṣuoe kevā saṃtane sevavā joīe ? te jeo karmendriyo ane jñānendriyonī capaḻatāe rahita arthāta viṣaya vāsanāo virahita, ātmahitamāṃ virodhī parigraha rahita, tattvabodha āpavāmāṃ pravīṇa, ātmāmāṃ ja eka niṣṭhāvāḻā (ātmārāma), sarva janono ā loka-paralokamāṃ upakāra karavānā svabhāvavāḻā hoya.’ 1 haḻa laga thāya= haḻa calāvī śakāya evuṃ thāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(186) $આકુતિચિતિચાપલ્યરહિતા નિષ્પરિગ્રહાઃ । $બોધને નિપુણા આત્મનિષ્ઠા: સર્વોપકારિણ: ॥ $(સત્સંગિજીવન : 1/32/28) $અર્થ :- શ્રીહરિ ભક્તિમાતાને કહે છે :‘હે સતિ ! મુમુક્ષુઓએ કેવા સંતને સેવવા જોઈએ ? તે જેઓ કર્મેન્દ્રિયો અને જ્ઞાનેન્દ્રિયોની ચપળતાએ રહિત અર્થાત વિષય વાસનાઓ વિરહિત, આત્મહિતમાં વિરોધી પરિગ્રહ રહિત, તત્ત્વબોધ આપવામાં પ્રવીણ, આત્મામાં જ એક નિષ્ઠાવાળા (આત્મારામ), સર્વ જનોનો આ લોક-પરલોકમાં ઉપકાર કરવાના સ્વભાવવાળા હોય.’ 1 હળ લગ થાય= હળ ચલાવી શકાય એવું થાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14185.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi kahe chhe mane kam</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14187.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tyagi thaya chhie pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '186');
+            localStorage.setItem('lastVisitedVatFile', 'ch14186.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

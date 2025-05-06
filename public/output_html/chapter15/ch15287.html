@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવને સંસૃતિ મટાડવી  - Jivne sansruti matadavi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivne sansruti matadavi</h1>
+                <div class="gujarati-title">જીવને સંસૃતિ મટાડવી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 287</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(287) jīvane saṃsṛti maṭāḍavī che, te jene kalyāṇano khapa hoya tene ā bhagavāna game che ne ṭharāva che te āgaḻa lāge che; te jema kṣatrīno ṭharāva che tema. pachī mūḻajīnī vāta karī je, āṃgaḻī kacarāṇī paṇa ara..ra na karyuṃ. tema āpaṇāmāṃ paṇa mokṣano khapa che tenuṃ baḻa juduṃ che. te ā saṃsāra śā sāru mūkyo che ? ema vicāre tyāre jaṇāya. te ‘bagadhyāna, mukharāma, koī kīsīkā nahi.’ māṭe dharma pāḻe tyāre ā satsaṃgamāṃ rahe ne bījo to satsaṃgī hoya paṇa ā to satsaṃgamāṃ āvato āvato āḻasī jāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(287) જીવને સંસૃતિ મટાડવી છે, તે જેને કલ્યાણનો ખપ હોય તેને આ ભગવાન ગમે છે ને ઠરાવ છે તે આગળ લાગે છે; તે જેમ ક્ષત્રીનો ઠરાવ છે તેમ. પછી મૂળજીની વાત કરી જે, આંગળી કચરાણી પણ અર..ર ન કર્યું. તેમ આપણામાં પણ મોક્ષનો ખપ છે તેનું બળ જુદું છે. તે આ સંસાર શા સારુ મૂક્યો છે ? એમ વિચારે ત્યારે જણાય. તે ‘બગધ્યાન, મુખરામ, કોઈ કીસીકા નહિ.’ માટે ધર્મ પાળે ત્યારે આ સત્સંગમાં રહે ને બીજો તો સત્સંગી હોય પણ આ તો સત્સંગમાં આવતો આવતો આળસી જાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15286.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tharav karya vina je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15288.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Meva, mithai, toparana</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '287');
+            localStorage.setItem('lastVisitedVatFile', 'ch15287.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

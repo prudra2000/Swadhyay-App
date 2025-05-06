@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>છેલ્લાનાં ૩૦માં - Chhellana 30ma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chhellana 30ma</h1>
+                <div class="gujarati-title">છેલ્લાનાં ૩૦માં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 250</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(250) chellānāṃ 30māṃ vacanāmṛtamāṃ kahyuṃ che je, ‘ā kṣaṇamāṃ ne ā paḻamāṃ marī javāśe, ema amāre niraṃtara anusaṃdhāna rahe che.’ e vaṃcāvīne svāmī kahe je, ‘mahārājane śuṃ karavuṃ che ? e to potānuṃ miṣa laīne āpaṇane śīkhave che.’ paṇa keṭalāka to jāṇe che je, ‘bhāī ! e to vāta mahārājanī !’ pachī eka jaṇe kahyuṃ je, ‘mahārājane śuṃ karavuṃ che ?’ eṭaluṃ laīe to levāya je, ‘sarvanā aṃtaramāṃ rahīne jouṃ chuṃ.’ te paṇa svāmī kahe, ‘moṭā sādhu paṇa aṃtaranuṃ jāṇe che, te keṭalākane kahī paṇa dīdhuṃ che ne vaḻī kahe che; paṇa viśrvāsa hoya tene ā badhī vātuṃ manāya ne bījā to kaheśe māna vadhāravā sāru kahe che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૫૦) છેલ્લાનાં ૩૦માં વચનામૃતમાં કહ્યું છે જે, ‘આ ક્ષણમાં ને આ પળમાં મરી જવાશે, એમ અમારે નિરંતર અનુસંધાન રહે છે.’ એ વંચાવીને સ્વામી કહે જે, ‘મહારાજને શું કરવું છે ? એ તો પોતાનું મિષ લઈને આપણને શીખવે છે.’ પણ કેટલાક તો જાણે છે જે, ‘ભાઈ ! એ તો વાત મહારાજની !’ પછી એક જણે કહ્યું જે, ‘મહારાજને શું કરવું છે ?’ એટલું લઈએ તો લેવાય જે, ‘સર્વના અંતરમાં રહીને જોઉં છું.’ તે પણ સ્વામી કહે, ‘મોટા સાધુ પણ અંતરનું જાણે છે, તે કેટલાકને કહી પણ દીધું છે ને વળી કહે છે; પણ વિશ્ર્વાસ હોય તેને આ બધી વાતું મનાય ને બીજા તો કહેશે માન વધારવા સારુ કહે છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6249.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Juone! Shastrama pan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6251.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa panchavishayrupi </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '250');
+            localStorage.setItem('lastVisitedVatFile', 'ch6250.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

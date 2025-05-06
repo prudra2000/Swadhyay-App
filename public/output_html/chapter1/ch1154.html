@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સ્વામિનારાયણ નામના મંત્ર - Swaminarayan namna mantra</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Swaminarayan namna mantra</h1>
+                <div class="gujarati-title">સ્વામિનારાયણ નામના મંત્ર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 154</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(154) svāminārāyaṇa nāmanā maṃtra jevo bījo koī maṃtra āja bahu baḻiyo nathī ne e maṃtre kāḻā nāganuṃ paṇa jhera na caḍe ne e maṃtre viṣaya ūḍī jāya che, brahmarūpa thāvāya che ne kāḻa, karma, māyānuṃ baṃdhana chūṭī jāya che. evo bahu baḻiyo e maṃtra che, māṭe niraṃtara bhajana karavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(154) સ્વામિનારાયણ નામના મંત્ર જેવો બીજો કોઈ મંત્ર આજ બહુ બળિયો નથી ને એ મંત્રે કાળા નાગનું પણ ઝેર ન ચડે ને એ મંત્રે વિષય ઊડી જાય છે, બ્રહ્મરૂપ થાવાય છે ને કાળ, કર્મ, માયાનું બંધન છૂટી જાય છે. એવો બહુ બળિયો એ મંત્ર છે, માટે નિરંતર ભજન કરવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1153.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mokshne arthe to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1155.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Lakada, pana, intala</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '154');
+            localStorage.setItem('lastVisitedVatFile', 'ch1154.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

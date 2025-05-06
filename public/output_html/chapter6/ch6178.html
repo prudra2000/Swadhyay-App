@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>માન, કામ, ક્રોધમાં જીવ - Man, kam, krodhma jiv</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Man, kam, krodhma jiv</h1>
+                <div class="gujarati-title">માન, કામ, ક્રોધમાં જીવ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 178</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(178) māna, kāma, krodhamāṃ jīva bharāī rahyo che, teṇe śuṃ bhagavāna bhajāya che ? ne grāmyavārtānuṃ kahyuṃ je, traṇa jaṇa hatā te grāmyavārtā karatā, tene mahārāja kahe je, “āne ama pāse āvavā deśo mā, e grāmyavārtā kare che.” māṭe prayojanamātra vāta karavī paṇa bījī, rājānī ne śāhukāranī te śā sāru (śā māṭe) karavī joīe ? bhagavāna vinā bījī vāta karavī ne bhagavānanī smṛti vinā khāvuṃ e dhūḍa jevuṃ che, māṭe sādhuno samāgama karīne kāma, dehābhimāna ne krodha e ṭāḻavāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૭૮) માન, કામ, ક્રોધમાં જીવ ભરાઈ રહ્યો છે, તેણે શું ભગવાન ભજાય છે ? ને ગ્રામ્યવાર્તાનું કહ્યું જે, ત્રણ જણ હતા તે ગ્રામ્યવાર્તા કરતા, તેને મહારાજ કહે જે, “આને અમ પાસે આવવા દેશો મા, એ ગ્રામ્યવાર્તા કરે છે.” માટે પ્રયોજનમાત્ર વાત કરવી પણ બીજી, રાજાની ને શાહુકારની તે શા સારુ (શા માટે) કરવી જોઈએ ? ભગવાન વિના બીજી વાત કરવી ને ભગવાનની સ્મૃતિ વિના ખાવું એ ધૂડ જેવું છે, માટે સાધુનો સમાગમ કરીને કામ, દેહાભિમાન ને ક્રોધ એ ટાળવાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6177.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa dehne to jem koi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6179.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dehne to shu karavu </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '178');
+            localStorage.setItem('lastVisitedVatFile', 'ch6178.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

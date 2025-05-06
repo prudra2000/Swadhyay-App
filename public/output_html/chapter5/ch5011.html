@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાક વાત એમ કરે છે - Ketalak vat em kare chhe </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalak vat em kare chhe </h1>
+                <div class="gujarati-title">કેટલાક વાત એમ કરે છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 11</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(11) keṭalāka vāta ema kare che je, ‘devaloka vageremāṃ jāvuṃ nathī ne alpa viṣayamāṃ to levāī jāya che tenuṃ śuṃ kāraṇa ? ne te akṣaradhāmamāṃ jāśe ke nahi jāya?’ e praśrnano uttara karyo je, ‘ajñāna che tethī viṣayamāṃ levāya che; paṇa pragaṭa bhagavāna tathā ā sādhuno dṛḍha āśaro che, to te aṃte to akṣaradhāmamāṃ ja jāśe ne e pramāṇe āśaro nathī ne te upara pramāṇe vāta to kare che, to paṇa te akṣaradhāmamāṃ nahi jāya ne jenī sāthe prīti che tenā dhāmamāṃ jāśe.’ tyāṃ dṛṣṭāṃta dīdhuṃ je, gāyakavāḍano chokaro mūḻā sāru rove (raḍe) paṇa rāja tene ja maḻaśe. (juo prakaraṇa 5 nī vāta 119)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(11) કેટલાક વાત એમ કરે છે જે, ‘દેવલોક વગેરેમાં જાવું નથી ને અલ્પ વિષયમાં તો લેવાઈ જાય છે તેનું શું કારણ ? ને તે અક્ષરધામમાં જાશે કે નહિ જાય?’ એ પ્રશ્ર્નનો ઉત્તર કર્યો જે, ‘અજ્ઞાન છે તેથી વિષયમાં લેવાય છે; પણ પ્રગટ ભગવાન તથા આ સાધુનો દૃઢ આશરો છે, તો તે અંતે તો અક્ષરધામમાં જ જાશે ને એ પ્રમાણે આશરો નથી ને તે ઉપર પ્રમાણે વાત તો કરે છે, તો પણ તે અક્ષરધામમાં નહિ જાય ને જેની સાથે પ્રીતિ છે તેના ધામમાં જાશે.’ ત્યાં દૃષ્ટાંત દીધું જે, ગાયકવાડનો છોકરો મૂળા સારુ રોવે (રડે) પણ રાજ તેને જ મળશે. (જુઓ પ્રકરણ 5 ની વાત 119)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5010.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Harisankarbhaie puchhyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5012.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gam bagadma em vat kari </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '11');
+            localStorage.setItem('lastVisitedVatFile', 'ch5011.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

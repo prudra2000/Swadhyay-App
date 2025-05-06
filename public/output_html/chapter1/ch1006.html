@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટાને સેવ્યા હોય ને તેના ગુણ - Motane sevya hoy ne tena gun</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motane sevya hoy ne tena gun</h1>
+                <div class="gujarati-title">મોટાને સેવ્યા હોય ને તેના ગુણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 6</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(6) hoya ne tenā guṇa āvyā hoya tene deśakāḻa na lāge, te kenī peṭhe to jema sūryanī āgaḻa aṃdhāruṃ bheḻuṃ thaīne jāya; paṇa tyāṃ rahevā pāme nahīṃ.@ 1 moṭāne sevyā= jema bhagavānanuṃ kahyuṃ kare tema ja moṭānuṃ kahyuṃ kare to moṭāne sevyā kahevāya.;</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(6) હોય ને તેના ગુણ આવ્યા હોય તેને દેશકાળ ન લાગે, તે કેની પેઠે તો જેમ સૂર્યની આગળ અંધારું ભેળું થઈને જાય; પણ ત્યાં રહેવા પામે નહીં.@ 1 મોટાને સેવ્યા= જેમ ભગવાનનું કહ્યું કરે તેમ જ મોટાનું કહ્યું કરે તો મોટાને સેવ્યા કહેવાય.;</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1005.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">A jiv sadhan te shun karashe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1007.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanma jodana hoya ne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '6');
+            localStorage.setItem('lastVisitedVatFile', 'ch1006.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

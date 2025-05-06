@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નિશ્ર્ચય છે પણ - Nishchay chhe pan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Nishchay chhe pan</h1>
+                <div class="gujarati-title">નિશ્ર્ચય છે પણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 90</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(90) niśrcaya che, paṇa ṛṣabhadeva narakamāṃ paḍyā rahyā; evāṃ caritra kare to saṃśaya thāya. māṭe yogya-ayogya caritramāṃ uddhavajīnī peṭhe saṃśaya na thāya tyāre ṭhīka, te to, $(vāsudeva māhātmya : 8/7) $artha : jeo kāmādika doṣathī rahita, sattvaguṇamaya ane vāsanā rahita hoya che, teonī buddhine bhedavā māṭe kadī paṇa kāḻa samartha thaī śakato nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૯૦) નિશ્ર્ચય છે, પણ ઋષભદેવ નરકમાં પડ્યા રહ્યા; એવાં ચરિત્ર કરે તો સંશય થાય. માટે યોગ્ય-અયોગ્ય ચરિત્રમાં ઉદ્ધવજીની પેઠે સંશય ન થાય ત્યારે ઠીક, તે તો, $(વાસુદેવ માહાત્મ્ય : ૮/૭) $અર્થ : જેઓ કામાદિક દોષથી રહિત, સત્ત્વગુણમય અને વાસના રહિત હોય છે, તેઓની બુદ્ધિને ભેદવા માટે કદી પણ કાળ સમર્થ થઈ શકતો નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6089.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kathama sabha tane</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6091.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aho! Ek samarth thaka</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '90');
+            localStorage.setItem('lastVisitedVatFile', 'ch6090.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

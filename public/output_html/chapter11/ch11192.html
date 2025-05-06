@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કારખાનાં તો હવે થઈ - Karakhana to have thai</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Karakhana to have thai</h1>
+                <div class="gujarati-title">કારખાનાં તો હવે થઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 192</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(192) kārakhānāṃ to have thaī rahyāṃ che ne dehakriyā to saheje hoya paṇa karavānāṃ to be vānāṃ che; te śuṃ ? to, akṣararūpa thāvuṃ ne puruṣottamamāṃ joḍāvuṃ. te akṣara to ema thāvāya je, ā sādhune akṣara jāṇe te akṣara thāya che ne tenāthī mahārājanī sevāmāṃ rahevāya che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(192) કારખાનાં તો હવે થઈ રહ્યાં છે ને દેહક્રિયા તો સહેજે હોય પણ કરવાનાં તો બે વાનાં છે; તે શું ? તો, અક્ષરરૂપ થાવું ને પુરુષોત્તમમાં જોડાવું. તે અક્ષર તો એમ થાવાય જે, આ સાધુને અક્ષર જાણે તે અક્ષર થાય છે ને તેનાથી મહારાજની સેવામાં રહેવાય છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11191.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhela rahe ne avala</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11193.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vank vina vadhe to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '192');
+            localStorage.setItem('lastVisitedVatFile', 'ch11192.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

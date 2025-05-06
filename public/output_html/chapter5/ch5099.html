@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મનજીભાઈએ પૂછ્યું જે - Manajibhaie puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Manajibhaie puchhyu je</h1>
+                <div class="gujarati-title">મનજીભાઈએ પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 99</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(99) manajībhāīe pūchyuṃ je, ‘jñānī hoya to paṇa kāṃī vāsanā rahetī haśe ?’ svāmī kahe, ‘śukajī ūḍyā ne janakathī ūḍāṇuṃ nahi ne beka (bahudhā) pravṛttino joga rahe tyāṃ sudhī jaṇāya kharī. jema ame tyāgī thayā tevā samāmāṃ gāma, nadī badhuṃ dekhātuṃ; māṭe e kāṃī vāsanā hatī ? e to joge karīne dekhātuṃ. ne vīsa varasa thayā pachī cheṭuṃ paḍyuṃ eṭale dekhāṇuṃ nahīṃ. tema pravṛttimāṃ jñāna vṛddhi pāme, aṃta:karaṇa śuddha thāya, paṇa joge karīne indriyuṃnī śuddhi thātī nathī.’ pachī nathu paṭele pūchyuṃ je, ‘prāptimāṃ phera che ke nahi ?’ svāmī kahe, ‘prāptimāṃ phera nathī, barābara che; ne nivṛttivāḻāne eṭalo adhika na kahīe to tame māno, paṇa bījā māne nahi; māṭe ema uttara karavo paḍe, paṇa bhagavāna to tema kare; teno koī dhaṇī che ? ne uttara to thāto hoya tema thāya.’@ 1 cahāya= game, dhāre.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(99) મનજીભાઈએ પૂછ્યું જે, ‘જ્ઞાની હોય તો પણ કાંઈ વાસના રહેતી હશે ?’ સ્વામી કહે, ‘શુકજી ઊડ્યા ને જનકથી ઊડાણું નહિ ને બેક (બહુધા) પ્રવૃત્તિનો જોગ રહે ત્યાં સુધી જણાય ખરી. જેમ અમે ત્યાગી થયા તેવા સમામાં ગામ, નદી બધું દેખાતું; માટે એ કાંઈ વાસના હતી ? એ તો જોગે કરીને દેખાતું. ને વીસ વરસ થયા પછી છેટું પડ્યું એટલે દેખાણું નહીં. તેમ પ્રવૃત્તિમાં જ્ઞાન વૃદ્ધિ પામે, અંત:કરણ શુદ્ધ થાય, પણ જોગે કરીને ઇન્દ્રિયુંની શુદ્ધિ થાતી નથી.’ પછી નથુ પટેલે પૂછ્યું જે, ‘પ્રાપ્તિમાં ફેર છે કે નહિ ?’ સ્વામી કહે, ‘પ્રાપ્તિમાં ફેર નથી, બરાબર છે; ને નિવૃત્તિવાળાને એટલો અધિક ન કહીએ તો તમે માનો, પણ બીજા માને નહિ; માટે એમ ઉત્તર કરવો પડે, પણ ભગવાન તો તેમ કરે; તેનો કોઈ ધણી છે ? ને ઉત્તર તો થાતો હોય તેમ થાય.’@ 1 ચહાય= ગમે, ધારે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5098.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gnanine atma kahyo chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5100.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gruhasthashramma rahine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '99');
+            localStorage.setItem('lastVisitedVatFile', 'ch5099.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

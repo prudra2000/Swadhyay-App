@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‘શિક્ષાપત્રી’ પ્રમાણે  - Shikshapatri pramane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shikshapatri pramane</h1>
+                <div class="gujarati-title">‘શિક્ષાપત્રી’ પ્રમાણે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 171</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(171) ‘śikṣāpatrī’ pramāṇe varatavuṃ temāṃ phera paḍavā devo nahīṃ. baravāḻāmāṃ eka harijane potānā bhāīnā ḍelāmāṃ mahārājane utāro āpyo eṭale sau ūtaryā ne mahārāja paṇa ūtaryā. pachī te harijana sīdhuṃ levā gayo ne pāchaḻathī teno bhāī kusaṃgī hato te āvyo ne kahe je, ‘āmāṃ tame kenī rajāe ūtaryā cho ? ḍelo to māro che, meṃ rajā āpī che ?’ pachī mahārāje kahyuṃ je, ‘āpaṇī lakhela ‘śikṣāpatrī’ āpaṇe ja lopī māṭe āṃhīṃ rahevuṃ nahīṃ.’ ema kahīne cālī nīkaḻyā ne nāvaḍe gayā. mahārājanuṃ chūṭī gayela ne sakhata taḍako hato tethī cāmaḍī lālacoḻa thaī gaī hatī te hajī sāṃbhare che. ‘śikṣāpatrī’māṃ to thūṃkavā sudhīno viveka lakhyo che. ‘śikṣāpatrī’rūpa cakra gharoghara mahārāje āpyuṃ che, māṭe lopavī nahīṃ.@ 1 ḍoraṇuṃ= sīgarāma ke damaṇiyā upara chatara bāṃdhavānuṃ lākaḍuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(171) ‘શિક્ષાપત્રી’ પ્રમાણે વરતવું તેમાં ફેર પડવા દેવો નહીં. બરવાળામાં એક હરિજને પોતાના ભાઈના ડેલામાં મહારાજને ઉતારો આપ્યો એટલે સૌ ઊતર્યા ને મહારાજ પણ ઊતર્યા. પછી તે હરિજન સીધું લેવા ગયો ને પાછળથી તેનો ભાઈ કુસંગી હતો તે આવ્યો ને કહે જે, ‘આમાં તમે કેની રજાએ ઊતર્યા છો ? ડેલો તો મારો છે, મેં રજા આપી છે ?’ પછી મહારાજે કહ્યું જે, ‘આપણી લખેલ ‘શિક્ષાપત્રી’ આપણે જ લોપી માટે આંહીં રહેવું નહીં.’ એમ કહીને ચાલી નીકળ્યા ને નાવડે ગયા. મહારાજનું છૂટી ગયેલ ને સખત તડકો હતો તેથી ચામડી લાલચોળ થઈ ગઈ હતી તે હજી સાંભરે છે. ‘શિક્ષાપત્રી’માં તો થૂંકવા સુધીનો વિવેક લખ્યો છે. ‘શિક્ષાપત્રી’રૂપ ચક્ર ઘરોઘર મહારાજે આપ્યું છે, માટે લોપવી નહીં.@ 1 ડોરણું= સીગરામ કે દમણિયા ઉપર છતર બાંધવાનું લાકડું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9170.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vachanamrutma Maharaje</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9172.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Biju ghara karavama pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '171');
+            localStorage.setItem('lastVisitedVatFile', 'ch9171.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

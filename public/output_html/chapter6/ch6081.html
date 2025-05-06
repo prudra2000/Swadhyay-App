@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંચિત, ક્રિયમાણ ને  - Sanchit, kriyaman ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sanchit, kriyaman ne</h1>
+                <div class="gujarati-title">સંચિત, ક્રિયમાણ ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 81</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(81) , ne te paṇa jāṇavuṃ, te niyama dharyāṃ te divasathī saṃcita je pūrve karyāṃ pāpa te baḻī jāya ne kriyamāṇa karavuṃ nahi ne prārabdha bhogavavuṃ paḍe temāṃ mūṃjhāvuṃ nahīṃ. ne jo te prārabdha na bhogavāve to deha chūṭī jāya; kema je, prārabdhe karīne to deha baṃdhāṇuṃ che, māṭe bhogavavāṃ te śūḻīnuṃ kaṣṭa kāṃṭe ugāre. pachī sādhu tathā haribhakta sarvee kahyuṃ je, ‘aho ! bahu vātuṃ thāya che, ā pramāṇe rahe to kāṃī du:kha ja āve nahīṃ.’ pachī svāmī kahe je, ‘huṃ eke dhārato nathī, āphuraḍuṃ māṃhethī kahevāya che.’ tyāre sādhu kahe, ‘bhagavāna praveśa karīne bolāve che.’ to kahe, ‘hā ema ja che, te juone ema thāya che.’@ 1 1 saṃcita= karmaphaḻano saṃgraha. $2 kriyamāṇa= vartamānakāḻanāṃ kāryo. $3 prārabdha= pūrvanāṃ karmaphaḻanā saṃgrahamāṃthī vartamānakāḻe je deha che te saṃbaṃdhī sukha-du:kha.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૮૧) , ને તે પણ જાણવું, તે નિયમ ધર્યાં તે દિવસથી સંચિત જે પૂર્વે કર્યાં પાપ તે બળી જાય ને ક્રિયમાણ કરવું નહિ ને પ્રારબ્ધ ભોગવવું પડે તેમાં મૂંઝાવું નહીં. ને જો તે પ્રારબ્ધ ન ભોગવાવે તો દેહ છૂટી જાય; કેમ જે, પ્રારબ્ધે કરીને તો દેહ બંધાણું છે, માટે ભોગવવાં તે શૂળીનું કષ્ટ કાંટે ઉગારે. પછી સાધુ તથા હરિભક્ત સર્વેએ કહ્યું જે, ‘અહો ! બહુ વાતું થાય છે, આ પ્રમાણે રહે તો કાંઈ દુ:ખ જ આવે નહીં.’ પછી સ્વામી કહે જે, ‘હું એકે ધારતો નથી, આફુરડું માંહેથી કહેવાય છે.’ ત્યારે સાધુ કહે, ‘ભગવાન પ્રવેશ કરીને બોલાવે છે.’ તો કહે, ‘હા એમ જ છે, તે જુઓને એમ થાય છે.’@ 1 ૧ સંચિત= કર્મફળનો સંગ્રહ. $2 ક્રિયમાણ= વર્તમાનકાળનાં કાર્યો. $3 પ્રારબ્ધ= પૂર્વનાં કર્મફળના સંગ્રહમાંથી વર્તમાનકાળે જે દેહ છે તે સંબંધી સુખ-દુ:ખ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6080.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Desh kai koina bapna</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6082.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota harijanno</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '81');
+            localStorage.setItem('lastVisitedVatFile', 'ch6081.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

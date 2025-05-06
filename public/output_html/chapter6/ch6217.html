@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પંચ જ્ઞાનેન્દ્રિયું વશ  - Panch gnanendriyu vash</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Panch gnanendriyu vash</h1>
+                <div class="gujarati-title">પંચ જ્ઞાનેન્દ્રિયું વશ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 217</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(217) paṃca jñānendriyuṃ vaśa rākhī hoya to enī vāṃse olī pāṃca che. māṭe jhājho paṃcaviṣayano joga ja thāvā devo nahi, ne joga thaye samuṃ rahe tevuṃ nathī. māṭe jeṭaluṃ avaśya hoya te karavuṃ; bākī paḍyuṃ mūkavuṃ ne temāṃ doṣa jovā, ene jñānī kahyo che. ne keṭalāka to kānamāṃ pūṃmaḍāṃ ghālī mūke che te sāṃbhaḻavuṃ ghaṭe te ṭāṇe kāḍhī le ne jovuṃ ghaṭe te jue paṇa pāṃca hāthathī cheṭe dṛṣṭi jāya ja nahīṃ. ema ja sūṃghe nahi, tema ja tvacāne eka ochuṃ pātharī devuṃ paṇa vadhu nahīṃ. te vinā na cāle to ekalaśṛṃgīnī peṭhe thāśe. māṭe bītā rahevuṃ ne pāpa mūkavāṃ ne prabhu bhajavā, e siddhāṃta rākhavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૧૭) પંચ જ્ઞાનેન્દ્રિયું વશ રાખી હોય તો એની વાંસે ઓલી પાંચ છે. માટે ઝાઝો પંચવિષયનો જોગ જ થાવા દેવો નહિ, ને જોગ થયે સમું રહે તેવું નથી. માટે જેટલું અવશ્ય હોય તે કરવું; બાકી પડ્યું મૂકવું ને તેમાં દોષ જોવા, એને જ્ઞાની કહ્યો છે. ને કેટલાક તો કાનમાં પૂંમડાં ઘાલી મૂકે છે તે સાંભળવું ઘટે તે ટાણે કાઢી લે ને જોવું ઘટે તે જુએ પણ પાંચ હાથથી છેટે દૃષ્ટિ જાય જ નહીં. એમ જ સૂંઘે નહિ, તેમ જ ત્વચાને એક ઓછું પાથરી દેવું પણ વધુ નહીં. તે વિના ન ચાલે તો એકલશૃંગીની પેઠે થાશે. માટે બીતા રહેવું ને પાપ મૂકવાં ને પ્રભુ ભજવા, એ સિદ્ધાંત રાખવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6216.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kal rate muddani vat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6218.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chhellanu biju Vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '217');
+            localStorage.setItem('lastVisitedVatFile', 'ch6217.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

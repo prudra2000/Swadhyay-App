@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેહની ક્રિયા હોય તે  - Dehani kriya hoy te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dehani kriya hoy te</h1>
+                <div class="gujarati-title">દેહની ક્રિયા હોય તે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 79</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(79) dehanī kriyā hoya te bhagavānane anusaṃdhāne sahita karī levī ne vahevārano vikṣepa koī āve to te paṇa mūrti dhāratāṃ dhāratāṃ tenuṃ samādhāna karavuṃ, paṇa kriyārūpa thaī jāvuṃ nahi ne eka veṇamāṃ badhuṃ āvī jāya evuṃ veṇa gopāḻasvāmīe kahyuṃ je, bhagavāna saṃbhāravā ne bījuṃ visāravuṃ temāṃ badhī vāta āvī gaī. ā prāpti thaī che, teno mahimā nathī samajāto. te samajāya tyāre gāṃḍā thaī javāya ne vartamāna na paḻe, te sāru e mahimāne dābīne kathāvārtā ne ujāgarā karīe chīe tyāre ja jīva ośiyāḻo rahe che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(79) દેહની ક્રિયા હોય તે ભગવાનને અનુસંધાને સહિત કરી લેવી ને વહેવારનો વિક્ષેપ કોઈ આવે તો તે પણ મૂર્તિ ધારતાં ધારતાં તેનું સમાધાન કરવું, પણ ક્રિયારૂપ થઈ જાવું નહિ ને એક વેણમાં બધું આવી જાય એવું વેણ ગોપાળસ્વામીએ કહ્યું જે, ભગવાન સંભારવા ને બીજું વિસારવું તેમાં બધી વાત આવી ગઈ. આ પ્રાપ્તિ થઈ છે, તેનો મહિમા નથી સમજાતો. તે સમજાય ત્યારે ગાંડા થઈ જવાય ને વર્તમાન ન પળે, તે સારુ એ મહિમાને દાબીને કથાવાર્તા ને ઉજાગરા કરીએ છીએ ત્યારે જ જીવ ઓશિયાળો રહે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16078.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sansarama kutie chhie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16080.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Madhyanu tresathnu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '79');
+            localStorage.setItem('lastVisitedVatFile', 'ch16079.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

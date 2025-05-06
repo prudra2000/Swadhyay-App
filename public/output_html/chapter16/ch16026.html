@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેટલાં ગરીબ માણસ છે  - Jetala garib manas chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jetala garib manas chhe</h1>
+                <div class="gujarati-title">જેટલાં ગરીબ માણસ છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 26</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(26) jeṭalāṃ garība māṇasa che tene hamaṇāṃ lākha lākha rūpiyā maḻe to satsaṃgamāṃ na āve ne lākha maḻatā hoya tene daśa lākha maḻe to te paṇa na āve ne sādhu jāya tyāre koīka khabara kare tyāre kahe je, sākaranā sīdhāṃ mokalo ne pūche to kahejo, bhāī to navarā nathī. māṭe rūpiyā ke moṭāī temāṃthī koīne leśamātra sukha nathī; jema sarāṇiyo ghase che ne jue che tema je jotā rahe tene satsaṃga thāya. khetaramāṃ mola vāve tyāre vāḍa kare che toya moṭāṃ ḍhora vāḍa ṭhekīne māṃhī paḍe che. tema niyama che to paṇa īndriyuṃ viṣayamāṃ jātī rahe che ne kāme karīne, lobhe karīne, svāde karīne kṣobha thāya che ne viṣayamāṃ taṇāī jāya che. māṭe bhagavāna bhajavā te badhāne chetarīne bhajī levā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(26) જેટલાં ગરીબ માણસ છે તેને હમણાં લાખ લાખ રૂપિયા મળે તો સત્સંગમાં ન આવે ને લાખ મળતા હોય તેને દશ લાખ મળે તો તે પણ ન આવે ને સાધુ જાય ત્યારે કોઈક ખબર કરે ત્યારે કહે જે, સાકરના સીધાં મોકલો ને પૂછે તો કહેજો, ભાઈ તો નવરા નથી. માટે રૂપિયા કે મોટાઈ તેમાંથી કોઈને લેશમાત્ર સુખ નથી; જેમ સરાણિયો ઘસે છે ને જુએ છે તેમ જે જોતા રહે તેને સત્સંગ થાય. ખેતરમાં મોલ વાવે ત્યારે વાડ કરે છે તોય મોટાં ઢોર વાડ ઠેકીને માંહી પડે છે. તેમ નિયમ છે તો પણ ઈન્દ્રિયું વિષયમાં જાતી રહે છે ને કામે કરીને, લોભે કરીને, સ્વાદે કરીને ક્ષોભ થાય છે ને વિષયમાં તણાઈ જાય છે. માટે ભગવાન ભજવા તે બધાને છેતરીને ભજી લેવા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16025.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Haji deh padyo nathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16027.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Zaverachandni doshi chhu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '26');
+            localStorage.setItem('lastVisitedVatFile', 'ch16026.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

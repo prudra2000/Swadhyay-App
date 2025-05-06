@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અક્ષરધામ બહુ જ છેટું - Akshardham bahu j chhetu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Akshardham bahu j chhetu</h1>
+                <div class="gujarati-title">અક્ષરધામ બહુ જ છેટું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 62</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(62) akṣaradhāma bahu ja cheṭuṃ che, paṇa āpaṇane bhagavāne che. ā manuṣya jevā thaīne beṭhā chīe ne āpaṇane akṣaradhāmanā muktanā jevī vātuṃ samajāya che ne karāya che, te bhagavānano ne ā sādhuno anugraha che. ne āvo samāgama maḻyo che ne aho ! aho ! nathī thātuṃ te to ā vāta koī divasa karī nathī; ā lokanuṃ ja kūṭyuṃ (karyuṃ) che.@ 1 thaḍamāṃ karyuṃ= pāse-najīka karyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(62) અક્ષરધામ બહુ જ છેટું છે, પણ આપણને ભગવાને છે. આ મનુષ્ય જેવા થઈને બેઠા છીએ ને આપણને અક્ષરધામના મુક્તના જેવી વાતું સમજાય છે ને કરાય છે, તે ભગવાનનો ને આ સાધુનો અનુગ્રહ છે. ને આવો સમાગમ મળ્યો છે ને અહો ! અહો ! નથી થાતું તે તો આ વાત કોઈ દિવસ કરી નથી; આ લોકનું જ કૂટ્યું (કર્યું) છે.@ 1 થડમાં કર્યું= પાસે-નજીક કર્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4061.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Samadhithi nirgun na thaya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4063.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gam chadiyama vat kari je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '62');
+            localStorage.setItem('lastVisitedVatFile', 'ch4062.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

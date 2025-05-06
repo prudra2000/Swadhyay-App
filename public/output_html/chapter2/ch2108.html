@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઉપાસના ચોખ્ખી સમજવી - Upasana chokhkhi samajavi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Upasana chokhkhi samajavi</h1>
+                <div class="gujarati-title">ઉપાસના ચોખ્ખી સમજવી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 108</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(108) upāsanā cokhkhī samajavī ne mahārājanuṃ sarva kāraṇapaṇuṃ samajavuṃ. ne pūrvanā avatāra karatāṃ āja to sādhu-satsaṃgīmāṃ ghaṇuṃ sāmarthya che. ne puruṣottamanā bhaktamāṃ ne bījā avatāranā bhaktamāṃ kema bheda che ? to jema hāthaṇī viyāya tyāre tene bheṃśa jevaḍuṃ baccuṃ āve ne jū viyāya tyāre tene līkha āve, ema bheda che. ne vaḻī jema vaḍanuṃ jhāḍa ne tuveranuṃ jhāḍa ema bheda che. vaḻī mahārāja kahetā je, 'śrīkṛṣṇe to aniruddha, pradyumna ne saṃkarṣaṇa evāṃ nāma pāḍyāṃ ne ame to nityānaṃda, nirguṇānaṃda ne akṣarānaṃda evāṃ nāma pāḍyā.' vaḻī jema dilhīnā bādaśāhanuṃ nāma śerakhāṃ ne bījā koīkanuṃ nāma śerakhāṃ, ema avatāramāṃ bheda che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(108) ઉપાસના ચોખ્ખી સમજવી ને મહારાજનું સર્વ કારણપણું સમજવું. ને પૂર્વના અવતાર કરતાં આજ તો સાધુ-સત્સંગીમાં ઘણું સામર્થ્ય છે. ને પુરુષોત્તમના ભક્તમાં ને બીજા અવતારના ભક્તમાં કેમ ભેદ છે ? તો જેમ હાથણી વિયાય ત્યારે તેને ભેંશ જેવડું બચ્ચું આવે ને જૂ વિયાય ત્યારે તેને લીખ આવે, એમ ભેદ છે. ને વળી જેમ વડનું ઝાડ ને તુવેરનું ઝાડ એમ ભેદ છે. વળી મહારાજ કહેતા જે, 'શ્રીકૃષ્ણે તો અનિરુદ્ધ, પ્રદ્યુમ્ન ને સંકર્ષણ એવાં નામ પાડ્યાં ને અમે તો નિત્યાનંદ, નિર્ગુણાનંદ ને અક્ષરાનંદ એવાં નામ પાડ્યા.' વળી જેમ દિલ્હીના બાદશાહનું નામ શેરખાં ને બીજા કોઈકનું નામ શેરખાં, એમ અવતારમાં ભેદ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2107.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kurupavan strima man</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2109.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jem jem vat sambhale</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '108');
+            localStorage.setItem('lastVisitedVatFile', 'ch2108.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

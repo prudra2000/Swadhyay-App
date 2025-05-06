@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામ ઓળિયામાં વાત કરી જે - Gam oliyama vat kari je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gam oliyama vat kari je</h1>
+                <div class="gujarati-title">ગામ ઓળિયામાં વાત કરી જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 71</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(71) gāma oḻiyāmāṃ vāta karī je, ‘ā sādhu oḻakhāṇā e moṭī vāta che, ā sādhu oḻakhāya tevā nathī, ā to paradeśī sādhu che, te oḻakhāṇā e to āśrcarya jevuṃ che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(71) ગામ ઓળિયામાં વાત કરી જે, ‘આ સાધુ ઓળખાણા એ મોટી વાત છે, આ સાધુ ઓળખાય તેવા નથી, આ તો પરદેશી સાધુ છે, તે ઓળખાણા એ તો આશ્ર્ચર્ય જેવું છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4070.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apanne khot ketali chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4072.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gam mota gokharvalama </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '71');
+            localStorage.setItem('lastVisitedVatFile', 'ch4071.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

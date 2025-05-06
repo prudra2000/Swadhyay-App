@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ તો બદરીનાથનાં - Aa to badarinathana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa to badarinathana</h1>
+                <div class="gujarati-title">આ તો બદરીનાથનાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 324</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(324) ā to badarīnāthanāṃ śīṃkāṃ che, te niṣkāmī vartamāna nahi rākhe, te koī ā satsaṃgamāṃ rahī śake nahi. kūtarī nahi viyāya to kāṃī ghīno pāḍa moṃgho thāvāno nathī, tema koī satsaṃgamāṃ nahi āve teṇe karīne satsaṃgamāṃ kāṃī khāḍo paḍe tema nathī. ‘kūkaḍī vinā vahāṇuṃ nahi vāya.’ ema nathī. satsaṃganā sthaṃbha jevā moṭā moṭā sādhu hatā te aṃtaradhyāna thayā pachī paṇa mahārājanā saṃkalpe temanā vinā cālyuṃ jāya che. bāvanā caṃdananuṃ lākaḍuṃ bāḻatāṃ bākī rahyuṃ te viṣṇu bhagavānane caḍāvyuṃ, tema āpaṇe bāyaḍī, chokarāṃ vahevāramāṃ āṭalo deha bāḻyo, temāṃthī kāḍhīne have bhagavāna arthe karī devo. te mana, karma, vacane ā vāta karavānī che.@ 1 samesuḻe= yogya samaye.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(324) આ તો બદરીનાથનાં શીંકાં છે, તે નિષ્કામી વર્તમાન નહિ રાખે, તે કોઈ આ સત્સંગમાં રહી શકે નહિ. કૂતરી નહિ વિયાય તો કાંઈ ઘીનો પાડ મોંઘો થાવાનો નથી, તેમ કોઈ સત્સંગમાં નહિ આવે તેણે કરીને સત્સંગમાં કાંઈ ખાડો પડે તેમ નથી. ‘કૂકડી વિના વહાણું નહિ વાય.’ એમ નથી. સત્સંગના સ્થંભ જેવા મોટા મોટા સાધુ હતા તે અંતરધ્યાન થયા પછી પણ મહારાજના સંકલ્પે તેમના વિના ચાલ્યું જાય છે. બાવના ચંદનનું લાકડું બાળતાં બાકી રહ્યું તે વિષ્ણુ ભગવાનને ચડાવ્યું, તેમ આપણે બાયડી, છોકરાં વહેવારમાં આટલો દેહ બાળ્યો, તેમાંથી કાઢીને હવે ભગવાન અર્થે કરી દેવો. તે મન, કર્મ, વચને આ વાત કરવાની છે.@ 1 સમેસુળે= યોગ્ય સમયે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10323.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Premijannu e j parakhu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10325.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prabhu bhajava bhela thaya </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '324');
+            localStorage.setItem('lastVisitedVatFile', 'ch10324.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

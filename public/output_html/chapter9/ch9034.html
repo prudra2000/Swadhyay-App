@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચાર ખળિયા પેટમાં - Char khaliya petma </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Char khaliya petma </h1>
+                <div class="gujarati-title">ચાર ખળિયા પેટમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 34</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(34) cāra khaḻiyā peṭamāṃ rahyā ane sādhu thaī gayā temāṃ śuṃ pākyuṃ? te khaḻiyā kāḍhyānuṃ sādhana ṛṣabhadeve kahyuṃ che je, $artha : strī ane puruṣa baṃneno je paraspara dāmpatyabhāva che te ja temanā hṛdayanī durbhedya graṃthi che. ā kāraṇathī puruṣane gṛha, kṣetra, putra, svajana ane dhana vageremāṃ ‘ā huṃ chuṃ, māruṃ che’ evo moha thaī jāya che. $(śrīmad bhāgavata : 5/5/21) $artha : ā mṛtyulokamāṃ manuṣyadeha meḻavīne manuṣyanā māṭe e ucita nathī ke je viṣṭā khāvāvāḻā śukara vagerenī jema saraḻa du:khamaya bhogomāṃ phasāī rahe. āthī teṇe tapanuṃ ja ācaraṇa karavuṃ joīe. jethī, aṃta:karaṇa śuddha thāya ane pachī anaṃta brahmānaṃdanī prāpti thāya. $artha : ‘māro dhāryo artha huṃ siddha karīśa athavā dehano pāta (nāśa) karīśa.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(34) ચાર ખળિયા પેટમાં રહ્યા અને સાધુ થઈ ગયા તેમાં શું પાક્યું? તે ખળિયા કાઢ્યાનું સાધન ઋષભદેવે કહ્યું છે જે, $અર્થ : સ્ત્રી અને પુરુષ બંનેનો જે પરસ્પર દામ્પત્યભાવ છે તે જ તેમના હૃદયની દુર્ભેદ્ય ગ્રંથિ છે. આ કારણથી પુરુષને ગૃહ, ક્ષેત્ર, પુત્ર, સ્વજન અને ધન વગેરેમાં ‘આ હું છું, મારું છે’ એવો મોહ થઈ જાય છે. $(શ્રીમદ્ ભાગવત : 5/5/21) $અર્થ : આ મૃત્યુલોકમાં મનુષ્યદેહ મેળવીને મનુષ્યના માટે એ ઉચિત નથી કે જે વિષ્ટા ખાવાવાળા શુકર વગેરેની જેમ સરળ દુ:ખમય ભોગોમાં ફસાઈ રહે. આથી તેણે તપનું જ આચરણ કરવું જોઈએ. જેથી, અંત:કરણ શુદ્ધ થાય અને પછી અનંત બ્રહ્માનંદની પ્રાપ્તિ થાય. $અર્થ : ‘મારો ધાર્યો અર્થ હું સિદ્ધ કરીશ અથવા દેહનો પાત (નાશ) કરીશ.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9033.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Memanno pothiyo jem</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9035.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mokshane marge na chale</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '34');
+            localStorage.setItem('lastVisitedVatFile', 'ch9034.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

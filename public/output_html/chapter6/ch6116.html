@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભજન કરવું તે રાતે - Bhajan karavu te rate</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhajan karavu te rate</h1>
+                <div class="gujarati-title">ભજન કરવું તે રાતે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 116</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(116) bhajana karavuṃ te rāte ūṭhī ūṭhīne maṃḍe tyāre sācuṃ. ‘ā sāheba, tāro paṇa mana rākhyo !’ ema mana rākhye kāṃī thāya nahīṃ. e to ṭhīka, vāha vāha! are, keṭalāka to laghu karavā jāya te pūrī āṃkha paṇa ughāḍe nahi, jāṇe rakhe ūṃgha ūḍī jāśe ne māla vahī jāśe ne ākhī rāta casacasāve ne dahāḍe to gapoḍāmāṃthī navarā ja śenā thāya ? teṇe śuṃ kāṃī bhagavāna rājī thāya che ? ne jāṇe moṭā thaī gayā, paṇa aṃbarīṣa jevuṃya kyāṃ thāvāṇuṃ che ? ne khāī khāīne ūṃghī rahyā tyāre jāṇe thaī rahyuṃ, ā to pharavā jaīne sūī rahe, ema kahīne,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૧૬) ભજન કરવું તે રાતે ઊઠી ઊઠીને મંડે ત્યારે સાચું. ‘આ સાહેબ, તારો પણ મન રાખ્યો !’ એમ મન રાખ્યે કાંઈ થાય નહીં. એ તો ઠીક, વાહ વાહ! અરે, કેટલાક તો લઘુ કરવા જાય તે પૂરી આંખ પણ ઉઘાડે નહિ, જાણે રખે ઊંઘ ઊડી જાશે ને માલ વહી જાશે ને આખી રાત ચસચસાવે ને દહાડે તો ગપોડામાંથી નવરા જ શેના થાય ? તેણે શું કાંઈ ભગવાન રાજી થાય છે ? ને જાણે મોટા થઈ ગયા, પણ અંબરીષ જેવુંય ક્યાં થાવાણું છે ? ને ખાઈ ખાઈને ઊંઘી રહ્યા ત્યારે જાણે થઈ રહ્યું, આ તો ફરવા જઈને સૂઈ રહે, એમ કહીને,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6115.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Panchavishay saru to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6117.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ava pragat sadhu chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '116');
+            localStorage.setItem('lastVisitedVatFile', 'ch6116.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

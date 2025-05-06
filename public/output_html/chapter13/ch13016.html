@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સત્સંગમાં અનંત  - Aa satsangma anant </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa satsangma anant </h1>
+                <div class="gujarati-title">આ સત્સંગમાં અનંત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 16</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(16) ā satsaṃgamāṃ anaṃta avatāra ne anaṃta avatāranā bhakta āvyā che, te badhāne akṣaradhāmamāṃ laī jāvā che. te upara vāta karī je, sādhunuṃ maṃḍaḻa nagara hatuṃ te vakhate taḻāvanī pāḻa upara svarūpānaṃdasvāmī pāse brāhmaṇa āvatā tene svāmī vātuṃ kahetā. pachī te brāhmaṇa kahe, ‘āja kaḻiyugamāṃ kalyāṇa kyāṃthī thāya ? jo dattātreya, ṛṣabhadeva, rāmacaṃdra ke śrīkṛṣṇa jevā maḻe to thāya.’ tyāre svarūpānaṃdasvāmī kahe, ‘āmāṃ śrīkṛṣṇa jevā koī hoya ke, rāmacaṃdra jevā koī hoya ke, dattātreya jevā hoya, to tame oḻakho ? ne te avatārane māthe kāṃī niśāna hatāṃ ? śī rīte oḻakho ?’ ema svarūpānaṃdasvāmīe avatāramātra sādhumāṃ batāvyā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(16) આ સત્સંગમાં અનંત અવતાર ને અનંત અવતારના ભક્ત આવ્યા છે, તે બધાને અક્ષરધામમાં લઈ જાવા છે. તે ઉપર વાત કરી જે, સાધુનું મંડળ નગર હતું તે વખતે તળાવની પાળ ઉપર સ્વરૂપાનંદસ્વામી પાસે બ્રાહ્મણ આવતા તેને સ્વામી વાતું કહેતા. પછી તે બ્રાહ્મણ કહે, ‘આજ કળિયુગમાં કલ્યાણ ક્યાંથી થાય ? જો દત્તાત્રેય, ઋષભદેવ, રામચંદ્ર કે શ્રીકૃષ્ણ જેવા મળે તો થાય.’ ત્યારે સ્વરૂપાનંદસ્વામી કહે, ‘આમાં શ્રીકૃષ્ણ જેવા કોઈ હોય કે, રામચંદ્ર જેવા કોઈ હોય કે, દત્તાત્રેય જેવા હોય, તો તમે ઓળખો ? ને તે અવતારને માથે કાંઈ નિશાન હતાં ? શી રીતે ઓળખો ?’ એમ સ્વરૂપાનંદસ્વામીએ અવતારમાત્ર સાધુમાં બતાવ્યા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13015.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Naimisharanyanu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13017.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vasana evi balavana </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '16');
+            localStorage.setItem('lastVisitedVatFile', 'ch13016.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

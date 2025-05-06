@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હરિશંકરભાઈએ પૂછ્યું જે - Harishankarbhaie puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Harishankarbhaie puchhyu je</h1>
+                <div class="gujarati-title">હરિશંકરભાઈએ પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 152</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(152) hariśaṃkarabhāīe pūchyuṃ je, ‘vaḍavānaḻa agni jevā sādhu kema samajavā ?’ tyāre kahyuṃ je, ‘satsaṃgijīvana’māṃ tenāṃ lakṣaṇa kahyāṃ je, $artha : bhagavānanā sācā bhakta - saṃtane malaya deśanā gurucaṃdanano lepa jheranā kādavanā lepa jevo lāge che. phūlanā hāra tene sarpa jevā lāge che. alaṃkāro dūṣaṇarūpa jaṇāya che. $vaca. va. 3</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(152) હરિશંકરભાઈએ પૂછ્યું જે, ‘વડવાનળ અગ્નિ જેવા સાધુ કેમ સમજવા ?’ ત્યારે કહ્યું જે, ‘સત્સંગિજીવન’માં તેનાં લક્ષણ કહ્યાં જે, $અર્થ : ભગવાનના સાચા ભક્ત - સંતને મલય દેશના ગુરુચંદનનો લેપ ઝેરના કાદવના લેપ જેવો લાગે છે. ફૂલના હાર તેને સર્પ જેવા લાગે છે. અલંકારો દૂષણરૂપ જણાય છે. $વચ. વ. 3</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5151.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vachanamrutno paratharo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5153.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Parvatbhainu nam granthma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '152');
+            localStorage.setItem('lastVisitedVatFile', 'ch5152.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

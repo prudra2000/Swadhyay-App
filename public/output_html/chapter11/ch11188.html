@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રૂપિયામાંથી જીવને ઊખેડવો - Rupiyamathi jivne ukhedavo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rupiyamathi jivne ukhedavo</h1>
+                <div class="gujarati-title">રૂપિયામાંથી જીવને ઊખેડવો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 188</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(188) rūpiyāmāṃthī jīvane ūkheḍavo e to kāma bhāre che. te upara monā paṃḍyānī vāta karī je, teṇe kulaḍāṃmāṃ rūpiyā dāṭela; paṇa māṃdo thayo tyāre bolī śake nahi, eṭale sāna karī bījāne batāve. pachī teṇe batāvyuṃ tyāṃ khodyuṃ to temāṃthī rūpiyānā be kulaḍāṃ nīkaḻyāṃ. pachī lāṃbā hātha karī māgī līdhāṃ. ane be paḍakhe ekeko mūkyo ne bolyo je, ‘he mārī mātājī, meṃ tuṃne na khādhī ! teṃ mane khādho !’ ema be cāra vakhata bolī deha mūkī dīdho.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(188) રૂપિયામાંથી જીવને ઊખેડવો એ તો કામ ભારે છે. તે ઉપર મોના પંડ્યાની વાત કરી જે, તેણે કુલડાંમાં રૂપિયા દાટેલ; પણ માંદો થયો ત્યારે બોલી શકે નહિ, એટલે સાન કરી બીજાને બતાવે. પછી તેણે બતાવ્યું ત્યાં ખોદ્યું તો તેમાંથી રૂપિયાના બે કુલડાં નીકળ્યાં. પછી લાંબા હાથ કરી માગી લીધાં. અને બે પડખે એકેકો મૂક્યો ને બોલ્યો જે, ‘હે મારી માતાજી, મેં તુંને ન ખાધી ! તેં મને ખાધો !’ એમ બે ચાર વખત બોલી દેહ મૂકી દીધો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11187.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vanki eni vatu re</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11189.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jagatma to vadhe chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '188');
+            localStorage.setItem('lastVisitedVatFile', 'ch11188.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

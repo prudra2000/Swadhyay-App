@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બ્રહ્મર્ષિ ને રાજર્ષિ - Brahmarshi ne rajarshi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Brahmarshi ne rajarshi</h1>
+                <div class="gujarati-title">બ્રહ્મર્ષિ ને રાજર્ષિ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 38</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(38) ne temāṃ brahmarṣino māraga uttama che paṇa te kaṭhaṇa che ne rājarṣino māraga mukhya che ne bahudhā e ja pāra pāḍe evo che. ne vidyāyuṃ to ghaṇī che paṇa bhaṇavā jevī to brahmavidyā che ne emāṃ ja māla che. ne aṃte ema karyā vinā chūṭako nathī, paṇa jīva e mārage cālatā nathī.@ 1 brahmarṣi= brahmavidyā sādhela ṛṣi. $2 rājarṣi= ṛṣiomāṃ rājā samāna, tape karīne thayela kṣatriya ṛṣi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(38) ને તેમાં બ્રહ્મર્ષિનો મારગ ઉત્તમ છે પણ તે કઠણ છે ને રાજર્ષિનો મારગ મુખ્ય છે ને બહુધા એ જ પાર પાડે એવો છે. ને વિદ્યાયું તો ઘણી છે પણ ભણવા જેવી તો બ્રહ્મવિદ્યા છે ને એમાં જ માલ છે. ને અંતે એમ કર્યા વિના છૂટકો નથી, પણ જીવ એ મારગે ચાલતા નથી.@ 1 બ્રહ્મર્ષિ= બ્રહ્મવિદ્યા સાધેલ ઋષિ. $2 રાજર્ષિ= ઋષિઓમાં રાજા સમાન, તપે કરીને થયેલ ક્ષત્રિય ઋષિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2037.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mumukshune to nirantar</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2039.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota santno samagam to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '38');
+            localStorage.setItem('lastVisitedVatFile', 'ch2038.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

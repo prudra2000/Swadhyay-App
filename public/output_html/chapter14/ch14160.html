@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જ્ઞાન જીવમાં થયું  - Aa gnan jivma thayu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa gnan jivma thayu</h1>
+                <div class="gujarati-title">આ જ્ઞાન જીવમાં થયું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 160</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(160) ā jñāna jīvamāṃ thayuṃ haśe to dahāḍe dahāḍe vadhaśe, paṇa ghaṭanāruṃ nathī. aciṃtyānaṃda brahmacārīe pūchyuṃ je, ‘mokṣa sāru bheḻā thayā chīe te mokṣamāṃ vighna na āve ne mahārājano abhiprāya jema che tema jaṇāya, te kṛpā karīne kaho.’ tyāre kahe, ‘jema strī-puruṣane koī rīte aṃtarāya raheto nathī, tema mahārājanī dṛḍha upāsanāvāḻā sāthe koī rīte aṃtarāya na rahe to mahārājano abhiprāya yathārtha jaṇāya ne mokṣamāṃ vighna paṇa na āve.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(160) આ જ્ઞાન જીવમાં થયું હશે તો દહાડે દહાડે વધશે, પણ ઘટનારું નથી. અચિંત્યાનંદ બ્રહ્મચારીએ પૂછ્યું જે, ‘મોક્ષ સારુ ભેળા થયા છીએ તે મોક્ષમાં વિઘ્ન ન આવે ને મહારાજનો અભિપ્રાય જેમ છે તેમ જણાય, તે કૃપા કરીને કહો.’ ત્યારે કહે, ‘જેમ સ્ત્રી-પુરુષને કોઈ રીતે અંતરાય રહેતો નથી, તેમ મહારાજની દૃઢ ઉપાસનાવાળા સાથે કોઈ રીતે અંતરાય ન રહે તો મહારાજનો અભિપ્રાય યથાર્થ જણાય ને મોક્ષમાં વિઘ્ન પણ ન આવે.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14159.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek haribhakte puchhyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14161.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Yogashrvaradasajie puchhyu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '160');
+            localStorage.setItem('lastVisitedVatFile', 'ch14160.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

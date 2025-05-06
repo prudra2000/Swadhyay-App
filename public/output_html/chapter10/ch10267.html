@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દ્રવ્યને અર્થે દગા થાય - Dravyane arthe daga thay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dravyane arthe daga thay</h1>
+                <div class="gujarati-title">દ્રવ્યને અર્થે દગા થાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 267</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>svāmīe rātre vāta karī je,$(267) dravyane arthe dagā thāya che, jhera āpe che ne jānathī mārī nākhe che te keṭaleka ṭhekāṇe mārelā te gaṇāvyā, māṭe dravyamāṃ sarve pāpamātra rahyāṃ che. ne bhāgavatamāṃ śrloke śrloke strī, dhanano tyāga karavo kahyo che. te āpaṇe paṇa ema ja karavuṃ che ne karāvavuṃ che. eka jaṇa pacīsa varasa satsaṃgamāṃ rahyo tyāra pachī eka joḍa caraṇāraviṃda vāste vimukha thaīne ghera gayo ne bāyaḍī karyo te gharaghyo; paṇa eka mahinā keḍe bāyaḍī marī gaī ne tyāra pachī pote marī gayo. eka pāḻe to sama khādhā je, samaiyā keḍe ghera javuṃ ne bāyaḍī gharaghī gayelī che tene pāchī lāvavī; paṇa tāva āvyo te daśa divasamāṃ mūo ne manasūbo to pāra paḍyo nahi, māṭe tyāgī thaīne strī, dhananā manasūbā kare che te .@ 1 gharaghavāno manasūbo= bījīvāra paraṇavāno saṃkalpa.$2 khaḍa khāya che= ghāsa khāvā jevī mūrkhāī kare che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સ્વામીએ રાત્રે વાત કરી જે,$(267) દ્રવ્યને અર્થે દગા થાય છે, ઝેર આપે છે ને જાનથી મારી નાખે છે તે કેટલેક ઠેકાણે મારેલા તે ગણાવ્યા, માટે દ્રવ્યમાં સર્વે પાપમાત્ર રહ્યાં છે. ને ભાગવતમાં શ્ર્લોકે શ્ર્લોકે સ્ત્રી, ધનનો ત્યાગ કરવો કહ્યો છે. તે આપણે પણ એમ જ કરવું છે ને કરાવવું છે. એક જણ પચીસ વરસ સત્સંગમાં રહ્યો ત્યાર પછી એક જોડ ચરણારવિંદ વાસ્તે વિમુખ થઈને ઘેર ગયો ને બાયડી કર્યો તે ઘરઘ્યો; પણ એક મહિના કેડે બાયડી મરી ગઈ ને ત્યાર પછી પોતે મરી ગયો. એક પાળે તો સમ ખાધા જે, સમૈયા કેડે ઘેર જવું ને બાયડી ઘરઘી ગયેલી છે તેને પાછી લાવવી; પણ તાવ આવ્યો તે દશ દિવસમાં મૂઓ ને મનસૂબો તો પાર પડ્યો નહિ, માટે ત્યાગી થઈને સ્ત્રી, ધનના મનસૂબા કરે છે તે .@ 1 ઘરઘવાનો મનસૂબો= બીજીવાર પરણવાનો સંકલ્પ.$2 ખડ ખાય છે= ઘાસ ખાવા જેવી મૂર્ખાઈ કરે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10266.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vaniya paradeshma jay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10268.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tirthe avavu tyare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '267');
+            localStorage.setItem('lastVisitedVatFile', 'ch10267.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

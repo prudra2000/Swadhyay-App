@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામમાં ન રહેવાય - Gamma na rahevay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gamma na rahevay</h1>
+                <div class="gujarati-title">ગામમાં ન રહેવાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 34</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(34) gāmamāṃ na rahevāya, nātamāṃ na rahevāya ne kharekharuṃ jñāna thāya to indriyuṃ-aṃta:karaṇa paṇa nokhāṃ paḍī jāya. jevī niṣṭhā evī prāpti karāvaśuṃ. līmaḍe to līṃboḻīo ja lāge, tema jevī niṣṭhā evī prāpti. māṭe jevuṃ rūpa che tevuṃ same (samaye) sphuraśe. haiyāmāṃ viṣaya bharyā che to bījuṃ kyāṃthī thāśe ? haiye hoya tevuṃ hoṭhe āve. rūnā bhāva bahu caḍī gayā, eṭale eka vāṇiyo gāmaḍe rūnuṃ sāṭuṃ karavā gayo, paṇa tarasa ghaṇī lāgī hatī tethī bījā vāṇiyāne tyāṃ pāṇī pīvā gayo ne kahe je, ‘bhāī, rū pā.’ tyāre te vāṇiyo samajyo je, rūnā bhāva caḍyā haśe te ā levā āvyo che. pachī tene besārīne eka jaṇe ṭāḍhuṃ pāṇī pāvā māṃḍyuṃ ne vāte caḍāvyo. bījo gāmamāṃ gayo, teṇe badhuṃ rū sāṭavī līdhuṃ ne vāṇiyo pachī gayo eṭale na maḻyuṃ. tema jīvamāṃ je hoya te bahāra nīkaḻī āve. je ḍuṃgaḻī khāya tene elāyacīnā oḍakāra kyāṃthī āvaśe ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(34) ગામમાં ન રહેવાય, નાતમાં ન રહેવાય ને ખરેખરું જ્ઞાન થાય તો ઇન્દ્રિયું-અંત:કરણ પણ નોખાં પડી જાય. જેવી નિષ્ઠા એવી પ્રાપ્તિ કરાવશું. લીમડે તો લીંબોળીઓ જ લાગે, તેમ જેવી નિષ્ઠા એવી પ્રાપ્તિ. માટે જેવું રૂપ છે તેવું સમે (સમયે) સ્ફુરશે. હૈયામાં વિષય ભર્યા છે તો બીજું ક્યાંથી થાશે ? હૈયે હોય તેવું હોઠે આવે. રૂના ભાવ બહુ ચડી ગયા, એટલે એક વાણિયો ગામડે રૂનું સાટું કરવા ગયો, પણ તરસ ઘણી લાગી હતી તેથી બીજા વાણિયાને ત્યાં પાણી પીવા ગયો ને કહે જે, ‘ભાઈ, રૂ પા.’ ત્યારે તે વાણિયો સમજ્યો જે, રૂના ભાવ ચડ્યા હશે તે આ લેવા આવ્યો છે. પછી તેને બેસારીને એક જણે ટાઢું પાણી પાવા માંડ્યું ને વાતે ચડાવ્યો. બીજો ગામમાં ગયો, તેણે બધું રૂ સાટવી લીધું ને વાણિયો પછી ગયો એટલે ન મળ્યું. તેમ જીવમાં જે હોય તે બહાર નીકળી આવે. જે ડુંગળી ખાય તેને એલાયચીના ઓડકાર ક્યાંથી આવશે ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10033.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetalu deh-indriyunu gamatu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10035.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane bandhan chhe to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '34');
+            localStorage.setItem('lastVisitedVatFile', 'ch10034.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

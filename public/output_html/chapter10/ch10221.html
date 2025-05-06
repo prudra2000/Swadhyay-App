@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>છોકરાને પાળીને મોટો - Chhokarane paline moto</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chhokarane paline moto</h1>
+                <div class="gujarati-title">છોકરાને પાળીને મોટો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 221</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(221) chokarāne pāḻīne moṭo karyo hoya paṇa bāyaḍī āve tyāre be maṃtra kānamāṃ de eṭale eno thaī jāya, pachī mā-bāpano na rahe māṭe ḍāhyā ho to samajī lejo. koṭhīṃbāṃnī kaḍavāśa mīṭhāmāṃ maṭī jāya che tema māyānī kaḍavāśa che te jñānanā pāsa lāgaśe eṭale ṭaḻī jāśe. keṭalākane sārā ḍhoramāṃ ane kūtarāmāṃ paṇa heta thāya che. khaṃḍerāve kūtarāne khoḻāmāṃ besāryo te kūtaro paṇa gādī upara beṭho kahevāya ne kamāladīna khāne sāṭha sāṭha korīnā kūtarā līdhā; evuṃ māyānuṃ baḻa che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(221) છોકરાને પાળીને મોટો કર્યો હોય પણ બાયડી આવે ત્યારે બે મંત્ર કાનમાં દે એટલે એનો થઈ જાય, પછી મા-બાપનો ન રહે માટે ડાહ્યા હો તો સમજી લેજો. કોઠીંબાંની કડવાશ મીઠામાં મટી જાય છે તેમ માયાની કડવાશ છે તે જ્ઞાનના પાસ લાગશે એટલે ટળી જાશે. કેટલાકને સારા ઢોરમાં અને કૂતરામાં પણ હેત થાય છે. ખંડેરાવે કૂતરાને ખોળામાં બેસાર્યો તે કૂતરો પણ ગાદી ઉપર બેઠો કહેવાય ને કમાલદીન ખાને સાઠ સાઠ કોરીના કૂતરા લીધા; એવું માયાનું બળ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10220.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vaikunthanand brahmacharine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10222.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje bai bhaini sabha </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '221');
+            localStorage.setItem('lastVisitedVatFile', 'ch10221.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

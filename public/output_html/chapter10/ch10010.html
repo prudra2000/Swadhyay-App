@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કારિયાણીમાં મહારાજ વતું  - Kariyanima Maharaj vatu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kariyanima Maharaj vatu</h1>
+                <div class="gujarati-title">કારિયાણીમાં મહારાજ વતું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 10</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(10) kāriyāṇīmāṃ mahārāja karāvatā hatā, tyāṃ eka jaṇa harijana thāvā āvyo ne mahārāja vatuṃ karāvatāṃ jamyā eṭale tene avaguṇa āvyo. tyāre mahārāja kahe, ‘ene muktānaṃdasvāmī pāse laī jāo.’ pachī muktānaṃdasvāmīe upadeśa karīne mahārājanāṃ manuṣyacaritra ane divyacaritra eka samajāvīne niśrcaya karāvyo māṭe emāṃ to jñāna hoya to ja pādharuṃ paḍe.@ 1 vatuṃ= hajāmata.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(10) કારિયાણીમાં મહારાજ કરાવતા હતા, ત્યાં એક જણ હરિજન થાવા આવ્યો ને મહારાજ વતું કરાવતાં જમ્યા એટલે તેને અવગુણ આવ્યો. ત્યારે મહારાજ કહે, ‘એને મુક્તાનંદસ્વામી પાસે લઈ જાઓ.’ પછી મુક્તાનંદસ્વામીએ ઉપદેશ કરીને મહારાજનાં મનુષ્યચરિત્ર અને દિવ્યચરિત્ર એક સમજાવીને નિશ્ર્ચય કરાવ્યો માટે એમાં તો જ્ઞાન હોય તો જ પાધરું પડે.@ 1 વતું= હજામત.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10009.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kalni gati samu jue</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10011.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koina haiyama shantino</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '10');
+            localStorage.setItem('lastVisitedVatFile', 'ch10010.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

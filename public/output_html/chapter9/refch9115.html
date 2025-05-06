@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(115) dravyanuṃ pāpa to prathamathī ja cālyuṃ āve che. dravya, māna, svāda ne sparśa e sarve viṣaya karatāṃ strīnuṃ pāpa to bahu bhāre che, te durvāsā vīsa hajāra varase ghaḍapaṇamāṃ paraṇyā. tenī vāta karī je, durvāsā tapa karīne āvatā hatā, tyāṃ yakṣa ne tenī strīo hojamāṃ nagna nahātāṃ hatāṃ, te joīne paraṇavānuṃ mana thayuṃ. pachī uru ṛṣine tyāṃ dīkarīnā vāvaḍa maḻyā eṭale tyāṃ gayā ne kahe, ‘māre gṛhasthāśrama karavo che te tamārī kdhayānuṃ māguṃ karavā āvyo chuṃ.’ to kahe, ‘bhale, paṇa te jarā apalakṣaṇī che ne tamāre krodhano svabhāva; te kema banaśe ?’ to kahe, ‘śuṃ apalakṣaṇa che ?’ tyāre uru ṛṣi kahe, ‘tene roja so gāḻuṃ devānī ṭeva che, tethī koī tene letuṃ nathī ne moṭī ne moṭī thaī che.’ eṭale durvāsā kahe, ‘huṃ roja so gāḻuṃ deśe tyāṃ sudhī nahi boluṃ.’ tyāre uru ṛṣie kahyuṃ je, ‘koī divasa sothī vadhāre gāḻuṃ de to tene śāpa deśo mā, paṇa āṃhīṃ mūkī jājo.’ tyāre te kahe, ‘bahu sāruṃ.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(115) દ્રવ્યનું પાપ તો પ્રથમથી જ ચાલ્યું આવે છે. દ્રવ્ય, માન, સ્વાદ ને સ્પર્શ એ સર્વે વિષય કરતાં સ્ત્રીનું પાપ તો બહુ ભારે છે, તે દુર્વાસા વીસ હજાર વરસે ઘડપણમાં પરણ્યા. તેની વાત કરી જે, દુર્વાસા તપ કરીને આવતા હતા, ત્યાં યક્ષ ને તેની સ્ત્રીઓ હોજમાં નગ્ન નહાતાં હતાં, તે જોઈને પરણવાનું મન થયું. પછી ઉરુ ઋષિને ત્યાં દીકરીના વાવડ મળ્યા એટલે ત્યાં ગયા ને કહે, ‘મારે ગૃહસ્થાશ્રમ કરવો છે તે તમારી ક્ધયાનું માગું કરવા આવ્યો છું.’ તો કહે, ‘ભલે, પણ તે જરા અપલક્ષણી છે ને તમારે ક્રોધનો સ્વભાવ; તે કેમ બનશે ?’ તો કહે, ‘શું અપલક્ષણ છે ?’ ત્યારે ઉરુ ઋષિ કહે, ‘તેને રોજ સો ગાળું દેવાની ટેવ છે, તેથી કોઈ તેને લેતું નથી ને મોટી ને મોટી થઈ છે.’ એટલે દુર્વાસા કહે, ‘હું રોજ સો ગાળું દેશે ત્યાં સુધી નહિ બોલું.’ ત્યારે ઉરુ ઋષિએ કહ્યું જે, ‘કોઈ દિવસ સોથી વધારે ગાળું દે તો તેને શાપ દેશો મા, પણ આંહીં મૂકી જાજો.’ ત્યારે તે કહે, ‘બહુ સારું.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

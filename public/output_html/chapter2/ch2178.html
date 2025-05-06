@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટાનો રાજીપો હોય - Motano rajipo hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motano rajipo hoy</h1>
+                <div class="gujarati-title">મોટાનો રાજીપો હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 178</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(178) moṭāno rājīpo hoya tenā aṃtaramāṃ sukha varatyā kare ne dehamāṃ to sukha-du:kha āve. teno to niradhāra nahi, bākī tene dina-dina pratye śraddhā vṛddhi pāmatī jāya ne dahāḍe-dahāḍe vadhato jāya ema varate tyāre ema jāṇavuṃ je, moṭā rājī che. ne jeṇe svabhāva mūkyā hoya ne mūkato hoya ne mūkavāno ādara hoya, te sarve upara moṭānī dṛṣṭi rahyā kare. ne eka to so janme ekāṃtika thāvāno hoya te ā janme thāya ne ā janme ekāṃtika thāvāno hoya tene ūtaratāno saṃga thāya to so janma dharavā paḍe. temāṃ dṛṣṭāṃta, jema daśa maṇa sāthe eka maṇa lākaḍuṃ bāṃdhe te lākaḍāṃne buḍāḍe (ḍūbāḍe) ne daśa maṇa lākaḍāṃ sāthe eka maṇa pāṇo bāṃdhe te pāṇāne tāre, ema saṃgamāṃ bheda rahyo che. $ $(juo prakaraṇa 4nī vāta 128)@ 1 pāṇā / pāṇo= paththara.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(178) મોટાનો રાજીપો હોય તેના અંતરમાં સુખ વરત્યા કરે ને દેહમાં તો સુખ-દુ:ખ આવે. તેનો તો નિરધાર નહિ, બાકી તેને દિન-દિન પ્રત્યે શ્રદ્ધા વૃદ્ધિ પામતી જાય ને દહાડે-દહાડે વધતો જાય એમ વરતે ત્યારે એમ જાણવું જે, મોટા રાજી છે. ને જેણે સ્વભાવ મૂક્યા હોય ને મૂકતો હોય ને મૂકવાનો આદર હોય, તે સર્વે ઉપર મોટાની દૃષ્ટિ રહ્યા કરે. ને એક તો સો જન્મે એકાંતિક થાવાનો હોય તે આ જન્મે થાય ને આ જન્મે એકાંતિક થાવાનો હોય તેને ઊતરતાનો સંગ થાય તો સો જન્મ ધરવા પડે. તેમાં દૃષ્ટાંત, જેમ દશ મણ સાથે એક મણ લાકડું બાંધે તે લાકડાંને બુડાડે (ડૂબાડે) ને દશ મણ લાકડાં સાથે એક મણ પાણો બાંધે તે પાણાને તારે, એમ સંગમાં ભેદ રહ્યો છે. $ $(જુઓ પ્રકરણ 4ની વાત 128)@ 1 પાણા / પાણો= પથ્થર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2177.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhaktima svabhav vadhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2179.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa to niyame ketalunk</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '178');
+            localStorage.setItem('lastVisitedVatFile', 'ch2178.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઘોડું રાખવું નહિ એ  - Ghodu rakhavu nahi e</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ghodu rakhavu nahi e</h1>
+                <div class="gujarati-title">ઘોડું રાખવું નહિ એ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 291</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(291) $ghoḍuṃ rākhavuṃ nahi e upara vāta karī je, $kaṭhaṇa vacana kahuṃ chuṃ re, kaḍavāṃ kāṃkacya rūpa; $daradīne goḻī dauṃ chuṃ re, sukha thāvā anūpa. $khare mane je jana khāvaśe re, āvuṃ je auṣadha; $jīraṇa roga teno jāvaśe re, sukhī thāśe sadya. $(kīrtana muktāvalī-cosaṭha padī-pada 17-naṃ.1048-pāna naṃ.546)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(291) $ઘોડું રાખવું નહિ એ ઉપર વાત કરી જે, $કઠણ વચન કહું છું રે, કડવાં કાંકચ્ય રૂપ; $દરદીને ગોળી દઉં છું રે, સુખ થાવા અનૂપ. $ખરે મને જે જન ખાવશે રે, આવું જે ઔષધ; $જીરણ રોગ તેનો જાવશે રે, સુખી થાશે સદ્ય. $(કીર્તન મુક્તાવલી-ચોસઠ પદી-પદ 17-નં.1048-પાન નં.546)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16290.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dadakhacharne paranavva</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16292.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mongha-songhanu prakaran</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '291');
+            localStorage.setItem('lastVisitedVatFile', 'ch16291.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

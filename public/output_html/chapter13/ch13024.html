@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવદાની વધી, માણસ - Avadani vadhi, manas </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Avadani vadhi, manas </h1>
+                <div class="gujarati-title">આવદાની વધી, માણસ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 24</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(24) vadhī, māṇasa vadhyāṃ, paṇa koī rīte haiyāmāṃ śāṃti na thaī. haiyāmāṃ ṭāḍhuṃ na thayuṃ ane badhuṃ vadhyuṃ te śā kāmanuṃ ? have to badhī rīte potānuṃ avaḻuṃ karavuṃ temāṃ ja sau macyā che. te koī koīne suhṛdapaṇuṃ nahi rahe ane nārada tathā parvatane jema paraspara īrṣā thaī, tema āpaṇāmāṃ thāśe; ā to mahārāja lāja rākhe che. avidyā satsaṃgamāṃ pesī gaī che ane rūpiyā che te nāka kapāve evā che. akṣaradhāmanāṃ jevuṃ sukha che, paṇa brāhmaṇanī rasoīmāṃ hāḍakuṃ nākhe to du:kha thāya; tema evāṃ du:kha hāthe karīne ūbhāṃ karīne badhāne du:khiyā kare che ne dina jagave che; māṭe avidyā che te badhe vighna karanārī che ne koīne sukhe rahevā nahi de. satsaṃgamāṃ keṭalāka pūtanā ne pralaṃbāsura jevā hoya te oḻakhavā ane baherā thaīne prabhu bhajaśe tene sukha raheśe; paṇa āṃkaḍā vāṃkaḍā karavā maṃḍyā to sukha nahi rahe, māṭe nirmānī thaīne prabhu bhajī levā. 1 āvadānī= āmadānī, āvaka, prāpti, pedāśa, upaja.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(24) વધી, માણસ વધ્યાં, પણ કોઈ રીતે હૈયામાં શાંતિ ન થઈ. હૈયામાં ટાઢું ન થયું અને બધું વધ્યું તે શા કામનું ? હવે તો બધી રીતે પોતાનું અવળું કરવું તેમાં જ સૌ મચ્યા છે. તે કોઈ કોઈને સુહૃદપણું નહિ રહે અને નારદ તથા પર્વતને જેમ પરસ્પર ઈર્ષા થઈ, તેમ આપણામાં થાશે; આ તો મહારાજ લાજ રાખે છે. અવિદ્યા સત્સંગમાં પેસી ગઈ છે અને રૂપિયા છે તે નાક કપાવે એવા છે. અક્ષરધામનાં જેવું સુખ છે, પણ બ્રાહ્મણની રસોઈમાં હાડકું નાખે તો દુ:ખ થાય; તેમ એવાં દુ:ખ હાથે કરીને ઊભાં કરીને બધાને દુ:ખિયા કરે છે ને દિન જગવે છે; માટે અવિદ્યા છે તે બધે વિઘ્ન કરનારી છે ને કોઈને સુખે રહેવા નહિ દે. સત્સંગમાં કેટલાક પૂતના ને પ્રલંબાસુર જેવા હોય તે ઓળખવા અને બહેરા થઈને પ્રભુ ભજશે તેને સુખ રહેશે; પણ આંકડા વાંકડા કરવા મંડ્યા તો સુખ નહિ રહે, માટે નિર્માની થઈને પ્રભુ ભજી લેવા. 1 આવદાની= આમદાની, આવક, પ્રાપ્તિ, પેદાશ, ઉપજ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13023.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kalyanne marage chalavu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13025.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Talano koine par Avyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '24');
+            localStorage.setItem('lastVisitedVatFile', 'ch13024.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

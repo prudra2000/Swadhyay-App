@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મનજીભાઈએ વાડી મધ્યે - Manajibhaie vadi madhye</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Manajibhaie vadi madhye</h1>
+                <div class="gujarati-title">મનજીભાઈએ વાડી મધ્યે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 65</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(65) manajībhāīe vāḍī madhye pūchyuṃ je, ‘upāsanānī bahu vātuṃ thāya che, paṇa kema samajātuṃ nathī ?’ tyāre uttara karyo je, ‘upāsanā thāya che, dharma paḻe che, kasara ṭaḻe che, paṇa āpaṇane khabara paḍatī nathī ne sarve thātāṃ jāya che. ne jenāṃ māvatara samartha hoya tenāṃ chokarāṃne śī phikara hoya ? ne jenā śeṭha samartha hoya tenā ne baḻa hoya. tyāṃ dṛṣṭāṃta dīdhuṃ je, bāṭalīvāḻe pāṃtrīsa hajāra rūpiyā eka gumāstāne āpyā ne karasanajī desāīne pāṃca hajāra rūpiyā mojanā āpyā.’@ 1 gumāsto= kārakuna. $2 mojanā= rājīpānā, bakṣisanā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(65) મનજીભાઈએ વાડી મધ્યે પૂછ્યું જે, ‘ઉપાસનાની બહુ વાતું થાય છે, પણ કેમ સમજાતું નથી ?’ ત્યારે ઉત્તર કર્યો જે, ‘ઉપાસના થાય છે, ધર્મ પળે છે, કસર ટળે છે, પણ આપણને ખબર પડતી નથી ને સર્વે થાતાં જાય છે. ને જેનાં માવતર સમર્થ હોય તેનાં છોકરાંને શી ફિકર હોય ? ને જેના શેઠ સમર્થ હોય તેના ને બળ હોય. ત્યાં દૃષ્ટાંત દીધું જે, બાટલીવાળે પાંત્રીસ હજાર રૂપિયા એક ગુમાસ્તાને આપ્યા ને કરસનજી દેસાઈને પાંચ હજાર રૂપિયા મોજના આપ્યા.’@ 1 ગુમાસ્તો= કારકુન. $2 મોજના= રાજીપાના, બક્ષિસના.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5064.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sadhuno droh em samajavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5066.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nenne joi nenne joi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '65');
+            localStorage.setItem('lastVisitedVatFile', 'ch5065.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

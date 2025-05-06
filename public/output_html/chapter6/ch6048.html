@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે તો - Maharaje to </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje to </h1>
+                <div class="gujarati-title">મહારાજે તો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 48</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(48) mahārāje to, “paṃpoḻīne rākhe tenī pāse rahevuṃ nahīṃ.” ema kahyuṃ che. pachī sūjhe tema karo. ame to ātmānaṃdasvāmī bahu ṭokatā temanī bheḻā rahyā ne brahmānaṃdasvāmī bheḻā rahetā te nīsaryā. te kahyā vinā khoṭa jāya nahi ne jyāṃ sārī sārī rasoī maḻe tyāṃ vāre vāre jāya paṇa kevaḻātmānaṃdasvāmī to jo koī pākī rasoīnuṃ kahe to tene kaheśe je, ‘jūnāgaḍhathī svāmīno kāgaḻa maṃgāvyo che te ājñā āvaśe tyāre leśuṃ.’ ema bahānāṃ kāḍhīne cokhkhī nā kahevī ne dāḻa-roṭalā levā; ne pachī be divasa rahīne bhāgī nīsaravuṃ; paṇa gaḻyāṃ, cīkaṇāṃ, copaḍyāṃ, vaghāryāṃ, ; te khūba sūtā, teṇe karīne vadhaśe kāma ane krodha. ne "āpaṇe to ‘dharmāmṛta’, ‘niṣkāmaśuddhi’ ne ‘śikṣāpatrī’ e traṇa graṃtha pramāṇe rahevuṃ. ema mahārāje kahyuṃ che, te mahārājanī ruci pramāṇe rahevuṃ. 1 dhuṃgāryāṃ= varāḻa nīkaḻatī hoya tevuṃ garamāgarama. (ba.va.) $2 taḍūsīne= khūba khāīne.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૪૮) મહારાજે તો, “પંપોળીને રાખે તેની પાસે રહેવું નહીં.” એમ કહ્યું છે. પછી સૂઝે તેમ કરો. અમે તો આત્માનંદસ્વામી બહુ ટોકતા તેમની ભેળા રહ્યા ને બ્રહ્માનંદસ્વામી ભેળા રહેતા તે નીસર્યા. તે કહ્યા વિના ખોટ જાય નહિ ને જ્યાં સારી સારી રસોઈ મળે ત્યાં વારે વારે જાય પણ કેવળાત્માનંદસ્વામી તો જો કોઈ પાકી રસોઈનું કહે તો તેને કહેશે જે, ‘જૂનાગઢથી સ્વામીનો કાગળ મંગાવ્યો છે તે આજ્ઞા આવશે ત્યારે લેશું.’ એમ બહાનાં કાઢીને ચોખ્ખી ના કહેવી ને દાળ-રોટલા લેવા; ને પછી બે દિવસ રહીને ભાગી નીસરવું; પણ ગળ્યાં, ચીકણાં, ચોપડ્યાં, વઘાર્યાં, ; તે ખૂબ સૂતા, તેણે કરીને વધશે કામ અને ક્રોધ. ને "આપણે તો ‘ધર્મામૃત’, ‘નિષ્કામશુદ્ધિ’ ને ‘શિક્ષાપત્રી’ એ ત્રણ ગ્રંથ પ્રમાણે રહેવું. એમ મહારાજે કહ્યું છે, તે મહારાજની રુચિ પ્રમાણે રહેવું. 1 ધુંગાર્યાં= વરાળ નીકળતી હોય તેવું ગરમાગરમ. (બ.વ.) $2 તડૂસીને= ખૂબ ખાઈને.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6047.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Swamie kahyu ke</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6049.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ruchinu loyanu 14mu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '48');
+            localStorage.setItem('lastVisitedVatFile', 'ch6048.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

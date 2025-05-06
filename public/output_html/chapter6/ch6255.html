@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રાવણ વદિ નવમી ને  - Shravan vadi navmi ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shravan vadi navmi ne</h1>
+                <div class="gujarati-title">શ્રાવણ વદિ નવમી ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 255</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(255) śrāvaṇa vadi navamī ne somavāre brahmacārīne tyāṃ vāta karī je, ‘je karavā māṃḍe te thāya; dhyāna karavuṃ, bhajana karavuṃ, te māṇasa jāṇe āphuraḍuṃ thāya, paṇa āphuraḍuṃ te kema thāya ? e to bhagavāna saṃbhāre ne bhūle, vaḻī dhyāna kare vaḻī bhūlīne saṃbhāre ne bhajana kare to thāya. ā bhaṇe te bhūle, paṇa hāthamāṃ jeṇe pānuṃ ja jhālyuṃ nathī, te śuṃ bhūle ?’@ 1 mūḻaguṃ= mātra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૫૫) શ્રાવણ વદિ નવમી ને સોમવારે બ્રહ્મચારીને ત્યાં વાત કરી જે, ‘જે કરવા માંડે તે થાય; ધ્યાન કરવું, ભજન કરવું, તે માણસ જાણે આફુરડું થાય, પણ આફુરડું તે કેમ થાય ? એ તો ભગવાન સંભારે ને ભૂલે, વળી ધ્યાન કરે વળી ભૂલીને સંભારે ને ભજન કરે તો થાય. આ ભણે તે ભૂલે, પણ હાથમાં જેણે પાનું જ ઝાલ્યું નથી, તે શું ભૂલે ?’@ 1 મૂળગું= માત્ર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6254.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Lilani vat kari</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6256.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek vediye avine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '255');
+            localStorage.setItem('lastVisitedVatFile', 'ch6255.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

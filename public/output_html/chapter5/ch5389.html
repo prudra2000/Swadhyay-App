@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક વખતે મહારાજ - Ek vakhat Maharaj</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek vakhat Maharaj</h1>
+                <div class="gujarati-title">એક વખતે મહારાજ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 389</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(389) eka vakhate mahārāja akṣara oraḍīmāṃ virājamāna hatā, tyāṃ huṃ mahārājane darśane gayo, tyāre śukamuni mārā sāru āsana lāgyā, tyāre mahārāja kahe, ‘emanī āsane karīne moṭapa nathī, e to anādinā moṭā che ne bījānī to āsanathī nānapa-moṭapa che, ema ā sādhune nathī.’ ema kahyuṃ.@ 1 gotavā= śodhavā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(389) એક વખતે મહારાજ અક્ષર ઓરડીમાં વિરાજમાન હતા, ત્યાં હું મહારાજને દર્શને ગયો, ત્યારે શુકમુનિ મારા સારુ આસન લાગ્યા, ત્યારે મહારાજ કહે, ‘એમની આસને કરીને મોટપ નથી, એ તો અનાદિના મોટા છે ને બીજાની તો આસનથી નાનપ-મોટપ છે, એમ આ સાધુને નથી.’ એમ કહ્યું.@ 1 ગોતવા= શોધવા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5388.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek divas swami</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5390.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vahevarni vatma ketalak</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '389');
+            localStorage.setItem('lastVisitedVatFile', 'ch5389.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વ પ્રકારની આસક્તિ  - Sarv prakarni asakti </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarv prakarni asakti </h1>
+                <div class="gujarati-title">સર્વ પ્રકારની આસક્તિ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 79</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(79) sarva prakāranī ṭaḻī jāya to ā loka ne ā deha te game nahi ne ā lokamāṃ rahevuṃ paḍe te du:kha thāya, ema bolyā. te upara praśrna pūchyo je, ‘āsakti rahe che, tenuṃ du:kha thāya che, tenuṃ kema samajavuṃ ?’ pachī teno uttara karyo je, ‘e du:kha sāruṃ kare che; kema je, nirmānī rahevāya ne bhagavāna karatā haśe te ṭhīka karatā haśe ne dehanuṃ rūpa to gāma phaṇeṇīmāṃ sūrā khācarane kāna dekhāḍyo te bhegī ūlaṭī thaī; tema bījāne dekhāya to evuṃ thāya.’ (juo prakaraṇa 11nī vāta 231)@ 1 āsakti= moha, atiśaya sneha, laganī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(79) સર્વ પ્રકારની ટળી જાય તો આ લોક ને આ દેહ તે ગમે નહિ ને આ લોકમાં રહેવું પડે તે દુ:ખ થાય, એમ બોલ્યા. તે ઉપર પ્રશ્ર્ન પૂછ્યો જે, ‘આસક્તિ રહે છે, તેનું દુ:ખ થાય છે, તેનું કેમ સમજવું ?’ પછી તેનો ઉત્તર કર્યો જે, ‘એ દુ:ખ સારું કરે છે; કેમ જે, નિર્માની રહેવાય ને ભગવાન કરતા હશે તે ઠીક કરતા હશે ને દેહનું રૂપ તો ગામ ફણેણીમાં સૂરા ખાચરને કાન દેખાડ્યો તે ભેગી ઊલટી થઈ; તેમ બીજાને દેખાય તો એવું થાય.’ (જુઓ પ્રકરણ 11ની વાત 231)@ 1 આસક્તિ= મોહ, અતિશય સ્નેહ, લગની.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1078.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Amane to ek janm</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1080.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vachanamrut vanchavine </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '79');
+            localStorage.setItem('lastVisitedVatFile', 'ch1079.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

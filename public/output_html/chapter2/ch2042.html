@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આમ સમજાય તો આજ્ઞા  - Aam samajay to aagna</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aam samajay to aagna</h1>
+                <div class="gujarati-title">આમ સમજાય તો આજ્ઞા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 42</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(42) āma samajāya to ājñā paḻe je, $thara thara dhrūjata rahe vacanameṃ indra munīṃdrā,$thara thara dhrūjata rahe vacanameṃ avani ahīṃdrā;$thara thara dhrūjata rahe vacanameṃ śaśīyara sūrā,$thara thara dhrūjata rahe renadina kāla hajūrā;$hari hara hi aja ādi sabe rahata bhaktirata jāhikī,$mukuṃda mohavaśa mūḍha nara kare na ājñā tāhikī.$(muktānaṃda kāvya: mukunda bāvanī-33) $(śrīmad bhāgavata : 5/5/10)$artha : ṛṣabhadeva bhagavāna putrone kahe che : ‘he putro ! haṃsa samāna vivekavāḻā guru viśe tathā paramātmā viśe temanī anuvṛtti pāḻavārūpa bhakti vaḍe, tṛṣṇāno tyāga karī, sukha-du:khādi dvandvone sahana karavāthī, ‘ā loka-svargaloka badhe ja jīvane du:kha che.’ evuṃ jāṇavāthī, tattvanī jijñāsāthī, tapathī, kāmyakarma tyajavāthī, sarva baṃdhananā kāraṇarūpa ahaṃkārathī mukta thaī paramapadane pāmavuṃ.’ 1 hima= atiśaya ṭhaṃḍī, ghaṇo sakhata ṭhāra, barapha.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(42) આમ સમજાય તો આજ્ઞા પળે જે, $થર થર ધ્રૂજત રહે વચનમેં ઇન્દ્ર મુનીંદ્રા,$થર થર ધ્રૂજત રહે વચનમેં અવનિ અહીંદ્રા;$થર થર ધ્રૂજત રહે વચનમેં શશીયર સૂરા,$થર થર ધ્રૂજત રહે રેનદિન કાલ હજૂરા;$હરિ હર હિ અજ આદિ સબે રહત ભક્તિરત જાહિકી,$મુકુંદ મોહવશ મૂઢ નર કરે ન આજ્ઞા તાહિકી.$(મુક્તાનંદ કાવ્ય: મુકુન્દ બાવની-33) $(શ્રીમદ્ ભાગવત : 5/5/10)$અર્થ : ઋષભદેવ ભગવાન પુત્રોને કહે છે : ‘હે પુત્રો ! હંસ સમાન વિવેકવાળા ગુરુ વિશે તથા પરમાત્મા વિશે તેમની અનુવૃત્તિ પાળવારૂપ ભક્તિ વડે, તૃષ્ણાનો ત્યાગ કરી, સુખ-દુ:ખાદિ દ્વન્દ્વોને સહન કરવાથી, ‘આ લોક-સ્વર્ગલોક બધે જ જીવને દુ:ખ છે.’ એવું જાણવાથી, તત્ત્વની જિજ્ઞાસાથી, તપથી, કામ્યકર્મ ત્યજવાથી, સર્વ બંધનના કારણરૂપ અહંકારથી મુક્ત થઈ પરમપદને પામવું.’ 1 હિમ= અતિશય ઠંડી, ઘણો સખત ઠાર, બરફ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2041.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Samagam karavani rit</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2043.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jivne mathe shasta</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '42');
+            localStorage.setItem('lastVisitedVatFile', 'ch2042.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

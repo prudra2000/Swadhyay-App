@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પૃથ્વી ગંધને મૂકે પણ - Pruthvi gandhne muke pan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pruthvi gandhne muke pan</h1>
+                <div class="gujarati-title">પૃથ્વી ગંધને મૂકે પણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 295</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(295) pṛthvī gaṃdhane mūke paṇa bhīṣmanuṃ brahmacarya na jāya, ema bhagavānane aḍaga samaje. vaḻī, mahārāje karoḍa karoḍa sādhana kahyāṃ che, paṇa temāṃ traṇa mukhya che. eka bhagavānanī upāsanā, bījuṃ temanā bhaktane viśe ātmabuddhi ne trījī ājñā. e traṇa jo barābara samaje to badhuṃya thayuṃ ne ājñāmāṃ dharma paṇa āvī gayo ne ājñāmāṃ sarve sādhana āvī gayāṃ ane āpaṇe mahārājanī ājñā, upāsanā tathā ekāṃtika saṃta sāthe heta che; māṭe je je karavānuṃ che te āpaṇe thaī rahyuṃ che, have kāṃī karavuṃ rahyuṃ nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૯૫) પૃથ્વી ગંધને મૂકે પણ ભીષ્મનું બ્રહ્મચર્ય ન જાય, એમ ભગવાનને અડગ સમજે. વળી, મહારાજે કરોડ કરોડ સાધન કહ્યાં છે, પણ તેમાં ત્રણ મુખ્ય છે. એક ભગવાનની ઉપાસના, બીજું તેમના ભક્તને વિશે આત્મબુદ્ધિ ને ત્રીજી આજ્ઞા. એ ત્રણ જો બરાબર સમજે તો બધુંય થયું ને આજ્ઞામાં ધર્મ પણ આવી ગયો ને આજ્ઞામાં સર્વે સાધન આવી ગયાં અને આપણે મહારાજની આજ્ઞા, ઉપાસના તથા એકાંતિક સંત સાથે હેત છે; માટે જે જે કરવાનું છે તે આપણે થઈ રહ્યું છે, હવે કાંઈ કરવું રહ્યું નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6294.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek jane puchhyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7001.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Manavadarma mayaram bhattne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '295');
+            localStorage.setItem('lastVisitedVatFile', 'ch6295.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

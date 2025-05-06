@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મન ને ઈન્દ્રિયો રૂપી  - Man ne indriyo rupi </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Man ne indriyo rupi </h1>
+                <div class="gujarati-title">મન ને ઈન્દ્રિયો રૂપી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 252</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(252) mana ne īndriyo rūpī śatru kevā che ? to bhagavānane paṇa paḍyā mūke ne jyāre rūpiyā mukāvyā tyāre mahārājanī sevā mūkī dīdhī. te upara bhagujīnī vāta karī je, prathama mahārāja pāse bhagujī rahetā. pachī mahārāje evo prabaṃdha bāṃdhyo ke koīe dravya potānuṃ karī amārā pārṣadane na rākhavuṃ ane jene rākhavuṃ hoya te hālavā māṃḍajo, amāre teno khapa nathī. ā vātanī brahmānaṃdasvāmīne amadāvāda khabara paḍī ane tyāṃ māṇasano khapa tethī gaḍhaḍe āvī kahyuṃ ke dravya rākhavuṃ hoya ne tyāṃthī rajā maḻe to cālo mārī sāthe ame rākhaśuṃ, pachī bhagujī ādithī dravya na mukāṇuṃ ne dravyane māṭe mahārājanī sevāno paṇa tyāga karyo ne amadāvāda deśamāṃ jaīne rahyā. ema dravyanā pāpathī ājñā sāmī ne pragaṭa mūrtinī sevā sāmī paṇa najara na rahī. māṭe jāṇajo je deśakāḻe buddhi pharī na jāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(252) મન ને ઈન્દ્રિયો રૂપી શત્રુ કેવા છે ? તો ભગવાનને પણ પડ્યા મૂકે ને જ્યારે રૂપિયા મુકાવ્યા ત્યારે મહારાજની સેવા મૂકી દીધી. તે ઉપર ભગુજીની વાત કરી જે, પ્રથમ મહારાજ પાસે ભગુજી રહેતા. પછી મહારાજે એવો પ્રબંધ બાંધ્યો કે કોઈએ દ્રવ્ય પોતાનું કરી અમારા પાર્ષદને ન રાખવું અને જેને રાખવું હોય તે હાલવા માંડજો, અમારે તેનો ખપ નથી. આ વાતની બ્રહ્માનંદસ્વામીને અમદાવાદ ખબર પડી અને ત્યાં માણસનો ખપ તેથી ગઢડે આવી કહ્યું કે દ્રવ્ય રાખવું હોય ને ત્યાંથી રજા મળે તો ચાલો મારી સાથે અમે રાખશું, પછી ભગુજી આદિથી દ્રવ્ય ન મુકાણું ને દ્રવ્યને માટે મહારાજની સેવાનો પણ ત્યાગ કર્યો ને અમદાવાદ દેશમાં જઈને રહ્યા. એમ દ્રવ્યના પાપથી આજ્ઞા સામી ને પ્રગટ મૂર્તિની સેવા સામી પણ નજર ન રહી. માટે જાણજો જે દેશકાળે બુદ્ધિ ફરી ન જાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16251.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Balamukundanandswamini vat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16253.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Je potanu dharyu karava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '252');
+            localStorage.setItem('lastVisitedVatFile', 'ch16252.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

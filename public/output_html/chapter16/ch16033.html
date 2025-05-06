@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક દિવસ બધાને  - Ek divas badhane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek divas badhane</h1>
+                <div class="gujarati-title">એક દિવસ બધાને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 33</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(33) eka divasa badhāne pūchyuṃ je, ‘jene jyāṃ jyāṃ heta hoya te kaho.’ tyāre ghanaśyāmadāsa kahe, ‘māre nāgājaṇa sāthe heta.’ tyāre mahārāja kahe, ‘vastu kone āpo cho ?’ pachī baṃdhāṇā ne mahārājano evo svabhāva je koīnuṃ ghasātuṃ potā pāse koī bole tene ughāḍuṃ karī detā. te eka divasa kahe, ‘nityānaṃdasvāmī kahetā je, jīvokhācara satsaṃgī ja nathī.’ te jīvokhācara beṭhā hatā ne kahyuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(33) એક દિવસ બધાને પૂછ્યું જે, ‘જેને જ્યાં જ્યાં હેત હોય તે કહો.’ ત્યારે ઘનશ્યામદાસ કહે, ‘મારે નાગાજણ સાથે હેત.’ ત્યારે મહારાજ કહે, ‘વસ્તુ કોને આપો છો ?’ પછી બંધાણા ને મહારાજનો એવો સ્વભાવ જે કોઈનું ઘસાતું પોતા પાસે કોઈ બોલે તેને ઉઘાડું કરી દેતા. તે એક દિવસ કહે, ‘નિત્યાનંદસ્વામી કહેતા જે, જીવોખાચર સત્સંગી જ નથી.’ તે જીવોખાચર બેઠા હતા ને કહ્યું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16032.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sanje vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16034.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Budha dhadhalni vat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '33');
+            localStorage.setItem('lastVisitedVatFile', 'ch16033.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

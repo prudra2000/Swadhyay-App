@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અંતરનો કુસંગ, બહારનો - Antarno kusang, baharno</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Antarno kusang, baharno</h1>
+                <div class="gujarati-title">અંતરનો કુસંગ, બહારનો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 133</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(133) aṃtarano kusaṃga, bahārano kusaṃga ne satsaṃgamāṃ kusaṃga, ene oḻakhīne teno tyāga karavo. te aṃtarano kusaṃga je, manamāṃ bhūṃḍā ghāṭa thāya ne satsaṃgamāṃ kusaṃga je, loka, bhoga ne pakṣa. te pakṣe karīne ācāryanuṃ, maṃdiranuṃ, koṭhārīnuṃ ne moṭā sādhunuṃ ghasātuṃ bole. tyāre koīke pūchyuṃ je, ‘e thaī gayuṃ hoya te kema ṭaḻe ?’ eṭale svāmī kahe, ‘e to moṭā sādhuno viśrvāsa hoya je, e bhagavāna jevā che, ne bhagavānanī peṭhe aṃtarajāmī che te jāṇe che; paṇa kahetā nathī, ema jāṇe to ṭaḻe.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૩૩) અંતરનો કુસંગ, બહારનો કુસંગ ને સત્સંગમાં કુસંગ, એને ઓળખીને તેનો ત્યાગ કરવો. તે અંતરનો કુસંગ જે, મનમાં ભૂંડા ઘાટ થાય ને સત્સંગમાં કુસંગ જે, લોક, ભોગ ને પક્ષ. તે પક્ષે કરીને આચાર્યનું, મંદિરનું, કોઠારીનું ને મોટા સાધુનું ઘસાતું બોલે. ત્યારે કોઈકે પૂછ્યું જે, ‘એ થઈ ગયું હોય તે કેમ ટળે ?’ એટલે સ્વામી કહે, ‘એ તો મોટા સાધુનો વિશ્ર્વાસ હોય જે, એ ભગવાન જેવા છે, ને ભગવાનની પેઠે અંતરજામી છે તે જાણે છે; પણ કહેતા નથી, એમ જાણે તો ટળે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6132.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Je same jevi bhagavanni</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6134.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek sadhue prasadi khadhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '133');
+            localStorage.setItem('lastVisitedVatFile', 'ch6133.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

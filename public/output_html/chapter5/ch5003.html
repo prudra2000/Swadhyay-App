@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દિવ્યભાવ-મનુષ્યભાવ એક - Divyabhav-manushyabhav ek </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Divyabhav-manushyabhav ek </h1>
+                <div class="gujarati-title">દિવ્યભાવ-મનુષ્યભાવ એક</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 3</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(3) divyabhāva-manuṣyabhāva eka samaje to avaguṇa na āve, jema iyaḻa bhamarīnuṃ dhyāna karethī (karyāthī) iyaḻa bhamarī thāya tathā pārasanā saṃbaṃdhathī loḍhuṃ sonuṃ thāya tathā naṃganī parīkṣā jhaverīnā saṃgathī ja āvaḍe tathā dhūḍa kuṃbhāranī kasaṇī khame che tethī vāsaṇa thāya che, tema ja bhagavāna tathā ekāṃtika oḻakhyāthī brahmarūpa thāya che ne ekāṃtika oḻakhyā pachī kāṃī karavuṃ rahetuṃ nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(3) દિવ્યભાવ-મનુષ્યભાવ એક સમજે તો અવગુણ ન આવે, જેમ ઇયળ ભમરીનું ધ્યાન કરેથી (કર્યાથી) ઇયળ ભમરી થાય તથા પારસના સંબંધથી લોઢું સોનું થાય તથા નંગની પરીક્ષા ઝવેરીના સંગથી જ આવડે તથા ધૂડ કુંભારની કસણી ખમે છે તેથી વાસણ થાય છે, તેમ જ ભગવાન તથા એકાંતિક ઓળખ્યાથી બ્રહ્મરૂપ થાય છે ને એકાંતિક ઓળખ્યા પછી કાંઈ કરવું રહેતું નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5002.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanna tatha ekantikna</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5004.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavan tatha ekantikno sang</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '3');
+            localStorage.setItem('lastVisitedVatFile', 'ch5003.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

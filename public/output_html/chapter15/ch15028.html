@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચટકી લાગ્યાની વાત  - Chataki lagyani vat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chataki lagyani vat</h1>
+                <div class="gujarati-title">ચટકી લાગ્યાની વાત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 28</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(28) caṭakī lāgyānī vāta karī je, jema sūma (kaṃjūsa,lobhī) dravya vāvare tema bolavuṃ tema jenuṃ jeṭaluṃ jatana hoya teṭaluṃ te thāya. te khāīe tyāre bhūkha jāya ne rasoī karyā vinā ne khādhā vinā bhūkha jāya nahi, tema kāma-krodha che te to jatana kare tyāre jāya māṭe śāstra vāṃcavāṃ ne tene vicāravāṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(28) ચટકી લાગ્યાની વાત કરી જે, જેમ સૂમ (કંજૂસ,લોભી) દ્રવ્ય વાવરે તેમ બોલવું તેમ જેનું જેટલું જતન હોય તેટલું તે થાય. તે ખાઈએ ત્યારે ભૂખ જાય ને રસોઈ કર્યા વિના ને ખાધા વિના ભૂખ જાય નહિ, તેમ કામ-ક્રોધ છે તે તો જતન કરે ત્યારે જાય માટે શાસ્ત્ર વાંચવાં ને તેને વિચારવાં.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15027.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tyag karato karato</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15029.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek chadavano marag chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '28');
+            localStorage.setItem('lastVisitedVatFile', 'ch15028.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

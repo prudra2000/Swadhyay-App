@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સભામાં વિધાત્રાનંદસ્વામી - Sabhama vidhatranandswami</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sabhama vidhatranandswami</h1>
+                <div class="gujarati-title">સભામાં વિધાત્રાનંદસ્વામી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 31</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(31) sabhāmāṃ vidhātrānaṃdasvāmīvāḻī patrī vaṃcāvīne bolyā je, ‘ā vāta yathārtha jāṇyā pachī kāṃī karavuṃ bākī rahe nahīṃ. ā patrī upara aciṃtyānaṃda brahmacārī pāse ākho karāvyo che, temāṃ saṃpūrṇa vāta āvī gaī che. aho ! hamaṇāṃ ghaṇī prāpti che. āvā sādhu to bhagavāna jevā kahevāya. potānāṃ vakhāṇa potāne na karavāṃ, ema ‘śikṣāpatrī’māṃ kahyuṃ che, paṇa kahyā vinā samajāya nahīṃ. pachī bahu khoṭa jāśe.’ $(juo prakaraṇa 11nī vāta 87)@ 1 graṃtha= aciṃtyānaṃda brahmacārī racita ‘harilīlākalpataru’.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૩૧) સભામાં વિધાત્રાનંદસ્વામીવાળી પત્રી વંચાવીને બોલ્યા જે, ‘આ વાત યથાર્થ જાણ્યા પછી કાંઈ કરવું બાકી રહે નહીં. આ પત્રી ઉપર અચિંત્યાનંદ બ્રહ્મચારી પાસે આખો કરાવ્યો છે, તેમાં સંપૂર્ણ વાત આવી ગઈ છે. અહો ! હમણાં ઘણી પ્રાપ્તિ છે. આવા સાધુ તો ભગવાન જેવા કહેવાય. પોતાનાં વખાણ પોતાને ન કરવાં, એમ ‘શિક્ષાપત્રી’માં કહ્યું છે, પણ કહ્યા વિના સમજાય નહીં. પછી બહુ ખોટ જાશે.’ $(જુઓ પ્રકરણ ૧૧ની વાત ૮૭)@ 1 ગ્રંથ= અચિંત્યાનંદ બ્રહ્મચારી રચિત ‘હરિલીલાકલ્પતરુ’.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6030.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Varatalthi padharya te </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6032.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Atmanishtha ave tene karine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '31');
+            localStorage.setItem('lastVisitedVatFile', 'ch6031.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

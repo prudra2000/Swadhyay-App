@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનને મારગે તો - Bhagavanne marage to </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanne marage to </h1>
+                <div class="gujarati-title">ભગવાનને મારગે તો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 58</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā āṣāḍha vadi paṃcamīne divasa svāmīe vāta karī je, $(58) bhagavānane mārage to koīka vīralā hoya te cāle māṭe jene ā pragaṭa bhagavānanuṃ jñāna che tene ja āṃkha che ne bījā ajñānī viṣayane mārage che te to āṃdhaḻā che tenuṃ jñāna kevuṃ che to, $pāka paroṇā khāī gayā ne vāṃse rahī che rākha; $vāṃse rahī che rākha te kevī, ūlaṭī āṃkho phoḍe evī, $kahe goviṃdarāma jīva bhakti to bhūlyā, jñāna kathe jema baḻela cūlā. $(kīrtana muktāvali : go.kṛ.caṃdrāvaḻā)@ 1 dhroḍe= doḍe-anusare.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના આષાઢ વદિ પંચમીને દિવસ સ્વામીએ વાત કરી જે, $(58) ભગવાનને મારગે તો કોઈક વીરલા હોય તે ચાલે માટે જેને આ પ્રગટ ભગવાનનું જ્ઞાન છે તેને જ આંખ છે ને બીજા અજ્ઞાની વિષયને મારગે છે તે તો આંધળા છે તેનું જ્ઞાન કેવું છે તો, $પાક પરોણા ખાઈ ગયા ને વાંસે રહી છે રાખ; $વાંસે રહી છે રાખ તે કેવી, ઊલટી આંખો ફોડે એવી, $કહે ગોવિંદરામ જીવ ભક્તિ તો ભૂલ્યા, જ્ઞાન કથે જેમ બળેલ ચૂલા. $(કીર્તન મુક્તાવલિ : ગો.કૃ.ચંદ્રાવળા)@ 1 ધ્રોડે= દોડે-અનુસરે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9057.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Loyanu 13mu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9059.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ketaluk vahevarnu gnan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '58');
+            localStorage.setItem('lastVisitedVatFile', 'ch9058.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

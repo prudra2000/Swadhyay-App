@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હરિશંકરભાઈએ પૂછ્યું જે - Harisankarbhaie puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Harisankarbhaie puchhyu je</h1>
+                <div class="gujarati-title">હરિશંકરભાઈએ પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 91</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(91) hariśaṃkarabhāīe pūchyuṃ je, ‘pravṛttimārgamāṃ deha dharyo che ne pravṛttithī akaḻāmaṇa āve che, te kema pāra paḍaśe ?’ tyāre kahyuṃ je, ‘have śuṃ pāra paḍavuṃ bākī rahyuṃ che ? pāra paḍī cūkyuṃ che ne pravṛtti ṭaḻī gaī che. ne aradhuṃ to pāra paḍyuṃ che ne pravṛtti che te sārī che, nīkara kyāṃyanuṃ kyāṃya jatuṃ rahevāta ne pūrvano saṃskāra bhāre che ne pravṛttimāṃ keṭaluṃka ṭhīka che.’ vaḻī pharī pūchyuṃ je, ‘pūrvano saṃskāra che, tyāre hamaṇāṃ kema satsaṃga thayo ?’ tyāre bolyā je, ‘joga thāya tyāre bīja ūge ne pāṇīno joga thayā vinā bīja sarasa hoya paṇa ūge nahīṃ.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(91) હરિશંકરભાઈએ પૂછ્યું જે, ‘પ્રવૃત્તિમાર્ગમાં દેહ ધર્યો છે ને પ્રવૃત્તિથી અકળામણ આવે છે, તે કેમ પાર પડશે ?’ ત્યારે કહ્યું જે, ‘હવે શું પાર પડવું બાકી રહ્યું છે ? પાર પડી ચૂક્યું છે ને પ્રવૃત્તિ ટળી ગઈ છે. ને અરધું તો પાર પડ્યું છે ને પ્રવૃત્તિ છે તે સારી છે, નીકર ક્યાંયનું ક્યાંય જતું રહેવાત ને પૂર્વનો સંસ્કાર ભારે છે ને પ્રવૃત્તિમાં કેટલુંક ઠીક છે.’ વળી ફરી પૂછ્યું જે, ‘પૂર્વનો સંસ્કાર છે, ત્યારે હમણાં કેમ સત્સંગ થયો ?’ ત્યારે બોલ્યા જે, ‘જોગ થાય ત્યારે બીજ ઊગે ને પાણીનો જોગ થયા વિના બીજ સરસ હોય પણ ઊગે નહીં.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5090.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mahuvana haribhakte </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5092.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Varatalnu pahelu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '91');
+            localStorage.setItem('lastVisitedVatFile', 'ch5091.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

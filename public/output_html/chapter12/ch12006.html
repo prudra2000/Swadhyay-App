@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આહાર શુદ્ધ હોય તો  - Ahara shuddh hoy to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ahara shuddh hoy to</h1>
+                <div class="gujarati-title">આહાર શુદ્ધ હોય તો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 6</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(6) āhāra śuddha hoya to buddhi sārī rahe ne aśuddha hoya to bagaḍī jāya. eka jaṇe eka ṛṣine kahyuṃ je, ‘mārā śatru mare evā maṃtra japo ne yajña karāvo.’ pachī teṇe kahyuṃ je, ‘māro bhāī karāvaśe.’ eṭale teṇe pūchyuṃ je, ‘e kema karāvaśe ne tame nahi ?’ to kahe je, ‘eṇe bhūṃḍī bhoṃnuṃ phaḻa khādhuṃ che, tethī tenī buddhi bagaḍī gaī che, eṭale te to yajña karāvaśe. huṃ nahi karāvuṃ; kema ke, mārī buddhi bagaḍī nathī.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(6) આહાર શુદ્ધ હોય તો બુદ્ધિ સારી રહે ને અશુદ્ધ હોય તો બગડી જાય. એક જણે એક ઋષિને કહ્યું જે, ‘મારા શત્રુ મરે એવા મંત્ર જપો ને યજ્ઞ કરાવો.’ પછી તેણે કહ્યું જે, ‘મારો ભાઈ કરાવશે.’ એટલે તેણે પૂછ્યું જે, ‘એ કેમ કરાવશે ને તમે નહિ ?’ તો કહે જે, ‘એણે ભૂંડી ભોંનું ફળ ખાધું છે, તેથી તેની બુદ્ધિ બગડી ગઈ છે, એટલે તે તો યજ્ઞ કરાવશે. હું નહિ કરાવું; કેમ કે, મારી બુદ્ધિ બગડી નથી.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12005.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Keriyana bhagu patelne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12007.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Thanagalolne padar</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '6');
+            localStorage.setItem('lastVisitedVatFile', 'ch12006.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

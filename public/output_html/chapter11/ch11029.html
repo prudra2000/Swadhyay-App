@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બ્રહ્માનંદસ્વામીને  - Brahmanandaswamine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Brahmanandaswamine</h1>
+                <div class="gujarati-title">બ્રહ્માનંદસ્વામીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 29</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(29) brahmānaṃdasvāmīne muktānaṃdasvāmī sāthe lahiyā māṭe āṃṭī paḍī te muktānaṃdasvāmīne page na lāgavuṃ te sāru te oraḍāmāṃ cālīsa āsana hatāṃ te badhāne page lāgavā na gayā. pachī mahārāje ṭhapako dīdho je, ‘ muktānaṃdasvāmīne page lāgavā kema nathī jātā ?’ tyāre brahmānaṃdasvāmī kahe, ‘mahārāja, māro vāṃka nathī. e to huṃ māṃdo hato ane āvaradā thaī rahī hatī ema tame kahyuṃ, ne ḍośīonī āvaradā pāṃca pāṃca varasanī āpī te ḍośīonī āvaradāmāṃ to evuṃ ja hoya ne! temāṃ māro vāṃka nathī.’ jīvano svabhāva evo ja che ke savaḻo cāle to jīva de ane avaḻo cāle to māthuṃ kāpavā taiyāra thāya; māṭe jñāna vinā to kāṃī ṭhīka nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(29) બ્રહ્માનંદસ્વામીને મુક્તાનંદસ્વામી સાથે લહિયા માટે આંટી પડી તે મુક્તાનંદસ્વામીને પગે ન લાગવું તે સારુ તે ઓરડામાં ચાલીસ આસન હતાં તે બધાને પગે લાગવા ન ગયા. પછી મહારાજે ઠપકો દીધો જે, ‘ મુક્તાનંદસ્વામીને પગે લાગવા કેમ નથી જાતા ?’ ત્યારે બ્રહ્માનંદસ્વામી કહે, ‘મહારાજ, મારો વાંક નથી. એ તો હું માંદો હતો અને આવરદા થઈ રહી હતી એમ તમે કહ્યું, ને ડોશીઓની આવરદા પાંચ પાંચ વરસની આપી તે ડોશીઓની આવરદામાં તો એવું જ હોય ને! તેમાં મારો વાંક નથી.’ જીવનો સ્વભાવ એવો જ છે કે સવળો ચાલે તો જીવ દે અને અવળો ચાલે તો માથું કાપવા તૈયાર થાય; માટે જ્ઞાન વિના તો કાંઈ ઠીક નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11028.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satsang thaya tyare sarve</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11030.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ame ek same gondal</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '29');
+            localStorage.setItem('lastVisitedVatFile', 'ch11029.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

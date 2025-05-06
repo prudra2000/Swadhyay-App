@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>છોકરો સોળ વરસનો થાય  - Chhokaro sol varasano thay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chhokaro sol varasano thay</h1>
+                <div class="gujarati-title">છોકરો સોળ વરસનો થાય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 107</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(107) chokaro soḻa varasano thāya tyāre bhāī kahevo. putre mitravadācaret‌ artha :- putranī sāthe mitranī jema vartavuṃ joīe. te upara ūnānā kalyāṇa śeṭhanī vāta karī je, sādhunī godaḍī oeḍhī, pachī chokare kūṃcī laī līdhī. ghera hoya tyāre dehābhimāna na hoya ne te tyāgīmāṃ āve tyāre dehābhimāna vadhe. pachī dehane jāḻavīne besī rahe. ne amāre to māṇasanī garaja eṭale kāṃī kahevāya nahi; paṇa teno dahāḍo nīkaḻavo kaṭhaṇa paḍe. te upara je beṭhā e lābha. tenī vāta karī je, paṭelano sāthī sāṃtī hāṃkavā jāya tyāṃ besī rahe ne kahe je, je beṭhā e lābha. tapāsīne jue tene khabara paḍe je ghera hato tyāre keṭaluṃ dehābhimāna ne svabhāva hatā ne āṃhīṃ keṭalā vadhyā ke kāṃī ghaṭyā che? ema tapāsīne jue tene khabara paḍe; paṇa aṃdhārāmāṃ kāṃī khabara na paḍe. ne koīthī na thāya to hātha joḍavā paṇa jāṇīne kapaṭa kare te bahu bhūṃḍuṃ kahevāya, te upara harajī ṭhakkare kahyuṃ hatuṃ je koī māranāruṃ hoya to daśa gāu doḍyo jāuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(107) છોકરો સોળ વરસનો થાય ત્યારે ભાઈ કહેવો. પુત્રે મિત્રવદાચરેત્‌ અર્થ :- પુત્રની સાથે મિત્રની જેમ વર્તવું જોઈએ. તે ઉપર ઊનાના કલ્યાણ શેઠની વાત કરી જે, સાધુની ગોદડી ઓેઢી, પછી છોકરે કૂંચી લઈ લીધી. ઘેર હોય ત્યારે દેહાભિમાન ન હોય ને તે ત્યાગીમાં આવે ત્યારે દેહાભિમાન વધે. પછી દેહને જાળવીને બેસી રહે. ને અમારે તો માણસની ગરજ એટલે કાંઈ કહેવાય નહિ; પણ તેનો દહાડો નીકળવો કઠણ પડે. તે ઉપર જે બેઠા એ લાભ. તેની વાત કરી જે, પટેલનો સાથી સાંતી હાંકવા જાય ત્યાં બેસી રહે ને કહે જે, જે બેઠા એ લાભ. તપાસીને જુએ તેને ખબર પડે જે ઘેર હતો ત્યારે કેટલું દેહાભિમાન ને સ્વભાવ હતા ને આંહીં કેટલા વધ્યા કે કાંઈ ઘટ્યા છે? એમ તપાસીને જુએ તેને ખબર પડે; પણ અંધારામાં કાંઈ ખબર ન પડે. ને કોઈથી ન થાય તો હાથ જોડવા પણ જાણીને કપટ કરે તે બહુ ભૂંડું કહેવાય, તે ઉપર હરજી ઠક્કરે કહ્યું હતું જે કોઈ મારનારું હોય તો દશ ગાઉ દોડ્યો જાઉં.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16106.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Madhyanu satnu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16108.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Je agnani chhe tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '107');
+            localStorage.setItem('lastVisitedVatFile', 'ch16107.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

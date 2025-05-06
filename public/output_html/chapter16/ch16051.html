@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજનો સિદ્ધાંત જે - Maharajno siddhant je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharajno siddhant je</h1>
+                <div class="gujarati-title">મહારાજનો સિદ્ધાંત જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 51</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(51) mahārājano siddhāṃta je, jīvanā haiyāmāṃ kacaro rahevā devo nathī. jene potānuṃ śreya karī levuṃ hoya tene sādhu sevana karavuṃ te vāraṃvāra e karavuṃ. te vahevāra thoḍoghaṇo karavo ne vaḻī te karavuṃ. pūjavā ṭāṇe to sarvene sarakhā pūjavā ne saṃga karavo te to gopāḻānaṃdasvāmī jevā hoya teno karavo ne gopāḻānaṃdasvāmīno mahimā to caitanyānaṃdasvāmī jevā pāsethī jaṇāya paṇa bhajanānaṃde ne bhudarānaṃde rastāmāṃ dahīṃ māgyuṃ hatuṃ evā pāsethī mahimā na jaṇāya. māṭe gopāḻānaṃdasvāmī paṇa jaṇāṇā ne bījā paṇa jaṇāṇā. māṭe have evā moṭā hoya tenā śabda sāṃbhaḻavā; te jevā puruṣa tevā śabda nīkaḻe. te bhādarānā bharavāḍe śabda sāṃbhaḻīne satsaṃga karyo te kāḻamāṃ paṇa na ḍagyo,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(51) મહારાજનો સિદ્ધાંત જે, જીવના હૈયામાં કચરો રહેવા દેવો નથી. જેને પોતાનું શ્રેય કરી લેવું હોય તેને સાધુ સેવન કરવું તે વારંવાર એ કરવું. તે વહેવાર થોડોઘણો કરવો ને વળી તે કરવું. પૂજવા ટાણે તો સર્વેને સરખા પૂજવા ને સંગ કરવો તે તો ગોપાળાનંદસ્વામી જેવા હોય તેનો કરવો ને ગોપાળાનંદસ્વામીનો મહિમા તો ચૈતન્યાનંદસ્વામી જેવા પાસેથી જણાય પણ ભજનાનંદે ને ભુદરાનંદે રસ્તામાં દહીં માગ્યું હતું એવા પાસેથી મહિમા ન જણાય. માટે ગોપાળાનંદસ્વામી પણ જણાણા ને બીજા પણ જણાણા. માટે હવે એવા મોટા હોય તેના શબ્દ સાંભળવા; તે જેવા પુરુષ તેવા શબ્દ નીકળે. તે ભાદરાના ભરવાડે શબ્દ સાંભળીને સત્સંગ કર્યો તે કાળમાં પણ ન ડગ્યો,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16050.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Samagam vina prabhu kem</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16052.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Purushprayatn kare tenu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '51');
+            localStorage.setItem('lastVisitedVatFile', 'ch16051.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

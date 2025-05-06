@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનનો તથા સાધુનો  - Bhagavanno tatha sadhuno</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanno tatha sadhuno</h1>
+                <div class="gujarati-title">ભગવાનનો તથા સાધુનો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 363</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā pahelā śrāvaṇa vadi daśamīne divase svāmīe vāta karī je, $(363) bhagavānano tathā sādhuno viśrvāsa rākhavo je prārabdhamāṃ roṭalo nahi hoya toya deśe, emāṃ phera nathī. pachī vāta karī je, kamaḍhiyāvāḻā kāyābhāīnuṃ khoraḍuṃ baḻavā na dīdhuṃ ne ema dekhāṇuṃ je, sādhu pāṇīnāṃ tuṃbaḍāṃ bharīne ūbhā che ne baḻavā detā nathī. paṇa kāyābhāīe jeṭaluṃ baḻatāmāṃthī bacāvavā māṭe bahāra kāḍhyuṃ teṭaluṃ baḻī gayuṃ ne māṃhīṃ amarabāī suvāvaḍamāṃ hatāṃ te sūī rahyāṃ ne kahe je mahārājane rākhavāṃ haśe to raheśuṃ ne kāyābhāīne sāmāna kāḍhavānī nā pāḍatāṃ hatāṃ evāṃ niśrcayavāḻā ne viśrvāsī hatā, to mahārāje rakṣā karī. māṭe viśrvāsa rākhavo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના પહેલા શ્રાવણ વદિ દશમીને દિવસે સ્વામીએ વાત કરી જે, $(363) ભગવાનનો તથા સાધુનો વિશ્ર્વાસ રાખવો જે પ્રારબ્ધમાં રોટલો નહિ હોય તોય દેશે, એમાં ફેર નથી. પછી વાત કરી જે, કમઢિયાવાળા કાયાભાઈનું ખોરડું બળવા ન દીધું ને એમ દેખાણું જે, સાધુ પાણીનાં તુંબડાં ભરીને ઊભા છે ને બળવા દેતા નથી. પણ કાયાભાઈએ જેટલું બળતામાંથી બચાવવા માટે બહાર કાઢ્યું તેટલું બળી ગયું ને માંહીં અમરબાઈ સુવાવડમાં હતાં તે સૂઈ રહ્યાં ને કહે જે મહારાજને રાખવાં હશે તો રહેશું ને કાયાભાઈને સામાન કાઢવાની ના પાડતાં હતાં એવાં નિશ્ર્ચયવાળા ને વિશ્ર્વાસી હતા, તો મહારાજે રક્ષા કરી. માટે વિશ્ર્વાસ રાખવો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15362.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vyapakanandswamine Maharaje</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15364.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koine kai kahevanu hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '363');
+            localStorage.setItem('lastVisitedVatFile', 'ch15363.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

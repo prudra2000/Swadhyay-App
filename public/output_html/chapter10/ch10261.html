@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આજ જેમાં જ્ઞાન હશે - Aj jema gnan hashe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aj jema gnan hashe</h1>
+                <div class="gujarati-title">આજ જેમાં જ્ઞાન હશે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 261</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(261) āja jemāṃ jñāna haśe, vairāgya haśe, bhakti haśe tene āgaḻa saṃskāra haśe tyāre te ahīṃ che ne āja paṇa jene saṃskāra lāgaśe te āgaḻa ūgaśe. kathā ṭāṇānī koīne khabara nathī, paṇa bhagavānano mahimā, kahyā sāṃbhaḻyā vinā āve nahi; māṭe khādhānuṃ bhajana na karavuṃ ne kathāvārtā to karavī. sārā kāmamāṃ so vighna, bhūṃḍo svabhāva e vighna, kahenārā sāṃbhaḻanārānā dehanuṃ āḍuṃ avaḻuṃ thāya e vighna; māṭe mokṣane mārage cālavuṃ temāṃ vighna āvavā devuṃ nahi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(261) આજ જેમાં જ્ઞાન હશે, વૈરાગ્ય હશે, ભક્તિ હશે તેને આગળ સંસ્કાર હશે ત્યારે તે અહીં છે ને આજ પણ જેને સંસ્કાર લાગશે તે આગળ ઊગશે. કથા ટાણાની કોઈને ખબર નથી, પણ ભગવાનનો મહિમા, કહ્યા સાંભળ્યા વિના આવે નહિ; માટે ખાધાનું ભજન ન કરવું ને કથાવાર્તા તો કરવી. સારા કામમાં સો વિઘ્ન, ભૂંડો સ્વભાવ એ વિઘ્ન, કહેનારા સાંભળનારાના દેહનું આડું અવળું થાય એ વિઘ્ન; માટે મોક્ષને મારગે ચાલવું તેમાં વિઘ્ન આવવા દેવું નહિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10260.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Krushnacharandasji vachanni </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10262.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa tane vatu thaya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '261');
+            localStorage.setItem('lastVisitedVatFile', 'ch10261.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

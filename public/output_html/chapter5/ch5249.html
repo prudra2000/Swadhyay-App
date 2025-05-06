@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગ કરે તેને - Satsang kare tene </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsang kare tene </h1>
+                <div class="gujarati-title">સત્સંગ કરે તેને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 249</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(249) satsaṃga kare tene māthethī kāḻa, karma ne māyānī bīka ṭaḻī gaī, tenā rakṣaka bhagavāna thayā. jema koī du:kha de to rājā vaḍhavā jāya, tema je veda pāḻe tene jama laī jāya nahi ne laī jāya to page lāgīne pācho mokale ne bījāne to āṃhīṃthī ja māravā māṃḍe. ne yathārtha veda pāḻe to bhagavānanā dhāmamāṃ jāya eṭaluṃ to vedamāṃ baḻa che. ne ajāmila mahāpāpī hato ne tene sādhunuṃ darśana thayuṃ, eṭalāmāṃ jamanā hāthathī mukāṇo. ne moṭā sādhu hoya tenā bheḻā to bhagavāna rahe che, tene vegaḻā melatā nathī. ne lokone jivāḍavā sāru varasāda karyo che, nīkara varasāda kyāṃ che ?@ 1 raiyatane= prajāne.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(249) સત્સંગ કરે તેને માથેથી કાળ, કર્મ ને માયાની બીક ટળી ગઈ, તેના રક્ષક ભગવાન થયા. જેમ કોઈ દુ:ખ દે તો રાજા વઢવા જાય, તેમ જે વેદ પાળે તેને જમ લઈ જાય નહિ ને લઈ જાય તો પગે લાગીને પાછો મોકલે ને બીજાને તો આંહીંથી જ મારવા માંડે. ને યથાર્થ વેદ પાળે તો ભગવાનના ધામમાં જાય એટલું તો વેદમાં બળ છે. ને અજામિલ મહાપાપી હતો ને તેને સાધુનું દર્શન થયું, એટલામાં જમના હાથથી મુકાણો. ને મોટા સાધુ હોય તેના ભેળા તો ભગવાન રહે છે, તેને વેગળા મેલતા નથી. ને લોકોને જિવાડવા સારુ વરસાદ કર્યો છે, નીકર વરસાદ ક્યાં છે ?@ 1 રૈયતને= પ્રજાને.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5248.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kaliyugma tap thay </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5250.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishayno parabhav to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '249');
+            localStorage.setItem('lastVisitedVatFile', 'ch5249.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

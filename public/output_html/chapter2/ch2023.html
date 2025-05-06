@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બકરાં, ગાયું, ભેંશું ને - bakara, gayu, bhenshu ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>bakara, gayu, bhenshu ne</h1>
+                <div class="gujarati-title">બકરાં, ગાયું, ભેંશું ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 23</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(23) ‘bakarāṃ, gāyuṃ, bheṃśuṃ ne ūṃṭa e sarve vāḍāmāṃ rahe, paṇa vāgha hoya te vāḍāmāṃ pūrāya nahīṃ. tema mumukṣu hoya te koī matamāṃ ke viṣayamāṃ baṃdhāī rahe nahīṃ.’ ema mahārāja kahetā; ne mahārāja virājatā tyāre paṇa jeṇe samāgama karyo nathī ne āja paṇa je moṭā saṃtano samāgama nathī karatā, tene śuṃ vadhu buddhivāḻā samajavā? māṭe buddhi to eṭalī ja je, moṭā sādhuthī śīkhe ne mokṣanā kāmamāṃ āve, bākī buddhi nahīṃ. ne mahārāja kahetā je, ‘nāthabhakta buddhivāḻā che ne dīvānajī mūrakha che. ne vahevāra che te to jevo che. te to sudhāryo to paṇa bagaḍelo ja che, temāṃ kāṃī sāra nathī.’ te upara dṛṣṭāṃta dīdhuṃ. $(juo prakaraṇa 11nī vāta 240)@ 1 tājakhānā= jājarū, saṃḍāsa. $2 sūratanā khāḍā= jājarū, saṃḍāsa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(23) ‘બકરાં, ગાયું, ભેંશું ને ઊંટ એ સર્વે વાડામાં રહે, પણ વાઘ હોય તે વાડામાં પૂરાય નહીં. તેમ મુમુક્ષુ હોય તે કોઈ મતમાં કે વિષયમાં બંધાઈ રહે નહીં.’ એમ મહારાજ કહેતા; ને મહારાજ વિરાજતા ત્યારે પણ જેણે સમાગમ કર્યો નથી ને આજ પણ જે મોટા સંતનો સમાગમ નથી કરતા, તેને શું વધુ બુદ્ધિવાળા સમજવા? માટે બુદ્ધિ તો એટલી જ જે, મોટા સાધુથી શીખે ને મોક્ષના કામમાં આવે, બાકી બુદ્ધિ નહીં. ને મહારાજ કહેતા જે, ‘નાથભક્ત બુદ્ધિવાળા છે ને દીવાનજી મૂરખ છે. ને વહેવાર છે તે તો જેવો છે. તે તો સુધાર્યો તો પણ બગડેલો જ છે, તેમાં કાંઈ સાર નથી.’ તે ઉપર દૃષ્ટાંત દીધું. $(જુઓ પ્રકરણ 11ની વાત 240)@ 1 તાજખાના= જાજરૂ, સંડાસ. $2 સૂરતના ખાડા= જાજરૂ, સંડાસ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2022.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketalak rasoi kare chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2024.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sarv kriya karavama</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '23');
+            localStorage.setItem('lastVisitedVatFile', 'ch2023.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

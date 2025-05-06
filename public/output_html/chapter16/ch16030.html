@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મધ્યનું 24મું વચનામૃત - Madhyanu 24mu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Madhyanu 24mu vachanamrut</h1>
+                <div class="gujarati-title">મધ્યનું 24મું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 30</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(30) madhyanuṃ 24muṃ vacanāmṛta vaṃcāvyuṃ ne vāta karī je, bhaṭṭajī sāṃkhyavāḻā te kyāṃī prīti ja na thāya ne parvatabhāīne sāṃkhya sahita joga te bījāmāṃ prīti karavā jāya toya bīje prīti thāya nahi ne ā beṭhā chīe temāṃ varasa di’ (divasa) keḍe koī deha hoya ke na hoya. rāmadāsajī kārakhānuṃ calāvatā jāya ne sāṃkhya niṣedha karatā jāya. āṃhīṃ beṭhā chīe paṇa āne ugamaṇī kore taṇāya che ne bhaḍakavā bhaṇī name che. tema āpaṇe namatuṃ jāya che. jagatanā jīva che te kūṭī kūṭīne marī jāśe. sūrya ūgyā vinā to aṃdhāruṃ hoya, tema samāgama karyā vinā ajñānarūpī aṃdhāruṃ kema ṭaḻe ?@ 1 bhaḍakavā = ociṃtu karavā $2 dīmanuṃ= taraphanuṃ, bājunuṃ</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(30) મધ્યનું 24મું વચનામૃત વંચાવ્યું ને વાત કરી જે, ભટ્ટજી સાંખ્યવાળા તે ક્યાંઈ પ્રીતિ જ ન થાય ને પર્વતભાઈને સાંખ્ય સહિત જોગ તે બીજામાં પ્રીતિ કરવા જાય તોય બીજે પ્રીતિ થાય નહિ ને આ બેઠા છીએ તેમાં વરસ દિ’ (દિવસ) કેડે કોઈ દેહ હોય કે ન હોય. રામદાસજી કારખાનું ચલાવતા જાય ને સાંખ્ય નિષેધ કરતા જાય. આંહીં બેઠા છીએ પણ આને ઉગમણી કોરે તણાય છે ને ભડકવા ભણી નમે છે. તેમ આપણે નમતું જાય છે. જગતના જીવ છે તે કૂટી કૂટીને મરી જાશે. સૂર્ય ઊગ્યા વિના તો અંધારું હોય, તેમ સમાગમ કર્યા વિના અજ્ઞાનરૂપી અંધારું કેમ ટળે ?@ 1 ભડકવા = ઓચિંતુ કરવા $2 દીમનું= તરફનું, બાજુનું</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16029.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shamalo ne jagalo gher</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16031.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kam, krodhadik ave</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '30');
+            localStorage.setItem('lastVisitedVatFile', 'ch16030.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

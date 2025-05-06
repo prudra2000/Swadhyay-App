@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બે કળશીનું અન્ન રાંધ્યું  - Be kalashinu ann randhyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Be kalashinu ann randhyu</h1>
+                <div class="gujarati-title">બે કળશીનું અન્ન રાંધ્યું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 13</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha suda trījane divase svāmīe vāta karī je, $(13) be anna rāṃdhyuṃ hoya ne āpaṇane to śeranī ja bhūkha hoya paṇa jyāre moṃmāṃ mūkīe tyāre bhūkha jāya. tema satsaṃgamāṃ moṭāpuruṣa che paṇa temano samāgama karī satsaṃganuṃ sukha laīe to ja ekāṃtika saṃtsaṃgī thāvāya ane te jema kahe tema varatavā māṃḍīe to ja sukha thāya.@ 1 kaḻaśī= jūnuṃ vīsa maṇanuṃ eka māpa (traṇa jāta :- 80 māpanī, 48 māpanī, 144 māpanī).</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ સુદ ત્રીજને દિવસે સ્વામીએ વાત કરી જે, $(13) બે અન્ન રાંધ્યું હોય ને આપણને તો શેરની જ ભૂખ હોય પણ જ્યારે મોંમાં મૂકીએ ત્યારે ભૂખ જાય. તેમ સત્સંગમાં મોટાપુરુષ છે પણ તેમનો સમાગમ કરી સત્સંગનું સુખ લઈએ તો જ એકાંતિક સંત્સંગી થાવાય અને તે જેમ કહે તેમ વરતવા માંડીએ તો જ સુખ થાય.@ 1 કળશી= જૂનું વીસ મણનું એક માપ (ત્રણ જાત :- 80 માપની, 48 માપની, 144 માપની).</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11012.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mava bhaktne purvno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11014.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Saune vishay upar tan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '13');
+            localStorage.setItem('lastVisitedVatFile', 'ch11013.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

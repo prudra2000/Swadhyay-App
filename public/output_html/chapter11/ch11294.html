@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાક જન્મનાં પુણ્ય ભેળાં - Ketalaka janmana puny bhela</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalaka janmana puny bhela</h1>
+                <div class="gujarati-title">કેટલાક જન્મનાં પુણ્ય ભેળાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 294</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha vadi terasane divase svāmīe vāta karī je, $(294) keṭalāka janmanāṃ puṇya bheḻāṃ thayāṃ haśe tyāre ā joga maḻyo che. pachī madhyanuṃ 35muṃ vacanāmṛta vaṃcāvīne vāta karī je, mahārāje paṇa kahyuṃ che je, ātmānuṃ darśana to anaṃta janmanā satsaṃskāravāḻo koī vīralo hoya tene ja thāya che. te darśana to āja āpaṇane pratyakṣa thayāṃ che. paṇa jeṭaluṃ bījuṃ sphūre che te more bhūṃḍā pāsa besāryā che te sphūre che. ne jema che tema mahārājanuṃ svarūpa samajātuṃ nathī ne jīvanuṃ kṣaṇa kṣaṇamāṃ prakaraṇa phare che. ne kāmādika doṣa che te jīvanī eka sthiti rahevā de tevā nathī ne viṣaya vinā to devatā, ṛṣi, manuṣya ne paśu-paṃkhī e koī rahī śakatā nathī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ વદિ તેરસને દિવસે સ્વામીએ વાત કરી જે, $(294) કેટલાક જન્મનાં પુણ્ય ભેળાં થયાં હશે ત્યારે આ જોગ મળ્યો છે. પછી મધ્યનું 35મું વચનામૃત વંચાવીને વાત કરી જે, મહારાજે પણ કહ્યું છે જે, આત્માનું દર્શન તો અનંત જન્મના સત્સંસ્કારવાળો કોઈ વીરલો હોય તેને જ થાય છે. તે દર્શન તો આજ આપણને પ્રત્યક્ષ થયાં છે. પણ જેટલું બીજું સ્ફૂરે છે તે મોરે ભૂંડા પાસ બેસાર્યા છે તે સ્ફૂરે છે. ને જેમ છે તેમ મહારાજનું સ્વરૂપ સમજાતું નથી ને જીવનું ક્ષણ ક્ષણમાં પ્રકરણ ફરે છે. ને કામાદિક દોષ છે તે જીવની એક સ્થિતિ રહેવા દે તેવા નથી ને વિષય વિના તો દેવતા, ઋષિ, મનુષ્ય ને પશુ-પંખી એ કોઈ રહી શકતા નથી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11293.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Halate chalate bhagavanni</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11295.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jyare junagadhanu a mandir</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '294');
+            localStorage.setItem('lastVisitedVatFile', 'ch11294.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેને આ સત્સંગ મળ્યો - Jene aa satsang malyo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jene aa satsang malyo</h1>
+                <div class="gujarati-title">જેને આ સત્સંગ મળ્યો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 61</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(61) jene ā satsaṃga maḻyo tenā puṇyano pārāvāra nathī ne ā samāgamanuṃ phaḻa to āgaḻa avināśī maḻaśe ne ajñāne karīne to ema thāya, te śuṃ ? je, , paṇa ājñā kare tema rahevuṃ te, $thara thara dhrūjata rahe renadina kāla hajūrā; $(muktānaṃda kāvya : mukunda bāvanī-33) 1 khaṭarasamāṃ rahyā ne jalebīmāṃ gayā= badhā rasamāṃ rahyā paṇa jalebīnā gaḻyā rasamāṃ taṇāī gayā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૬૧) જેને આ સત્સંગ મળ્યો તેના પુણ્યનો પારાવાર નથી ને આ સમાગમનું ફળ તો આગળ અવિનાશી મળશે ને અજ્ઞાને કરીને તો એમ થાય, તે શું ? જે, , પણ આજ્ઞા કરે તેમ રહેવું તે, $થર થર ધ્રૂજત રહે રેનદિન કાલ હજૂરા; $(મુક્તાનંદ કાવ્ય : મુકુન્દ બાવની-૩૩) 1 ખટરસમાં રહ્યા ને જલેબીમાં ગયા= બધા રસમાં રહ્યા પણ જલેબીના ગળ્યા રસમાં તણાઈ ગયા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6060.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jem bhagavan kare tem</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6062.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa bhagavan to jem</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '61');
+            localStorage.setItem('lastVisitedVatFile', 'ch6061.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

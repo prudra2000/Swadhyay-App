@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવનો તો બદ્ધ સ્વભાવ  - Jivno to baddh svabhav</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivno to baddh svabhav</h1>
+                <div class="gujarati-title">જીવનો તો બદ્ધ સ્વભાવ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 207</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvat 1919nā pahelā śrāvaṇa sudi pūnamane divase svāmīe vāta karī je, $(207) jīvano to baddha svabhāva che te jyāṃ tyāṃ baṃdhāī jāya che. te viṣayanī āsaktie karīne baṃdhāya. pachī dhakko lāgī jāya ne bhagavadīnā drohe karīne paḍī jāya ne pakṣe karīne paṇa ekabījāno droha kare. te lakṣmīnārāyaṇanā ne naranārāyaṇanā temane māṃhe māṃhe vera. māṭe paṃcaviṣaya ne pakṣe karīne satsaṃgamāṃthī paḍī jāya ne emāṃ sukha che evī to koīe kalama mūkī ja nathī paṇa baddha svabhāva te baṃdhāya ne pachī emāṃthī kaleśa thāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત્ 1919ના પહેલા શ્રાવણ સુદિ પૂનમને દિવસે સ્વામીએ વાત કરી જે, $(207) જીવનો તો બદ્ધ સ્વભાવ છે તે જ્યાં ત્યાં બંધાઈ જાય છે. તે વિષયની આસક્તિએ કરીને બંધાય. પછી ધક્કો લાગી જાય ને ભગવદીના દ્રોહે કરીને પડી જાય ને પક્ષે કરીને પણ એકબીજાનો દ્રોહ કરે. તે લક્ષ્મીનારાયણના ને નરનારાયણના તેમને માંહે માંહે વેર. માટે પંચવિષય ને પક્ષે કરીને સત્સંગમાંથી પડી જાય ને એમાં સુખ છે એવી તો કોઈએ કલમ મૂકી જ નથી પણ બદ્ધ સ્વભાવ તે બંધાય ને પછી એમાંથી કલેશ થાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15206.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kayabhaini vat kari</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15208.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koi kaheshe je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '207');
+            localStorage.setItem('lastVisitedVatFile', 'ch15207.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ કુસંગી ને  - Jem kusangi ne </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem kusangi ne </h1>
+                <div class="gujarati-title">જેમ કુસંગી ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 243</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(243) jema kusaṃgī ne satsaṃgīmāṃ bheda che, ema sādhāraṇamāṃ ne ekāṃtikamāṃ bheda che. ne hatā, temāṃ eke vāta karī tethī bījā āṭha jhāṃkhā paḍī gayā; pachī te sarve maḻīne ekane māravā taiyāra thayā. tema e to evī vāta che ne je ekāṃtika hoya te to niṣkāma hoya; te eka bhagavānanuṃ ja karyā kare ne bījā hoya te to sakāma hoya, te bhagavāna pāse māgyā kare.@ 1 nava yogeśrvara :- (1) śukrācārya (2) nārāyaṇa muni (3) aṃtarikṣa (4) prabuddha (5) pipalāyana (6) ārvihotra (7) drumila (8) yamasa (9) karabhājana.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(243) જેમ કુસંગી ને સત્સંગીમાં ભેદ છે, એમ સાધારણમાં ને એકાંતિકમાં ભેદ છે. ને હતા, તેમાં એકે વાત કરી તેથી બીજા આઠ ઝાંખા પડી ગયા; પછી તે સર્વે મળીને એકને મારવા તૈયાર થયા. તેમ એ તો એવી વાત છે ને જે એકાંતિક હોય તે તો નિષ્કામ હોય; તે એક ભગવાનનું જ કર્યા કરે ને બીજા હોય તે તો સકામ હોય, તે ભગવાન પાસે માગ્યા કરે.@ 1 નવ યોગેશ્ર્વર :- (1) શુક્રાચાર્ય (2) નારાયણ મુનિ (3) અંતરિક્ષ (4) પ્રબુદ્ધ (5) પિપલાયન (6) આર્વિહોત્ર (7) દ્રુમિલ (8) યમસ (9) કરભાજન.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1242.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan malya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1244.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavannu ane sadhunu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '243');
+            localStorage.setItem('lastVisitedVatFile', 'ch1243.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

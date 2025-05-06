@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વાસના છે તે - Vasana chhe te </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vasana chhe te </h1>
+                <div class="gujarati-title">વાસના છે તે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 75</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(75) vāsanā che te jaṭharāgnithī baḻatī nathī, bahāranā agnithī baḻatī nathī, pralayakāḻanā agnithī baḻatī nathī, jema pṛthvīmāṃ bīja che te agni lāge che to paṇa baḻatāṃ nathī, pāchāṃ ūge che ne te bījane tāvaḍīmāṃ śekīe to ūge nahīṃ. tema vāsanā bījā agnithī baḻatī nathī, paṇa jñānarūpī agnithī baḻe che; te jñānarūpa agni te śuṃ ? je, bhagavānanī upāsanā ne bhagavānanī ājñā, tethī vāsanāliṃga kāraṇa dehano nāśa thāya che, bījā koī sādhanathī nāśa thāto nathī. ne keṭalī vāsanā baḻī che ne keṭalī bākī che, te upara śukamuninī kahelī vāta karī je, ‘ājñā pāḻe che, eṭalī vāsanā baḻe che.’ ne ājñāmāṃ to niyama āvyā, paṇa ‘śikṣāpatrī’māṃ ājñā karī che te pramāṇe pāḻavāthī vāsanā baḻe. te ājñā kaī, to nijātmānaṃ brahmarūpaṃ dehatrayavilakṣaṇam | e ājñā paḻe to kāraṇa dehano nāśa thāya che; paṇa ‘śikṣāpatrī’ barābara pāḻatā nathī teṭalī khoṭa che ne teṭaluṃ du:kha che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(75) વાસના છે તે જઠરાગ્નિથી બળતી નથી, બહારના અગ્નિથી બળતી નથી, પ્રલયકાળના અગ્નિથી બળતી નથી, જેમ પૃથ્વીમાં બીજ છે તે અગ્નિ લાગે છે તો પણ બળતાં નથી, પાછાં ઊગે છે ને તે બીજને તાવડીમાં શેકીએ તો ઊગે નહીં. તેમ વાસના બીજા અગ્નિથી બળતી નથી, પણ જ્ઞાનરૂપી અગ્નિથી બળે છે; તે જ્ઞાનરૂપ અગ્નિ તે શું ? જે, ભગવાનની ઉપાસના ને ભગવાનની આજ્ઞા, તેથી વાસનાલિંગ કારણ દેહનો નાશ થાય છે, બીજા કોઈ સાધનથી નાશ થાતો નથી. ને કેટલી વાસના બળી છે ને કેટલી બાકી છે, તે ઉપર શુકમુનિની કહેલી વાત કરી જે, ‘આજ્ઞા પાળે છે, એટલી વાસના બળે છે.’ ને આજ્ઞામાં તો નિયમ આવ્યા, પણ ‘શિક્ષાપત્રી’માં આજ્ઞા કરી છે તે પ્રમાણે પાળવાથી વાસના બળે. તે આજ્ઞા કઈ, તો નિજાત્માનં બ્રહ્મરૂપં દેહત્રયવિલક્ષણમ્ । એ આજ્ઞા પળે તો કારણ દેહનો નાશ થાય છે; પણ ‘શિક્ષાપત્રી’ બરાબર પાળતા નથી તેટલી ખોટ છે ને તેટલું દુ:ખ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5074.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ratre vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5076.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dharmniyamma fer pade to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '75');
+            localStorage.setItem('lastVisitedVatFile', 'ch5075.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

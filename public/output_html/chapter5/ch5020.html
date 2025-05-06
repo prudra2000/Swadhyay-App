@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સાધુ તો ભગવાનની - Aa sadhu to bhagavanni</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa sadhu to bhagavanni</h1>
+                <div class="gujarati-title">આ સાધુ તો ભગવાનની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 20</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(20) ā sādhu to bhagavānanī hajūranā rahenārā che; paḻamātra cheṭe rahe tevā nathī ne e rahyā che te koī jīvonā kalyāṇane arthe rahyā che. ne ā same eka vāta thāya che tevī vāta bījā sādhu janmārāmāṃ paṇa karī śake nahi ne karatāṃ āvaḍe paṇa nahi ne janmāro abhyāsa kare to paṇa evī vātuṃ śīkhāya nahīṃ. $juo prakaraṇa 1nī vāta 220</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(20) આ સાધુ તો ભગવાનની હજૂરના રહેનારા છે; પળમાત્ર છેટે રહે તેવા નથી ને એ રહ્યા છે તે કોઈ જીવોના કલ્યાણને અર્થે રહ્યા છે. ને આ સમે એક વાત થાય છે તેવી વાત બીજા સાધુ જન્મારામાં પણ કરી શકે નહિ ને કરતાં આવડે પણ નહિ ને જન્મારો અભ્યાસ કરે તો પણ એવી વાતું શીખાય નહીં. $જુઓ પ્રકરણ 1ની વાત 220</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5019.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mota sadhuna samagamthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5021.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavannu tatha aa sadhunu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '20');
+            localStorage.setItem('lastVisitedVatFile', 'ch5020.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બધી ધર્મશાળા પૂરી થઈ - Badhi dharmashala puri thai</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Badhi dharmashala puri thai</h1>
+                <div class="gujarati-title">બધી ધર્મશાળા પૂરી થઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 173</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(173) badhī dharmaśāḻā pūrī thaī hoya paṇa na hoya to pāṇī bharāī jāya, tema īndriyo na jītī hoya to viṣayarūpī pāṇī bharāī jāya ne keṭalākane hetanāṃ āṃsu pāḍatāṃ dīṭhāṃ che, paṇa satsaṃgamāṃthī jatā rahyā. te bhagavānamāṃ ya rāga ne viṣayamāṃ ya rāga kahevāya. māṭe ādya ne aṃta jovuṃ paṇa madhya na jovuṃ. ā to madhya paṇa evuṃ ne ādya-aṃta paṇa evuṃ. ema bhagavānāmāṃ heta ne viṣayamāṃ paṇa heta hoya to jatuṃ rahevāya.@ 1 naḻiyā cāḻyāṃ= naḻiyāṃ mūkīne chata karavī, naḻiyāṃ sarakhā goṭhavavā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(173) બધી ધર્મશાળા પૂરી થઈ હોય પણ ન હોય તો પાણી ભરાઈ જાય, તેમ ઈન્દ્રિયો ન જીતી હોય તો વિષયરૂપી પાણી ભરાઈ જાય ને કેટલાકને હેતનાં આંસુ પાડતાં દીઠાં છે, પણ સત્સંગમાંથી જતા રહ્યા. તે ભગવાનમાં ય રાગ ને વિષયમાં ય રાગ કહેવાય. માટે આદ્ય ને અંત જોવું પણ મધ્ય ન જોવું. આ તો મધ્ય પણ એવું ને આદ્ય-અંત પણ એવું. એમ ભગવાનામાં હેત ને વિષયમાં પણ હેત હોય તો જતું રહેવાય.@ 1 નળિયા ચાળ્યાં= નળિયાં મૂકીને છત કરવી, નળિયાં સરખા ગોઠવવા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15172.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Je vatno adar nathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15174.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Damanagarama ek haribhakt</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '173');
+            localStorage.setItem('lastVisitedVatFile', 'ch15173.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

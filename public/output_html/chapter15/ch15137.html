@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શાસ્ત્રમાં અનંત વાતો છે - Shastrama anant vato chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shastrama anant vato chhe</h1>
+                <div class="gujarati-title">શાસ્ત્રમાં અનંત વાતો છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 137</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(137) śāstramāṃ anaṃta vāto che. tenuṃ anumāne pramāṇa thayuṃ che, paṇa koīnāṃ rūpa haju bhāḻyāṃ nathī; māṭe āpaṇe to ā bhagavāna ne ā saṃta tenī sāmuṃ joī rahevuṃ ne patita jīva hoya paṇa ā sādhuno samāgama haśe to sarva pāpa thakī mukāī jāśe. te vāghamoḍiyā rāmacaṃdranā praśrnanā uttaramāṃ e vāta kahī che. māṭe ā samāgama karīne to badhī vātuṃ jaṇāya che ne na samajāya to yogabhraṣṭa thāya che. pachī rūḍe ṭhekāṇe janma āve to jñāna vṛddhi pāme. prahlādanā jevo deha āve, tyāṃ to parameśrvara bhajavā bahu kaṭhaṇa che, paṇa jene parameśrvara bhajavā hoya tene prahlādajīnāṃ vacana grahaṇa karavāṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(137) શાસ્ત્રમાં અનંત વાતો છે. તેનું અનુમાને પ્રમાણ થયું છે, પણ કોઈનાં રૂપ હજુ ભાળ્યાં નથી; માટે આપણે તો આ ભગવાન ને આ સંત તેની સામું જોઈ રહેવું ને પતિત જીવ હોય પણ આ સાધુનો સમાગમ હશે તો સર્વ પાપ થકી મુકાઈ જાશે. તે વાઘમોડિયા રામચંદ્રના પ્રશ્ર્નના ઉત્તરમાં એ વાત કહી છે. માટે આ સમાગમ કરીને તો બધી વાતું જણાય છે ને ન સમજાય તો યોગભ્રષ્ટ થાય છે. પછી રૂડે ઠેકાણે જન્મ આવે તો જ્ઞાન વૃદ્ધિ પામે. પ્રહ્લાદના જેવો દેહ આવે, ત્યાં તો પરમેશ્ર્વર ભજવા બહુ કઠણ છે, પણ જેને પરમેશ્ર્વર ભજવા હોય તેને પ્રહ્લાદજીનાં વચન ગ્રહણ કરવાં.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15136.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa bhaktina maragma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15138.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shrikrushn janmakhandma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '137');
+            localStorage.setItem('lastVisitedVatFile', 'ch15137.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

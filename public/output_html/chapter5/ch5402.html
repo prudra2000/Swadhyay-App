@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઘેરથી આવે ત્યારે બે - Gherthi ave tyare be</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gherthi ave tyare be</h1>
+                <div class="gujarati-title">ઘેરથી આવે ત્યારે બે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 402</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(402) gherathī āve tyāre be prakāranī tāṇa hoya che. te ā lokanī ne paralokanī. temāṃthī eka tāṇa rahe, temāṃ paralokanī tāṇa rahe e to ; kema je, evā śabdanā kahenārā na maḻe, tyāre jīva te śuṃ kare ? bākī ā lokamāṃ coṃṭāḍe evā śabda ghaṇā āve.@ 1 vīralā= bahādura, śūravīra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(402) ઘેરથી આવે ત્યારે બે પ્રકારની તાણ હોય છે. તે આ લોકની ને પરલોકની. તેમાંથી એક તાણ રહે, તેમાં પરલોકની તાણ રહે એ તો ; કેમ જે, એવા શબ્દના કહેનારા ન મળે, ત્યારે જીવ તે શું કરે ? બાકી આ લોકમાં ચોંટાડે એવા શબ્દ ઘણા આવે.@ 1 વીરલા= બહાદુર, શૂરવીર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5401.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Be prakarna sadhu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5403.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tyagi hoy ne be </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '402');
+            localStorage.setItem('lastVisitedVatFile', 'ch5402.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

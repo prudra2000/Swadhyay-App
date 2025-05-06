@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મારા વિના નહિ ચાલે - Mara vina nahi chale</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mara vina nahi chale</h1>
+                <div class="gujarati-title">મારા વિના નહિ ચાલે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 230</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(230) ‘mārā vinā nahi cāle’, evo koīe ahaṃkāra rākhavo nahīṃ. ā to bhagavānanāṃ kārakhānāṃ che te koī vinā na cāle ema na jāṇavuṃ. satsaṃganī sevāmāṃ to lakṣmī ne bhagavāna e beya rahyāṃ che, te satsaṃganuṃ na bagaḍe ne potānuṃ bagaḍe; māṭe jema vahevāramāṃ trevaḍa rākhatā, tema āṃhīṃ trevaḍa rākhavī. keṭalāka to dhotiyuṃ phāṭe tene thīṃgaḍuṃ detā nathī; jarāka phāṭe eṭale kāḍhī nākhe che. are ! keṭalāka to lūgaḍānā kaṭakā sāruṃ navuṃ dhotiyuṃ phāḍī nākhe che ne joḍāmāṃ tela bharī mūke che te temāṃ rahetuṃ nathī ne nīkaḻī jāya che. te śuṃ, ghera ema karatā haśe ! ane brahmacārī to caḻāmaṇamāṃ aradhoaradha loṭa kāḍhī nākhe che. tene śuṃ kahevuṃ ? paṇa evā haśe tene āgaḻa jarūra naḍaśe; māṭe gheranī peṭhe ja āṃhīṃ trevaḍa rākhavī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(230) ‘મારા વિના નહિ ચાલે’, એવો કોઈએ અહંકાર રાખવો નહીં. આ તો ભગવાનનાં કારખાનાં છે તે કોઈ વિના ન ચાલે એમ ન જાણવું. સત્સંગની સેવામાં તો લક્ષ્મી ને ભગવાન એ બેય રહ્યાં છે, તે સત્સંગનું ન બગડે ને પોતાનું બગડે; માટે જેમ વહેવારમાં ત્રેવડ રાખતા, તેમ આંહીં ત્રેવડ રાખવી. કેટલાક તો ધોતિયું ફાટે તેને થીંગડું દેતા નથી; જરાક ફાટે એટલે કાઢી નાખે છે. અરે ! કેટલાક તો લૂગડાના કટકા સારું નવું ધોતિયું ફાડી નાખે છે ને જોડામાં તેલ ભરી મૂકે છે તે તેમાં રહેતું નથી ને નીકળી જાય છે. તે શું, ઘેર એમ કરતા હશે ! અને બ્રહ્મચારી તો ચળામણમાં અરધોઅરધ લોટ કાઢી નાખે છે. તેને શું કહેવું ? પણ એવા હશે તેને આગળ જરૂર નડશે; માટે ઘેરની પેઠે જ આંહીં ત્રેવડ રાખવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9229.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kam, krodh ave to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9231.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vyarthkal nirgamavo nahi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '230');
+            localStorage.setItem('lastVisitedVatFile', 'ch9230.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

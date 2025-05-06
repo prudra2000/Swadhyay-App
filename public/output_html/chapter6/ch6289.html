@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગોંડળમાં વાણિયે હવેલી - Gondalma vaniye haveli</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gondalma vaniye haveli</h1>
+                <div class="gujarati-title">ગોંડળમાં વાણિયે હવેલી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 289</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(289) goṃḍaḻamāṃ vāṇiye havelī karī te naḻiyāṃ caḍāvyāṃ tyāṃ cāḻīsa hajāra korī thaī ne gharamāṃ paṇa eṭalī hatī. pachī ema ne ema navī ghareṇe mūkī te hajī chūṭī nathī ne khāvā maḻyuṃ nathī. tema āpaṇe paṇa goṃḍaḻanā vāṇiyānā jevuṃ che te ā deha ghareṇe mūkyo che, te prabhu bhajatā nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૮૯) ગોંડળમાં વાણિયે હવેલી કરી તે નળિયાં ચડાવ્યાં ત્યાં ચાળીસ હજાર કોરી થઈ ને ઘરમાં પણ એટલી હતી. પછી એમ ને એમ નવી ઘરેણે મૂકી તે હજી છૂટી નથી ને ખાવા મળ્યું નથી. તેમ આપણે પણ ગોંડળના વાણિયાના જેવું છે તે આ દેહ ઘરેણે મૂક્યો છે, તે પ્રભુ ભજતા નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6288.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tyagine to bar upar</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6290.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Svarg, mrutyu ne patal</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '289');
+            localStorage.setItem('lastVisitedVatFile', 'ch6289.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

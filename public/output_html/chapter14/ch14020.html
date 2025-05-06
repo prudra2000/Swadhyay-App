@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ત્યાગીને રૂપિયાનો ને - Tyagine rupiyano ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tyagine rupiyano ne</h1>
+                <div class="gujarati-title">ત્યાગીને રૂપિયાનો ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 20</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(20) tyāgīne rūpiyāno ne khādhāno saṃbaṃdha, te to jema koī gāma jāya te peluṃ bhātuṃ kare, tema e be vānāṃ satsaṃgamāṃthī gayānuṃ bhātuṃ samajavuṃ; māṭe je, āṃkhe pāṭā bāṃdhaśe tenuṃ ṭhīka raheśe. paradeśano saṃbaṃdha paṇa evo che je satsaṃgamāṃthī kāḍhī nākhe; māṭe kharekharā niyama pāḻaśe tenuṃ ṭhīka raheśe. mahārājane rājī karavā hoya teṇe strī, dhana ane khādhānuṃ teno saṃbaṃdha thāvā devo ja nahīṃ. tyāgī thaīne śahera jovā ne bajāruṃ jovā jāya che, te kevā tyāgī raheśe ? māṭe saue potapotānā dharmamāṃ rahevuṃ. tyāre pūchyuṃ je, ‘saṃsārīne kema karavuṃ ?’ tyāre uttara karyo je, ‘niyama rākhavā, koīnī ṭhekaḍī maśkarī na karavī, niṣkāmī vartamāna māthā sāṭe pāḻavuṃ.’ tyāgīne dhana, strī beya nathī ne gṛhasthane e be vānāṃ che; paṇa niyama to teṇe paṇa tyāgīnā jevā ja pāḻī, te beno jīvamāṃthī tyāga karavāno che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(20) ત્યાગીને રૂપિયાનો ને ખાધાનો સંબંધ, તે તો જેમ કોઈ ગામ જાય તે પેલું ભાતું કરે, તેમ એ બે વાનાં સત્સંગમાંથી ગયાનું ભાતું સમજવું; માટે જે, આંખે પાટા બાંધશે તેનું ઠીક રહેશે. પરદેશનો સંબંધ પણ એવો છે જે સત્સંગમાંથી કાઢી નાખે; માટે ખરેખરા નિયમ પાળશે તેનું ઠીક રહેશે. મહારાજને રાજી કરવા હોય તેણે સ્ત્રી, ધન અને ખાધાનું તેનો સંબંધ થાવા દેવો જ નહીં. ત્યાગી થઈને શહેર જોવા ને બજારું જોવા જાય છે, તે કેવા ત્યાગી રહેશે ? માટે સૌએ પોતપોતાના ધર્મમાં રહેવું. ત્યારે પૂછ્યું જે, ‘સંસારીને કેમ કરવું ?’ ત્યારે ઉત્તર કર્યો જે, ‘નિયમ રાખવા, કોઈની ઠેકડી મશ્કરી ન કરવી, નિષ્કામી વર્તમાન માથા સાટે પાળવું.’ ત્યાગીને ધન, સ્ત્રી બેય નથી ને ગૃહસ્થને એ બે વાનાં છે; પણ નિયમ તો તેણે પણ ત્યાગીના જેવા જ પાળી, તે બેનો જીવમાંથી ત્યાગ કરવાનો છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14019.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kathama shrungi rushini</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14021.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jene panchavishayma </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '20');
+            localStorage.setItem('lastVisitedVatFile', 'ch14020.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાંક દુ:ખ છે તે  - Ketalak dukh chhe te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalak dukh chhe te</h1>
+                <div class="gujarati-title">કેટલાંક દુ:ખ છે તે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 203</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(203) keṭalāṃka du:kha che te potā thakī che ne keṭalāṃka para thakī che, te indriyuṃne vaśa varatāya e potā thakī du:kha kahevāya ne bījo du:kha de te para thakī kahevāya ne keṭalāṃka khādhāmāṃthī du:kha āve, māṭe varjanīya ane avarjanīya du:kha jāṇavāṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(203) કેટલાંક દુ:ખ છે તે પોતા થકી છે ને કેટલાંક પર થકી છે, તે ઇન્દ્રિયુંને વશ વરતાય એ પોતા થકી દુ:ખ કહેવાય ને બીજો દુ:ખ દે તે પર થકી કહેવાય ને કેટલાંક ખાધામાંથી દુ:ખ આવે, માટે વર્જનીય અને અવર્જનીય દુ:ખ જાણવાં.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12202.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jivno evo svabhav</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12204.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Guru vina to nal</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '203');
+            localStorage.setItem('lastVisitedVatFile', 'ch12203.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

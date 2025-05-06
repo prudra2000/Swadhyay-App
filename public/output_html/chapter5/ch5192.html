@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ધર્મ આદિક કરતાં ધ્યાન - Dharm adik karata dhyan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dharm adik karata dhyan</h1>
+                <div class="gujarati-title">ધર્મ આદિક કરતાં ધ્યાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 192</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(192) dharma ādika karatāṃ dhyāna adhika ne tethī jñāna adhika ne tethī moṭānī anuvṛttimāṃ rahīne temane rājī kare te adhika. te ekanā peṭāmāṃ traṇa āvī jāya ne bhagavānano mahimā jaṇāya, eṭale enī meḻe ja heta thāya ne heta thāya tyāre anuvṛtti paḻe; māṭe ā ciṃtāmaṇi hāthamāṃ āvī che tene mūkavī ja nahi ne ā deha to bhagavānaparāyaṇa ja karī devo.@ 1 āphuraḍuṃ/ḍā/ḍo= āpoāpa, enī meḻe, saheje saheje.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(192) ધર્મ આદિક કરતાં ધ્યાન અધિક ને તેથી જ્ઞાન અધિક ને તેથી મોટાની અનુવૃત્તિમાં રહીને તેમને રાજી કરે તે અધિક. તે એકના પેટામાં ત્રણ આવી જાય ને ભગવાનનો મહિમા જણાય, એટલે એની મેળે જ હેત થાય ને હેત થાય ત્યારે અનુવૃત્તિ પળે; માટે આ ચિંતામણિ હાથમાં આવી છે તેને મૂકવી જ નહિ ને આ દેહ તો ભગવાનપરાયણ જ કરી દેવો.@ 1 આફુરડું/ડા/ડો= આપોઆપ, એની મેળે, સહેજે સહેજે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5191.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Priyavratne ketalak chhokara</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5193.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prathamna 71ma </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '192');
+            localStorage.setItem('lastVisitedVatFile', 'ch5192.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ ભગવાન કરે તેમ - Jem bhagavan kare tem</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem bhagavan kare tem</h1>
+                <div class="gujarati-title">જેમ ભગવાન કરે તેમ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 60</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(60) jema bhagavāna kare tema thāya. ā amane thayuṃ hatuṃ te koīne na maṭe ne te maṭyuṃ. ne āvaradā paṇa pacīsa varasa thayāṃ nathī ne ā be varasa thayāṃ eṭale saṃvata 1918nā kārtikamāṃ mota āvīne pāchuṃ gayuṃ; te jema bhagavānane gamatuṃ haśe tema thāśe.@ 1 kaṭhodara= peṭano eka jātano roga.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૬૦) જેમ ભગવાન કરે તેમ થાય. આ અમને થયું હતું તે કોઈને ન મટે ને તે મટ્યું. ને આવરદા પણ પચીસ વરસ થયાં નથી ને આ બે વરસ થયાં એટલે સંવત ૧૯૧૮ના કાર્તિકમાં મોત આવીને પાછું ગયું; તે જેમ ભગવાનને ગમતું હશે તેમ થાશે.@ 1 કઠોદર= પેટનો એક જાતનો રોગ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6059.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Khadhanu, pathari, chela</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6061.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jene aa satsang malyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '60');
+            localStorage.setItem('lastVisitedVatFile', 'ch6060.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

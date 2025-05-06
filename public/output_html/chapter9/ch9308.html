@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પીઠવાજાળના કણબીએ - Pithavajalna kanabie </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pithavajalna kanabie </h1>
+                <div class="gujarati-title">પીઠવાજાળના કણબીએ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 308</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(308) pīṭhavājāḻanā kaṇabīe vivāhamāṃ nāta teḍuṃ karyuṃ, dūdha-sākaranī śirāmaṇī dīdhī, pāṃca-sāta śāka karyāṃ, jānanī khūba sarabharā karī ane jānavāḻe gāmamāṃ raṃjāḍa karī paṇa paṭela bolyo nahi. pachī varanā bāpane koīke kahyuṃ je, ‘paṭele vivāha bahu sāro karyo.’ tyāre vevāī īrṣāvāḻo te kahe, ‘emāṃ śuṃ karyuṃ ? mārī eka koranī aradhī mūcha palaḻī che, bījī to korī rahī ne eṭaluṃ na kare to tenī dīkarī koṇa le ?’ pachī paṭelane paśrcātāpa thayo paṇa mohamāṃ na doḍyo hota to du:kha na thāta.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(308) પીઠવાજાળના કણબીએ વિવાહમાં નાત તેડું કર્યું, દૂધ-સાકરની શિરામણી દીધી, પાંચ-સાત શાક કર્યાં, જાનની ખૂબ સરભરા કરી અને જાનવાળે ગામમાં રંજાડ કરી પણ પટેલ બોલ્યો નહિ. પછી વરના બાપને કોઈકે કહ્યું જે, ‘પટેલે વિવાહ બહુ સારો કર્યો.’ ત્યારે વેવાઈ ઈર્ષાવાળો તે કહે, ‘એમાં શું કર્યું ? મારી એક કોરની અરધી મૂછ પલળી છે, બીજી તો કોરી રહી ને એટલું ન કરે તો તેની દીકરી કોણ લે ?’ પછી પટેલને પશ્ર્ચાતાપ થયો પણ મોહમાં ન દોડ્યો હોત તો દુ:ખ ન થાત.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9307.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje padainu drushtant</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9309.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhadarana dosabhai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '308');
+            localStorage.setItem('lastVisitedVatFile', 'ch9308.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

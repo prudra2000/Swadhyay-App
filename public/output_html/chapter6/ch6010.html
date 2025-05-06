@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સ્વામીએ કહ્યું જે - Swamie kahyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Swamie kahyu je</h1>
+                <div class="gujarati-title">સ્વામીએ કહ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 10</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(10) svāmīe kahyuṃ je, ‘amāro vāṃka kāḍhaśo mā, ame kahī chūṭīe chīe; kema je, vṛddha thayā te have nahi rahevāya, māṭe kahīe chīe je, samajīne śuddha varatajo, nīkara jhājho phera paḍaśe. ā ghaḍī jo , ke vāḻo evo roga thayo hoya to rāta badhī jāge; paṇa amathuṃ eka ghaḍī paṇa dhyānamāṃ na besāya ne rāta badhī ūṃghī rahevāya. māṭe deha ja verī che, te potānuṃ karāve, ne viṣṭā dhovarāve che; paṇa dhyāna-bhajana karavā na de evo che.’@ 1 hāthadhoṇuṃ= jhāḍā thavā, vāraṃvāra saṃḍāsa javuṃ paḍe. $2 āṃkaḍī= āṃtaraḍāmāṃ thatī pīḍā, cūṃka, tāṇa, $3 parajaṃta= paryaṃta-sudhdhāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૦) સ્વામીએ કહ્યું જે, ‘અમારો વાંક કાઢશો મા, અમે કહી છૂટીએ છીએ; કેમ જે, વૃદ્ધ થયા તે હવે નહિ રહેવાય, માટે કહીએ છીએ જે, સમજીને શુદ્ધ વરતજો, નીકર ઝાઝો ફેર પડશે. આ ઘડી જો , કે વાળો એવો રોગ થયો હોય તો રાત બધી જાગે; પણ અમથું એક ઘડી પણ ધ્યાનમાં ન બેસાય ને રાત બધી ઊંઘી રહેવાય. માટે દેહ જ વેરી છે, તે પોતાનું કરાવે, ને વિષ્ટા ધોવરાવે છે; પણ ધ્યાન-ભજન કરવા ન દે એવો છે.’@ 1 હાથધોણું= ઝાડા થવા, વારંવાર સંડાસ જવું પડે. $2 આંકડી= આંતરડામાં થતી પીડા, ચૂંક, તાણ, $3 પરજંત= પર્યંત-સુધ્ધાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6009.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Padarth jhajha bhela </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6011.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Brahmacharine tya vatu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '10');
+            localStorage.setItem('lastVisitedVatFile', 'ch6010.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

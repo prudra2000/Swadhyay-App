@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રજોગુણી માણસ આગળ - Rajoguni manas agal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rajoguni manas agal</h1>
+                <div class="gujarati-title">રજોગુણી માણસ આગળ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 138</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(138) rajoguṇī māṇasa āgaḻa vāta karavī paḍe tyāre jībha jhālīne vāta karīe to ṭhīka paḍe ne tenā dehanā khabara pūchyā (pūchavā) joīe. rājakoṭanā karasanajī vorāe paraco māgyo; tene ame kahyuṃ je, ‘varā thāśuṃ tyāre paraco devā āvaśuṃ.’ jene bahu rajoguṇa ne bahu ajñāna ne tama, tene ā vātuṃ dhagela loḍhī upara thoḍā chāṃṭā jevī lāge ane jenuṃ aṃtara sattvathī vāsita thayuṃ hoya tene ā jñāna sāruṃ lāge che. vṛttinā vega lāge tyāre haiyuṃ dhagī jāya che. māṭe śāṃti rākhe to vṛttiomāṃ sukha rahe ne vāsita thāya tyāre dahāḍe dahāḍe vātuṃ samāsa karatī jāya. rūḍā bhaktanā dīkare līmaḍo pīdho, te jyāṃ bese tyāṃ līmaḍo ja gaṃdhāya ne aphīṇavāḻā pāse aphīṇa gaṃdhāya. tema jñānanuṃ thāya tyāre vāsita jāṇavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(138) રજોગુણી માણસ આગળ વાત કરવી પડે ત્યારે જીભ ઝાલીને વાત કરીએ તો ઠીક પડે ને તેના દેહના ખબર પૂછ્યા (પૂછવા) જોઈએ. રાજકોટના કરસનજી વોરાએ પરચો માગ્યો; તેને અમે કહ્યું જે, ‘વરા થાશું ત્યારે પરચો દેવા આવશું.’ જેને બહુ રજોગુણ ને બહુ અજ્ઞાન ને તમ, તેને આ વાતું ધગેલ લોઢી ઉપર થોડા છાંટા જેવી લાગે અને જેનું અંતર સત્ત્વથી વાસિત થયું હોય તેને આ જ્ઞાન સારું લાગે છે. વૃત્તિના વેગ લાગે ત્યારે હૈયું ધગી જાય છે. માટે શાંતિ રાખે તો વૃત્તિઓમાં સુખ રહે ને વાસિત થાય ત્યારે દહાડે દહાડે વાતું સમાસ કરતી જાય. રૂડા ભક્તના દીકરે લીમડો પીધો, તે જ્યાં બેસે ત્યાં લીમડો જ ગંધાય ને અફીણવાળા પાસે અફીણ ગંધાય. તેમ જ્ઞાનનું થાય ત્યારે વાસિત જાણવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14137.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek haribhakt kahe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14139.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek janakriya kare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '138');
+            localStorage.setItem('lastVisitedVatFile', 'ch14138.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

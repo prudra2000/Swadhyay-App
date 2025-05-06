@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનથી અંતરાય રહે છે - Bhagavanthi antaray rahe chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanthi antaray rahe chhe</h1>
+                <div class="gujarati-title">ભગવાનથી અંતરાય રહે છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 11</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(11) bhagavānathī aṃtarāya rahe che teṭaluṃ aṃtaramāṃ du:kha rahe che. āpaṇī phikara bhagavānane che, bhagavāna āpaṇī rakṣāmāṃ che. jema chokarāṃ mā-bāpane ghareṇāṃ karāvavānuṃ kahetāṃ nathī; paṇa enī meḻe ja karāve che, tema āpaṇe bhagavānane kahevuṃ nahi paḍe, enī meḻe ja rakṣā karaśe. ne kaheśo je, bhagavānanā bhaktane dehamāṃ roga kema āve che ? to e to dehamāṃ vāsanā bahu che, māṭe enī vāsanā toḍāvyā sāru rogane prere che ne pachī śuddha kare che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(11) ભગવાનથી અંતરાય રહે છે તેટલું અંતરમાં દુ:ખ રહે છે. આપણી ફિકર ભગવાનને છે, ભગવાન આપણી રક્ષામાં છે. જેમ છોકરાં મા-બાપને ઘરેણાં કરાવવાનું કહેતાં નથી; પણ એની મેળે જ કરાવે છે, તેમ આપણે ભગવાનને કહેવું નહિ પડે, એની મેળે જ રક્ષા કરશે. ને કહેશો જે, ભગવાનના ભક્તને દેહમાં રોગ કેમ આવે છે ? તો એ તો દેહમાં વાસના બહુ છે, માટે એની વાસના તોડાવ્યા સારુ રોગને પ્રેરે છે ને પછી શુદ્ધ કરે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4010.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavatma kahyu chhe je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4012.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tirthne vishe jalbudhi </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '11');
+            localStorage.setItem('lastVisitedVatFile', 'ch4011.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

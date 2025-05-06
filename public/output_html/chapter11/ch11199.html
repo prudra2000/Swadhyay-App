@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સીતારામે પ્રથમ ભણવા - Sitarame pratham bhanava</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sitarame pratham bhanava</h1>
+                <div class="gujarati-title">સીતારામે પ્રથમ ભણવા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 199</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(199) sītārāme prathama bhaṇavā māṃḍyuṃ tyāre eka ākhā pānāno pāṭha āpyo, te akaḻāī gayā; pachī thoḍe thoḍe karavā māṃḍyuṃ to śāstrī thaī gayā. tema thoḍe thoḍe kare to śuṃ na thāya ? niraṃtarano āgraha joīe. baḻada ne ghoḍāne dhīre dhīre paloṭe che, tema ā brahmajñāna māraganuṃ paṇa ema ja che, te varatāvanārāmāṃ badhī kaḻāo joīe, to jīvanā hṛdayamāṃ jñāna pese. mahārāje dhīre dhīre kahyuṃ ane ame paṇa ema varatyā ke koī kaḻī ja śakyā nahi ne badhānī sevā karī, heta karāvī dhīre dhīre gherā ghā karyā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(199) સીતારામે પ્રથમ ભણવા માંડ્યું ત્યારે એક આખા પાનાનો પાઠ આપ્યો, તે અકળાઈ ગયા; પછી થોડે થોડે કરવા માંડ્યું તો શાસ્ત્રી થઈ ગયા. તેમ થોડે થોડે કરે તો શું ન થાય ? નિરંતરનો આગ્રહ જોઈએ. બળદ ને ઘોડાને ધીરે ધીરે પલોટે છે, તેમ આ બ્રહ્મજ્ઞાન મારગનું પણ એમ જ છે, તે વરતાવનારામાં બધી કળાઓ જોઈએ, તો જીવના હૃદયમાં જ્ઞાન પેસે. મહારાજે ધીરે ધીરે કહ્યું અને અમે પણ એમ વરત્યા કે કોઈ કળી જ શક્યા નહિ ને બધાની સેવા કરી, હેત કરાવી ધીરે ધીરે ઘેરા ઘા કર્યા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11198.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Keshavlale puchhyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11200.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa karmakshetr chhe tema</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '199');
+            localStorage.setItem('lastVisitedVatFile', 'ch11199.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

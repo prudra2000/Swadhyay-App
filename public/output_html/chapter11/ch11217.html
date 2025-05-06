@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટા સાધુ છે તે વાતું - Mota sadhu chhe te vatu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mota sadhu chhe te vatu</h1>
+                <div class="gujarati-title">મોટા સાધુ છે તે વાતું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 217</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(217) moṭā sādhu che te vātuṃ karīne samajāve ne batāvī de paṇa kāṃī tene sāṭe pote varatī de ? ke mārīne bhajana karāve ? ke ḍoka maraḍīne karāve ? e to jīvane ja karavānuṃ che. ne bhajana to jyāre kare tyāre ja thāya. ne pharavā jāya tyāṃ eka jaṇa vātuṃ kare. bākī bījā rahyā teṇe to bhajana ja karavuṃ rahyuṃ, ne bhajana na kare to ḍoḻa thāya ne kāṃ to jholāṃ khāya. māṭe bhajana thāya to bhajana karavuṃ nahi to bhaṇavuṃ, vāṃcavuṃ, paṇa navaruṃ na rahevuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(217) મોટા સાધુ છે તે વાતું કરીને સમજાવે ને બતાવી દે પણ કાંઈ તેને સાટે પોતે વરતી દે ? કે મારીને ભજન કરાવે ? કે ડોક મરડીને કરાવે ? એ તો જીવને જ કરવાનું છે. ને ભજન તો જ્યારે કરે ત્યારે જ થાય. ને ફરવા જાય ત્યાં એક જણ વાતું કરે. બાકી બીજા રહ્યા તેણે તો ભજન જ કરવું રહ્યું, ને ભજન ન કરે તો ડોળ થાય ને કાં તો ઝોલાં ખાય. માટે ભજન થાય તો ભજન કરવું નહિ તો ભણવું, વાંચવું, પણ નવરું ન રહેવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11216.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jivne maravu kathan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11218.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota agal jiv</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '217');
+            localStorage.setItem('lastVisitedVatFile', 'ch11217.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

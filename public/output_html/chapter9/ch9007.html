@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જોડા છે તે પગમાં  - Joda chhe te pagma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Joda chhe te pagma</h1>
+                <div class="gujarati-title">જોડા છે તે પગમાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 7</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(7) joḍā che te pagamāṃ ja paherāya ane pāghaḍī te māthāmāṃ ja ghalāya; tema vahevāra che te joḍāne ṭhekāṇe che ne bhagavāna che te pāghaḍīne ṭhekāṇe che. rasoḍāmāṃ jāvuṃ hoya, tyāre joḍā bahāra mūkavā paḍe tema bhagavāna pāse jāvuṃ hoya tyāre vahevāranā saṃkalpa bahāra mūkī devā. vahevāra to buddhimāṃ rahyo che, māṭe vahevāra hoya teṭalo karīne turata prabhu bhajavā maṃḍī jāvuṃ; paṇa itaraḍīnī peṭhe vahevāramāṃ vaḻagī na rahevuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(7) જોડા છે તે પગમાં જ પહેરાય અને પાઘડી તે માથામાં જ ઘલાય; તેમ વહેવાર છે તે જોડાને ઠેકાણે છે ને ભગવાન છે તે પાઘડીને ઠેકાણે છે. રસોડામાં જાવું હોય, ત્યારે જોડા બહાર મૂકવા પડે તેમ ભગવાન પાસે જાવું હોય ત્યારે વહેવારના સંકલ્પ બહાર મૂકી દેવા. વહેવાર તો બુદ્ધિમાં રહ્યો છે, માટે વહેવાર હોય તેટલો કરીને તુરત પ્રભુ ભજવા મંડી જાવું; પણ ઇતરડીની પેઠે વહેવારમાં વળગી ન રહેવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9006.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mayanu bal kahyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9008.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane dahya dahya </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '7');
+            localStorage.setItem('lastVisitedVatFile', 'ch9007.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

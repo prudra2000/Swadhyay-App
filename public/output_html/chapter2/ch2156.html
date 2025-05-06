@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રીજીમહારાજે અનેક પ્રકરણ - Shrijimaharaje anek prakaran</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shrijimaharaje anek prakaran</h1>
+                <div class="gujarati-title">શ્રીજીમહારાજે અનેક પ્રકરણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 156</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(156) śrījīmahārāje aneka prakaraṇa pheravīne sādhune varatāvyā ne aneka prakaraṇa pheravīne pravartāvyāṃ, teno vicāra karavo; ne temāṃthī mumukṣune keṭaluṃka grahaṇa karavānuṃ che. te dhyāna karavānā prakaraṇamāṃ, dhūnya karavāmāṃ ne kīrtanamāṃ thākavuṃ nahi; ne manane gamatuṃ na karavuṃ ne na khāvuṃ e bahu ākaruṃ kahevāya. ne krodhanuṃ khaṃḍana je daṃḍavat karavā, ne gāḍe na besavuṃ e ādika paṃcaviṣayanuṃ khaṃḍana aneka prakāre ne dharmādika guṇanuṃ pratipādana, e sarveno tapāsa karavo ne oḻakhavānuṃ prakaraṇa; e sarve prakaraṇano vicāra karīne varatavuṃ.@ 1 utthāna= ūrdhvagati, unnatti tarapha janāruṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(156) શ્રીજીમહારાજે અનેક પ્રકરણ ફેરવીને સાધુને વરતાવ્યા ને અનેક પ્રકરણ ફેરવીને પ્રવર્તાવ્યાં, તેનો વિચાર કરવો; ને તેમાંથી મુમુક્ષુને કેટલુંક ગ્રહણ કરવાનું છે. તે ધ્યાન કરવાના પ્રકરણમાં, ધૂન્ય કરવામાં ને કીર્તનમાં થાકવું નહિ; ને મનને ગમતું ન કરવું ને ન ખાવું એ બહુ આકરું કહેવાય. ને ક્રોધનું ખંડન જે દંડવત્ કરવા, ને ગાડે ન બેસવું એ આદિક પંચવિષયનું ખંડન અનેક પ્રકારે ને ધર્માદિક ગુણનું પ્રતિપાદન, એ સર્વેનો તપાસ કરવો ને ઓળખવાનું પ્રકરણ; એ સર્વે પ્રકરણનો વિચાર કરીને વરતવું.@ 1 ઉત્થાન= ઊર્ધ્વગતિ, ઉન્નત્તિ તરફ જનારું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2155.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharaje kahyu hatu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2157.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsangmanthi paday nahi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '156');
+            localStorage.setItem('lastVisitedVatFile', 'ch2156.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

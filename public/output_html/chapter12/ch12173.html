@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવ કરકાનો કીડો - Aa jiv karakano kido </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jiv karakano kido </h1>
+                <div class="gujarati-title">આ જીવ કરકાનો કીડો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 173</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>bapore vāta karī je, $(173) ā jīva karakāno kīḍo che te tene mūkī śakato nathī; te prakṛtipuruṣa sudhī karakānuṃ che ne temāṃ mamatā e ja phāṃsī che. māruṃ māruṃ karī mamate mare che. līdhī vāta melāya nahi, te paṃcaviṣayanuṃ evuṃ che. te upara śrloka bolyā je, $(vivekacūḍāmaṇi : 78) $artha :- haraṇa, hāthī, paṃkhī, bhamaro, māchalī vagere potapotānī indriyonā doṣe karīne haṇāyā to pachī je pramādī pāṃceya indriyonā doṣone seve che (poṣe che) te śuṃ haṇāto nathī ? (arthāt cokkasa naṣṭa thāya che.)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>બપોરે વાત કરી જે, $(173) આ જીવ કરકાનો કીડો છે તે તેને મૂકી શકતો નથી; તે પ્રકૃતિપુરુષ સુધી કરકાનું છે ને તેમાં મમતા એ જ ફાંસી છે. મારું મારું કરી મમતે મરે છે. લીધી વાત મેલાય નહિ, તે પંચવિષયનું એવું છે. તે ઉપર શ્ર્લોક બોલ્યા જે, $(વિવેકચૂડામણિ : 78) $અર્થ :- હરણ, હાથી, પંખી, ભમરો, માછલી વગેરે પોતપોતાની ઇન્દ્રિયોના દોષે કરીને હણાયા તો પછી જે પ્રમાદી પાંચેય ઇન્દ્રિયોના દોષોને સેવે છે (પોષે છે) તે શું હણાતો નથી ? (અર્થાત્ ચોક્કસ નષ્ટ થાય છે.)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12172.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kahenarane vishe gurubuddhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12174.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jiv dehrupi khanma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '173');
+            localStorage.setItem('lastVisitedVatFile', 'ch12173.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

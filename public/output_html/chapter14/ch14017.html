@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભક્તપણું કોને કહીએ જે - Bhaktpanu kone kahie je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhaktpanu kone kahie je</h1>
+                <div class="gujarati-title">ભક્તપણું કોને કહીએ જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 17</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(17) bhaktapaṇuṃ kone kahīe je, eka mahārājanī ājñā ne mahārājanī upāsanā ane tenā jananuṃ niraṃtara anusaṃdhāna rākhe tene bhakta jāṇavo. pachī vacanāmṛta prathamanuṃ 33muṃ tathā sāraṃgapuranuṃ 7muṃ naimiṣāraṇyanuṃ vaṃcāvyāṃ. tyāre pūchayuṃ je, ‘mahārājanuṃ darśana na hoya teṇe anusaṃdhāna kema rākhavuṃ ?’ tyāre uttara karyo je, teṇe dhyāna karavuṃ te mahārājanuṃ karavuṃ ne jyāṃ jyāṃ enāṃ līlā, caritra, guṇa kahyā hoya te saṃbhāravāṃ je, e kevā alaukika che ! āpaṇe mahārājanā cihna, caritra ne ceṣṭā saṃbhāravāṃ; pachī ema karatāṃ karatāṃ ekatā thāśe ne kāca heṭhe (kācanī nīce) chāṇāmāṃ agni lāge che tema mahārājanī ekatā thāśe, paṇa paṃcaviṣayano niṣedha karīne je anusaṃdhāna rākhe che tene ja kharekharuṃ anusaṃdhāna rahe che; deha chatāṃ jene badho niṣedha thaī jāya te jīvato thako mūo kahevāya ne tene jīvatāṃ jñānapralaya thayo kahevāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(17) ભક્તપણું કોને કહીએ જે, એક મહારાજની આજ્ઞા ને મહારાજની ઉપાસના અને તેના જનનું નિરંતર અનુસંધાન રાખે તેને ભક્ત જાણવો. પછી વચનામૃત પ્રથમનું 33મું તથા સારંગપુરનું 7મું નૈમિષારણ્યનું વંચાવ્યાં. ત્યારે પૂછયું જે, ‘મહારાજનું દર્શન ન હોય તેણે અનુસંધાન કેમ રાખવું ?’ ત્યારે ઉત્તર કર્યો જે, તેણે ધ્યાન કરવું તે મહારાજનું કરવું ને જ્યાં જ્યાં એનાં લીલા, ચરિત્ર, ગુણ કહ્યા હોય તે સંભારવાં જે, એ કેવા અલૌકિક છે ! આપણે મહારાજના ચિહ્ન, ચરિત્ર ને ચેષ્ટા સંભારવાં; પછી એમ કરતાં કરતાં એકતા થાશે ને કાચ હેઠે (કાચની નીચે) છાણામાં અગ્નિ લાગે છે તેમ મહારાજની એકતા થાશે, પણ પંચવિષયનો નિષેધ કરીને જે અનુસંધાન રાખે છે તેને જ ખરેખરું અનુસંધાન રહે છે; દેહ છતાં જેને બધો નિષેધ થઈ જાય તે જીવતો થકો મૂઓ કહેવાય ને તેને જીવતાં જ્ઞાનપ્રલય થયો કહેવાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14016.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan sanbharavanu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14018.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Petma osad jay tyare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '17');
+            localStorage.setItem('lastVisitedVatFile', 'ch14017.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જગતમાં તો વઢે છે - Jagatma to vadhe chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jagatma to vadhe chhe</h1>
+                <div class="gujarati-title">જગતમાં તો વઢે છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 189</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(189) jagatamāṃ to vaḍhe che to paṇa āṃṭī koīne paḍatī nathī te upara vāta karī je, suratamāṃ muktānaṃdasvāmī ane ame nāhavā jātā hatā, te rastāmāṃ kaṭhiyāro ane kaṭhiyārī be laḍyāṃ. te kaṭhiyāre tenī strīnā māthāmāṃ kuhāḍī mārī, te lohī nīkaḻyuṃ. ne te kaṭhiyāro to lākaḍāṃ levā gayo. pachī ame nāhīne pāchā vaḻyā tyāre koīe pūchyuṃ je, ‘āṃhīṃ vaḍhavāḍa thātī hatī te śuṃ thayuṃ ?’ tyāre harijane joyuṃ to bāī daḻavā beṭhī hatī, tene pūchyuṃ to te bāī kahe, ‘e gayo che lākaḍāṃ kāpavā; ne āvaśe tyāre tenā paḍaśe ne ? te sāru daḻuṃ chuṃ.’ te vāta muktānaṃdasvāmīne harijane kahī, tyāre muktānaṃdasvāmīe kahyuṃ je, ‘saṃbaṃdhīnuṃ kevuṃ heta che ? evuṃ satsaṃgamāṃ heta kyāṃ rahe che ?’@ 1 moḍhā āgaḻa johavuṃ.= ‘moḍhāne khāvā joīśe to te banāvavuṃ paḍaśe ne !’ evo bhāvārtha.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(189) જગતમાં તો વઢે છે તો પણ આંટી કોઈને પડતી નથી તે ઉપર વાત કરી જે, સુરતમાં મુક્તાનંદસ્વામી અને અમે નાહવા જાતા હતા, તે રસ્તામાં કઠિયારો અને કઠિયારી બે લડ્યાં. તે કઠિયારે તેની સ્ત્રીના માથામાં કુહાડી મારી, તે લોહી નીકળ્યું. ને તે કઠિયારો તો લાકડાં લેવા ગયો. પછી અમે નાહીને પાછા વળ્યા ત્યારે કોઈએ પૂછ્યું જે, ‘આંહીં વઢવાડ થાતી હતી તે શું થયું ?’ ત્યારે હરિજને જોયું તો બાઈ દળવા બેઠી હતી, તેને પૂછ્યું તો તે બાઈ કહે, ‘એ ગયો છે લાકડાં કાપવા; ને આવશે ત્યારે તેના પડશે ને ? તે સારુ દળું છું.’ તે વાત મુક્તાનંદસ્વામીને હરિજને કહી, ત્યારે મુક્તાનંદસ્વામીએ કહ્યું જે, ‘સંબંધીનું કેવું હેત છે ? એવું સત્સંગમાં હેત ક્યાં રહે છે ?’@ 1 મોઢા આગળ જોહવું.= ‘મોઢાને ખાવા જોઈશે તો તે બનાવવું પડશે ને !’ એવો ભાવાર્થ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11188.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Rupiyamathi jivne ukhedavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11190.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sambandhima het ne vishayma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '189');
+            localStorage.setItem('lastVisitedVatFile', 'ch11189.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

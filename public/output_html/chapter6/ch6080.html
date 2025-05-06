@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેશ કાંઈ કોઈના બાપના - Desh kai koina bapna</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Desh kai koina bapna</h1>
+                <div class="gujarati-title">દેશ કાંઈ કોઈના બાપના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 80</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(80) deśa kāṃī koīnā bāpanā nathī; e to $(subhāṣitaratnabhāṇḍāgāra : sāmānyanīti, śrloka 850) $artha : vedonī śrutio vibhinna che. smṛtio (dharmaśāstro) paṇa bhinna bhinna che. vaḻī eka paṇa muni evo nathī ke jenuṃ vacana pramāṇabhūta gaṇī śakāya ane vedanuṃ sārabhūta tattva to ūṃḍī guphāmāṃ chūpāyeluṃ che; māṭe mumukṣue to moṭāpuruṣa je mārge cālyā che e ja mārgane sāco gaṇī tene anusaravuṃ. $(śikṣāpatrī : śrloka 34) $artha : strīnī joḍe vādavivāda na karavo. temane samajāvavāṃ ghaṇāṃ muśkela che māṭe yuktithī kāma levuṃ. temane moṭāṃ banāvīne kāma levuṃ. 1 kavalī= gāya. $2 paṃcātiyā= paṃcanā māṇaso-paṃcāta karanārā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૮૦) દેશ કાંઈ કોઈના બાપના નથી; એ તો $(સુભાષિતરત્નભાણ્ડાગાર : સામાન્યનીતિ, શ્ર્લોક ૮૫૦) $અર્થ : વેદોની શ્રુતિઓ વિભિન્ન છે. સ્મૃતિઓ (ધર્મશાસ્ત્રો) પણ ભિન્ન ભિન્ન છે. વળી એક પણ મુનિ એવો નથી કે જેનું વચન પ્રમાણભૂત ગણી શકાય અને વેદનું સારભૂત તત્ત્વ તો ઊંડી ગુફામાં છૂપાયેલું છે; માટે મુમુક્ષુએ તો મોટાપુરુષ જે માર્ગે ચાલ્યા છે એ જ માર્ગને સાચો ગણી તેને અનુસરવું. $(શિક્ષાપત્રી : શ્ર્લોક ૩૪) $અર્થ : સ્ત્રીની જોડે વાદવિવાદ ન કરવો. તેમને સમજાવવાં ઘણાં મુશ્કેલ છે માટે યુક્તિથી કામ લેવું. તેમને મોટાં બનાવીને કામ લેવું. 1 કવલી= ગાય. $2 પંચાતિયા= પંચના માણસો-પંચાત કરનારા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6079.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa dehe bhagavanne </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6081.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sanchit, kriyaman ne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '80');
+            localStorage.setItem('lastVisitedVatFile', 'ch6080.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

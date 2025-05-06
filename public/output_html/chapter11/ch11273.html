@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બીજાં સાધન ઘણાં છે  - Bija sadhan ghana chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bija sadhan ghana chhe</h1>
+                <div class="gujarati-title">બીજાં સાધન ઘણાં છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 273</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(273) bījāṃ sādhana ghaṇāṃ che paṇa bhagavānanā bhaktathī nokhuṃ na paḍāya e ja karavānuṃ che ne bījuṃ ājñā na lopāya ne trījuṃ mahārājanuṃ svarūpa sarvoparī avatārī pragaṭa pramāṇa cokhkhuṃ samajāya; ne e traṇa vinā to sthiti na rahe. ne dehābhimāna ne paṃcaviṣaya to bhagavadīthī jīva nokho pāḍī de che. bhavāyā bheḻā thaīne bhūṃgaḻāṃ vagāḍe che ne ramata kare che, tema aṃtaramāṃ paṇa māyānuṃ ṭoḻuṃ bheguṃ thaīne bhavāī karavā maṃḍī jāya che ne jyāṃ sudhī enuṃ cālaśe tyāṃ sudhī bhagavadī sāthe meḻa maḻavā deśe nahi.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(273) બીજાં સાધન ઘણાં છે પણ ભગવાનના ભક્તથી નોખું ન પડાય એ જ કરવાનું છે ને બીજું આજ્ઞા ન લોપાય ને ત્રીજું મહારાજનું સ્વરૂપ સર્વોપરી અવતારી પ્રગટ પ્રમાણ ચોખ્ખું સમજાય; ને એ ત્રણ વિના તો સ્થિતિ ન રહે. ને દેહાભિમાન ને પંચવિષય તો ભગવદીથી જીવ નોખો પાડી દે છે. ભવાયા ભેળા થઈને ભૂંગળાં વગાડે છે ને રમત કરે છે, તેમ અંતરમાં પણ માયાનું ટોળું ભેગું થઈને ભવાઈ કરવા મંડી જાય છે ને જ્યાં સુધી એનું ચાલશે ત્યાં સુધી ભગવદી સાથે મેળ મળવા દેશે નહિ.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11272.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj kahe ame char</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11274.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tyagine to gramyakatha</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '273');
+            localStorage.setItem('lastVisitedVatFile', 'ch11273.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

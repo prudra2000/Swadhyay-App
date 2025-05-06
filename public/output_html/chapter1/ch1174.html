@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નવરાશ હોય ત્યારે - Navarash hoy tyare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Navarash hoy tyare</h1>
+                <div class="gujarati-title">નવરાશ હોય ત્યારે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 174</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(174) navarāśa hoya tyāre bhagavānanī mūrtine laīne besavuṃ. te mūrti te śuṃ? je, bhagavānanī kathā, kīrtana, vārtā ane dhyāna e bhagavānanī mūrti che ne deha hoya tyāṃ lobha, kāma, krodha, svāda, sneha, māna ne nidrā e sarve hoya, tene to deha bheḻāṃ karī rākhavāṃ; te to jema koīka aphīṇanuṃ vyasana rākhe che te sukha jevuṃ jaṇāya che, paṇa e to dehane du:kha de evuṃ che ema samajavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(174) નવરાશ હોય ત્યારે ભગવાનની મૂર્તિને લઈને બેસવું. તે મૂર્તિ તે શું? જે, ભગવાનની કથા, કીર્તન, વાર્તા અને ધ્યાન એ ભગવાનની મૂર્તિ છે ને દેહ હોય ત્યાં લોભ, કામ, ક્રોધ, સ્વાદ, સ્નેહ, માન ને નિદ્રા એ સર્વે હોય, તેને તો દેહ ભેળાં કરી રાખવાં; તે તો જેમ કોઈક અફીણનું વ્યસન રાખે છે તે સુખ જેવું જણાય છે, પણ એ તો દેહને દુ:ખ દે એવું છે એમ સમજવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1173.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tap krine bali jay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1175.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apano to chhello janm</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '174');
+            localStorage.setItem('lastVisitedVatFile', 'ch1174.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નેત્ર ઇન્દ્રિયનું બળ કહ્યું - Nera indriyanu bala kahyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Nera indriyanu bala kahyu</h1>
+                <div class="gujarati-title">નેત્ર ઇન્દ્રિયનું બળ કહ્યું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 111</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(111) netra indriyanuṃ baḻa kahyuṃ. te upara eka jaṇa bhavāī jovā gayo hato, te māraga jāya te sāru besī rahyo ne laghu karavā na ūṭhyo ne rāta badhī besī rahyo ne mūtrakaccha baṃdhāī gaī ne savāre marī gayo ane dāmanagaramāṃ eka haribhakta bījā haribhaktathī chāno ḍheḍhanā taragāḻā jovā gayo. te joīne ghera āvatāṃ core jhāṭako māryo te phāṃphaḻa paḍī gayuṃ; te pachī moḍo moḍo mānyo. evuṃ netra viṣayanuṃ baḻa che paṇa tevo vega bhagavānamāṃ kare to mokṣa thāya te mahārājanā virahathī saccidānaṃdasvāmīne rūṃvāḍe rūṃvāḍe lohīnā ṭaśiyā nīkaḻatā, paṇa brahmajñāna nahi; te karatāṃ pūṃjā ḍoḍīyāne jñāne sahita heta ane kṛpānaṃdasvāmīne paṇa heta vadhāre ne temane jyāre mahārājanāṃ darśana na thāya tyāre haraṇane goḻī vāge ne paḍī jāya tema deha paḍī jāya, te ame satāparane pādare najare dīṭhuṃ che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(111) નેત્ર ઇન્દ્રિયનું બળ કહ્યું. તે ઉપર એક જણ ભવાઈ જોવા ગયો હતો, તે મારગ જાય તે સારુ બેસી રહ્યો ને લઘુ કરવા ન ઊઠ્યો ને રાત બધી બેસી રહ્યો ને મૂત્રકચ્છ બંધાઈ ગઈ ને સવારે મરી ગયો અને દામનગરમાં એક હરિભક્ત બીજા હરિભક્તથી છાનો ઢેઢના તરગાળા જોવા ગયો. તે જોઈને ઘેર આવતાં ચોરે ઝાટકો માર્યો તે ફાંફળ પડી ગયું; તે પછી મોડો મોડો માન્યો. એવું નેત્ર વિષયનું બળ છે પણ તેવો વેગ ભગવાનમાં કરે તો મોક્ષ થાય તે મહારાજના વિરહથી સચ્ચિદાનંદસ્વામીને રૂંવાડે રૂંવાડે લોહીના ટશિયા નીકળતા, પણ બ્રહ્મજ્ઞાન નહિ; તે કરતાં પૂંજા ડોડીયાને જ્ઞાને સહિત હેત અને કૃપાનંદસ્વામીને પણ હેત વધારે ને તેમને જ્યારે મહારાજનાં દર્શન ન થાય ત્યારે હરણને ગોળી વાગે ને પડી જાય તેમ દેહ પડી જાય, તે અમે સતાપરને પાદરે નજરે દીઠું છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11110.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vishayna lagma kharekhara</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11112.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek vakhate rate Maharaj</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '111');
+            localStorage.setItem('lastVisitedVatFile', 'ch11111.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

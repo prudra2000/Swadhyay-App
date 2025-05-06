@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનના સ્વરૂપનું નક્કી - Bhagavanna swarupanu nakki</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanna swarupanu nakki</h1>
+                <div class="gujarati-title">ભગવાનના સ્વરૂપનું નક્કી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 6</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(6) bhagavānanā svarūpanuṃ nakkī kema kahevāya ? to jema nāta-jātanuṃ nakkī che ne deśakāḻanuṃ nakkī che te phare nahi tema. jo āmāṃ koīne gadheḍo kahīe to ṭhīka na paḍe; paṇa kaṇabīnī aṭaka gadheḍānī che, tene gadheḍā kahīe tenuṃ kāṃī nahi ne jene ghaḍī ghaḍīmāṃ niṣṭhā pharī jāya che tenuṃ to bāḻakanā jevuṃ kahevāya ne jagatamāṃ keṭalīka to aṃdha paraṃparāyuṃ cālī che. te upara vorājīnā kāgaḻanī vāta karī je, kāgaḻa lakhāvī te ghoramāṃ mūke che ne eka vorāno mullāṃ marī gayo te be lākha rūpiyā ugharāvī tenāṃ bakarāṃ marāvyāṃ. evī aṃdha paraṃparāyuṃ cāle che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(6) ભગવાનના સ્વરૂપનું નક્કી કેમ કહેવાય ? તો જેમ નાત-જાતનું નક્કી છે ને દેશકાળનું નક્કી છે તે ફરે નહિ તેમ. જો આમાં કોઈને ગધેડો કહીએ તો ઠીક ન પડે; પણ કણબીની અટક ગધેડાની છે, તેને ગધેડા કહીએ તેનું કાંઈ નહિ ને જેને ઘડી ઘડીમાં નિષ્ઠા ફરી જાય છે તેનું તો બાળકના જેવું કહેવાય ને જગતમાં કેટલીક તો અંધ પરંપરાયું ચાલી છે. તે ઉપર વોરાજીના કાગળની વાત કરી જે, કાગળ લખાવી તે ઘોરમાં મૂકે છે ને એક વોરાનો મુલ્લાં મરી ગયો તે બે લાખ રૂપિયા ઉઘરાવી તેનાં બકરાં મરાવ્યાં. એવી અંધ પરંપરાયું ચાલે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13005.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Agna lopine indriyune</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13007.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vimukhni jene jad lage</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '6');
+            localStorage.setItem('lastVisitedVatFile', 'ch13006.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સહુ જાણે જે - Sahu jane je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sahu jane je</h1>
+                <div class="gujarati-title">સહુ જાણે જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 365</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(365) sahu jāṇe je, moṭerā nahi hoya tyāre satsaṃga ṭaḻī jāśe paṇa satsaṃga ṭaḻavāno nathī; kema je, mahārāje kahyuṃ che je, rājāmāṃ, ācāryamāṃ ke pratimāmāṃ praveśa karaśuṃ paṇa satsaṃga nahi ṭaḻe. pachī kahyuṃ je, maṃdira che to badhāya prabhu bhaje che ne rūpiyā jo pacīsa hajāra vadhyā to dāṭavā che. te koīnuṃ karyuṃ kāṃī thātuṃ nathī; eka karyuṃ to mahārājanuṃ ja thāya che. avaḻā cālaśe tenuṃ bagaḍaśe paṇa satsaṃganuṃ nahi bagaḍe. ājñā lopīne koī sukhiyo thayo nathī ne thāśe paṇa nahi e śāpa dīdho che. māṭe ājñā lopīne dehanī puṣṭi karaśe tene daṃḍa thāvāno che. te eka sādhue niṣkāmaśuddhino upavāsa na karyo; pachī tāva āvyo te trīsa lāṃghaṇa thaī, tyāṃ kāṃī popābāīnuṃ rāja nathī. māṭe akṣaradhāmamāṃ jāvuṃ hoya to ājñā barābara pāḻavī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(365) સહુ જાણે જે, મોટેરા નહિ હોય ત્યારે સત્સંગ ટળી જાશે પણ સત્સંગ ટળવાનો નથી; કેમ જે, મહારાજે કહ્યું છે જે, રાજામાં, આચાર્યમાં કે પ્રતિમામાં પ્રવેશ કરશું પણ સત્સંગ નહિ ટળે. પછી કહ્યું જે, મંદિર છે તો બધાય પ્રભુ ભજે છે ને રૂપિયા જો પચીસ હજાર વધ્યા તો દાટવા છે. તે કોઈનું કર્યું કાંઈ થાતું નથી; એક કર્યું તો મહારાજનું જ થાય છે. અવળા ચાલશે તેનું બગડશે પણ સત્સંગનું નહિ બગડે. આજ્ઞા લોપીને કોઈ સુખિયો થયો નથી ને થાશે પણ નહિ એ શાપ દીધો છે. માટે આજ્ઞા લોપીને દેહની પુષ્ટિ કરશે તેને દંડ થાવાનો છે. તે એક સાધુએ નિષ્કામશુદ્ધિનો ઉપવાસ ન કર્યો; પછી તાવ આવ્યો તે ત્રીસ લાંઘણ થઈ, ત્યાં કાંઈ પોપાબાઈનું રાજ નથી. માટે અક્ષરધામમાં જાવું હોય તો આજ્ઞા બરાબર પાળવી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15364.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koine kai kahevanu hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15366.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Rasoi sauney hathe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '365');
+            localStorage.setItem('lastVisitedVatFile', 'ch15365.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

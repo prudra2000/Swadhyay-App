@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ કહે અમે  - Maharaj kahe ame</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj kahe ame</h1>
+                <div class="gujarati-title">મહારાજ કહે અમે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 88</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(88) mahārāja kahe ame kathāvārtā, dhyāna, kīrtanathī dharātā nathī. te āpaṇane śīkhavyuṃ ne sāṃkhya vinā to marane bhagavāna bheḻā beṭhā chaie toya nirvighna rahevuṃ kaṭhaṇa che. svarūpānaṃdasvāmīne mahārāja kahe, ‘tame bhaṇo.’ te vāta karī je, bārākhaḍī lakhīne āpī tyāre sagaḍīmāṃ mūkī ne kahe, ‘e to jala jātī he, īsaku kyā paḍhe ?’ ne ā sādhuno saṃga ne bhagavānanuṃ dhyāna temāṃ ja māla che ne ā to karoḍa kalpathī karyā karīe chīe, māṭe have to jema cokaḍuṃ maraḍe che, cāha maraḍe che tema maraḍī maraḍīne kathāvārtā karavī. te bhīṃcarīnā satsaṃgī ema kare che ne ā to jīve koī divasa karyuṃ nathī ne raḻyo, khādhuṃ-pīdhuṃ ne kāyaṭāṃ karyāṃ che te aradhī mūcha korī jevuṃ kahevāya. māṭe e badhuṃ ojatanā pūramāṃ taṇāī gayuṃ. māṭe bhagavāna vinā kāṃī che ja nahi ema karī mūkavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(88) મહારાજ કહે અમે કથાવાર્તા, ધ્યાન, કીર્તનથી ધરાતા નથી. તે આપણને શીખવ્યું ને સાંખ્ય વિના તો મરને ભગવાન ભેળા બેઠા છઇએ તોય નિર્વિઘ્ન રહેવું કઠણ છે. સ્વરૂપાનંદસ્વામીને મહારાજ કહે, ‘તમે ભણો.’ તે વાત કરી જે, બારાખડી લખીને આપી ત્યારે સગડીમાં મૂકી ને કહે, ‘એ તો જલ જાતી હે, ઈસકુ ક્યા પઢે ?’ ને આ સાધુનો સંગ ને ભગવાનનું ધ્યાન તેમાં જ માલ છે ને આ તો કરોડ કલ્પથી કર્યા કરીએ છીએ, માટે હવે તો જેમ ચોકડું મરડે છે, ચાહ મરડે છે તેમ મરડી મરડીને કથાવાર્તા કરવી. તે ભીંચરીના સત્સંગી એમ કરે છે ને આ તો જીવે કોઈ દિવસ કર્યું નથી ને રળ્યો, ખાધું-પીધું ને કાયટાં કર્યાં છે તે અરધી મૂછ કોરી જેવું કહેવાય. માટે એ બધું ઓજતના પૂરમાં તણાઈ ગયું. માટે ભગવાન વિના કાંઈ છે જ નહિ એમ કરી મૂકવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16087.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dhiranandni vat kari</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16089.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sadhu thavu ethi koi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '88');
+            localStorage.setItem('lastVisitedVatFile', 'ch16088.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

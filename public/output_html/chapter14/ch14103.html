@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઘરની બાયડી હોય  - Gharani bayadi hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gharani bayadi hoy</h1>
+                <div class="gujarati-title">ઘરની બાયડી હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 103</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(103) gharanī bāyaḍī hoya paṇa vyabhicāra karatī hoya, te kevaḻa laghuśaṃkāno vahevāra che, to paṇa te jāṇyā chatāṃ tenī pāchaḻa . je tyāgī thāya che tene paṇa pāpa rahī jāya che. eka sādhu kahe, ‘mane to ā badhā sādhu āraba jevā lāge che.’ māṭe kāma-krodha āve tyāre ṭhekāṇuṃ rahevā de nahi; te evānī śī vāta kahevī ! paṇa baḻadevajī maṇi sāru bolyā je, ‘śuṃ karuṃ, nāno bhāī thayo, nīkara māthuṃ kāpī nākhata !’ arjuna bhagavānano aṃśa kahevāya, te saṃnyāsī thaīne bhagavānanī bahena subhadrāne bhagāḍī gayo. dhroḻamāṃ eka śrīmāḻīne mā, bahenano ṭāḻo nahi. ema jīva ajñāne karīne viṣayamāṃ ja aṃjāī gayā che. jema gīranā pāḍā āṃdhaḻā thāya che, tema āṃdhaḻā thayā che.@ 1 khuvāra mare che= strīnī pāchaḻa ghelo thaī ati du:khī ne herāna thako pāyamāla thaī mare che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(103) ઘરની બાયડી હોય પણ વ્યભિચાર કરતી હોય, તે કેવળ લઘુશંકાનો વહેવાર છે, તો પણ તે જાણ્યા છતાં તેની પાછળ . જે ત્યાગી થાય છે તેને પણ પાપ રહી જાય છે. એક સાધુ કહે, ‘મને તો આ બધા સાધુ આરબ જેવા લાગે છે.’ માટે કામ-ક્રોધ આવે ત્યારે ઠેકાણું રહેવા દે નહિ; તે એવાની શી વાત કહેવી ! પણ બળદેવજી મણિ સારુ બોલ્યા જે, ‘શું કરું, નાનો ભાઈ થયો, નીકર માથું કાપી નાખત !’ અર્જુન ભગવાનનો અંશ કહેવાય, તે સંન્યાસી થઈને ભગવાનની બહેન સુભદ્રાને ભગાડી ગયો. ધ્રોળમાં એક શ્રીમાળીને મા, બહેનનો ટાળો નહિ. એમ જીવ અજ્ઞાને કરીને વિષયમાં જ અંજાઈ ગયા છે. જેમ ગીરના પાડા આંધળા થાય છે, તેમ આંધળા થયા છે.@ 1 ખુવાર મરે છે= સ્ત્રીની પાછળ ઘેલો થઈ અતિ દુ:ખી ને હેરાન થકો પાયમાલ થઈ મરે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14102.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sarvene swarthani sagai</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14104.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bap, guru ne raja</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '103');
+            localStorage.setItem('lastVisitedVatFile', 'ch14103.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

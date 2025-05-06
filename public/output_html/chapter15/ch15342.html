@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વારંવાર ઘોષ કર્યા વિના  - Varamvar ghosh karya vina</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varamvar ghosh karya vina</h1>
+                <div class="gujarati-title">વારંવાર ઘોષ કર્યા વિના </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 342</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(342) vāraṃvāra ghoṣa karyā vinā śabda rahe nahi ne śivānaṃda uparathī bhaṇyā hatā te sabhāmāṃ na vaṃcāṇuṃ ne kahe je prathama to oḻyuṃ dekhātī hatī ne have to pānuṃ paṇa nathī dekhātuṃ, ema kahīne bhāgī gayā. ane kīrtana gātā hoya tyāre rajoguṇa ke tamoguṇa āve to śabda bhūlī javāya. tema ā rītanā śabdo paṇa na dhāryā hoya ne nāmuṃ na karyuṃ hoya to kema ṭhīka rahe ? te uparathī to ho, ho ! hoya to kāṃī na pāke.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(342) વારંવાર ઘોષ કર્યા વિના શબ્દ રહે નહિ ને શિવાનંદ ઉપરથી ભણ્યા હતા તે સભામાં ન વંચાણું ને કહે જે પ્રથમ તો ઓળ્યું દેખાતી હતી ને હવે તો પાનું પણ નથી દેખાતું, એમ કહીને ભાગી ગયા. અને કીર્તન ગાતા હોય ત્યારે રજોગુણ કે તમોગુણ આવે તો શબ્દ ભૂલી જવાય. તેમ આ રીતના શબ્દો પણ ન ધાર્યા હોય ને નામું ન કર્યું હોય તો કેમ ઠીક રહે ? તે ઉપરથી તો હો, હો ! હોય તો કાંઈ ન પાકે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15341.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kotharno ne bhandarno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15343.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shastrma kit hoy tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '342');
+            localStorage.setItem('lastVisitedVatFile', 'ch15342.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પાપે કરીને બુદ્ધિ  - Pape karine buddhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pape karine buddhi</h1>
+                <div class="gujarati-title">પાપે કરીને બુદ્ધિ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 250</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(250) pāpe karīne buddhi nāśa pāmī gaī che te avaḻuṃ ja sūjhe che, paṇa sāruṃ māṇasa hoya te sārī śikhāmaṇa āpe che. te upara vāta karī je, bāvākhācarane lāṃka sāhebe śikhāmaṇa dīdhī je, tamārā bāpa svāminārāyaṇanā bhakta ne tame kyāṃ āvā pāpī thayā ? ne abhesiṃhane kahe, ‘tamārā bāpa āvā satsaṃgī ne tame hiṃsā karo cho te sāruṃ na kahevāya.’ pachī gopāḻānaṃdasvāmī lodhīke padhāryā tyāre jībhāī temanī pāse royā ne kahyuṃ je ā dīkaro hiṃsā bahu kare che. kāṃī dṛṣṭi karo to sāruṃ. pachī gopāḻasvāmīe abhesiṃhane bolāvyā ne jotāṃveṃta kahyuṃ je ā to bahu sārā che. emane saṃga doṣa lāgyo che. pachī te bahu bhāre haribhakta thayā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(250) પાપે કરીને બુદ્ધિ નાશ પામી ગઈ છે તે અવળું જ સૂઝે છે, પણ સારું માણસ હોય તે સારી શિખામણ આપે છે. તે ઉપર વાત કરી જે, બાવાખાચરને લાંક સાહેબે શિખામણ દીધી જે, તમારા બાપ સ્વામિનારાયણના ભક્ત ને તમે ક્યાં આવા પાપી થયા ? ને અભેસિંહને કહે, ‘તમારા બાપ આવા સત્સંગી ને તમે હિંસા કરો છો તે સારું ન કહેવાય.’ પછી ગોપાળાનંદસ્વામી લોધીકે પધાર્યા ત્યારે જીભાઈ તેમની પાસે રોયા ને કહ્યું જે આ દીકરો હિંસા બહુ કરે છે. કાંઈ દૃષ્ટિ કરો તો સારું. પછી ગોપાળસ્વામીએ અભેસિંહને બોલાવ્યા ને જોતાંવેંત કહ્યું જે આ તો બહુ સારા છે. એમને સંગ દોષ લાગ્યો છે. પછી તે બહુ ભારે હરિભક્ત થયા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15249.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa lokna ne aa</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15251.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Rudo sang na hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '250');
+            localStorage.setItem('lastVisitedVatFile', 'ch15250.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

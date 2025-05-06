@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રીજીમહારાજે ધૂધૂબાજ - Shrijimaharaje dhudhubaj</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shrijimaharaje dhudhubaj</h1>
+                <div class="gujarati-title">શ્રીજીમહારાજે ધૂધૂબાજ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 84</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(84) śrījīmahārāje māraga calāvyo che, te śuṃ ? je, ‘maṃdira, meḍīo, ghoḍāṃ, gāḍāṃ ādika aneka vātuṃ pravartāvī che, paṇa potāno siddhāṃta je karavānuṃ che te mūkī dīdhuṃ nathī. te siddhāṃta e je, nirvāsanika thāvuṃ ne bhagavānamāṃ joḍāvuṃ; pachī game tema karo, gṛhasthāśramamāṃ raho ke tyāgī thāo, paṇa aṃte karavānuṃ e che.’@ 1 dhūdhūbāja= jhaḍapabhera sarvane yogamāṃ leto, sarvane sparśato ne samāsa karato jñānamārga.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(84) શ્રીજીમહારાજે મારગ ચલાવ્યો છે, તે શું ? જે, ‘મંદિર, મેડીઓ, ઘોડાં, ગાડાં આદિક અનેક વાતું પ્રવર્તાવી છે, પણ પોતાનો સિદ્ધાંત જે કરવાનું છે તે મૂકી દીધું નથી. તે સિદ્ધાંત એ જે, નિર્વાસનિક થાવું ને ભગવાનમાં જોડાવું; પછી ગમે તેમ કરો, ગૃહસ્થાશ્રમમાં રહો કે ત્યાગી થાઓ, પણ અંતે કરવાનું એ છે.’@ 1 ધૂધૂબાજ= ઝડપભેર સર્વને યોગમાં લેતો, સર્વને સ્પર્શતો ને સમાસ કરતો જ્ઞાનમાર્ગ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2083.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jive karod kalp thaya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2085.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhakti je mandirni kriya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '84');
+            localStorage.setItem('lastVisitedVatFile', 'ch2084.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણો જન્મ બે વાત - Apano janm be vat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apano janm be vat</h1>
+                <div class="gujarati-title">આપણો જન્મ બે વાત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 24</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(24) āpaṇo janma be vāta sāru thayo che, te akṣararūpa thāvuṃ ne puruṣottamamāṃ joḍāvuṃ. te āja satsaṃgamāṃ bhagavāna bheḻā ja mūḻaakṣara āvyā che te ja ā tamane vātuṃ karī darśana āpe che. iyaḻa bhamarīno caṭako khamī ahoniśa bhamarīnuṃ raṭaṇa kare che te ciṃtavane bhamarī jevī bhamarī te ja dehe thaī jāya che tema ā sādhunā pratāpe akṣararūpa thaī jāvāśe; jo jema che tema samajāya ane iyaḻanī peṭhe khame to ! ane pachī mahārāja samajāśe, dekhāśe ane temāṃ ja vaḻagāśe. paṇa ā sādhunā saṃbaṃdha vinā kevaḻa potānā puruṣaprayatne akṣararūpa thāvāśe nahi. te upara mahārāje vāta kahela je, ‘upāsanā vagara koī kāmanī siddhi thātī nathī ne parokṣa bhāvanāthī brahma dekhāya ja nahi, ne pamāya ja nahi. evī āśā paṇa koīe rākhavī nahi. bījā śāstramāṃ lakhyuṃ hoya to bhale; paṇa ame e vāta mānatā nathī ane anubhavamāṃ paṇa āvatuṃ nathī.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(24) આપણો જન્મ બે વાત સારુ થયો છે, તે અક્ષરરૂપ થાવું ને પુરુષોત્તમમાં જોડાવું. તે આજ સત્સંગમાં ભગવાન ભેળા જ મૂળઅક્ષર આવ્યા છે તે જ આ તમને વાતું કરી દર્શન આપે છે. ઇયળ ભમરીનો ચટકો ખમી અહોનિશ ભમરીનું રટણ કરે છે તે ચિંતવને ભમરી જેવી ભમરી તે જ દેહે થઈ જાય છે તેમ આ સાધુના પ્રતાપે અક્ષરરૂપ થઈ જાવાશે; જો જેમ છે તેમ સમજાય અને ઇયળની પેઠે ખમે તો ! અને પછી મહારાજ સમજાશે, દેખાશે અને તેમાં જ વળગાશે. પણ આ સાધુના સંબંધ વિના કેવળ પોતાના પુરુષપ્રયત્ને અક્ષરરૂપ થાવાશે નહિ. તે ઉપર મહારાજે વાત કહેલ જે, ‘ઉપાસના વગર કોઈ કામની સિદ્ધિ થાતી નથી ને પરોક્ષ ભાવનાથી બ્રહ્મ દેખાય જ નહિ, ને પમાય જ નહિ. એવી આશા પણ કોઈએ રાખવી નહિ. બીજા શાસ્ત્રમાં લખ્યું હોય તો ભલે; પણ અમે એ વાત માનતા નથી અને અનુભવમાં પણ આવતું નથી.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11023.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sankalp pan ghadiyalni pethe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11025.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chelo hoy tena hathni</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '24');
+            localStorage.setItem('lastVisitedVatFile', 'ch11024.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઇન્દ્રિયું જીવને નોખો - Indriyu jivne nokho </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Indriyu jivne nokho </h1>
+                <div class="gujarati-title">ઇન્દ્રિયું જીવને નોખો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 112</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(112) indriyuṃ jīvane nokho nokho tāṇe che, tethī jīva jyāṃ tyāṃ doḍato phare che. adhikāra soṃpyo hoya teṭaluṃ kāma karavuṃ. haribhaktane du:khe du:khiyā thāvuṃ eṭalo ja satsaṃga jāṇavo. te upara māvā bhaktanī vāta karī je, mahārājane darśane saṃgha jāto hato temāṃ eka chokarāne kāṃṭo vāgyo eṭale besī gayo. sau pūche je, ‘chokarā śuṃ thayuṃ che ?’ chokare kahyuṃ, ‘kāṃṭo vāgyo che.’ te sāṃbhaḻī sau cālyā jāya. paṇa māvā bhakte teno kāṃṭo joyo to bhāṃgī gayela eṭale khaṃbho jhalāvī, bījā hāthamāṃ lākaḍī āpī, gāmamāṃ jaī kāṃṭo kaḍhāvyo. mahārāja pāse saṃgha pahoṃcyo tyāre sau kahe saṃgha āvyo, paṇa mahārāja bolyā nahi; paṇa jyāre māvā bhakta āvyā tyāre mahārāja kahe, ‘have saṃgha āvyo !’ temāṃ śuṃ kahyuṃ ? je, ‘satsaṃgane viśe ātmabuddhi karavī e mahārājanī prasannatānuṃ sādhana che.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(112) ઇન્દ્રિયું જીવને નોખો નોખો તાણે છે, તેથી જીવ જ્યાં ત્યાં દોડતો ફરે છે. અધિકાર સોંપ્યો હોય તેટલું કામ કરવું. હરિભક્તને દુ:ખે દુ:ખિયા થાવું એટલો જ સત્સંગ જાણવો. તે ઉપર માવા ભક્તની વાત કરી જે, મહારાજને દર્શને સંઘ જાતો હતો તેમાં એક છોકરાને કાંટો વાગ્યો એટલે બેસી ગયો. સૌ પૂછે જે, ‘છોકરા શું થયું છે ?’ છોકરે કહ્યું, ‘કાંટો વાગ્યો છે.’ તે સાંભળી સૌ ચાલ્યા જાય. પણ માવા ભક્તે તેનો કાંટો જોયો તો ભાંગી ગયેલ એટલે ખંભો ઝલાવી, બીજા હાથમાં લાકડી આપી, ગામમાં જઈ કાંટો કઢાવ્યો. મહારાજ પાસે સંઘ પહોંચ્યો ત્યારે સૌ કહે સંઘ આવ્યો, પણ મહારાજ બોલ્યા નહિ; પણ જ્યારે માવા ભક્ત આવ્યા ત્યારે મહારાજ કહે, ‘હવે સંઘ આવ્યો !’ તેમાં શું કહ્યું ? જે, ‘સત્સંગને વિશે આત્મબુદ્ધિ કરવી એ મહારાજની પ્રસન્નતાનું સાધન છે.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13111.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Lalubadar shahukarne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13113.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koino tiraskar karavo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '112');
+            localStorage.setItem('lastVisitedVatFile', 'ch13112.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

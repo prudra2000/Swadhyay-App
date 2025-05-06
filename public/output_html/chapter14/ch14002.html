@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પંચવિષયનો લવલવાટ  - Panchavishayano lavalavat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Panchavishayano lavalavat</h1>
+                <div class="gujarati-title">પંચવિષયનો લવલવાટ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 2</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(2) paṃcaviṣayano maṭato nathī teṇe karīne mānamāṃ ke svādamāṃ ṭokāya tyāre māga daī devāya che. māṭe āgaḻathī ja ṭharāva karavā je, satsaṃgamāṃthī koī prakāre javāya nahi.@ 1 lavalavāṭa= lavāro, raṭaṇa, vārevāre yāda karavuṃ, babaḍāṭa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(2) પંચવિષયનો મટતો નથી તેણે કરીને માનમાં કે સ્વાદમાં ટોકાય ત્યારે માગ દઈ દેવાય છે. માટે આગળથી જ ઠરાવ કરવા જે, સત્સંગમાંથી કોઈ પ્રકારે જવાય નહિ.@ 1 લવલવાટ= લવારો, રટણ, વારેવારે યાદ કરવું, બબડાટ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14001.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketalak kashivas kare </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14003.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jivne man ne swad</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '2');
+            localStorage.setItem('lastVisitedVatFile', 'ch14002.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવ તો ઘણા પ્રકારના - Jiv to ghana prakarna</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jiv to ghana prakarna</h1>
+                <div class="gujarati-title">જીવ તો ઘણા પ્રકારના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 370</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(370) jīva to ghaṇā prakāranā che. potānā jīvanuṃ rūḍuṃ na karyuṃ ne kalyāṇanā mārganuṃ jatana na karyuṃ to śuṃ karyuṃ ? e to bājaro nākhī dīdho ne ḍhūṃsā bheḻāṃ karyāṃ tevuṃ thayuṃ; māṭe badhuṃ vicāravuṃ. ne paga cāṃpavā che tene dharma kyāṃ raheśe ? jo kāṃī ughāḍuṃ kare to jhera de. prāgajī bhakta sahunā mananā saṃkalpa kahīne prāyaśrcita āpatā to tene jhera āpyuṃ. māṭe potānuṃ rūḍuṃ karī levuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(370) જીવ તો ઘણા પ્રકારના છે. પોતાના જીવનું રૂડું ન કર્યું ને કલ્યાણના માર્ગનું જતન ન કર્યું તો શું કર્યું ? એ તો બાજરો નાખી દીધો ને ઢૂંસા ભેળાં કર્યાં તેવું થયું; માટે બધું વિચારવું. ને પગ ચાંપવા છે તેને ધર્મ ક્યાં રહેશે ? જો કાંઈ ઉઘાડું કરે તો ઝેર દે. પ્રાગજી ભક્ત સહુના મનના સંકલ્પ કહીને પ્રાયશ્ર્ચિત આપતા તો તેને ઝેર આપ્યું. માટે પોતાનું રૂડું કરી લેવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15369.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje terethi kagal</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15371.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chhella prakarannu oganatrismu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '370');
+            localStorage.setItem('lastVisitedVatFile', 'ch15370.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

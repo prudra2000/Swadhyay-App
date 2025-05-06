@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણે જે ધારીએ તે - Apane je dharie te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apane je dharie te</h1>
+                <div class="gujarati-title">આપણે જે ધારીએ તે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 166</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(166) āpaṇe je dhārīe te thāya, paṇa jo niradhāra kare to satsaṃgane pratāpe badhuṃ thāya. nānuṃ bāḻaka hoya te prathama kāṃī upāḍī śake nahi paṇa juvāna thāya tyāre dhāre te upāḍī jāya. hīrānuṃ pārakhuṃ jhaverīnā saṃge karīne thāya, tema satsaṃga karate karate moha ṭaḻe, pramāda ṭaḻe ne buddhimāṃ prakāśa thāya. kaṇabī nahāya nahi, paṇa saṃge karīne roja nahāya che, kāṭhī ne koḻīnā gharamāṃ pūjā hoya nahi; paṇa satsaṃge karīne kaṃṭhī ne pūjā rākhe che. $(bhagavadgītā : śrīkṛṣṇa dhyāna-vaṃdana-8) $artha :- jemanī kṛpā mūṃgāne vāṇī āpe che ane pāṃgaḻāne parvata oḻaṃgāve che, te paramānaṃda svarūpa śrīmādhavane huṃ vaṃdana karuṃ chuṃ. $doṣa kalaṃka sabai mīṭa jāvata, hota pavitra lagai hari raṃgā; $jyuṃ jala aura malīna mahāati, nīṃcahu jāī ju hota utaṃgā, $suṃdara śuddha karai tatkāla jyuṃ, gaṃga mīle huī jāta hi gaṃgā; $hai jagamāṃhī baḍo satsaṃgā. $tule na tāhi sakala mīlī, jo sukha lava satsaṃga;</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(166) આપણે જે ધારીએ તે થાય, પણ જો નિરધાર કરે તો સત્સંગને પ્રતાપે બધું થાય. નાનું બાળક હોય તે પ્રથમ કાંઈ ઉપાડી શકે નહિ પણ જુવાન થાય ત્યારે ધારે તે ઉપાડી જાય. હીરાનું પારખું ઝવેરીના સંગે કરીને થાય, તેમ સત્સંગ કરતે કરતે મોહ ટળે, પ્રમાદ ટળે ને બુદ્ધિમાં પ્રકાશ થાય. કણબી નહાય નહિ, પણ સંગે કરીને રોજ નહાય છે, કાઠી ને કોળીના ઘરમાં પૂજા હોય નહિ; પણ સત્સંગે કરીને કંઠી ને પૂજા રાખે છે. $(ભગવદ્ગીતા : શ્રીકૃષ્ણ ધ્યાન-વંદન-8) $અર્થ :- જેમની કૃપા મૂંગાને વાણી આપે છે અને પાંગળાને પર્વત ઓળંગાવે છે, તે પરમાનંદ સ્વરૂપ શ્રીમાધવને હું વંદન કરું છું. $દોષ કલંક સબૈ મીટ જાવત, હોત પવિત્ર લગૈ હરિ રંગા; $જ્યું જલ ઔર મલીન મહાઅતિ, નીંચહુ જાઈ જુ હોત ઉતંગા, $સુંદર શુદ્ધ કરૈ તત્કાલ જ્યું, ગંગ મીલે હુઈ જાત હિ ગંગા; $હૈ જગમાંહી બડો સત્સંગા. $તુલે ન તાહિ સકલ મીલી, જો સુખ લવ સત્સંગ;</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10165.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tav nathi avyo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10167.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Arjune druahtino sankoch</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '166');
+            localStorage.setItem('lastVisitedVatFile', 'ch10166.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાક કહે છે જે - Ketalak kahe chhe je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalak kahe chhe je</h1>
+                <div class="gujarati-title">કેટલાક કહે છે જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 318</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(318) keṭalāka kahe che je, ‘pātra joīne kahevuṃ.’ paṇa mahārāja padhāryā tyāre koṇa pātra hatuṃ ? māṭe pātra karyo thāya ne jñāna kare to jñāna thāya; jīva to bāḻaka jevā che. rastāmāṃ vaṭemārgu chāṃye visāmo khāvā beṭhā tyāṃ chokaruṃ kāṃṭāḻī bakholamāṃ gharī (garī) gayuṃ, te nīkaḻe nahi ne levā jāya tema āghuṃ vayuṃ jāya, pachī māvatara rovā lāgyāṃ ne chokaruṃ paṇa rāḍyuṃ nākhe. tyāre raste jātā eka jaṇe kahyuṃ je, ‘cāra-pāṃca tenā jevaḍāṃ bāḻaka gāmamāṃthī lāvo to te bahāra nīkaḻaśe.’ pachī tema karyuṃ eṭale nānāṃ chokarāṃne ramatāṃ dekhī olyuṃ ramavā bahāra nīkaḻyuṃ, eṭale pakaḍī līdhuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(318) કેટલાક કહે છે જે, ‘પાત્ર જોઈને કહેવું.’ પણ મહારાજ પધાર્યા ત્યારે કોણ પાત્ર હતું ? માટે પાત્ર કર્યો થાય ને જ્ઞાન કરે તો જ્ઞાન થાય; જીવ તો બાળક જેવા છે. રસ્તામાં વટેમાર્ગુ છાંયે વિસામો ખાવા બેઠા ત્યાં છોકરું કાંટાળી બખોલમાં ઘરી (ગરી) ગયું, તે નીકળે નહિ ને લેવા જાય તેમ આઘું વયું જાય, પછી માવતર રોવા લાગ્યાં ને છોકરું પણ રાડ્યું નાખે. ત્યારે રસ્તે જાતા એક જણે કહ્યું જે, ‘ચાર-પાંચ તેના જેવડાં બાળક ગામમાંથી લાવો તો તે બહાર નીકળશે.’ પછી તેમ કર્યું એટલે નાનાં છોકરાંને રમતાં દેખી ઓલ્યું રમવા બહાર નીકળ્યું, એટલે પકડી લીધું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9317.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek sadhue Maharajne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9319.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane dharm palashu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '318');
+            localStorage.setItem('lastVisitedVatFile', 'ch9318.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

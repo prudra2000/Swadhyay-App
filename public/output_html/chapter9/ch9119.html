@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બીજા વિષય ત્યાગ થાય - Bija vishay tyaga thaya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bija vishay tyaga thaya</h1>
+                <div class="gujarati-title">બીજા વિષય ત્યાગ થાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 119</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(119) bījā viṣaya tyāga thāya, paṇa khāvuṃ ne strī eno abhāva to koī divasa āve nahi ne e be to mūḻiyāṃ che. kuṃjavihārīdāsa prathama āvyo tyāre pūrīne kahe, ‘pharaṇī, pharaṇī jevuṃ ā śuṃ che ?’ pachī to annakūṭa karavā śīkhyo. tema śīkhe to badhuṃ āvaḍe paṇa eka vāra bhagavatprasādajīe pūchyuṃ je, ‘patāsāṃ pāḍī āpaśo ?’ to kahe, ‘huṃ patāsāṃ pāḍavā āvyo nathī.’ tyāra keḍe prāgajī bhaktane jhera dīdhuṃ. te jyāre āvyo tyāre evo āśaya nahoto; paṇa saṃge karīne jīvanuṃ bhūṃḍuṃ thāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(119) બીજા વિષય ત્યાગ થાય, પણ ખાવું ને સ્ત્રી એનો અભાવ તો કોઈ દિવસ આવે નહિ ને એ બે તો મૂળિયાં છે. કુંજવિહારીદાસ પ્રથમ આવ્યો ત્યારે પૂરીને કહે, ‘ફરણી, ફરણી જેવું આ શું છે ?’ પછી તો અન્નકૂટ કરવા શીખ્યો. તેમ શીખે તો બધું આવડે પણ એક વાર ભગવત્પ્રસાદજીએ પૂછ્યું જે, ‘પતાસાં પાડી આપશો ?’ તો કહે, ‘હું પતાસાં પાડવા આવ્યો નથી.’ ત્યાર કેડે પ્રાગજી ભક્તને ઝેર દીધું. તે જ્યારે આવ્યો ત્યારે એવો આશય નહોતો; પણ સંગે કરીને જીવનું ભૂંડું થાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9118.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetalu gnan chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9120.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Balakabukharana padashahnu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '119');
+            localStorage.setItem('lastVisitedVatFile', 'ch9119.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

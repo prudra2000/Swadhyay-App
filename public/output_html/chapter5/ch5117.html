@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>છેલ્લાનું બીજું વચનામૃત - Chhellanu biju vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chhellanu biju vachanamrut</h1>
+                <div class="gujarati-title">છેલ્લાનું બીજું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 117</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(117) chellānuṃ bījuṃ vacanāmṛta vaṃcāvīne vāta karī je, ‘mahārāja vinā bījāmāṃ māla māne che ne bījuṃ jovāne icche te to sūryanī āgaḻa dīvo kare tevo che ne te satsaṃgī ja kyāṃ che ?’ te upara kuṃbhāranā chokarāe mahimā kahelo te vāta karī. ne ā vāta samajāśe tyāre gāṃḍā thaī javāśe ne gāṃḍā nathī thāvātuṃ te to bhagavānanī icchā che. ne ekāṃtikano saṃga maḻavo durlabha che ne bhagavānathī kāma thāya teṭaluṃ ekāṃtikathī thāya che; kāraṇa ke, badhāne bhagavānano joga rahe nahi tethī ekāṃtikanāṃ lakṣaṇa samajavāṃ. te upara $tāku śītala karata, turata dila dāha miṭāve. $kahi kahi suṃdara bena, rena agyāna nikāse; $pragaṭa hota pahicāna, jñāna ura bhāna prakāśe. $vairāga tyāga rājata vimala, bhava du:kha kāṭata jaṃta ko; $kahe brahmamuni ā jagata meṃ, saṃga anupama saṃta ko. $(brahmānaṃda kāvya : 756)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(117) છેલ્લાનું બીજું વચનામૃત વંચાવીને વાત કરી જે, ‘મહારાજ વિના બીજામાં માલ માને છે ને બીજું જોવાને ઇચ્છે તે તો સૂર્યની આગળ દીવો કરે તેવો છે ને તે સત્સંગી જ ક્યાં છે ?’ તે ઉપર કુંભારના છોકરાએ મહિમા કહેલો તે વાત કરી. ને આ વાત સમજાશે ત્યારે ગાંડા થઈ જવાશે ને ગાંડા નથી થાવાતું તે તો ભગવાનની ઇચ્છા છે. ને એકાંતિકનો સંગ મળવો દુર્લભ છે ને ભગવાનથી કામ થાય તેટલું એકાંતિકથી થાય છે; કારણ કે, બધાને ભગવાનનો જોગ રહે નહિ તેથી એકાંતિકનાં લક્ષણ સમજવાં. તે ઉપર $તાકુ શીતલ કરત, તુરત દિલ દાહ મિટાવે. $કહિ કહિ સુંદર બેન, રેન અગ્યાન નિકાસે; $પ્રગટ હોત પહિચાન, જ્ઞાન ઉર ભાન પ્રકાશે. $વૈરાગ ત્યાગ રાજત વિમલ, ભવ દુ:ખ કાટત જંત કો; $કહે બ્રહ્મમુનિ આ જગત મેં, સંગ અનુપમ સંત કો. $(બ્રહ્માનંદ કાવ્ય : 756)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5116.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Harisankarbhaie puchhyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5118.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanna bhakt thaya </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '117');
+            localStorage.setItem('lastVisitedVatFile', 'ch5117.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

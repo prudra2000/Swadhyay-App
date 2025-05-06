@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન વિના બીજો - Bhagavan vina bijo </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan vina bijo </h1>
+                <div class="gujarati-title">ભગવાન વિના બીજો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 229</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(229) bhagavāna vinā bījo saṃkalpa thāya to baḻabaḻato ḍāma de evuṃ du:kha āpaṇane thātuṃ nathī, paṇa upāsanānā pratāpathī sarve doṣa ṭaḻī gayā che; māṭe, ‘huṃ bhagavānano chuṃ, ne bhagavāna mārā svāmī che.’ eṭalo bhāva rākhavo ne śarīra-śarīrī tathā kāraṇa-kārya tathā anvaya-vyatireka, e vacanāmṛtono artha samajyā vinā uttara karavo nahi; nīkara bādha āvaśe. māṭe āpaṇe to svāmī-sevakane bhāve upāsanā dṛḍha rākhavī, eṭale sarve nirbādha che. $vaca. ga.pra. 7 $vaca. ga.pra. 44 $vaca. ga.pra. 64 $vaca. sā. 5 $vaca. va. 7</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(229) ભગવાન વિના બીજો સંકલ્પ થાય તો બળબળતો ડામ દે એવું દુ:ખ આપણને થાતું નથી, પણ ઉપાસનાના પ્રતાપથી સર્વે દોષ ટળી ગયા છે; માટે, ‘હું ભગવાનનો છું, ને ભગવાન મારા સ્વામી છે.’ એટલો ભાવ રાખવો ને શરીર-શરીરી તથા કારણ-કાર્ય તથા અન્વય-વ્યતિરેક, એ વચનામૃતોનો અર્થ સમજ્યા વિના ઉત્તર કરવો નહિ; નીકર બાધ આવશે. માટે આપણે તો સ્વામી-સેવકને ભાવે ઉપાસના દૃઢ રાખવી, એટલે સર્વે નિર્બાધ છે. $વચ. ગ.પ્ર. 7 $વચ. ગ.પ્ર. 44 $વચ. ગ.પ્ર. 64 $વચ. સા. 5 $વચ. વ. 7</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5228.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chhellanu 13mu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5230.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chhellanu 35mu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '229');
+            localStorage.setItem('lastVisitedVatFile', 'ch5229.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવી શાળા ત્રિલોકીમાં - Avi shala trilokima </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Avi shala trilokima </h1>
+                <div class="gujarati-title">આવી શાળા ત્રિલોકીમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 178</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(178) āvī śāḻā trilokīmāṃ kyāṃya nathī, āvā saṃta paṇa kyāṃya nathī; ā saṃta to dvibhuja prabhu che. $(subhāṣita) $artha :- patnī ane paisā e be sūtrothī ākhuṃ jaga gherāyeluṃ che. emanāmāṃ ane emāṃ je anurāga rahita bane che, te be bhūjā (hātha)vāḻo parameśrvara thāya che. $lobha phāṃsī jīna gare na baṃdhāyā, sohī tuma samāna raghurāyā. $</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(178) આવી શાળા ત્રિલોકીમાં ક્યાંય નથી, આવા સંત પણ ક્યાંય નથી; આ સંત તો દ્વિભુજ પ્રભુ છે. $(સુભાષિત) $અર્થ :- પત્ની અને પૈસા એ બે સૂત્રોથી આખું જગ ઘેરાયેલું છે. એમનામાં અને એમાં જે અનુરાગ રહિત બને છે, તે બે ભૂજા (હાથ)વાળો પરમેશ્ર્વર થાય છે. $લોભ ફાંસી જીન ગરે ન બંધાયા, સોહી તુમ સમાન રઘુરાયા. $</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10177.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apane tran kam karavana</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10179.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhare dukhma dukh to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '178');
+            localStorage.setItem('lastVisitedVatFile', 'ch10178.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મંદિર, આચાર્ય, સાધુ - Mandir, achary, sadhu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mandir, achary, sadhu</h1>
+                <div class="gujarati-title">મંદિર, આચાર્ય, સાધુ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 208</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi caudaśane divase svāmīe vāta karī je,$(208) maṃdira, ācārya, sādhu ne satsaṃgī e cārano pakṣa rākhavo ne eno avaguṇa āvavā devo nahi. bījā pāpanuṃ nivāraṇa che paṇa e cāranā avaguṇanuṃ nivāraṇa nathī. japa, tapa, joga, yajña, vrata, dāne karīne je bhagavānane pāmavā hatā te bhagavānane pāmyā ne temanī sāthe jīvane aṃtarāya rahe che; te aṃtarāyanā karanārā deha, loka, bhoga ne pakṣa che, e cāra vānāṃ na hoya tene vijoga na thāya. māṭe bhakti thāya to karavī, nīkara hātha joḍavā ne tyāga thāya to pāḻavo, nahitara agiyāra niyama pāḻīne satsaṃgī rahevuṃ. keṭalāka mahārājanā kartavyamāṃ khoṭa kāḍhe che, je jeṭalā mahaṃta karyā te mūrakha che; paṇa sārā hoya te koīne game nahi. prāgajī dave gopāḻānaṃdasvāmīne kahetā je, ‘brāhmaṇī vīsa varasanī ghera beṭhī che ne śā sāru āṃhīṃ khuvāra thāya che !’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ ચૌદશને દિવસે સ્વામીએ વાત કરી જે,$(208) મંદિર, આચાર્ય, સાધુ ને સત્સંગી એ ચારનો પક્ષ રાખવો ને એનો અવગુણ આવવા દેવો નહિ. બીજા પાપનું નિવારણ છે પણ એ ચારના અવગુણનું નિવારણ નથી. જપ, તપ, જોગ, યજ્ઞ, વ્રત, દાને કરીને જે ભગવાનને પામવા હતા તે ભગવાનને પામ્યા ને તેમની સાથે જીવને અંતરાય રહે છે; તે અંતરાયના કરનારા દેહ, લોક, ભોગ ને પક્ષ છે, એ ચાર વાનાં ન હોય તેને વિજોગ ન થાય. માટે ભક્તિ થાય તો કરવી, નીકર હાથ જોડવા ને ત્યાગ થાય તો પાળવો, નહિતર અગિયાર નિયમ પાળીને સત્સંગી રહેવું. કેટલાક મહારાજના કર્તવ્યમાં ખોટ કાઢે છે, જે જેટલા મહંત કર્યા તે મૂરખ છે; પણ સારા હોય તે કોઈને ગમે નહિ. પ્રાગજી દવે ગોપાળાનંદસ્વામીને કહેતા જે, ‘બ્રાહ્મણી વીસ વરસની ઘેર બેઠી છે ને શા સારુ આંહીં ખુવાર થાય છે !’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14207.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj sathe muktanandswami</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14209.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Lokma kahe chhe je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '208');
+            localStorage.setItem('lastVisitedVatFile', 'ch14208.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક હૈદરાબાદનો વાણિયો  - Ek haidarabadno vaniyo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek haidarabadno vaniyo</h1>
+                <div class="gujarati-title">એક હૈદરાબાદનો વાણિયો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 36</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(36) eka haidarābādano vāṇiyo hato, te kahe, ‘māre paradeśamāṃ jāvuṃ che.’ tene ame jāvā na dīdho. ā kriyā che to brahmāṃḍa rahe tyāṃ sudhī khūṭe nahi ne keṭalākane lūgaḍāṃ paheryāmāṃ divasa jāya che; māṭe mokṣabhāgī hoya tene to mokṣa ja sudhāravo ne bījuṃ badhuṃ to bagaḍela ja che ne vāṃse kāḻa cālyo āve che, te paṇa tenuṃ cālatuṃ nathī tethī kāḻane rīsa caḍī che ne dehanuṃ kārakhānuṃ evuṃ che je, ghaḍīkamāṃ māṃdu paḍī jāya che ne jīva to bhagavānane bhūlī gayo che, paṇa kāḻa bhūlato nathī ne temāṃ jīva dhīraja pakaḍīne beṭho che. te moṭuṃ ajñāna che. e vātano khaṭako nathī paṇa e vāta sācī che ne ā same bhagavāna evā soṃghā thayā che te gokaḻa bhāṭiyānī ḍośīne traṇa varasa sudhī dekhāṇā te keme jāya nahi; pachī kusaṃgīne vāta karī tyāre te kahe, ‘ḍuṃgaḻī, lasaṇa khāva to nahi dekhāya.’ pachī tema karyuṃ te na dekhāṇā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(36) એક હૈદરાબાદનો વાણિયો હતો, તે કહે, ‘મારે પરદેશમાં જાવું છે.’ તેને અમે જાવા ન દીધો. આ ક્રિયા છે તો બ્રહ્માંડ રહે ત્યાં સુધી ખૂટે નહિ ને કેટલાકને લૂગડાં પહેર્યામાં દિવસ જાય છે; માટે મોક્ષભાગી હોય તેને તો મોક્ષ જ સુધારવો ને બીજું બધું તો બગડેલ જ છે ને વાંસે કાળ ચાલ્યો આવે છે, તે પણ તેનું ચાલતું નથી તેથી કાળને રીસ ચડી છે ને દેહનું કારખાનું એવું છે જે, ઘડીકમાં માંદુ પડી જાય છે ને જીવ તો ભગવાનને ભૂલી ગયો છે, પણ કાળ ભૂલતો નથી ને તેમાં જીવ ધીરજ પકડીને બેઠો છે. તે મોટું અજ્ઞાન છે. એ વાતનો ખટકો નથી પણ એ વાત સાચી છે ને આ સમે ભગવાન એવા સોંઘા થયા છે તે ગોકળ ભાટિયાની ડોશીને ત્રણ વરસ સુધી દેખાણા તે કેમે જાય નહિ; પછી કુસંગીને વાત કરી ત્યારે તે કહે, ‘ડુંગળી, લસણ ખાવ તો નહિ દેખાય.’ પછી તેમ કર્યું તે ન દેખાણા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16035.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apane avashy tran</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16037.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek jan anbalina vruksh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '36');
+            localStorage.setItem('lastVisitedVatFile', 'ch16036.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

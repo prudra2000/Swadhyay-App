@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઇન્દ્રિયું તથા મન - Indriyu tatha man </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Indriyu tatha man </h1>
+                <div class="gujarati-title">ઇન્દ્રિયું તથા મન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 246</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(246) indriyuṃ tathā mana satsaṃgī thāya evī āśā rākhavī nahi, te to thāya ja nahīṃ. te to sāttvika sevyāthī śīkhavāḍe, tethī jitāya tathā niyame karīne thāya eṭale indriyuṃnuṃ baḻa cāle nahīṃ. ne tene jītyānā traṇa upāya che. muktānaṃdasvāmī jevā hoya te śabda sāṃbhaḻe to ākāśanuṃ kāraṇa samaje ema jñāne karīne judā paḍe; tathā goviṃdarāma jevā karīne judā paḍe; ne mayārāma bhaṭṭa jevā hoya te kriyāmāṃ doṣadhyāne karīne judā paḍe. ema te badhā sāṃkhya vicāre karīne niyamamāṃ āve che.@ 1 paṭo ramatāṃ= indriyo ne aṃta:karaṇanā māyikabhāvo sāme samajaṇapūrvaka yuktithī laḍata levī, talavāranī paṭābājī khelavī te. $2 piṃḍīkaraṇapaṇuṃ = indriyo-aṃta:karaṇanī vṛttinuṃ baḻa kṣīṇa thavuṃ. $3 upaśama= ādhyātmika śāṃta-praśāṃta avasthā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(246) ઇન્દ્રિયું તથા મન સત્સંગી થાય એવી આશા રાખવી નહિ, તે તો થાય જ નહીં. તે તો સાત્ત્વિક સેવ્યાથી શીખવાડે, તેથી જિતાય તથા નિયમે કરીને થાય એટલે ઇન્દ્રિયુંનું બળ ચાલે નહીં. ને તેને જીત્યાના ત્રણ ઉપાય છે. મુક્તાનંદસ્વામી જેવા હોય તે શબ્દ સાંભળે તો આકાશનું કારણ સમજે એમ જ્ઞાને કરીને જુદા પડે; તથા ગોવિંદરામ જેવા કરીને જુદા પડે; ને મયારામ ભટ્ટ જેવા હોય તે ક્રિયામાં દોષધ્યાને કરીને જુદા પડે. એમ તે બધા સાંખ્ય વિચારે કરીને નિયમમાં આવે છે.@ 1 પટો રમતાં= ઇન્દ્રિયો ને અંત:કરણના માયિકભાવો સામે સમજણપૂર્વક યુક્તિથી લડત લેવી, તલવારની પટાબાજી ખેલવી તે. $2 પિંડીકરણપણું = ઇન્દ્રિયો-અંત:કરણની વૃત્તિનું બળ ક્ષીણ થવું. $3 ઉપશમ= આધ્યાત્મિક શાંત-પ્રશાંત અવસ્થા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5245.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Potani vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5247.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sacha santna ang</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '246');
+            localStorage.setItem('lastVisitedVatFile', 'ch5246.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

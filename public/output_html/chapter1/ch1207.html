@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રીજીમહારાજ કહે - Shreejimaharaj kahe </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shreejimaharaj kahe </h1>
+                <div class="gujarati-title">શ્રીજીમહારાજ કહે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 207</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(207) śrījīmahārāja kahe, ''amane ema saṃkalpa thāya che je, sarvene muktānaṃda- svāmī jevā karī mūkīe pachī sācavavā na paḍe. te muktānaṃdasvāmīne to jñāna, te jñāne karīne sarva ṭāḻī nākhe ne muktānaṃdasvāmīne to, 'śabda ākāśano bhāga che,' ema kāpatāṃ āvaḍe ne bījāne to āvuṃ jñāna nahi te sāru ā niyama karyā che je, jovuṃ nahi, sāṃbhaḻavuṃ nahīṃ. e prakāre niyama bāṃdhyā che.''</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(207) શ્રીજીમહારાજ કહે, ''અમને એમ સંકલ્પ થાય છે જે, સર્વેને મુક્તાનંદ- સ્વામી જેવા કરી મૂકીએ પછી સાચવવા ન પડે. તે મુક્તાનંદસ્વામીને તો જ્ઞાન, તે જ્ઞાને કરીને સર્વ ટાળી નાખે ને મુક્તાનંદસ્વામીને તો, 'શબ્દ આકાશનો ભાગ છે,' એમ કાપતાં આવડે ને બીજાને તો આવું જ્ઞાન નહિ તે સારુ આ નિયમ કર્યા છે જે, જોવું નહિ, સાંભળવું નહીં. એ પ્રકારે નિયમ બાંધ્યા છે.''</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1206.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kharekhara bhagavadi hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1208.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Brahmavettane mate to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '207');
+            localStorage.setItem('lastVisitedVatFile', 'ch1207.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજની નાડી રામદાસે  - Maharajani nadi ramdase</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharajani nadi ramdase</h1>
+                <div class="gujarati-title">મહારાજની નાડી રામદાસે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 117</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(117) mahārājanī nāḍī rāmadāse joī pachī roga nahi te mahārāje vakhāṇa karyā ne game tevo ḍāhyo hoya paṇa lobha āvyo ke kāma āvyo ke māna āvyuṃ ke krodha āvyo tyāre buddhi bhedī nākhe, te dakṣa kevā ḍāhyā paṇa śivajī ūbhā thayā nahi, tyāre kahe, ‘ūbhā na thayā māṭe teno yajñamāṃthī bhāga kāḍhī nākhuṃ.’ pachī temāṃthī kevuṃ thayuṃ ? moṭā moṭā smṛtikāra ṛṣi hatā tene paṇa māne ne hamaṇāṃ āpaṇāmāṃ mata baṃdhāya to kaleśa thāvā māṃḍe, te jene kāṃī na joīe tene paṇa du:kha thaī paḍe che ne bījāṃ du:kha to ghaṇāṃ che; paṇa mānatāī (mahaṃtāī) jāya evuṃ du:kha bījuṃ kāṃī nathī, mānatāīmāṃ kevuṃ sukha che te trikamadāsane pūcho.@ 1 thathaḍāvyā= dhamakāvyā</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(117) મહારાજની નાડી રામદાસે જોઈ પછી રોગ નહિ તે મહારાજે વખાણ કર્યા ને ગમે તેવો ડાહ્યો હોય પણ લોભ આવ્યો કે કામ આવ્યો કે માન આવ્યું કે ક્રોધ આવ્યો ત્યારે બુદ્ધિ ભેદી નાખે, તે દક્ષ કેવા ડાહ્યા પણ શિવજી ઊભા થયા નહિ, ત્યારે કહે, ‘ઊભા ન થયા માટે તેનો યજ્ઞમાંથી ભાગ કાઢી નાખું.’ પછી તેમાંથી કેવું થયું ? મોટા મોટા સ્મૃતિકાર ઋષિ હતા તેને પણ માને ને હમણાં આપણામાં મત બંધાય તો કલેશ થાવા માંડે, તે જેને કાંઈ ન જોઈએ તેને પણ દુ:ખ થઈ પડે છે ને બીજાં દુ:ખ તો ઘણાં છે; પણ માનતાઈ (મહંતાઈ) જાય એવું દુ:ખ બીજું કાંઈ નથી, માનતાઈમાં કેવું સુખ છે તે ત્રિકમદાસને પૂછો.@ 1 થથડાવ્યા= ધમકાવ્યા</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16116.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jiv chhe te dehma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16118.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gruhasth chhe te agnae</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '117');
+            localStorage.setItem('lastVisitedVatFile', 'ch16117.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

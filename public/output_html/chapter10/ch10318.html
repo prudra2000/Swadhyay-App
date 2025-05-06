@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>લોભિયાને રૂપિયો ભાંગવો - Lobhiyane rupiyo bhangavo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Lobhiyane rupiyo bhangavo</h1>
+                <div class="gujarati-title">લોભિયાને રૂપિયો ભાંગવો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 318</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(318) lobhiyāne rūpiyo bhāṃgavo paḍe tyāre jīvamāṃ ‘ararara, ararara’ thāya. eka rūpiyo muṭhṭhīmāṃ rākhīne bajāre kāṃīka levā jāto hato; tyāṃ hāthamāṃ parasevo vaḻyo, tyāre jāṇyuṃ je huṃ bajāre levā jāuṃ chuṃ tethī ā rove che je mane kyāṃīka daī daśe. pachī te purabiyo rūpiyāne bhīno joīne bolyo je, ‘mata ro! mata ro ! hama tuma ko nahi choḍūṃgā !’ ema kahī kāṃī līdhā vinā pācho ghera vayo gayo. tema lobhiyāthī camaḍī tūṭe paṇa damaḍī na chūṭe.@ 1 purabiyo= uttarahiṃdano bhaiyo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(318) લોભિયાને રૂપિયો ભાંગવો પડે ત્યારે જીવમાં ‘અરરર, અરરર’ થાય. એક રૂપિયો મુઠ્ઠીમાં રાખીને બજારે કાંઈક લેવા જાતો હતો; ત્યાં હાથમાં પરસેવો વળ્યો, ત્યારે જાણ્યું જે હું બજારે લેવા જાઉં છું તેથી આ રોવે છે જે મને ક્યાંઈક દઈ દશે. પછી તે પુરબિયો રૂપિયાને ભીનો જોઈને બોલ્યો જે, ‘મત રો! મત રો ! હમ તુમ કો નહિ છોડૂંગા !’ એમ કહી કાંઈ લીધા વિના પાછો ઘેર વયો ગયો. તેમ લોભિયાથી ચમડી તૂટે પણ દમડી ન છૂટે.@ 1 પુરબિયો= ઉત્તરહિંદનો ભૈયો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10317.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kaik munzavan ave</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10319.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vatu sambhaline, lakhine </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '318');
+            localStorage.setItem('lastVisitedVatFile', 'ch10318.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

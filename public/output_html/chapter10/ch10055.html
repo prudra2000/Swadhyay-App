@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બાવીશીના બરવાળામાં એક - Bavishina baravalama ek</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bavishina baravalama ek</h1>
+                <div class="gujarati-title">બાવીશીના બરવાળામાં એક</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 55</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(55) bāvīśīnā baravāḻāmāṃ eka vāṇiyāne tāva āvyo, eṭale amane kahe, ‘tāva utāro.’ tyāre ame kahyuṃ, ‘satsaṃgī thāo to tāva utārīe.’ eṭale kahe, ‘satsaṃgī to na thāuṃ.’ pachī ame kahyuṃ, ‘varatāla darśane āvo to tāva utārīe.’ eṭale kahe, ‘māro kāko aṃbājīe āve to huṃ varatāla āvuṃ.’ pachī tāva utāryo, eṭale amārī pāse āvyo ne kahe, ‘vartamāna dharāvo.’ pachī ame tene vartamāna dharāvyāṃ to paṇa vartamāna na rākhyāṃ. māṭe evā pāpīnāṃ darśana thāya to paṃcamahāpāpa lāge che. baravāḻāmāṃ amane śarīre kasara jevuṃ hatuṃ tyāre kāḻo sutāra kahe, ‘thākalo khāo. hamaṇāṃ bīje jāśo nahi.’ eṭale ame kahyuṃ, ‘daśa-vīsa lākhanuṃ soṃpyuṃ hota to kalākamāṃ kalyāṇa karata, paṇa mahārāje ākhī pṛthvīnuṃ soṃpyuṃ che ! te eka ṭhekāṇe besī rahye kema phāve ?’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(55) બાવીશીના બરવાળામાં એક વાણિયાને તાવ આવ્યો, એટલે અમને કહે, ‘તાવ ઉતારો.’ ત્યારે અમે કહ્યું, ‘સત્સંગી થાઓ તો તાવ ઉતારીએ.’ એટલે કહે, ‘સત્સંગી તો ન થાઉં.’ પછી અમે કહ્યું, ‘વરતાલ દર્શને આવો તો તાવ ઉતારીએ.’ એટલે કહે, ‘મારો કાકો અંબાજીએ આવે તો હું વરતાલ આવું.’ પછી તાવ ઉતાર્યો, એટલે અમારી પાસે આવ્યો ને કહે, ‘વર્તમાન ધરાવો.’ પછી અમે તેને વર્તમાન ધરાવ્યાં તો પણ વર્તમાન ન રાખ્યાં. માટે એવા પાપીનાં દર્શન થાય તો પંચમહાપાપ લાગે છે. બરવાળામાં અમને શરીરે કસર જેવું હતું ત્યારે કાળો સુતાર કહે, ‘થાકલો ખાઓ. હમણાં બીજે જાશો નહિ.’ એટલે અમે કહ્યું, ‘દશ-વીસ લાખનું સોંપ્યું હોત તો કલાકમાં કલ્યાણ કરત, પણ મહારાજે આખી પૃથ્વીનું સોંપ્યું છે ! તે એક ઠેકાણે બેસી રહ્યે કેમ ફાવે ?’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10054.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa sabhanu darshan kare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10056.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane labhno to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '55');
+            localStorage.setItem('lastVisitedVatFile', 'ch10055.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

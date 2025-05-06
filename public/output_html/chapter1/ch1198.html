@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવમાત્ર લઘુશંકાના છે - Jivamatra laghushankana chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivamatra laghushankana chhe</h1>
+                <div class="gujarati-title">જીવમાત્ર લઘુશંકાના છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 198</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(198) che, te enuṃ ja bhajana kare che ne e vinā to rahevāya ja nahi; te kyāṃ sudhī ? je, sudhī na rahevāya ne emāṃthī to eka sanakādika taryā ne ā to mahārāje navo uṭhāva karyo che ne āpaṇe to koīka lokamāṃthī āvyā hoīśuṃ te ahīṃ besāya che ne āvo joga maḻyo che, nīkara maḻe nahi ne viṣaya vinā to jīvathī rahevāya nahi; te sāru vede karīne ne niyama bāṃdhīne viṣayanī rajā āpī; to paṇa jīva veda pramāṇe cālatā nathī, te sārā sārā māṇasa paṇa nathī cālatā; kema je, viṣayanuṃ bahu baḻa che. e prakāre bahu vāta karī.@ 1 jīvamātra laghuśaṃkānā= laghuśaṃkāmāṃthī-māyāmāṃthī dehanī utpatti thaī ne jīvono te māyā taraphī ḍhāḻo che</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(198) છે, તે એનું જ ભજન કરે છે ને એ વિના તો રહેવાય જ નહિ; તે ક્યાં સુધી ? જે, સુધી ન રહેવાય ને એમાંથી તો એક સનકાદિક તર્યા ને આ તો મહારાજે નવો ઉઠાવ કર્યો છે ને આપણે તો કોઈક લોકમાંથી આવ્યા હોઈશું તે અહીં બેસાય છે ને આવો જોગ મળ્યો છે, નીકર મળે નહિ ને વિષય વિના તો જીવથી રહેવાય નહિ; તે સારુ વેદે કરીને ને નિયમ બાંધીને વિષયની રજા આપી; તો પણ જીવ વેદ પ્રમાણે ચાલતા નથી, તે સારા સારા માણસ પણ નથી ચાલતા; કેમ જે, વિષયનું બહુ બળ છે. એ પ્રકારે બહુ વાત કરી.@ 1 જીવમાત્ર લઘુશંકાના= લઘુશંકામાંથી-માયામાંથી દેહની ઉત્પત્તિ થઈ ને જીવોનો તે માયા તરફી ઢાળો છે</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1197.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aapane janie chhie je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1199.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa karakhanama to </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '198');
+            localStorage.setItem('lastVisitedVatFile', 'ch1198.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

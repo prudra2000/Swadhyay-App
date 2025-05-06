@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોક્ષને ઉપયોગી કોઈ - Mokshne upayogi koi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mokshne upayogi koi</h1>
+                <div class="gujarati-title">મોક્ષને ઉપયોગી કોઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 346</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(346) mokṣane upayogī koī nathī ne kharekharā hoya tene ā rūpiyā che te paṇa mokṣanā upayogī thāya. ā ajarāmara che te roṭalā maṃdiranā khāya che ne rūpiyā to raḻī raḻīne khīmalāṃne āpe che. ne gharaḍā hoya tene to sau ema īcche je mare to sāruṃ. te śuṃ je, pachī heta rahetuṃ nathī ne ā sādhu sārā che to paṇa temāṃ heta thātuṃ nathī, bhagavānamāṃ paṇa heta thātuṃ nathī ne strī, dīkarāmāṃ saheje heta thāya che; māṭe āpaṇe śuṃ karavuṃ je, maṃdira karīne paṇa mokṣamāṃ vighna na āve tema karavuṃ, tīrthe javuṃ temāṃ koīnā avaguṇa laī āvaśuṃ to mūḻagī khoṭa āvaśe ne ā to jhājhāṃ māṇasa te saunī ruci nokhī nokhī paṇa ruci maḻe to ja maḻatuṃ rahevāya ne vartamāna to sau pāḻe che paṇa ruci maḻavī joīśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(346) મોક્ષને ઉપયોગી કોઈ નથી ને ખરેખરા હોય તેને આ રૂપિયા છે તે પણ મોક્ષના ઉપયોગી થાય. આ અજરામર છે તે રોટલા મંદિરના ખાય છે ને રૂપિયા તો રળી રળીને ખીમલાંને આપે છે. ને ઘરડા હોય તેને તો સૌ એમ ઈચ્છે જે મરે તો સારું. તે શું જે, પછી હેત રહેતું નથી ને આ સાધુ સારા છે તો પણ તેમાં હેત થાતું નથી, ભગવાનમાં પણ હેત થાતું નથી ને સ્ત્રી, દીકરામાં સહેજે હેત થાય છે; માટે આપણે શું કરવું જે, મંદિર કરીને પણ મોક્ષમાં વિઘ્ન ન આવે તેમ કરવું, તીર્થે જવું તેમાં કોઈના અવગુણ લઈ આવશું તો મૂળગી ખોટ આવશે ને આ તો ઝાઝાં માણસ તે સૌની રુચિ નોખી નોખી પણ રુચિ મળે તો જ મળતું રહેવાય ને વર્તમાન તો સૌ પાળે છે પણ રુચિ મળવી જોઈશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15345.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kal chalyo jay chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15347.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavadina avagun leva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '346');
+            localStorage.setItem('lastVisitedVatFile', 'ch15346.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

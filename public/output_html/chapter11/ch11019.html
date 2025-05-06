@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભણેલ ગણેલ રહી ગયા  - Bhanel ganel rahi gaya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhanel ganel rahi gaya</h1>
+                <div class="gujarati-title">ભણેલ ગણેલ રહી ગયા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 19</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(19) bhaṇela-gaṇela rahī gayā kema je, buddhino ḍoḍa ane sādhuno jeṇe viśrvāsa karyo ane samajyā temane mahārāja ne ā sādhunuṃ jema che tema jñāna thayuṃ che; te to lodhikāmāṃ eka vāra gaḍhaḍānā rūganāthacaraṇadāsa ane āṃhīṃnā raghuvīracaraṇadāsa akṣaranī vāta karatā hatā tyāre ame kahyuṃ je, ‘akṣara, akṣara śuṃ karo cho, akṣara bheḻā to beṭhā cho !’ paṇa jene na samajāya tene śuṃ ? paṇa bhaṇela te mānyuṃ nahi. ame to laghu karavā ūṭhyā ne bolyā je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(19) ભણેલ-ગણેલ રહી ગયા કેમ જે, બુદ્ધિનો ડોડ અને સાધુનો જેણે વિશ્ર્વાસ કર્યો અને સમજ્યા તેમને મહારાજ ને આ સાધુનું જેમ છે તેમ જ્ઞાન થયું છે; તે તો લોધિકામાં એક વાર ગઢડાના રૂગનાથચરણદાસ અને આંહીંના રઘુવીરચરણદાસ અક્ષરની વાત કરતા હતા ત્યારે અમે કહ્યું જે, ‘અક્ષર, અક્ષર શું કરો છો, અક્ષર ભેળા તો બેઠા છો !’ પણ જેને ન સમજાય તેને શું ? પણ ભણેલ તે માન્યું નહિ. અમે તો લઘુ કરવા ઊઠ્યા ને બોલ્યા જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11018.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Khadhanu fal te bhukh jay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11020.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gopalanandswami tatha</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '19');
+            localStorage.setItem('lastVisitedVatFile', 'ch11019.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

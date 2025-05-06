@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણને ભગવાન મળ્યા - Apanane bhagavan malya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apanane bhagavan malya</h1>
+                <div class="gujarati-title">આપણને ભગવાન મળ્યા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 91</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(91) āpaṇane bhagavāna maḻyā ne sādhu maḻyā e vāta to thaī. have to bhagavānanā bhakta bheḻuṃ besavuṃ te adhūruṃ che, ne bījāṃ kāma to badhāṃ thaī rahyāṃ che. tuṣṭi, puṣṭi ne śāṃti kyāre thāya, jyāre kharekharo niśrcaya thāya tyāre ne te niśrcaya paṇa thayo. have to teno ānaṃda rākhīne varatavuṃ ne vaḍodarānuṃ rāja maḻe toya, ‘hāya, hāya.’ kare te mūrakha kahevāya, tema āvā bhagavāna maḻyā ne saṃta maḻyā, teno haiyāmāṃ ānaṃda rākhīne te bhagavānanī ājñāmāṃ varatavuṃ ne anuvṛttimāṃ rahevuṃ ne sārā bhagavadīno samāgama karavo. keṭalīka vātuṃ karma upara che, keṭalīka dharma para che ne keṭalīka jñāna para che te jevā jevā adhikārī hoya te grahaṇa kare. je karma para che te kahe che je aputrasya gatirnāsti (putrahīnanī sadgati thatī nathī) ne jene bhagavāna maḻyā te kahe che je sādhanamātra pūrāṃ thaī rahyāṃ che. have to tenā guṇānuvāda kahevā ne sāṃbhaḻavā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(91) આપણને ભગવાન મળ્યા ને સાધુ મળ્યા એ વાત તો થઈ. હવે તો ભગવાનના ભક્ત ભેળું બેસવું તે અધૂરું છે, ને બીજાં કામ તો બધાં થઈ રહ્યાં છે. તુષ્ટિ, પુષ્ટિ ને શાંતિ ક્યારે થાય, જ્યારે ખરેખરો નિશ્ર્ચય થાય ત્યારે ને તે નિશ્ર્ચય પણ થયો. હવે તો તેનો આનંદ રાખીને વરતવું ને વડોદરાનું રાજ મળે તોય, ‘હાય, હાય.’ કરે તે મૂરખ કહેવાય, તેમ આવા ભગવાન મળ્યા ને સંત મળ્યા, તેનો હૈયામાં આનંદ રાખીને તે ભગવાનની આજ્ઞામાં વરતવું ને અનુવૃત્તિમાં રહેવું ને સારા ભગવદીનો સમાગમ કરવો. કેટલીક વાતું કર્મ ઉપર છે, કેટલીક ધર્મ પર છે ને કેટલીક જ્ઞાન પર છે તે જેવા જેવા અધિકારી હોય તે ગ્રહણ કરે. જે કર્મ પર છે તે કહે છે જે અપુત્રસ્ય ગતિર્નાસ્તિ (પુત્રહીનની સદ્ગતિ થતી નથી) ને જેને ભગવાન મળ્યા તે કહે છે જે સાધનમાત્ર પૂરાં થઈ રહ્યાં છે. હવે તો તેના ગુણાનુવાદ કહેવા ને સાંભળવા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16090.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Rajoguni hoy te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16092.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jiv vruddhi nathi pamato</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '91');
+            localStorage.setItem('lastVisitedVatFile', 'ch16091.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક જણે પૂછ્યું જે - Ek jane puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek jane puchhyu je</h1>
+                <div class="gujarati-title">એક જણે પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 175</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(175) eka jaṇe pūchyuṃ je, ‘sau karatāṃ vahāluṃ śuṃ haśe ?’ tyāre uttara karyo je, ‘amane to deha jaṇāya che.’ ne mahārāje paṇa eka sādhu āgaḻa kahyuṃ ke,“jīvane karoḍa pāpanā koṭhāra bharyā che.” e vāta vistāre karīne bolyā je, ‘te māṭe e pāpanāṃ che, te bheḻe dehanī ekatā āvī. temāṃ je jīva judo rahyo, tene baḻiyo karīne onī bheḻuṃ rahevuṃ paṇa bhaḻavuṃ nahi ne koī padārtha ke viṣaya rākhavā nahi; pachī tyāṃ jaīne e karatāṃ āṃhīṃ ja chūṭako karīe nahi ?’@ 1 bhoṃ khotaravī paḍye= śaramathī nīcuṃ jovuṃ paḍe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૭૫) એક જણે પૂછ્યું જે, ‘સૌ કરતાં વહાલું શું હશે ?’ ત્યારે ઉત્તર કર્યો જે, ‘અમને તો દેહ જણાય છે.’ ને મહારાજે પણ એક સાધુ આગળ કહ્યું કે,“જીવને કરોડ પાપના કોઠાર ભર્યા છે.” એ વાત વિસ્તારે કરીને બોલ્યા જે, ‘તે માટે એ પાપનાં છે, તે ભેળે દેહની એકતા આવી. તેમાં જે જીવ જુદો રહ્યો, તેને બળિયો કરીને ઓની ભેળું રહેવું પણ ભળવું નહિ ને કોઈ પદાર્થ કે વિષય રાખવા નહિ; પછી ત્યાં જઈને એ કરતાં આંહીં જ છૂટકો કરીએ નહિ ?’@ 1 ભોં ખોતરવી પડ્યે= શરમથી નીચું જોવું પડે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6174.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek haribhakt khambhatthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6176.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Anant kirya thay pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '175');
+            localStorage.setItem('lastVisitedVatFile', 'ch6175.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

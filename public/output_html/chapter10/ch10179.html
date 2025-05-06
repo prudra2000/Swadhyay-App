@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભારે દુ:ખમાં દુ:ખ તો  - Bhare dukhma dukh to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhare dukhma dukh to</h1>
+                <div class="gujarati-title">ભારે દુ:ખમાં દુ:ખ તો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 179</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(179) bhāre du:khamāṃ du:kha to nīca māṇasano saṃga che. eka rājānā kuṃvarane brāhmaṇa bhaṇāvato, te bhaṇāvī rahyo tyāre kahe, ‘hajī be vidyā bhaṇāvavī rahī che.’ ema kahī māryo te lohīnī nīkaḻī. tyāre kahe, ‘nīcano saṃga karavo nahi ne karaśo to jerabaṃdha khāvā paḍaśe.’ pachī agāśīmāṃ taḍake ūbho rākhyo ne kahyuṃ je, ‘āpaṇane du:kha thāya che, tema ja bījāne paṇa thāya; māṭe koīne daṃḍa devo temāṃ ā dhyānamāṃ rākhavuṃ.’ tema ā saṃtanā samāgamamāṃthī sarve vidyāo śikhāya che; paṇa je mokṣabhāgī che tene ā satsaṃga artha lāge che. māṭe nitya pratye ā samāgama karavo. ‘kānuḍo keḍe ne keḍe.’ ema ā sādhu to sāṃje, savāre, bapore emane ema keḍo laīne maṃḍyā che.@ 1 jerabaṃdha= cāmaḍāno koraḍo.$2 śeḍa= jhīṇī dhāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(179) ભારે દુ:ખમાં દુ:ખ તો નીચ માણસનો સંગ છે. એક રાજાના કુંવરને બ્રાહ્મણ ભણાવતો, તે ભણાવી રહ્યો ત્યારે કહે, ‘હજી બે વિદ્યા ભણાવવી રહી છે.’ એમ કહી માર્યો તે લોહીની નીકળી. ત્યારે કહે, ‘નીચનો સંગ કરવો નહિ ને કરશો તો જેરબંધ ખાવા પડશે.’ પછી અગાશીમાં તડકે ઊભો રાખ્યો ને કહ્યું જે, ‘આપણને દુ:ખ થાય છે, તેમ જ બીજાને પણ થાય; માટે કોઈને દંડ દેવો તેમાં આ ધ્યાનમાં રાખવું.’ તેમ આ સંતના સમાગમમાંથી સર્વે વિદ્યાઓ શિખાય છે; પણ જે મોક્ષભાગી છે તેને આ સત્સંગ અર્થ લાગે છે. માટે નિત્ય પ્રત્યે આ સમાગમ કરવો. ‘કાનુડો કેડે ને કેડે.’ એમ આ સાધુ તો સાંજે, સવારે, બપોરે એમને એમ કેડો લઈને મંડ્યા છે.@ 1 જેરબંધ= ચામડાનો કોરડો.$2 શેડ= ઝીણી ધાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10178.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Avi shala trilokima </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10180.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Giranar jetalo rupiyano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '179');
+            localStorage.setItem('lastVisitedVatFile', 'ch10179.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

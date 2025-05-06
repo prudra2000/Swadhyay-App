@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સુકાઈ જાઓ, અન્ન મૂકી દો, - Sukai jao, ann muki do,</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sukai jao, ann muki do,</h1>
+                <div class="gujarati-title">સુકાઈ જાઓ, અન્ન મૂકી દો,</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 132</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(132) sukāī jāo, anna mūkī do, vanamāṃ jāo ke ghara mūkī do; te karatāṃ paṇa ā sādhunī vātuṃ sāṃbhaḻavī te adhika che. ane ā vātuṃ to puruṣottamanāṃ vacana che ne guṇātīta vātuṃ che ne ā vātuṃmāṃthī to akṣaradhāma dekhāya che ne bhagavāna akṣaradhāmane ne muktane laīne evā ne evā ja āhīṃ āvyā che; temāṃ phera na samajavo ne mahimā samajāto nathī tethī jīva dūbaḻo rahe che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(132) સુકાઈ જાઓ, અન્ન મૂકી દો, વનમાં જાઓ કે ઘર મૂકી દો; તે કરતાં પણ આ સાધુની વાતું સાંભળવી તે અધિક છે. અને આ વાતું તો પુરુષોત્તમનાં વચન છે ને ગુણાતીત વાતું છે ને આ વાતુંમાંથી તો અક્ષરધામ દેખાય છે ને ભગવાન અક્ષરધામને ને મુક્તને લઈને એવા ને એવા જ આહીં આવ્યા છે; તેમાં ફેર ન સમજવો ને મહિમા સમજાતો નથી તેથી જીવ દૂબળો રહે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1131.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Durlabhma durlabh satsang </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1133.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek divase rajya devay</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '132');
+            localStorage.setItem('lastVisitedVatFile', 'ch1132.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

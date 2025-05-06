@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પર્વતભાઈએ મહારાજને કહ્યું - Parvatabhaie Maharajne kahyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Parvatabhaie Maharajne kahyu</h1>
+                <div class="gujarati-title">પર્વતભાઈએ મહારાજને કહ્યું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 290</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(290) parvatabhāīe mahārājane kahyuṃ ke, ‘tame to karāvo cho.’ te śuṃ ? je, rājāne ne kāmadārane je pahoṃcī śake nahi te garība raiyatanā bāḻe; tema ā sādhune, 1 uṃdariyā prāccha= chaḻakapaṭa, kāvādāvā. $2 oghā= khetaramāṃnī sāṃṭhī/sūkuṃ ghāsa vagerenā thappā/ḍhagalā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(290) પર્વતભાઈએ મહારાજને કહ્યું કે, ‘તમે તો કરાવો છો.’ તે શું ? જે, રાજાને ને કામદારને જે પહોંચી શકે નહિ તે ગરીબ રૈયતના બાળે; તેમ આ સાધુને, 1 ઉંદરિયા પ્રાચ્છ= છળકપટ, કાવાદાવા. $2 ઓઘા= ખેતરમાંની સાંઠી/સૂકું ઘાસ વગેરેના થપ્પા/ઢગલા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11289.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apane parameshvar bhajavano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11291.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chhellanu 24mu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '290');
+            localStorage.setItem('lastVisitedVatFile', 'ch11290.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

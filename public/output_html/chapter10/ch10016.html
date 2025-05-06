@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રભુ ભજવા તેમાં  - Prabhu bhajava tema</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Prabhu bhajava tema</h1>
+                <div class="gujarati-title">પ્રભુ ભજવા તેમાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 16</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(16) prabhu bhajavā temāṃ mana-indriyuṃ e moṭāṃ vighna che. ā jīva ḍhoṃgī che, te eka gāu na cālato hoya paṇa bhaya hoya to daśa gāunī majala kare. gopāḻānaṃdasvāmīe harajī ṭhakkarane pūchayuṃ je, ‘tame keṭaluṃ cālī śako ?’ to kahe, ‘be gāu cālī śakuṃ.’ tyāre gopāḻānaṃdasvāmī kahe, ‘vāṃse ughāḍī talavāra kāḍhī koī māravā āvatuṃ hoya to keṭaluṃ cālo ?’ tyāre kahe, ‘to to aḍavāṇe page daśa-bāra gāu doḍyo jāuṃ !’ evāṃ jīvanāṃ kūkaṭa che. mahārāje ā sādhu karyā, dharma bāṃdhyo ne je je kriyā karī te eka mokṣa sudhāravā sāru che. pātāḻanā deḍakāne nīkaḻavuṃ ne varasāda thāvo, tyāre kahe, ‘take taka maḻī!’ tema āpaṇe paṇa ā ja take taka banī gaī che. mahārājane pragaṭa thāvuṃ ne āpaṇane manuṣyano deha āvyo; māṭe prabhu bhajī levā.@ 1 vāṃse= pāchaḻa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(16) પ્રભુ ભજવા તેમાં મન-ઇન્દ્રિયું એ મોટાં વિઘ્ન છે. આ જીવ ઢોંગી છે, તે એક ગાઉ ન ચાલતો હોય પણ ભય હોય તો દશ ગાઉની મજલ કરે. ગોપાળાનંદસ્વામીએ હરજી ઠક્કરને પૂછયું જે, ‘તમે કેટલું ચાલી શકો ?’ તો કહે, ‘બે ગાઉ ચાલી શકું.’ ત્યારે ગોપાળાનંદસ્વામી કહે, ‘વાંસે ઉઘાડી તલવાર કાઢી કોઈ મારવા આવતું હોય તો કેટલું ચાલો ?’ ત્યારે કહે, ‘તો તો અડવાણે પગે દશ-બાર ગાઉ દોડ્યો જાઉં !’ એવાં જીવનાં કૂકટ છે. મહારાજે આ સાધુ કર્યા, ધર્મ બાંધ્યો ને જે જે ક્રિયા કરી તે એક મોક્ષ સુધારવા સારુ છે. પાતાળના દેડકાને નીકળવું ને વરસાદ થાવો, ત્યારે કહે, ‘તકે તક મળી!’ તેમ આપણે પણ આ જ તકે તક બની ગઈ છે. મહારાજને પ્રગટ થાવું ને આપણને મનુષ્યનો દેહ આવ્યો; માટે પ્રભુ ભજી લેવા.@ 1 વાંસે= પાછળ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10015.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jiv je vege </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10017.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa lokna tharavamatra</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '16');
+            localStorage.setItem('lastVisitedVatFile', 'ch10016.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

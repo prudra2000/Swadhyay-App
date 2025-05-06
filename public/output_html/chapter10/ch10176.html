@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન મનુષ્ય જેવા - Bhagavan manushy jeva</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan manushy jeva</h1>
+                <div class="gujarati-title">ભગવાન મનુષ્ય જેવા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 176</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(176) bhagavāna manuṣya jevā jaṇāya che te bhaktanā sukhane arthe jaṇāya che ne bhagavānanī sarva kriyā bhaktanā sukhane arthe che; paṇa potānā sukhane arthe nathī. bhagavāna deha dhare che tyāre manuṣya jevī ja kriyā kare che, tene bhakta hoya te caritra jāṇe ne vimukha hoya te doṣa paraṭhe. mahārāje ḍabhāṇano yajña karyo, tyāre yajñanī rakṣā karavā māṭe ghoḍāsaranā rājā pāse māṇaso levā gayā hatā. te vakhate suratanā harijane ghoḍāsaramāṃ mahārājanī pūjā karī ne ḍagalī, pāgha, kaḍāṃ, bāju, veḍha vagere dareka jaṇe ekekuṃ bhāre bhāre paherāvīne pūjā karī. ema ākhāya gāmano eka śaṇagāra karyo hato. $śira jarakasī cīrā, pahere paṭa pīrā; $hāṃ re tere ura bīca motīyuṃ dā hāra. $(kīrtana muktāvali : 345) $laga gaī akhīyāṃ suno morī sakhīyāṃ, nīrakhana dharmakumāra; harisuṃ0</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(176) ભગવાન મનુષ્ય જેવા જણાય છે તે ભક્તના સુખને અર્થે જણાય છે ને ભગવાનની સર્વ ક્રિયા ભક્તના સુખને અર્થે છે; પણ પોતાના સુખને અર્થે નથી. ભગવાન દેહ ધરે છે ત્યારે મનુષ્ય જેવી જ ક્રિયા કરે છે, તેને ભક્ત હોય તે ચરિત્ર જાણે ને વિમુખ હોય તે દોષ પરઠે. મહારાજે ડભાણનો યજ્ઞ કર્યો, ત્યારે યજ્ઞની રક્ષા કરવા માટે ઘોડાસરના રાજા પાસે માણસો લેવા ગયા હતા. તે વખતે સુરતના હરિજને ઘોડાસરમાં મહારાજની પૂજા કરી ને ડગલી, પાઘ, કડાં, બાજુ, વેઢ વગેરે દરેક જણે એકેકું ભારે ભારે પહેરાવીને પૂજા કરી. એમ આખાય ગામનો એક શણગાર કર્યો હતો. $શિર જરકસી ચીરા, પહેરે પટ પીરા; $હાં રે તેરે ઉર બીચ મોતીયું દા હાર. $(કીર્તન મુક્તાવલિ : 345) $લગ ગઈ અખીયાં સુનો મોરી સખીયાં, નીરખન ધર્મકુમાર; હરિસું0</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10175.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satsangine vat karavi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10177.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane tran kam karavana</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '176');
+            localStorage.setItem('lastVisitedVatFile', 'ch10176.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

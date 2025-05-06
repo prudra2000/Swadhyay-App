@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આટલી વાત તો સો જન્મે - Aatali vat to so janme</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aatali vat to so janme</h1>
+                <div class="gujarati-title">આટલી વાત તો સો જન્મે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 238</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(238) āṭalī vāta to so janme paṇa na samajāya, māṭe ā vāta sau rākhajo ne be sārā sādhu ne traṇa sārā haribhakta temanī sāthe jīva bāṃdhavo to satsaṃgamāṃthī na paḍāya ne kadāpi kāma, lobha thoḍā ghaṇā paṇa rahī gayā haśe to phikara nathī. te mahārāje ‘vacanāmṛta’māṃ kahyuṃ che je, ''kadāpi kāma, lobhano saṃkalpa nahi hoya paṇa bhagavānanā bhaktamāṃ jīva na baṃdhāṇo to śuṃ thayuṃ ? evāne abhāve asura thāśe.'' māṭe samajavānī vāta to sārā bhagavānanā bhaktamāṃ jīva bāṃdhavo eṭaluṃ ja karavānuṃ che. ne bījī vātuṃ karavī paḍe che tenuṃ to e prayojana che je, ā prathā calāvavī che ne niyama paḻāvavā, te sāru karavī paḍe che. $( vaca.ga.aṃ. 5 )</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(238) આટલી વાત તો સો જન્મે પણ ન સમજાય, માટે આ વાત સૌ રાખજો ને બે સારા સાધુ ને ત્રણ સારા હરિભક્ત તેમની સાથે જીવ બાંધવો તો સત્સંગમાંથી ન પડાય ને કદાપિ કામ, લોભ થોડા ઘણા પણ રહી ગયા હશે તો ફિકર નથી. તે મહારાજે ‘વચનામૃત’માં કહ્યું છે જે, ''કદાપિ કામ, લોભનો સંકલ્પ નહિ હોય પણ ભગવાનના ભક્તમાં જીવ ન બંધાણો તો શું થયું ? એવાને અભાવે અસુર થાશે.'' માટે સમજવાની વાત તો સારા ભગવાનના ભક્તમાં જીવ બાંધવો એટલું જ કરવાનું છે. ને બીજી વાતું કરવી પડે છે તેનું તો એ પ્રયોજન છે જે, આ પ્રથા ચલાવવી છે ને નિયમ પળાવવા, તે સારુ કરવી પડે છે. $( વચ.ગ.અં. 5 )</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1237.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa lokma to maharajne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1239.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nitye lakh rupiya lave</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '238');
+            localStorage.setItem('lastVisitedVatFile', 'ch1238.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

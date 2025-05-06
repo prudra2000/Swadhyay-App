@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સોમલોખાચર નિરંતર ભેળા  - Somalokhachar nirantar bhela</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Somalokhachar nirantar bhela</h1>
+                <div class="gujarati-title">સોમલોખાચર નિરંતર ભેળા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 421</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(421) somalokhācara niraṃtara bheḻā rahetā ne tene ardho amāro ane ardho jagatano prasaṃga che ema kema kahyuṃ. tyāre uttara karyo je, niraṃtara bheḻā to mūrtine mūke nahi te kahevāya, paṇa je dehe karīne kevaḻa bheḻā rahyā te bheḻā kahevāya nahi ne mahārājanuṃ evī rīte kahevuṃ, te sarva upara kalama pharī vaḻe ne kharekharī vāta to bhagavāna ne ātmā be ja rahe tyāre kharuṃ kahevāya; paṇa dehātmabuddhi che te koī apamāna kare tyāre sāruṃ na lāge ne ati thāya to satsaṃgamāṃthī kāḍhī nākhe. te māne karīne dakṣanuṃ bhūṃḍuṃ kahevāyuṃ; lobhe karīne sahastrārjunanuṃ bhūḍuṃ thayuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(421) સોમલોખાચર નિરંતર ભેળા રહેતા ને તેને અર્ધો અમારો અને અર્ધો જગતનો પ્રસંગ છે એમ કેમ કહ્યું. ત્યારે ઉત્તર કર્યો જે, નિરંતર ભેળા તો મૂર્તિને મૂકે નહિ તે કહેવાય, પણ જે દેહે કરીને કેવળ ભેળા રહ્યા તે ભેળા કહેવાય નહિ ને મહારાજનું એવી રીતે કહેવું, તે સર્વ ઉપર કલમ ફરી વળે ને ખરેખરી વાત તો ભગવાન ને આત્મા બે જ રહે ત્યારે ખરું કહેવાય; પણ દેહાત્મબુદ્ધિ છે તે કોઈ અપમાન કરે ત્યારે સારું ન લાગે ને અતિ થાય તો સત્સંગમાંથી કાઢી નાખે. તે માને કરીને દક્ષનું ભૂંડું કહેવાયું; લોભે કરીને સહસ્ત્રાર્જુનનું ભૂડું થયું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15420.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shaligram pujavanu kahyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15422.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dasna dushman hari </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '421');
+            localStorage.setItem('lastVisitedVatFile', 'ch15421.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

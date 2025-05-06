@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન ને સાધુના મહિમાની - Bhagavan ne sadhuna mahimani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan ne sadhuna mahimani</h1>
+                <div class="gujarati-title">ભગવાન ને સાધુના મહિમાની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 1</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(1) bhagavāna ne sādhunā mahimānī vātuṃ niraṃtara karavī ne sāṃbhaḻavī ne mahārāja to potānuṃ ne ne potānuṃ samagra te laīne ahīṃ padhāryā che. te evā ne evā ja che. ne deha mūkīne jene pāmavā che, te āja deha chatāṃ ja maḻyā che, kāṃī bākī nathī ne ema na samajāya tethī jīvamāṃ durbaḻatā rahe che ne ema samajāya tyāre koī divasa jīvamāṃ durbaḻatā manāya ja nahi ne thaī jāya che. ne mahimā samajavā jevuṃ bījuṃ koī moṭuṃ sādhana paṇa nathī ne mahimā vinā bījāṃ game eṭalāṃ sādhana kare to paṇa jīva baḻane pāme nahīṃ. ne evo mahimā samajavānuṃ kāraṇa to evā che, paṇa te vinā evo mahimā samajāto nathī. 1. akṣaradhāma= jyāṃ māyāmātrane sthāna nathī evuṃ puruṣottamabhagavānanuṃ/bhagavāna śrī svāminārāyaṇanuṃ dhāma - brahmamahola, sākāra svarūpe anādi mūḻaakṣara mūrti - akṣarabrahma - sadguruvarya śrī guṇātītānaṃdasvāmī.;</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(1) ભગવાન ને સાધુના મહિમાની વાતું નિરંતર કરવી ને સાંભળવી ને મહારાજ તો પોતાનું ને ને પોતાનું સમગ્ર તે લઈને અહીં પધાર્યા છે. તે એવા ને એવા જ છે. ને દેહ મૂકીને જેને પામવા છે, તે આજ દેહ છતાં જ મળ્યા છે, કાંઈ બાકી નથી ને એમ ન સમજાય તેથી જીવમાં દુર્બળતા રહે છે ને એમ સમજાય ત્યારે કોઈ દિવસ જીવમાં દુર્બળતા મનાય જ નહિ ને થઈ જાય છે. ને મહિમા સમજવા જેવું બીજું કોઈ મોટું સાધન પણ નથી ને મહિમા વિના બીજાં ગમે એટલાં સાધન કરે તો પણ જીવ બળને પામે નહીં. ને એવો મહિમા સમજવાનું કારણ તો એવા છે, પણ તે વિના એવો મહિમા સમજાતો નથી. 1. અક્ષરધામ= જ્યાં માયામાત્રને સ્થાન નથી એવું પુરુષોત્તમભગવાનનું/ભગવાન શ્રી સ્વામિનારાયણનું ધામ - બ્રહ્મમહોલ, સાકાર સ્વરૂપે અનાદિ મૂળઅક્ષર મૂર્તિ - અક્ષરબ્રહ્મ - સદ્ગુરુવર્ય શ્રી ગુણાતીતાનંદસ્વામી.;</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1002.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sankhya vichar karava shikhavo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '1');
+            localStorage.setItem('lastVisitedVatFile', 'ch1001.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

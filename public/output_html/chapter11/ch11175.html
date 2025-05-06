@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કૃપાનંદસ્વામી કહેતા જે - Krupanandswami kaheta je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Krupanandswami kaheta je</h1>
+                <div class="gujarati-title">કૃપાનંદસ્વામી કહેતા જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 175</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha sudi pūnamane divase svāmīe vāta karī je, $(175) kṛpānaṃdasvāmī kahetā je, ‘amane upavāsa paḍe to deha paḍī jāya evā mahāśuddha, temāṃ koī apavāda mūke te kema manāya ja ?’ ne kṛpānaṃdasvāmī to svāminārāyaṇanā śiṣya, paṇa keṭalāke to svāminārāyaṇa paṃḍane māthe apavāda mūkyā ne doṣa paraṭhyā che ! te upara āṃbā śeṭha ane jhīṇābhāīnī vāta karī. māṭe deśakāḻe buddhi pharī jāya che. te buddhi konī na phare, to jeṇe sāttvika sevyā hoya ane yathārtha mahimāe sahita jeṇe bhagavānane bhagavāna jāṇyā hoya; jema ā līmaḍāne līmaḍo jāṇyo che, to koī nā kahe to manāya nahi; tema game tevuṃ manuṣyacaritra bhagavāna kare, tene viśe tevāne niraṃtara divyabhāva rahe che, ne ānaṃdamāṃ rahī gāna kare ke, bhagavāna potānā bhaktanā saṃkalpa siddha kare che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ સુદિ પૂનમને દિવસે સ્વામીએ વાત કરી જે, $(175) કૃપાનંદસ્વામી કહેતા જે, ‘અમને ઉપવાસ પડે તો દેહ પડી જાય એવા મહાશુદ્ધ, તેમાં કોઈ અપવાદ મૂકે તે કેમ મનાય જ ?’ ને કૃપાનંદસ્વામી તો સ્વામિનારાયણના શિષ્ય, પણ કેટલાકે તો સ્વામિનારાયણ પંડને માથે અપવાદ મૂક્યા ને દોષ પરઠ્યા છે ! તે ઉપર આંબા શેઠ અને ઝીણાભાઈની વાત કરી. માટે દેશકાળે બુદ્ધિ ફરી જાય છે. તે બુદ્ધિ કોની ન ફરે, તો જેણે સાત્ત્વિક સેવ્યા હોય અને યથાર્થ મહિમાએ સહિત જેણે ભગવાનને ભગવાન જાણ્યા હોય; જેમ આ લીમડાને લીમડો જાણ્યો છે, તો કોઈ ના કહે તો મનાય નહિ; તેમ ગમે તેવું મનુષ્યચરિત્ર ભગવાન કરે, તેને વિશે તેવાને નિરંતર દિવ્યભાવ રહે છે, ને આનંદમાં રહી ગાન કરે કે, ભગવાન પોતાના ભક્તના સંકલ્પ સિદ્ધ કરે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11174.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dharm, arth ne kam te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11176.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Deshakal na lage eva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '175');
+            localStorage.setItem('lastVisitedVatFile', 'ch11175.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

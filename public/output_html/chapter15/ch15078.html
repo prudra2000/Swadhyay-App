@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વરતાલનું સોળનું વચનામૃત - Varatalnu solnu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varatalnu solnu vachanamrut</h1>
+                <div class="gujarati-title">વરતાલનું સોળનું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 78</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(78) varatālanuṃ soḻanuṃ vacanāmṛta vaṃcāvīne vāta karī je, potānā hoya tene rahasya, abhiprāya kahevāya, paṇa mahārāja kahe, ‘amāre koī vātano āgraha nathī’ ne khumāṇuṃmāṃ satsaṃga thāya te sāru ame ghaṇī mahenata karī. te jāḻe jāḻe bhamīne satsaṃga karāvyo che, paṇa jeṭalī mahārājanī īcchā haśe teṭalo ja satsaṃga thāśe. prāṃtījamāṃ amāro satsaṃga karāvela che. te jevā jevā guru sevyā che tevā tevā jīva thāya che. jeno sāṃḍha tenā vāchaḍāṃ paṇa cāṃdarā ane jogānaṃdasvāmīe cāra purāṇī karyā ne bhajanānaṃdano to koī thayo ja nathī.@ 1 cāṃdaro= dhoḻā cāṃdāvāḻuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(78) વરતાલનું સોળનું વચનામૃત વંચાવીને વાત કરી જે, પોતાના હોય તેને રહસ્ય, અભિપ્રાય કહેવાય, પણ મહારાજ કહે, ‘અમારે કોઈ વાતનો આગ્રહ નથી’ ને ખુમાણુંમાં સત્સંગ થાય તે સારુ અમે ઘણી મહેનત કરી. તે જાળે જાળે ભમીને સત્સંગ કરાવ્યો છે, પણ જેટલી મહારાજની ઈચ્છા હશે તેટલો જ સત્સંગ થાશે. પ્રાંતીજમાં અમારો સત્સંગ કરાવેલ છે. તે જેવા જેવા ગુરુ સેવ્યા છે તેવા તેવા જીવ થાય છે. જેનો સાંઢ તેના વાછડાં પણ ચાંદરા અને જોગાનંદસ્વામીએ ચાર પુરાણી કર્યા ને ભજનાનંદનો તો કોઈ થયો જ નથી.@ 1 ચાંદરો= ધોળા ચાંદાવાળું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15077.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vyavahar maragno to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15079.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharajni agna palashe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '78');
+            localStorage.setItem('lastVisitedVatFile', 'ch15078.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

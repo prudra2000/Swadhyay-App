@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ધર્મશાળાના કામમાં - Dharmashalana kamma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dharmashalana kamma</h1>
+                <div class="gujarati-title">ધર્મશાળાના કામમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 127</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(127) dharmaśāḻānā kāmamāṃ māṇase bahu dākhaḍo karyo te ame rājī thaī gayā, te bhagavāna rājī thaī rahyā ne āvā sādhunuṃ darśana to paṃcamahāpāpane paṇa bāḻī nākhe evuṃ che, paṇa evo mahimā nathī; ne evo mahimā hoya to aṃtaramāṃthī ānaṃdanā phuvārā chūṭe ane ā te kāṃī vātuṃ che ! ā to akṣaradhāmanī vātuṃ che; paṇa sāṃkhya vinā kasara rahī jāya che ne sāṃkhyavāḻāne to ā loka sarve naraka jevuṃ lāge che; paṇa kyāṃya māla manāya nahi ne ā to sarve dhūḍanuṃ che, māṭe temāṃ māla mānavo nahīṃ.@ 1 ā kārakhānuṃ= bhagavānane mūkīne/tyajīne maṃdiramāṃ cālatī moṭī pravṛttiomāṃ joḍāvuṃ te</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(127) ધર્મશાળાના કામમાં માણસે બહુ દાખડો કર્યો તે અમે રાજી થઈ ગયા, તે ભગવાન રાજી થઈ રહ્યા ને આવા સાધુનું દર્શન તો પંચમહાપાપને પણ બાળી નાખે એવું છે, પણ એવો મહિમા નથી; ને એવો મહિમા હોય તો અંતરમાંથી આનંદના ફુવારા છૂટે અને આ તે કાંઈ વાતું છે ! આ તો અક્ષરધામની વાતું છે; પણ સાંખ્ય વિના કસર રહી જાય છે ને સાંખ્યવાળાને તો આ લોક સર્વે નરક જેવું લાગે છે; પણ ક્યાંય માલ મનાય નહિ ને આ તો સર્વે ધૂડનું છે, માટે તેમાં માલ માનવો નહીં.@ 1 આ કારખાનું= ભગવાનને મૂકીને/ત્યજીને મંદિરમાં ચાલતી મોટી પ્રવૃત્તિઓમાં જોડાવું તે</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1126.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bajaro khavo ne prabhu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1128.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanma ne sadhuma </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '127');
+            localStorage.setItem('lastVisitedVatFile', 'ch1127.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

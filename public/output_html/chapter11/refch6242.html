@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(242) so varasa sudhī āvā sādhu bheḻā akhaṃḍa rahīe tyāre to sārī ruci thāya. pachī rucinuṃ loyānuṃ 14muṃ vacanāmṛta vaṃcāvyuṃ ne bolyā je, ‘hamaṇāṃ to ruci khādhānī, mānanī ne paṃcaviṣayanī che. jyāre moṭā sādhu hoya tyāre pāpī tenī moṭāī khamī śake nahi; pachī droha kare ne potānuṃ bhūṃḍuṃ kare.’ $tulasī traṇe ṭile na diṭhā rāvaṇa, kaurava ne kaṃsa. $(tulasīdāsanī sākhīo : 51) $artha : anītithī dharma, rājya ane vaṃśano nāśa thāya che, te para anukrame kauravo, rāvaṇa ane kaṃsanāṃ dṛṣṭāṃto che. pāṃḍavo sāthe anyāya karavāthī, kapaṭadyūta ramavāthī, temano dharma bhāga na āpavāthī ane lākṣāgṛhamāṃ temane bāḻī nākhavāno prayatna karavāthī kauravoe potāno dharma gumāvyo. sītājī tarapha adharmanuṃ ācaraṇa karavāthī rāvaṇe rāmane hāthe potānuṃ rājya khoyuṃ. surāpānarūpī adharmanuṃ ācaraṇa karavāthī kaṃsanā vaṃśanuṃ (arthāt yādavonuṃ) nikaṃdana gayuṃ. 1 mosalāī= sarakārī daṃḍanī rakama. $2 olī koranā= amadāvāda pradeśanā. $3 āṇīkoryanā= āpaṇī bājunā, akṣaradhāmanī bahāranā, sarva māyānā lokanā, vaḍatāla pradeśanā. $</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૪૨) સો વરસ સુધી આવા સાધુ ભેળા અખંડ રહીએ ત્યારે તો સારી રુચિ થાય. પછી રુચિનું લોયાનું ૧૪મું વચનામૃત વંચાવ્યું ને બોલ્યા જે, ‘હમણાં તો રુચિ ખાધાની, માનની ને પંચવિષયની છે. જ્યારે મોટા સાધુ હોય ત્યારે પાપી તેની મોટાઈ ખમી શકે નહિ; પછી દ્રોહ કરે ને પોતાનું ભૂંડું કરે.’ $તુલસી ત્રણે ટિલે ન દિઠા રાવણ, કૌરવ ને કંસ. $(તુલસીદાસની સાખીઓ : ૫૧) $અર્થ : અનીતિથી ધર્મ, રાજ્ય અને વંશનો નાશ થાય છે, તે પર અનુક્રમે કૌરવો, રાવણ અને કંસનાં દૃષ્ટાંતો છે. પાંડવો સાથે અન્યાય કરવાથી, કપટદ્યૂત રમવાથી, તેમનો ધર્મ ભાગ ન આપવાથી અને લાક્ષાગૃહમાં તેમને બાળી નાખવાનો પ્રયત્ન કરવાથી કૌરવોએ પોતાનો ધર્મ ગુમાવ્યો. સીતાજી તરફ અધર્મનું આચરણ કરવાથી રાવણે રામને હાથે પોતાનું રાજ્ય ખોયું. સુરાપાનરૂપી અધર્મનું આચરણ કરવાથી કંસના વંશનું (અર્થાત્ યાદવોનું) નિકંદન ગયું. 1 મોસલાઈ= સરકારી દંડની રકમ. $2 ઓલી કોરના= અમદાવાદ પ્રદેશના. $3 આણીકોર્યના= આપણી બાજુના, અક્ષરધામની બહારના, સર્વ માયાના લોકના, વડતાલ પ્રદેશના. $</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

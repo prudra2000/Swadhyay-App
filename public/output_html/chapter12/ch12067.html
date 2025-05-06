@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>લુહારની કોઢેથી જેમ  - Luharani kodhethi jem</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Luharani kodhethi jem</h1>
+                <div class="gujarati-title">લુહારની કોઢેથી જેમ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 67</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha sudi saptamīne divase svāmīe vāta karī je, $(67) jema baḻadiyo bhāge ne jema vananāṃ paśu gāmathī bhāge, tema ā jīva sādhuthī ne bhagavānathī bhāge. mahārāje potānā pratāpe jīvonāṃ indriyuṃ-aṃta:karaṇa potānī mūrtimāṃ vāḻī līdhāṃ. ghara mūkīne āṃhīṃ besavuṃ; paṇa te to, $(bhagavad gītā : 7/19) $artha :- bahu janmone aṃte (ā) badhuṃ vāsudeva ja che, evā jñānavāḻo jñānī mane pāme che; te mahātmā ati durlabha che.@ 1 luhāranī koḍhethī= luhārane kāma karavānī jagyāethī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ સુદિ સપ્તમીને દિવસે સ્વામીએ વાત કરી જે, $(67) જેમ બળદિયો ભાગે ને જેમ વનનાં પશુ ગામથી ભાગે, તેમ આ જીવ સાધુથી ને ભગવાનથી ભાગે. મહારાજે પોતાના પ્રતાપે જીવોનાં ઇન્દ્રિયું-અંત:કરણ પોતાની મૂર્તિમાં વાળી લીધાં. ઘર મૂકીને આંહીં બેસવું; પણ તે તો, $(ભગવદ્ ગીતા : 7/19) $અર્થ :- બહુ જન્મોને અંતે (આ) બધું વાસુદેવ જ છે, એવા જ્ઞાનવાળો જ્ઞાની મને પામે છે; તે મહાત્મા અતિ દુર્લભ છે.@ 1 લુહારની કોઢેથી= લુહારને કામ કરવાની જગ્યાએથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12066.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Badha satsangna dhani chhie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12068.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prabhu bhajava evo to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '67');
+            localStorage.setItem('lastVisitedVatFile', 'ch12067.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

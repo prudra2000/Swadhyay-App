@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઈક મરે ત્યારે કાંઈક - Koika mare tyare kanik </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Koika mare tyare kanik </h1>
+                <div class="gujarati-title">કોઈક મરે ત્યારે કાંઈક</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 100</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(100) koīka mare tyāre kāṃīka thāya ne pachī ā lokamāṃ padārtha, manuṣya, rūpiyā e ādikane dekhe te pāchuṃ bhūlī jāya. ne je jñānī hoya tene to niraṃtara ema varate, je ājñā pāḻavī paṇa lopavī nahīṃ. te ājñā mukhyapaṇe to ‘śikṣāpatrī’, ‘niṣkāmaśuddhi’ ne ‘dharmāmṛta’ e traṇa graṃtha pramāṇe varatavuṃ. ne moṭāno samāgama karavo ne sevā karavānuṃ kahe che, te sarvamāṃ mukhya sevā te śuṃ ? je, moṭā ekāṃtikanī anuvṛtti mana, karma, vacane rākhavī; evī bījī koī sevā nathī.@ 1 thaḍako= dhrāsako, āṃcako, bhaya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(100) કોઈક મરે ત્યારે કાંઈક થાય ને પછી આ લોકમાં પદાર્થ, મનુષ્ય, રૂપિયા એ આદિકને દેખે તે પાછું ભૂલી જાય. ને જે જ્ઞાની હોય તેને તો નિરંતર એમ વરતે, જે આજ્ઞા પાળવી પણ લોપવી નહીં. તે આજ્ઞા મુખ્યપણે તો ‘શિક્ષાપત્રી’, ‘નિષ્કામશુદ્ધિ’ ને ‘ધર્મામૃત’ એ ત્રણ ગ્રંથ પ્રમાણે વરતવું. ને મોટાનો સમાગમ કરવો ને સેવા કરવાનું કહે છે, તે સર્વમાં મુખ્ય સેવા તે શું ? જે, મોટા એકાંતિકની અનુવૃત્તિ મન, કર્મ, વચને રાખવી; એવી બીજી કોઈ સેવા નથી.@ 1 થડકો= ધ્રાસકો, આંચકો, ભય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2099.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aagna pale etali vasana</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2101.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jyanthi achanak uchala</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '100');
+            localStorage.setItem('lastVisitedVatFile', 'ch2100.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

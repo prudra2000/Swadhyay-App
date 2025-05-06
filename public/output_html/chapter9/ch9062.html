@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ક્રોધ આવે ત્યારે - Krodh ave tyare </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Krodh ave tyare </h1>
+                <div class="gujarati-title">ક્રોધ આવે ત્યારે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 62</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā aṣāḍha vadi chaṭhane divasa svāmīe vāta karī je, $(62) krodha āve tyāre potāno avaguṇa sūjhe nahi ne koī veṇa māre te khamāya nahīṃ. eka strīne koīke nabhāī kahī, tyāre teṇe sāmī bāīne kahyuṃ je, ‘bhāī tuṃ, nabhāī tārī mā, nabhāī tārī bahena.’ ema so vāra nabhāī kahīne upara jātāṃ kahe je, ‘rāṃḍa, mane nabhāī kema kahī ?’ paṇa pote so vāra kahyuṃ tenuṃ kāṃī nahi ! ema potāno avaguṇa sūjhe nahi tethī duṣṭa svabhāva to vadhī jāya evo che pachī koīka harijanano avaguṇa le, eṭale dahāḍe dahāḍe buddhi bhraṣṭa thātī jāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના અષાઢ વદિ છઠને દિવસ સ્વામીએ વાત કરી જે, $(62) ક્રોધ આવે ત્યારે પોતાનો અવગુણ સૂઝે નહિ ને કોઈ વેણ મારે તે ખમાય નહીં. એક સ્ત્રીને કોઈકે નભાઈ કહી, ત્યારે તેણે સામી બાઈને કહ્યું જે, ‘ભાઈ તું, નભાઈ તારી મા, નભાઈ તારી બહેન.’ એમ સો વાર નભાઈ કહીને ઉપર જાતાં કહે જે, ‘રાંડ, મને નભાઈ કેમ કહી ?’ પણ પોતે સો વાર કહ્યું તેનું કાંઈ નહિ ! એમ પોતાનો અવગુણ સૂઝે નહિ તેથી દુષ્ટ સ્વભાવ તો વધી જાય એવો છે પછી કોઈક હરિજનનો અવગુણ લે, એટલે દહાડે દહાડે બુદ્ધિ ભ્રષ્ટ થાતી જાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9061.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jiv to gafala chhe </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9063.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Oshad to kadava j</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '62');
+            localStorage.setItem('lastVisitedVatFile', 'ch9062.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

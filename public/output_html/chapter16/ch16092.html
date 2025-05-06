@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવ વૃદ્ધિ નથી પામતો  - Jiv vruddhi nathi pamato</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jiv vruddhi nathi pamato</h1>
+                <div class="gujarati-title">જીવ વૃદ્ધિ નથી પામતો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 92</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(92) jīva vṛddhi nathī pāmato tenuṃ śuṃ kāraṇa je sabhāmāṃ vātuṃ thāya te koīka upara nākhe paṇa potā upara na le ne parabārī kāḍhe che eṭale vṛddhi nathī pamātuṃ. paṇa potā upara le ne te vātuṃnuṃ śravaṇa, manana karīne jīvamāṃ utāre to vṛddhi kema na pāme? kathāvārtā vinā aṃtara sūnuṃ thaī jāya che. jema māṇasa vinānī jagyā śūnya thaī jāya tema thaī jāya che. māṭe jema ṭopīvāḻo che te nitya pratye kavāyata karāve che tyāre vidyā navīna rahe che tema āpaṇe kathāvārtā vinā ghaḍīmātra rahevuṃ nahi. ne raghuvīrajī mahārāje deha mūkyo tyāre have ethī āpaṇe koī vahāluṃ na kahevāya. te have rovā māṃḍīe to paṇa tenāṃ darśana to thāya nahi; māṭe have to āpaṇe sarve bhajana karavā maṃḍīe tyāre śāṃti thāya, paṇa śoka karye śāṃti na thāya. te vāta varatālamāṃ paṇa ame karī hatī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(92) જીવ વૃદ્ધિ નથી પામતો તેનું શું કારણ જે સભામાં વાતું થાય તે કોઈક ઉપર નાખે પણ પોતા ઉપર ન લે ને પરબારી કાઢે છે એટલે વૃદ્ધિ નથી પમાતું. પણ પોતા ઉપર લે ને તે વાતુંનું શ્રવણ, મનન કરીને જીવમાં ઉતારે તો વૃદ્ધિ કેમ ન પામે? કથાવાર્તા વિના અંતર સૂનું થઈ જાય છે. જેમ માણસ વિનાની જગ્યા શૂન્ય થઈ જાય તેમ થઈ જાય છે. માટે જેમ ટોપીવાળો છે તે નિત્ય પ્રત્યે કવાયત કરાવે છે ત્યારે વિદ્યા નવીન રહે છે તેમ આપણે કથાવાર્તા વિના ઘડીમાત્ર રહેવું નહિ. ને રઘુવીરજી મહારાજે દેહ મૂક્યો ત્યારે હવે એથી આપણે કોઈ વહાલું ન કહેવાય. તે હવે રોવા માંડીએ તો પણ તેનાં દર્શન તો થાય નહિ; માટે હવે તો આપણે સર્વે ભજન કરવા મંડીએ ત્યારે શાંતિ થાય, પણ શોક કર્યે શાંતિ ન થાય. તે વાત વરતાલમાં પણ અમે કરી હતી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16091.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apanane bhagavan malya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16093.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sanje vat kari je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '92');
+            localStorage.setItem('lastVisitedVatFile', 'ch16092.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

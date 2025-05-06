@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કથા સાંભળવાનો  - Katha sambhalavano</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Katha sambhalavano</h1>
+                <div class="gujarati-title">કથા સાંભળવાનો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 127</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(127) kathā sāṃbhaḻavāno ādara rākhavo ne kathāmāṃ ūṃgha āve to sāpano deha āve. ne kartavya hoya temāṃ mana hoya to nidrā āve nahi; carakhāvāḻā, cicoḍāvāḻā ne bakarāṃvāḻā koī ūṃghatā nathī māṭe evī rītanī ādare sahita laganī hoya tene nidrā na āve. te ā bhaṃḍāra karyo tyāre be mahinā sudhī koī ūṃghyuṃ ja nahi. ne kāma jītavo te to lokāloka pheravavāthī paṇa moṭo che. pṛthvī gaḻī gayā evā daitya hatā paṇa kāma-krodha jitāṇā nahotā. māṭe je kartavya hoya te kare e ḍāhyo ne ā to dehanā aṃta sudhī calāvavuṃ che. pachī kāriyāṇīnā 10māṃ vacanāmṛtanī vāta karī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(127) કથા સાંભળવાનો આદર રાખવો ને કથામાં ઊંઘ આવે તો સાપનો દેહ આવે. ને કર્તવ્ય હોય તેમાં મન હોય તો નિદ્રા આવે નહિ; ચરખાવાળા, ચિચોડાવાળા ને બકરાંવાળા કોઈ ઊંઘતા નથી માટે એવી રીતની આદરે સહિત લગની હોય તેને નિદ્રા ન આવે. તે આ ભંડાર કર્યો ત્યારે બે મહિના સુધી કોઈ ઊંઘ્યું જ નહિ. ને કામ જીતવો તે તો લોકાલોક ફેરવવાથી પણ મોટો છે. પૃથ્વી ગળી ગયા એવા દૈત્ય હતા પણ કામ-ક્રોધ જિતાણા નહોતા. માટે જે કર્તવ્ય હોય તે કરે એ ડાહ્યો ને આ તો દેહના અંત સુધી ચલાવવું છે. પછી કારિયાણીના 10માં વચનામૃતની વાત કરી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9126.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bahu varasad thayo </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9128.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shastra bhanavu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '127');
+            localStorage.setItem('lastVisitedVatFile', 'ch9127.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

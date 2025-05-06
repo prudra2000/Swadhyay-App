@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વરતાલનું પહેલું વચનામૃત - Varatalnu pahelu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varatalnu pahelu vachanamrut</h1>
+                <div class="gujarati-title">વરતાલનું પહેલું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 92</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(92) varatālanuṃ paheluṃ vacanāmṛta ne madhyanuṃ 14muṃ vacanāmṛta vaṃcāvīne vāta karī je, ‘ā pramāṇe samaje to gṛhastha tathā tyāgīne barobara gati che ne tyāgīnuṃ bahu śobhe ne parvatabhāī jevā gṛhasthane sāta chokarāṃ hoya tenuṃ śobhe nahi, paṇa te to mahārājane śikhāmaṇa detā evā hatā.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(92) વરતાલનું પહેલું વચનામૃત ને મધ્યનું 14મું વચનામૃત વંચાવીને વાત કરી જે, ‘આ પ્રમાણે સમજે તો ગૃહસ્થ તથા ત્યાગીને બરોબર ગતિ છે ને ત્યાગીનું બહુ શોભે ને પર્વતભાઈ જેવા ગૃહસ્થને સાત છોકરાં હોય તેનું શોભે નહિ, પણ તે તો મહારાજને શિખામણ દેતા એવા હતા.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5091.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Harisankarbhaie puchhyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5093.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kariyaninu 8mu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '92');
+            localStorage.setItem('lastVisitedVatFile', 'ch5092.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

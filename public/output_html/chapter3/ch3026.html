@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેવો સત્સંગ છે તેવો તો - Jevo satsang chhe tevo to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jevo satsang chhe tevo to</h1>
+                <div class="gujarati-title">જેવો સત્સંગ છે તેવો તો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 26</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(26) jevo satsaṃga che tevo to jaṇāya ja nahi ne koīka jāṇe to satsaṃga kare nahi ne koīka kare to jevo satsaṃga che tevo thāya nahi ne jo thāya to jāḻavavo bahu kaṭhaṇa che; te kāṃ to bahekī jāya ne kāṃ to gāṃḍo thaī jāya, paṇa jaḻavāya nahi ane te satsaṃga koṇa jāḻave ? to jene mahārājane viśe ne ā moṭā saṃtane viśe māhātmya jñāne sahita prīti hoya te ja jāḻave, paṇa bījāthī to jaḻavāya nahīṃ. ema kahīne vaḻī bolyā je, ‘āja vartamānakāḻe jeṇe deha dharyā che tene to eka pagaluṃ akṣaradhāmamāṃ che ne jene ā sādhunī oḻakhāṇa thaī che tene to beya pagalāṃ akṣaradhāmamāṃ ja che; paṇa jene e vātanuṃ jñāna nahi tene e vāta samajāya nahīṃ. ne ā satsaṃgamāṃ to anaṃta prahlāda ne anaṃta aṃbarīṣa ne parvatabhāī jevā anaṃta che, paṇa sādhusamāgama vinā jñāna thāya nahi ne jñāna thayā vinā evo mahimā jaṇāya nahi ne mahimā jāṇyā vinā sukhiyo thāya nahi, emāṃ kāṃī saṃśaya nathī.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(26) જેવો સત્સંગ છે તેવો તો જણાય જ નહિ ને કોઈક જાણે તો સત્સંગ કરે નહિ ને કોઈક કરે તો જેવો સત્સંગ છે તેવો થાય નહિ ને જો થાય તો જાળવવો બહુ કઠણ છે; તે કાં તો બહેકી જાય ને કાં તો ગાંડો થઈ જાય, પણ જળવાય નહિ અને તે સત્સંગ કોણ જાળવે ? તો જેને મહારાજને વિશે ને આ મોટા સંતને વિશે માહાત્મ્ય જ્ઞાને સહિત પ્રીતિ હોય તે જ જાળવે, પણ બીજાથી તો જળવાય નહીં. એમ કહીને વળી બોલ્યા જે, ‘આજ વર્તમાનકાળે જેણે દેહ ધર્યા છે તેને તો એક પગલું અક્ષરધામમાં છે ને જેને આ સાધુની ઓળખાણ થઈ છે તેને તો બેય પગલાં અક્ષરધામમાં જ છે; પણ જેને એ વાતનું જ્ઞાન નહિ તેને એ વાત સમજાય નહીં. ને આ સત્સંગમાં તો અનંત પ્રહ્લાદ ને અનંત અંબરીષ ને પર્વતભાઈ જેવા અનંત છે, પણ સાધુસમાગમ વિના જ્ઞાન થાય નહિ ને જ્ઞાન થયા વિના એવો મહિમા જણાય નહિ ને મહિમા જાણ્યા વિના સુખિયો થાય નહિ, એમાં કાંઈ સંશય નથી.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3025.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharajno ne mota sadhuno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3027.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kharekharu gnan thay to </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '26');
+            localStorage.setItem('lastVisitedVatFile', 'ch3026.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સાંખ્ય વિચાર કરવાની - Sankhya vichar karavani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sankhya vichar karavani</h1>
+                <div class="gujarati-title">સાંખ્ય વિચાર કરવાની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 281</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(281) sāṃkhya vicāra karavānī bahu vātuṃ karī, te sāṃkhya vicāra to nitya niyama rākhīne karavo ne sāṃkhya vinā to aradho satsaṃga kahevāya. ne sāṃkhya vinā sukha thāya nahi ne sāṃkhya che te to āṃkha che, te āṃkhe karīne sarve dekhāya ne dattātreya e sāṃkhyavāḻā, tene sukhiyā rahetāṃ āvaḍe ne sāṃkhya vicāra karavā māṃḍe to dhīre dhīre siddha thāya. temāṃ sāṃkhya śuṃ ? je, ā loka, bhoga, deha sarve khoṭuṃ che ne ātmā che te satya che ne sukharūpa che ne ākāśa sarakho nirlepa che ne deha, indriyuṃ, aṃta:karaṇa asaṃgī che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(281) સાંખ્ય વિચાર કરવાની બહુ વાતું કરી, તે સાંખ્ય વિચાર તો નિત્ય નિયમ રાખીને કરવો ને સાંખ્ય વિના તો અરધો સત્સંગ કહેવાય. ને સાંખ્ય વિના સુખ થાય નહિ ને સાંખ્ય છે તે તો આંખ છે, તે આંખે કરીને સર્વે દેખાય ને દત્તાત્રેય એ સાંખ્યવાળા, તેને સુખિયા રહેતાં આવડે ને સાંખ્ય વિચાર કરવા માંડે તો ધીરે ધીરે સિદ્ધ થાય. તેમાં સાંખ્ય શું ? જે, આ લોક, ભોગ, દેહ સર્વે ખોટું છે ને આત્મા છે તે સત્ય છે ને સુખરૂપ છે ને આકાશ સરખો નિર્લેપ છે ને દેહ, ઇન્દ્રિયું, અંત:કરણ અસંગી છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1280.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aapane kaik kam saru</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1282.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jene bhagavan arthe </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '281');
+            localStorage.setItem('lastVisitedVatFile', 'ch1281.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

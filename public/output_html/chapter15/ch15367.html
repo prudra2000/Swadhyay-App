@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગમાં આત્મબુદ્ધિ  - Satsangma atmabuddhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsangma atmabuddhi</h1>
+                <div class="gujarati-title">સત્સંગમાં આત્મબુદ્ધિ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 367</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(367) satsaṃgamāṃ ātmabuddhi rākhavī ne gaḍhaḍā maṃdiranāṃ koī vartamāna na pāḻe to paṇa āpaṇī ja lāja gaī kahevāya ne, ‘ olyā deśanā satsaṃgī nokhā ne maṃdira nokhā.’ ema kahe te satsaṃgī ja nathī. koīno avaguṇa āve tene kṣaya roga kahyo che ne je āghuṃpāchuṃ karaśe teno be ānā satsaṃga haśe te paṇa ṭaḻī jāśe ne maṃdiramāṃ roṭalā khāya teṇe maṃdira ujjaḍa thāya evuṃ nathī ne bhekhamāṃ khāi khāine sūi rahe che te sādhumāṃ khoṭa che. roṭalā khāvā maḻyā ne satsaṃga na thāya te gṛhasthamāṃ khoṭa che ne dhyāna na thāya to vacanāmṛta vāṃcavāṃ temāṃthī jñāna thāśe ne na thāya to ame sādhu ṭaḻīye. chāvaṇīmāṃ keṭalo samāsa thayo, keṭalākane upāsanā samajāṇī ne keṭalāka nokhī rasoī karatā te paṇa āḻasī gayā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(367) સત્સંગમાં આત્મબુદ્ધિ રાખવી ને ગઢડા મંદિરનાં કોઈ વર્તમાન ન પાળે તો પણ આપણી જ લાજ ગઈ કહેવાય ને, ‘ ઓલ્યા દેશના સત્સંગી નોખા ને મંદિર નોખા.’ એમ કહે તે સત્સંગી જ નથી. કોઈનો અવગુણ આવે તેને ક્ષય રોગ કહ્યો છે ને જે આઘુંપાછું કરશે તેનો બે આના સત્સંગ હશે તે પણ ટળી જાશે ને મંદિરમાં રોટલા ખાય તેણે મંદિર ઉજ્જડ થાય એવું નથી ને ભેખમાં ખાઇ ખાઇને સૂઇ રહે છે તે સાધુમાં ખોટ છે. રોટલા ખાવા મળ્યા ને સત્સંગ ન થાય તે ગૃહસ્થમાં ખોટ છે ને ધ્યાન ન થાય તો વચનામૃત વાંચવાં તેમાંથી જ્ઞાન થાશે ને ન થાય તો અમે સાધુ ટળીયે. છાવણીમાં કેટલો સમાસ થયો, કેટલાકને ઉપાસના સમજાણી ને કેટલાક નોખી રસોઈ કરતા તે પણ આળસી ગયા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15366.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Rasoi sauney hathe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15368.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sarve karyu bhagavannu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '367');
+            localStorage.setItem('lastVisitedVatFile', 'ch15367.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

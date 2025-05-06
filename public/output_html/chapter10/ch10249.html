@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અખોદરવાળા રાઘવજી - Akhodarvala raghavaji </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Akhodarvala raghavaji </h1>
+                <div class="gujarati-title">અખોદરવાળા રાઘવજી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 249</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(249) akhodaravāḻā rāghavajī brāhmaṇa khaḻe rakhopuṃ karatā karatā ūṃghī gayā ne core dāṇā bāṃdhyā tyāṃ jāgyā, tyāre kahe, ‘huṃ oḻakhuṃ chuṃ.’ pachī core pāchā vaḻīne mārī nākhyā. te ame sāṃbhaḻyuṃ tyāre amane ema thayuṃ je, talavāra bhagavadīne māravāmāṃ kāma āvī te talavāra śā kāmanī ? pachī te ja sālamāṃ sarakāre hathiyāra paḍāvī līdhāṃ, te jotāṃ to karyuṃ eka bhagavānanuṃ ja thāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(249) અખોદરવાળા રાઘવજી બ્રાહ્મણ ખળે રખોપું કરતા કરતા ઊંઘી ગયા ને ચોરે દાણા બાંધ્યા ત્યાં જાગ્યા, ત્યારે કહે, ‘હું ઓળખું છું.’ પછી ચોરે પાછા વળીને મારી નાખ્યા. તે અમે સાંભળ્યું ત્યારે અમને એમ થયું જે, તલવાર ભગવદીને મારવામાં કામ આવી તે તલવાર શા કામની ? પછી તે જ સાલમાં સરકારે હથિયાર પડાવી લીધાં, તે જોતાં તો કર્યું એક ભગવાનનું જ થાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10248.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kusangma koi vyabhicharanu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10250.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Have to deshakale janapanu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '249');
+            localStorage.setItem('lastVisitedVatFile', 'ch10249.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

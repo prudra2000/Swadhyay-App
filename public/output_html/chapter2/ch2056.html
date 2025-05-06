@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તપાસીને જુએ તો - Tapasine jue to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tapasine jue to</h1>
+                <div class="gujarati-title">તપાસીને જુએ તો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 56</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(56) tapāsīne jue to ā jīva to kevaḻa prakṛtine ja bhaje che, paṇa deha gujarāna upara ne avaśya hoya eṭaluṃ to karavuṃ paḍe; paṇa ā to prakṛtine vaśa thaīne bole che, sāṃbhaḻe che, jue che, khāya che, pharato phare che, besī rahe che, sūī rahe che ityādika kare che, paṇa teno tapāsa karato nathī. tene dekhe che ne bījāne to gama ja nathī; māṭe avaśya te upara sūrata rākhīne pāchuṃ vaḻavāno svabhāva rākhe to moṭā sādhunī paṇa tenā upara dṛṣṭi thāya; ne padārthanā to dahāḍe dahāḍe ḍhagalā thāya che ne vaḻī thāśe, te to baṃdha nahi thāya ne baṃdha karavuṃ e to pṛthvī maḍhāvavā jevuṃ kaṭhaṇa che ne na bhogavavuṃ e to joḍā sīvaḍāvīne paheravā jevuṃ sugama che, e vinā bījo upāya nathī. $ 1 sūrata rahetī nathī= sarata, dhyāna rahetuṃ nathī. $2 suvāṇa= sugama, saraḻa, saheluṃ. $3 daravājāvāḻā= akṣaradhāmamāṃ ja rahevuṃ che - tevuṃ satata jāṇapaṇuṃ rākhanāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(56) તપાસીને જુએ તો આ જીવ તો કેવળ પ્રકૃતિને જ ભજે છે, પણ દેહ ગુજરાન ઉપર ને અવશ્ય હોય એટલું તો કરવું પડે; પણ આ તો પ્રકૃતિને વશ થઈને બોલે છે, સાંભળે છે, જુએ છે, ખાય છે, ફરતો ફરે છે, બેસી રહે છે, સૂઈ રહે છે ઇત્યાદિક કરે છે, પણ તેનો તપાસ કરતો નથી. તેને દેખે છે ને બીજાને તો ગમ જ નથી; માટે અવશ્ય તે ઉપર સૂરત રાખીને પાછું વળવાનો સ્વભાવ રાખે તો મોટા સાધુની પણ તેના ઉપર દૃષ્ટિ થાય; ને પદાર્થના તો દહાડે દહાડે ઢગલા થાય છે ને વળી થાશે, તે તો બંધ નહિ થાય ને બંધ કરવું એ તો પૃથ્વી મઢાવવા જેવું કઠણ છે ને ન ભોગવવું એ તો જોડા સીવડાવીને પહેરવા જેવું સુગમ છે, એ વિના બીજો ઉપાય નથી. $ 1 સૂરત રહેતી નથી= સરત, ધ્યાન રહેતું નથી. $2 સુવાણ= સુગમ, સરળ, સહેલું. $3 દરવાજાવાળા= અક્ષરધામમાં જ રહેવું છે - તેવું સતત જાણપણું રાખનાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2055.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi kuve padava jato hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2057.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sant kahe tem karavu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '56');
+            localStorage.setItem('lastVisitedVatFile', 'ch2056.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

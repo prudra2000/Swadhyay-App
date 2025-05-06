@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શિવાનંદસ્વામીને ચાલવાનો - Shivanandswamine chalavano</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shivanandswamine chalavano</h1>
+                <div class="gujarati-title">શિવાનંદસ્વામીને ચાલવાનો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 281</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(281) śivānaṃdasvāmīne cālavāno ḍoḍa bahu, te koīne pahoṃcavā na de. pachī eka vakhata amārī sāthe māḻīā āvyā. kāma karī līdhuṃ ne śivānaṃde rasoī karī jamatī vakhata amane kahe, ‘āja cālavuṃ che ke kema ?’ ame kahyuṃ, ‘rokāīe.’ pachī dūdha āvela te ame to badhuṃ śivānaṃdane āpyuṃ ane teṇe bījī prasādī paṇa amārā pattaranī līdhī. pachī kathā karī rahyā keḍe ame kahyuṃ ke, ‘kāma nathī ne śuṃ kāma besī rahevuṃ ?’ pachī jūnāgaḍha tarapha cālyā. te jamela bahu ne tarasa paṇa bahu lāge, ne ame to kaḍeḍāṭa cālavā māṃḍyuṃ. te vāṃsethī śivānaṃda rāḍa pāḍe ne kahe, ‘ūbhā raho.’ kema ke, amane na dekhe to upavāsa paḍe. te māṃḍamāṃḍa doḍatāṃ pūruṃ karyuṃ ne jūnāgaḍhane pādara āvī kahe ke, ‘harāma khāya, tamārī sāthe cāle te !’ ame kahyuṃ ke, ‘kāṃ, cālavānā to bahu ḍoḍa che ne koīne pahoṃcavā to deto nathī ?’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(281) શિવાનંદસ્વામીને ચાલવાનો ડોડ બહુ, તે કોઈને પહોંચવા ન દે. પછી એક વખત અમારી સાથે માળીઆ આવ્યા. કામ કરી લીધું ને શિવાનંદે રસોઈ કરી જમતી વખત અમને કહે, ‘આજ ચાલવું છે કે કેમ ?’ અમે કહ્યું, ‘રોકાઈએ.’ પછી દૂધ આવેલ તે અમે તો બધું શિવાનંદને આપ્યું અને તેણે બીજી પ્રસાદી પણ અમારા પત્તરની લીધી. પછી કથા કરી રહ્યા કેડે અમે કહ્યું કે, ‘કામ નથી ને શું કામ બેસી રહેવું ?’ પછી જૂનાગઢ તરફ ચાલ્યા. તે જમેલ બહુ ને તરસ પણ બહુ લાગે, ને અમે તો કડેડાટ ચાલવા માંડ્યું. તે વાંસેથી શિવાનંદ રાડ પાડે ને કહે, ‘ઊભા રહો.’ કેમ કે, અમને ન દેખે તો ઉપવાસ પડે. તે માંડમાંડ દોડતાં પૂરું કર્યું ને જૂનાગઢને પાદર આવી કહે કે, ‘હરામ ખાય, તમારી સાથે ચાલે તે !’ અમે કહ્યું કે, ‘કાં, ચાલવાના તો બહુ ડોડ છે ને કોઈને પહોંચવા તો દેતો નથી ?’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11280.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mayaram bhatte govindaramne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11282.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kadapi vishayma shanti thai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '281');
+            localStorage.setItem('lastVisitedVatFile', 'ch11281.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

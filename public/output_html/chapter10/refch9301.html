@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā śrāvaṇa vadi daśamane divase svāmīe vāta karī je, $(301) gāyanāṃ śiṃgaḍāṃ upara sarasavano dāṇo rahe tyāṃ sudhī paṇa aṃta:karaṇa sthiratāne nathī pāmatuṃ. jema jetapurano dharo vahe che tema aṃta:karaṇamāṃ hālaka-ḍolaka thayā kare che. kāmanā ke lobhanā saṃkalpanā vega āve to cāḻīsa-pacāsa varase satsaṃgamāṃthī jatuṃ rahevāya. sukhānaṃdasvāmī mā-bāpanuṃ kalyāṇa karavā ghera jatā hatā tyāre mahārāje kahyuṃ je, ‘āyuṣa nathī, māṭe na jāo to ṭhīka.’ to paṇa gayā ne rastāmāṃ mathurāmāṃ kāyasthane tyāṃ sonānuṃ maṃdira che tyāṃ ūtaryā. tyāṃ saṃnyāsī gopāḻānaṃdasvāmī ane rāmānujānaṃdasvāmī be bhāī hatā, temane vātuṃ karī tyāre kāyasthane ūṃgha na āvatī te śāṃti thaī ne ūṃgha āvī gaī. tyāre teṇe jāṇyuṃ je ā koīka moṭā puruṣa che. $(śrī nīlakaṃṭha cintanāṣṭakam) $artha : brāhma muhūrtamāṃ śayyā (nidrā)no tyāga karī potānā svarūpanuṃ hṛdayamāṃ ciṃtana-dhyāna karī, adhika jaḻa vaḍe svaccha snāna karī śrī nīlakaṃṭhanuṃ huṃ hṛdayamāṃ ciṃtana karuṃ chuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના શ્રાવણ વદિ દશમને દિવસે સ્વામીએ વાત કરી જે, $(301) ગાયનાં શિંગડાં ઉપર સરસવનો દાણો રહે ત્યાં સુધી પણ અંત:કરણ સ્થિરતાને નથી પામતું. જેમ જેતપુરનો ધરો વહે છે તેમ અંત:કરણમાં હાલક-ડોલક થયા કરે છે. કામના કે લોભના સંકલ્પના વેગ આવે તો ચાળીસ-પચાસ વરસે સત્સંગમાંથી જતું રહેવાય. સુખાનંદસ્વામી મા-બાપનું કલ્યાણ કરવા ઘેર જતા હતા ત્યારે મહારાજે કહ્યું જે, ‘આયુષ નથી, માટે ન જાઓ તો ઠીક.’ તો પણ ગયા ને રસ્તામાં મથુરામાં કાયસ્થને ત્યાં સોનાનું મંદિર છે ત્યાં ઊતર્યા. ત્યાં સંન્યાસી ગોપાળાનંદસ્વામી અને રામાનુજાનંદસ્વામી બે ભાઈ હતા, તેમને વાતું કરી ત્યારે કાયસ્થને ઊંઘ ન આવતી તે શાંતિ થઈ ને ઊંઘ આવી ગઈ. ત્યારે તેણે જાણ્યું જે આ કોઈક મોટા પુરુષ છે. $(શ્રી નીલકંઠ ચિન્તનાષ્ટકમ્) $અર્થ : બ્રાહ્મ મુહૂર્તમાં શય્યા (નિદ્રા)નો ત્યાગ કરી પોતાના સ્વરૂપનું હૃદયમાં ચિંતન-ધ્યાન કરી, અધિક જળ વડે સ્વચ્છ સ્નાન કરી શ્રી નીલકંઠનું હું હૃદયમાં ચિંતન કરું છું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

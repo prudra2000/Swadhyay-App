@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સમાગમમાં કાપ્યું - Aa samagamma kapyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa samagamma kapyu</h1>
+                <div class="gujarati-title">આ સમાગમમાં કાપ્યું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 147</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(147) ā samāgamamāṃ kāpyuṃ vyāja maḻe che. eṭale āja samāgama karyo tenuṃ phaḻa vaḻate divasa maḻe ne vaḻate divasa samāgama karyo tenuṃ phaḻa āgalā divasa maḻe ne āgalā divasanuṃ phaḻa trīje divasa maḻe che. ema samāgamanuṃ phaḻa āpīne satsaṃga vṛddhi pamāḍīe chīe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(147) આ સમાગમમાં કાપ્યું વ્યાજ મળે છે. એટલે આજ સમાગમ કર્યો તેનું ફળ વળતે દિવસ મળે ને વળતે દિવસ સમાગમ કર્યો તેનું ફળ આગલા દિવસ મળે ને આગલા દિવસનું ફળ ત્રીજે દિવસ મળે છે. એમ સમાગમનું ફળ આપીને સત્સંગ વૃદ્ધિ પમાડીએ છીએ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10146.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Badhu te barabar kyathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10148.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Motae upeksha kari tyare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '147');
+            localStorage.setItem('lastVisitedVatFile', 'ch10147.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

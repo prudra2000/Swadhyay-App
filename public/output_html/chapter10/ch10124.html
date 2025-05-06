@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બીજાને ઉપદેશ કરીએ - Bijane upadesh karie</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bijane upadesh karie</h1>
+                <div class="gujarati-title">બીજાને ઉપદેશ કરીએ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 124</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(124) bījāne upadeśa karīe paṇa akhaṃḍa bhajana na thāya eṭalī āpaṇāmāṃ khoṭa kahevāya; paṇa te karīe to thāya. āpaṇe kūvo khodyo te loḍhā jevo pāṇo kāpyo. tema koīnī sevā karavā māṃḍīe to thāya paṇa vāte na thāya. māthuṃ dābīe to dabāya ne veṇa mārīe to marāya. tema je karīe te thāya. baḻadiyā nāthe karīne ājñāmāṃ varate che tema āpaṇe sarve ājñākārī chīe to bhakti karīne dehane pachāḍavā māṃḍīe, tyāre koṇa rājī na thāya ? paṇa pageya na lagāya tyāre rājī kema thāya ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(124) બીજાને ઉપદેશ કરીએ પણ અખંડ ભજન ન થાય એટલી આપણામાં ખોટ કહેવાય; પણ તે કરીએ તો થાય. આપણે કૂવો ખોદ્યો તે લોઢા જેવો પાણો કાપ્યો. તેમ કોઈની સેવા કરવા માંડીએ તો થાય પણ વાતે ન થાય. માથું દાબીએ તો દબાય ને વેણ મારીએ તો મરાય. તેમ જે કરીએ તે થાય. બળદિયા નાથે કરીને આજ્ઞામાં વરતે છે તેમ આપણે સર્વે આજ્ઞાકારી છીએ તો ભક્તિ કરીને દેહને પછાડવા માંડીએ, ત્યારે કોણ રાજી ન થાય ? પણ પગેય ન લગાય ત્યારે રાજી કેમ થાય ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10123.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek chore baladiyo choryo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10125.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek varasade mol </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '124');
+            localStorage.setItem('lastVisitedVatFile', 'ch10124.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

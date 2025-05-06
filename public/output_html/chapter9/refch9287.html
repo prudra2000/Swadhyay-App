@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(287) ānaṃdasvāmīe pūrve maṇikarṇikāno ghāṭa baṃdhāvyo hato ne ā dehe mahārāja maḻyā to paṇa prakṛti na melī. te śuṃ ? je, mahārāja sāru bhāre bhāre pośāka gṛhastha pāsethī paisā māgīne pote karāvī lāve te sādhunā māragamāṃ śobhe nahīṃ. bījuṃ raghuvīrajī mahārājanī marajī vagara bharūcanuṃ maṃdira karī mūrtio padharāvī ne raghuvīrajī mahārāja pratiṣṭhā upara na gayā, tethī risāīne amadāvāda gayā ne harijana pāsethī māgī māgīne jetalapuranuṃ maṃdira karyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(287) આનંદસ્વામીએ પૂર્વે મણિકર્ણિકાનો ઘાટ બંધાવ્યો હતો ને આ દેહે મહારાજ મળ્યા તો પણ પ્રકૃતિ ન મેલી. તે શું ? જે, મહારાજ સારુ ભારે ભારે પોશાક ગૃહસ્થ પાસેથી પૈસા માગીને પોતે કરાવી લાવે તે સાધુના મારગમાં શોભે નહીં. બીજું રઘુવીરજી મહારાજની મરજી વગર ભરૂચનું મંદિર કરી મૂર્તિઓ પધરાવી ને રઘુવીરજી મહારાજ પ્રતિષ્ઠા ઉપર ન ગયા, તેથી રિસાઈને અમદાવાદ ગયા ને હરિજન પાસેથી માગી માગીને જેતલપુરનું મંદિર કર્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

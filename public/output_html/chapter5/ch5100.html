@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગૃહસ્થાશ્રમમાં રહીને - Gruhasthashramma rahine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gruhasthashramma rahine</h1>
+                <div class="gujarati-title">ગૃહસ્થાશ્રમમાં રહીને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 100</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(100) ‘gṛhasthāśramamāṃ rahīne kathāvārtā kare che ne sāṃbhaḻe che tenā to trividha tāpa ṭaḻī gayā che ne tapa sarve thaī rahyāṃ che ne bhagavānanā śaraṇane pāmī rahyo che.’ evuṃ ‘bhāgavata’māṃ kapiladeva bhagavāne kahyuṃ che. gṛhasthāśramamāṃ bahu kāma ne bahu vighna, māṭe tene adhika kahyo che; gṛhasthāśramīne bhagavānanī mūrtine dharī rahyā evā sādhuno āśaro che, te to gharamāṃ beṭhā sarva tīrthane sevī rahyo che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(100) ‘ગૃહસ્થાશ્રમમાં રહીને કથાવાર્તા કરે છે ને સાંભળે છે તેના તો ત્રિવિધ તાપ ટળી ગયા છે ને તપ સર્વે થઈ રહ્યાં છે ને ભગવાનના શરણને પામી રહ્યો છે.’ એવું ‘ભાગવત’માં કપિલદેવ ભગવાને કહ્યું છે. ગૃહસ્થાશ્રમમાં બહુ કામ ને બહુ વિઘ્ન, માટે તેને અધિક કહ્યો છે; ગૃહસ્થાશ્રમીને ભગવાનની મૂર્તિને ધરી રહ્યા એવા સાધુનો આશરો છે, તે તો ઘરમાં બેઠા સર્વ તીર્થને સેવી રહ્યો છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5099.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Manajibhaie puchhyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5101.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Harisankarbhaie puchhyu je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '100');
+            localStorage.setItem('lastVisitedVatFile', 'ch5100.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

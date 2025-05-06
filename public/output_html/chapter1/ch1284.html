@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનના ભક્તને  - Bhagavanna bhaktne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanna bhaktne</h1>
+                <div class="gujarati-title">ભગવાનના ભક્તને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 284</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(284) bhagavānanā bhaktane traṇa prakāramāṃthī eka prakāranuṃ dhyāna to rahe che. te niśrcayarūpa dhyāna rahe ke, sādhu pāse javuṃ che ema rahe ke, huṃ bhagavānano bhakta chuṃ ema rahe; bākī mūrtimāṃ e to svarūpānaṃdasvāmī ādikanī vātuṃ che.@ 1 teladhārā vṛtti= tūṭatī nahi evī ekadhārī-telanī dhāra jevī satata</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(284) ભગવાનના ભક્તને ત્રણ પ્રકારમાંથી એક પ્રકારનું ધ્યાન તો રહે છે. તે નિશ્ર્ચયરૂપ ધ્યાન રહે કે, સાધુ પાસે જવું છે એમ રહે કે, હું ભગવાનનો ભક્ત છું એમ રહે; બાકી મૂર્તિમાં એ તો સ્વરૂપાનંદસ્વામી આદિકની વાતું છે.@ 1 તેલધારા વૃત્તિ= તૂટતી નહિ એવી એકધારી-તેલની ધાર જેવી સતત</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1283.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Karod kam thele </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1285.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aapanne to bhagavan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '284');
+            localStorage.setItem('lastVisitedVatFile', 'ch1284.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વિષયનો પરાભવ તો - Vishayno parabhav to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vishayno parabhav to</h1>
+                <div class="gujarati-title">વિષયનો પરાભવ તો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 250</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(250) viṣayano parābhava to eka puruṣottama ne tenā ekāṃtika sādhu e bene ja na thāya ne te vinā bījo koī viṣayathī nirlepa rahe ja nahīṃ. māṭe viṣayathī cheṭe ja rahevuṃ ne bhagavānano pakṣa rākhavo. ne dehane to potānuṃ rūpa mānavuṃ ja nahi ne dehane māne temāṃ badhāṃ du:kha rahyāṃ che ne dehane na māne temāṃ du:kha ja nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(250) વિષયનો પરાભવ તો એક પુરુષોત્તમ ને તેના એકાંતિક સાધુ એ બેને જ ન થાય ને તે વિના બીજો કોઈ વિષયથી નિર્લેપ રહે જ નહીં. માટે વિષયથી છેટે જ રહેવું ને ભગવાનનો પક્ષ રાખવો. ને દેહને તો પોતાનું રૂપ માનવું જ નહિ ને દેહને માને તેમાં બધાં દુ:ખ રહ્યાં છે ને દેહને ન માને તેમાં દુ:ખ જ નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5249.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satsang kare tene </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5251.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Udhyam tatha kriya kare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '250');
+            localStorage.setItem('lastVisitedVatFile', 'ch5250.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક સમે મહારાજ કચ્છ - Ek same Maharaj kachchh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek same Maharaj kachchh</h1>
+                <div class="gujarati-title">એક સમે મહારાજ કચ્છ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.8</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 12</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(12) eka same mahārāja kaccha deśamāṃ kāḻutaḻāva, māṃḍavī, terā vageremāṃ bahu ja pharyā ne saṃtamaṃḍaḻa paṇa saṃgāthe hatāṃ ane vātuṃ paṇa pote akhaṃḍa karyā kare ne temāṃ sarvoparī pragaṭapaṇānī vātuṃ bahu ja lāve. ema karatāṃ karatāṃ pote eka divasa bahu udāsa thaī gayā ane muktānaṃdasvāmīne kahyuṃ je, ‘ame kahīe to badhā tyāgī paṇa thaī jāya ane parokṣa avatāra ane temanā bhaktanī vātuṃ kahīe chīe, tyāre sau sāṃbhaḻavāmāṃ khabaradāra thaī jāya che paṇa amārā sarvoparī ane pragaṭapaṇānī ane amārā anādi mukta ne akṣarabrahma nāme dhāmanī jo koī evī vāta kahīe to sau akaḻāya che ne ūṭhī nīkaḻe che māṭe have to jāṇe deha mūkī daīe, ema thāya che.’ evī rīte muktānaṃdasvāmīne vāta karī. 1 ṭhāmukā= nakāmā, nirarthaka.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(12) એક સમે મહારાજ કચ્છ દેશમાં કાળુતળાવ, માંડવી, તેરા વગેરેમાં બહુ જ ફર્યા ને સંતમંડળ પણ સંગાથે હતાં અને વાતું પણ પોતે અખંડ કર્યા કરે ને તેમાં સર્વોપરી પ્રગટપણાની વાતું બહુ જ લાવે. એમ કરતાં કરતાં પોતે એક દિવસ બહુ ઉદાસ થઈ ગયા અને મુક્તાનંદસ્વામીને કહ્યું જે, ‘અમે કહીએ તો બધા ત્યાગી પણ થઈ જાય અને પરોક્ષ અવતાર અને તેમના ભક્તની વાતું કહીએ છીએ, ત્યારે સૌ સાંભળવામાં ખબરદાર થઈ જાય છે પણ અમારા સર્વોપરી અને પ્રગટપણાની અને અમારા અનાદિ મુક્ત ને અક્ષરબ્રહ્મ નામે ધામની જો કોઈ એવી વાત કહીએ તો સૌ અકળાય છે ને ઊઠી નીકળે છે માટે હવે તો જાણે દેહ મૂકી દઈએ, એમ થાય છે.’ એવી રીતે મુક્તાનંદસ્વામીને વાત કરી. 1 ઠામુકા= નકામા, નિરર્થક.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter8/ch8011.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje ath mahina sudhi </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter8/ch8013.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek vakhate gadhadama </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '8');
+            localStorage.setItem('lastVisitedVat', '12');
+            localStorage.setItem('lastVisitedVatFile', 'ch8012.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

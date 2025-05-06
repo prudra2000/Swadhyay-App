@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવ છે તે ક્રિયા  - Aa jiv chhe te kriya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jiv chhe te kriya</h1>
+                <div class="gujarati-title">આ જીવ છે તે ક્રિયા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 74</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(74) ā jīva che te kriyā karato karato thākī jāya tyāre suṣuptimāṃ jāya ne jāge tyāre pāchī tīkṣṇa vṛtti thāya che. jema loḍhāṃ hoya te pāṇāmāṃ vaparāya tyāre dhāra buṭhṭhī thaī jāya, pachī luhāranī koḍhe laī jāya ne pāchāṃ pānāṃ kāḍhe tyāre vaḻī pāchī dhāra āve che; tema tīkṣṇa vṛtti jāge che. rājānī mā marī gaī ne rāṇīne dīkaro āvyo, tyāre vāṇiyā darabārane , te rovāya paṇa nahi ne rājī paṇa na thāvāya; pachī ‘o a a, hā hā hā !’ ema karavā māṃḍyuṃ te beya sācavyāṃ.@ 1 moḍhe āvyā = kharakharo karavā āvyā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(74) આ જીવ છે તે ક્રિયા કરતો કરતો થાકી જાય ત્યારે સુષુપ્તિમાં જાય ને જાગે ત્યારે પાછી તીક્ષ્ણ વૃત્તિ થાય છે. જેમ લોઢાં હોય તે પાણામાં વપરાય ત્યારે ધાર બુઠ્ઠી થઈ જાય, પછી લુહારની કોઢે લઈ જાય ને પાછાં પાનાં કાઢે ત્યારે વળી પાછી ધાર આવે છે; તેમ તીક્ષ્ણ વૃત્તિ જાગે છે. રાજાની મા મરી ગઈ ને રાણીને દીકરો આવ્યો, ત્યારે વાણિયા દરબારને , તે રોવાય પણ નહિ ને રાજી પણ ન થાવાય; પછી ‘ઓ અ અ, હા હા હા !’ એમ કરવા માંડ્યું તે બેય સાચવ્યાં.@ 1 મોઢે આવ્યા = ખરખરો કરવા આવ્યા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12073.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sham re sujan vina</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12075.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sankalpnu bal hoy </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '74');
+            localStorage.setItem('lastVisitedVatFile', 'ch12074.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

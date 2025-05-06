@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બાજરો મળ્યો ત્યારે  - Bajaro malyo tyare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bajaro malyo tyare</h1>
+                <div class="gujarati-title">બાજરો મળ્યો ત્યારે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 245</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(245) bājaro maḻyo tyāre prabhu bhajavā maṃḍī jāvuṃ ne jeṭalī gāphalāī raheśe teṭaluṃ rovuṃ paḍaśe. māṭe āje evī kriyā karo je, pādharuṃ bhagavānanā dhāmamāṃ ja javāya. saṃta ane satsaṃgī sāthe heta rahe, niyama rahe to bhagavāna rājī thāya. mahārāja āpaṇā jīva sāru maṃdira, ācārya ne pustaka karī gayā che. te mahārājano svabhāva to evo ke lūgaḍāṃ paṇa āḻāṃ cāmaḍāṃ jevāṃ lāgatāṃ ne cakalīthī bīnā ne eka pāyajāmāmāṃ be paga nākhavā maṃḍyā ne nāḍī bāṃdhatā na āvaḍī. evuṃ bhagavānanuṃ kārakhānuṃ che. āpaṇā svabhāvamāṃ bhaḻīne āpaṇāṃ kalyāṇa karyāṃ ne ā sādhunuṃ paṇa tema ja jāṇavuṃ ne deha rākhavā sāru kāṃī jame, paṇa teno ādara nahi. tema ja dharma, vairāgyamāṃ rākhavāno ādara che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(245) બાજરો મળ્યો ત્યારે પ્રભુ ભજવા મંડી જાવું ને જેટલી ગાફલાઈ રહેશે તેટલું રોવું પડશે. માટે આજે એવી ક્રિયા કરો જે, પાધરું ભગવાનના ધામમાં જ જવાય. સંત અને સત્સંગી સાથે હેત રહે, નિયમ રહે તો ભગવાન રાજી થાય. મહારાજ આપણા જીવ સારુ મંદિર, આચાર્ય ને પુસ્તક કરી ગયા છે. તે મહારાજનો સ્વભાવ તો એવો કે લૂગડાં પણ આળાં ચામડાં જેવાં લાગતાં ને ચકલીથી બીના ને એક પાયજામામાં બે પગ નાખવા મંડ્યા ને નાડી બાંધતા ન આવડી. એવું ભગવાનનું કારખાનું છે. આપણા સ્વભાવમાં ભળીને આપણાં કલ્યાણ કર્યાં ને આ સાધુનું પણ તેમ જ જાણવું ને દેહ રાખવા સારુ કાંઈ જમે, પણ તેનો આદર નહિ. તેમ જ ધર્મ, વૈરાગ્યમાં રાખવાનો આદર છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15244.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gramykathama bhalavu nahi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15246.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa sadhuni sarv kriya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '245');
+            localStorage.setItem('lastVisitedVatFile', 'ch15245.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

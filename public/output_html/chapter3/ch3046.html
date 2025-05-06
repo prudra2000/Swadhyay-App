@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વરતાલમાં આંબા હેઠે ચાર - Varatalma amba hetha char</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varatalma amba hetha char</h1>
+                <div class="gujarati-title">વરતાલમાં આંબા હેઠે ચાર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 46</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(46) varatālamāṃ āṃbā heṭhe cāra pāṭīdāre mahārājane kahyuṃ je, ‘he mahārāja ! tamārā caraṇāraviṃda sāmuṃ joīe chīe to tame puruṣottama jaṇāo cho ne tamārā śarīra sāmuṃ joīe chīe to tame manuṣya jevā jaṇāo cho.’ tyāre mahārāje kahyuṃ je, ‘vairāṭabrahmā che teṇe tenāṃ pacāsa varasa ne doḍha pahora divasa caḍyo, tyāṃ sudhī ā caraṇāraviṃdanī stuti karī, tyāre ā be caraṇāraviṃda ā pṛthvī upara āvyāṃ che; pachī tamāre to sūjhe ema samajāya.’ pachī vaḻī pūchyuṃ je, ‘ghaṇe ṭhekāṇe sabhā dīṭhī che, paṇa āma ekī najare tamārī sāmuṃ joī rahyā che, te kema samajavuṃ?’ tyāre mahārāja bolyā je, ‘huṃ sadgururūpī sūrya pragaṭa thayo chuṃ ne ā sarve kamaḻa khīlyāṃ che, te mārā sāmuṃ joī rahyāṃ che.’ pachī te satsaṃga karīne potāne ghera gayā. ema mumukṣunāṃ lakṣaṇa che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(46) વરતાલમાં આંબા હેઠે ચાર પાટીદારે મહારાજને કહ્યું જે, ‘હે મહારાજ ! તમારા ચરણારવિંદ સામું જોઈએ છીએ તો તમે પુરુષોત્તમ જણાઓ છો ને તમારા શરીર સામું જોઈએ છીએ તો તમે મનુષ્ય જેવા જણાઓ છો.’ ત્યારે મહારાજે કહ્યું જે, ‘વૈરાટબ્રહ્મા છે તેણે તેનાં પચાસ વરસ ને દોઢ પહોર દિવસ ચડ્યો, ત્યાં સુધી આ ચરણારવિંદની સ્તુતિ કરી, ત્યારે આ બે ચરણારવિંદ આ પૃથ્વી ઉપર આવ્યાં છે; પછી તમારે તો સૂઝે એમ સમજાય.’ પછી વળી પૂછ્યું જે, ‘ઘણે ઠેકાણે સભા દીઠી છે, પણ આમ એકી નજરે તમારી સામું જોઈ રહ્યા છે, તે કેમ સમજવું?’ ત્યારે મહારાજ બોલ્યા જે, ‘હું સદ્ગુરુરૂપી સૂર્ય પ્રગટ થયો છું ને આ સર્વે કમળ ખીલ્યાં છે, તે મારા સામું જોઈ રહ્યાં છે.’ પછી તે સત્સંગ કરીને પોતાને ઘેર ગયા. એમ મુમુક્ષુનાં લક્ષણ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3045.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satsang kyare thay?</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3047.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek bave avine kahyu je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '46');
+            localStorage.setItem('lastVisitedVatFile', 'ch3046.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

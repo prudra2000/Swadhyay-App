@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પરચો ઇચ્છે તેને - Paracho ichchhe tene</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Paracho ichchhe tene</h1>
+                <div class="gujarati-title">પરચો ઇચ્છે તેને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 138</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(138) paraco icche tene pāmara jāṇavo. niṣkāmī vartamāna pāḻe che e ja moṭo paraco che māṭe traṇa gṃratha aṇīśuddha pāḻavā. $(śrīmad bhāgavata : 9/4/18) $artha : potānā manane śrīkṛṣṇacaṃdranā caraṇāraviṃdamāṃ, vāṇīne bhagavānanā guṇagānamāṃ, hāthone (be hāthane) śrīharinā maṃdira ne mārjana vageremāṃ, kānane śrī acyutanī kathāśravaṇamāṃ, netrone bhagavānanī mūrti ane maṃdiranā saphāī karavāmāṃ, kānane viṣṇunī kathāmāṃ... ā pramāṇe bhagavat-sevāmāṃ lagāḍī dīdhā hatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(138) પરચો ઇચ્છે તેને પામર જાણવો. નિષ્કામી વર્તમાન પાળે છે એ જ મોટો પરચો છે માટે ત્રણ ગ્ંરથ અણીશુદ્ધ પાળવા. $(શ્રીમદ્ ભાગવત : 9/4/18) $અર્થ : પોતાના મનને શ્રીકૃષ્ણચંદ્રના ચરણારવિંદમાં, વાણીને ભગવાનના ગુણગાનમાં, હાથોને (બે હાથને) શ્રીહરિના મંદિર ને માર્જન વગેરેમાં, કાનને શ્રી અચ્યુતની કથાશ્રવણમાં, નેત્રોને ભગવાનની મૂર્તિ અને મંદિરના સફાઈ કરવામાં, કાનને વિષ્ણુની કથામાં... આ પ્રમાણે ભગવત્-સેવામાં લગાડી દીધા હતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9137.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prat:kale uthine </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9139.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane rajogun</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '138');
+            localStorage.setItem('lastVisitedVatFile', 'ch9138.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

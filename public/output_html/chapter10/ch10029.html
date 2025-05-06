@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ધર્મ, અર્થ, કામ ને મોક્ષ  - Dharm, arth, kam ne moksh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dharm, arth, kam ne moksh</h1>
+                <div class="gujarati-title">ધર્મ, અર્થ, કામ ને મોક્ષ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 29</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā sudi daśamane divase svāmīe vāta karī je, $(29) dharma, artha, kāma ne mokṣa e cāra prakāranī vātuṃ che. temāṃ jevā jevā adhikārī tevī tevī vātuṃ ne $(subhāṣita) $artha :- he mātā ! jyāre siddhayogīnuṃ mana tenā yoga baḻe karīne anya koī paṇa kāraṇa vinā, phakata tene lalacāvavā āvelī māyāomāṃ āsakta thatuṃ nathī athavā phasātuṃ nathī tyāre te yogī mārī ātyaṃtikī eṭale sarvaśreṣṭha gati-svarūpane pāme che pachī tyāṃ mṛtyunuṃ aṭṭahāsya hotuṃ nathī. $(śrīmad bhāgavata : 3/2/23) $artha :- aho ! ā duṣṭa bakīe haṇavānī icchāthī stanamāṃ raheluṃ kālakūṭa dharāvyuṃ, chatāṃ tene mātāne yogya phaḻa prāpta thayuṃ. temanāthī bījā kyā dayāḻune śaraṇe āpaṇe jaīe ? (pūtanāe bhagavānane māravānī icchāthī dūdharūpī jheranuṃ stanapāna karāvyuṃ, to paṇa bhagavāne jasodānā jevī gatine pamāḍī; māṭe evo bījo koṇa dayāḻu che je tenī śaraṇe jaīe ?)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા સુદિ દશમને દિવસે સ્વામીએ વાત કરી જે, $(29) ધર્મ, અર્થ, કામ ને મોક્ષ એ ચાર પ્રકારની વાતું છે. તેમાં જેવા જેવા અધિકારી તેવી તેવી વાતું ને $(સુભાષિત) $અર્થ :- હે માતા ! જ્યારે સિદ્ધયોગીનું મન તેના યોગ બળે કરીને અન્ય કોઈ પણ કારણ વિના, ફકત તેને લલચાવવા આવેલી માયાઓમાં આસક્ત થતું નથી અથવા ફસાતું નથી ત્યારે તે યોગી મારી આત્યંતિકી એટલે સર્વશ્રેષ્ઠ ગતિ-સ્વરૂપને પામે છે પછી ત્યાં મૃત્યુનું અટ્ટહાસ્ય હોતું નથી. $(શ્રીમદ્ ભાગવત : 3/2/23) $અર્થ :- અહો ! આ દુષ્ટ બકીએ હણવાની ઇચ્છાથી સ્તનમાં રહેલું કાલકૂટ ધરાવ્યું, છતાં તેને માતાને યોગ્ય ફળ પ્રાપ્ત થયું. તેમનાથી બીજા ક્યા દયાળુને શરણે આપણે જઈએ ? (પૂતનાએ ભગવાનને મારવાની ઇચ્છાથી દૂધરૂપી ઝેરનું સ્તનપાન કરાવ્યું, તો પણ ભગવાને જસોદાના જેવી ગતિને પમાડી; માટે એવો બીજો કોણ દયાળુ છે જે તેની શરણે જઈએ ?)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10028.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa samagamma ghadik</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10030.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek jan mangarol gayo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '29');
+            localStorage.setItem('lastVisitedVatFile', 'ch10029.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

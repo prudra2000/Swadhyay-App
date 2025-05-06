@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અહો ! સાધુ સાથે સૌને - Aho! Sadhu sathe saune</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aho! Sadhu sathe saune</h1>
+                <div class="gujarati-title">અહો ! સાધુ સાથે સૌને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 100</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(100) aho ! sādhu sāthe saune heta che ne āpaṇane eno joga che tyāṃ khoṭa nathī ṭaḻatī, tyāre pachī to khāvuṃ, khāṭalo ne khāḍo e traṇa vāta thāśe ne bījī vātuṃ thāśe paṇa āvī vātuṃ nahi thāya, māṭe pachī pastāvo thāśe. ne strī-dravyano joga karavo nahi; kema je, joga thaye ṭhā raheto nathī. te upara gora ne yajamānanī dīkarīnī vāta karī dekhāḍī ne bhaṭṭajīe ghoḍī besavā āpī, te bījī bāīe kahyuṃ je, ‘juvānane dīdhī paṇa gharaḍāne koṇa de ?’ pachī bheḻuṃ cālavānā bhaṭṭe harāmanā sama khādhā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૦૦) અહો ! સાધુ સાથે સૌને હેત છે ને આપણને એનો જોગ છે ત્યાં ખોટ નથી ટળતી, ત્યારે પછી તો ખાવું, ખાટલો ને ખાડો એ ત્રણ વાત થાશે ને બીજી વાતું થાશે પણ આવી વાતું નહિ થાય, માટે પછી પસ્તાવો થાશે. ને સ્ત્રી-દ્રવ્યનો જોગ કરવો નહિ; કેમ જે, જોગ થયે ઠા રહેતો નથી. તે ઉપર ગોર ને યજમાનની દીકરીની વાત કરી દેખાડી ને ભટ્ટજીએ ઘોડી બેસવા આપી, તે બીજી બાઈએ કહ્યું જે, ‘જુવાનને દીધી પણ ઘરડાને કોણ દે ?’ પછી ભેળું ચાલવાના ભટ્ટે હરામના સમ ખાધા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6099.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Atmarup thavu tema</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6101.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mayaram bhattne hat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '100');
+            localStorage.setItem('lastVisitedVatFile', 'ch6100.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

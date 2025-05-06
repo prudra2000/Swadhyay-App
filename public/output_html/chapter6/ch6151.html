@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મેડે મંડળી ભેળી - Mede manadali bheli </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mede manadali bheli </h1>
+                <div class="gujarati-title">મેડે મંડળી ભેળી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 151</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(151) meḍe maṃḍaḻī bheḻī thaīne malakanī niṃdā kare che, te jo karaśe to kāḍhī mūkaśuṃ. ne je ‘dharmāmṛta’ āpaṇī upara ja karyuṃ che te lopīne corīo kare che ne lūgaḍāṃ vadhu rākhe che te ṭhīka nahi paḍe; ṭiṭoḍī ūṃcā paga kare teṇe karīne ākāśa nahi jhilāya, te sāru kāṃī aṭakyuṃ nahi rahe, kāḍhī ja mūkaśuṃ. $hakaḍi to mahīḍī bhalī ne hakaḍo bhalo sapūta.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૫૧) મેડે મંડળી ભેળી થઈને મલકની નિંદા કરે છે, તે જો કરશે તો કાઢી મૂકશું. ને જે ‘ધર્મામૃત’ આપણી ઉપર જ કર્યું છે તે લોપીને ચોરીઓ કરે છે ને લૂગડાં વધુ રાખે છે તે ઠીક નહિ પડે; ટિટોડી ઊંચા પગ કરે તેણે કરીને આકાશ નહિ ઝિલાય, તે સારુ કાંઈ અટક્યું નહિ રહે, કાઢી જ મૂકશું. $હકડિ તો મહીડી ભલી ને હકડો ભલો સપૂત.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6150.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek jan to kotharine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6152.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Amare to kai vastra</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '151');
+            localStorage.setItem('lastVisitedVatFile', 'ch6151.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

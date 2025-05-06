@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જુઓને, એક પુરુષ ઊગ્યો - Juone ek purush ugyo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Juone ek purush ugyo</h1>
+                <div class="gujarati-title">જુઓને, એક પુરુષ ઊગ્યો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 54</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(54) juone, eka te pacāsa karoḍa yojanamāṃ aṃdhāruṃ na rahyuṃ, te jema sūryanā kiraṇe karīne rātano nāśa thaī jāya che, tema satpuruṣanī dṛṣṭi vaḍe karīne to koī deśamāṃ ajñāna rahe ja nahi ane te satpuruṣa vinā to jema, $(brahmānaṃda kāvya : 2378) 1 puruṣa ūgyo= sūryodaya thayo. $2 śaśī= caṃdra. $3 aparavāre= khūba kāmane laīne āvatī kāle, ema karatāṃ karatāṃ pāchuṃ ṭhelātuṃ ja jāya te.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(54) જુઓને, એક તે પચાસ કરોડ યોજનમાં અંધારું ન રહ્યું, તે જેમ સૂર્યના કિરણે કરીને રાતનો નાશ થઈ જાય છે, તેમ સત્પુરુષની દૃષ્ટિ વડે કરીને તો કોઈ દેશમાં અજ્ઞાન રહે જ નહિ અને તે સત્પુરુષ વિના તો જેમ, $(બ્રહ્માનંદ કાવ્ય : 2378) 1 પુરુષ ઊગ્યો= સૂર્યોદય થયો. $2 શશી= ચંદ્ર. $3 અપરવારે= ખૂબ કામને લઈને આવતી કાલે, એમ કરતાં કરતાં પાછું ઠેલાતું જ જાય તે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3053.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Hamana mumukshue deh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3055.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek haribhakte prashna puchhyu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '54');
+            localStorage.setItem('lastVisitedVatFile', 'ch3054.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

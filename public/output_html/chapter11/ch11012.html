@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>માવા ભક્તને પૂર્વનો - Mava bhaktne purvno</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mava bhaktne purvno</h1>
+                <div class="gujarati-title">માવા ભક્તને પૂર્વનો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 12</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(12) māvā bhaktane pūrvano saṃskāra che tethī paṃcaviṣayamāṃthī āsakti ṭaḻī gaī che ane vahevāramāṃ chetaravā hoya to chetarī le; kāṃ je, ā lokanuṃ jñāna thoḍuṃ te pāṃcaseṃ korīnuṃ hatuṃ, te eka jaṇa vīsa korīmāṃ laī gayo. sarvadeśī sādhu maḻavā te bahu kaṭhaṇa che. vahevāranuṃ jñāna, bhagavānanā māraganuṃ jñāna, sāṃkhyanuṃ, yoganuṃ, bhagavānanī upāsanānuṃ vagere sarva prakāranuṃ jñāna jene hoya te sarvadeśī kahevāya ane satsaṃgamāṃ sarvadeśī puruṣathī ja samāsa thāya che.@ 1 varaṇa= chāparānāṃ paḍāḻa karavānā vāṃsaḍā, khapāṭa, vaḻīo vagere.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(12) માવા ભક્તને પૂર્વનો સંસ્કાર છે તેથી પંચવિષયમાંથી આસક્તિ ટળી ગઈ છે અને વહેવારમાં છેતરવા હોય તો છેતરી લે; કાં જે, આ લોકનું જ્ઞાન થોડું તે પાંચસેં કોરીનું હતું, તે એક જણ વીસ કોરીમાં લઈ ગયો. સર્વદેશી સાધુ મળવા તે બહુ કઠણ છે. વહેવારનું જ્ઞાન, ભગવાનના મારગનું જ્ઞાન, સાંખ્યનું, યોગનું, ભગવાનની ઉપાસનાનું વગેરે સર્વ પ્રકારનું જ્ઞાન જેને હોય તે સર્વદેશી કહેવાય અને સત્સંગમાં સર્વદેશી પુરુષથી જ સમાસ થાય છે.@ 1 વરણ= છાપરાનાં પડાળ કરવાના વાંસડા, ખપાટ, વળીઓ વગેરે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11011.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Thukavani tumbadi joine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11013.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Be kalashinu ann randhyu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '12');
+            localStorage.setItem('lastVisitedVatFile', 'ch11012.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

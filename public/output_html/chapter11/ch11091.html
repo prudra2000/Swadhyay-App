@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેને શુદ્ધ થાવું હોય તેણે - Jene shuddh thavu hoy tene</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jene shuddh thavu hoy tene</h1>
+                <div class="gujarati-title">જેને શુદ્ધ થાવું હોય તેણે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 91</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(91) jene śuddha thāvuṃ hoya teṇe be pahora ja ūṃghavuṃ ane ā to kahevā beṭhā te kahyā vinā kema cāle ? vighna karanārāṃ ne du:khanā denārāṃ te svāda, dehābhimāna ne nidrā e traṇa ja che māṭe te to jyāre niyama rākhe ne eka ṭāṇuṃ ja khāya ne be pahora ja sūve ne hāthamāṃ māḻā rākhīne hare, phare evo jene ādara che tene kyāṃ kaṭhaṇa che ? ne indriyuṃ rotī rahe ne pattaramāṃ je kāṃī āvyuṃ te badhuṃ ekarasa karī meḻāvī devuṃ to svāda ekeno na āve; to lāḍavā pattaramāṃ āvaśe paṇa naḍaśe nahi, bhūkha jeṭaluṃ ja khavāśe. ema jo haṃmeśa karavā māṃḍaśe to jīva nirbaḻa haśe to paṇa ājñā pāḻavāthī baḻavāna thāśe ne ā to jīve dhāryuṃ nathī te parāṇe karāvīe chīe. ā dehe karīne viṣaya nathī bhogavavā, ne ātmā kāṃī marato nathī te ema karatāṃ kasara raheśe to bhogavī leśuṃ, paṇa ādara to evo rākhavo je, mahārājane rājī karavā koī ājñā lopavī nathī, to bhagavāna dayāḻu che te sārā sādhuno saṃga āpaśe, temāṃ vighna nahi ja āve.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(91) જેને શુદ્ધ થાવું હોય તેણે બે પહોર જ ઊંઘવું અને આ તો કહેવા બેઠા તે કહ્યા વિના કેમ ચાલે ? વિઘ્ન કરનારાં ને દુ:ખના દેનારાં તે સ્વાદ, દેહાભિમાન ને નિદ્રા એ ત્રણ જ છે માટે તે તો જ્યારે નિયમ રાખે ને એક ટાણું જ ખાય ને બે પહોર જ સૂવે ને હાથમાં માળા રાખીને હરે, ફરે એવો જેને આદર છે તેને ક્યાં કઠણ છે ? ને ઇન્દ્રિયું રોતી રહે ને પત્તરમાં જે કાંઈ આવ્યું તે બધું એકરસ કરી મેળાવી દેવું તો સ્વાદ એકેનો ન આવે; તો લાડવા પત્તરમાં આવશે પણ નડશે નહિ, ભૂખ જેટલું જ ખવાશે. એમ જો હંમેશ કરવા માંડશે તો જીવ નિર્બળ હશે તો પણ આજ્ઞા પાળવાથી બળવાન થાશે ને આ તો જીવે ધાર્યું નથી તે પરાણે કરાવીએ છીએ. આ દેહે કરીને વિષય નથી ભોગવવા, ને આત્મા કાંઈ મરતો નથી તે એમ કરતાં કસર રહેશે તો ભોગવી લેશું, પણ આદર તો એવો રાખવો જે, મહારાજને રાજી કરવા કોઈ આજ્ઞા લોપવી નથી, તો ભગવાન દયાળુ છે તે સારા સાધુનો સંગ આપશે, તેમાં વિઘ્ન નહિ જ આવે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11090.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Strino prasang hoy to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11092.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Amare pratham dhyanni</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '91');
+            localStorage.setItem('lastVisitedVatFile', 'ch11091.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

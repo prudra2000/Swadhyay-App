@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>લોયાનું 17મું વચનામૃત - Loyanu 17mu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Loyanu 17mu vachanamrut</h1>
+                <div class="gujarati-title">લોયાનું 17મું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 334</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(334) loyānuṃ 17muṃ vacanāmṛta vaṃcāvīne kahyuṃ je, mumukṣu hoya tene āṭalī ja vāta samajavānī che jene prabhu bhajavā hoya tene āmāṃ sarve vāta āvī gaī, kāṃī bākī na rahyuṃ. je je kṛtya karavānuṃ che te karaśuṃ tyāre thāśe. te śuṃ ? je, viṣayanuṃ ne deha, loka, bhoga khoṭuṃ karavuṃ; paṇa badhī vātamāṃ vāha vāha na karavuṃ. 1 unmūlana karavuṃ= mūḻa ukheḍī nākhavuṃ te.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(334) લોયાનું 17મું વચનામૃત વંચાવીને કહ્યું જે, મુમુક્ષુ હોય તેને આટલી જ વાત સમજવાની છે જેને પ્રભુ ભજવા હોય તેને આમાં સર્વે વાત આવી ગઈ, કાંઈ બાકી ન રહ્યું. જે જે કૃત્ય કરવાનું છે તે કરશું ત્યારે થાશે. તે શું ? જે, વિષયનું ને દેહ, લોક, ભોગ ખોટું કરવું; પણ બધી વાતમાં વાહ વાહ ન કરવું. 1 ઉન્મૂલન કરવું= મૂળ ઉખેડી નાખવું તે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10333.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Man de te j saru lage</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10335.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Viveki hoy te prabhu </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '334');
+            localStorage.setItem('lastVisitedVatFile', 'ch10334.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સત્સંગમાં ત્રણ પ્રકાર - Aa satsangma tran prakar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa satsangma tran prakar</h1>
+                <div class="gujarati-title">આ સત્સંગમાં ત્રણ પ્રકાર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 58</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(58) ā satsaṃgamāṃ traṇa prakāra che. je satsaṃgī hoya tene kusaṃgī karī nākhe ne aṃtardṛṣṭi karato hoya to bāhyadṛṣṭi karāve ne vahevāramāṃthī udāsa hoya to temāṃ coṃṭāḍe, evā paṇa maṃdiramāṃ che; māṭe ene oḻakhīne tyāga karavo. eka to indriyārāma ne eka arthārāma evā che ne jo te benī vacce koī pathārī kare to cha mahinā thāya tyāṃ vimukha karī nākhe. tene paṇa oḻakhīne teno saṃga na karavo ne karavo to garāsiyānī aṃtara maḻavā devuṃ nahi ne arthārāma sāthe aṃtara maḻyuṃ ke bhūṃḍuṃ thayuṃ. e beyane mūkīne āpaṇe to ātmārāma thāvuṃ. 1 ghoḍe= jema.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૫૮) આ સત્સંગમાં ત્રણ પ્રકાર છે. જે સત્સંગી હોય તેને કુસંગી કરી નાખે ને અંતર્દૃષ્ટિ કરતો હોય તો બાહ્યદૃષ્ટિ કરાવે ને વહેવારમાંથી ઉદાસ હોય તો તેમાં ચોંટાડે, એવા પણ મંદિરમાં છે; માટે એને ઓળખીને ત્યાગ કરવો. એક તો ઇન્દ્રિયારામ ને એક અર્થારામ એવા છે ને જો તે બેની વચ્ચે કોઈ પથારી કરે તો છ મહિના થાય ત્યાં વિમુખ કરી નાખે. તેને પણ ઓળખીને તેનો સંગ ન કરવો ને કરવો તો ગરાસિયાની અંતર મળવા દેવું નહિ ને અર્થારામ સાથે અંતર મળ્યું કે ભૂંડું થયું. એ બેયને મૂકીને આપણે તો આત્મારામ થાવું. 1 ઘોડે= જેમ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6057.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Swamine bhogavavana </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6059.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Khadhanu, pathari, chela</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '58');
+            localStorage.setItem('lastVisitedVatFile', 'ch6058.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

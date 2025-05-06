@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આગળ ધોળકા, અમદાવાદ આવે - Agal dholaka, amadavad ave</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Agal dholaka, amadavad ave</h1>
+                <div class="gujarati-title">આગળ ધોળકા, અમદાવાદ આવે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 88</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(88) āgaḻa dhoḻakā, amadāvāda āve che temāṃ kaśuṃye jovuṃ nahi; ne je jovānuṃ che, pūjavānuṃ che, sevā karavānuṃ che te tamārā bheguṃ che, māṭe tenā sāmuṃ joī raho, paṇa ā vāta samajāya tevī nathī. ne badhāya ema kahe che je, ‘gopāḻānaṃdasvāmī, nityānaṃdasvāmī deha mūkī gayā, have kenī pāse jaīe?’ paṇa raghuvīrajī mahārāja bahu ja moṭā hatā te deha mūkyā pachī jaṇāṇā. ne āpaṇane bahu ja lābha thayo che teno mahimā brahmānā kalpa sudhī kahīe to paṇa pāra āve nahi ne na samajāya to khoṭa paṇa bahu che, teno paṇa brahmānā kalpa sudhī kahetāṃ pāra āve nahīṃ. ā pramāṇe pragaṭa svarūpa oḻakhavānī ghaṇī ja vātuṃ karī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(88) આગળ ધોળકા, અમદાવાદ આવે છે તેમાં કશુંયે જોવું નહિ; ને જે જોવાનું છે, પૂજવાનું છે, સેવા કરવાનું છે તે તમારા ભેગું છે, માટે તેના સામું જોઈ રહો, પણ આ વાત સમજાય તેવી નથી. ને બધાય એમ કહે છે જે, ‘ગોપાળાનંદસ્વામી, નિત્યાનંદસ્વામી દેહ મૂકી ગયા, હવે કેની પાસે જઈએ?’ પણ રઘુવીરજી મહારાજ બહુ જ મોટા હતા તે દેહ મૂક્યા પછી જણાણા. ને આપણને બહુ જ લાભ થયો છે તેનો મહિમા બ્રહ્માના કલ્પ સુધી કહીએ તો પણ પાર આવે નહિ ને ન સમજાય તો ખોટ પણ બહુ છે, તેનો પણ બ્રહ્માના કલ્પ સુધી કહેતાં પાર આવે નહીં. આ પ્રમાણે પ્રગટ સ્વરૂપ ઓળખવાની ઘણી જ વાતું કરી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4087.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mota sadhuno avagun nahi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4089.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dholakama vat kari je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '88');
+            localStorage.setItem('lastVisitedVatFile', 'ch4088.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સમાગમ ન હોય તો  - Samagam n hoy to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samagam n hoy to</h1>
+                <div class="gujarati-title">સમાગમ ન હોય તો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 124</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(124) samāgama na hoya to āmāṃthī koṇa jāṇe kyāṃī jatuṃ rahevāya ne koka vege caḍī javāya, māṭe ājñāmāṃ ja sukha che. ne jīva che te potānī meḻe sukhane khoḻavā jāya paṇa sukha kyāṃthī āve ?@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(124) સમાગમ ન હોય તો આમાંથી કોણ જાણે ક્યાંઈ જતું રહેવાય ને કોક વેગે ચડી જવાય, માટે આજ્ઞામાં જ સુખ છે. ને જીવ છે તે પોતાની મેળે સુખને ખોળવા જાય પણ સુખ ક્યાંથી આવે ?@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16123.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kemany sukh nathi ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16125.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koik vastu hoy te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '124');
+            localStorage.setItem('lastVisitedVatFile', 'ch16124.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

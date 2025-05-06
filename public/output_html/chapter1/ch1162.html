@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સૂર્યને કોની ઉપમા - Suryne koni upama </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Suryne koni upama </h1>
+                <div class="gujarati-title">સૂર્યને કોની ઉપમા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 162</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(162) sūryane konī upamā devāya ? e to eka ja. tema bhagavāna paṇa eka ja ane anaṃta avatāra te sarve eka bhagavānanuṃ dīdhuṃ khāya che ane āvo samo pṛthvī upara āvyo nathī ne āvaśe paṇa nahi ne āvā sādhu āvyā nathī ne āvaśe paṇa nahi ne ā bhagavāna paṇa āvyā nathī ne āvaśe paṇa nahīṃ. anaṃta avatāra thaī gayā ne anaṃta avatāra thāśe paṇa ā sādhu ne ā bhagavāna te āvyā nathī ne āvaśe paṇa nahīṃ.@ 1 kaṇethuṃ= kaṇāyatuṃ, mahenatāṇāmāṃ maḻela anna, pharaja bajāvavā maḻela aiśrvarya.;</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(162) સૂર્યને કોની ઉપમા દેવાય ? એ તો એક જ. તેમ ભગવાન પણ એક જ અને અનંત અવતાર તે સર્વે એક ભગવાનનું દીધું ખાય છે અને આવો સમો પૃથ્વી ઉપર આવ્યો નથી ને આવશે પણ નહિ ને આવા સાધુ આવ્યા નથી ને આવશે પણ નહિ ને આ ભગવાન પણ આવ્યા નથી ને આવશે પણ નહીં. અનંત અવતાર થઈ ગયા ને અનંત અવતાર થાશે પણ આ સાધુ ને આ ભગવાન તે આવ્યા નથી ને આવશે પણ નહીં.@ 1 કણેથું= કણાયતું, મહેનતાણામાં મળેલ અન્ન, ફરજ બજાવવા મળેલ ઐશ્ર્વર્ય.;</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1161.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mota mota sarve sadhuno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1163.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aksharadhammathi mukt </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '162');
+            localStorage.setItem('lastVisitedVatFile', 'ch1162.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

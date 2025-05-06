@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ધર્મનિયમમાં ફેર પડે તો - Dharmniyamma fer pade to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dharmniyamma fer pade to</h1>
+                <div class="gujarati-title">ધર્મનિયમમાં ફેર પડે તો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 76</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(76) dharmaniyamamāṃ phera paḍe to teno daṃḍa thāya ne upāsanāmāṃ phera paḍe to prāptimāṃ phera paḍe; jema koīne dharmamāṃ phera paḍe che, to prāyaśrcita karāve che ne vaṭalī jāya che to nāta bahāra kāḍhe che, tema upāsanānuṃ che. upāsanāmāṃ kasara hoya to bījā sukhanī to prāpti thāya, paṇa garbhavāsanuṃ du:kha ṭaḻe nahi ne upāsanāthī ne ātmaniṣṭhāthī garbhavāsa ṭaḻī jāya che. māṭe upāsanā, ātmaniṣṭhā, vairāgya, dharma ne saṃga sarve aṃge bhakti karavī. pachī hariśaṃkarabhāīe pūchyuṃ je, ‘ā sarvamāṃthī adhika kayuṃ sādhana che ?’ tyāre kahyuṃ je, ‘saṃga sarvathī adhika che, ne saṃga to badhāyano kahevāya, paṇa jema loḍhuṃ, sonuṃ ne sonuṃ e sarve dhātu kahevāya, paṇa phera ghaṇo che, tema saṃgamāṃ phera ghaṇo che.’@ 1 bhegavāḻuṃ= bheḻaseḻavāḻuṃ. $2 śodheluṃ= śuddha, sāpha kareluṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(76) ધર્મનિયમમાં ફેર પડે તો તેનો દંડ થાય ને ઉપાસનામાં ફેર પડે તો પ્રાપ્તિમાં ફેર પડે; જેમ કોઈને ધર્મમાં ફેર પડે છે, તો પ્રાયશ્ર્ચિત કરાવે છે ને વટલી જાય છે તો નાત બહાર કાઢે છે, તેમ ઉપાસનાનું છે. ઉપાસનામાં કસર હોય તો બીજા સુખની તો પ્રાપ્તિ થાય, પણ ગર્ભવાસનું દુ:ખ ટળે નહિ ને ઉપાસનાથી ને આત્મનિષ્ઠાથી ગર્ભવાસ ટળી જાય છે. માટે ઉપાસના, આત્મનિષ્ઠા, વૈરાગ્ય, ધર્મ ને સંગ સર્વે અંગે ભક્તિ કરવી. પછી હરિશંકરભાઈએ પૂછ્યું જે, ‘આ સર્વમાંથી અધિક કયું સાધન છે ?’ ત્યારે કહ્યું જે, ‘સંગ સર્વથી અધિક છે, ને સંગ તો બધાયનો કહેવાય, પણ જેમ લોઢું, સોનું ને સોનું એ સર્વે ધાતુ કહેવાય, પણ ફેર ઘણો છે, તેમ સંગમાં ફેર ઘણો છે.’@ 1 ભેગવાળું= ભેળસેળવાળું. $2 શોધેલું= શુદ્ધ, સાફ કરેલું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5075.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vasana chhe te </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5077.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhogavane kanthe tadake</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '76');
+            localStorage.setItem('lastVisitedVatFile', 'ch5076.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

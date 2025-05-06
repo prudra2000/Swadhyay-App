@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તીર્થે આવવું ત્યારે - Tirthe avavu tyare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tirthe avavu tyare</h1>
+                <div class="gujarati-title">તીર્થે આવવું ત્યારે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 268</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(268) tīrthe āvavuṃ tyāre kāṃīka svabhāva mūkī javo, pachī jenā bheḻā rahetā hoīe tene kahī devuṃ je, āṭalo svabhāva mane hato te ājathī mūkyo. paṇa koīne kahe nahi, teno svabhāva jānāro nahi. eka pāḻo hato te bhoṃtaḻiye popaḍī ūkheḍato. pachī gāra karīne upara bhāra mūke, to paṇa e kāṃī coṃṭe? tema evī rīte koī dābodubo rākhaśo mā.@ 1 dāboduboe rākhīne= koīnā prabhāvathī ke bīkathī mananī vāta na karavī te.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(268) તીર્થે આવવું ત્યારે કાંઈક સ્વભાવ મૂકી જવો, પછી જેના ભેળા રહેતા હોઈએ તેને કહી દેવું જે, આટલો સ્વભાવ મને હતો તે આજથી મૂક્યો. પણ કોઈને કહે નહિ, તેનો સ્વભાવ જાનારો નહિ. એક પાળો હતો તે ભોંતળિયે પોપડી ઊખેડતો. પછી ગાર કરીને ઉપર ભાર મૂકે, તો પણ એ કાંઈ ચોંટે? તેમ એવી રીતે કોઈ દાબોદુબો રાખશો મા.@ 1 દાબોદુબોે રાખીને= કોઈના પ્રભાવથી કે બીકથી મનની વાત ન કરવી તે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10267.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dravyane arthe daga thay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10269.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane ahi betha chhie</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '268');
+            localStorage.setItem('lastVisitedVatFile', 'ch10268.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

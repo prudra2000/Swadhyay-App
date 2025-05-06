@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગજા વિના સ્વભાવ પાડે - Gaja vina svabhav pade</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gaja vina svabhav pade</h1>
+                <div class="gujarati-title">ગજા વિના સ્વભાવ પાડે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 97</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā sudi caudaśane divase svāmīe vāta karī je, $(97) gajā vinā svabhāva pāḍe che e paṇa kharāba thāvānā che. garība hoya ne sākara joīe, ḍholo joīe ne sāruṃ sāruṃ khāvā joīe e paṇa ati du:kha thāvānuṃ che. karaja karīne khāśe-pīśe tenā du:khano pāra nahi rahe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા સુદિ ચૌદશને દિવસે સ્વામીએ વાત કરી જે, $(97) ગજા વિના સ્વભાવ પાડે છે એ પણ ખરાબ થાવાના છે. ગરીબ હોય ને સાકર જોઈએ, ઢોલો જોઈએ ને સારું સારું ખાવા જોઈએ એ પણ અતિ દુ:ખ થાવાનું છે. કરજ કરીને ખાશે-પીશે તેના દુ:ખનો પાર નહિ રહે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10096.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bapor more na unghya hoya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10098.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ama je chori karine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '97');
+            localStorage.setItem('lastVisitedVatFile', 'ch10097.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

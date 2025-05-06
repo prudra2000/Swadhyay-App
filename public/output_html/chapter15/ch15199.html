@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચેલાને વશ ન થાય  - Chelane vash na thay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chelane vash na thay</h1>
+                <div class="gujarati-title">ચેલાને વશ ન થાય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 199</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(199) celāne vaśa na thāya evā paṇa thoḍā. te upara vāta karī je, vāḻākamāṃ śukasvāmī pharavā gayā hatā. te āno bhakta kahe, raho to ṭhīka ne jāvuṃ hoya to jamīne jāo, te rasoī sāru dūdha rākhela paṇa temanā śiṣya harisvarūpadāsa kahe, ‘rahevuṃ nathī.’ pachī dhrāṃgadhrānā āno bhakta rastā vacce āḍā sūtā ne kahe je, mārā upara gāḍuṃ hāṃkīne jāo. tyāre harisvarūpadāsa kahe, ‘bhale sūto.’ ema kahī, gāḍuṃ tāravīne laī gayā. ema śiṣyane vaśa tethī śukasvāmīthī harijananī marajī na sacavāṇī ne kacavāvīne vayā gayā ane haju sudhī gīta gavāya che. te śuṃ ? je, koī varatāla ke gaḍhaḍe jaīne dhrāṃgadhre āve tyāre pūche je, olyo harisvarūpadāsa jīve che marī gayo ? ema hajī sudhī gīta gavāya che. 1 vadāḍa= vāyado.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(199) ચેલાને વશ ન થાય એવા પણ થોડા. તે ઉપર વાત કરી જે, વાળાકમાં શુકસ્વામી ફરવા ગયા હતા. તે આનો ભક્ત કહે, રહો તો ઠીક ને જાવું હોય તો જમીને જાઓ, તે રસોઈ સારુ દૂધ રાખેલ પણ તેમના શિષ્ય હરિસ્વરૂપદાસ કહે, ‘રહેવું નથી.’ પછી ધ્રાંગધ્રાના આનો ભક્ત રસ્તા વચ્ચે આડા સૂતા ને કહે જે, મારા ઉપર ગાડું હાંકીને જાઓ. ત્યારે હરિસ્વરૂપદાસ કહે, ‘ભલે સૂતો.’ એમ કહી, ગાડું તારવીને લઈ ગયા. એમ શિષ્યને વશ તેથી શુકસ્વામીથી હરિજનની મરજી ન સચવાણી ને કચવાવીને વયા ગયા અને હજુ સુધી ગીત ગવાય છે. તે શું ? જે, કોઈ વરતાલ કે ગઢડે જઈને ધ્રાંગધ્રે આવે ત્યારે પૂછે જે, ઓલ્યો હરિસ્વરૂપદાસ જીવે છે મરી ગયો ? એમ હજી સુધી ગીત ગવાય છે. 1 વદાડ= વાયદો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15198.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jivma badaval chhe te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15200.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Indriyoma vahya jaie</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '199');
+            localStorage.setItem('lastVisitedVatFile', 'ch15199.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

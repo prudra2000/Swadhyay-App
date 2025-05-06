@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવ આ દેહમાં ને - Jiva aa dehma ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jiva aa dehma ne</h1>
+                <div class="gujarati-title">જીવ આ દેહમાં ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 93</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(93) jīva ā dehamāṃ ne ā lokamāṃ ghoghalo karīne beṭho che, paṇa te kyāṃ sudhī raheśe ? jīvane to bāḻakanī peṭhe avaḻā-savaḻā saṃkalpa karyāno svabhāva paḍī gayo che ne ajñāne karīne moha thāya che; paṇa jene prabhu bhajavā teṇe mohane mārage cālavuṃ nahi ne viṣaya sāthe vera karavuṃ kāṃ sāṃkhya śīkhavuṃ, paṇa te sāthe kasuṃbā pīvā nahi. keṭalākane bāyaḍīo jhera de che te keṭalāya marī gayā. te ghāṇalāmāṃ bāyaḍīe tenā dhaṇīne kuhāḍo kāṃdhamāṃ māryo paṇa chaṭakī gayo te bacī gayo. pachī bāyaḍīne kāḍhī melī te bāīne koīe līdhī nahi ne bhāīne koīe dīdhī nahi. pachī cauda varase manāvā gayo ne kahe je, ‘mārī jībhaḍīno vāṃka che, tāro vāṃka nathī’; ema cauda varase pācho meḻāpa karyo, evuṃ viṣayanuṃ baḻa che !@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(93) જીવ આ દેહમાં ને આ લોકમાં ઘોઘલો કરીને બેઠો છે, પણ તે ક્યાં સુધી રહેશે ? જીવને તો બાળકની પેઠે અવળા-સવળા સંકલ્પ કર્યાનો સ્વભાવ પડી ગયો છે ને અજ્ઞાને કરીને મોહ થાય છે; પણ જેને પ્રભુ ભજવા તેણે મોહને મારગે ચાલવું નહિ ને વિષય સાથે વેર કરવું કાં સાંખ્ય શીખવું, પણ તે સાથે કસુંબા પીવા નહિ. કેટલાકને બાયડીઓ ઝેર દે છે તે કેટલાય મરી ગયા. તે ઘાણલામાં બાયડીએ તેના ધણીને કુહાડો કાંધમાં માર્યો પણ છટકી ગયો તે બચી ગયો. પછી બાયડીને કાઢી મેલી તે બાઈને કોઈએ લીધી નહિ ને ભાઈને કોઈએ દીધી નહિ. પછી ચૌદ વરસે મનાવા ગયો ને કહે જે, ‘મારી જીભડીનો વાંક છે, તારો વાંક નથી’; એમ ચૌદ વરસે પાછો મેળાપ કર્યો, એવું વિષયનું બળ છે !@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14092.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jiv to vishayanandi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14094.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Stri, chhokara, khavu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '93');
+            localStorage.setItem('lastVisitedVatFile', 'ch14093.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વચનામૃત વંચાવીને - Vachanamrut vanchavine </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vachanamrut vanchavine </h1>
+                <div class="gujarati-title">વચનામૃત વંચાવીને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 80</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(80) ‘vacanāmṛta’ vaṃcāvīne tenī bahu vāta karī ne bolyā je, ‘āvuṃ jñāna to saṃge karīne ne kāḻe karīne thāya; jema vidyā bhaṇe che tema thāya, paṇa thakī na thāya ne anugraha kare to samādhi thāya. te vijñānadāsajīne akṣaradhāma dekhātuṃ to paṇa ne sādhue kāḍhyā tyāre nīkaḻyā; māṭe jñāna śreṣṭha che.’(juo prakaraṇa 3nī vāta 73)@ 1 anugraha= kṛpā, upakāra, maherabānī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(80) ‘વચનામૃત’ વંચાવીને તેની બહુ વાત કરી ને બોલ્યા જે, ‘આવું જ્ઞાન તો સંગે કરીને ને કાળે કરીને થાય; જેમ વિદ્યા ભણે છે તેમ થાય, પણ થકી ન થાય ને અનુગ્રહ કરે તો સમાધિ થાય. તે વિજ્ઞાનદાસજીને અક્ષરધામ દેખાતું તો પણ ને સાધુએ કાઢ્યા ત્યારે નીકળ્યા; માટે જ્ઞાન શ્રેષ્ઠ છે.’(જુઓ પ્રકરણ 3ની વાત 73)@ 1 અનુગ્રહ= કૃપા, ઉપકાર, મહેરબાની.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1079.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sarv prakarni asakti </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1081.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa to prabandhe karine </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '80');
+            localStorage.setItem('lastVisitedVatFile', 'ch1080.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

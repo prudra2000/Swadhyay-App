@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વે ભગવાનનું કર્યું થાય - Sarve bhagavannu karyu thay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarve bhagavannu karyu thay</h1>
+                <div class="gujarati-title">સર્વે ભગવાનનું કર્યું થાય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 107</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(107) sarve bhagavānanuṃ karyuṃ thāya che, māṭe manane mate cālavuṃ nahi. ne deha to dāḻa roṭale rahe che, ne jeṭalā viṣaya che temāṃ pāra vinānī pīḍā rahī che ne jeṭalā padārtha, ghoḍā, baḻada, ghareṇāṃ te sarvemāṃ pīḍā rahī che ne e padārtha jāya to peṭa nākhīne mare; māṭe ajñāne karīne sukha manāṇuṃ che, te jñāna thāya to sukha na manāya; paṇa jñāna to eka divasamāṃ na thāya, enā to ghā lāgyā che te pāṭāpīṃḍī kare to maṭe. pakava karma thayāṃ che te ja svabhāva che ne līṃboḻīmāṃ jema līmaḍo che, tema pakava karmamāṃ svabhāva che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(107) સર્વે ભગવાનનું કર્યું થાય છે, માટે મનને મતે ચાલવું નહિ. ને દેહ તો દાળ રોટલે રહે છે, ને જેટલા વિષય છે તેમાં પાર વિનાની પીડા રહી છે ને જેટલા પદાર્થ, ઘોડા, બળદ, ઘરેણાં તે સર્વેમાં પીડા રહી છે ને એ પદાર્થ જાય તો પેટ નાખીને મરે; માટે અજ્ઞાને કરીને સુખ મનાણું છે, તે જ્ઞાન થાય તો સુખ ન મનાય; પણ જ્ઞાન તો એક દિવસમાં ન થાય, એના તો ઘા લાગ્યા છે તે પાટાપીંડી કરે તો મટે. પકવ કર્મ થયાં છે તે જ સ્વભાવ છે ને લીંબોળીમાં જેમ લીમડો છે, તેમ પકવ કર્મમાં સ્વભાવ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12106.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chudana karasanajini pethe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12108.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">So rupiyana mulavalu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '107');
+            localStorage.setItem('lastVisitedVatFile', 'ch12107.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

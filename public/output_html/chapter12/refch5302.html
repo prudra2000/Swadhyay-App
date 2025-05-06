@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(302) priyavratanā dṛṣṭāṃtathī kahyuṃ je, ‘e to gṛhasthāśramamāṃ hatā ne chokarāṃ thayāṃ, paṇa bhāgavatāḥ ātmarāmāḥ| (artha : bhagavānanā bhakto ātmāmāṃ ramaṇa karanārā hoya che.) evā hatā ne strīne joge karīne chokarāṃ thāya; jema peśāba nīkaḻe, maḻa nīkaḻe, thūṃka nīkaḻe, nāhavuṃ, khāvuṃ e jema kriyā thāya che, tema ja e paṇa kriyā thāya. paṇa tenuṃ smaraṇa, ciṃtavana ke manana na thāya ne ciṃtavana to bhagavānanī kathāvārtānuṃ ja thāya.’ te kahyuṃ che je, ‘priyavrata to bhagavānanī kathāthī virāma na pāmatā havā.’ eṭale e to sarvethī judā ja hatā ne emāṃ to māla evo che, jema ne viśe strīnī bhāvanā che, te ajñāne karīne che, tema ā loka paṇa ajñāne karīne manāya che; paṇa khoṭuṃ che.@ 1 bhavāyā= gāvā-nācavāno dhaṃdho karanāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(302) પ્રિયવ્રતના દૃષ્ટાંતથી કહ્યું જે, ‘એ તો ગૃહસ્થાશ્રમમાં હતા ને છોકરાં થયાં, પણ ભાગવતાઃ આત્મરામાઃ। (અર્થ : ભગવાનના ભક્તો આત્મામાં રમણ કરનારા હોય છે.) એવા હતા ને સ્ત્રીને જોગે કરીને છોકરાં થાય; જેમ પેશાબ નીકળે, મળ નીકળે, થૂંક નીકળે, નાહવું, ખાવું એ જેમ ક્રિયા થાય છે, તેમ જ એ પણ ક્રિયા થાય. પણ તેનું સ્મરણ, ચિંતવન કે મનન ન થાય ને ચિંતવન તો ભગવાનની કથાવાર્તાનું જ થાય.’ તે કહ્યું છે જે, ‘પ્રિયવ્રત તો ભગવાનની કથાથી વિરામ ન પામતા હવા.’ એટલે એ તો સર્વેથી જુદા જ હતા ને એમાં તો માલ એવો છે, જેમ ને વિશે સ્ત્રીની ભાવના છે, તે અજ્ઞાને કરીને છે, તેમ આ લોક પણ અજ્ઞાને કરીને મનાય છે; પણ ખોટું છે.@ 1 ભવાયા= ગાવા-નાચવાનો ધંધો કરનાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

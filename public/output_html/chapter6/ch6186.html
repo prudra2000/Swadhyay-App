@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંવત ૧૯૨૧ના કારતક - Samvat 1921na karatak</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samvat 1921na karatak</h1>
+                <div class="gujarati-title">સંવત ૧૯૨૧ના કારતક</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 186</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(186) saṃvata 1921nā kārataka māsamāṃ vāta karī je, ‘je kriyā karavī temāṃ phaḻanuṃ anusaṃdhāna rākhavuṃ, te kāmanuṃ phaḻa jovuṃ je śuṃ che ? tema ja krodhanuṃ, lobhanuṃ, mānanuṃ, svādanuṃ ne snehanuṃ e badhānuṃ jovuṃ; tene kahuṃ te sāṃbhaḻo je, kāmamāṃthī indrane hajāra bhaga thayāṃ ne krodhamāṃthī durvāsānuṃ bhūṃḍuṃ thayuṃ ne mānamāṃthī dakṣanuṃ bhūṃḍuṃ thayuṃ ne lobhamāṃthī naṃdarājāne du:kha thayuṃ ne svādamāṃthī śṛṃgī ṛṣinuṃ ne snehamāṃthī sāpa thāvuṃ paḍe che. evāṃ keṭalāṃka kahīe ! e māraga ja bhūṃḍo che. māṭe je te prakāre deha nirvāha karīne samāgama karī levo ne ā lokamāṃ to nahi ja rahevāya.’ ema cāra vāra kahyuṃ. ‘badhuṃya karīe ne sukha mānī beṭhā hoīe paṇa bhagavāna che te jyāre ghāṃṭo jhālaśe tyāre anna ke pāṇī nahi ūtare.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૮૬) સંવત ૧૯૨૧ના કારતક માસમાં વાત કરી જે, ‘જે ક્રિયા કરવી તેમાં ફળનું અનુસંધાન રાખવું, તે કામનું ફળ જોવું જે શું છે ? તેમ જ ક્રોધનું, લોભનું, માનનું, સ્વાદનું ને સ્નેહનું એ બધાનું જોવું; તેને કહું તે સાંભળો જે, કામમાંથી ઇન્દ્રને હજાર ભગ થયાં ને ક્રોધમાંથી દુર્વાસાનું ભૂંડું થયું ને માનમાંથી દક્ષનું ભૂંડું થયું ને લોભમાંથી નંદરાજાને દુ:ખ થયું ને સ્વાદમાંથી શૃંગી ઋષિનું ને સ્નેહમાંથી સાપ થાવું પડે છે. એવાં કેટલાંક કહીએ ! એ મારગ જ ભૂંડો છે. માટે જે તે પ્રકારે દેહ નિર્વાહ કરીને સમાગમ કરી લેવો ને આ લોકમાં તો નહિ જ રહેવાય.’ એમ ચાર વાર કહ્યું. ‘બધુંય કરીએ ને સુખ માની બેઠા હોઈએ પણ ભગવાન છે તે જ્યારે ઘાંટો ઝાલશે ત્યારે અન્ન કે પાણી નહિ ઊતરે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6185.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aso vadi athame vat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6187.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Are! Ava sadhu chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '186');
+            localStorage.setItem('lastVisitedVatFile', 'ch6186.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

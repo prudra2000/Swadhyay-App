@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(266) vyāsajīe kīḍāne traṇa-cāra janma levarāvīne paṇa mokṣa karyo, tema moṭāno samāgama thayo hoya to te choḍe nahīṃ. tyāre hariśaṃkarabhāīe pūchyuṃ je, ‘eṭalā janma levarāvavā te karatāṃ eka janme ja kema pāra pāḍyuṃ nahi ?’ tyāre uttara karyo je, ‘jñāna thayā vinā pāra paḍe nahi ne moṭā to eka janme ja jñāna āpe, paṇa māne nahīṃ.’ tyāṃ dṛṣṭāṃta dīdhuṃ je, ‘eka haribhakta upara amāre tamārā jeṭaluṃ ja heta hatuṃ, paṇa māruṃ mānyuṃ nahi ne pharī ghara karyuṃ.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(266) વ્યાસજીએ કીડાને ત્રણ-ચાર જન્મ લેવરાવીને પણ મોક્ષ કર્યો, તેમ મોટાનો સમાગમ થયો હોય તો તે છોડે નહીં. ત્યારે હરિશંકરભાઈએ પૂછ્યું જે, ‘એટલા જન્મ લેવરાવવા તે કરતાં એક જન્મે જ કેમ પાર પાડ્યું નહિ ?’ ત્યારે ઉત્તર કર્યો જે, ‘જ્ઞાન થયા વિના પાર પડે નહિ ને મોટા તો એક જન્મે જ જ્ઞાન આપે, પણ માને નહીં.’ ત્યાં દૃષ્ટાંત દીધું જે, ‘એક હરિભક્ત ઉપર અમારે તમારા જેટલું જ હેત હતું, પણ મારું માન્યું નહિ ને ફરી ઘર કર્યું.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

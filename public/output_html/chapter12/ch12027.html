@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ત્યાગી થયો ને અંતરમાં - Tyagi thayo ne antarma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tyagi thayo ne antarma</h1>
+                <div class="gujarati-title">ત્યાગી થયો ને અંતરમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 27</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(27) tyāgī thayo ne aṃtaramāṃ śāṃti na thaī ke ṭāḍhuṃ na thayuṃ, tyāre śuṃ kamāṇā? tyāgī thayā ne gṛhastha karatāṃ paṇa bhāre padārtha rākhyā te tyāgī nahi paṇa rāgī, māṭe rāgīno māraga judo che. tyāgīmāṃ sukha hoya te rāgīmāṃ na hoya ne rāgīmāṃ hoya te tyāgīmāṃ na hoya; māṭe vicāra nahi hoya to bagaḍī jāśe ne padārtha vaḍe sukha manāśe, ne arthī doṣān na paśyati | artha:- lālacu māṇasa viṣayonā doṣane joto nathī. ema ācārya ke evā gṛhastha mahobate nahi kahe. te bhagavadānaṃdasvāmīne be gāḍāṃ ne daharānaṃdasvāmīne eka gāḍuṃ pustaka hatāṃ, paṇa aṃtare sukha ke śāṃti na thaī; māṭe pustake ke cele karīne sukha thāya nahi. ā maṃdira ne padārtha che te tattvajijñāsāne arthe che paṇa te ja pradhānapaṇe thaī gayāṃ; tyāre bhagavāna kema rājī thāśe ?@ 1 dhāro= rītirivāja, prathā, paddhati.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(27) ત્યાગી થયો ને અંતરમાં શાંતિ ન થઈ કે ટાઢું ન થયું, ત્યારે શું કમાણા? ત્યાગી થયા ને ગૃહસ્થ કરતાં પણ ભારે પદાર્થ રાખ્યા તે ત્યાગી નહિ પણ રાગી, માટે રાગીનો મારગ જુદો છે. ત્યાગીમાં સુખ હોય તે રાગીમાં ન હોય ને રાગીમાં હોય તે ત્યાગીમાં ન હોય; માટે વિચાર નહિ હોય તો બગડી જાશે ને પદાર્થ વડે સુખ મનાશે, ને અર્થી દોષાન્ ન પશ્યતિ । અર્થ:- લાલચુ માણસ વિષયોના દોષને જોતો નથી. એમ આચાર્ય કે એવા ગૃહસ્થ મહોબતે નહિ કહે. તે ભગવદાનંદસ્વામીને બે ગાડાં ને દહરાનંદસ્વામીને એક ગાડું પુસ્તક હતાં, પણ અંતરે સુખ કે શાંતિ ન થઈ; માટે પુસ્તકે કે ચેલે કરીને સુખ થાય નહિ. આ મંદિર ને પદાર્થ છે તે તત્ત્વજિજ્ઞાસાને અર્થે છે પણ તે જ પ્રધાનપણે થઈ ગયાં; ત્યારે ભગવાન કેમ રાજી થાશે ?@ 1 ધારો= રીતિરિવાજ, પ્રથા, પદ્ધતિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12026.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Hanumanjie malana parama</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12028.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj keva chhe ? </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '27');
+            localStorage.setItem('lastVisitedVatFile', 'ch12027.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

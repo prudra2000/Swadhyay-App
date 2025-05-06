@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેઠ વદિ 9મી ને - Jeth vadi 9mi ne </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jeth vadi 9mi ne </h1>
+                <div class="gujarati-title">જેઠ વદિ 9મી ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 72</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(72) jeṭha vadi 9mī ne śanivāranī aradhī rātre manajībhāīe pūchyuṃ je, ‘satsaṃgamāṃ moṭāī konī samajavī ?’ tyāre svāmīe uttara karyo je, ‘āpaṇā satsaṃgamāṃ upāsanā jene vahelī sulabha prayāsa vinā samajāya ne ghaṇāne upāsanā karāve tenī moṭāī che.’ te upara vāta karī je, ‘parvatabhāīne rāmānaṃdasvāmī chatāṃ mahārājanāṃ darśanathī ja sarvoparī niśrcaya thaī gayo ne bījāne upāsanānuṃ ṭhekāṇuṃ nahotuṃ. te keṭalāka bhagavānanī mūrtimāṃ māyā samajatā hatā ne keṭalāka śrīkṛṣṇa ane bījā avatāra sarakhā samajatā hatā; ne keṭalāka śrīkṛṣṇane sarvoparī samajatā hatā. ne mahārājanī vāta to thātī ja nahi, tethī barābara samajatā nahi; śuka-nāradanā avatāra jevā samajatā hatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(72) જેઠ વદિ 9મી ને શનિવારની અરધી રાત્રે મનજીભાઈએ પૂછ્યું જે, ‘સત્સંગમાં મોટાઈ કોની સમજવી ?’ ત્યારે સ્વામીએ ઉત્તર કર્યો જે, ‘આપણા સત્સંગમાં ઉપાસના જેને વહેલી સુલભ પ્રયાસ વિના સમજાય ને ઘણાને ઉપાસના કરાવે તેની મોટાઈ છે.’ તે ઉપર વાત કરી જે, ‘પર્વતભાઈને રામાનંદસ્વામી છતાં મહારાજનાં દર્શનથી જ સર્વોપરી નિશ્ર્ચય થઈ ગયો ને બીજાને ઉપાસનાનું ઠેકાણું નહોતું. તે કેટલાક ભગવાનની મૂર્તિમાં માયા સમજતા હતા ને કેટલાક શ્રીકૃષ્ણ અને બીજા અવતાર સરખા સમજતા હતા; ને કેટલાક શ્રીકૃષ્ણને સર્વોપરી સમજતા હતા. ને મહારાજની વાત તો થાતી જ નહિ, તેથી બરાબર સમજતા નહિ; શુક-નારદના અવતાર જેવા સમજતા હતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5071.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nathu patele vadima puchhyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5073.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jeth vadi 10mi ne divase</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '72');
+            localStorage.setItem('lastVisitedVatFile', 'ch5072.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

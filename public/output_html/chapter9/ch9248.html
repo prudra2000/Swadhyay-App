@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવા સાધુમાં બંધાવું - Ava sadhuma bandhavu </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ava sadhuma bandhavu </h1>
+                <div class="gujarati-title">આવા સાધુમાં બંધાવું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 248</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(248) āvā sādhumāṃ baṃdhāvuṃ ne ema na thāya to niyamamāṃ rahīne paḍī rahevuṃ te paṇa ṭhīka che. badhī vāta joī tapāsīne rukmiṇīnī peṭhe bhagavānane ja varavuṃ ne emāṃ vaḻagavuṃ. āgniṃdhra jevāno saṃga thāya to dahāḍe-dahāḍe viṣayamāṃ coṃṭātuṃ jāvāya ne śukajī jevāno saṃga hoya to ūkhaḍāya. saṃsāramāṃ daśa chokarāṃ hoya to paṇa tene paraṇāvyā upara najara hoya, paṇa temāṃthī ekeya tyāgī thāya to na game; kāṃ je, pote paraṇelo che. māṭe jevī vidyā potānā haiyāmāṃ hoya tevī vidyā bījāne bhaṇāve. nāḍīomāṃ viṣayanā pāsa lāgī gayā che paṇa ā samāgama karatāṃ karatāṃ jhīṇābhāīnī peṭhe sārā viṣaya haśe te paṇa bhūṃḍā thaī jāśe. jema kacaro vaḻage tema ā jīvane deha vaḻagyo che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(248) આવા સાધુમાં બંધાવું ને એમ ન થાય તો નિયમમાં રહીને પડી રહેવું તે પણ ઠીક છે. બધી વાત જોઈ તપાસીને રુક્મિણીની પેઠે ભગવાનને જ વરવું ને એમાં વળગવું. આગ્નિંધ્ર જેવાનો સંગ થાય તો દહાડે-દહાડે વિષયમાં ચોંટાતું જાવાય ને શુકજી જેવાનો સંગ હોય તો ઊખડાય. સંસારમાં દશ છોકરાં હોય તો પણ તેને પરણાવ્યા ઉપર નજર હોય, પણ તેમાંથી એકેય ત્યાગી થાય તો ન ગમે; કાં જે, પોતે પરણેલો છે. માટે જેવી વિદ્યા પોતાના હૈયામાં હોય તેવી વિદ્યા બીજાને ભણાવે. નાડીઓમાં વિષયના પાસ લાગી ગયા છે પણ આ સમાગમ કરતાં કરતાં ઝીણાભાઈની પેઠે સારા વિષય હશે તે પણ ભૂંડા થઈ જાશે. જેમ કચરો વળગે તેમ આ જીવને દેહ વળગ્યો છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9247.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jeno jiv vishayathi vasita</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9249.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Paranava jaya chhe te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '248');
+            localStorage.setItem('lastVisitedVatFile', 'ch9248.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>છેલ્લાનું 24મું વચનામૃત - Chhellanu 24mu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chhellanu 24mu vachanamrut</h1>
+                <div class="gujarati-title">છેલ્લાનું 24મું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 291</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(291) chellānuṃ 24muṃ vacanāmṛta vaṃcāvīne kahyuṃ je, śravaṇa vinā jñāna na thāya ne jñāna thāya tyāre to sarve sūjhavā māṃḍe je, ā karavā yogya ne ā karavā yogya nathī, paṇa jene jñāna nathī tene kāṃī khabara nathī. jema āṃdhaḻo hoya tene cālyānī khabara nathī; paṇa je dekhato hoya tene khabara paḍe kharī, māṭe jñāna vinā to āṃdhaḻā che.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(291) છેલ્લાનું 24મું વચનામૃત વંચાવીને કહ્યું જે, શ્રવણ વિના જ્ઞાન ન થાય ને જ્ઞાન થાય ત્યારે તો સર્વે સૂઝવા માંડે જે, આ કરવા યોગ્ય ને આ કરવા યોગ્ય નથી, પણ જેને જ્ઞાન નથી તેને કાંઈ ખબર નથી. જેમ આંધળો હોય તેને ચાલ્યાની ખબર નથી; પણ જે દેખતો હોય તેને ખબર પડે ખરી, માટે જ્ઞાન વિના તો આંધળા છે.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11290.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Parvatabhaie Maharajne kahyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11292.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koino deh rahevano nathi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '291');
+            localStorage.setItem('lastVisitedVatFile', 'ch11291.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

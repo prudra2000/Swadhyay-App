@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દીવ ગામનો વણિક શેઠ - Div gamno vanik sheth</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Div gamno vanik sheth</h1>
+                <div class="gujarati-title">દીવ ગામનો વણિક શેઠ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 5</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(5) dīva gāmano vaṇika śeṭha saṃgha kāḍhīne dvārakānī jātrā karavā jāto (jato) hato tene lojapuramāṃ śrīrāmānaṃdasvāmī maḻyā, tene camatkāra dekhāḍyo, teṇe karīne tene bhagavānapaṇāno rāmānaṃdasvāmīne viśe niśrcaya thayo. pachī te bhakta pācho dīva gayo ne pachī ghaṇā dahāḍe pācho darśane āvyo. tyāre rāmānaṃdasvāmī to deha mūkī dhāmamāṃ gayelā. pachī te bhakta śrījīmahārāja pāse āvīne beṭho; tyāre mahārāja bolyā je, “tamāre kāṃī saṃśaya hoya to ā bāḻaka lakhamaṇa samādhivāḻo che tene pūcho.” tyāre temaṇe je praśrna pūchyā te praśrnanā uttara samādhivāḻā bāḻake karyā. ema bāḻaka dvārā rāmānaṃdasvāmīnā jevo śrījīmahārāje camatkāra jaṇāvyo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૫) દીવ ગામનો વણિક શેઠ સંઘ કાઢીને દ્વારકાની જાત્રા કરવા જાતો (જતો) હતો તેને લોજપુરમાં શ્રીરામાનંદસ્વામી મળ્યા, તેને ચમત્કાર દેખાડ્યો, તેણે કરીને તેને ભગવાનપણાનો રામાનંદસ્વામીને વિશે નિશ્ર્ચય થયો. પછી તે ભક્ત પાછો દીવ ગયો ને પછી ઘણા દહાડે પાછો દર્શને આવ્યો. ત્યારે રામાનંદસ્વામી તો દેહ મૂકી ધામમાં ગયેલા. પછી તે ભક્ત શ્રીજીમહારાજ પાસે આવીને બેઠો; ત્યારે મહારાજ બોલ્યા જે, “તમારે કાંઈ સંશય હોય તો આ બાળક લખમણ સમાધિવાળો છે તેને પૂછો.” ત્યારે તેમણે જે પ્રશ્ર્ન પૂછ્યા તે પ્રશ્ર્નના ઉત્તર સમાધિવાળા બાળકે કર્યા. એમ બાળક દ્વારા રામાનંદસ્વામીના જેવો શ્રીજીમહારાજે ચમત્કાર જણાવ્યો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7004.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharajne lojma </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7006.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Agatraima hal mandir chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '5');
+            localStorage.setItem('lastVisitedVatFile', 'ch7005.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

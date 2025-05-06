@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ખાવા દાણા મળ્યા - Khava dana malya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Khava dana malya</h1>
+                <div class="gujarati-title">ખાવા દાણા મળ્યા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 237</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(237) khāvā dāṇā maḻyā tyāre kalpanā karavī nahi ne ‘khodavo ḍuṃgara ne māravo uṃdara.’ te jīvane śera anna joīe te sāru keṭalāka kleśa bhogave che ne aganoterāmāṃ koīne bāḻyā paṇa nathī ne dā’ḍo-pāṇī paṇa karyuṃ nathī. māṭe āpaṇe koīmāṃ moha pāmavuṃ nahi ne roṭalā to satsaṃgīne maḻaśe. te vāṃse bījāne paṇa maḻaśe, paṇa bījāne to kāṃī khabara nathī. jema pāḍo māṃdaṇāmāṃ paḍyo hoya tema paḍyā che ne janma-maraṇanuṃ du:kha bhūlī gayā che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(237) ખાવા દાણા મળ્યા ત્યારે કલ્પના કરવી નહિ ને ‘ખોદવો ડુંગર ને મારવો ઉંદર.’ તે જીવને શેર અન્ન જોઈએ તે સારુ કેટલાક ક્લેશ ભોગવે છે ને અગનોતેરામાં કોઈને બાળ્યા પણ નથી ને દા’ડો-પાણી પણ કર્યું નથી. માટે આપણે કોઈમાં મોહ પામવું નહિ ને રોટલા તો સત્સંગીને મળશે. તે વાંસે બીજાને પણ મળશે, પણ બીજાને તો કાંઈ ખબર નથી. જેમ પાડો માંદણામાં પડ્યો હોય તેમ પડ્યા છે ને જન્મ-મરણનું દુ:ખ ભૂલી ગયા છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15236.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kal apanne chhetarato</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15238.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pakshapat, ladavu, maravu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '237');
+            localStorage.setItem('lastVisitedVatFile', 'ch15237.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

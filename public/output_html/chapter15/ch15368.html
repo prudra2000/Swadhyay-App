@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વે કર્યું ભગવાનનું - Sarve karyu bhagavannu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarve karyu bhagavannu</h1>
+                <div class="gujarati-title">સર્વે કર્યું ભગવાનનું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 368</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(368) sarve karyuṃ bhagavānanuṃ thāya che. te vilāyatamāṃ rū baḻī gayuṃ ne āṃī rūpiyā cālyā āve che, te satsaṃga upara mahārājanī dṛṣṭi che. śikṣāpatrī pramāṇe bolavuṃ, ūṭhavuṃ ne cālavuṃ. pachī traṇa prakāranā kusaṃganāṃ rūpa karyāṃ je, manamāṃ khoṭā ghāṭa thāya te aṃtarano kusaṃga ne kusaṃgīno saṃga thāya te bahārano kusaṃga ne vartamāna na paḻe te satsaṃgano kusaṃga. gore bāīnāṃ ghareṇāṃ dekhī ne māravāno vicāra karyo. vāṃkāneramāṃ bhāie benane ghareṇā sāru māravā māṃḍī, paṇa eṭalāmāṃ koī āvyuṃ teṇe mukāvī. māṭe śikṣāpatrī pramāṇe vartaśo to ja sāruṃ raheśe. 1 dāṇalīlā= gopīo pāse dāṇa levānī kṛṣṇe karelī līlā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(368) સર્વે કર્યું ભગવાનનું થાય છે. તે વિલાયતમાં રૂ બળી ગયું ને આંઈ રૂપિયા ચાલ્યા આવે છે, તે સત્સંગ ઉપર મહારાજની દૃષ્ટિ છે. શિક્ષાપત્રી પ્રમાણે બોલવું, ઊઠવું ને ચાલવું. પછી ત્રણ પ્રકારના કુસંગનાં રૂપ કર્યાં જે, મનમાં ખોટા ઘાટ થાય તે અંતરનો કુસંગ ને કુસંગીનો સંગ થાય તે બહારનો કુસંગ ને વર્તમાન ન પળે તે સત્સંગનો કુસંગ. ગોરે બાઈનાં ઘરેણાં દેખી ને મારવાનો વિચાર કર્યો. વાંકાનેરમાં ભાઇએ બેનને ઘરેણા સારુ મારવા માંડી, પણ એટલામાં કોઈ આવ્યું તેણે મુકાવી. માટે શિક્ષાપત્રી પ્રમાણે વર્તશો તો જ સારું રહેશે. 1 દાણલીલા= ગોપીઓ પાસે દાણ લેવાની કૃષ્ણે કરેલી લીલા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15367.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satsangma atmabuddhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15369.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje terethi kagal</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '368');
+            localStorage.setItem('lastVisitedVatFile', 'ch15368.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

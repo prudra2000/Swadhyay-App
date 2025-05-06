@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નારદજી અક્ષરધામમાં - Naradji akshardhamma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Naradji akshardhamma</h1>
+                <div class="gujarati-title">નારદજી અક્ષરધામમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 307</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(307) nāradajī akṣaradhāmamāṃ gayā hatā tathā śrvetadvīpanā mukta paṇa akṣaradhāmamāṃ jāya che; te akṣara to āpaṇā gṃrathamāṃ golokane madhye je akṣara lakhyuṃ te che. ne e sarvene upāsanā paṇa e dhāmanā bhagavānanī che. paṇa ā mūrtimāna mahārājanī upāsanā koīne nathī ne mūḻaakṣaranī to koīne khabara paṇa nathī ne puruṣottamanī upāsanā to akṣaradhāmanā muktane che tathā ā pṛthvī upara āpaṇane che, vacce rahyā tene koīne nathī. ā phere nāradajī vagere sarvenuṃ pāra paḍyuṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(307) નારદજી અક્ષરધામમાં ગયા હતા તથા શ્ર્વેતદ્વીપના મુક્ત પણ અક્ષરધામમાં જાય છે; તે અક્ષર તો આપણા ગ્ંરથમાં ગોલોકને મધ્યે જે અક્ષર લખ્યું તે છે. ને એ સર્વેને ઉપાસના પણ એ ધામના ભગવાનની છે. પણ આ મૂર્તિમાન મહારાજની ઉપાસના કોઈને નથી ને મૂળઅક્ષરની તો કોઈને ખબર પણ નથી ને પુરુષોત્તમની ઉપાસના તો અક્ષરધામના મુક્તને છે તથા આ પૃથ્વી ઉપર આપણને છે, વચ્ચે રહ્યા તેને કોઈને નથી. આ ફેરે નારદજી વગેરે સર્વેનું પાર પડ્યું છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5306.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kekalshrungine agnan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5308.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ghanek punye karine aa</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '307');
+            localStorage.setItem('lastVisitedVatFile', 'ch5307.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

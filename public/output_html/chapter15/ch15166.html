@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ખપ ને શ્રદ્ધાવાળા ઉપર  - Khap ne shraddhavala upara</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Khap ne shraddhavala upara</h1>
+                <div class="gujarati-title">ખપ ને શ્રદ્ધાવાળા ઉપર </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 166</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(166) khapa ne śraddhāvāḻā upara kuṃkāvāvavāḻā pūjā bhaktanī vāta karī. te kuṃkāvāvamāṃ mahetāe ‘satsaṃga mūka, to gāmamāṃ rahe.’ ema kahyuṃ. pachī te to, te gāmano tyāga karīne rāmodamāṃ jaīne rahyā. tyāṃ paṇa keṭalākane satsaṃgī karyā ne pāṇaśīṇāvāḻā pūjā bhaktane tyāṃ ame ne kṛpānaṃdasvāmī jaīe tyāre aradhī rāta pachī sūve. nenapuravāḻā devajī bhaktanī vāta karī je, temane to nidrā paṇa ājñāmāṃ ne pūrve arjuna tathā lakṣmaṇajīe nidrā jītī hatī. kṛpānaṃdasvāmī paṇa traṇa mahinā sudhī ūṃghyā nahi ne bhāīsvāmī, aḍaga akhaṃḍānaṃdasvāmī, kṛṣṇānaṃdasvāmī emanī beṭhaka jevī koīnī beṭhaka nahi te śuṃ je, āsana to kare ja nahi. ema khapa tathā śraddhāvāḻānī vāta che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(166) ખપ ને શ્રદ્ધાવાળા ઉપર કુંકાવાવવાળા પૂજા ભક્તની વાત કરી. તે કુંકાવાવમાં મહેતાએ ‘સત્સંગ મૂક, તો ગામમાં રહે.’ એમ કહ્યું. પછી તે તો, તે ગામનો ત્યાગ કરીને રામોદમાં જઈને રહ્યા. ત્યાં પણ કેટલાકને સત્સંગી કર્યા ને પાણશીણાવાળા પૂજા ભક્તને ત્યાં અમે ને કૃપાનંદસ્વામી જઈએ ત્યારે અરધી રાત પછી સૂવે. નેનપુરવાળા દેવજી ભક્તની વાત કરી જે, તેમને તો નિદ્રા પણ આજ્ઞામાં ને પૂર્વે અર્જુન તથા લક્ષ્મણજીએ નિદ્રા જીતી હતી. કૃપાનંદસ્વામી પણ ત્રણ મહિના સુધી ઊંઘ્યા નહિ ને ભાઈસ્વામી, અડગ અખંડાનંદસ્વામી, કૃષ્ણાનંદસ્વામી એમની બેઠક જેવી કોઈની બેઠક નહિ તે શું જે, આસન તો કરે જ નહિ. એમ ખપ તથા શ્રદ્ધાવાળાની વાત છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15165.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Adag akhandanandswamine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15167.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Potana kalyanma vighn</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '166');
+            localStorage.setItem('lastVisitedVatFile', 'ch15166.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

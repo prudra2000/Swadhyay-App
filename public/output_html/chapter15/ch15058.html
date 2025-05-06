@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કટાક્ષે યુક્ત વચન - Katakshe yukt vachan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Katakshe yukt vachan</h1>
+                <div class="gujarati-title">કટાક્ષે યુક્ત વચન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 58</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(58) kaṭākṣe yukta vacana bolavuṃ nahi. tema krodhe yukta paṇa na bolavuṃ. je mokṣane mārage cāle tene e badhā saṃtāpa paḍyā mūkīne prabhu bhajavā. te saṃskāra lagāḍyā vinā prabhu na bhajāya. brāhmaṇane janoī daīne saṃskāra lagāḍe che. mātā-pitānā dehe karīne prabhu bhajāya nahi, paṇa śrutinā śabda, te śabdanā dehe karīne prabhu bhajāya ne te vinā to dāṃta paḍī gayā, avayava paṇa pharī gayā paṇa haju jīva to bhagavāna sāmo na vaḻyo ane koīnā hāthamāṃ , koīnā hāthamāṃ , koīnā hāthamāṃ kuhāḍo, koīnā hāthamāṃ kalama che, paṇa koīnā hāthamāṃ māḻā nathī.@ 1 paroṇo= āravāḻī lāṃbī lākaḍī. $2 vāṃsalo= lākaḍāṃ cholavānuṃ sutārī ojāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(58) કટાક્ષે યુક્ત વચન બોલવું નહિ. તેમ ક્રોધે યુક્ત પણ ન બોલવું. જે મોક્ષને મારગે ચાલે તેને એ બધા સંતાપ પડ્યા મૂકીને પ્રભુ ભજવા. તે સંસ્કાર લગાડ્યા વિના પ્રભુ ન ભજાય. બ્રાહ્મણને જનોઈ દઈને સંસ્કાર લગાડે છે. માતા-પિતાના દેહે કરીને પ્રભુ ભજાય નહિ, પણ શ્રુતિના શબ્દ, તે શબ્દના દેહે કરીને પ્રભુ ભજાય ને તે વિના તો દાંત પડી ગયા, અવયવ પણ ફરી ગયા પણ હજુ જીવ તો ભગવાન સામો ન વળ્યો અને કોઈના હાથમાં , કોઈના હાથમાં , કોઈના હાથમાં કુહાડો, કોઈના હાથમાં કલમ છે, પણ કોઈના હાથમાં માળા નથી.@ 1 પરોણો= આરવાળી લાંબી લાકડી. $2 વાંસલો= લાકડાં છોલવાનું સુતારી ઓજાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15057.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apano jiv bhagavanma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15059.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Je shaherma rahe tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '58');
+            localStorage.setItem('lastVisitedVatFile', 'ch15058.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

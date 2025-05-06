@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રોટલો કરીને ખાવો તે - Rotalo karine khavo te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rotalo karine khavo te</h1>
+                <div class="gujarati-title">રોટલો કરીને ખાવો તે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 7</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(7) roṭalo karīne khāvo te māthākūṭa bhāre che ne jagatamāṃ to koī māvatarane roṭalā nathī āpatuṃ. mahārāje to kahyuṃ je, ‘samāgama karavā raheśe tene ame bājaro āpaśuṃ.’ pachī badhāyane bājaro āpe te sau māṃḍa māṃḍa be roṭalānuṃ daḻe ne chāṇāṃ vīṇī rāṃdhīne jame. te daḻatāṃ hāthamāṃ phoḍalā paḍyā. tyāre kahe, ‘dhanya che satsaṃgīne je loṭanā ṭopalā mūkī jāya che !’ pachī mahārājane kahyuṃ je, ‘āja satsaṃgīno mahimā jaṇāṇo !’ temāṃ kahevānuṃ e che je, roṭalānī garaja hoya to ā satsaṃga mukāya nahi. moṭānī dṛṣṭi to evī che je, bhalā, ā samāgamamāṃ rahyo che ne vātuṃ nathī samajātī; paṇa ā darśana thāya che te paṇa moṭī vāta che; paṇa jīvane aṃtaraśatru che te kāḍhī nākhe che. dehanuṃ, lokanuṃ ne indriyuṃnuṃ gamatuṃ maraḍe tenāthī āṃhīṃ rahevāya che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(7) રોટલો કરીને ખાવો તે માથાકૂટ ભારે છે ને જગતમાં તો કોઈ માવતરને રોટલા નથી આપતું. મહારાજે તો કહ્યું જે, ‘સમાગમ કરવા રહેશે તેને અમે બાજરો આપશું.’ પછી બધાયને બાજરો આપે તે સૌ માંડ માંડ બે રોટલાનું દળે ને છાણાં વીણી રાંધીને જમે. તે દળતાં હાથમાં ફોડલા પડ્યા. ત્યારે કહે, ‘ધન્ય છે સત્સંગીને જે લોટના ટોપલા મૂકી જાય છે !’ પછી મહારાજને કહ્યું જે, ‘આજ સત્સંગીનો મહિમા જણાણો !’ તેમાં કહેવાનું એ છે જે, રોટલાની ગરજ હોય તો આ સત્સંગ મુકાય નહિ. મોટાની દૃષ્ટિ તો એવી છે જે, ભલા, આ સમાગમમાં રહ્યો છે ને વાતું નથી સમજાતી; પણ આ દર્શન થાય છે તે પણ મોટી વાત છે; પણ જીવને અંતરશત્રુ છે તે કાઢી નાખે છે. દેહનું, લોકનું ને ઇન્દ્રિયુંનું ગમતું મરડે તેનાથી આંહીં રહેવાય છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14006.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Rupiya thava te to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14008.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Banka kila banayake</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '7');
+            localStorage.setItem('lastVisitedVatFile', 'ch14007.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

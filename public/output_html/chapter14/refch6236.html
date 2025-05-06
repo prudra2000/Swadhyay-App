@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(236) eka sādhu rāghavānaṃda tene paṇa tāḍapatramāṃ lakhela ‘bhāgavata’ vāṃcatāṃ āṃkhamāṃthī āṃsu paḍatāṃ ne māhātmya paṇa bahu jāṇato; paṇa mahārāje eka cīmaṭo līdho eṭale vimukha thaīne bhāgī gayo. juo e, tyāre ene koī vāra cīpaṭī nahi āvī hoya ? ne māvatare nahi bharyo hoya ? paṇa jñāna nahi tethī ema thayuṃ. māṭe divyane viśe to saṃśaya na ja thāya. paṇa manuṣyacaritra je saguṇa caritra tene viśe paṇa divyabhāva jaṇāya tyāre kharo bhakta kahevāya; kāṃ je, e to kartumakartum ne anyathākartum che. enī upara vaḻī śaṃkā śī (kaī) ? āma samaje tyāre cokhkhī svarūpaniṣṭhā kahevāya ne bījī kasara hoya to ṭaḻe; paṇa ā khāmī bhāṃge nahīṃ. te madhyanāṃ 13māṃ vacanāmṛtamāṃ kahyuṃ che tema samaje tyāre chūṭako che ne bījuṃ to hātha-paga kahevāya ne ā to māthuṃ kahevāya. māṭe ā kahyuṃ tema samajavuṃ te sāru evī rucivāḻā guru karavā ne evāṃ ja śāstra vāṃcavāṃ, ema karīne e siddha karavuṃ. 1 cīṃṭiyo= cīmaṭo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૩૬) એક સાધુ રાઘવાનંદ તેને પણ તાડપત્રમાં લખેલ ‘ભાગવત’ વાંચતાં આંખમાંથી આંસુ પડતાં ને માહાત્મ્ય પણ બહુ જાણતો; પણ મહારાજે એક ચીમટો લીધો એટલે વિમુખ થઈને ભાગી ગયો. જુઓ એ, ત્યારે એને કોઈ વાર ચીપટી નહિ આવી હોય ? ને માવતરે નહિ ભર્યો હોય ? પણ જ્ઞાન નહિ તેથી એમ થયું. માટે દિવ્યને વિશે તો સંશય ન જ થાય. પણ મનુષ્યચરિત્ર જે સગુણ ચરિત્ર તેને વિશે પણ દિવ્યભાવ જણાય ત્યારે ખરો ભક્ત કહેવાય; કાં જે, એ તો કર્તુમકર્તુમ્ ને અન્યથાકર્તુમ્ છે. એની ઉપર વળી શંકા શી (કઈ) ? આમ સમજે ત્યારે ચોખ્ખી સ્વરૂપનિષ્ઠા કહેવાય ને બીજી કસર હોય તો ટળે; પણ આ ખામી ભાંગે નહીં. તે મધ્યનાં ૧૩માં વચનામૃતમાં કહ્યું છે તેમ સમજે ત્યારે છૂટકો છે ને બીજું તો હાથ-પગ કહેવાય ને આ તો માથું કહેવાય. માટે આ કહ્યું તેમ સમજવું તે સારુ એવી રુચિવાળા ગુરુ કરવા ને એવાં જ શાસ્ત્ર વાંચવાં, એમ કરીને એ સિદ્ધ કરવું. 1 ચીંટિયો= ચીમટો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

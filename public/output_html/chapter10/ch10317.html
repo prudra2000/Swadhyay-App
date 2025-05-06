@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કાંઈક મૂંઝવણ આવે - Kaik munzavan ave</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kaik munzavan ave</h1>
+                <div class="gujarati-title">કાંઈક મૂંઝવણ આવે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 317</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(317) kāṃīka mūṃjhavaṇa āve tyāre bhagavāna sāmuṃ jovuṃ ne moṭā sādhune saṃbhāravā. $te ṭharavānuṃ ṭhāma bhagavāna ne ekāṃtika sādhu e be ja che. $bhāī je kāṃī karaśe te sukha thāśe; $aṇasamaje aṭapaṭu e lāge kharuṃ, $paṇa samajhīne juve to satya bhāse. dāsa0 $(kīrtanasāra saṃgraha : dvitīya bhāga-pāna -456/pada-3)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(317) કાંઈક મૂંઝવણ આવે ત્યારે ભગવાન સામું જોવું ને મોટા સાધુને સંભારવા. $તે ઠરવાનું ઠામ ભગવાન ને એકાંતિક સાધુ એ બે જ છે. $ભાઈ જે કાંઈ કરશે તે સુખ થાશે; $અણસમજે અટપટુ એ લાગે ખરું, $પણ સમઝીને જુવે તો સત્ય ભાસે. દાસ0 $(કીર્તનસાર સંગ્રહ : દ્વિતીય ભાગ-પાન -456/પદ-3)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10316.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ahi kasar talava</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10318.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Lobhiyane rupiyo bhangavo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '317');
+            localStorage.setItem('lastVisitedVatFile', 'ch10317.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

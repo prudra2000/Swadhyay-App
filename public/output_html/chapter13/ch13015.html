@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નૈમિષારણ્યનું વચનામૃત - Naimisharanyanu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Naimisharanyanu vachanamrut</h1>
+                <div class="gujarati-title">નૈમિષારણ્યનું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 15</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(15) naimiṣāraṇyanuṃ vacanāmṛta vaṃcāvyuṃ. temāṃ āvyuṃ je, phaḻa kāḍhī līdhuṃ hoya ne thothuṃ rahyuṃ hoya, te śuṃ ? to viṣayamāṃthī māla nīkaḻī gayo e phaḻa nīkaḻī gayuṃ kahevāya ne āṭalā viṣaya rākhyā che te deha rākhavā sāru rākhyā che ne keṭalākane to khararara ūḍī jaīe ema joīe chīe ne ema thāya je ghaḍīkamāṃ kema thātuṃ nathī? paṇa te ghaḍīkamāṃ thāya ema nathī ne āma jīvathī varatāya ema paṇa kyāṃ che ? te to bhagavānanī icchā evī che je, sarve avatāranā bhaktane guṇātīta karavā che ne kāraṇa dehathī nokhā karavā che. te upara indrane brahmahatyā pragaṭa vāmanajīthī ṭaḻī te vāta karī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(15) નૈમિષારણ્યનું વચનામૃત વંચાવ્યું. તેમાં આવ્યું જે, ફળ કાઢી લીધું હોય ને થોથું રહ્યું હોય, તે શું ? તો વિષયમાંથી માલ નીકળી ગયો એ ફળ નીકળી ગયું કહેવાય ને આટલા વિષય રાખ્યા છે તે દેહ રાખવા સારુ રાખ્યા છે ને કેટલાકને તો ખરરર ઊડી જઈએ એમ જોઈએ છીએ ને એમ થાય જે ઘડીકમાં કેમ થાતું નથી? પણ તે ઘડીકમાં થાય એમ નથી ને આમ જીવથી વરતાય એમ પણ ક્યાં છે ? તે તો ભગવાનની ઇચ્છા એવી છે જે, સર્વે અવતારના ભક્તને ગુણાતીત કરવા છે ને કારણ દેહથી નોખા કરવા છે. તે ઉપર ઇન્દ્રને બ્રહ્મહત્યા પ્રગટ વામનજીથી ટળી તે વાત કરી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13014.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek haribhaktne ame satsang</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13016.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa satsangma anant </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '15');
+            localStorage.setItem('lastVisitedVatFile', 'ch13015.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

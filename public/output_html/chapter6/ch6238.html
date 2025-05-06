@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક વાર સમૈયેથી આવ્યા - Ek var samaiyethi avya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek var samaiyethi avya</h1>
+                <div class="gujarati-title">એક વાર સમૈયેથી આવ્યા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 238</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(238) eka vāra samaiyethī āvyā ne māre vaṇathaḻī (vaṃthalī) kāgaḻa mokalavo hato, paṇa thoḍāṃ māṇasa te janāra koī nahi, pachī rāmadāsajīne kahyuṃ je, ‘tame jāo ne kāgaḻa kalyāṇabhāīne daīne āvajo; ne jate ne āvate akhaṃḍa bhajana karajo.’ pachī eṇe ema karyuṃ eṭale ene mūrtie sahita akhaṃḍa bhajana thāvā māṃḍyuṃ, ema thāya che. te $(śikṣāpatrī : śrloka 7) $artha : ā śikṣāpatrī lakhyānuṃ je kāraṇa che te sarve temaṇe ekāgra mane karīne dhāravuṃ ane ā śikṣāpatrī je ame lakhī che te sarvenā jīvanā hitanī karanārī che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૩૮) એક વાર સમૈયેથી આવ્યા ને મારે વણથળી (વંથલી) કાગળ મોકલવો હતો, પણ થોડાં માણસ તે જનાર કોઈ નહિ, પછી રામદાસજીને કહ્યું જે, ‘તમે જાઓ ને કાગળ કલ્યાણભાઈને દઈને આવજો; ને જતે ને આવતે અખંડ ભજન કરજો.’ પછી એણે એમ કર્યું એટલે એને મૂર્તિએ સહિત અખંડ ભજન થાવા માંડ્યું, એમ થાય છે. તે $(શિક્ષાપત્રી : શ્ર્લોક ૭) $અર્થ : આ શિક્ષાપત્રી લખ્યાનું જે કારણ છે તે સર્વે તેમણે એકાગ્ર મને કરીને ધારવું અને આ શિક્ષાપત્રી જે અમે લખી છે તે સર્વેના જીવના હિતની કરનારી છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6237.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jivne aa lok ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6239.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ekagr thaya vina kai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '238');
+            localStorage.setItem('lastVisitedVatFile', 'ch6238.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

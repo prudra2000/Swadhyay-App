@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેટલો મંદિરનો, આચાર્યનો - Jetalo mandirno, acharyno</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jetalo mandirno, acharyno</h1>
+                <div class="gujarati-title">જેટલો મંદિરનો, આચાર્યનો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 178</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(178) jeṭalo maṃdirano, ācāryano ke moṭā sādhuno potānā dehanā sukha māṭe avaguṇa āvaśe eṭaluṃ deha mūkavā same āḍuṃ āvaśe kema ke, adhikārī ane moṭā sādhune to mahārājanī yathārtha ājñā paḻāvavānuṃ tāna hoya ne, ‘koī ‘śikṣāpatrī’, ‘dharmāmṛta’ ne ‘niṣkāmaśuddhi’ nathī pāḻatuṃ.’ ema temane khabara paḍe tyāre tene satsaṃgī rākhavā daṃḍa de, ṭhapako de ne tevī sācī ājñā paḻāvavā māṭe kāṃī kahe, to ūlaṭo avaguṇa le, te mahārājano avaguṇa līdho ema thayuṃ; jethī te avaguṇa lenāranuṃ bhūṃḍuṃ thāya che. ne āja paṇa evā haśe tene aṃtare sukha nahi hoya. jñānanī ke sādhu samāgamanī upekṣā rākhīe to kāṃī na thāya. śatrunī upekṣā paṇa na karavī, ne śatru nāno na jāṇavo. ne have to ame jhājhuṃ kāṃī kahetā nathī paṇa je joḍa nathī bāṃdhatā te ṭhīka nathī karatā; te koī same naḍe, māṭe ame to kahīe chīe. āṭalā sabhāmāṃ beṭhā chīe temāṃ keṭalāka bhagavānane saṃbhāratā haśe, te kema kaḻāya ? te upara bolyā je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(178) જેટલો મંદિરનો, આચાર્યનો કે મોટા સાધુનો પોતાના દેહના સુખ માટે અવગુણ આવશે એટલું દેહ મૂકવા સમે આડું આવશે કેમ કે, અધિકારી અને મોટા સાધુને તો મહારાજની યથાર્થ આજ્ઞા પળાવવાનું તાન હોય ને, ‘કોઈ ‘શિક્ષાપત્રી’, ‘ધર્મામૃત’ ને ‘નિષ્કામશુદ્ધિ’ નથી પાળતું.’ એમ તેમને ખબર પડે ત્યારે તેને સત્સંગી રાખવા દંડ દે, ઠપકો દે ને તેવી સાચી આજ્ઞા પળાવવા માટે કાંઈ કહે, તો ઊલટો અવગુણ લે, તે મહારાજનો અવગુણ લીધો એમ થયું; જેથી તે અવગુણ લેનારનું ભૂંડું થાય છે. ને આજ પણ એવા હશે તેને અંતરે સુખ નહિ હોય. જ્ઞાનની કે સાધુ સમાગમની ઉપેક્ષા રાખીએ તો કાંઈ ન થાય. શત્રુની ઉપેક્ષા પણ ન કરવી, ને શત્રુ નાનો ન જાણવો. ને હવે તો અમે ઝાઝું કાંઈ કહેતા નથી પણ જે જોડ નથી બાંધતા તે ઠીક નથી કરતા; તે કોઈ સમે નડે, માટે અમે તો કહીએ છીએ. આટલા સભામાં બેઠા છીએ તેમાં કેટલાક ભગવાનને સંભારતા હશે, તે કેમ કળાય ? તે ઉપર બોલ્યા જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11177.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sattvika sevya vina</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11179.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Moksha na sudharyo tyare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '178');
+            localStorage.setItem('lastVisitedVatFile', 'ch11178.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

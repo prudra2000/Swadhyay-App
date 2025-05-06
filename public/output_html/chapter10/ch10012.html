@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હજારો ક્રિયા કરીને  - Hajaro kriya karine </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Hajaro kriya karine </h1>
+                <div class="gujarati-title">હજારો ક્રિયા કરીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 12</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(12) hajāro kriyā karīne mokṣa sudhāravo che ne e upara ja sarve ādara che. rājā-raṃka sarve śekhacallīnī peṭhe saṃkalparūpī thāṃbhalā māṃḍyā ja kare che. tyāre kāriyāṇīnā nathu paṭele pūchayuṃ je, ‘rāta-divasa āvā śabda saṃbhaḻāya che to paṇa jñāna kema nahi thātuṃ hoya ?’ eṭale svāmīe kahyuṃ je, ‘mahārājano je siddhāṃta che te tatkāḻa samajāya nahi; paṇa dhīre dhīre thātuṃ jāya che te juone, āṃhīṃ avāṇuṃ che te thoḍuṃ che ! gharano ūmaro to lokāloka jevaḍo che ! te vaḻoṭīne āṃhīṃ avāṇuṃ che te bhagavānanā svarūpanuṃ jñāna thayuṃ che, to avāṇuṃ che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(12) હજારો ક્રિયા કરીને મોક્ષ સુધારવો છે ને એ ઉપર જ સર્વે આદર છે. રાજા-રંક સર્વે શેખચલ્લીની પેઠે સંકલ્પરૂપી થાંભલા માંડ્યા જ કરે છે. ત્યારે કારિયાણીના નથુ પટેલે પૂછયું જે, ‘રાત-દિવસ આવા શબ્દ સંભળાય છે તો પણ જ્ઞાન કેમ નહિ થાતું હોય ?’ એટલે સ્વામીએ કહ્યું જે, ‘મહારાજનો જે સિદ્ધાંત છે તે તત્કાળ સમજાય નહિ; પણ ધીરે ધીરે થાતું જાય છે તે જુઓને, આંહીં અવાણું છે તે થોડું છે ! ઘરનો ઊમરો તો લોકાલોક જેવડો છે ! તે વળોટીને આંહીં અવાણું છે તે ભગવાનના સ્વરૂપનું જ્ઞાન થયું છે, તો અવાણું છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10011.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koina haiyama shantino</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10013.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Purvana aghata lagya hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '12');
+            localStorage.setItem('lastVisitedVatFile', 'ch10012.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગ આટલો વાતેથી  - Satsang atalo vatethi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsang atalo vatethi</h1>
+                <div class="gujarati-title">સત્સંગ આટલો વાતેથી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 263</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(263) satsaṃga āṭalo vātethī thayo che. ema mahārāje vātuṃ karavānuṃ pratipādana karyuṃ. te divasathī ame pragaṭa pramāṇa mahārājanā svarūpanī mahimānī vātuṃ karīe chīe. te mahārāje, rahyā tyāṃ sudhī vātuṃ ja karī che ane amo paṇa mahārājanī marajī pramāṇe vātuṃ karyā karīe chīe. te ame eṭaluṃ bolyā chīe te lakhanāra hoya to ā pṛthvī ne ākāśa badho bharāī jāya eṭalā śabda bolyā chīe. paṇa sāṃbhaḻanāra jevo pātra te pramāṇe grahaṇa kare che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(263) સત્સંગ આટલો વાતેથી થયો છે. એમ મહારાજે વાતું કરવાનું પ્રતિપાદન કર્યું. તે દિવસથી અમે પ્રગટ પ્રમાણ મહારાજના સ્વરૂપની મહિમાની વાતું કરીએ છીએ. તે મહારાજે, રહ્યા ત્યાં સુધી વાતું જ કરી છે અને અમો પણ મહારાજની મરજી પ્રમાણે વાતું કર્યા કરીએ છીએ. તે અમે એટલું બોલ્યા છીએ તે લખનાર હોય તો આ પૃથ્વી ને આકાશ બધો ભરાઈ જાય એટલા શબ્દ બોલ્યા છીએ. પણ સાંભળનાર જેવો પાત્ર તે પ્રમાણે ગ્રહણ કરે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16262.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan chhe te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16264.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">a manushydeh avyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '263');
+            localStorage.setItem('lastVisitedVatFile', 'ch16263.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રાજકોટના રાજાને એરંડિયું - Rajakotna rajane erandiyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rajakotna rajane erandiyu</h1>
+                <div class="gujarati-title">રાજકોટના રાજાને એરંડિયું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 191</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(191) rājakoṭanā rājāne eraṃḍiyuṃ khavāya, eka cāraṇane gāḍaranuṃ dūdha ne roṭalo ja khavāya, vaḍodarānā śāhukāra merāvajīne kamodanā cokhā na khavāya ne rūganātharāyane tāṃdaḻajānī bhājī ne roṭalo ja khavāya. ema jīva karmavaśa bhogave che, māṭe ājñā pramāṇe śraddhā sahita vrata ne tapa karavāṃ. tvacāne rākhīe to te bagaḍī jāya. mahārāja sabhā karatā tyāre jema bhāthāmāṃ tīra bharyāṃ hoya tema mahārāja āgaḻa sabhā bharātī temāṃ vāhara kyāṃthī le ? je vātamāṃ māla jaṇāya temāṃ du:kha dekhāya nahi. janāvarane ṭāḍha, taḍako ne varasāda māthe paḍe che, te sarve karmavaśa thaīne sahana kare che ane āpaṇane to ājñā che, vaḻī du:kha paṇa nathī, ema vicāravuṃ. 1 vāhara/vāharavuṃ /vī= pavana, havā, havā khāvī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(191) રાજકોટના રાજાને એરંડિયું ખવાય, એક ચારણને ગાડરનું દૂધ ને રોટલો જ ખવાય, વડોદરાના શાહુકાર મેરાવજીને કમોદના ચોખા ન ખવાય ને રૂગનાથરાયને તાંદળજાની ભાજી ને રોટલો જ ખવાય. એમ જીવ કર્મવશ ભોગવે છે, માટે આજ્ઞા પ્રમાણે શ્રદ્ધા સહિત વ્રત ને તપ કરવાં. ત્વચાને રાખીએ તો તે બગડી જાય. મહારાજ સભા કરતા ત્યારે જેમ ભાથામાં તીર ભર્યાં હોય તેમ મહારાજ આગળ સભા ભરાતી તેમાં વાહર ક્યાંથી લે ? જે વાતમાં માલ જણાય તેમાં દુ:ખ દેખાય નહિ. જનાવરને ટાઢ, તડકો ને વરસાદ માથે પડે છે, તે સર્વે કર્મવશ થઈને સહન કરે છે અને આપણને તો આજ્ઞા છે, વળી દુ:ખ પણ નથી, એમ વિચારવું. 1 વાહર/વાહરવું /વી= પવન, હવા, હવા ખાવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10190.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kathama biji kriya kare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10192.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek varase ghelama</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '191');
+            localStorage.setItem('lastVisitedVatFile', 'ch10191.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

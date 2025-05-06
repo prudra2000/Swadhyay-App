@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામ વાંઢિયામાં પરોક્ષ  - Gam vandhiyama paroksh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gam vandhiyama paroksh</h1>
+                <div class="gujarati-title">ગામ વાંઢિયામાં પરોક્ષ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 13</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(13) gāma vāṃḍhiyāmāṃ parokṣa avatāranā upāsaka devajī bhakta hatā. tene ghera śrījīmahārāja padhāryā. tyāre te bhakte pūchyuṃ je, ‘he mahārāja! tame kenā (konā) saṃta cho ?’ tyāre śrījīmahārāja bolyā je, ‘ame to svāminārāyaṇanā paramahaṃsa chīe. pachī te bhakta śrījīmahārājane page lāgīne beṭhā. pachī tene potānī dṛṣṭimātre karīne samādhi karāvīne akṣaradhāmane viśe anaṃta mukta, anaṃta avatāra ne anaṃta aiśrvarya teṇe sahita potānī mūrtinuṃ darśana karāvatā havā. ne potānī mūrtine viśe līna karāvīne potāno sarvoparī niśrcaya karāvatā havā. pachī mūḻajī brahmacārīe pūchyuṃ je, ‘he mahārāja ! ā bhakte śuṃ puṇya karyāṃ haśe je anaṃtakoṭi brahmāṃḍanā pati evā je tame te sākṣāt dayā karīne tene ghera padhāryā ne moṭā moṭā yogīne paṇa durlabha evī je akṣaradhāmanī samādhi te tame dayā karīne ā bhaktane karāvī ?’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૩) ગામ વાંઢિયામાં પરોક્ષ અવતારના ઉપાસક દેવજી ભક્ત હતા. તેને ઘેર શ્રીજીમહારાજ પધાર્યા. ત્યારે તે ભક્તે પૂછ્યું જે, ‘હે મહારાજ! તમે કેના (કોના) સંત છો ?’ ત્યારે શ્રીજીમહારાજ બોલ્યા જે, ‘અમે તો સ્વામિનારાયણના પરમહંસ છીએ. પછી તે ભક્ત શ્રીજીમહારાજને પગે લાગીને બેઠા. પછી તેને પોતાની દૃષ્ટિમાત્રે કરીને સમાધિ કરાવીને અક્ષરધામને વિશે અનંત મુક્ત, અનંત અવતાર ને અનંત ઐશ્ર્વર્ય તેણે સહિત પોતાની મૂર્તિનું દર્શન કરાવતા હવા. ને પોતાની મૂર્તિને વિશે લીન કરાવીને પોતાનો સર્વોપરી નિશ્ર્ચય કરાવતા હવા. પછી મૂળજી બ્રહ્મચારીએ પૂછ્યું જે, ‘હે મહારાજ ! આ ભક્તે શું પુણ્ય કર્યાં હશે જે અનંતકોટિ બ્રહ્માંડના પતિ એવા જે તમે તે સાક્ષાત્ દયા કરીને તેને ઘેર પધાર્યા ને મોટા મોટા યોગીને પણ દુર્લભ એવી જે અક્ષરધામની સમાધિ તે તમે દયા કરીને આ ભક્તને કરાવી ?’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7012.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek pathan zinzavadarni simma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7014.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Damodare nathu bhattne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '13');
+            localStorage.setItem('lastVisitedVatFile', 'ch7013.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

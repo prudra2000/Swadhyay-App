@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગમાં કેટલાક મુક્ત છે - Satsangma ketalak mukt chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsangma ketalak mukt chhe</h1>
+                <div class="gujarati-title">સત્સંગમાં કેટલાક મુક્ત છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 120</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(120) satsaṃgamāṃ keṭalāka mukta che. temāṃ keṭalāka bheda che. temāṃ keṭalāka mukta to maṃdira, meḍīo ne dharmaśāḻā karāve evā che ne keṭalāka khetara, vāḍī, bāgabagīcā kare evā che ne keṭalāka to dravyanuṃ upārjana kare evā hoya ne keṭalāka gāmagarāsa kare evā hoya e sarva prakāranā mukta to ghaṇāya; paṇa evā mukta thoḍā je, upāsanā, ājñā ne jñāna e traṇeya vātuṃ pravartāve, paṇa māla to e traṇa vātamāṃ ja che. ne dharma ne vairāgya to tenā peṭāmāṃ āvī jāya ne bījuṃ paṇa e traṇa vātanuṃ mukhyapaṇuṃ rākhe to saheje thāya; paṇa te pravartāve evā mukta thoḍā, paṇa māla to emāṃ ja che ne ā vāta vārevāre vicārīne niradhāra karyo che te kahyo.@ 1 upārjana= prāpti māṭenī kriyā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(120) સત્સંગમાં કેટલાક મુક્ત છે. તેમાં કેટલાક ભેદ છે. તેમાં કેટલાક મુક્ત તો મંદિર, મેડીઓ ને ધર્મશાળા કરાવે એવા છે ને કેટલાક ખેતર, વાડી, બાગબગીચા કરે એવા છે ને કેટલાક તો દ્રવ્યનું ઉપાર્જન કરે એવા હોય ને કેટલાક ગામગરાસ કરે એવા હોય એ સર્વ પ્રકારના મુક્ત તો ઘણાય; પણ એવા મુક્ત થોડા જે, ઉપાસના, આજ્ઞા ને જ્ઞાન એ ત્રણેય વાતું પ્રવર્તાવે, પણ માલ તો એ ત્રણ વાતમાં જ છે. ને ધર્મ ને વૈરાગ્ય તો તેના પેટામાં આવી જાય ને બીજું પણ એ ત્રણ વાતનું મુખ્યપણું રાખે તો સહેજે થાય; પણ તે પ્રવર્તાવે એવા મુક્ત થોડા, પણ માલ તો એમાં જ છે ને આ વાત વારેવારે વિચારીને નિરધાર કર્યો છે તે કહ્યો.@ 1 ઉપાર્જન= પ્રાપ્તિ માટેની ક્રિયા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2119.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharaj kaheta je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2121.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota sadhu sathe jiva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '120');
+            localStorage.setItem('lastVisitedVatFile', 'ch2120.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

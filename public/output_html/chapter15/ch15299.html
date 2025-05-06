@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આજે સંસ્કાર લાગ્યા છે  - Aje sanskar lagya chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aje sanskar lagya chhe</h1>
+                <div class="gujarati-title">આજે સંસ્કાર લાગ્યા છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 299</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(299) āje saṃskāra lāgyā che te pharī pharīne āṃhī āvavuṃ paḍaśe ne ema karaśuṃ tyāre ja śāṃti thāśe paṇa rūpiyā vaḍe śāṃti nahi thāya. te tamāre lākha lākha rūpiyā vadhe to teṇe karīne keṭalī pṛthvī ūṃcī caḍe ? ne paṃcāśī lākhanuṃ devāḻuṃ kāḍhyuṃ temāṃ keṭalī nīcī thaī ? māṭe ā saṃskāra lagāḍavā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(299) આજે સંસ્કાર લાગ્યા છે તે ફરી ફરીને આંહી આવવું પડશે ને એમ કરશું ત્યારે જ શાંતિ થાશે પણ રૂપિયા વડે શાંતિ નહિ થાય. તે તમારે લાખ લાખ રૂપિયા વધે તો તેણે કરીને કેટલી પૃથ્વી ઊંચી ચડે ? ને પંચાશી લાખનું દેવાળું કાઢ્યું તેમાં કેટલી નીચી થઈ ? માટે આ સંસ્કાર લગાડવા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15298.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gharmathi udas thaya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15300.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa vatu kevi chhe to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '299');
+            localStorage.setItem('lastVisitedVatFile', 'ch15299.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

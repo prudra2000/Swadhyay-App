@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સાધુના સમાગમથી  - Aa sadhuna samagamthi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa sadhuna samagamthi</h1>
+                <div class="gujarati-title">આ સાધુના સમાગમથી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 148</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(148) ā sādhunā samāgamathī je sthiti baṃdhāya che, teṇe karīne badhuṃ dhūḻa jevuṃ thaī jāya che ne bhagavānanā svarūpamāṃ koī rīte saṃśaya na thāya te paṇa samāgamathī ja thāya che. te rājā parīkṣitanā guṇa bahu moṭā kahyā, paṇa svarūpamāṃ saṃśaya thayo ne āja paṇa keṭalākane thāya che ne keṭalāka manuṣyo to mahārāja sāthe vaḍhyāṃ te āhīṃ najare dīṭhāṃ che ne dharmakuḻa āvyā mora (pahelā) mahārāja moṭī ḍośīne tyāṃ nitye thāḻa jamatā, paṇa gharmakuḻa āvyuṃ tyāre mahārāja temane rasoḍe jamatā eṭale ḍośīonā thāḻa āvatā baṃdha thayā. pachī te ḍośīo mahārāja sāthe vaḍhyāṃ je, āṭalā divasa jamyā ne have śuṃ thayuṃ ? ne jenī āgaḻa ūṃce sāde bolāya paṇa nahi temane vacana māryāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(148) આ સાધુના સમાગમથી જે સ્થિતિ બંધાય છે, તેણે કરીને બધું ધૂળ જેવું થઈ જાય છે ને ભગવાનના સ્વરૂપમાં કોઈ રીતે સંશય ન થાય તે પણ સમાગમથી જ થાય છે. તે રાજા પરીક્ષિતના ગુણ બહુ મોટા કહ્યા, પણ સ્વરૂપમાં સંશય થયો ને આજ પણ કેટલાકને થાય છે ને કેટલાક મનુષ્યો તો મહારાજ સાથે વઢ્યાં તે આહીં નજરે દીઠાં છે ને ધર્મકુળ આવ્યા મોર (પહેલા) મહારાજ મોટી ડોશીને ત્યાં નિત્યે થાળ જમતા, પણ ઘર્મકુળ આવ્યું ત્યારે મહારાજ તેમને રસોડે જમતા એટલે ડોશીઓના થાળ આવતા બંધ થયા. પછી તે ડોશીઓ મહારાજ સાથે વઢ્યાં જે, આટલા દિવસ જમ્યા ને હવે શું થયું ? ને જેની આગળ ઊંચે સાદે બોલાય પણ નહિ તેમને વચન માર્યાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15147.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Akhama ladu doshi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15149.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sarv vatunu em siddhant</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '148');
+            localStorage.setItem('lastVisitedVatFile', 'ch15148.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

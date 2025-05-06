@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વે અવતારના કારણ - Sarve avatarna karan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarve avatarna karan</h1>
+                <div class="gujarati-title">સર્વે અવતારના કારણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 21</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(21) sarve avatāranā kāraṇa puruṣottama śrī sahajānaṃdasvāmī che tenī ja upāsanāe karīne to ṭheṭha akṣaradhāmamāṃ jāya ne bījā avatāranī upāsanāe karīne to tenā dhāmamāṃ jāya. jema harivarṣa khaṃḍamāṃ prahlāda che te vāta bhāgavatamāṃ kahī che; jo rāmacaṃdrajī jevā mahārājane jāṇaśe to te vaikuṃṭhamāṃ jāśe ne śrīkṛṣṇa jevā jāṇaśe te gaulokamāṃ jāśe. temāṃya paṇa śuṃ? māṭe kyāṃya akṣaradhāmanā jevuṃ sukha nathī; te māṭe mahārājane puruṣottama jāṇavā. te ‘vacanāmṛta’māṃ paṇa kahyuṃ che je, “jevo mane jāṇaśe tevo to huṃ tene karīśa.” te puruṣottama jāṇave karīne akṣaradhāmamāṃ pūgāya te pācho nāśa na thāya ne bīje to prakṛtipuruṣa lagī kāḻa khāī jāya che. 1 rājāno umarāva= rājāno bhāyāta, śrīmaṃta, amīra, ināmadāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૧) સર્વે અવતારના કારણ પુરુષોત્તમ શ્રી સહજાનંદસ્વામી છે તેની જ ઉપાસનાએ કરીને તો ઠેઠ અક્ષરધામમાં જાય ને બીજા અવતારની ઉપાસનાએ કરીને તો તેના ધામમાં જાય. જેમ હરિવર્ષ ખંડમાં પ્રહ્લાદ છે તે વાત ભાગવતમાં કહી છે; જો રામચંદ્રજી જેવા મહારાજને જાણશે તો તે વૈકુંઠમાં જાશે ને શ્રીકૃષ્ણ જેવા જાણશે તે ગૌલોકમાં જાશે. તેમાંય પણ શું? માટે ક્યાંય અક્ષરધામના જેવું સુખ નથી; તે માટે મહારાજને પુરુષોત્તમ જાણવા. તે ‘વચનામૃત’માં પણ કહ્યું છે જે, “જેવો મને જાણશે તેવો તો હું તેને કરીશ.” તે પુરુષોત્તમ જાણવે કરીને અક્ષરધામમાં પૂગાય તે પાછો નાશ ન થાય ને બીજે તો પ્રકૃતિપુરુષ લગી કાળ ખાઈ જાય છે. 1 રાજાનો ઉમરાવ= રાજાનો ભાયાત, શ્રીમંત, અમીર, ઇનામદાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6020.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ame jayare ath varasna </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6022.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Swamie kahyu je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '21');
+            localStorage.setItem('lastVisitedVatFile', 'ch6021.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

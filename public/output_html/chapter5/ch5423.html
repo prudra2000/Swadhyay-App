@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ કહે - Maharaj kahe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj kahe</h1>
+                <div class="gujarati-title">મહારાજ કહે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 423</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(423) mahārāja kahe, ‘ame māṃdā thayā tyāre dhāma jovā gayā hatā; te devatānāṃ, ṛṣināṃ, puruṣanāṃ ādika sarve dhāmuṃ joyāṃ. pachī to akṣaradhāma eka ja gamyuṃ.’ e vātamāṃ potānuṃ svarūpa kahyuṃ ne dhāmanā sukhanī vistāre vāta karī. ne lakṣmīnārāyaṇa, naranārāyaṇa, vāsudevanārāyaṇa, śrīkṛṣṇa, pradhānapuruṣa ke prakṛtipuruṣa e sarve karatāṃ paṇa ā sarva prakāre adhika che ne emāṃ aṃtarajāmīpaṇuṃ che, ethī āmāṃ ati viśeṣa aṃtarajāmīpaṇuṃ che ne emāṃ aiśrvarya che ethī āmāṃ ati viśeṣa aiśrvarya che. ne śivajī jevā samartha te paṇa pārvatīne vaśa che ne āja to strīonuṃ gamatuṃ maraḍīne paṇa āṃhīṃ samāgama karavā āve che, māṭe ā adhika che. ne śrīkṛṣṇa bhagavāna to eka brahmāṃḍanī govāḻī kare che ne evāṃ to anaṃta brahmāṃḍa che ne anaṃta śrīkṛṣṇa che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(423) મહારાજ કહે, ‘અમે માંદા થયા ત્યારે ધામ જોવા ગયા હતા; તે દેવતાનાં, ઋષિનાં, પુરુષનાં આદિક સર્વે ધામું જોયાં. પછી તો અક્ષરધામ એક જ ગમ્યું.’ એ વાતમાં પોતાનું સ્વરૂપ કહ્યું ને ધામના સુખની વિસ્તારે વાત કરી. ને લક્ષ્મીનારાયણ, નરનારાયણ, વાસુદેવનારાયણ, શ્રીકૃષ્ણ, પ્રધાનપુરુષ કે પ્રકૃતિપુરુષ એ સર્વે કરતાં પણ આ સર્વ પ્રકારે અધિક છે ને એમાં અંતરજામીપણું છે, એથી આમાં અતિ વિશેષ અંતરજામીપણું છે ને એમાં ઐશ્ર્વર્ય છે એથી આમાં અતિ વિશેષ ઐશ્ર્વર્ય છે. ને શિવજી જેવા સમર્થ તે પણ પાર્વતીને વશ છે ને આજ તો સ્ત્રીઓનું ગમતું મરડીને પણ આંહીં સમાગમ કરવા આવે છે, માટે આ અધિક છે. ને શ્રીકૃષ્ણ ભગવાન તો એક બ્રહ્માંડની ગોવાળી કરે છે ને એવાં તો અનંત બ્રહ્માંડ છે ને અનંત શ્રીકૃષ્ણ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5422.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Janm thaya mor</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5424.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nivrut maragma tyagi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '423');
+            localStorage.setItem('lastVisitedVatFile', 'ch5423.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

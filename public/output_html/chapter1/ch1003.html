@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રહ્લાદજીએ નારાયણ સાથે - Prahladjie narayan sathe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Prahladjie narayan sathe</h1>
+                <div class="gujarati-title">પ્રહ્લાદજીએ નારાયણ સાથે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 3</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(3) prahlādajīe nārāyaṇa sāthe ghaṇā divasa yuddha karyuṃ paṇa bhagavāna jitāṇā nahi, pachī bhagavāne prahlādane kahyuṃ je, 'e yuddhe karīne to huṃ jitāuṃ evo nathī ne mane jītavāno upāya to e che je, jībhe karīne māruṃ bhajana karavuṃ ne manamāṃ māruṃ ciṃtavana karavuṃ ne netramāṃ paṇa mārī mūrti rākhavī. e prakāre niraṃtara mārī smṛti karavī.'</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(3) પ્રહ્લાદજીએ નારાયણ સાથે ઘણા દિવસ યુદ્ધ કર્યું પણ ભગવાન જિતાણા નહિ, પછી ભગવાને પ્રહ્લાદને કહ્યું જે, 'એ યુદ્ધે કરીને તો હું જિતાઉં એવો નથી ને મને જીતવાનો ઉપાય તો એ છે જે, જીભે કરીને મારું ભજન કરવું ને મનમાં મારું ચિંતવન કરવું ને નેત્રમાં પણ મારી મૂર્તિ રાખવી. એ પ્રકારે નિરંતર મારી સ્મૃતિ કરવી.'</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1002.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sankhya vichar karava shikhavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1004.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanni motai jena</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '3');
+            localStorage.setItem('lastVisitedVatFile', 'ch1003.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

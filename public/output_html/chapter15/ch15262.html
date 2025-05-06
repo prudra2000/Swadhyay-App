@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બૂંગણ ઉપર બેસારીને  - Bungan upar besarine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bungan upar besarine</h1>
+                <div class="gujarati-title">બૂંગણ ઉપર બેસારીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 262</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(262) upara besārīne jamāḍīe temāṃ kāraso nahi, paṇa svabhāva khodīe to kāraso paḍe. jhājhuṃ kare che ne rāte jāge che. thoḍuṃ kare che ne rāte vahelā sūī rahe che. ema kāḻaje hātha nākhīe te phāve nahi. bāīo kaheśe je, ‘āvo narasiṃha mahetā,’ tyāre bhāīo kaheśe je, ‘āvo mīrābāī.’ ema sāmasāmā vakhāṇa kare temāṃ śuṃ pāke ? kahye kāṃī thāya nahi.@ 1 būṃgaṇa= gāḍāmāṃ pātharavānī moda, moṭī śetaraṃjī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(262) ઉપર બેસારીને જમાડીએ તેમાં કારસો નહિ, પણ સ્વભાવ ખોદીએ તો કારસો પડે. ઝાઝું કરે છે ને રાતે જાગે છે. થોડું કરે છે ને રાતે વહેલા સૂઈ રહે છે. એમ કાળજે હાથ નાખીએ તે ફાવે નહિ. બાઈઓ કહેશે જે, ‘આવો નરસિંહ મહેતા,’ ત્યારે ભાઈઓ કહેશે જે, ‘આવો મીરાબાઈ.’ એમ સામસામા વખાણ કરે તેમાં શું પાકે ? કહ્યે કાંઈ થાય નહિ.@ 1 બૂંગણ= ગાડામાં પાથરવાની મોદ, મોટી શેતરંજી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15261.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Buddhina to paisa bese</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15263.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa gnan thayu chhe te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '262');
+            localStorage.setItem('lastVisitedVatFile', 'ch15262.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

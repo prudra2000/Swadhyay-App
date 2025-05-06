@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આજ ભગવાન અક્ષરધામ - Aaj bhagavan akshardham </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aaj bhagavan akshardham </h1>
+                <div class="gujarati-title">આજ ભગવાન અક્ષરધામ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 222</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(222) āja bhagavāna akṣaradhāma sahita ahīṃ padhāryā che, tenā svarūpano parabhāva samajāto nathī e ja moṭuṃ pāpa che, māṭe jādava jevā na thavuṃ paṇa uddhavajī jevā bhakta thavuṃ. ne moṭā sādhu hoya tene bījā jevā kahevā tathā bījāthī ūtaratā jevā kahevā, ethī eno droha thāya che ne āja jevī vātuṃ thāya che ne samajāya che, tevī koī divasa samajāṇī nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(222) આજ ભગવાન અક્ષરધામ સહિત અહીં પધાર્યા છે, તેના સ્વરૂપનો પરભાવ સમજાતો નથી એ જ મોટું પાપ છે, માટે જાદવ જેવા ન થવું પણ ઉદ્ધવજી જેવા ભક્ત થવું. ને મોટા સાધુ હોય તેને બીજા જેવા કહેવા તથા બીજાથી ઊતરતા જેવા કહેવા, એથી એનો દ્રોહ થાય છે ને આજ જેવી વાતું થાય છે ને સમજાય છે, તેવી કોઈ દિવસ સમજાણી નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1221.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavannu ne aa</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1223.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ava ne ava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '222');
+            localStorage.setItem('lastVisitedVatFile', 'ch1222.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

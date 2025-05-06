@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શહેર સેવન અને રૂપિયામાં - Shaher sevan ane rupiyama</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shaher sevan ane rupiyama</h1>
+                <div class="gujarati-title">શહેર સેવન અને રૂપિયામાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 11</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(11) śahera sevana ane rūpiyāmāṃ doṣa rahyā che, tenī mumukṣune khabara paḍe che. bhajana karavuṃ, satsaṃga karavo ne kathā karavī te to ā satsaṃgamāṃ thāya che ne satsaṃgamāṃ śrvetadvīpa ne badarikāśramanī peṭhe viṣayano abhāva varate che ne āṃhīṃ satsaṃgamāṃ sau akṣaradhāmanī peṭhe varato cho, te ā pragaṭa saṃbaṃdhano pratāpa che. have bākī āvaradā rahī teṇe karīne to prabhu bhajī levā ne ā sādhune darśane karīne to meru jevaḍāṃ pāpa hoya te paṇa nāśa pāme che. bhagavānamāṃ ne ā sādhumāṃ niṣṭhā āvī tyāre badhuṃya karī rahyā ne gāyanā śīṃga upara sarasavano dāṇo rahe eṭalī vāra aṃta:karaṇa sthira thāya tyāre māyā khasī kahevāya ne ā to babbe traṇa-traṇa māḻā sudhī saṃkalpa nathī thāto te māyāne khesavī kahevāya ne evuṃ āja ghaṇā harijanone varate che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(11) શહેર સેવન અને રૂપિયામાં દોષ રહ્યા છે, તેની મુમુક્ષુને ખબર પડે છે. ભજન કરવું, સત્સંગ કરવો ને કથા કરવી તે તો આ સત્સંગમાં થાય છે ને સત્સંગમાં શ્ર્વેતદ્વીપ ને બદરિકાશ્રમની પેઠે વિષયનો અભાવ વરતે છે ને આંહીં સત્સંગમાં સૌ અક્ષરધામની પેઠે વરતો છો, તે આ પ્રગટ સંબંધનો પ્રતાપ છે. હવે બાકી આવરદા રહી તેણે કરીને તો પ્રભુ ભજી લેવા ને આ સાધુને દર્શને કરીને તો મેરુ જેવડાં પાપ હોય તે પણ નાશ પામે છે. ભગવાનમાં ને આ સાધુમાં નિષ્ઠા આવી ત્યારે બધુંય કરી રહ્યા ને ગાયના શીંગ ઉપર સરસવનો દાણો રહે એટલી વાર અંત:કરણ સ્થિર થાય ત્યારે માયા ખસી કહેવાય ને આ તો બબ્બે ત્રણ-ત્રણ માળા સુધી સંકલ્પ નથી થાતો તે માયાને ખેસવી કહેવાય ને એવું આજ ઘણા હરિજનોને વરતે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13010.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apane anant brahmandthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13012.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satyugma ambarishni raksha</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '11');
+            localStorage.setItem('lastVisitedVatFile', 'ch13011.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

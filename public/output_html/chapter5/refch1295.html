@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(295) indre viśrvarūpane māryo tenī cāra hatyā lāgī. temāṃ to eka to gurunī, bījī goranī, trījī brāhmaṇanī ne cothī brahmavettānī. pachī tene nāradajī maḻyā. temaṇe kahyuṃ je, ‘tārā bhāī vāmanajī che te bhagavānano avatāra che māṭe temano tuṃ āśaro kara.’ pachī indre vāmanajīno niśrcaya karyo teṇe karīne brahmahatyā ṭaḻī gaī, ema vāmanajīno āśaro karavāthī kāma thayuṃ; māṭe pragaṭano āśaro moṭī vāta che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(295) ઇન્દ્રે વિશ્ર્વરૂપને માર્યો તેની ચાર હત્યા લાગી. તેમાં તો એક તો ગુરુની, બીજી ગોરની, ત્રીજી બ્રાહ્મણની ને ચોથી બ્રહ્મવેત્તાની. પછી તેને નારદજી મળ્યા. તેમણે કહ્યું જે, ‘તારા ભાઈ વામનજી છે તે ભગવાનનો અવતાર છે માટે તેમનો તું આશરો કર.’ પછી ઇન્દ્રે વામનજીનો નિશ્ર્ચય કર્યો તેણે કરીને બ્રહ્મહત્યા ટળી ગઈ, એમ વામનજીનો આશરો કરવાથી કામ થયું; માટે પ્રગટનો આશરો મોટી વાત છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

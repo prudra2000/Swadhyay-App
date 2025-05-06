@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટાનાં દર્શન થયાં - Motana darshan thaya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motana darshan thaya</h1>
+                <div class="gujarati-title">મોટાનાં દર્શન થયાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 115</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(115) moṭānāṃ darśana thayāṃ e ja saṃskāra thayo jāṇavo; te upara eka veśyāne saṃskāra thayo. tenī vāta karī je, āṇe potānī nāta je, veśyāo temane malakamāṃthī teḍāvīne jamāḍī. tenā āṃgaṇā āgaḻa khāḍāmāṃ veśyāoe pāṇī ḍhoḻela te pāṇī khāḍāmāṃ bharāṇuṃ, teno kīcaḍa thayela te kādavamāṃthī tuṃbaḍuṃ bharīne eka saṃnyāsīe kapaḍuṃ dhovā māṃḍyuṃ ne ḍelī āgaḻa te ūbhī hatī, teṇe dīṭhuṃ. te bolī je, bāvā gāregāro śuṃ dhuo cho ? tyāre saṃnyāsīe kahyuṃ je, huṃ to tāruṃ joīne karuṃ chuṃ, tuṃ ja gāregāro dhue che. te teṇe vicāryuṃ je, ā vāta paṇa kharī. tema moṭā saṃtanā śabdathī saṃskāra lāge che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(115) મોટાનાં દર્શન થયાં એ જ સંસ્કાર થયો જાણવો; તે ઉપર એક વેશ્યાને સંસ્કાર થયો. તેની વાત કરી જે, આણે પોતાની નાત જે, વેશ્યાઓ તેમને મલકમાંથી તેડાવીને જમાડી. તેના આંગણા આગળ ખાડામાં વેશ્યાઓએ પાણી ઢોળેલ તે પાણી ખાડામાં ભરાણું, તેનો કીચડ થયેલ તે કાદવમાંથી તુંબડું ભરીને એક સંન્યાસીએ કપડું ધોવા માંડ્યું ને ડેલી આગળ તે ઊભી હતી, તેણે દીઠું. તે બોલી જે, બાવા ગારેગારો શું ધુઓ છો ? ત્યારે સંન્યાસીએ કહ્યું જે, હું તો તારું જોઈને કરું છું, તું જ ગારેગારો ધુએ છે. તે તેણે વિચાર્યું જે, આ વાત પણ ખરી. તેમ મોટા સંતના શબ્દથી સંસ્કાર લાગે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15114.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan karata bhagavanna</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15116.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa satsangma jene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '115');
+            localStorage.setItem('lastVisitedVatFile', 'ch15115.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવના સ્વભાવ છે તે  - Jivana svabhav chhe te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivana svabhav chhe te</h1>
+                <div class="gujarati-title">જીવના સ્વભાવ છે તે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 17</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>bapore vāta karī je, $(17) jīvanā svabhāva che te jo dhīre dhīre mukāve to mukāya. eka haribhaktane sopārīnuṃ baṃdhāṇa te māṃḍa māṃḍa mūkyuṃ. māṭe kahenārā hoya to ja svabhāva ṭaḻe. jema hoya te ja bhaṇāve. te je svabhāva mukāvyānī rītane jāṇato hoya te ja svabhāva mukāve, nīkara to kahenārā kahe toya svabhāva na mukāya. vāghajī brāhmaṇanā chokarānī vāta karī je, tyāgī thāvā āvyo hato paṇa corī karī, te vāta kahevānuṃ kāraṇa śuṃ je, āvā koīka ḍhoṃgī hoya tene oḻakhavā.@ 1 adhyārū= mahetājī, māstara</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>બપોરે વાત કરી જે, $(17) જીવના સ્વભાવ છે તે જો ધીરે ધીરે મુકાવે તો મુકાય. એક હરિભક્તને સોપારીનું બંધાણ તે માંડ માંડ મૂક્યું. માટે કહેનારા હોય તો જ સ્વભાવ ટળે. જેમ હોય તે જ ભણાવે. તે જે સ્વભાવ મુકાવ્યાની રીતને જાણતો હોય તે જ સ્વભાવ મુકાવે, નીકર તો કહેનારા કહે તોય સ્વભાવ ન મુકાય. વાઘજી બ્રાહ્મણના છોકરાની વાત કરી જે, ત્યાગી થાવા આવ્યો હતો પણ ચોરી કરી, તે વાત કહેવાનું કારણ શું જે, આવા કોઈક ઢોંગી હોય તેને ઓળખવા.@ 1 અધ્યારૂ= મહેતાજી, માસ્તર</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16016.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetalu mandirmathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16018.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shastrama jeva vakhan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '17');
+            localStorage.setItem('lastVisitedVatFile', 'ch16017.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

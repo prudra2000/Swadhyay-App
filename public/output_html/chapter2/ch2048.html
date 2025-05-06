@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ફિરંગી નિત્ય કવાયત  - Firangi nity kavayat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Firangi nity kavayat</h1>
+                <div class="gujarati-title">ફિરંગી નિત્ય કવાયત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 48</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(48) nitya kavāyata karāve che, tethī tenāṃ māṇasa bahu khabaradāra thāya che; tema je kathāvārtā, praśrna-uttara karavā-sāṃbhaḻavāno abhyāsa rākhe teno jīva vṛddhine pāme ne temāṃ baḻa āve, paṇa te vinā baḻa na āve; paṇa je āḻasu thaīne besī rahe tene śuṃ samāsa thāya ?@ 1 phiraṃgī= aṃgreja gorāo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(48) નિત્ય કવાયત કરાવે છે, તેથી તેનાં માણસ બહુ ખબરદાર થાય છે; તેમ જે કથાવાર્તા, પ્રશ્ર્ન-ઉત્તર કરવા-સાંભળવાનો અભ્યાસ રાખે તેનો જીવ વૃદ્ધિને પામે ને તેમાં બળ આવે, પણ તે વિના બળ ન આવે; પણ જે આળસુ થઈને બેસી રહે તેને શું સમાસ થાય ?@ 1 ફિરંગી= અંગ્રેજ ગોરાઓ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2047.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sansarma sukh jevu janay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2049.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota hoya tene bijane</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '48');
+            localStorage.setItem('lastVisitedVatFile', 'ch2048.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ લોકમાં કોઈ પદાર્થમાં - Aa lokma koi padarthma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa lokma koi padarthma</h1>
+                <div class="gujarati-title">આ લોકમાં કોઈ પદાર્થમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 96</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bījā śrāvaṇa vadi saptamīne divase svāmīe vāta karī je, $(96) ā lokamāṃ koī padārthamāṃ moha na pāmavuṃ ne kyāṃī na lobhāvuṃ. jyāre utkṛṣṭa daśāne pāmavuṃ hoya tyāre je kharekharā evā hoya teno vāda levo, paṇa khāī khāīne ūṃghī rahe teno vāda na levo. ā lokamāṃ paṇa jene dhanavāna thāvuṃ hoya te dhanavānano vāda le che, paṇa jene khāvā nathī maḻatuṃ teno vāda nathī letā, kharekharānuṃ pārakhuṃ rājāe līdhuṃ tyāre je kharekharā hatā te sāmuṃ joī rahyā ne bījā je dāgīnāmāṃ lobhāṇā hatā teṇe heṭhuṃ joyuṃ. tema siddhāṃta je, āpaṇe bhagavānanā cākara chīe te jo ā lokamāṃ dhana, strīmāṃ lobhāṇā ke khāvā-pīvāmāṃ lobhāṇā ne ājñā na paḻī to heṭhuṃ jovuṃ paḍaśe.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના બીજા શ્રાવણ વદિ સપ્તમીને દિવસે સ્વામીએ વાત કરી જે, $(96) આ લોકમાં કોઈ પદાર્થમાં મોહ ન પામવું ને ક્યાંઈ ન લોભાવું. જ્યારે ઉત્કૃષ્ટ દશાને પામવું હોય ત્યારે જે ખરેખરા એવા હોય તેનો વાદ લેવો, પણ ખાઈ ખાઈને ઊંઘી રહે તેનો વાદ ન લેવો. આ લોકમાં પણ જેને ધનવાન થાવું હોય તે ધનવાનનો વાદ લે છે, પણ જેને ખાવા નથી મળતું તેનો વાદ નથી લેતા, ખરેખરાનું પારખું રાજાએ લીધું ત્યારે જે ખરેખરા હતા તે સામું જોઈ રહ્યા ને બીજા જે દાગીનામાં લોભાણા હતા તેણે હેઠું જોયું. તેમ સિદ્ધાંત જે, આપણે ભગવાનના ચાકર છીએ તે જો આ લોકમાં ધન, સ્ત્રીમાં લોભાણા કે ખાવા-પીવામાં લોભાણા ને આજ્ઞા ન પળી તો હેઠું જોવું પડશે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16095.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavadima atmabuddhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16097.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Guru vina to koi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '96');
+            localStorage.setItem('lastVisitedVatFile', 'ch16096.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

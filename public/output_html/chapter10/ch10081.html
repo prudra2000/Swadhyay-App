@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સહેજે સહેજે વાત કરવી - Saheje saheje vat karavi </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Saheje saheje vat karavi </h1>
+                <div class="gujarati-title">સહેજે સહેજે વાત કરવી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 81</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(81) saheje saheje vāta karavī ne satsaṃga karāvavo paṇa gharaḍāṃne jhājhā cūṃthavā nahi. gharaḍāṃ to pākala galakāṃ kahevāya, tene vairāgya thāya nahi. rājā, pitā ne guru tene śāṃti na pāmavī ne potānā śiṣyane sudhāravā. lojamāṃ mahārāja āvyā, tyāre sukhānaṃdasvāmīnā pūchavāthī mahārāja śrloka bolyā je, $(śrīmad bhāgavata : 5/5/18) $artha :- te guru nathī, svajana nathī, pitā nathī, mātā nathī, nasība nathī, pati nathī ke je āvelāṃ mṛtyuthī bacāvī śake.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(81) સહેજે સહેજે વાત કરવી ને સત્સંગ કરાવવો પણ ઘરડાંને ઝાઝા ચૂંથવા નહિ. ઘરડાં તો પાકલ ગલકાં કહેવાય, તેને વૈરાગ્ય થાય નહિ. રાજા, પિતા ને ગુરુ તેને શાંતિ ન પામવી ને પોતાના શિષ્યને સુધારવા. લોજમાં મહારાજ આવ્યા, ત્યારે સુખાનંદસ્વામીના પૂછવાથી મહારાજ શ્ર્લોક બોલ્યા જે, $(શ્રીમદ્ ભાગવત : 5/5/18) $અર્થ :- તે ગુરુ નથી, સ્વજન નથી, પિતા નથી, માતા નથી, નસીબ નથી, પતિ નથી કે જે આવેલાં મૃત્યુથી બચાવી શકે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10080.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jeva teva manushyane </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10082.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Stuti karato karato </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '81');
+            localStorage.setItem('lastVisitedVatFile', 'ch10081.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

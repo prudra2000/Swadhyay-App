@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> આગ્ય લગી ચહુ ઓર - Agya lagi chahu or </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Agya lagi chahu or </h1>
+                <div class="gujarati-title"> આગ્ય લગી ચહુ ઓર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 39</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(39) āgya lagī cahu ora avidyā kī ati bhārī, $adho, urdhva aru madhya daśo diśa bhujā pasārī;$viṣaya, bhoga, vilāsa karmi ko karma dṛḍhāyo,$kavi gunī paṃḍita jāṇatā hile tahāṃ ḍubāyo;$tehi vākajāla ḍāri vikaṭa naranārī āvṛta kiye,$mukuṃda mada, matsara lagyo yuṃ māyā baśa kara liye.$(muktānaṃda kāvya : mukunda bāvanī-8)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(39) આગ્ય લગી ચહુ ઓર અવિદ્યા કી અતિ ભારી, $અધો, ઉર્ધ્વ અરુ મધ્ય દશો દિશ ભુજા પસારી;$વિષય, ભોગ, વિલાસ કર્મિ કો કર્મ દૃઢાયો,$કવિ ગુની પંડિત જાણતા હિલે તહાં ડુબાયો;$તેહિ વાકજાલ ડારિ વિકટ નરનારી આવૃત કિયે,$મુકુંદ મદ, મત્સર લગ્યો યું માયા બશ કર લિયે.$(મુક્તાનંદ કાવ્ય : મુકુન્દ બાવની-8)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3038.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">More to Maharajno anek</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3040.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aaj satsangma bhagavan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '39');
+            localStorage.setItem('lastVisitedVatFile', 'ch3039.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

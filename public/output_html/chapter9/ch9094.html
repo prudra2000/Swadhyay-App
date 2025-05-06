@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગૃહસ્થને ભીડો વધારે - Gruhasthne bhido vadhare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gruhasthne bhido vadhare</h1>
+                <div class="gujarati-title">ગૃહસ્થને ભીડો વધારે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 94</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(94) gṛhasthane bhīḍo vadhāre che paṇa jema copaḍā saṃkajāmāṃ dābe to sarakhā thāya tema bhīḍāmāṃ āvyā vinā pādharuṃ thāvāya nahi; māṭe āja to saune bhīḍāmāṃ levā che, te badhī vāta samāgamathī jaṇāī āve che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(94) ગૃહસ્થને ભીડો વધારે છે પણ જેમ ચોપડા સંકજામાં દાબે તો સરખા થાય તેમ ભીડામાં આવ્યા વિના પાધરું થાવાય નહિ; માટે આજ તો સૌને ભીડામાં લેવા છે, તે બધી વાત સમાગમથી જણાઈ આવે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9093.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mandharyu muke e </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9095.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavan samu joi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '94');
+            localStorage.setItem('lastVisitedVatFile', 'ch9094.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આત્મારૂપ થાવું તેમાં - Atmarup thavu tema</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Atmarup thavu tema</h1>
+                <div class="gujarati-title">આત્મારૂપ થાવું તેમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 99</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(99) ātmārūpa thāvuṃ temāṃ uttama bhogane viśe rāga che e paṇa vighna che. vairāgya, dharma, māhātmya sahita bhakti ne ātmaniṣṭhā e samajye ja chūṭako che ane mahārāja kahe, “nāhī-dhoīne pūjā karavī, paṇa maḻa-mūtra bharyāṃ thakā na karavī.” paṇa āpaṇane ema samajātuṃ nathī. te upara amadāvādanuṃ bījuṃ vacanāmṛta vaṃcāvyuṃ ne kahyuṃ che te pramāṇe karavuṃ. ne badhāṃ vacanāmṛtamāṃ kahetā to gayā che je, sādhu, puruṣottama ne ātmaniṣṭhā, jema soya vāṃse doro soṃsaro cālyo āve tema rahasya kahetā āvyā che, te pramāṇe samajavuṃ. ne uparathī ‘svāminārāyaṇa, svāminārāyaṇa’ bhajana karavuṃ te kaṃṭhamāṃ karavuṃ, hṛdayamāṃ karavuṃ ne jīvamāṃ karavuṃ; jyāṃ thāya tyāṃ karavuṃ ne jote jote bhagavāna sāmuṃ joī rahevuṃ, te dekhāśe. jema cakamaka pāḍe tyāre māṃhī agni che, te olyā sūtaramāṃ āve che ema dṛṣṭāṃta dīdhuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૯૯) આત્મારૂપ થાવું તેમાં ઉત્તમ ભોગને વિશે રાગ છે એ પણ વિઘ્ન છે. વૈરાગ્ય, ધર્મ, માહાત્મ્ય સહિત ભક્તિ ને આત્મનિષ્ઠા એ સમજ્યે જ છૂટકો છે અને મહારાજ કહે, “નાહી-ધોઈને પૂજા કરવી, પણ મળ-મૂત્ર ભર્યાં થકા ન કરવી.” પણ આપણને એમ સમજાતું નથી. તે ઉપર અમદાવાદનું બીજું વચનામૃત વંચાવ્યું ને કહ્યું છે તે પ્રમાણે કરવું. ને બધાં વચનામૃતમાં કહેતા તો ગયા છે જે, સાધુ, પુરુષોત્તમ ને આત્મનિષ્ઠા, જેમ સોય વાંસે દોરો સોંસરો ચાલ્યો આવે તેમ રહસ્ય કહેતા આવ્યા છે, તે પ્રમાણે સમજવું. ને ઉપરથી ‘સ્વામિનારાયણ, સ્વામિનારાયણ’ ભજન કરવું તે કંઠમાં કરવું, હૃદયમાં કરવું ને જીવમાં કરવું; જ્યાં થાય ત્યાં કરવું ને જોતે જોતે ભગવાન સામું જોઈ રહેવું, તે દેખાશે. જેમ ચકમક પાડે ત્યારે માંહી અગ્નિ છે, તે ઓલ્યા સૂતરમાં આવે છે એમ દૃષ્ટાંત દીધું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6098.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mandirma bija manas</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6100.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aho! Sadhu sathe saune</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '99');
+            localStorage.setItem('lastVisitedVatFile', 'ch6099.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(198) je śuddha mumukṣu hoya tene pragaṭa bhagavānanā joga vagara kevaḻa pratimāe karīne ke, śāstra śravaṇe karīne śāṃti na thāya. kuśaḻakuṃvarabāī pāse brāhmaṇa ‘bhāgavata’nī kathā vāṃcato hato. temāṃ rukmiṇī haraṇanī vāta āvī tyāre kuśaḻakuṃvarabāīe kahyuṃ je, ‘kathā sāṃbhaḻatāṃ mane āṭalāṃ varaso thayāṃ ne tuṃ paṇa ke’divasano kathā vāṃce che paṇa je divasa pragaṭa bhagavāna rukmiṇīnī peṭhe kāṃḍuṃ jhālaśe, te divasa tāruṃ ne māruṃ kalyāṇa thāśe.’ te vāta pachī keṭaleka vakhate paramacaitanyānaṃdasvāmī pharatā pharatā dharamapura āvī caḍyā ane sadāvrata laīne dharmaśāḻāmāṃ ārāma karatā hatā, tyāṃ niyama pramāṇe kuśaḻakuṃvarabāī tīrthavāsīonā caraṇasparśa karatāṃ karatāṃ svāmī pāse āvyāṃ. tyāre, ‘ame to svāminārāyaṇa pragaṭa bhagavānanā sādhu chīe eṭale strīthī dūra rahīe chīe.’ ema kahī āghā vahyā gayā. āthī kuśaḻakuṃvarabāī vismaya pāmyāṃ ane svāmīne māṭe māna thayuṃ ane mahārājanī ājñā pramāṇe dharma jaḻavāī rahe e rīte āḍo caka naṃkhāvīne mahārājanā pratāpanī vātuṃ sāṃbhaḻī, tethī śāṃti thaī gaī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(198) જે શુદ્ધ મુમુક્ષુ હોય તેને પ્રગટ ભગવાનના જોગ વગર કેવળ પ્રતિમાએ કરીને કે, શાસ્ત્ર શ્રવણે કરીને શાંતિ ન થાય. કુશળકુંવરબાઈ પાસે બ્રાહ્મણ ‘ભાગવત’ની કથા વાંચતો હતો. તેમાં રુક્મિણી હરણની વાત આવી ત્યારે કુશળકુંવરબાઈએ કહ્યું જે, ‘કથા સાંભળતાં મને આટલાં વરસો થયાં ને તું પણ કે’દિવસનો કથા વાંચે છે પણ જે દિવસ પ્રગટ ભગવાન રુક્મિણીની પેઠે કાંડું ઝાલશે, તે દિવસ તારું ને મારું કલ્યાણ થાશે.’ તે વાત પછી કેટલેક વખતે પરમચૈતન્યાનંદસ્વામી ફરતા ફરતા ધરમપુર આવી ચડ્યા અને સદાવ્રત લઈને ધર્મશાળામાં આરામ કરતા હતા, ત્યાં નિયમ પ્રમાણે કુશળકુંવરબાઈ તીર્થવાસીઓના ચરણસ્પર્શ કરતાં કરતાં સ્વામી પાસે આવ્યાં. ત્યારે, ‘અમે તો સ્વામિનારાયણ પ્રગટ ભગવાનના સાધુ છીએ એટલે સ્ત્રીથી દૂર રહીએ છીએ.’ એમ કહી આઘા વહ્યા ગયા. આથી કુશળકુંવરબાઈ વિસ્મય પામ્યાં અને સ્વામીને માટે માન થયું અને મહારાજની આજ્ઞા પ્રમાણે ધર્મ જળવાઈ રહે એ રીતે આડો ચક નંખાવીને મહારાજના પ્રતાપની વાતું સાંભળી, તેથી શાંતિ થઈ ગઈ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

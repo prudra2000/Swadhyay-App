@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેને રાજી કરવા આવ્યા  - Jene raji karava avya </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jene raji karava avya </h1>
+                <div class="gujarati-title">જેને રાજી કરવા આવ્યા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 184</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(184) jene rājī karavā āvyā chīe tene ośiyāḻā karāya che ne upekṣāthī bhūṃḍā ghāṭa thāvā māṃḍe. bāyaḍī mūkīne āvyā hoya ne cāḻā cūṃthavā māṃḍe paṇa jyāre mūkī hoya tyāre aṃtara sāruṃ hoya, pachī avaguṇa le eṭale buddhi pharī jāya che paṇa bhagavāna che te kṛtyanā jāṇanārā che māṭe jyāṃ bhagavānanī vārtā saṃbhaḻāya, bhagavānamāṃ heta thāya ne bhagavānanā svarūpanuṃ jñāna thāya; tyāṃ besavuṃ te ṭhīka ne bīje bese temāṃ jīvanuṃ śreya thāya nahīṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(184) જેને રાજી કરવા આવ્યા છીએ તેને ઓશિયાળા કરાય છે ને ઉપેક્ષાથી ભૂંડા ઘાટ થાવા માંડે. બાયડી મૂકીને આવ્યા હોય ને ચાળા ચૂંથવા માંડે પણ જ્યારે મૂકી હોય ત્યારે અંતર સારું હોય, પછી અવગુણ લે એટલે બુદ્ધિ ફરી જાય છે પણ ભગવાન છે તે કૃત્યના જાણનારા છે માટે જ્યાં ભગવાનની વાર્તા સંભળાય, ભગવાનમાં હેત થાય ને ભગવાનના સ્વરૂપનું જ્ઞાન થાય; ત્યાં બેસવું તે ઠીક ને બીજે બેસે તેમાં જીવનું શ્રેય થાય નહીં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9183.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Somalakharna ladava</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9185.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishaynu balavanpanu </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '184');
+            localStorage.setItem('lastVisitedVatFile', 'ch9184.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

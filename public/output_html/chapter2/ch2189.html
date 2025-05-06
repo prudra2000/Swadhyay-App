@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પરલોકમાં જાવું છે - Paralokma javun chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Paralokma javun chhe</h1>
+                <div class="gujarati-title">પરલોકમાં જાવું છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 189</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(189) paralokamāṃ jāvuṃ che, evo to koī manasūbo ja karatā nathī, paṇa āṃhīṃ to nahi ja rahevāya ne ā lokamāṃ to jāṇe āvyā ja nathī, evuṃ karī nākhavuṃ ne chello janma karī nākhavo. te chello janma te śuṃ ? je, kyāṃya paṇa vāsanā rahevā devī nahīṃ. ne ā lokanī sthiti bāṃdhavānuṃ tāna che, paṇa e to nahi rahe ne game eṭalāṃ kāma karaśuṃ to paṇa sarve eka divasa mūkīne svabhāva paṇa mūkavā che ne sādhu thāvuṃ che, te sāru kathāvārtā, smṛti karavī, guṇa oḻakhavā e karavānuṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(189) પરલોકમાં જાવું છે, એવો તો કોઈ મનસૂબો જ કરતા નથી, પણ આંહીં તો નહિ જ રહેવાય ને આ લોકમાં તો જાણે આવ્યા જ નથી, એવું કરી નાખવું ને છેલ્લો જન્મ કરી નાખવો. તે છેલ્લો જન્મ તે શું ? જે, ક્યાંય પણ વાસના રહેવા દેવી નહીં. ને આ લોકની સ્થિતિ બાંધવાનું તાન છે, પણ એ તો નહિ રહે ને ગમે એટલાં કામ કરશું તો પણ સર્વે એક દિવસ મૂકીને સ્વભાવ પણ મૂકવા છે ને સાધુ થાવું છે, તે સારુ કથાવાર્તા, સ્મૃતિ કરવી, ગુણ ઓળખવા એ કરવાનું છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2188.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nana gamma lakh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2190.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanni murti</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '189');
+            localStorage.setItem('lastVisitedVatFile', 'ch2189.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

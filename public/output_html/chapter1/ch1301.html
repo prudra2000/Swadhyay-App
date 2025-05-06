@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્પુરુષના સંબંધે  - Satpurushana sambandhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satpurushana sambandhe</h1>
+                <div class="gujarati-title">સત્પુરુષના સંબંધે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 301</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(301) satpuruṣanā saṃbaṃdhe karīne jīvane saṃskāra thāya che, te eka janme ke be janme paṇa bhagavānanā dhāmane pamāḍe evo pragaṭano pratāpa che. tenī vikti je, enuṃ darśana thāya, eno guṇa le, eno pakṣa le, e āgaḻa hātha joḍe ne vaḻī sādhu bahu sārā che ema bole ne ene anna-jaḻa āpe ityādika saṃbaṃdha thāya; vaḻī je jhāḍa taḻe bese, vaḻī je jhāḍanuṃ phaḻa jame, vaḻī je ḍhoranuṃ dūdha-dahīṃ jame ityādika anaṃta prakāre jīvane saṃbaṃdha thāya to te sarve bhagavānanā dhāmane pāme; evo pragaṭano saṃbaṃdha baḻavāna che ane parokṣa saṃskāranuṃ phaḻa e che je, khāvā maḻe, deha sājo rahe ne lokamāṃ ābaru-dharma rahe; e parokṣanā āśarānuṃ phaḻa che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(301) સત્પુરુષના સંબંધે કરીને જીવને સંસ્કાર થાય છે, તે એક જન્મે કે બે જન્મે પણ ભગવાનના ધામને પમાડે એવો પ્રગટનો પ્રતાપ છે. તેની વિક્તિ જે, એનું દર્શન થાય, એનો ગુણ લે, એનો પક્ષ લે, એ આગળ હાથ જોડે ને વળી સાધુ બહુ સારા છે એમ બોલે ને એને અન્ન-જળ આપે ઇત્યાદિક સંબંધ થાય; વળી જે ઝાડ તળે બેસે, વળી જે ઝાડનું ફળ જમે, વળી જે ઢોરનું દૂધ-દહીં જમે ઇત્યાદિક અનંત પ્રકારે જીવને સંબંધ થાય તો તે સર્વે ભગવાનના ધામને પામે; એવો પ્રગટનો સંબંધ બળવાન છે અને પરોક્ષ સંસ્કારનું ફળ એ છે જે, ખાવા મળે, દેહ સાજો રહે ને લોકમાં આબરુ-ધર્મ રહે; એ પરોક્ષના આશરાનું ફળ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1300.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Svarupnishtha chhe ne </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1302.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishayma to vairat </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '301');
+            localStorage.setItem('lastVisitedVatFile', 'ch1301.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

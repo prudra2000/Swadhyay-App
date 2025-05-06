@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પોતાના દોષ જોવાનો  - Potana dosh jovano</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Potana dosh jovano</h1>
+                <div class="gujarati-title">પોતાના દોષ જોવાનો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 139</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā pahelā śrāvaṇa sudi daśamīne divase svāmīe vāta karī je, $(139) potānā doṣa jovāno ḍhāḻa pāḍavo, paṇa pārakā doṣa jovāno ḍhāḻa na pāḍavo; jema phīraṃgī deśa levāne tatpara che tema brahmarūpa thaīne sevāmāṃ rahevāya ema tatpara thāvuṃ ne kriyā paṇa evī ja karavī. bhagavadī sāthe, maṃdira sāthe vera na thāya ne sādhu ne bhagavāna sāthe jīva coṃṭāḍī mūkavo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના પહેલા શ્રાવણ સુદિ દશમીને દિવસે સ્વામીએ વાત કરી જે, $(139) પોતાના દોષ જોવાનો ઢાળ પાડવો, પણ પારકા દોષ જોવાનો ઢાળ ન પાડવો; જેમ ફીરંગી દેશ લેવાને તત્પર છે તેમ બ્રહ્મરૂપ થઈને સેવામાં રહેવાય એમ તત્પર થાવું ને ક્રિયા પણ એવી જ કરવી. ભગવદી સાથે, મંદિર સાથે વેર ન થાય ને સાધુ ને ભગવાન સાથે જીવ ચોંટાડી મૂકવો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15138.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrikrushn janmakhandma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15140.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jiv pan kaik jatana</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '139');
+            localStorage.setItem('lastVisitedVatFile', 'ch15139.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

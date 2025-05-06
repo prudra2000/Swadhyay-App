@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોરે કાઠી એકાદશી કરતા - More kathi ekadashi karata</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>More kathi ekadashi karata</h1>
+                <div class="gujarati-title">મોરે કાઠી એકાદશી કરતા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 92</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(92) more kāṭhī ekādaśī karatā, te māṃḍa māṃḍa karatā. māṭe samāgama vinā kāṃī thāya ja nahīṃ. sādhu ane bhagavāna kahe emāṃ ja mokṣa che, te śuṃ? je, arjunanī pāse ghāṇa kaḍhāvyo ne ṛṣine kahyuṃ je, pāṃdaḍuṃ toḍavuṃ nahi. māṭe bhagavāna to game ema kare. more to gāmogāma māratā te garībadāsa ne kaṃgāladāsa te paṇa māratā. have to māṃhīlo kajiyo rahyo. te śuṃ ? je, mana goṭā vāḻe je, satsaṃgamāṃ jaīśuṃ to khoṭī thāśuṃ; vaḻī paṇa paḍaśe, ema mana moḻapa lāve che.@ 1 vāvaravuṃ= vāparavuṃ, upayogamāṃ levuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(92) મોરે કાઠી એકાદશી કરતા, તે માંડ માંડ કરતા. માટે સમાગમ વિના કાંઈ થાય જ નહીં. સાધુ અને ભગવાન કહે એમાં જ મોક્ષ છે, તે શું? જે, અર્જુનની પાસે ઘાણ કઢાવ્યો ને ઋષિને કહ્યું જે, પાંદડું તોડવું નહિ. માટે ભગવાન તો ગમે એમ કરે. મોરે તો ગામોગામ મારતા તે ગરીબદાસ ને કંગાલદાસ તે પણ મારતા. હવે તો માંહીલો કજિયો રહ્યો. તે શું ? જે, મન ગોટા વાળે જે, સત્સંગમાં જઈશું તો ખોટી થાશું; વળી પણ પડશે, એમ મન મોળપ લાવે છે.@ 1 વાવરવું= વાપરવું, ઉપયોગમાં લેવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10091.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jog bahu durlabh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10093.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Divybhav manushybhava ek</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '92');
+            localStorage.setItem('lastVisitedVatFile', 'ch10092.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

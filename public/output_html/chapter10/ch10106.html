@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> અર્વ  ખર્વ  વલું  ધન હે - Arv kharv valu dhan he</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Arv kharv valu dhan he</h1>
+                <div class="gujarati-title"> અર્વ  ખર્વ  વલું  ધન હે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 106</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā sudi pūnamane divase savāre svāmīe vāta karī je, $(106) $arva kharva valuṃ dhana he, udaya asta meṃ rāja; $tulasī hari kī bhakti binā sabe narka ko sāja. $(tulasīdāsanī sākhīo : 138) $artha : arva-kharva (hajāro-abajo rūpiyā) sudhī dhana maḻyuṃ; sūrya ūge che tyāṃthī māṃḍīne te āthame che tyāṃ sudhīnuṃ rāja maḻyuṃ, paṇa haribhajana vinā ā saghaḻī sāmagrī narakamāṃ laī jāya che. game eṭaluṃ dehane sācave paṇa baḻīne bhasma thāśe. $(subhāṣita) $artha :- kuṃbhīpāka jevuṃ bhayānaka naraka nathī. temāṃ huṃ pahelāṃ paḍyo. enāthī vadhāre garbhavāsa che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા સુદિ પૂનમને દિવસે સવારે સ્વામીએ વાત કરી જે, $(106) $અર્વ ખર્વ વલું ધન હે, ઉદય અસ્ત મેં રાજ; $તુલસી હરિ કી ભક્તિ બિના સબે નર્ક કો સાજ. $(તુલસીદાસની સાખીઓ : 138) $અર્થ : અર્વ-ખર્વ (હજારો-અબજો રૂપિયા) સુધી ધન મળ્યું; સૂર્ય ઊગે છે ત્યાંથી માંડીને તે આથમે છે ત્યાં સુધીનું રાજ મળ્યું, પણ હરિભજન વિના આ સઘળી સામગ્રી નરકમાં લઈ જાય છે. ગમે એટલું દેહને સાચવે પણ બળીને ભસ્મ થાશે. $(સુભાષિત) $અર્થ :- કુંભીપાક જેવું ભયાનક નરક નથી. તેમાં હું પહેલાં પડ્યો. એનાથી વધારે ગર્ભવાસ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10105.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Patang udade tena</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10107.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Anu khamay ne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '106');
+            localStorage.setItem('lastVisitedVatFile', 'ch10106.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચતુર્વિધા ભજન્તે  - Chaturvidha bhajante</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chaturvidha bhajante</h1>
+                <div class="gujarati-title">ચતુર્વિધા ભજન્તે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 65</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919 nā bījā śrāvaṇa sudi pūnamane divase svāmīe vāta karī je, $(65) $caturvidhā bhajante māṃ janāḥ sukṛtino'rjuna | $ārto jijñāsurarthārthī jñānī ca bharatarṣabha ||$teṣāṃ jñānī nityayukta ekabhaktirviśiṣyate | $priyo hi jñānino'tyarthamahaṃ sa ca mama priyaḥ || $(śrīmad bhagavadgītā : 7/16-17) $artha :- he bharatakuḻamāṃ janmelā śreṣṭha arjuna ! (cāra prakāranā bhakto che)- ārta, jāṇavānī īcchāvāḻā, prayojananī pūrti karavāvāḻā ane jñānī, e badhāmāṃ jñānī bhakta haṃmeśā mārī sāthe joḍāyelo hoya che ane dṛḍha bhaktivāḻo e badhāthī viśeṣa prakārano hoya che. 1 rāvaḻane utarī kāḍhī devā= kuḻanī vaṃśāvalīno copaḍo lakhanāra ne gaḻānuṃ ābhūṣaṇa devā</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919 ના બીજા શ્રાવણ સુદિ પૂનમને દિવસે સ્વામીએ વાત કરી જે, $(65) $ચતુર્વિધા ભજન્તે માં જનાઃ સુકૃતિનોઽર્જુન । $આર્તો જિજ્ઞાસુરર્થાર્થી જ્ઞાની ચ ભરતર્ષભ ॥$તેષાં જ્ઞાની નિત્યયુક્ત એકભક્તિર્વિશિષ્યતે । $પ્રિયો હિ જ્ઞાનિનોઽત્યર્થમહં સ ચ મમ પ્રિયઃ ॥ $(શ્રીમદ્ ભગવદ્ગીતા : 7/16-17) $અર્થ :- હે ભરતકુળમાં જન્મેલા શ્રેષ્ઠ અર્જુન ! (ચાર પ્રકારના ભક્તો છે)- આર્ત, જાણવાની ઈચ્છાવાળા, પ્રયોજનની પૂર્તિ કરવાવાળા અને જ્ઞાની, એ બધામાં જ્ઞાની ભક્ત હંમેશા મારી સાથે જોડાયેલો હોય છે અને દૃઢ ભક્તિવાળો એ બધાથી વિશેષ પ્રકારનો હોય છે. 1 રાવળને ઉતરી કાઢી દેવા= કુળની વંશાવલીનો ચોપડો લખનાર ને ગળાનું આભૂષણ દેવા</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16064.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jene ama nahi paravade</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16066.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vir sheladiyani vat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '65');
+            localStorage.setItem('lastVisitedVatFile', 'ch16065.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

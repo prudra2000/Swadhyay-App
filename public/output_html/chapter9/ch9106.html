@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મેળાવ્યામાં અખંડાનંદસ્વામી - Melavyama akhandanandaswami </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Melavyama akhandanandaswami </h1>
+                <div class="gujarati-title">મેળાવ્યામાં અખંડાનંદસ્વામી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 106</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(106) meḻāvyāmāṃ akhaṃḍānaṃdasvāmī ne vijñānadāsajīnā bhāī harivallabhadāsa e be, evā bījā nahīṃ. temāṃ ya harivallabhadāsa to evuṃ meḻavatā je, je cīja āve te turata coḻavā māṃḍe ne mīṭhuṃ āve te jeṭaluṃ āpe teṭaluṃ māṃhī nākhe ne pachī pāṇī reḍī rāba jevuṃ kare ne be hāthe upāḍī pī jāya tethī paṃktimāṃ koī tenī pāse besatuṃ nahīṃ. ne keṭalāka to temane kutsita śabde bolāvatā. te śuṃ ? ene ja ājñā hatī ne bījāne nahotī ? paṇa meḻāvī śakāya nahi ne meḻāve tenī avajñā kare te śuṃ dhāmamāṃ jāśe ? dhāma nahi jaḍe dhakkā maḻaśe tyāre āṃkha ūghaḍaśe gulāmanī, emāṃ phera nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(106) મેળાવ્યામાં અખંડાનંદસ્વામી ને વિજ્ઞાનદાસજીના ભાઈ હરિવલ્લભદાસ એ બે, એવા બીજા નહીં. તેમાં ય હરિવલ્લભદાસ તો એવું મેળવતા જે, જે ચીજ આવે તે તુરત ચોળવા માંડે ને મીઠું આવે તે જેટલું આપે તેટલું માંહી નાખે ને પછી પાણી રેડી રાબ જેવું કરે ને બે હાથે ઉપાડી પી જાય તેથી પંક્તિમાં કોઈ તેની પાસે બેસતું નહીં. ને કેટલાક તો તેમને કુત્સિત શબ્દે બોલાવતા. તે શું ? એને જ આજ્ઞા હતી ને બીજાને નહોતી ? પણ મેળાવી શકાય નહિ ને મેળાવે તેની અવજ્ઞા કરે તે શું ધામમાં જાશે ? ધામ નહિ જડે ધક્કા મળશે ત્યારે આંખ ઊઘડશે ગુલામની, એમાં ફેર નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9105.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dhan bahu balavan </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9107.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Keval patit thaine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '106');
+            localStorage.setItem('lastVisitedVatFile', 'ch9106.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવના હૈયામાં છાજની - Jivna haiyama chhajni</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivna haiyama chhajni</h1>
+                <div class="gujarati-title">જીવના હૈયામાં છાજની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 188</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(188) jīvanā haiyāmāṃ peṭhe vyavahāra chavarāṇo che. te mānasīpūjā ṭāṇe ruṃdho to khabara paḍe ne vyavahāramāṃ rākho to kāṃī nahi ne bhajana kare tyāre bahāranī upādhi māṃhī naḍe. bhaṇanārā jema śabdanuṃ nakkī kare che tema samajaṇanuṃ nakkī karyuṃ hoya, tene temāṃ du:kha dekhāya. te dhūḍa khādhāno manasūbo thāto nathī ne soḍhīmāṃ rahevānuṃ mana thātuṃ nathī.@ 1 chājanī= chāparamāṃ ghāsa, pāṭiyāṃ ke vāṃsa vagerenuṃ karātuṃ ācchādana.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(188) જીવના હૈયામાં પેઠે વ્યવહાર છવરાણો છે. તે માનસીપૂજા ટાણે રુંધો તો ખબર પડે ને વ્યવહારમાં રાખો તો કાંઈ નહિ ને ભજન કરે ત્યારે બહારની ઉપાધિ માંહી નડે. ભણનારા જેમ શબ્દનું નક્કી કરે છે તેમ સમજણનું નક્કી કર્યું હોય, તેને તેમાં દુ:ખ દેખાય. તે ધૂડ ખાધાનો મનસૂબો થાતો નથી ને સોઢીમાં રહેવાનું મન થાતું નથી.@ 1 છાજની= છાપરમાં ઘાસ, પાટિયાં કે વાંસ વગેરેનું કરાતું આચ્છાદન.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15187.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Paheli kirti ne pachhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15189.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maha maha sadhan kare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '188');
+            localStorage.setItem('lastVisitedVatFile', 'ch15188.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

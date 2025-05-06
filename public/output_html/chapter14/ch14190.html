@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોલ છે તેને કરહલું - Mol chhe tene karahalu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mol chhe tene karahalu</h1>
+                <div class="gujarati-title">મોલ છે તેને કરહલું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 190</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(190) mola che tene āve tyāre vadhe nahi, tema guru thayo eṭale tene koīnuṃ manāya nahi. śiṣya thāya tenā upara bhagavānanā bhaktanī dayā thāya. guru pāse jaīne jñāna pāmavuṃ ne saṃtamāṃ jīva joḍavo ne vāre vāre samāgame karīne vairāgyanā ne jñānanā saṃskāra lagāḍavā ne vṛddhi pamāḍavā.@ 1 karahaluṃ= kaṇasaluṃ, ḍūṃḍuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(190) મોલ છે તેને આવે ત્યારે વધે નહિ, તેમ ગુરુ થયો એટલે તેને કોઈનું મનાય નહિ. શિષ્ય થાય તેના ઉપર ભગવાનના ભક્તની દયા થાય. ગુરુ પાસે જઈને જ્ઞાન પામવું ને સંતમાં જીવ જોડવો ને વારે વારે સમાગમે કરીને વૈરાગ્યના ને જ્ઞાનના સંસ્કાર લગાડવા ને વૃદ્ધિ પમાડવા.@ 1 કરહલું= કણસલું, ડૂંડું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14189.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje gam terethi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14191.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jema sukh to lesh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '190');
+            localStorage.setItem('lastVisitedVatFile', 'ch14190.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

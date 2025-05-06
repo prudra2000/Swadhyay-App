@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મણનો કંસાર કરીને  - Manno kansar karine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Manno kansar karine</h1>
+                <div class="gujarati-title">મણનો કંસાર કરીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 284</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(284) maṇano kaṃsāra karīne pāśera goḻa nāṃkhe to thūluṃ kahevāya. tema jeṭaluṃ dhyāna, smaraṇa hoya tene teṭaluṃ sukha āve. āja to jene karavuṃ hoya tene ghaṇuṃ sugama che. te gārānā (māṭīnā) droṇācārye karīne ekalavya śabdavedhī thayo. te to kosa joḍīne mola pakavavo evuṃ che ne āja to vagara varasāde mola pāke evuṃ che ne gaṇapatinī peṭhe ghaṇuṃ sugama che ne āja to badhā avatāra ne tenā mukta paṇa āvyā che. prahlāda harivarṣa khaṃḍamāṃ rahyā che. hamaṇāṃ jene paṭalāī karavāno svabhāva haśe ke koī vātanī īcchā haśe to tyāṃ tene joḍī deśe ne jene tene joḍaluṃ maḻaśe. lāṃbī najare joīe chīee te goḻa nākhīe teṭaluṃ ja gaḻyuṃ thāśe. māṭe loka sāmuṃ jovuṃ nahi. śāstra tathā mahārājanī marajī sāmuṃ jovuṃ.@ 2 joḍaluṃ jotuṃ haśe= lagna karavānī īcchā haśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(284) મણનો કંસાર કરીને પાશેર ગોળ નાંખે તો થૂલું કહેવાય. તેમ જેટલું ધ્યાન, સ્મરણ હોય તેને તેટલું સુખ આવે. આજ તો જેને કરવું હોય તેને ઘણું સુગમ છે. તે ગારાના (માટીના) દ્રોણાચાર્યે કરીને એકલવ્ય શબ્દવેધી થયો. તે તો કોસ જોડીને મોલ પકવવો એવું છે ને આજ તો વગર વરસાદે મોલ પાકે એવું છે ને ગણપતિની પેઠે ઘણું સુગમ છે ને આજ તો બધા અવતાર ને તેના મુક્ત પણ આવ્યા છે. પ્રહ્લાદ હરિવર્ષ ખંડમાં રહ્યા છે. હમણાં જેને પટલાઈ કરવાનો સ્વભાવ હશે કે કોઈ વાતની ઈચ્છા હશે તો ત્યાં તેને જોડી દેશે ને જેને તેને જોડલું મળશે. લાંબી નજરે જોઈએ છીએે તે ગોળ નાખીએ તેટલું જ ગળ્યું થાશે. માટે લોક સામું જોવું નહિ. શાસ્ત્ર તથા મહારાજની મરજી સામું જોવું.@ 2 જોડલું જોતું હશે= લગ્ન કરવાની ઈચ્છા હશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15283.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gopalanandswami, svarupanand</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15285.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koi vate dharanu nathi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '284');
+            localStorage.setItem('lastVisitedVatFile', 'ch15284.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

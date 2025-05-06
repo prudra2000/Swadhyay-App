@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સારી રસોઈ થઈ હોય - Sari rasoi thai hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sari rasoi thai hoy</h1>
+                <div class="gujarati-title">સારી રસોઈ થઈ હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 312</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(312) sārī rasoī thaī hoya ne sārī peṭhe khavāya to nāgara brāhmaṇanī peṭhe thāya. eka nāgara brāhmaṇa bahu jamyo te kyāṃya cena paḍe nahi. pachī pāṇīmāṃ jaīne paḍayo. tyāṃ māṃhī eka pāḍo paḍela, tene jāṇe ā koīka mārī peṭhe bahu jamyo che te pāṇīmāṃ beṭho che; ema dhārī pāḍānā māthāmāṃ āṃgaḻī bharāvī, te kaṭhaṇa lāgyuṃ eṭale kahe, ‘paṃḍyājī, svārthīlāṃ sagāṃ maḻyāṃ haśe, te tame to bahu jamyā lāgo cho, māruṃ peṭa tamārā jevuṃ kaṭhaṇa nathī’; ema bahu jamye sarasāī na mānavī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(312) સારી રસોઈ થઈ હોય ને સારી પેઠે ખવાય તો નાગર બ્રાહ્મણની પેઠે થાય. એક નાગર બ્રાહ્મણ બહુ જમ્યો તે ક્યાંય ચેન પડે નહિ. પછી પાણીમાં જઈને પડયો. ત્યાં માંહી એક પાડો પડેલ, તેને જાણે આ કોઈક મારી પેઠે બહુ જમ્યો છે તે પાણીમાં બેઠો છે; એમ ધારી પાડાના માથામાં આંગળી ભરાવી, તે કઠણ લાગ્યું એટલે કહે, ‘પંડ્યાજી, સ્વાર્થીલાં સગાં મળ્યાં હશે, તે તમે તો બહુ જમ્યા લાગો છો, મારું પેટ તમારા જેવું કઠણ નથી’; એમ બહુ જમ્યે સરસાઈ ન માનવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10311.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Savali samajan hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10313.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kusangi deh mukavano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '312');
+            localStorage.setItem('lastVisitedVatFile', 'ch10312.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

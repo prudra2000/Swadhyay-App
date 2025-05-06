@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેના હૈયામાં સંસાર  - Jena haiyama sansar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jena haiyama sansar</h1>
+                <div class="gujarati-title">જેના હૈયામાં સંસાર </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 119</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(119) jenā haiyāmāṃ saṃsāra bharyo haśe tenā haiyāmāṃ śrī svāminārāyaṇa kyāṃthī raheśe ? mana-indriyuṃ jītyāṃ hoya to paṇa teno viśrvāsa na karavo; māṭe kusaṃga to jarūra ḍāgha lagāḍe evo che. ḍāgha na lāge evuṃ hoya to paṇa loka viruddha na karavuṃ. ṭīlāṃ, kaṃṭhī rākhaśe ane niṣkāmī vartamāna nahi pāḻe tene jama laī jāśe ne tenuṃ kalyāṇa nahi thāya. bāīono prasaṃga che te baṭṭo lagāḍe evo ja che. goḻa ujaḻo thaī dharmarājā pāse rāve gayo ne kahe, ‘sau mune baṭakāṃ bhare che;’ tyāre dharmarājā kahe, ‘tuṃ āṃhīṃthī dūra jā, mārāthī paṇa baṭakuṃ bharāśe !’ ema rūpano prasaṃga thaye rahevāya ema nathī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(119) જેના હૈયામાં સંસાર ભર્યો હશે તેના હૈયામાં શ્રી સ્વામિનારાયણ ક્યાંથી રહેશે ? મન-ઇન્દ્રિયું જીત્યાં હોય તો પણ તેનો વિશ્ર્વાસ ન કરવો; માટે કુસંગ તો જરૂર ડાઘ લગાડે એવો છે. ડાઘ ન લાગે એવું હોય તો પણ લોક વિરુદ્ધ ન કરવું. ટીલાં, કંઠી રાખશે અને નિષ્કામી વર્તમાન નહિ પાળે તેને જમ લઈ જાશે ને તેનું કલ્યાણ નહિ થાય. બાઈઓનો પ્રસંગ છે તે બટ્ટો લગાડે એવો જ છે. ગોળ ઉજળો થઈ ધર્મરાજા પાસે રાવે ગયો ને કહે, ‘સૌ મુને બટકાં ભરે છે;’ ત્યારે ધર્મરાજા કહે, ‘તું આંહીંથી દૂર જા, મારાથી પણ બટકું ભરાશે !’ એમ રૂપનો પ્રસંગ થયે રહેવાય એમ નથી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13118.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetala bayadivala chhe </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13120.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prabhu bhajavama hajaru</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '119');
+            localStorage.setItem('lastVisitedVatFile', 'ch13119.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

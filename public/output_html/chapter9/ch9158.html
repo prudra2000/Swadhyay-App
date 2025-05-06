@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દામોદરને કાંઠે કરોડો  - Damodarne kanthe karodo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Damodarne kanthe karodo</h1>
+                <div class="gujarati-title">દામોદરને કાંઠે કરોડો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 158</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(158) dāmodarane kāṃṭhe karoḍo māṇasa bāḻyāṃ, paṇa veṃta dharatī caḍī nathī. māṭe be divasa jīvavuṃ temāṃ prabhu bhajī levā. ā to che ne paṃdara ānā kathāvārtā hoya ne eka āno bījī kriyā hoya tyāre jīvamāṃ sukha āve. ā to paṃdara ānā bījī kriyā ne eka āno vātuṃ, temāṃ śuṃ pāke ?@ 1 gāḍe ucāḻā= ghara khālī karī sāmāna gāḍāmāṃ bharī nīkaḻavuṃ te eṭale ke ā dehamāṃthī karmaphaḻarūpī prārabdha laī marī chuṭavuṃ te.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(158) દામોદરને કાંઠે કરોડો માણસ બાળ્યાં, પણ વેંત ધરતી ચડી નથી. માટે બે દિવસ જીવવું તેમાં પ્રભુ ભજી લેવા. આ તો છે ને પંદર આના કથાવાર્તા હોય ને એક આનો બીજી ક્રિયા હોય ત્યારે જીવમાં સુખ આવે. આ તો પંદર આના બીજી ક્રિયા ને એક આનો વાતું, તેમાં શું પાકે ?@ 1 ગાડે ઉચાળા= ઘર ખાલી કરી સામાન ગાડામાં ભરી નીકળવું તે એટલે કે આ દેહમાંથી કર્મફળરૂપી પ્રારબ્ધ લઈ મરી છુટવું તે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9157.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Santmathi ne satsangimathi </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9159.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pustak bhela karava </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '158');
+            localStorage.setItem('lastVisitedVatFile', 'ch9158.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

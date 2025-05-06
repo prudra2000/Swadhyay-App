@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેશકાળ એવા છે જે  - Deshakal eva chhe je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Deshakal eva chhe je</h1>
+                <div class="gujarati-title">દેશકાળ એવા છે જે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 31</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha sudi pāṃcamane divase svāmīe vāta karī je, $(31) deśakāḻa evā che je rucine paṇa pheravī nākhe ne bheḻā beṭhā chīe paṇa sau saunī ruci nokhī che, māṭe mahārāje potānī ruci kahī che temāṃ āpaṇī ruci bheḻavī devī e pādharuṃ che. ruci upara dharmasvarūpānaṃdanuṃ dṛṣṭāṃta dīdhuṃ je, emane varṇāśramanuṃ aṃga bhāre, tethī bheḻā rahe che paṇa ruci nokhī che; te mahārāje svapnāmāṃ thāḻa āpyo, paṇa na ja jamyā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ સુદિ પાંચમને દિવસે સ્વામીએ વાત કરી જે, $(31) દેશકાળ એવા છે જે રુચિને પણ ફેરવી નાખે ને ભેળા બેઠા છીએ પણ સૌ સૌની રુચિ નોખી છે, માટે મહારાજે પોતાની રુચિ કહી છે તેમાં આપણી રુચિ ભેળવી દેવી એ પાધરું છે. રુચિ ઉપર ધર્મસ્વરૂપાનંદનું દૃષ્ટાંત દીધું જે, એમને વર્ણાશ્રમનું અંગ ભારે, તેથી ભેળા રહે છે પણ રુચિ નોખી છે; તે મહારાજે સ્વપ્નામાં થાળ આપ્યો, પણ ન જ જમ્યા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11030.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ame ek same gondal</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11032.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jetalo haiyama bhagavanno</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '31');
+            localStorage.setItem('lastVisitedVatFile', 'ch11031.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

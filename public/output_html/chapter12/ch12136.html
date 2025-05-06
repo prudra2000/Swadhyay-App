@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કાલો બલીયાન્‌ બલિનાં - Kalo baliyan balinan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kalo baliyan balinan</h1>
+                <div class="gujarati-title">કાલો બલીયાન્‌ બલિનાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 136</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(136) $kālo balīyān‌ balināṃ bhidyate tena buddhaya: | $kāmalobharasāsvāda: snehamānavatāṃ mune || $(subhāṣita) $artha :- kāḻa baḻavāna che, tethī baḻavāna lokonī paṇa buddhi phare che. sneha ane mānavāḻāo kāma, lobhano rasāsvāda le che. $(bhagavad gītā : 3/37) $artha :- ā rajoguṇathī utpanna thanāro, ā kāma ja krodha che, ghaṇuṃ khānāro ane mahāpāpī che; ā saṃsāramāṃ ene tuṃ vairī jāṇa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(136) $કાલો બલીયાન્‌ બલિનાં ભિદ્યતે તેન બુદ્ધય: । $કામલોભરસાસ્વાદ: સ્નેહમાનવતાં મુને ।। $(સુભાષિત) $અર્થ :- કાળ બળવાન છે, તેથી બળવાન લોકોની પણ બુદ્ધિ ફરે છે. સ્નેહ અને માનવાળાઓ કામ, લોભનો રસાસ્વાદ લે છે. $(ભગવદ્ ગીતા : 3/37) $અર્થ :- આ રજોગુણથી ઉત્પન્ન થનારો, આ કામ જ ક્રોધ છે, ઘણું ખાનારો અને મહાપાપી છે; આ સંસારમાં એને તું વૈરી જાણ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12135.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Uttam bhogni ruchi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12137.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharajnu pragat thavu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '136');
+            localStorage.setItem('lastVisitedVatFile', 'ch12136.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શહેરનાં સુખડાંની આ - Shaherna sukhadani aa</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shaherna sukhadani aa</h1>
+                <div class="gujarati-title">શહેરનાં સુખડાંની આ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 126</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(126) śaheranāṃ sukhaḍāṃnī ā deśamāṃ koīne khabara nathī. eka bharavāḍe bajara keḻavavā sāru goḻa maṃgāvela, te bharavāḍaṇa dūdha vecīne pāchī vaḻī tyāre goḻa laīne trāṃbaḍīmāṃ nākhyo. trāṃbaḍī dūdhāḻī ne taḍako hato tethī goḻa ogaḻī gayo ne rastāmāṃ ūṃṭanāṃ līṃḍāṃ paḍela te vīṇīne goḻanī khabara na rahetāṃ trāṃbaḍīmāṃ nākhyāṃ. ghera trāṃbaḍī mūkī kāme gaī ne vāṃsethī teno dhaṇī āvyo. teṇe trāṃbaḍīmāṃ joyuṃ to śaheranuṃ sukhaḍuṃ dīṭhuṃ ne khāvā māṃḍayuṃ te gaḻyuṃ lāgyuṃ; paṇa svāda āvyo nahi. pachī bharavāḍaṇe āvīne pūchyuṃ je, ‘śuṃ khāo cho ?’ tyāre te kahe, ‘tuṃ lāvī chuṃ te śaheranuṃ sukhaḍuṃ jāṇīne khāuṃ chuṃ; paṇa svāda āvato nathī.’ bharavāḍaṇa kahe, ‘te to ūṃṭanāṃ līṃḍāṃ che.’ tema saṃsāranāṃ sukha evāṃ che paṇa temāṃ bharavāḍanī peṭhe sukha māne che, e ja ajñāna che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(126) શહેરનાં સુખડાંની આ દેશમાં કોઈને ખબર નથી. એક ભરવાડે બજર કેળવવા સારુ ગોળ મંગાવેલ, તે ભરવાડણ દૂધ વેચીને પાછી વળી ત્યારે ગોળ લઈને ત્રાંબડીમાં નાખ્યો. ત્રાંબડી દૂધાળી ને તડકો હતો તેથી ગોળ ઓગળી ગયો ને રસ્તામાં ઊંટનાં લીંડાં પડેલ તે વીણીને ગોળની ખબર ન રહેતાં ત્રાંબડીમાં નાખ્યાં. ઘેર ત્રાંબડી મૂકી કામે ગઈ ને વાંસેથી તેનો ધણી આવ્યો. તેણે ત્રાંબડીમાં જોયું તો શહેરનું સુખડું દીઠું ને ખાવા માંડયું તે ગળ્યું લાગ્યું; પણ સ્વાદ આવ્યો નહિ. પછી ભરવાડણે આવીને પૂછ્યું જે, ‘શું ખાઓ છો ?’ ત્યારે તે કહે, ‘તું લાવી છું તે શહેરનું સુખડું જાણીને ખાઉં છું; પણ સ્વાદ આવતો નથી.’ ભરવાડણ કહે, ‘તે તો ઊંટનાં લીંડાં છે.’ તેમ સંસારનાં સુખ એવાં છે પણ તેમાં ભરવાડની પેઠે સુખ માને છે, એ જ અજ્ઞાન છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10125.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek varasade mol </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10127.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gyani hoy te purvapar</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '126');
+            localStorage.setItem('lastVisitedVatFile', 'ch10126.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

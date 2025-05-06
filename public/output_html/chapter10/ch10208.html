@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવો દાખડો સાધુ વિના - Avo dakhado sadhu vina</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Avo dakhado sadhu vina</h1>
+                <div class="gujarati-title">આવો દાખડો સાધુ વિના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 208</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(208) āvo dākhaḍo sādhu vinā koṇa kare ? pote tyāga rākhe ne bījānuṃ paṇa rākhe. eka vāra muktānaṃdasvāmī bhaṃḍāre gayā, tyāre sādhunā hāthamāṃthī roṭalā paḍī gayā. eṭale muktānaṃdasvāmīne manamāṃ ema thayuṃ je, sādhune to jananī kahyā che ne huṃ to bhayarūpa jaṇāṇo haīśa; tyāre roṭalā hāthamāṃthī paḍyā haśe ! pachī pote kahe, ‘āja to bhūkha lāgī che, te kāṃī hoya to lāvo.’ pachī saunī sāthe khuramo khāvā beṭhā. tema jīva bheḻā bhaḻīne prabhu bhajāvīe chīe; paṇa jema che tema svabhāva kahevā māṃḍīe to rahevāya nahi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(208) આવો દાખડો સાધુ વિના કોણ કરે ? પોતે ત્યાગ રાખે ને બીજાનું પણ રાખે. એક વાર મુક્તાનંદસ્વામી ભંડારે ગયા, ત્યારે સાધુના હાથમાંથી રોટલા પડી ગયા. એટલે મુક્તાનંદસ્વામીને મનમાં એમ થયું જે, સાધુને તો જનની કહ્યા છે ને હું તો ભયરૂપ જણાણો હઈશ; ત્યારે રોટલા હાથમાંથી પડ્યા હશે ! પછી પોતે કહે, ‘આજ તો ભૂખ લાગી છે, તે કાંઈ હોય તો લાવો.’ પછી સૌની સાથે ખુરમો ખાવા બેઠા. તેમ જીવ ભેળા ભળીને પ્રભુ ભજાવીએ છીએ; પણ જેમ છે તેમ સ્વભાવ કહેવા માંડીએ તો રહેવાય નહિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10207.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi jivne prabhu sathe </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10209.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsang karavo tyare </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '208');
+            localStorage.setItem('lastVisitedVatFile', 'ch10208.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

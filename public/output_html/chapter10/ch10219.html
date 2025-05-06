@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોહ ન રહે - Moh na rahe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Moh na rahe</h1>
+                <div class="gujarati-title">મોહ ન રહે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 219</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(219) moha na rahe, kāma na rahe ne svādanī vṛtti ṭaḻī jāya tyāre sukha thāya. koīkane māthe deṇuṃ thaī gayuṃ. te leṇiyāta ugharāṇī karavā āve, tyāre mitranā kahevāthī ‘hāu’ ema kahe. te leṇiyāta jāṇe je gāṃḍo thaī gayo che. pachī to leṇiyāta māgatā baṃdha paḍyā pachī teno mitra māgavā āvyo, tyāre kahe ‘hāu, hāu.’ tema motībhāī paṇa amane be hāu kare che. te śuṃ ? je, ame motībhāīno vahevāra sudhārī āpyo pachī ame dharmādo kāḍhavānuṃ kahyuṃ to paṇa na kāḍhyo e be hāu karyā kahevāya. tyāgīne kāṃī leṇadeṇa nahi kāṃī vahevāra māthe nahi ne bhagavāne sarve sānukūḻa karyuṃ, to paṇa bhagavānanī smṛti na rākhīe to āpaṇe paṇa bhagavānane be hāu karyā kahevāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(219) મોહ ન રહે, કામ ન રહે ને સ્વાદની વૃત્તિ ટળી જાય ત્યારે સુખ થાય. કોઈકને માથે દેણું થઈ ગયું. તે લેણિયાત ઉઘરાણી કરવા આવે, ત્યારે મિત્રના કહેવાથી ‘હાઉ’ એમ કહે. તે લેણિયાત જાણે જે ગાંડો થઈ ગયો છે. પછી તો લેણિયાત માગતા બંધ પડ્યા પછી તેનો મિત્ર માગવા આવ્યો, ત્યારે કહે ‘હાઉ, હાઉ.’ તેમ મોતીભાઈ પણ અમને બે હાઉ કરે છે. તે શું ? જે, અમે મોતીભાઈનો વહેવાર સુધારી આપ્યો પછી અમે ધર્માદો કાઢવાનું કહ્યું તો પણ ન કાઢ્યો એ બે હાઉ કર્યા કહેવાય. ત્યાગીને કાંઈ લેણદેણ નહિ કાંઈ વહેવાર માથે નહિ ને ભગવાને સર્વે સાનુકૂળ કર્યું, તો પણ ભગવાનની સ્મૃતિ ન રાખીએ તો આપણે પણ ભગવાનને બે હાઉ કર્યા કહેવાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10218.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bajare bese ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10220.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vaikunthanand brahmacharine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '219');
+            localStorage.setItem('lastVisitedVatFile', 'ch10219.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

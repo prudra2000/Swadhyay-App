@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ કાયાનગરીને વિશે  - Aa kayanagarine vishe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa kayanagarine vishe</h1>
+                <div class="gujarati-title">આ કાયાનગરીને વિશે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 233</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(233) ā kāyānagarīne viśe jīva rājā che; dharma, jñāna ne vairāgyādika je guṇa te khajīno che ne deha, indriyo ne aṃta:karaṇa cāraṇa, bhāṭa ne veśyāne ṭhekāṇe che te jīva pāse nokhuṃ nokhuṃ māge che, jihvā kahe mane sāruṃ sāruṃ khāvā āpo; deha kahe mane suvāḍī mūko; netra kahe mane rūpa jovā āpo, te jo jīva nādāra thāya ne temanuṃ kahyuṃ kare to dharma, jñāna, vairāgyādika je sarve guṇa teṇe rahita thaī jāya; māṭe mahārājanī ājñā pramāṇe varatavuṃ ne jemāṃ guṇa na hoya te jo ājñā pramāṇe varate to to temāṃ badhāya guṇa āve.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(233) આ કાયાનગરીને વિશે જીવ રાજા છે; ધર્મ, જ્ઞાન ને વૈરાગ્યાદિક જે ગુણ તે ખજીનો છે ને દેહ, ઇન્દ્રિયો ને અંત:કરણ ચારણ, ભાટ ને વેશ્યાને ઠેકાણે છે તે જીવ પાસે નોખું નોખું માગે છે, જિહ્વા કહે મને સારું સારું ખાવા આપો; દેહ કહે મને સુવાડી મૂકો; નેત્ર કહે મને રૂપ જોવા આપો, તે જો જીવ નાદાર થાય ને તેમનું કહ્યું કરે તો ધર્મ, જ્ઞાન, વૈરાગ્યાદિક જે સર્વે ગુણ તેણે રહિત થઈ જાય; માટે મહારાજની આજ્ઞા પ્રમાણે વરતવું ને જેમાં ગુણ ન હોય તે જો આજ્ઞા પ્રમાણે વરતે તો તો તેમાં બધાય ગુણ આવે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9232.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Avala manas agal</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9234.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa vatunu kahenaru </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '233');
+            localStorage.setItem('lastVisitedVatFile', 'ch9233.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

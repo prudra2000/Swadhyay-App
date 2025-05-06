@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઈ વાંકું બોલે તેને - Koi vanku bole tene</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Koi vanku bole tene</h1>
+                <div class="gujarati-title">કોઈ વાંકું બોલે તેને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 198</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(198) koī vāṃkuṃ bole tene mahārāja khījatā. nirvikalpānaṃda bhaṇelo hato paṇa padārtha bheḻāṃ karato, tethī muktānaṃdasvāmī ne ātmānaṃdasvāmī tenuṃ khaṃḍana karatā, eṭale teṇe dveṣabhāvathī mahārāja upara dharamapura kāgaḻa lakhyo. temāṃ mahārājane bahu ja sārī rīte upamā lakhī ne prārthanā karī je, ‘modakānaṃda ane anātmānaṃda e beu mārā dveṣī che te mane bahu du:kha de che; māṭe te thakī mārī rakṣā karajo !’ pachī mahārāje pūchayuṃ je, ‘ā be jaṇa koṇa che ?’ tyāre ātmānaṃdasvāmīe kahyuṃ je, ‘modakānaṃda te muktānaṃdasvāmīne kahe che ne anātmānaṃda mane kahe che; kāraṇa ke, ame beya tenā viṣayanuṃ khaṃḍana karīe chīe te tene gamatuṃ nathī.’ te sāṃbhaḻī mahārāja kahe, ‘teṇe amane lāṃciyā jāṇyā ? te śuṃ ame evā lāṃciyā chīe ?’ ema kahī khījīne kāgaḻa phāḍī nākhyo. māṭe koīnuṃ vāṃkuṃ bolaśuṃ to mahārāja du:khāī jāśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(198) કોઈ વાંકું બોલે તેને મહારાજ ખીજતા. નિર્વિકલ્પાનંદ ભણેલો હતો પણ પદાર્થ ભેળાં કરતો, તેથી મુક્તાનંદસ્વામી ને આત્માનંદસ્વામી તેનું ખંડન કરતા, એટલે તેણે દ્વેષભાવથી મહારાજ ઉપર ધરમપુર કાગળ લખ્યો. તેમાં મહારાજને બહુ જ સારી રીતે ઉપમા લખી ને પ્રાર્થના કરી જે, ‘મોદકાનંદ અને અનાત્માનંદ એ બેઉ મારા દ્વેષી છે તે મને બહુ દુ:ખ દે છે; માટે તે થકી મારી રક્ષા કરજો !’ પછી મહારાજે પૂછયું જે, ‘આ બે જણ કોણ છે ?’ ત્યારે આત્માનંદસ્વામીએ કહ્યું જે, ‘મોદકાનંદ તે મુક્તાનંદસ્વામીને કહે છે ને અનાત્માનંદ મને કહે છે; કારણ કે, અમે બેય તેના વિષયનું ખંડન કરીએ છીએ તે તેને ગમતું નથી.’ તે સાંભળી મહારાજ કહે, ‘તેણે અમને લાંચિયા જાણ્યા ? તે શું અમે એવા લાંચિયા છીએ ?’ એમ કહી ખીજીને કાગળ ફાડી નાખ્યો. માટે કોઈનું વાંકું બોલશું તો મહારાજ દુ:ખાઈ જાશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10197.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi matno mukhiyo hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10199.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishay bhogavavana sankalp</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '198');
+            localStorage.setItem('lastVisitedVatFile', 'ch10198.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

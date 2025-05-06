@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અધિકારી થયા હોય - Adhikari thaya hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Adhikari thaya hoy</h1>
+                <div class="gujarati-title">અધિકારી થયા હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 94</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(94) adhikārī thayā hoya tene samajyānī rīta je jeṭalo adhikāra potāne soṃpyo hoya teṭalo ja kare paṇa vadhu ḍahāpaṇa ke paṭalāī vāvare nahi ne potāno bhāva vadhu na jaṇāve ne sau upara sarakhī dṛṣṭi hoya ne koī deśī, paradeśī harijana āve tene prathama āvakāra devo ne tyāra keḍe khāvānuṃ pūchavuṃ ne e be vāta vinā pādharī bhagavānanī vāta kare to samāsa na kare ne kusaṃgī hoya tathā ajāṇyo hoya ne kūtaruṃ eṭalāṃ to āve, to bagāḍa ja kare, māṭe e traṇane jagyāmāṃ pesavā devāṃ nahi ne te vinā harijana to game eṭalā āve to tene āvakāra ne jamavānuṃ āpavuṃ; paṇa temāṃ potānuṃ ḍahāpaṇa na calāvavuṃ, ema samaje te jñāna śuddha kahevāya; jevo tevo haśe ne svabhāva, prakṛtivāḻo haśe paṇa bhagavānamāṃ koī rīte eno jīva baṃdhāṇo, to ethī kaī moṭī vāta che ? māṭe ema jāṇīne teno mahimā samajavo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(94) અધિકારી થયા હોય તેને સમજ્યાની રીત જે જેટલો અધિકાર પોતાને સોંપ્યો હોય તેટલો જ કરે પણ વધુ ડહાપણ કે પટલાઈ વાવરે નહિ ને પોતાનો ભાવ વધુ ન જણાવે ને સૌ ઉપર સરખી દૃષ્ટિ હોય ને કોઈ દેશી, પરદેશી હરિજન આવે તેને પ્રથમ આવકાર દેવો ને ત્યાર કેડે ખાવાનું પૂછવું ને એ બે વાત વિના પાધરી ભગવાનની વાત કરે તો સમાસ ન કરે ને કુસંગી હોય તથા અજાણ્યો હોય ને કૂતરું એટલાં તો આવે, તો બગાડ જ કરે, માટે એ ત્રણને જગ્યામાં પેસવા દેવાં નહિ ને તે વિના હરિજન તો ગમે એટલા આવે તો તેને આવકાર ને જમવાનું આપવું; પણ તેમાં પોતાનું ડહાપણ ન ચલાવવું, એમ સમજે તે જ્ઞાન શુદ્ધ કહેવાય; જેવો તેવો હશે ને સ્વભાવ, પ્રકૃતિવાળો હશે પણ ભગવાનમાં કોઈ રીતે એનો જીવ બંધાણો, તો એથી કઈ મોટી વાત છે ? માટે એમ જાણીને તેનો મહિમા સમજવો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16093.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sanje vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16095.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavadima atmabuddhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '94');
+            localStorage.setItem('lastVisitedVatFile', 'ch16094.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

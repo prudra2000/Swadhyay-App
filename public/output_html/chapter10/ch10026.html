@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેટલા વિષય ભોગવ્યા  - Jetala vishay bhogavya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jetala vishay bhogavya</h1>
+                <div class="gujarati-title">જેટલા વિષય ભોગવ્યા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 26</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(26) jeṭalā viṣaya bhogavyā te cālyā gayā. koī vāte pūruṃ thāya tema nathī māṭe dhīre dhīre mohanāṃ mūḻa ukhāḍī nākhavāṃ. paśu-pakṣī sarve potānāṃ saṃbaṃdhīnuṃ ja poṣaṇa kare che te śuṃ ? je, jīvamātrane devanī māyāno moha thayo che te bhagavānamāṃ na joḍāya ne saṃbaṃdhīmāṃ joḍāī jāya. paṇa saṃbaṃdhī to kevāṃ che ? to, $kahe hama tumare śarana, vehi dhana harana vicāre, $dagābāja ve darda gare mata phāṃsi ḍāre; $saba aṃdha-dhaṃdha piche cale kūpa pare ke paci mare, $mukuṃda moha niśi meṃ sakala sadguru bina bhaṭakata phire. $(muktānaṃda kāvya : mukunda bāvanī-21)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(26) જેટલા વિષય ભોગવ્યા તે ચાલ્યા ગયા. કોઈ વાતે પૂરું થાય તેમ નથી માટે ધીરે ધીરે મોહનાં મૂળ ઉખાડી નાખવાં. પશુ-પક્ષી સર્વે પોતાનાં સંબંધીનું જ પોષણ કરે છે તે શું ? જે, જીવમાત્રને દેવની માયાનો મોહ થયો છે તે ભગવાનમાં ન જોડાય ને સંબંધીમાં જોડાઈ જાય. પણ સંબંધી તો કેવાં છે ? તો, $કહે હમ તુમરે શરન, વેહિ ધન હરન વિચારે, $દગાબાજ વે દર્દ ગરે મત ફાંસિ ડારે; $સબ અંધ-ધંધ પિછે ચલે કૂપ પરે કે પચિ મરે, $મુકુંદ મોહ નિશિ મેં સકલ સદ્ગુરુ બિન ભટકત ફિરે. $(મુક્તાનંદ કાવ્ય : મુકુન્દ બાવની-21)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10025.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketalak sukha avya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10027.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jog malavo pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '26');
+            localStorage.setItem('lastVisitedVatFile', 'ch10026.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

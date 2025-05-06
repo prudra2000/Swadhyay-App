@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અખંડાનંદ બ્રહ્મચારીને  - Akhandanand brahmacharine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Akhandanand brahmacharine</h1>
+                <div class="gujarati-title">અખંડાનંદ બ્રહ્મચારીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 222</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(222) akhaṃḍānaṃda brahmacārīne puruṣottamapaṇānī vāta na beṭhī, ane amadāvāḻā vāsudevānaṃda brahmācārīne paṇa e vāta na beṭhī. ne avatāra avatārīnī vāta sabhāmāṃ koīe kāḍhī, tyāre vāsudevānaṃda brahmacārīe kahyuṃ je, ‘bhavāyo ne veśa ema samajavuṃ.’ tyāre ame kahyuṃ je, ‘tārā ne caṃdramā, tīra ne tīrano nākhanāra ema bheda che.’ ne keṭalākane to haju puruṣottamapaṇuṃ samajavāmāṃ uthaḍaka che, ane akṣaranā svarūpanuṃ paṇa evāne uthaḍakapaṇuṃ che. te amārāṃ vacanane viśe viśrvāsa nathī rākhatā tene to deha uthaḍaka maṭanāra ja nathī kema ke, āthī bījo sāro joga āgaḻa koīne āvyo nathī, ane have āvaśe paṇa nahi. ne jene kharo niśrcaya che tene to bījo saṃkalpa nathī, tevā je amārā ekāṃtika tene to pragaṭa sarvoparī bhagavānanī niṣṭhā evī che ke, anaṃtane brahmarūpa kare che ne karaśe. 1 parajaṃta= paryaṃta, sudhdhāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(222) અખંડાનંદ બ્રહ્મચારીને પુરુષોત્તમપણાની વાત ન બેઠી, અને અમદાવાળા વાસુદેવાનંદ બ્રહ્માચારીને પણ એ વાત ન બેઠી. ને અવતાર અવતારીની વાત સભામાં કોઈએ કાઢી, ત્યારે વાસુદેવાનંદ બ્રહ્મચારીએ કહ્યું જે, ‘ભવાયો ને વેશ એમ સમજવું.’ ત્યારે અમે કહ્યું જે, ‘તારા ને ચંદ્રમા, તીર ને તીરનો નાખનાર એમ ભેદ છે.’ ને કેટલાકને તો હજુ પુરુષોત્તમપણું સમજવામાં ઉથડક છે, અને અક્ષરના સ્વરૂપનું પણ એવાને ઉથડકપણું છે. તે અમારાં વચનને વિશે વિશ્ર્વાસ નથી રાખતા તેને તો દેહ ઉથડક મટનાર જ નથી કેમ કે, આથી બીજો સારો જોગ આગળ કોઈને આવ્યો નથી, અને હવે આવશે પણ નહિ. ને જેને ખરો નિશ્ર્ચય છે તેને તો બીજો સંકલ્પ નથી, તેવા જે અમારા એકાંતિક તેને તો પ્રગટ સર્વોપરી ભગવાનની નિષ્ઠા એવી છે કે, અનંતને બ્રહ્મરૂપ કરે છે ને કરશે. 1 પરજંત= પર્યંત, સુધ્ધાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11221.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Krupanandswami, vishuddhatmanand</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11223.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Je kam karava gaya ne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '222');
+            localStorage.setItem('lastVisitedVatFile', 'ch11222.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

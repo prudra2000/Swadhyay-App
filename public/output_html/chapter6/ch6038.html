@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વોપરી પુરુષોત્તમપણું - Sarvopari purushottampanu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarvopari purushottampanu</h1>
+                <div class="gujarati-title">સર્વોપરી પુરુષોત્તમપણું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 38</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(38) sarvoparī puruṣottamapaṇuṃ samajavuṃ. te hamaṇāṃ aciṃtyānaṃda brahmacārī pāse ame graṃtha karāvyo temāṃ saṃpūrṇa puruṣottamapaṇuṃ nākhyuṃ che. ane eka jaṇe rāmakathā vāṃcī, paṇa eno to saune niśrcaya che ja; paṇa ā puruṣottamano ja karavo e vāta kaṭhaṇa che. eka vāra samaiyāmāṃ ‘bhagavad gītā’nī kathā karī; tenī paṇa rātanā bāra vāge vāta karī ne kahyuṃ je, ‘ethī mahārājano niśrcaya śuṃ thāya che ? e to śuṃ karīe saune e vātanī tāṇa, te kare che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૩૮) સર્વોપરી પુરુષોત્તમપણું સમજવું. તે હમણાં અચિંત્યાનંદ બ્રહ્મચારી પાસે અમે ગ્રંથ કરાવ્યો તેમાં સંપૂર્ણ પુરુષોત્તમપણું નાખ્યું છે. અને એક જણે રામકથા વાંચી, પણ એનો તો સૌને નિશ્ર્ચય છે જ; પણ આ પુરુષોત્તમનો જ કરવો એ વાત કઠણ છે. એક વાર સમૈયામાં ‘ભગવદ્ ગીતા’ની કથા કરી; તેની પણ રાતના બાર વાગે વાત કરી ને કહ્યું જે, ‘એથી મહારાજનો નિશ્ર્ચય શું થાય છે ? એ તો શું કરીએ સૌને એ વાતની તાણ, તે કરે છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6037.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje em kahyu je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6039.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje varatalma sarve</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '38');
+            localStorage.setItem('lastVisitedVatFile', 'ch6038.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

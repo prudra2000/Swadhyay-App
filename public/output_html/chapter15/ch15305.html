@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સમાગમ થાય છે  - Aa samagam thay chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa samagam thay chhe</h1>
+                <div class="gujarati-title">આ સમાગમ થાય છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 305</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(305) ā samāgama thāya che ne avāya che, te saṃskāra che ne gharano uṃbaro sāḍā bāra karoḍa yojana ūṃco che te pūcho vasovāḻā vāghajībhāīne. emāṃ śuṃ kahyuṃ je, temane gore tathā gurue vāryā te māṃḍa māṃḍa āvyā ne samāgame saṃskāra lāge che. māṭe sādhuno saṃga karaśuṃ to koī kāḻe nāśa nahi pāme. avināśī to cāra vānāṃ che; bījuṃ badhuṃ nāśavaṃta che. evā śabda ā śāstramāṃ hoya paṇa bhūlī javāya che. ne ā gāmanā praśrnorā (brāhmaṇa), hṛdayamāṃ ‘huṃ’ āve tyāre ūṭhīne bhāgī jāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(305) આ સમાગમ થાય છે ને અવાય છે, તે સંસ્કાર છે ને ઘરનો ઉંબરો સાડા બાર કરોડ યોજન ઊંચો છે તે પૂછો વસોવાળા વાઘજીભાઈને. એમાં શું કહ્યું જે, તેમને ગોરે તથા ગુરુએ વાર્યા તે માંડ માંડ આવ્યા ને સમાગમે સંસ્કાર લાગે છે. માટે સાધુનો સંગ કરશું તો કોઈ કાળે નાશ નહિ પામે. અવિનાશી તો ચાર વાનાં છે; બીજું બધું નાશવંત છે. એવા શબ્દ આ શાસ્ત્રમાં હોય પણ ભૂલી જવાય છે. ને આ ગામના પ્રશ્ર્નોરા (બ્રાહ્મણ), હૃદયમાં ‘હું’ આવે ત્યારે ઊઠીને ભાગી જાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15304.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apane nity pratye</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15306.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vahanni vat kari</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '305');
+            localStorage.setItem('lastVisitedVatFile', 'ch15305.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

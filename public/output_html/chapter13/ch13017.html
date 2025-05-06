@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વાસના એવી બળવાન - Vasana evi balavana </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vasana evi balavana </h1>
+                <div class="gujarati-title">વાસના એવી બળવાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 17</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bījā śrāvaṇa sudi paḍavā ne divase svāmīe vāta karī je,$(17) vāsanā evī baḻavāna che je dhāmamāṃthī paṇa kāḍhī nākhe. tene ṭāḻavānā ṛṣabhadeve pacīsa sādhana kahyāṃ che ane mahārāje traṇa kahyāṃ che; te satpuruṣano saṃga, sadvicāra ane niyama. boṭādanā dhanā sonīe samādhimāṃ sonānī īṃṭa levā māṃḍī, evī vāsanā baḻavāna che. chellānuṃ 39muṃ viśalyakaraṇīnā vacanāmṛtamāṃ kahyuṃ che evā satsaṃgī na thāvāya ane mahārāja dhāmamāṃ laī jāya to paṇa pāchuṃ āvavuṃ paḍe. strīnī vāsanāvāḻāne ailāvṛta khaṃḍamāṃ mūke che. chokarāṃ jema corīne dhūḍa khāya che, tema āpaṇe bhagavānathī corīne viṣaya bhogavīe chīe; evā jīvane avaḻā svabhāva paḍyā che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના બીજા શ્રાવણ સુદિ પડવા ને દિવસે સ્વામીએ વાત કરી જે,$(17) વાસના એવી બળવાન છે જે ધામમાંથી પણ કાઢી નાખે. તેને ટાળવાના ઋષભદેવે પચીસ સાધન કહ્યાં છે અને મહારાજે ત્રણ કહ્યાં છે; તે સત્પુરુષનો સંગ, સદ્વિચાર અને નિયમ. બોટાદના ધના સોનીએ સમાધિમાં સોનાની ઈંટ લેવા માંડી, એવી વાસના બળવાન છે. છેલ્લાનું 39મું વિશલ્યકરણીના વચનામૃતમાં કહ્યું છે એવા સત્સંગી ન થાવાય અને મહારાજ ધામમાં લઈ જાય તો પણ પાછું આવવું પડે. સ્ત્રીની વાસનાવાળાને ઐલાવૃત ખંડમાં મૂકે છે. છોકરાં જેમ ચોરીને ધૂડ ખાય છે, તેમ આપણે ભગવાનથી ચોરીને વિષય ભોગવીએ છીએ; એવા જીવને અવળા સ્વભાવ પડ્યા છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13016.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa satsangma anant </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13018.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koi bhagavadino dosh </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '17');
+            localStorage.setItem('lastVisitedVatFile', 'ch13017.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

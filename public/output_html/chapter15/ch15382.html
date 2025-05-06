@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>છેલ્લાનું વચનામૃત ઓગણચાલીસમું  - Chhellanu vachanamrut </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chhellanu vachanamrut </h1>
+                <div class="gujarati-title">છેલ્લાનું વચનામૃત ઓગણચાલીસમું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 382</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(382) chellānuṃ vacanāmṛta ogaṇacālīsamuṃ vaṃcāvīne siddhāṃta karyo je, ātmā paramātmāno vega lagāḍī devo. tyāre praśrna pūchyo je, e kahyo evo vega kema lāgato nathī ? tyāre uttara karyo je, ā karavāno ādara kene che? bījā ādara che. paṇa ā karavā navaruṃ koṇa che ? te to jyāre badhā kosano pravāha eka thāya ne badhā bārā baṃdha kare. te uparanī vāta karī je, sālī tāṇe eṭale badhāṃ bārāṃ baṃdha thaī jāya tyāre pāṇī dhoriyāmāṃ cāle. tema jyāre badhī vṛttiyuṃ bhagavānamāṃ rahe tyāre evo vega lāge; te jeṭalā tame satsaṃgamāṃ pravartyā haśo teṭaluṃ tamāre vadhyuṃ haśe ne ā to gāṃḍāno māraga che te gāṃḍā haśe te ā mārage cālaśe. mahārāje bahu jīvane jhālavā sāru ā saṃpradāya calāvyo che te jene jevī ruci te pramāṇe kare che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(382) છેલ્લાનું વચનામૃત ઓગણચાલીસમું વંચાવીને સિદ્ધાંત કર્યો જે, આત્મા પરમાત્માનો વેગ લગાડી દેવો. ત્યારે પ્રશ્ર્ન પૂછ્યો જે, એ કહ્યો એવો વેગ કેમ લાગતો નથી ? ત્યારે ઉત્તર કર્યો જે, આ કરવાનો આદર કેને છે? બીજા આદર છે. પણ આ કરવા નવરું કોણ છે ? તે તો જ્યારે બધા કોસનો પ્રવાહ એક થાય ને બધા બારા બંધ કરે. તે ઉપરની વાત કરી જે, સાલી તાણે એટલે બધાં બારાં બંધ થઈ જાય ત્યારે પાણી ધોરિયામાં ચાલે. તેમ જ્યારે બધી વૃત્તિયું ભગવાનમાં રહે ત્યારે એવો વેગ લાગે; તે જેટલા તમે સત્સંગમાં પ્રવર્ત્યા હશો તેટલું તમારે વધ્યું હશે ને આ તો ગાંડાનો મારગ છે તે ગાંડા હશે તે આ મારગે ચાલશે. મહારાજે બહુ જીવને ઝાલવા સારુ આ સંપ્રદાય ચલાવ્યો છે તે જેને જેવી રુચિ તે પ્રમાણે કરે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15381.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dehma jiv bandhai</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15383.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhakti to kare pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '382');
+            localStorage.setItem('lastVisitedVatFile', 'ch15382.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગીને વાત કરવી - Satsangine vat karavi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsangine vat karavi</h1>
+                <div class="gujarati-title">સત્સંગીને વાત કરવી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 175</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(175) satsaṃgīne vāta karavī hoya paṇa te to gāmamāṃthī laṃbakaraṇa jevāne bheḻā lāve ne āgaḻa besāre. tyāre tevā sāru jagatamāṃ jeṭalāṃ bhūṃḍāṃ dṛṣṭāṃta hoya te sarve devāṃ paḍe ne satsaṃgīne vāta karavānī hoya te kahevāya nahi, māṭe evāne bheḻā lāve temāṃ lāvanārane śuṃ samāsa thāya ? bhāyāvadaramāṃ mahāpuruṣadāsajīno bāpa ḍhūṃḍhiyāne bhegā lāvyā. pachī ame viṣayakhaṃḍananī vātuṃ karavā māṃḍī te ghaḍīka to sāṃbhaḻī rahyā. pachī temāṃthī eka ḍhūṃḍhiyo dhakhīne bolyo je, ‘bhoga lāgyā je, āṃhīṃ āvyā, āṃhīṃ āvyā chīe tyāranā māruṃ ne māruṃ ja khode che.’ ema evā hoya tene ā vātuṃ māthe āve eṭale game nahi, māṭe moṭā saṃta pāse ekalā javuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(175) સત્સંગીને વાત કરવી હોય પણ તે તો ગામમાંથી લંબકરણ જેવાને ભેળા લાવે ને આગળ બેસારે. ત્યારે તેવા સારુ જગતમાં જેટલાં ભૂંડાં દૃષ્ટાંત હોય તે સર્વે દેવાં પડે ને સત્સંગીને વાત કરવાની હોય તે કહેવાય નહિ, માટે એવાને ભેળા લાવે તેમાં લાવનારને શું સમાસ થાય ? ભાયાવદરમાં મહાપુરુષદાસજીનો બાપ ઢૂંઢિયાને ભેગા લાવ્યા. પછી અમે વિષયખંડનની વાતું કરવા માંડી તે ઘડીક તો સાંભળી રહ્યા. પછી તેમાંથી એક ઢૂંઢિયો ધખીને બોલ્યો જે, ‘ભોગ લાગ્યા જે, આંહીં આવ્યા, આંહીં આવ્યા છીએ ત્યારના મારું ને મારું જ ખોદે છે.’ એમ એવા હોય તેને આ વાતું માથે આવે એટલે ગમે નહિ, માટે મોટા સંત પાસે એકલા જવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10174.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jevu prahladne magata</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10176.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavan manushy jeva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '175');
+            localStorage.setItem('lastVisitedVatFile', 'ch10175.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

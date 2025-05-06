@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મધ્યનું સાતનું વચનામૃત  - Madhyanu satnu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Madhyanu satnu vachanamrut</h1>
+                <div class="gujarati-title">મધ્યનું સાતનું વચનામૃત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 106</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bījā śrāvaṇa vadi bārasane divase svāmīe vāta karī je, $(106) madhyanuṃ sātanuṃ vacanāmṛta vaṃcāvīne vāta karī je, kṛpāe karīne doṣa ṭaḻe che paṇa dehābhimāna mūkīne jyāre moṭānī sevāmāṃ rahe ne je akṣara kahe tema namī jāvuṃ to moṭānī kṛpā thāya ne je ājñā lope che tene to koī divasa sukha hoya ja nahi. ājñā lopāya to kāmādika bhūta vaḻage che ne vadhu lopāya to kharekharuṃ bhūta paṇa vaḻage che, te upara jetaparanī vāta karī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના બીજા શ્રાવણ વદિ બારસને દિવસે સ્વામીએ વાત કરી જે, $(106) મધ્યનું સાતનું વચનામૃત વંચાવીને વાત કરી જે, કૃપાએ કરીને દોષ ટળે છે પણ દેહાભિમાન મૂકીને જ્યારે મોટાની સેવામાં રહે ને જે અક્ષર કહે તેમ નમી જાવું તો મોટાની કૃપા થાય ને જે આજ્ઞા લોપે છે તેને તો કોઈ દિવસ સુખ હોય જ નહિ. આજ્ઞા લોપાય તો કામાદિક ભૂત વળગે છે ને વધુ લોપાય તો ખરેખરું ભૂત પણ વળગે છે, તે ઉપર જેતપરની વાત કરી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16105.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhatajie hat mandyana</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16107.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chhokaro sol varasano thay</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '106');
+            localStorage.setItem('lastVisitedVatFile', 'ch16106.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

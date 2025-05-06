@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નથુ પટેલે વાડીમાં પૂછ્યું - Nathu patele vadima puchhyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Nathu patele vadima puchhyu</h1>
+                <div class="gujarati-title">નથુ પટેલે વાડીમાં પૂછ્યું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 71</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(71) nathu paṭele vāḍīmāṃ pūchyuṃ je, ‘badhethī āsthā tūṭīne eka ṭhekāṇe kema thāya ?’ tyāre svāmīe uttara karyo je, ‘tenā jāṇīne badhāne mānavā ne je āpaṇane maḻyā che tenī sāthe pativratānī ṭeka rākhavī; āpaṇe e badhānuṃ śuṃ kāma che ? āpaṇe to deha chatāṃ jenā bhegā rahyā chīe te ja teḍavā āvaśe, bījā nahi āve, ne marīne tenā bheguṃ rahevuṃ che.’ pharī pūchyuṃ je, ‘aho ! aho ! kema thātuṃ nathī ?’ tyāre uttara karyo je, ‘ palaḻatī jāya tema temāṃ pāṇī samātuṃ jāya, tema dhīre dhīre thātuṃ jāya che.’@ 1 cāmaḍānī maśaka= cāmaḍānī pāṇī bharavānī kothaḻī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(71) નથુ પટેલે વાડીમાં પૂછ્યું જે, ‘બધેથી આસ્થા તૂટીને એક ઠેકાણે કેમ થાય ?’ ત્યારે સ્વામીએ ઉત્તર કર્યો જે, ‘તેના જાણીને બધાને માનવા ને જે આપણને મળ્યા છે તેની સાથે પતિવ્રતાની ટેક રાખવી; આપણે એ બધાનું શું કામ છે ? આપણે તો દેહ છતાં જેના ભેગા રહ્યા છીએ તે જ તેડવા આવશે, બીજા નહિ આવે, ને મરીને તેના ભેગું રહેવું છે.’ ફરી પૂછ્યું જે, ‘અહો ! અહો ! કેમ થાતું નથી ?’ ત્યારે ઉત્તર કર્યો જે, ‘ પલળતી જાય તેમ તેમાં પાણી સમાતું જાય, તેમ ધીરે ધીરે થાતું જાય છે.’@ 1 ચામડાની મશક= ચામડાની પાણી ભરવાની કોથળી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5070.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Amari to avarada bavis</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5072.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jeth vadi 9mi ne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '71');
+            localStorage.setItem('lastVisitedVatFile', 'ch5071.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવને સન્નિપાત - Aa jivne sannipat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jivne sannipat</h1>
+                <div class="gujarati-title">આ જીવને સન્નિપાત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 194</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi daśamane divase svāmīe vāta karī je,$(194) ā jīvane thayo che tenī khabara ja nathī. te paṃcāḻānā pahelā vacanāmṛtamāṃ kahyuṃ che je, vicārane pāmyā vinā sārā viṣaya bhūṃḍāthī bhūṃḍā na thāya. vātuṃ kare, kathā kare, kīrtana gāya; paṇa viṣayamāṃ viparīta rāga che, teno vicāra nathī thāto. prathamanuṃ 44muṃ vacanāmṛta vaṃcāvī suratanā goviṃdarāmanī vāta karī je, nānī bāyaḍīne paraṇyo. pachī tenī sevā karatāṃ karatāṃ pāṃca sāta varase potāne ṭūṃṭiyuṃ thayuṃ; eṭale maratī vakhate kahe, ‘mane strī bheḻo jhaṭa karo’, ema bolatāṃ bolatāṃ marī gayo. kauśikānaṃda lālajī māṭe sākarano śīro karato ane pote khāto. pachī lālajīne ghareṇuṃ karāvyuṃ ne dhanā bhaktane śarīramāṃ bahu baḻa āvyuṃ tyāre bāyaḍīne bājhyo. māṭe vicārane pāmyā vinā ā dehamāṃthī ne viṣayamāṃthī heta maṭe nahi ne deha, loka ne bhoga khoṭāṃ thāya nahi. māṭe māyānā ṭoḻāmāṃthī nokhā paḍyā vinā sukhiyā thāvāśe nahi.@ 1 sannipāta=tridoṣano bakavāṭa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ દશમને દિવસે સ્વામીએ વાત કરી જે,$(194) આ જીવને થયો છે તેની ખબર જ નથી. તે પંચાળાના પહેલા વચનામૃતમાં કહ્યું છે જે, વિચારને પામ્યા વિના સારા વિષય ભૂંડાથી ભૂંડા ન થાય. વાતું કરે, કથા કરે, કીર્તન ગાય; પણ વિષયમાં વિપરીત રાગ છે, તેનો વિચાર નથી થાતો. પ્રથમનું 44મું વચનામૃત વંચાવી સુરતના ગોવિંદરામની વાત કરી જે, નાની બાયડીને પરણ્યો. પછી તેની સેવા કરતાં કરતાં પાંચ સાત વરસે પોતાને ટૂંટિયું થયું; એટલે મરતી વખતે કહે, ‘મને સ્ત્રી ભેળો ઝટ કરો’, એમ બોલતાં બોલતાં મરી ગયો. કૌશિકાનંદ લાલજી માટે સાકરનો શીરો કરતો અને પોતે ખાતો. પછી લાલજીને ઘરેણું કરાવ્યું ને ધના ભક્તને શરીરમાં બહુ બળ આવ્યું ત્યારે બાયડીને બાઝ્યો. માટે વિચારને પામ્યા વિના આ દેહમાંથી ને વિષયમાંથી હેત મટે નહિ ને દેહ, લોક ને ભોગ ખોટાં થાય નહિ. માટે માયાના ટોળામાંથી નોખા પડ્યા વિના સુખિયા થાવાશે નહિ.@ 1 સન્નિપાત=ત્રિદોષનો બકવાટ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14193.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dehmathi, indriyumathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14195.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aishrvary na joie eva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '194');
+            localStorage.setItem('lastVisitedVatFile', 'ch14194.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

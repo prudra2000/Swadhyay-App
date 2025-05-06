@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બીજું, કેટલાક ટીલાં કાઢી - Biju, ketalak tila kadhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Biju, ketalak tila kadhi</h1>
+                <div class="gujarati-title">બીજું, કેટલાક ટીલાં કાઢી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 85</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(85) bījuṃ, keṭalāka ṭīlāṃ kāḍhī chetaravā āvaśe. tene āvaḍe bahu; māṭe sau joī tapāsīne viśrvāsa karajo. goṃḍaḻanā vaida viṭhṭhalajī vālama brāhmaṇe, dāmanagaramāṃ harijanane potānā vāṃsānā melanī goḻī vāḻī āpī, ne 60 korī laī līdhī. vaida kaheśe je, ‘vāyu bahu thaī gayo che,’ tyāre pratīti āvī jāya che; paṇa dhutā salakṣaṇā artha :- dhutārā sarva ekasarakhā (ṭhagavuṃ-chetaravuṃ-kapaṭatā) lakṣaṇavāḻā hoya. māṭe vicāravuṃ. bagasarāmāṃ sāṭha korī daīne eka jaṇe karāvyo, te khoyuṃ ne pachī royo. eṭalā māṭe vicārajo.@ 1 kīmiyo/yā= yukti, tadabīra, saraḻatāthī paisā meḻavavānī guptakaḻā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(85) બીજું, કેટલાક ટીલાં કાઢી છેતરવા આવશે. તેને આવડે બહુ; માટે સૌ જોઈ તપાસીને વિશ્ર્વાસ કરજો. ગોંડળના વૈદ વિઠ્ઠલજી વાલમ બ્રાહ્મણે, દામનગરમાં હરિજનને પોતાના વાંસાના મેલની ગોળી વાળી આપી, ને 60 કોરી લઈ લીધી. વૈદ કહેશે જે, ‘વાયુ બહુ થઈ ગયો છે,’ ત્યારે પ્રતીતિ આવી જાય છે; પણ ધુતા સલક્ષણા અર્થ :- ધુતારા સર્વ એકસરખા (ઠગવું-છેતરવું-કપટતા) લક્ષણવાળા હોય. માટે વિચારવું. બગસરામાં સાઠ કોરી દઈને એક જણે કરાવ્યો, તે ખોયું ને પછી રોયો. એટલા માટે વિચારજો.@ 1 કીમિયો/યા= યુક્તિ, તદબીર, સરળતાથી પૈસા મેળવવાની ગુપ્તકળા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10084.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ghelbhai atmanivedi chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10086.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsang vina shu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '85');
+            localStorage.setItem('lastVisitedVatFile', 'ch10085.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

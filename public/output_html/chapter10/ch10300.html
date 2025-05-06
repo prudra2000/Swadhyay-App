@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેહ ઉપરથી સારું લાગે - Deh uparthi saru lage </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Deh uparthi saru lage </h1>
+                <div class="gujarati-title">દેહ ઉપરથી સારું લાગે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 300</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(300) deha uparathī sāruṃ lāge che paṇa kevaḻa hāḍakāṃnuṃ ja che. tene caṃdana caḍāve tyāre sāruṃ lāge paṇa muktānaṃdasvāmī to māthe dhūḍa nākhatā. deha bheḻuṃ nahi rahevāya, kuṭuṃba bheḻuṃ nahi rahevāya; paṇa maravānī to jīvane bīka ja nathī ne haiyāmāṃ trāsa paṇa nathī, māṭe kahyā vinā jñāna thāya nahi. viṣayanāṃ sukha to bakarīnā gaḻānā āṃcaḻa jevāṃ che; te emāṃthī dūdha nīkaḻe ja nahīṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(300) દેહ ઉપરથી સારું લાગે છે પણ કેવળ હાડકાંનું જ છે. તેને ચંદન ચડાવે ત્યારે સારું લાગે પણ મુક્તાનંદસ્વામી તો માથે ધૂડ નાખતા. દેહ ભેળું નહિ રહેવાય, કુટુંબ ભેળું નહિ રહેવાય; પણ મરવાની તો જીવને બીક જ નથી ને હૈયામાં ત્રાસ પણ નથી, માટે કહ્યા વિના જ્ઞાન થાય નહિ. વિષયનાં સુખ તો બકરીના ગળાના આંચળ જેવાં છે; તે એમાંથી દૂધ નીકળે જ નહીં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10299.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maheman hoy te koine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10301.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kalno bhay aa sadhu </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '300');
+            localStorage.setItem('lastVisitedVatFile', 'ch10300.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

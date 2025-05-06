@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અમે તપાસી જોયું તો  - Ame tapasi joyu to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ame tapasi joyu to</h1>
+                <div class="gujarati-title">અમે તપાસી જોયું તો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 43</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(43) ame tapāsī joyuṃ, to ā jīva koī divasa bhagavānane mārage cālyo nathī ne sāva navo ādara che ne jīvamātrane khāvuṃ, strī ne dhana e traṇanuṃ ja ciṃtavana che ne enuṃ ja manana ne enī ja kathā ne enuṃ ja kīrtana ne enī ja vātuṃ ne enuṃ ja dhyāna che ne temāṃ paṇa dravyanuṃ to eka manuṣya jātimāṃ ja che; bākī khāvuṃ ne strī e benuṃ to jīvamātrane ciṃtavana che; kema je, bhagavānanī māyāno phera caḍāvī mūkyo che ne enuṃ ciṃtavana na thāya e to devano paṇa deva che; paṇa e manuṣya nathī. ne khāvuṃ, strī ne ūṃghavuṃ e traṇa vātamāṃ guru karavā paḍatā nathī. jema nadīonā pravāha samudra sanmukha cāle che, ema jīvane viṣaya sanmukha cālavāno ḍhāḻa che ne temāṃthī pāchuṃ vaḻāya e to sādhunuṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(43) અમે તપાસી જોયું, તો આ જીવ કોઈ દિવસ ભગવાનને મારગે ચાલ્યો નથી ને સાવ નવો આદર છે ને જીવમાત્રને ખાવું, સ્ત્રી ને ધન એ ત્રણનું જ ચિંતવન છે ને એનું જ મનન ને એની જ કથા ને એનું જ કીર્તન ને એની જ વાતું ને એનું જ ધ્યાન છે ને તેમાં પણ દ્રવ્યનું તો એક મનુષ્ય જાતિમાં જ છે; બાકી ખાવું ને સ્ત્રી એ બેનું તો જીવમાત્રને ચિંતવન છે; કેમ જે, ભગવાનની માયાનો ફેર ચડાવી મૂક્યો છે ને એનું ચિંતવન ન થાય એ તો દેવનો પણ દેવ છે; પણ એ મનુષ્ય નથી. ને ખાવું, સ્ત્રી ને ઊંઘવું એ ત્રણ વાતમાં ગુરુ કરવા પડતા નથી. જેમ નદીઓના પ્રવાહ સમુદ્ર સન્મુખ ચાલે છે, એમ જીવને વિષય સન્મુખ ચાલવાનો ઢાળ છે ને તેમાંથી પાછું વળાય એ તો સાધુનું છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1042.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koik lobh muke, svad muke</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1044.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa dehma ane aa lokma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '43');
+            localStorage.setItem('lastVisitedVatFile', 'ch1043.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

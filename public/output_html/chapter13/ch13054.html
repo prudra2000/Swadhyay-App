@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વૈરાગ્ય, સ્વધર્મ, તપ - Vairagy, swadharm, tap</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vairagy, swadharm, tap</h1>
+                <div class="gujarati-title">વૈરાગ્ય, સ્વધર્મ, તપ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 54</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(54) vairāgya, svadharma, tapa ane niyame karīne indriyuṃ jitāya che ane māhātmye sahita bhaktie karīne mana jitāya che. bhagavāna ane bhagavānanā kharekharā ekāṃtika bhaktane viśe jene ātmabuddhi ne dṛḍha prīti thāya che, tene nirvikalpa samādhi jevī sadā śāṃti rahe che. bhakta thāvuṃ teṇe prahlāda jevuṃ thāvuṃ. śāstramāṃ vakhāṇa prahlādanāṃ ane baḻi rājānāṃ karyāṃ che; māṭe kharekharā bhakta thāvuṃ. ekalo yoga hoya to paṇa vāṃdho rahe; māṭe sāṃkhya ne yoga beya hoya tyāre koī jātanī kasara na rahe. māṭe jñānī bhakta thāvuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(54) વૈરાગ્ય, સ્વધર્મ, તપ અને નિયમે કરીને ઇન્દ્રિયું જિતાય છે અને માહાત્મ્યે સહિત ભક્તિએ કરીને મન જિતાય છે. ભગવાન અને ભગવાનના ખરેખરા એકાંતિક ભક્તને વિશે જેને આત્મબુદ્ધિ ને દૃઢ પ્રીતિ થાય છે, તેને નિર્વિકલ્પ સમાધિ જેવી સદા શાંતિ રહે છે. ભક્ત થાવું તેણે પ્રહ્લાદ જેવું થાવું. શાસ્ત્રમાં વખાણ પ્રહ્લાદનાં અને બળિ રાજાનાં કર્યાં છે; માટે ખરેખરા ભક્ત થાવું. એકલો યોગ હોય તો પણ વાંધો રહે; માટે સાંખ્ય ને યોગ બેય હોય ત્યારે કોઈ જાતની કસર ન રહે. માટે જ્ઞાની ભક્ત થાવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13053.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shamajibhakte puchhyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13055.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek kanabi jarna santha</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '54');
+            localStorage.setItem('lastVisitedVatFile', 'ch13054.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

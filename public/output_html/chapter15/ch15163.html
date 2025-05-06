@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણે વૈદિક મારગને  - Apane vaidik maragne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apane vaidik maragne</h1>
+                <div class="gujarati-title">આપણે વૈદિક મારગને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 163</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(163) āpaṇe vaidika māragane gaṇatā nathī, ā to aputrasya gatirnāsti | (putrahīnanī sad‌gati thatī nathī) kahīne beṭhā che. keṭalāka ema kahe che je, tyāgī thaīe to gati na thāya māṭe gṛhastha rahevuṃ eṭale dīkarā vāṃse sarāve, paṇa teṃ tārā bāpanī gati karī tevī tārī gati tārā dīkarā karaśe. pote to sārī gati thāya evuṃ karyuṃ nahi. jyāṃ lobha, kāma āvyā che tyāṃ kenī je (jaya) thaī che ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(163) આપણે વૈદિક મારગને ગણતા નથી, આ તો અપુત્રસ્ય ગતિર્નાસ્તિ । (પુત્રહીનની સદ્‌ગતિ થતી નથી) કહીને બેઠા છે. કેટલાક એમ કહે છે જે, ત્યાગી થઈએ તો ગતિ ન થાય માટે ગૃહસ્થ રહેવું એટલે દીકરા વાંસે સરાવે, પણ તેં તારા બાપની ગતિ કરી તેવી તારી ગતિ તારા દીકરા કરશે. પોતે તો સારી ગતિ થાય એવું કર્યું નહિ. જ્યાં લોભ, કામ આવ્યા છે ત્યાં કેની જે (જય) થઈ છે ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15162.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetala bhunda svabhav </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15164.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sukan badhanu rupiya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '163');
+            localStorage.setItem('lastVisitedVatFile', 'ch15163.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

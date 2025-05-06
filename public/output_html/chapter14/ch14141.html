@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન વિના આ જીવનું - Bhagavan vina aa jivnu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan vina aa jivnu</h1>
+                <div class="gujarati-title">ભગવાન વિના આ જીવનું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 141</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi trījane divase svāmīe vāta karī je, $(141) bhagavāna vinā ā jīvanuṃ rūḍuṃ karanāruṃ koī ja nathī. ugamaṇī diśāe jāvuṃ hoya ne āthamaṇā cālyā, evuṃ jīvane keṭaluṃka ghora ajñāna che. tāpyā vinā ṭāḍha na jāya, khādhā vinā bhūkha na jāya tema sādhu maḻyā vinā mokṣa na thāya; te sādhu kharekharā joīe, paṇa veśadhārīthī kāṃī na pāke ne veśa to taragāḻā paṇa kāḍhe che. khetaramāṃ oḍāṃ besāre che te bole nahi, tema veśe karīne kāṃī pāke nahi.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ ત્રીજને દિવસે સ્વામીએ વાત કરી જે, $(141) ભગવાન વિના આ જીવનું રૂડું કરનારું કોઈ જ નથી. ઉગમણી દિશાએ જાવું હોય ને આથમણા ચાલ્યા, એવું જીવને કેટલુંક ઘોર અજ્ઞાન છે. તાપ્યા વિના ટાઢ ન જાય, ખાધા વિના ભૂખ ન જાય તેમ સાધુ મળ્યા વિના મોક્ષ ન થાય; તે સાધુ ખરેખરા જોઈએ, પણ વેશધારીથી કાંઈ ન પાકે ને વેશ તો તરગાળા પણ કાઢે છે. ખેતરમાં ઓડાં બેસારે છે તે બોલે નહિ, તેમ વેશે કરીને કાંઈ પાકે નહિ.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14140.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Loyanu 8mu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14142.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dehma dukh ave tyare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '141');
+            localStorage.setItem('lastVisitedVatFile', 'ch14141.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

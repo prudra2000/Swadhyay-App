@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આજ્ઞા બહાર પાલખી હોય  - Agna bahar palakhi hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Agna bahar palakhi hoy</h1>
+                <div class="gujarati-title">આજ્ઞા બહાર પાલખી હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 55</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(55) ājñā bahāra pālakhī hoya to śūḻī jāṇe ne ājñāmāṃ śūḻī hoya to pālakhī jāṇe, evā jenā ṭharāva hoya tenāthī ājñā paḻe. te upara kṛpānaṃdasvāmīnī vāta karī je, ūnī kośa gaḻāmāṃ nākhe eṭaluṃ du:kha thāya to paṇa ājñā na lopavī. ātmānaṃdasvāmī tathā kṛpānaṃdasvāmī to darśana sāru paṇa jukti na kare ane alpavacanamāṃ phera paḍe to mahad vacanamāṃ phera paḍyo māne, evā paṇa saṃskāra. jema vāṇiyā-kaṃdoīnuṃ brāhmaṇane khādhāno saṃkalpa thāya ja nahi tema āpaṇe paṇa jīvane evā saṃskāra lagāḍavā je ājñā bahāra mana-īndriyo cāle ja nahi. bhajana, smaraṇanā saṃskāra lagāḍavā jethī dinadina pratye atiśe baḻa pamāya che.@ 1 sukhaḍuṃ= mīṭhāī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(55) આજ્ઞા બહાર પાલખી હોય તો શૂળી જાણે ને આજ્ઞામાં શૂળી હોય તો પાલખી જાણે, એવા જેના ઠરાવ હોય તેનાથી આજ્ઞા પળે. તે ઉપર કૃપાનંદસ્વામીની વાત કરી જે, ઊની કોશ ગળામાં નાખે એટલું દુ:ખ થાય તો પણ આજ્ઞા ન લોપવી. આત્માનંદસ્વામી તથા કૃપાનંદસ્વામી તો દર્શન સારુ પણ જુક્તિ ન કરે અને અલ્પવચનમાં ફેર પડે તો મહદ્ વચનમાં ફેર પડ્યો માને, એવા પણ સંસ્કાર. જેમ વાણિયા-કંદોઈનું બ્રાહ્મણને ખાધાનો સંકલ્પ થાય જ નહિ તેમ આપણે પણ જીવને એવા સંસ્કાર લગાડવા જે આજ્ઞા બહાર મન-ઈન્દ્રિયો ચાલે જ નહિ. ભજન, સ્મરણના સંસ્કાર લગાડવા જેથી દિનદિન પ્રત્યે અતિશે બળ પમાય છે.@ 1 સુખડું= મીઠાઈ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15054.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Deshakaladik sara hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15056.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jevi ghanti pade chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '55');
+            localStorage.setItem('lastVisitedVatFile', 'ch15055.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

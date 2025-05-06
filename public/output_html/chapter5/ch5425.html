@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક એક બ્રહ્માંડમાં - Ek ek brahmandma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek ek brahmandma</h1>
+                <div class="gujarati-title">એક એક બ્રહ્માંડમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 425</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(425) eka eka brahmāṃḍamāṃ daśa daśa mūrtiyuṃ che. ne pradhānapuruṣane rūṃvāḍe rūṃvāḍe daśa daśa mūrtiyuṃ sotāṃ brahmāṃḍa che. te pradhānapuruṣa māyāmāṃ līna thāya che, ema kahīe chīe temāṃ jīvane śaṃkā nathī; paṇa hamaṇāṃ ema kahīe je, avatāramātra māyāmāṃ līna thāya che, to jīva ā ghaḍīe kajiyo kare. paṇa pradhānapuruṣa māyāmāṃ līna thayā tyāre avatāra paṇa līna thayā ja jāṇavā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(425) એક એક બ્રહ્માંડમાં દશ દશ મૂર્તિયું છે. ને પ્રધાનપુરુષને રૂંવાડે રૂંવાડે દશ દશ મૂર્તિયું સોતાં બ્રહ્માંડ છે. તે પ્રધાનપુરુષ માયામાં લીન થાય છે, એમ કહીએ છીએ તેમાં જીવને શંકા નથી; પણ હમણાં એમ કહીએ જે, અવતારમાત્ર માયામાં લીન થાય છે, તો જીવ આ ઘડીએ કજિયો કરે. પણ પ્રધાનપુરુષ માયામાં લીન થયા ત્યારે અવતાર પણ લીન થયા જ જાણવા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5424.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nivrut maragma tyagi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5426.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gopalanandswamine dhola</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '425');
+            localStorage.setItem('lastVisitedVatFile', 'ch5425.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

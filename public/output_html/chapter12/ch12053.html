@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બાળમુકુંદાનંદસ્વામીને અમે  - Balamukundanandswamine ame</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Balamukundanandswamine ame</h1>
+                <div class="gujarati-title">બાળમુકુંદાનંદસ્વામીને અમે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 53</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(53) bāḻamukuṃdānaṃdasvāmīne ame śikhāmaṇa dīdhī je, koī upara hukama na karavo. māṭe āvī vātuṃ sāṃbhaḻīne tenā saṃskāra lagāḍavā ne moṭā ke śāstra kahe temāṃ sukha hoya ne koīkane āmāṃ goṭhī jāya che ne koī vīsa varasathī ā satsaṃgamāṃ haśe to paṇa āmāṃ nahi goṭhatuṃ hoya. cheṭethī āvyā che tene vātuṃnī āturatā rahe che ne bheḻā rahe che tene tenī paravā nathī. gopāḻānaṃdasvāmī bheḻā keṭalāka rahyā paṇa saṃga to thoḍākane lāgyo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(53) બાળમુકુંદાનંદસ્વામીને અમે શિખામણ દીધી જે, કોઈ ઉપર હુકમ ન કરવો. માટે આવી વાતું સાંભળીને તેના સંસ્કાર લગાડવા ને મોટા કે શાસ્ત્ર કહે તેમાં સુખ હોય ને કોઈકને આમાં ગોઠી જાય છે ને કોઈ વીસ વરસથી આ સત્સંગમાં હશે તો પણ આમાં નહિ ગોઠતું હોય. છેટેથી આવ્યા છે તેને વાતુંની આતુરતા રહે છે ને ભેળા રહે છે તેને તેની પરવા નથી. ગોપાળાનંદસ્વામી ભેળા કેટલાક રહ્યા પણ સંગ તો થોડાકને લાગ્યો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12052.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sadhu te bhagavanne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12054.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj sadhune kaheta</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '53');
+            localStorage.setItem('lastVisitedVatFile', 'ch12053.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

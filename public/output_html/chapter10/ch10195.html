@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વિવેક વિનાનું દુ:ખ - Vivek vinanu dukh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vivek vinanu dukh</h1>
+                <div class="gujarati-title">વિવેક વિનાનું દુ:ખ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 195</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(195) viveka vinānuṃ du:kha, te śuṃ ? je, ghera garāsa ne aphīṇiyā thaī gayā te maḍā jevā thaī gayā. ne bhekhadhārī laḍe che te veṇe laḍe che, tene vākśailya kahyāṃ che. pote to sāro na hoya paṇa sārā sādhune veṇe veṇe bāḻīne satsaṃgamāṃthī kāḍhī nākhe. $(śrīmad bhāgavata : 11/3/21) $artha :- tethī gurune śaraṇa javuṃ, te ja jijñāsuno uttama śreya che. śabda jñāna ane parama jñānamāṃ niṣṇāta ane brahmamāṃ jeṇe śāṃtino āśraya karyo che tevā gurune śaraṇe javuṃ. $tulasī svabhāva jīvano kalpyā vinā na rahevāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(195) વિવેક વિનાનું દુ:ખ, તે શું ? જે, ઘેર ગરાસ ને અફીણિયા થઈ ગયા તે મડા જેવા થઈ ગયા. ને ભેખધારી લડે છે તે વેણે લડે છે, તેને વાક્શૈલ્ય કહ્યાં છે. પોતે તો સારો ન હોય પણ સારા સાધુને વેણે વેણે બાળીને સત્સંગમાંથી કાઢી નાખે. $(શ્રીમદ્ ભાગવત : 11/3/21) $અર્થ :- તેથી ગુરુને શરણ જવું, તે જ જિજ્ઞાસુનો ઉત્તમ શ્રેય છે. શબ્દ જ્ઞાન અને પરમ જ્ઞાનમાં નિષ્ણાત અને બ્રહ્મમાં જેણે શાંતિનો આશ્રય કર્યો છે તેવા ગુરુને શરણે જવું. $તુલસી સ્વભાવ જીવનો કલ્પ્યા વિના ન રહેવાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10194.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vishayama sukha chhe </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10196.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishayana sukh sheladi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '195');
+            localStorage.setItem('lastVisitedVatFile', 'ch10195.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

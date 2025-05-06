@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ડોડા ચોરવામાંથી બાવાને - Doda choravamathi bavane </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Doda choravamathi bavane </h1>
+                <div class="gujarati-title">ડોડા ચોરવામાંથી બાવાને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 58</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(58) ḍoḍā coravāmāṃthī bāvāne jhāṭako lāgyo. nāgheramāṃ pahara cāravā gayā tyāṃ saune ḍoḍā khāvāno manasūbo thayo tyāre bāvo kahe, ‘lo laī āvuṃ.’ pachī bāvo vāḍa ṭhekīne vāḍāmāṃ paḍayo tyāre vāḍānā dhaṇīe jāṇyuṃ je, cora che. ema dhārī bāvāne jhāṭako māryo, te . māṭe cora mārage karīne pesavuṃ nahi ne nīsaravuṃ paṇa nahi. khaḍa, phūla tathā dhūḍa sotanī nā pāḍī che. $(dharmaśāstre śaṃkhalikhita smṛti) $artha :- ghāsa, lākaḍāṃ, phūla ke phaḻa pūchyā vagara lenāranā hātha toḍī nākhavā joīe. 1 phāṃphaḻa paḍī gayuṃ= hathiyārano pahoḻo ūṃḍo ghā paḍī gayo ke thaī gayo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(58) ડોડા ચોરવામાંથી બાવાને ઝાટકો લાગ્યો. નાઘેરમાં પહર ચારવા ગયા ત્યાં સૌને ડોડા ખાવાનો મનસૂબો થયો ત્યારે બાવો કહે, ‘લો લઈ આવું.’ પછી બાવો વાડ ઠેકીને વાડામાં પડયો ત્યારે વાડાના ધણીએ જાણ્યું જે, ચોર છે. એમ ધારી બાવાને ઝાટકો માર્યો, તે . માટે ચોર મારગે કરીને પેસવું નહિ ને નીસરવું પણ નહિ. ખડ, ફૂલ તથા ધૂડ સોતની ના પાડી છે. $(ધર્મશાસ્ત્રે શંખલિખિત સ્મૃતિ) $અર્થ :- ઘાસ, લાકડાં, ફૂલ કે ફળ પૂછ્યા વગર લેનારના હાથ તોડી નાખવા જોઈએ. 1 ફાંફળ પડી ગયું= હથિયારનો પહોળો ઊંડો ઘા પડી ગયો કે થઈ ગયો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10057.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Baiona prasangmathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10059.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pipalanana narasinh mahetana </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '58');
+            localStorage.setItem('lastVisitedVatFile', 'ch10058.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

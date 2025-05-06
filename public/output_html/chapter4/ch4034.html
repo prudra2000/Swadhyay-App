@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ લોકના હોય તે આ લોકમાં  - Aa lokna hoy te aa lokma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa lokna hoy te aa lokma</h1>
+                <div class="gujarati-title">આ લોકના હોય તે આ લોકમાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 34</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(34) ā lokanā hoya te ā lokamāṃ bhaḻī jāya ne ā lokanā na hoya ne te ā lokamāṃ bhaḻe nahi ne bhaḻe to cittamāṃ guṇātīta māne ne dharmamāṃ rahīne bhaḻe. ne āṃhīṃ ā badhuṃ nirguṇa karīne beṭhā, tyāre have e nirguṇano śo khapa rahyo ? māṭe jñāna-vairāgyathī niṣedha karī mūkavuṃ ne kāma, lobha, māna, svāda e ājñā bahāra jene vaḻagyāṃ che tene vaḻagyā che.@ 1 paradeśī hoya= paralokanā-māyānā lokanā nahi paṇa akṣaradhāmanā. $2 brahmarākṣasa= bhūtayonine pāmela brāhmaṇa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(34) આ લોકના હોય તે આ લોકમાં ભળી જાય ને આ લોકના ન હોય ને તે આ લોકમાં ભળે નહિ ને ભળે તો ચિત્તમાં ગુણાતીત માને ને ધર્મમાં રહીને ભળે. ને આંહીં આ બધું નિર્ગુણ કરીને બેઠા, ત્યારે હવે એ નિર્ગુણનો શો ખપ રહ્યો ? માટે જ્ઞાન-વૈરાગ્યથી નિષેધ કરી મૂકવું ને કામ, લોભ, માન, સ્વાદ એ આજ્ઞા બહાર જેને વળગ્યાં છે તેને વળગ્યા છે.@ 1 પરદેશી હોય= પરલોકના-માયાના લોકના નહિ પણ અક્ષરધામના. $2 બ્રહ્મરાક્ષસ= ભૂતયોનિને પામેલ બ્રાહ્મણ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4033.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Stri, dhan ne dehabhiman ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4035.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Avi vatu bije kyay nathi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '34');
+            localStorage.setItem('lastVisitedVatFile', 'ch4034.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

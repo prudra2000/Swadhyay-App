@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કઠલાલમાં રામબાઈને - Kathalalma ramabaine </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kathalalma ramabaine </h1>
+                <div class="gujarati-title">કઠલાલમાં રામબાઈને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 219</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(219) kaṭhalālamāṃ rāmabāīne tyāṃ mahārāja jamavā rokāṇā nahi eṭale roṭalā ne pāṇīno ghaḍo laīne ḍośī vāṃse gayāṃ ne mahārājane jamāḍyā. pachī mahārājane kahe, ‘ā ghaḍāmāṃ caraṇāraviṃda boḻo.’ tyāre mahārāja kahe, ‘śā sāru ?’ ḍośī kahe, ‘ā pāṇī kūvāmāṃ nākhīśa, te ākhuṃ gāma prasādīnuṃ pāṇī pīśe eṭale badhāṃ satsaṃgī thāśe.’ pachī parvatabhāīe kahyuṃ je, ‘āvuṃ māhātmya to āpaṇeya jāṇatā nathī !’ māṭe āvo ṭharāva karīne ema jāṇavuṃ je, koī dhāma, koī lokāṃtara ke koī vibhūtimāṃ lobhāvuṃ nahīṃ. sarvoparī bhagavāna maḻyā che teno kepha rākhavo eṭale bījāno kepha ūtare.@ 1 aṃtariyāḻa= adhavaca.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(219) કઠલાલમાં રામબાઈને ત્યાં મહારાજ જમવા રોકાણા નહિ એટલે રોટલા ને પાણીનો ઘડો લઈને ડોશી વાંસે ગયાં ને મહારાજને જમાડ્યા. પછી મહારાજને કહે, ‘આ ઘડામાં ચરણારવિંદ બોળો.’ ત્યારે મહારાજ કહે, ‘શા સારુ ?’ ડોશી કહે, ‘આ પાણી કૂવામાં નાખીશ, તે આખું ગામ પ્રસાદીનું પાણી પીશે એટલે બધાં સત્સંગી થાશે.’ પછી પર્વતભાઈએ કહ્યું જે, ‘આવું માહાત્મ્ય તો આપણેય જાણતા નથી !’ માટે આવો ઠરાવ કરીને એમ જાણવું જે, કોઈ ધામ, કોઈ લોકાંતર કે કોઈ વિભૂતિમાં લોભાવું નહીં. સર્વોપરી ભગવાન મળ્યા છે તેનો કેફ રાખવો એટલે બીજાનો કેફ ઊતરે.@ 1 અંતરિયાળ= અધવચ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9218.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gadhadama ek aado </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9220.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Saradharno kamanagar</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '219');
+            localStorage.setItem('lastVisitedVatFile', 'ch9219.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

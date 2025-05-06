@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બધી કલમું છે - Badhi kalamu chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Badhi kalamu chhe</h1>
+                <div class="gujarati-title">બધી કલમું છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 243</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(243) badhī kalamuṃ che, tema ā paṇa eka kalama che te je bhaṇe tene āvaḍe. brahmavidyā te śuṃ ? je, ‘pragaṭa brahma mūrtimāna je, ā bole che tene viśe sthiti thāya to tene mahārāja ne pragaṭa brahma vinā bījā koī ākāra najaramāṃ na āve tene brahmavidyāśrita yogī jāṇavā.’ $(śrī nīlakaṃṭha cintanāṣṭakam) $artha : brāhma muhūrtamāṃ śayyā (nidrā)no tyāga karī potānā svarūpanuṃ hṛdayamāṃ ciṃtana-dhyāna karī, adhika jaḻa vaḍe svaccha snāna karī śrī nīlakaṃṭhanuṃ huṃ hṛdayamāṃ ciṃtana karuṃ chuṃ. $camaka dekhīne loha caḻe, indriya viṣaya saṃjogajī; $aṇabheṭye re abhāva che, bheṭye bhogavaśe bhogajī. tyāga 0 $(kīrtana muktāvali : 480) 1 kūkaḍavela= kūkaḍapāḍāno velo-auṣadhopayogī kaḍavāṃ phaḻono velo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(243) બધી કલમું છે, તેમ આ પણ એક કલમ છે તે જે ભણે તેને આવડે. બ્રહ્મવિદ્યા તે શું ? જે, ‘પ્રગટ બ્રહ્મ મૂર્તિમાન જે, આ બોલે છે તેને વિશે સ્થિતિ થાય તો તેને મહારાજ ને પ્રગટ બ્રહ્મ વિના બીજા કોઈ આકાર નજરમાં ન આવે તેને બ્રહ્મવિદ્યાશ્રિત યોગી જાણવા.’ $(શ્રી નીલકંઠ ચિન્તનાષ્ટકમ્) $અર્થ : બ્રાહ્મ મુહૂર્તમાં શય્યા (નિદ્રા)નો ત્યાગ કરી પોતાના સ્વરૂપનું હૃદયમાં ચિંતન-ધ્યાન કરી, અધિક જળ વડે સ્વચ્છ સ્નાન કરી શ્રી નીલકંઠનું હું હૃદયમાં ચિંતન કરું છું. $ચમક દેખીને લોહ ચળે, ઇન્દ્રિય વિષય સંજોગજી; $અણભેટ્યે રે અભાવ છે, ભેટ્યે ભોગવશે ભોગજી. ત્યાગ 0 $(કીર્તન મુક્તાવલિ : 480) 1 કૂકડવેલ= કૂકડપાડાનો વેલો-ઔષધોપયોગી કડવાં ફળોનો વેલો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9242.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vat karavi te sthan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9244.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jiva koi vate dharano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '243');
+            localStorage.setItem('lastVisitedVatFile', 'ch9243.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

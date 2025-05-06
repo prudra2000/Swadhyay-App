@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મરી જવાશે ને  - Mari javashe ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mari javashe ne</h1>
+                <div class="gujarati-title">મરી જવાશે ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 242</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(242) marī javāśe ne karavānuṃ rahī jāśe. māṭe badhāne maraḍīne prabhu bhajī levā. kema je, ā deha ghaḍārūpe che. te mokṣarūpa sādhana sādhī levuṃ ne khetīvāḍī, vepāra e paṇa karavuṃ ne mukhya bhagavāna rākhavā, te vara keḍe jāna rākhavī ne āṃhī savāso deha mūkī gayā ne joga vinā to prabhu na bhajāya. sarva maṃḍyā che paṇa prabhu nathī bhajātā; e moṭī khoṭa che. te śuṃ, to jīvane viṣayane mārge cālavānī ṭeva paḍī che paṇa prabhu bhajavānī ṭeva paḍī nathī. te badhā deśakāḻa sānukūḻa hoya tyāre vāto saṃbhaḻāya. mānasī, māḻā, japa, tapa emāṃ koīnī vāṭa jovī nahi. kāryo dharmastu satvaram‌ | artha :- dharmano amala to tatkāḻa karavo joīe. temāṃ to koīno saiyāro na karavo. kema je, ghaḍī keḍe kema ne kevuṃ thaī jāya ! māṭe e to tatkāḻa karavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(242) મરી જવાશે ને કરવાનું રહી જાશે. માટે બધાને મરડીને પ્રભુ ભજી લેવા. કેમ જે, આ દેહ ઘડારૂપે છે. તે મોક્ષરૂપ સાધન સાધી લેવું ને ખેતીવાડી, વેપાર એ પણ કરવું ને મુખ્ય ભગવાન રાખવા, તે વર કેડે જાન રાખવી ને આંહી સવાસો દેહ મૂકી ગયા ને જોગ વિના તો પ્રભુ ન ભજાય. સર્વ મંડ્યા છે પણ પ્રભુ નથી ભજાતા; એ મોટી ખોટ છે. તે શું, તો જીવને વિષયને માર્ગે ચાલવાની ટેવ પડી છે પણ પ્રભુ ભજવાની ટેવ પડી નથી. તે બધા દેશકાળ સાનુકૂળ હોય ત્યારે વાતો સંભળાય. માનસી, માળા, જપ, તપ એમાં કોઈની વાટ જોવી નહિ. કાર્યો ધર્મસ્તુ સત્વરમ્‌ । અર્થ :- ધર્મનો અમલ તો તત્કાળ કરવો જોઈએ. તેમાં તો કોઈનો સૈયારો ન કરવો. કેમ જે, ઘડી કેડે કેમ ને કેવું થઈ જાય ! માટે એ તો તત્કાળ કરવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15241.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Notaru to ek</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15243.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Rupiya to koine sukh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '242');
+            localStorage.setItem('lastVisitedVatFile', 'ch15242.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

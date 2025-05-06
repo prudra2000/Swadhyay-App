@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઈને કાંઈ કહેવાણું હોય  - Koine kai kahevanu hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Koine kai kahevanu hoy</h1>
+                <div class="gujarati-title">કોઈને કાંઈ કહેવાણું હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 364</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(364) koīne kāṃī kahevāṇuṃ hoya to traṇa divasa sudhī haiyāmāṃ baḻe che ne jyāre page lāgīe tyāre śāṃti thāya che. tema koī vartamāna na pāḻe to aṃtaramāṃ śāṃti na rahe. ‘ śāṇānī saṃge hālīne haḻavo paḍyo.’ te vāta karī je, veḻamāṃ māchalāṃ bheḻo magaramaccha āvyo ne nānāṃ māchalāṃ hatāṃ te vayāṃ gayāṃ ne magaramaccha rahī gayo. te bhūṃḍe hāle mūo. māṭe śāṇānī saṃgāthe evuṃ thāya. te vacanavidhimāṃ kahyuṃ je, puruṣa hoya tene muktānaṃdasvāmīnī vāto sāṃbhaḻavī to sāṃkhyayoga raheśe. māṭe kahenārā na hoya to bagaḍī javāya evuṃ che. te gora jajamāna (yajamāna)nā ṭaṃṭā āvyā che te dīkarīne ke vahune teḍavā athavā melavā jāya to paṇa rastāmāṃ bagāḍa thāya che.@ 1 sāṃkhya yogī= sāṃkhyadarśana mukhya hoya tevo yogī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(364) કોઈને કાંઈ કહેવાણું હોય તો ત્રણ દિવસ સુધી હૈયામાં બળે છે ને જ્યારે પગે લાગીએ ત્યારે શાંતિ થાય છે. તેમ કોઈ વર્તમાન ન પાળે તો અંતરમાં શાંતિ ન રહે. ‘ શાણાની સંગે હાલીને હળવો પડ્યો.’ તે વાત કરી જે, વેળમાં માછલાં ભેળો મગરમચ્છ આવ્યો ને નાનાં માછલાં હતાં તે વયાં ગયાં ને મગરમચ્છ રહી ગયો. તે ભૂંડે હાલે મૂઓ. માટે શાણાની સંગાથે એવું થાય. તે વચનવિધિમાં કહ્યું જે, પુરુષ હોય તેને મુક્તાનંદસ્વામીની વાતો સાંભળવી તો સાંખ્યયોગ રહેશે. માટે કહેનારા ન હોય તો બગડી જવાય એવું છે. તે ગોર જજમાન (યજમાન)ના ટંટા આવ્યા છે તે દીકરીને કે વહુને તેડવા અથવા મેલવા જાય તો પણ રસ્તામાં બગાડ થાય છે.@ 1 સાંખ્ય યોગી= સાંખ્યદર્શન મુખ્ય હોય તેવો યોગી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15363.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanno tatha sadhuno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15365.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sahu jane je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '364');
+            localStorage.setItem('lastVisitedVatFile', 'ch15364.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

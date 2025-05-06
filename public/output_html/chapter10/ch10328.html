@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ ખેતરવાળા ખેતર - Jem khetaravala khetar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem khetaravala khetar</h1>
+                <div class="gujarati-title">જેમ ખેતરવાળા ખેતર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 328</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(328) jema khetaravāḻā khetara kheḍe che ne bāravaṭāvāḻā bāravaṭuṃ kare che tema satsaṃga sāru eṭalo dākhaḍo kare tyāre satsaṃga thāya. deśakāḻa āvyā vinā khabara paḍe nahi. batrīsa vāra bhūle tyāre batrīsa lakṣaṇa āve. māṭe deśakāḻa āve tyāre ḍagavuṃ nahi, paṇa ‘śikṣāpatrī’ pāḻavī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(328) જેમ ખેતરવાળા ખેતર ખેડે છે ને બારવટાવાળા બારવટું કરે છે તેમ સત્સંગ સારુ એટલો દાખડો કરે ત્યારે સત્સંગ થાય. દેશકાળ આવ્યા વિના ખબર પડે નહિ. બત્રીસ વાર ભૂલે ત્યારે બત્રીસ લક્ષણ આવે. માટે દેશકાળ આવે ત્યારે ડગવું નહિ, પણ ‘શિક્ષાપત્રી’ પાળવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10327.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aksharadhamna jevu sukh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10329.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apanne malya chhe teva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '328');
+            localStorage.setItem('lastVisitedVatFile', 'ch10328.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

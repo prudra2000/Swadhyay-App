@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેહને લઈને દ્રવ્ય રહ્યું - Dehne laine dravy rahyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dehne laine dravy rahyu</h1>
+                <div class="gujarati-title">દેહને લઈને દ્રવ્ય રહ્યું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 379</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(379) dehane laīne dravya rahyuṃ. te śuṃ je, tyāgī kahevāya paṇa mare tyāre paisā nīkaḻe teno dāḍo thāya. te svabhāvamāṃ strī rahī che. te śuṃ ? je, nāradajīne paraṇavānuṃ mana thayuṃ. māṭe dharma, jñānādika cāra tathā pacīsa sādhana āve tyāre tenuṃ mūḻa jāya. diśāonā jītanārane paṇa nacāvyā. durvāsā paṇa nācyā. te to ṭhākariyo vīṃchī paṇa divasa ugene navāṇuṃ gāḻyuṃ khame tyāre bījānī śī vāta ? māṭe ajñānīne to paśu lakhe che. te māṭe kalamuṃ mūkī che je, bāi ekalī hoya tyāṃ rāta na rahevuṃ. bhārī paṇa na caḍāvavī ne je e mārge cālyā che tenī kāḻākharīyuṃ āve che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(379) દેહને લઈને દ્રવ્ય રહ્યું. તે શું જે, ત્યાગી કહેવાય પણ મરે ત્યારે પૈસા નીકળે તેનો દાડો થાય. તે સ્વભાવમાં સ્ત્રી રહી છે. તે શું ? જે, નારદજીને પરણવાનું મન થયું. માટે ધર્મ, જ્ઞાનાદિક ચાર તથા પચીસ સાધન આવે ત્યારે તેનું મૂળ જાય. દિશાઓના જીતનારને પણ નચાવ્યા. દુર્વાસા પણ નાચ્યા. તે તો ઠાકરિયો વીંછી પણ દિવસ ઉગેને નવાણું ગાળ્યું ખમે ત્યારે બીજાની શી વાત ? માટે અજ્ઞાનીને તો પશુ લખે છે. તે માટે કલમું મૂકી છે જે, બાઇ એકલી હોય ત્યાં રાત ન રહેવું. ભારી પણ ન ચડાવવી ને જે એ માર્ગે ચાલ્યા છે તેની કાળાખરીયું આવે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15378.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Stri, rushi ne nadi teno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15380.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sath kori daine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '379');
+            localStorage.setItem('lastVisitedVatFile', 'ch15379.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

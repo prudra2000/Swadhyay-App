@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અમે ખટરસનાં વર્તમાન - Ame khatarasana vartaman</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ame khatarasana vartaman</h1>
+                <div class="gujarati-title">અમે ખટરસનાં વર્તમાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 47</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(47) ame khaṭarasanāṃ vartamāna pāḻyāṃ. pachī ebhalakhācaranā kārajamāṃ sāṭā ne jalebī khavarāvī, dūdha parāṇe pāyuṃ ne eka mahino prasādī jamāḍī, pachī ame bābariyāvāḍamāṃ raste cālyā jātā hatā tyāṃ mahārāja verāgīne veśe ātmānaṃdasvāmīnī derī āgaḻa sāmā maḻyā ne kahyuṃ je, ‘sādhurāma, śarīra jhage che, te dūdha khāvāmāṃ āvyuṃ che ke śuṃ ?’ ema vacana māryuṃ. te divasathī dūdha mūkyuṃ che ne eka mahinā sudhī jīva tharathara dhrūjyo. ema potānā miṣe (dṛṣṭāṃta dvārā) samajāvyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(47) અમે ખટરસનાં વર્તમાન પાળ્યાં. પછી એભલખાચરના કારજમાં સાટા ને જલેબી ખવરાવી, દૂધ પરાણે પાયું ને એક મહિનો પ્રસાદી જમાડી, પછી અમે બાબરિયાવાડમાં રસ્તે ચાલ્યા જાતા હતા ત્યાં મહારાજ વેરાગીને વેશે આત્માનંદસ્વામીની દેરી આગળ સામા મળ્યા ને કહ્યું જે, ‘સાધુરામ, શરીર ઝગે છે, તે દૂધ ખાવામાં આવ્યું છે કે શું ?’ એમ વચન માર્યું. તે દિવસથી દૂધ મૂક્યું છે ને એક મહિના સુધી જીવ થરથર ધ્રૂજ્યો. એમ પોતાના મિષે (દૃષ્ટાંત દ્વારા) સમજાવ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9046.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Have koi bijo satsang</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9048.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jivne mandavad ne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '47');
+            localStorage.setItem('lastVisitedVatFile', 'ch9047.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

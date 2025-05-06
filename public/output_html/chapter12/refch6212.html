@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(212) ā deha che te śravaṇarūpī kuhāḍe karīne ghasāī jāśe, māṭe kathā-kīrtanādika śravaṇa karyāṃ ja karavāṃ. śravaṇa sāru to pṛthu rājāe daśa hajāra kāna māgyā. ne prathamanuṃ 54muṃ vacanāmṛta vaṃcāvīne bolyā je, ‘aho ! ā vacanāmṛta to divasa badho jāṇe sāṃbhaḻyā ja karīe to paṇa tṛpti na thāya. juone ! emāṃ mokṣanuṃ dvāra ja batāvī dīdhuṃ ne jñāna paṇa batāvī dīdhuṃ che.’ ema kahīne traṇa vāra vaṃcāvyuṃ ne kahyuṃ je, ‘jenāṃ karma phūṭyāṃ hoya tene ā vāta na samajāya. tene to mūḻa moṭāpuruṣa e ja śatru jevā jaṇāya che, e viparīta jñāna kahevāya. māṭe have to sādhune ja vaḻagī javuṃ ane āvo samo āvyo che to paṇa bhagavāna pāse ke moṭā sādhu pāse rahīne vātuṃ sāṃbhaḻe nahi, evī jīvanī avaḻāī che. ne ā ghaḍī jo hajāra rūpiyā kharacavānuṃ kahe to kharace, paṇa olyuṃ na thāya. ne strī, chokaro, havelī ne vepāra e badhāṃ temāṃ āḍa kare’, ne mahārāja pāse paṇa eka jaṇe kahyuṃ hatuṃ je, ‘rūpiyā kharacuṃ paṇa rahevāya nahīṃ.’ eka harajī ṭhakkara potānā gāmathī āvīne gaḍhaḍe bhagavāna sāru mahārāja bheḻā rahyā. āja paṇa ā sādhu pāse koī rahetuṃ nathī. pachī ema bolyā je, $tā ghera jamarā ḍerā deve, sāṃja paḍe masāṇā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૧૨) આ દેહ છે તે શ્રવણરૂપી કુહાડે કરીને ઘસાઈ જાશે, માટે કથા-કીર્તનાદિક શ્રવણ કર્યાં જ કરવાં. શ્રવણ સારુ તો પૃથુ રાજાએ દશ હજાર કાન માગ્યા. ને પ્રથમનું ૫૪મું વચનામૃત વંચાવીને બોલ્યા જે, ‘અહો ! આ વચનામૃત તો દિવસ બધો જાણે સાંભળ્યા જ કરીએ તો પણ તૃપ્તિ ન થાય. જુઓને ! એમાં મોક્ષનું દ્વાર જ બતાવી દીધું ને જ્ઞાન પણ બતાવી દીધું છે.’ એમ કહીને ત્રણ વાર વંચાવ્યું ને કહ્યું જે, ‘જેનાં કર્મ ફૂટ્યાં હોય તેને આ વાત ન સમજાય. તેને તો મૂળ મોટાપુરુષ એ જ શત્રુ જેવા જણાય છે, એ વિપરીત જ્ઞાન કહેવાય. માટે હવે તો સાધુને જ વળગી જવું અને આવો સમો આવ્યો છે તો પણ ભગવાન પાસે કે મોટા સાધુ પાસે રહીને વાતું સાંભળે નહિ, એવી જીવની અવળાઈ છે. ને આ ઘડી જો હજાર રૂપિયા ખરચવાનું કહે તો ખરચે, પણ ઓલ્યું ન થાય. ને સ્ત્રી, છોકરો, હવેલી ને વેપાર એ બધાં તેમાં આડ કરે’, ને મહારાજ પાસે પણ એક જણે કહ્યું હતું જે, ‘રૂપિયા ખરચું પણ રહેવાય નહીં.’ એક હરજી ઠક્કર પોતાના ગામથી આવીને ગઢડે ભગવાન સારુ મહારાજ ભેળા રહ્યા. આજ પણ આ સાધુ પાસે કોઈ રહેતું નથી. પછી એમ બોલ્યા જે, $તા ઘેર જમરા ડેરા દેવે, સાંજ પડે મસાણા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

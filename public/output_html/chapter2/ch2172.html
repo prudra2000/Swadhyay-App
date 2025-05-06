@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનનું સ્વરૂપ નિર્દોષ - Bhagavannu svarup nirdosh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavannu svarup nirdosh</h1>
+                <div class="gujarati-title">ભગવાનનું સ્વરૂપ નિર્દોષ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 172</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(172) bhagavānanuṃ svarūpa nirdoṣa samajavuṃ ne moṭā moṭā ekāṃtika sādhune paṇa ema samajavā, te barābara koī sādhana nathī; te ‘vacanāmṛta’māṃ kahyuṃ che ema cāra śāstre karīne samajavuṃ tathā ‘svarūpanirṇaya’māṃ kahyuṃ che ema sarva prakāre nirbādhapaṇe ne nirdoṣapaṇe samajavuṃ. te ātyaṃtikapralaya je, jñānapralaya karavāno che tyāṃ sudhī samajavānuṃ che. te jene ātyaṃtikapralaya thayo hoya te sāthe joḍāya tyāre tethī thāya. $ $</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(172) ભગવાનનું સ્વરૂપ નિર્દોષ સમજવું ને મોટા મોટા એકાંતિક સાધુને પણ એમ સમજવા, તે બરાબર કોઈ સાધન નથી; તે ‘વચનામૃત’માં કહ્યું છે એમ ચાર શાસ્ત્રે કરીને સમજવું તથા ‘સ્વરૂપનિર્ણય’માં કહ્યું છે એમ સર્વ પ્રકારે નિર્બાધપણે ને નિર્દોષપણે સમજવું. તે આત્યંતિકપ્રલય જે, જ્ઞાનપ્રલય કરવાનો છે ત્યાં સુધી સમજવાનું છે. તે જેને આત્યંતિકપ્રલય થયો હોય તે સાથે જોડાય ત્યારે તેથી થાય. $ $</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2171.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Upasana samajavi je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2173.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Game evo hoy tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '172');
+            localStorage.setItem('lastVisitedVatFile', 'ch2172.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

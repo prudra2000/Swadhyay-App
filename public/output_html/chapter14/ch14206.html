@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવ મનન તો કરે  - Jiv manan to kare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jiv manan to kare</h1>
+                <div class="gujarati-title">જીવ મનન તો કરે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 206</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(206) jīva manana to kare che, paṇa guṇātmaka manana thāya che. traṇa guṇathī nokhā paḍīne kyāṃ manana thāya che ? dāsānudāsa koī thāya, paṇa guṇātīta thāvuṃ te to bahu kaṭhaṇa che. muktabhāvane pāmyā hoya to paṇa ā guṇātīta jñāna śīkhyā vinā bheda rahī jāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(206) જીવ મનન તો કરે છે, પણ ગુણાત્મક મનન થાય છે. ત્રણ ગુણથી નોખા પડીને ક્યાં મનન થાય છે ? દાસાનુદાસ કોઈ થાય, પણ ગુણાતીત થાવું તે તો બહુ કઠણ છે. મુક્તભાવને પામ્યા હોય તો પણ આ ગુણાતીત જ્ઞાન શીખ્યા વિના ભેદ રહી જાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14205.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi sarvasv arpan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14207.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj sathe muktanandswami</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '206');
+            localStorage.setItem('lastVisitedVatFile', 'ch14206.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

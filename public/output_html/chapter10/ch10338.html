@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બાજરા વિના ન ચાલે - Bajara vina na chale</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bajara vina na chale</h1>
+                <div class="gujarati-title">બાજરા વિના ન ચાલે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 338</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(338) bājarā vinā na cāle, bākī bījā sarve vinā cāle. eka jaṇa sūratamāṃ ekalo pāṭha levā jāto hato tenī sāthe māre to jīva ja maḻyo nahi. teṇe amane kahyuṃ, ‘tamane moṭerā karyāṃ te amārāṃ māna gāḻavā sāru.’ ame cāraseṃ jaṇane bhaṇāvyā paṇa vīsa kāmamāṃ āvyā ne bījā to māṃhomāṃhī apavāda nākhatā. kṛpānaṃdasvāmī, ātmānaṃdasvāmī ne gopāḻānaṃdasvāmī e apavāda vinā rahyā. karāvyā te ame to jādariyānuṃ nāma paṇa jāṇatā nahotā; pachī rāṭhoḍa dhādhalane ghera mahārāja jamyā, tyāra pachī ame paṇa thoḍuṃka jamyā. sādhu samāgamathī ekāṃtikapaṇāne pāme che ne puruṣottamanā svarūpanuṃ jñāna te paṇa temāṃthī thāya che; māṭe sādhu samāgama sarvakāḻane viśe karavo.@ 1 jādariyānā lāḍavā= juvāra ke ghauṃnā līlā poṃkamāṃthī banāvela lāḍu.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(338) બાજરા વિના ન ચાલે, બાકી બીજા સર્વે વિના ચાલે. એક જણ સૂરતમાં એકલો પાઠ લેવા જાતો હતો તેની સાથે મારે તો જીવ જ મળ્યો નહિ. તેણે અમને કહ્યું, ‘તમને મોટેરા કર્યાં તે અમારાં માન ગાળવા સારુ.’ અમે ચારસેં જણને ભણાવ્યા પણ વીસ કામમાં આવ્યા ને બીજા તો માંહોમાંહી અપવાદ નાખતા. કૃપાનંદસ્વામી, આત્માનંદસ્વામી ને ગોપાળાનંદસ્વામી એ અપવાદ વિના રહ્યા. કરાવ્યા તે અમે તો જાદરિયાનું નામ પણ જાણતા નહોતા; પછી રાઠોડ ધાધલને ઘેર મહારાજ જમ્યા, ત્યાર પછી અમે પણ થોડુંક જમ્યા. સાધુ સમાગમથી એકાંતિકપણાને પામે છે ને પુરુષોત્તમના સ્વરૂપનું જ્ઞાન તે પણ તેમાંથી થાય છે; માટે સાધુ સમાગમ સર્વકાળને વિશે કરવો.@ 1 જાદરિયાના લાડવા= જુવાર કે ઘઉંના લીલા પોંકમાંથી બનાવેલ લાડુ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10337.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jene purve sadhu sevan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10339.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek sadhue paratharo </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '338');
+            localStorage.setItem('lastVisitedVatFile', 'ch10338.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

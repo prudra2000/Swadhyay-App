@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રવૃત્તિમાં રહીને શુદ્ધ - Pravruttima rahine shuddh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pravruttima rahine shuddh</h1>
+                <div class="gujarati-title">પ્રવૃત્તિમાં રહીને શુદ્ધ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 124</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(124) pravṛttimāṃ rahīne śuddha rahe te to baḻiyo hoya te rahe ne ā badho vahevāra che te mahārājanī prasannatā sāru karīe chīe ne ā to rīsa karavī paḍe che ne māṃhī bhaḻavuṃ paṇa paḍe che, te to mahāphaḻa mānyuṃ che te sāru thāya che. viṣayano ne dehano to niṣedha karyo che ne ātmā ne bhagavāna rākhyā che. paṇa bahu jīvonāṃ kalyāṇa sāru māṃhī bhaḻavuṃ paḍe che ane mahārājano pratāpa che tethī āma rahevāya che; nahi to viṣayanā saṃbaṃdhamāṃ āma kema rahevāya ? āṭalo viṣayano saṃbaṃdha to mahārāja chatāṃ paṇa nahoto. paṃḍe mahārāja maṭhanī khīcaḍī jamatā ne āja jalebīnā tāvaḍā caḍayā che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(124) પ્રવૃત્તિમાં રહીને શુદ્ધ રહે તે તો બળિયો હોય તે રહે ને આ બધો વહેવાર છે તે મહારાજની પ્રસન્નતા સારુ કરીએ છીએ ને આ તો રીસ કરવી પડે છે ને માંહી ભળવું પણ પડે છે, તે તો મહાફળ માન્યું છે તે સારુ થાય છે. વિષયનો ને દેહનો તો નિષેધ કર્યો છે ને આત્મા ને ભગવાન રાખ્યા છે. પણ બહુ જીવોનાં કલ્યાણ સારુ માંહી ભળવું પડે છે અને મહારાજનો પ્રતાપ છે તેથી આમ રહેવાય છે; નહિ તો વિષયના સંબંધમાં આમ કેમ રહેવાય ? આટલો વિષયનો સંબંધ તો મહારાજ છતાં પણ નહોતો. પંડે મહારાજ મઠની ખીચડી જમતા ને આજ જલેબીના તાવડા ચડયા છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14123.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maya jag thagani me</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14125.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Char ghatina prashn</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '124');
+            localStorage.setItem('lastVisitedVatFile', 'ch14124.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

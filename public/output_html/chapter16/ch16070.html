@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પોતાને રાગ હોય તે - Potane rag hoy te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Potane rag hoy te</h1>
+                <div class="gujarati-title">પોતાને રાગ હોય તે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 70</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>bapore vāta karī je, $(70) potāne rāga hoya te kema kaḻāya ? to āpaṇane koī kaheśe game to peṭalādamāṃ raho ne game to soḍhīmāṃ raho tyāre kyāṃ rahevāya ? tyāre to ema jaṇāya che je peṭalādamāṃ rahevāya. māṭe e rāga kahevāya. jeṭalāṃ śahera che te badhāṃ devaloka jevāṃ che ne badarikāśrama che te soḍhī jevuṃ che ne tyāṃ sūkṣma dehanā rāga ṭaḻāve che. ne śrvetadvīpamāṃ kāraṇanā rāga ṭaḻāve che ne āhīṃ niyama paḻāve che ne ekāṃtika hoya te to eka bhagavānanī mūrtimāṃ joḍāya che ne upāsanānī vāta samajavī ghaṇī kaṭhaṇa che te olyā deśamāṃ keṭalāka badhuṃ bheḻuṃ hāṃke che. te kahe che je, naranārāyaṇa che te ja svāminārāyaṇa che ne āpaṇī kora paṇa e kajiyo hato, te have thoḍoghaṇo rahyo che te oṇa to have koīne saṃśaya rahevā devo nathī ne keṭalāka āpaṇā sādhune paṇa e sāṃgaḍuṃ ṭaḻyuṃ nahi. 1 sāṃgaḍuṃ= mūrkhāī, bevakūphī</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>બપોરે વાત કરી જે, $(70) પોતાને રાગ હોય તે કેમ કળાય ? તો આપણને કોઈ કહેશે ગમે તો પેટલાદમાં રહો ને ગમે તો સોઢીમાં રહો ત્યારે ક્યાં રહેવાય ? ત્યારે તો એમ જણાય છે જે પેટલાદમાં રહેવાય. માટે એ રાગ કહેવાય. જેટલાં શહેર છે તે બધાં દેવલોક જેવાં છે ને બદરિકાશ્રમ છે તે સોઢી જેવું છે ને ત્યાં સૂક્ષ્મ દેહના રાગ ટળાવે છે. ને શ્ર્વેતદ્વીપમાં કારણના રાગ ટળાવે છે ને આહીં નિયમ પળાવે છે ને એકાંતિક હોય તે તો એક ભગવાનની મૂર્તિમાં જોડાય છે ને ઉપાસનાની વાત સમજવી ઘણી કઠણ છે તે ઓલ્યા દેશમાં કેટલાક બધું ભેળું હાંકે છે. તે કહે છે જે, નરનારાયણ છે તે જ સ્વામિનારાયણ છે ને આપણી કોર પણ એ કજિયો હતો, તે હવે થોડોઘણો રહ્યો છે તે ઓણ તો હવે કોઈને સંશય રહેવા દેવો નથી ને કેટલાક આપણા સાધુને પણ એ સાંગડું ટળ્યું નહિ. 1 સાંગડું= મૂર્ખાઈ, બેવકૂફી</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16069.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sadhu chhe te indriyun</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16071.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Atyantik pralayama kai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '70');
+            localStorage.setItem('lastVisitedVatFile', 'ch16070.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

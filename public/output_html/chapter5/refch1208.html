@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(208) ‘ ne mate to vedano māraga je, vidhi-niṣedha te paṇa gaṇatīmāṃ nathī.’ ema jaḍabharate rahūgaṇane kahyuṃ ne enī samajaṇamāṃ to, ‘ātmā ne paramātmā e be ja vāta rākhavī.’ ema kahyuṃ ne te upara chellānuṃ 39muṃ vacanāmṛta vaṃcāvyuṃ ne bolyā je, ‘ā vacanāmṛtamāṃ paṇa ātmā ne paramātmā e be vātano vega lagāḍī devo, ema mahārājano siddhāṃta che.’@ 1 brahmavettā= brahma ne parabrahmane jāṇanāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(208) ‘ ને મતે તો વેદનો મારગ જે, વિધિ-નિષેધ તે પણ ગણતીમાં નથી.’ એમ જડભરતે રહૂગણને કહ્યું ને એની સમજણમાં તો, ‘આત્મા ને પરમાત્મા એ બે જ વાત રાખવી.’ એમ કહ્યું ને તે ઉપર છેલ્લાનું 39મું વચનામૃત વંચાવ્યું ને બોલ્યા જે, ‘આ વચનામૃતમાં પણ આત્મા ને પરમાત્મા એ બે વાતનો વેગ લગાડી દેવો, એમ મહારાજનો સિદ્ધાંત છે.’@ 1 બ્રહ્મવેત્તા= બ્રહ્મ ને પરબ્રહ્મને જાણનાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

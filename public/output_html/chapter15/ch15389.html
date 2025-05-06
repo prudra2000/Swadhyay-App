@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જ્ઞાન વિના તો ભગવાનનાં  - Gnan vina to bhagavanna</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gnan vina to bhagavanna</h1>
+                <div class="gujarati-title">જ્ઞાન વિના તો ભગવાનનાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 389</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā pahelā śrāvaṇa vadi dvādaśīne divasa svāmīe vāta karī je, $(389) jñāna vinā to bhagavānanāṃ caraṇāraviṃda chātīmāṃ bīḍī rākhe to paṇa sukha na āve ne jñāna hoya to je āḍuṃ āve tene mūkī de ne sukhiyo rahe. jñāna vinā to parīkṣitane paṇa saṃśaya thayo ne rādhikājīne paṇa kajiyā thayā ne strīmāṃ to ekāṃtikapaṇuṃ-bhaktapaṇuṃ āve ja nahi. temāṃ to laḍāī ne īrṣā rahī che. āpaṇāmāṃ jene khādhānā ne lūgaḍāṃnā kajiyā haśe tene koī sukha nahi rahe. priyavrate khaṃḍa vecī dīdhā te kajiyo na rahyo. tema mahārāja kahe, amāre paṇa ema karavuṃ che. te strī-puruṣanāṃ maṃdira ja nokhāṃ karyāṃ eṭale kajiyo āḻasī gayo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના પહેલા શ્રાવણ વદિ દ્વાદશીને દિવસ સ્વામીએ વાત કરી જે, $(389) જ્ઞાન વિના તો ભગવાનનાં ચરણારવિંદ છાતીમાં બીડી રાખે તો પણ સુખ ન આવે ને જ્ઞાન હોય તો જે આડું આવે તેને મૂકી દે ને સુખિયો રહે. જ્ઞાન વિના તો પરીક્ષિતને પણ સંશય થયો ને રાધિકાજીને પણ કજિયા થયા ને સ્ત્રીમાં તો એકાંતિકપણું-ભક્તપણું આવે જ નહિ. તેમાં તો લડાઈ ને ઈર્ષા રહી છે. આપણામાં જેને ખાધાના ને લૂગડાંના કજિયા હશે તેને કોઈ સુખ નહિ રહે. પ્રિયવ્રતે ખંડ વેચી દીધા તે કજિયો ન રહ્યો. તેમ મહારાજ કહે, અમારે પણ એમ કરવું છે. તે સ્ત્રી-પુરુષનાં મંદિર જ નોખાં કર્યાં એટલે કજિયો આળસી ગયો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15388.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gopalanandswamino gun</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15390.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vrundavandase prashn puchhyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '389');
+            localStorage.setItem('lastVisitedVatFile', 'ch15389.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

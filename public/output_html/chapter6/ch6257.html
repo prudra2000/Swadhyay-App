@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પુરુષરૂપે પ્રકૃતિમાં આવ્યા - Purushrupe prakrutima avya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Purushrupe prakrutima avya</h1>
+                <div class="gujarati-title">પુરુષરૂપે પ્રકૃતિમાં આવ્યા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 257</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(257) puruṣarūpe prakṛtimāṃ āvyā, tyāṃthī vairāṭamāṃ āvyā, ema puruṣottamano praveśa thāto gayo. te praveśa te śuṃ ? je, puruṣottama pote āvyā tyāre śuṃ dhāmamāṃ nahotā ? dhāmamāṃ paṇa ema ne ema hatā ne olyuṃ to emanā aiśrvarya vate akṣara dvārā thātuṃ gayuṃ. ema to pahelāṃ gaṇeśane prabhu kahe che, brahmā, viṣṇu ne śivane kahe che, aniruddha, pradyumna ne saṃkarṣaṇane kahe che, tyāre emāṃthī kene prabhu mānavā ? tyāre enuṃ to ema che je, jīvanī koṭio, īśrvaranī koṭio, puruṣanī paṇa koṭio ne koṭio che; paṇa e saunā kāraṇa to mahārāja pote, ema samaje tyāre majakūra maḻyuṃ kahevāya. ne anaṃtakoṭi rāma, anaṃtakoṭi kṛṣṇa ne anaṃtakoṭi akṣaramukta, e sarvanā kartā, sarvanā ādhāra, sarvanā niyaṃtā ne sarvanā kāraṇa mahārājane samaje tyāre jñāna thaī rahyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૫૭) પુરુષરૂપે પ્રકૃતિમાં આવ્યા, ત્યાંથી વૈરાટમાં આવ્યા, એમ પુરુષોત્તમનો પ્રવેશ થાતો ગયો. તે પ્રવેશ તે શું ? જે, પુરુષોત્તમ પોતે આવ્યા ત્યારે શું ધામમાં નહોતા ? ધામમાં પણ એમ ને એમ હતા ને ઓલ્યું તો એમના ઐશ્ર્વર્ય વતે અક્ષર દ્વારા થાતું ગયું. એમ તો પહેલાં ગણેશને પ્રભુ કહે છે, બ્રહ્મા, વિષ્ણુ ને શિવને કહે છે, અનિરુદ્ધ, પ્રદ્યુમ્ન ને સંકર્ષણને કહે છે, ત્યારે એમાંથી કેને પ્રભુ માનવા ? ત્યારે એનું તો એમ છે જે, જીવની કોટિઓ, ઈશ્ર્વરની કોટિઓ, પુરુષની પણ કોટિઓ ને કોટિઓ છે; પણ એ સૌના કારણ તો મહારાજ પોતે, એમ સમજે ત્યારે મજકૂર મળ્યું કહેવાય. ને અનંતકોટિ રામ, અનંતકોટિ કૃષ્ણ ને અનંતકોટિ અક્ષરમુક્ત, એ સર્વના કર્તા, સર્વના આધાર, સર્વના નિયંતા ને સર્વના કારણ મહારાજને સમજે ત્યારે જ્ઞાન થઈ રહ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6256.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek vediye avine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6258.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shravan vadi chhathne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '257');
+            localStorage.setItem('lastVisitedVatFile', 'ch6257.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

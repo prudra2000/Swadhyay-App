@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવને મૂઆ સુધી - Aa jivne mua sudhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jivne mua sudhi</h1>
+                <div class="gujarati-title">આ જીવને મૂઆ સુધી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 105</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(105) ā jīvane paṇa ā lokanā manasūbā che paṇa te mūkavā ne karavā. ne ātmā ne paramātmā e be vāta mukhya rākhavī, ema mahārājano mata che, paṇa e vātanī puṣṭinā śabda bahu thoḍā āve ne tyāganā, bhaktinā ne dharmanā e ādikanā hajāra śabda āve, tethī paṇa e mārage calātuṃ nathī; paṇa siddhāṃta to e ja karavānuṃ mahārāja kahe che. $ 1 mūā sudhī= maratā sudhī. $2 paralokanā= akṣaradhāmanā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(105) આ જીવને પણ આ લોકના મનસૂબા છે પણ તે મૂકવા ને કરવા. ને આત્મા ને પરમાત્મા એ બે વાત મુખ્ય રાખવી, એમ મહારાજનો મત છે, પણ એ વાતની પુષ્ટિના શબ્દ બહુ થોડા આવે ને ત્યાગના, ભક્તિના ને ધર્મના એ આદિકના હજાર શબ્દ આવે, તેથી પણ એ મારગે ચલાતું નથી; પણ સિદ્ધાંત તો એ જ કરવાનું મહારાજ કહે છે. $ 1 મૂઆ સુધી= મરતા સુધી. $2 પરલોકના= અક્ષરધામના.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2104.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Uttam to shastrmanthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2106.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chokhkhu gnan thavanu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '105');
+            localStorage.setItem('lastVisitedVatFile', 'ch2105.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

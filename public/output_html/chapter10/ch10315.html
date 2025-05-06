@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વે કરતાં આશરો  - Sarve karata asharo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarve karata asharo</h1>
+                <div class="gujarati-title">સર્વે કરતાં આશરો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 315</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(315) sarve karatāṃ āśaro baḻavāna khyo che. kīḍī upara ke holī upara pāṇānī kāṃkarī paḍe to te marī jāya ne hāthīne baḻathī lākaḍī mārīe to paṇa tene kāṃī na jaṇāya; tema satsaṃge karīne pāko thayo tene bhāre deśakāḻa āve to paṇa tene kāṃī gaṇe nahi ne bījā to jarākamāṃ levāī jāya. vaśarāma sutārano bāpa be ānā haribhakta hato to paṇa teṇe kahyuṃ je, ‘śeraḍī ne talanā deha āvyā haśe tyāre pilāṇā nahi hoīe ? māṭe ā to bhagavāna sāru pilāvuṃ, temāṃ to ghaṇuṃ ṭhīka che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(315) સર્વે કરતાં આશરો બળવાન ક્હ્યો છે. કીડી ઉપર કે હોલી ઉપર પાણાની કાંકરી પડે તો તે મરી જાય ને હાથીને બળથી લાકડી મારીએ તો પણ તેને કાંઈ ન જણાય; તેમ સત્સંગે કરીને પાકો થયો તેને ભારે દેશકાળ આવે તો પણ તેને કાંઈ ગણે નહિ ને બીજા તો જરાકમાં લેવાઈ જાય. વશરામ સુતારનો બાપ બે આના હરિભક્ત હતો તો પણ તેણે કહ્યું જે, ‘શેરડી ને તલના દેહ આવ્યા હશે ત્યારે પિલાણા નહિ હોઈએ ? માટે આ તો ભગવાન સારુ પિલાવું, તેમાં તો ઘણું ઠીક છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10314.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Deharup patravali ante</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10316.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ahi kasar talava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '315');
+            localStorage.setItem('lastVisitedVatFile', 'ch10315.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

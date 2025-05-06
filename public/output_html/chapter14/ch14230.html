@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વ શાસ્ત્રનું સિદ્ધાંત - Sarv shastrnu siddhant</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarv shastrnu siddhant</h1>
+                <div class="gujarati-title">સર્વ શાસ્ત્રનું સિદ્ધાંત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 230</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(230) sarva śāstranuṃ siddhāṃta ātmā ane paramātmā e be ja che ne te māṭe brahmarūpa thāvāno ane mahārājanī upāsanāno vega lagāḍī devo. varatāla jātāṃ rastāmāṃ bhīmabhāīe moṭībāne pūchyuṃ je, ‘bhagavānamāṃ tamāre che evuṃ heta amāre kema thāya ?’ tyāre moṭībā kahe, ‘tame puruṣanā dehano tyāga karīne strīno deha dharo tyāre evuṃ heta thāya !’ pachī mahārāje kahyuṃ je, ‘ātmā che te strīye nathī ane puruṣeya nathī. māṭe potāne brahmarūpa kahetāṃ akṣararūpa mānīne bhagavānamāṃ heta karavuṃ. akṣaradhāmamāṃ strī ke puruṣanāṃ cihne rahita brahmatanu che.’ $(śrīmad bhāgavata : 5/5/8) $artha :- strī ane puruṣa baṃneno je paraspara dāmpatya bhāva che, te ja temanā hṛdayanī durbhedya graṃthi che. ā kāraṇathī puruṣane gṛha, kṣetra, putra, svajana ane dhana vageremāṃ ‘ā huṃ chuṃ, māruṃ che.’ evo moha thaī jāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(230) સર્વ શાસ્ત્રનું સિદ્ધાંત આત્મા અને પરમાત્મા એ બે જ છે ને તે માટે બ્રહ્મરૂપ થાવાનો અને મહારાજની ઉપાસનાનો વેગ લગાડી દેવો. વરતાલ જાતાં રસ્તામાં ભીમભાઈએ મોટીબાને પૂછ્યું જે, ‘ભગવાનમાં તમારે છે એવું હેત અમારે કેમ થાય ?’ ત્યારે મોટીબા કહે, ‘તમે પુરુષના દેહનો ત્યાગ કરીને સ્ત્રીનો દેહ ધરો ત્યારે એવું હેત થાય !’ પછી મહારાજે કહ્યું જે, ‘આત્મા છે તે સ્ત્રીયે નથી અને પુરુષેય નથી. માટે પોતાને બ્રહ્મરૂપ કહેતાં અક્ષરરૂપ માનીને ભગવાનમાં હેત કરવું. અક્ષરધામમાં સ્ત્રી કે પુરુષનાં ચિહ્ને રહિત બ્રહ્મતનુ છે.’ $(શ્રીમદ્ ભાગવત : 5/5/8) $અર્થ :- સ્ત્રી અને પુરુષ બંનેનો જે પરસ્પર દામ્પત્ય ભાવ છે, તે જ તેમના હૃદયની દુર્ભેદ્ય ગ્રંથિ છે. આ કારણથી પુરુષને ગૃહ, ક્ષેત્ર, પુત્ર, સ્વજન અને ધન વગેરેમાં ‘આ હું છું, મારું છે.’ એવો મોહ થઈ જાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14229.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gnan vina aa lokma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15001.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nrusinhanandaswamie Maharajne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '230');
+            localStorage.setItem('lastVisitedVatFile', 'ch14230.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

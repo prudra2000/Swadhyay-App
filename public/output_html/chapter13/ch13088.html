@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજની ચોખ્ખી ઉપાસના  - Maharajni chokhkhi upasana</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharajni chokhkhi upasana</h1>
+                <div class="gujarati-title">મહારાજની ચોખ્ખી ઉપાસના </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 88</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(88) mahārājanī cokhkhī upāsanā koīne nathī, māṭe mahārājanuṃ, temanī nānī moṭī ājñānuṃ ane moṭā saṃtanuṃ baḻa rākhavuṃ. brahmarūpe thaīne mahārājanī sevāmāṃ rahevuṃ. dharmādika cāreya guṇe saṃpūrṇa hoya to koīmāṃ na levāya. rūḍuṃ sthāna hoya, utkṛṣṭa śraddhā hoya, rūḍo deśakāḻa hoya ane moṭerāno rājīpo hoya to prabhu bhajāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(88) મહારાજની ચોખ્ખી ઉપાસના કોઈને નથી, માટે મહારાજનું, તેમની નાની મોટી આજ્ઞાનું અને મોટા સંતનું બળ રાખવું. બ્રહ્મરૂપે થઈને મહારાજની સેવામાં રહેવું. ધર્માદિક ચારેય ગુણે સંપૂર્ણ હોય તો કોઈમાં ન લેવાય. રૂડું સ્થાન હોય, ઉત્કૃષ્ટ શ્રદ્ધા હોય, રૂડો દેશકાળ હોય અને મોટેરાનો રાજીપો હોય તો પ્રભુ ભજાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13087.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharajna eke ek </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13089.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Rajy male te pan buddhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '88');
+            localStorage.setItem('lastVisitedVatFile', 'ch13088.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

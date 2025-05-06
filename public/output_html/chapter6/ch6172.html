@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અહો ! ભાદરવે મહિને  - Aho! Bhadarave mahine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aho! Bhadarave mahine</h1>
+                <div class="gujarati-title">અહો ! ભાદરવે મહિને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 172</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(172) aho ! bhādarave mahine kāṃī ! te āma āvā saṃta che tyāṃ sudhī che; paṇa tyāṃ to koī samāgama karatuṃ nathī ne pachī gṛhastha ne bhekhadhārī te sarvene paśrcātāpa thāśe. māṭe samajaṇavāḻā ne vagara samajaṇavāḻā, e beyane je te prakāre udyama karīne roṭalānuṃ karate karate ā sādhu pāse āvavuṃ ne roṭalānuṃ karavuṃ. ne vaḻī āvavuṃ ema karī levuṃ ne jīva bījuṃ to kare ja che te temāṃ śuṃ ! koṭi kalpa sudhī tapa kare paṇa ā joga na maḻe, te je upavāsa karatā haśe tene tapanī khabara paḍatī haśe. ema kahīne ‘brahmavilāsa’nuṃ gurunuṃ aṃga bolāvyuṃ ne kahyuṃ je, ‘ā joga bahu durlabha che; jīvane śuṃ khabara paḍe ?’ ema kahīne potānī godaḍī dekhāḍīne kahyuṃ je, ‘ā godaḍī oḍhīne besī rahīe, te cīṃthare vīṃṭyā ratana chīe.’@ 1 meha moṃghā che= varasāda durlabha che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૭૨) અહો ! ભાદરવે મહિને કાંઈ ! તે આમ આવા સંત છે ત્યાં સુધી છે; પણ ત્યાં તો કોઈ સમાગમ કરતું નથી ને પછી ગૃહસ્થ ને ભેખધારી તે સર્વેને પશ્ર્ચાતાપ થાશે. માટે સમજણવાળા ને વગર સમજણવાળા, એ બેયને જે તે પ્રકારે ઉદ્યમ કરીને રોટલાનું કરતે કરતે આ સાધુ પાસે આવવું ને રોટલાનું કરવું. ને વળી આવવું એમ કરી લેવું ને જીવ બીજું તો કરે જ છે તે તેમાં શું ! કોટિ કલ્પ સુધી તપ કરે પણ આ જોગ ન મળે, તે જે ઉપવાસ કરતા હશે તેને તપની ખબર પડતી હશે. એમ કહીને ‘બ્રહ્મવિલાસ’નું ગુરુનું અંગ બોલાવ્યું ને કહ્યું જે, ‘આ જોગ બહુ દુર્લભ છે; જીવને શું ખબર પડે ?’ એમ કહીને પોતાની ગોદડી દેખાડીને કહ્યું જે, ‘આ ગોદડી ઓઢીને બેસી રહીએ, તે ચીંથરે વીંટ્યા રતન છીએ.’@ 1 મેહ મોંઘા છે= વરસાદ દુર્લભ છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6171.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mangarolma Maharaj</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6173.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sadhune koike puchhyu je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '172');
+            localStorage.setItem('lastVisitedVatFile', 'ch6172.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

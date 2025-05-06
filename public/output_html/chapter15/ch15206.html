@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કાયાભાઈની વાત કરી - Kayabhaini vat kari</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kayabhaini vat kari</h1>
+                <div class="gujarati-title">કાયાભાઈની વાત કરી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 206</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(206) kāyābhāīnī vāta karī je, dveṣīe khoraḍuṃ pāḍī nākhyuṃ ne māryā to paṇa kṣamā karī ne kahe je, mahemāna āvyā che te navarāvo ne jamāḍo, evī vāto karatā. māṭe ‘bātana kī bāta to baḍī karāmata hai.’ te vātomāṃthī badhuṃ thāya. gaḍhaḍāmāṃ kūtarāne kāyābhāīnuṃ ṭhebuṃ vāgyuṃ. te kūtare kāukāro karyo eṭale kāyābhāīe vicāra karyo je, muktanā caraṇanī rajamāṃ paḍyo che te bahu moṭā bhāgyavāḻo haśe ! ema mahimā jāṇīne daṃḍavat karyo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(206) કાયાભાઈની વાત કરી જે, દ્વેષીએ ખોરડું પાડી નાખ્યું ને માર્યા તો પણ ક્ષમા કરી ને કહે જે, મહેમાન આવ્યા છે તે નવરાવો ને જમાડો, એવી વાતો કરતા. માટે ‘બાતન કી બાત તો બડી કરામત હૈ.’ તે વાતોમાંથી બધું થાય. ગઢડામાં કૂતરાને કાયાભાઈનું ઠેબું વાગ્યું. તે કૂતરે કાઉકારો કર્યો એટલે કાયાભાઈએ વિચાર કર્યો જે, મુક્તના ચરણની રજમાં પડ્યો છે તે બહુ મોટા ભાગ્યવાળો હશે ! એમ મહિમા જાણીને દંડવત્ કર્યો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15205.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kriya karavavi tema</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15207.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jivno to baddh svabhav</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '206');
+            localStorage.setItem('lastVisitedVatFile', 'ch15206.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

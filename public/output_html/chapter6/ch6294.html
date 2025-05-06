@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક જણે પૂછ્યું જે - Ek jane puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek jane puchhyu je</h1>
+                <div class="gujarati-title">એક જણે પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 294</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(294) eka jaṇe pūchyuṃ je, ‘vacanāmṛtamāṃ kyāṃka āśarānuṃ baḻa kahyuṃ che, kyāṃka dharmanuṃ, kyāṃka vairāgyanuṃ, kyāṃka ātmaniṣṭhā ne vaḻī kyāṃka pāchī ātmaniṣṭhā uḍāḍī nākhī che. evāṃ koīka ṭhekāṇe anaṃta sādhana kahyāṃ che temāṃ ekane viśe sarve āvī jāya ne uttama mokṣa thāya evuṃ eka kaho.’ eṭale svāmī kahe je, ‘upāsanā hoya ne uttama nirvikalpa niśrcaya hoya to badhāṃ āve.’ vaḻī pūchyuṃ je, ‘upāsanā che ema kema jaṇāya ?’ eṭale kahe, $(śrīmad bhāgavata : 11/2/53) $artha : traṇeya bhuvananā vaibhavo āvīne ūbhā hoya to paṇa jenī bhagavānamāṃ akhaṃḍa buddhi che evo tathā jeno ātmā śrīviṣṇumāṃ che evo vaiṣṇavajana, devone paṇa jemanī śodha karavī paḍe che evā bhagavānanā caraṇakamaḻamāṃthī eka lavamātra paṇa athavā āṃkhanā ardhā palakārā jeṭalo samaya māṭe paṇa calita thato nathī tevo vaiṣṇavajana pradhāna vaiṣṇava gaṇāya che, vaiṣṇavomāṃ agresara gaṇāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૯૪) એક જણે પૂછ્યું જે, ‘વચનામૃતમાં ક્યાંક આશરાનું બળ કહ્યું છે, ક્યાંક ધર્મનું, ક્યાંક વૈરાગ્યનું, ક્યાંક આત્મનિષ્ઠા ને વળી ક્યાંક પાછી આત્મનિષ્ઠા ઉડાડી નાખી છે. એવાં કોઈક ઠેકાણે અનંત સાધન કહ્યાં છે તેમાં એકને વિશે સર્વે આવી જાય ને ઉત્તમ મોક્ષ થાય એવું એક કહો.’ એટલે સ્વામી કહે જે, ‘ઉપાસના હોય ને ઉત્તમ નિર્વિકલ્પ નિશ્ર્ચય હોય તો બધાં આવે.’ વળી પૂછ્યું જે, ‘ઉપાસના છે એમ કેમ જણાય ?’ એટલે કહે, $(શ્રીમદ્ ભાગવત : ૧૧/૨/૫૩) $અર્થ : ત્રણેય ભુવનના વૈભવો આવીને ઊભા હોય તો પણ જેની ભગવાનમાં અખંડ બુદ્ધિ છે એવો તથા જેનો આત્મા શ્રીવિષ્ણુમાં છે એવો વૈષ્ણવજન, દેવોને પણ જેમની શોધ કરવી પડે છે એવા ભગવાનના ચરણકમળમાંથી એક લવમાત્ર પણ અથવા આંખના અર્ધા પલકારા જેટલો સમય માટે પણ ચલિત થતો નથી તેવો વૈષ્ણવજન પ્રધાન વૈષ્ણવ ગણાય છે, વૈષ્ણવોમાં અગ્રેસર ગણાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6293.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Swami kahe, vancho</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6295.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pruthvi gandhne muke pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '294');
+            localStorage.setItem('lastVisitedVatFile', 'ch6294.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

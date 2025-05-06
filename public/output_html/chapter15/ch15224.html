@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભામા લાગે છે - Bhama lage chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhama lage chhe</h1>
+                <div class="gujarati-title">ભામા લાગે છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 224</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(224) bhāmā lāge che. te keṭalākane ghoḍānā, keṭalākane gāḍīnā ne keṭalākane rasoī nokhī karavānā bhāmā lāge che tene moṭā che te dekhe che. te ācārya mukāve to paṇa mukāya nahi. tyāre bhāmo lāgyo kahevāya ne gāḍuṃ gāḍuṃ sāmāna bheḻo thayo che ne sadgurunā celāne to be gāḍā sāmāna ne keṭalāka to dravya rākhe che. tenā to mūā pachī dā’ḍā-pavāḍā thāya che. māṭe nitya pratye āvo samāgama hoya to bījuṃ na pese ne svāda, māna, lobha te to ghaṇuṃ ja sāruṃ lāge che e to jīvano svabhāva che. āṭalī vāta karī te śuṃ ? to mokṣanā māragamāṃ vighna na āve tevī kriyā karavī ne jīva bhāme caḍhī jāya tyāre khabara na rahe. te upara eka jaṇa cha godaḍāṃ pātharato tathā haḻavadano rājā hajāra ghaḍe nahāto tathā porabaṃdaranā rājāne daśa jaṇa thaīne ghoḍe besāre tenī vāta karī ne gāṃgaḍāmāṃ eka verāgī jāḍo thaī gayo hato. te gopāḻānaṃdasvāmī āgaḻa royo, pachī saṃtanī caraṇaraja māthe caḍāvavānuṃ kahyuṃ te teṇe caḍāvī tethī te sāro thayo ne khādhā vinā to jāḍuṃ na thāvāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(224) ભામા લાગે છે. તે કેટલાકને ઘોડાના, કેટલાકને ગાડીના ને કેટલાકને રસોઈ નોખી કરવાના ભામા લાગે છે તેને મોટા છે તે દેખે છે. તે આચાર્ય મુકાવે તો પણ મુકાય નહિ. ત્યારે ભામો લાગ્યો કહેવાય ને ગાડું ગાડું સામાન ભેળો થયો છે ને સદ્ગુરુના ચેલાને તો બે ગાડા સામાન ને કેટલાક તો દ્રવ્ય રાખે છે. તેના તો મૂઆ પછી દા’ડા-પવાડા થાય છે. માટે નિત્ય પ્રત્યે આવો સમાગમ હોય તો બીજું ન પેસે ને સ્વાદ, માન, લોભ તે તો ઘણું જ સારું લાગે છે એ તો જીવનો સ્વભાવ છે. આટલી વાત કરી તે શું ? તો મોક્ષના મારગમાં વિઘ્ન ન આવે તેવી ક્રિયા કરવી ને જીવ ભામે ચઢી જાય ત્યારે ખબર ન રહે. તે ઉપર એક જણ છ ગોદડાં પાથરતો તથા હળવદનો રાજા હજાર ઘડે નહાતો તથા પોરબંદરના રાજાને દશ જણ થઈને ઘોડે બેસારે તેની વાત કરી ને ગાંગડામાં એક વેરાગી જાડો થઈ ગયો હતો. તે ગોપાળાનંદસ્વામી આગળ રોયો, પછી સંતની ચરણરજ માથે ચડાવવાનું કહ્યું તે તેણે ચડાવી તેથી તે સારો થયો ને ખાધા વિના તો જાડું ન થાવાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15223.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tharav hoy te thay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15225.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ramanandswamini deshi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '224');
+            localStorage.setItem('lastVisitedVatFile', 'ch15224.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

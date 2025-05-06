@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભારે દુ:ખમાં દુ:ખ ને - Bhare dukhma dukh ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhare dukhma dukh ne</h1>
+                <div class="gujarati-title">ભારે દુ:ખમાં દુ:ખ ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 145</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(145) bhāre du:khamāṃ du:kha ne bhāre doṣamāṃ doṣa to nīca māṇasano saṃga thāya e ja che. indriyuṃ-aṃta:karaṇa paṇa nīca che, māṭe ene adhīna thāya teno satsaṃga rahevāno nathī. satsaṃgathī vimukha thayo ethī bījī nathī.@ 1 hāṇa= nāśa, nukaśāna.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(145) ભારે દુ:ખમાં દુ:ખ ને ભારે દોષમાં દોષ તો નીચ માણસનો સંગ થાય એ જ છે. ઇન્દ્રિયું-અંત:કરણ પણ નીચ છે, માટે એને અધીન થાય તેનો સત્સંગ રહેવાનો નથી. સત્સંગથી વિમુખ થયો એથી બીજી નથી.@ 1 હાણ= નાશ, નુકશાન.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10144.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje sadhune bahu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10146.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Badhu te barabar kyathi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '145');
+            localStorage.setItem('lastVisitedVatFile', 'ch10145.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

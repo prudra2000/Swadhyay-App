@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણે આ લોક ને  - Aapane aa lok ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aapane aa lok ne</h1>
+                <div class="gujarati-title">આપણે આ લોક ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 81</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(81) āpaṇe ā loka ne ā lokanā padārthane karoḍa cheṭuṃ che, paṇa ā sarva kārakhānāṃ karīe chīe ne padārtha rākhīe chīe te to śuṃ karīe je, sthāna vinā āṭalāṃ māṇasane kyāṃ rahevuṃ ? ne maṃdiramāṃ cāra-pāṃca moṭerā hoya temāṃ koīne raja hoya ne koīne tama hoya, te saune potānī prakṛti pramāṇe sūjhe, bākī temāṃ mokṣabhāgī paṇa hoya tene maḻavuṃ. ne jene sattvaguṇa pradhāna hoya tene sāruṃ sūjhe. ne mana, karma, vacane moṭānī anuvṛttimāṃ rahīe to emanī dṛṣṭi paḍī jāya ne sarva doṣa ṭaḻī jāya ne māṇasa rājāne, sipāīne ne jamādārane, evā avaḻāne paṇa rājī kare che, to ā sādhu to turata rājī thaī jāya evā che.@ 1 gāu= aṃtaranuṃ eka parimāṇa, doḍha māīla, aḍhī kilomīṭara.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(81) આપણે આ લોક ને આ લોકના પદાર્થને કરોડ છેટું છે, પણ આ સર્વ કારખાનાં કરીએ છીએ ને પદાર્થ રાખીએ છીએ તે તો શું કરીએ જે, સ્થાન વિના આટલાં માણસને ક્યાં રહેવું ? ને મંદિરમાં ચાર-પાંચ મોટેરા હોય તેમાં કોઈને રજ હોય ને કોઈને તમ હોય, તે સૌને પોતાની પ્રકૃતિ પ્રમાણે સૂઝે, બાકી તેમાં મોક્ષભાગી પણ હોય તેને મળવું. ને જેને સત્ત્વગુણ પ્રધાન હોય તેને સારું સૂઝે. ને મન, કર્મ, વચને મોટાની અનુવૃત્તિમાં રહીએ તો એમની દૃષ્ટિ પડી જાય ને સર્વ દોષ ટળી જાય ને માણસ રાજાને, સિપાઈને ને જમાદારને, એવા અવળાને પણ રાજી કરે છે, તો આ સાધુ તો તુરત રાજી થઈ જાય એવા છે.@ 1 ગાઉ= અંતરનું એક પરિમાણ, દોઢ માઈલ, અઢી કિલોમીટર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2080.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Be prakarna manas</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2082.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavan tatha mota sadhune</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '81');
+            localStorage.setItem('lastVisitedVatFile', 'ch2081.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવને આ લોક ને - Aa jivne aa lok ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jivne aa lok ne</h1>
+                <div class="gujarati-title">આ જીવને આ લોક ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 237</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(237) ā jīvane ā loka ne nāta-jātanuṃ jeṭaluṃ dṛḍha thaī gayuṃ che, eṭaluṃ bhagavānanī koranuṃ dṛḍha nathī thātuṃ. te to jo pāko vicāra kare to thāya. te upara eka sādhue pūchyuṃ je, ‘evo vicāra kyāre thāśe ?’ to kahe, ‘jo evo khapa hoya ne karavā māṃḍe to thāya.’ te upara vāta karī je, eka divasa mahārāja kahe, “bhāī, koī eka divasa ākho ne eka rāta ākhī jo māruṃ akhaṃḍa bhajana kare to tene mārī mūrti dekhāya”pachī eka bhakte divasa ākho bhajana karyuṃ ne rāte karavā māṃḍyuṃ, te nidrā āvavānī thaī, eṭale ghaṃṭīe daḻīne paṇa ākhī rāta bhajana karyuṃ, pachī tene bhagavāna dekhāṇā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૩૭) આ જીવને આ લોક ને નાત-જાતનું જેટલું દૃઢ થઈ ગયું છે, એટલું ભગવાનની કોરનું દૃઢ નથી થાતું. તે તો જો પાકો વિચાર કરે તો થાય. તે ઉપર એક સાધુએ પૂછ્યું જે, ‘એવો વિચાર ક્યારે થાશે ?’ તો કહે, ‘જો એવો ખપ હોય ને કરવા માંડે તો થાય.’ તે ઉપર વાત કરી જે, એક દિવસ મહારાજ કહે, “ભાઈ, કોઈ એક દિવસ આખો ને એક રાત આખી જો મારું અખંડ ભજન કરે તો તેને મારી મૂર્તિ દેખાય”પછી એક ભક્તે દિવસ આખો ભજન કર્યું ને રાતે કરવા માંડ્યું, તે નિદ્રા આવવાની થઈ, એટલે ઘંટીએ દળીને પણ આખી રાત ભજન કર્યું, પછી તેને ભગવાન દેખાણા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6236.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek sadhu raghavanand</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6238.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek var samaiyethi avya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '237');
+            localStorage.setItem('lastVisitedVatFile', 'ch6237.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

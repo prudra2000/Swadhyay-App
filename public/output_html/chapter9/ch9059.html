@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલુંક વહેવારનું જ્ઞાન  - Ketaluk vahevarnu gnan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketaluk vahevarnu gnan</h1>
+                <div class="gujarati-title">કેટલુંક વહેવારનું જ્ઞાન </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 59</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(59) keṭaluṃka vahevāranuṃ jñāna che, te paṇa samajavuṃ joīe nahi to du:kha thāya te jñāna sarve sādhu samāgamamāṃthī śikhāya che. eka divasa mahārāje kahyuṃ je, ‘game evo jñānavāḻo, dharmavāḻo ke tyāgavāḻo hoya paṇa te vāḻyo na vaḻe to amāre ṭhīka paḍe nahīṃ.’ mahārāje deśa-vibhāga karī pāḻānī vaheṃcaṇa karīne ājñā karī je, ‘je dravya rākhe te satsaṃgamāṃ nahi, amāre evāno khapa nathī.’ te upara vāta karī je, bhagujī ādika mahārājanī sevāmāṃ hatā, paṇa dravya rākhavā sāru amadāvāda gayā te mahārāje nā pāḍī to paṇa mānyuṃ nahi māṭe viṣayanā saṃbaṃdhathī to jema jarāsaṃdhathī ke daṃtavakrathī bīvāya tema bīvuṃ. śaheranā viṣaya jīvatā māṇasa jevā che ne gāmaḍānā viṣaya jevā che; māṭe ā jīvatā viṣayathī bīvuṃ.@ 1 oḍāṃ= khetaranā cāḍiyā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(59) કેટલુંક વહેવારનું જ્ઞાન છે, તે પણ સમજવું જોઈએ નહિ તો દુ:ખ થાય તે જ્ઞાન સર્વે સાધુ સમાગમમાંથી શિખાય છે. એક દિવસ મહારાજે કહ્યું જે, ‘ગમે એવો જ્ઞાનવાળો, ધર્મવાળો કે ત્યાગવાળો હોય પણ તે વાળ્યો ન વળે તો અમારે ઠીક પડે નહીં.’ મહારાજે દેશ-વિભાગ કરી પાળાની વહેંચણ કરીને આજ્ઞા કરી જે, ‘જે દ્રવ્ય રાખે તે સત્સંગમાં નહિ, અમારે એવાનો ખપ નથી.’ તે ઉપર વાત કરી જે, ભગુજી આદિક મહારાજની સેવામાં હતા, પણ દ્રવ્ય રાખવા સારુ અમદાવાદ ગયા તે મહારાજે ના પાડી તો પણ માન્યું નહિ માટે વિષયના સંબંધથી તો જેમ જરાસંધથી કે દંતવક્રથી બીવાય તેમ બીવું. શહેરના વિષય જીવતા માણસ જેવા છે ને ગામડાના વિષય જેવા છે; માટે આ જીવતા વિષયથી બીવું.@ 1 ઓડાં= ખેતરના ચાડિયા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9058.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanne marage to </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9060.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jetalo gol nakhie tetalu </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '59');
+            localStorage.setItem('lastVisitedVatFile', 'ch9059.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

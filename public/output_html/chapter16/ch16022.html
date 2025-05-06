@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કચ્છમાં કુરો કુજારો બોલે  - Kachchhama kuro kujaro</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kachchhama kuro kujaro</h1>
+                <div class="gujarati-title">કચ્છમાં કુરો કુજારો બોલે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 22</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(22) kacchamāṃ kuro kujāro bole ne nāgheramāṃ uttarane ḍuṃgaravuṃ ne dakṣiṇane samadaravuṃ kahe, tema saṃge karīne thāya. jyāṃ kajiyānī vātuṃ, naṭa bajāṇiyānī vātuṃ ne sadevaṃta sāvaḻīṃgānī vātuṃ, tyāṃ bhagavānanī vātuṃ na hoya. māṭe mokṣane mārge cālanārā che tene evī āṃkho che. bījāne e āṃkha na hoya. mahārāje cāra vānāṃ lakhyāṃ ne te pravartāvyāṃ, te jeno paricaya hoya te āvaḍe. jema khetī, cākarī ne vepāramāṃ maṃḍyā che tema maṃḍe tyāre ja ā satsaṃga thāya ne nathī thātuṃ tenuṃ kāraṇa śuṃ je, tenī vātuṃ thātī nathī ne vātuṃ thāya to te thayā vinā rahe nahi. kṣatrī hoya ne ghera jāya tyāre bāyaḍī jevo thaī jāya; pache te sīṃdhuḍā sāṃbhaḻe tyāre pācho kāṃṭo āve.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(22) કચ્છમાં કુરો કુજારો બોલે ને નાઘેરમાં ઉત્તરને ડુંગરવું ને દક્ષિણને સમદરવું કહે, તેમ સંગે કરીને થાય. જ્યાં કજિયાની વાતું, નટ બજાણિયાની વાતું ને સદેવંત સાવળીંગાની વાતું, ત્યાં ભગવાનની વાતું ન હોય. માટે મોક્ષને માર્ગે ચાલનારા છે તેને એવી આંખો છે. બીજાને એ આંખ ન હોય. મહારાજે ચાર વાનાં લખ્યાં ને તે પ્રવર્તાવ્યાં, તે જેનો પરિચય હોય તે આવડે. જેમ ખેતી, ચાકરી ને વેપારમાં મંડ્યા છે તેમ મંડે ત્યારે જ આ સત્સંગ થાય ને નથી થાતું તેનું કારણ શું જે, તેની વાતું થાતી નથી ને વાતું થાય તો તે થયા વિના રહે નહિ. ક્ષત્રી હોય ને ઘેર જાય ત્યારે બાયડી જેવો થઈ જાય; પછે તે સીંધુડા સાંભળે ત્યારે પાછો કાંટો આવે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16021.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jivne aa lokno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16023.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Trikamadasne ghini ame</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '22');
+            localStorage.setItem('lastVisitedVatFile', 'ch16022.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

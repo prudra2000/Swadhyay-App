@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ ગઢડામાં કોઈકને - Maharaj gadhadma koikne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj gadhadma koikne</h1>
+                <div class="gujarati-title">મહારાજ ગઢડામાં કોઈકને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 149</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(149) mahārāja gaḍhaḍāmāṃ koīkane jovā gayā, paṇa khāṭalāne pāye doro bhāḻyo eṭale pāchā vaḻyā. pachī doro choḍī nākhyo ne mahārājane kahyuṃ je, ‘tene khabara nathī, koīke bāṃdhyo haśe.’ eṭale mahārāja darśana devā gayā. jetapuranā kaṇabī harajī kāpaḍiyāne ṭāḍhiyo tāva āvato te bāve doro bāṃdhīne utāryo. pachī tene ḍośīe kahyuṃ je, ‘bhāī tāro tāva bāvo godaḍāmāṃ ghālīne laī gayo.’ pachī harajī bāvā vāṃse gayo ne kahe, ‘māro tāva pācho lāva, tāro utāryo māre utāravo nathī. mārā bhagavāna svāminārāyaṇa che te utāraśe.’ pachī te bāve godaḍuṃ oḍhāḍyuṃ ne doro pācho līdho ke turata ja tāva āvyo. to paṇa harajīe bāvāne kahyuṃ je, ‘bhale tāva āvyo; tuṃ tāre āṃhīṃthī jā.’ ema bāvāne tagaḍī kāḍhyo. te vātanī mahārājane khabara paḍī, tethī mahārāja tenā upara bahu prasanna thayā, te jetapura darśana devā gayā; evī dṛḍhatā āpaṇe karavī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(149) મહારાજ ગઢડામાં કોઈકને જોવા ગયા, પણ ખાટલાને પાયે દોરો ભાળ્યો એટલે પાછા વળ્યા. પછી દોરો છોડી નાખ્યો ને મહારાજને કહ્યું જે, ‘તેને ખબર નથી, કોઈકે બાંધ્યો હશે.’ એટલે મહારાજ દર્શન દેવા ગયા. જેતપુરના કણબી હરજી કાપડિયાને ટાઢિયો તાવ આવતો તે બાવે દોરો બાંધીને ઉતાર્યો. પછી તેને ડોશીએ કહ્યું જે, ‘ભાઈ તારો તાવ બાવો ગોદડામાં ઘાલીને લઈ ગયો.’ પછી હરજી બાવા વાંસે ગયો ને કહે, ‘મારો તાવ પાછો લાવ, તારો ઉતાર્યો મારે ઉતારવો નથી. મારા ભગવાન સ્વામિનારાયણ છે તે ઉતારશે.’ પછી તે બાવે ગોદડું ઓઢાડ્યું ને દોરો પાછો લીધો કે તુરત જ તાવ આવ્યો. તો પણ હરજીએ બાવાને કહ્યું જે, ‘ભલે તાવ આવ્યો; તું તારે આંહીંથી જા.’ એમ બાવાને તગડી કાઢ્યો. તે વાતની મહારાજને ખબર પડી, તેથી મહારાજ તેના ઉપર બહુ પ્રસન્ન થયા, તે જેતપુર દર્શન દેવા ગયા; એવી દૃઢતા આપણે કરવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10148.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Motae upeksha kari tyare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10150.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jetapurna bhutne Maharaje</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '149');
+            localStorage.setItem('lastVisitedVatFile', 'ch10149.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

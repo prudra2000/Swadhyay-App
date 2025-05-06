@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેશકાળાદિક આઠ શુભ - Deshakaladik ath shubh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Deshakaladik ath shubh</h1>
+                <div class="gujarati-title">દેશકાળાદિક આઠ શુભ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 13</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(13) deśakāḻādika āṭha śubha che ne aśubha che, te oḻakhavā. te jyāṃ ā saṃta rahetā hoya teṭalo deśa śubha ne bākī to aśubha; arabasthāna ne e ādika ghaṇāya che. have kāḻa śubha che to bhagavāna bhajāya che ne sukhiyuṃ rahevāya che te śubha ne mṛtyu paṇa jevo kāḻa hoya tevuṃ thāya. te juone ā vahāṇa būḍe che tyāre temāṃ baseṃ māṇasa būḍī mare che ne surata baḻyuṃ tyāre keṭalāṃka māṇasa baḻī mūāṃ, te śuṃ badhāyanuṃ mṛtyuṃ bheḻuṃ ja haśe ? e ṭhekāṇe to aśubha kāḻa levo.@ 1 makarāṇa= siṃdhanī vāyavye āvela eka pradeśa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૩) દેશકાળાદિક આઠ શુભ છે ને અશુભ છે, તે ઓળખવા. તે જ્યાં આ સંત રહેતા હોય તેટલો દેશ શુભ ને બાકી તો અશુભ; અરબસ્થાન ને એ આદિક ઘણાય છે. હવે કાળ શુભ છે તો ભગવાન ભજાય છે ને સુખિયું રહેવાય છે તે શુભ ને મૃત્યુ પણ જેવો કાળ હોય તેવું થાય. તે જુઓને આ વહાણ બૂડે છે ત્યારે તેમાં બસેં માણસ બૂડી મરે છે ને સુરત બળ્યું ત્યારે કેટલાંક માણસ બળી મૂઆં, તે શું બધાયનું મૃત્યું ભેળું જ હશે ? એ ઠેકાણે તો અશુભ કાળ લેવો.@ 1 મકરાણ= સિંધની વાયવ્યે આવેલ એક પ્રદેશ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6012.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa satsangma to sukh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6014.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kam, krodh, man, irsha</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '13');
+            localStorage.setItem('lastVisitedVatFile', 'ch6013.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામ વાંકિયામાં વાત કરી જે - Gam vakiyama vat kari je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gam vakiyama vat kari je</h1>
+                <div class="gujarati-title">ગામ વાંકિયામાં વાત કરી જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 57</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(57) gāma vāṃkiyāmāṃ vāta karī je, ‘mukta hoya tene viṣaya game nahi ne akṣaradhāmamāṃ bhagavāna che ane āṃhīṃ je āvyā che tenā te ja tyāṃ che; paṇa ā bhagavānamāṃ ne tyāṃ che temāṃ lagāra phera nathī ema samajavuṃ, te ja māyāne taravānuṃ che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(57) ગામ વાંકિયામાં વાત કરી જે, ‘મુક્ત હોય તેને વિષય ગમે નહિ ને અક્ષરધામમાં ભગવાન છે અને આંહીં જે આવ્યા છે તેના તે જ ત્યાં છે; પણ આ ભગવાનમાં ને ત્યાં છે તેમાં લગાર ફેર નથી એમ સમજવું, તે જ માયાને તરવાનું છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4056.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gam babaparma haribhaktne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4058.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Akshardham ne aksharna</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '57');
+            localStorage.setItem('lastVisitedVatFile', 'ch4057.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

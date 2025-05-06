@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જોગીના લિંગનો ભંગ  - Jogina lingano bhang</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jogina lingano bhang</h1>
+                <div class="gujarati-title">જોગીના લિંગનો ભંગ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 315</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(315) jogīnā liṃgano bhaṃga śuṃ ? je, vāsanāliṃgano nāśa thāya te. te vāsanā āpaṇe pāṇā upāḍīe chīe te jema coṃṭī rahyā che te ghālīne ukhāḍīe tyāre māṃḍa māṃḍa ūkhaḍe che tema vrati (vṛtti) pratiloma karavī ne bhagavānane jīvamāṃ jaḍavā to vāsanāliṃgano nāśa thāya, paṇa temāṃ vighna śuṃ che je, paṃcaviṣaya ne dehābhimāna. tame jāṇo je, amāre ja vyavahāra che, paṇa amāre to ākhā satsaṃgano vyavahāra māthe che, to paṇa vātuṃ karīe chīe ne badhī rāta bhajana karavānī paḍī che; temāṃ bhajana kare to thāya evuṃ che. te carakhāvāḻā, bakarāṃvāḻā, copaḍāvāḻā ne bhavāyā e sārī rāta jāge che paṇa bhajanamāṃ koī jāgatuṃ nathī.@ 1 sāṃgaḍā= barachī jevuṃ eka hathiyāra, ḍaṃḍo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(315) જોગીના લિંગનો ભંગ શું ? જે, વાસનાલિંગનો નાશ થાય તે. તે વાસના આપણે પાણા ઉપાડીએ છીએ તે જેમ ચોંટી રહ્યા છે તે ઘાલીને ઉખાડીએ ત્યારે માંડ માંડ ઊખડે છે તેમ વ્રતિ (વૃત્તિ) પ્રતિલોમ કરવી ને ભગવાનને જીવમાં જડવા તો વાસનાલિંગનો નાશ થાય, પણ તેમાં વિઘ્ન શું છે જે, પંચવિષય ને દેહાભિમાન. તમે જાણો જે, અમારે જ વ્યવહાર છે, પણ અમારે તો આખા સત્સંગનો વ્યવહાર માથે છે, તો પણ વાતું કરીએ છીએ ને બધી રાત ભજન કરવાની પડી છે; તેમાં ભજન કરે તો થાય એવું છે. તે ચરખાવાળા, બકરાંવાળા, ચોપડાવાળા ને ભવાયા એ સારી રાત જાગે છે પણ ભજનમાં કોઈ જાગતું નથી.@ 1 સાંગડા= બરછી જેવું એક હથિયાર, ડંડો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15314.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ragi hoy tene tyagini</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15316.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jivma koine dharm, niyam</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '315');
+            localStorage.setItem('lastVisitedVatFile', 'ch15315.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

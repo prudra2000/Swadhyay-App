@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેટલી વિભૂતિ જાણે - Jetali vibhuti jane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jetali vibhuti jane</h1>
+                <div class="gujarati-title">જેટલી વિભૂતિ જાણે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 290</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(290) jeṭalī vibhūti jāṇe teṭalī vibhūti to bhagavāna tene āpe che. te mahārāja kahe, ‘bījāe rāsa karāvyā ne amārā sādhu rāsa toḍāve che.’ kṛṣṇāya nāmo nama: | artha :- kṛṣṇa bhagavānane puna: puna: namaskāra. ethī āgaḻa koī cālī śake nahi; paṇa mahārāje to śīkhavyuṃ hatuṃ je, $koṭi brahmā tahāṃ kathe jñāna, koṭi śiva jahāṃ dhare hai dhyāna; $jahāṃ sad‌guru khele vasaṃta, parama jyoti jahāṃ sādhu saṃta. $(kīrtana muktāvali : 735) $tathā, $vāṃkī enī vātuṃ re kaḻyāmāṃ nava āve, $jene samajāve re te sarva tajī jāve. 1 rīṃchaḍiyuṃ beṭhī che.= varasāda āve tevāṃ vādaḻa gherāyāṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(290) જેટલી વિભૂતિ જાણે તેટલી વિભૂતિ તો ભગવાન તેને આપે છે. તે મહારાજ કહે, ‘બીજાએ રાસ કરાવ્યા ને અમારા સાધુ રાસ તોડાવે છે.’ કૃષ્ણાય નામો નમ: । અર્થ :- કૃષ્ણ ભગવાનને પુન: પુન: નમસ્કાર. એથી આગળ કોઈ ચાલી શકે નહિ; પણ મહારાજે તો શીખવ્યું હતું જે, $કોટિ બ્રહ્મા તહાં કથે જ્ઞાન, કોટિ શિવ જહાં ધરે હૈ ધ્યાન; $જહાં સદ્‌ગુરુ ખેલે વસંત, પરમ જ્યોતિ જહાં સાધુ સંત. $(કીર્તન મુક્તાવલિ : 735) $તથા, $વાંકી એની વાતું રે કળ્યામાં નવ આવે, $જેને સમજાવે રે તે સર્વ તજી જાવે. 1 રીંછડિયું બેઠી છે.= વરસાદ આવે તેવાં વાદળ ઘેરાયાં છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10289.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Adharanandswamie oradina</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10291.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jetala vishay chhe te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '290');
+            localStorage.setItem('lastVisitedVatFile', 'ch10290.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સ્ત્રીઓના પ્રસંગમાં કોઈની  - Striona prasangma koini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Striona prasangma koini</h1>
+                <div class="gujarati-title">સ્ત્રીઓના પ્રસંગમાં કોઈની </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 265</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(265) strīonā prasaṃgamāṃ koīnī jaya thaī nathī ne thāśe paṇa nahīṃ. eno prasaṃga karavānuṃ to bhagavāna kahe to paṇa na mānavuṃ. te mahārāje niṣkuḻānaṃdasvāmīne kahyuṃ je, ‘āṃhīṃ besīne amārāṃ darśana karo.’ tyāre kahe, ‘sāmāṃ ḍośīonāṃ darśana thāya che māṭe tyāṃ nahi besuṃ.’ pachī mahārāja kahe, ‘amāruṃ mānatā nathī māṭe jāo vimukha cho.’ eṭale niṣkuḻānaṃdasvāmī kahe, ‘mahārāja ! ḍośīonāṃ darśana karīne khuvāra thaīne vimukha thāvuṃ, te karatāṃ hamaṇāṃ ja tamāro karyo vimukha thāuṃ te ṭhīka !’ ema kahī page lāgī tyāṃthī ūṭhī gayā, māṭe evī ājñā pāḻavāmāṃ paṇa viveka rākhavo. kema je, tyāgī hoya tene strī be māsa rasoī karī de to potānī smṛti karāvī de, māṭe .@ 1 māmalāmāṃ na āvyā te māṭī= marada-puruṣārthī vyakti.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(265) સ્ત્રીઓના પ્રસંગમાં કોઈની જય થઈ નથી ને થાશે પણ નહીં. એનો પ્રસંગ કરવાનું તો ભગવાન કહે તો પણ ન માનવું. તે મહારાજે નિષ્કુળાનંદસ્વામીને કહ્યું જે, ‘આંહીં બેસીને અમારાં દર્શન કરો.’ ત્યારે કહે, ‘સામાં ડોશીઓનાં દર્શન થાય છે માટે ત્યાં નહિ બેસું.’ પછી મહારાજ કહે, ‘અમારું માનતા નથી માટે જાઓ વિમુખ છો.’ એટલે નિષ્કુળાનંદસ્વામી કહે, ‘મહારાજ ! ડોશીઓનાં દર્શન કરીને ખુવાર થઈને વિમુખ થાવું, તે કરતાં હમણાં જ તમારો કર્યો વિમુખ થાઉં તે ઠીક !’ એમ કહી પગે લાગી ત્યાંથી ઊઠી ગયા, માટે એવી આજ્ઞા પાળવામાં પણ વિવેક રાખવો. કેમ જે, ત્યાગી હોય તેને સ્ત્રી બે માસ રસોઈ કરી દે તો પોતાની સ્મૃતિ કરાવી દે, માટે .@ 1 મામલામાં ન આવ્યા તે માટી= મરદ-પુરુષાર્થી વ્યક્તિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9264.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketala rupiya daie to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9266.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje evi sadak </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '265');
+            localStorage.setItem('lastVisitedVatFile', 'ch9265.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

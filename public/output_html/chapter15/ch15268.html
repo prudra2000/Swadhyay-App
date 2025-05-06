@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેટલો જેણે મોટામાં જીવ  - Jetalo jene motama jiv</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jetalo jene motama jiv</h1>
+                <div class="gujarati-title">જેટલો જેણે મોટામાં જીવ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 268</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(268) jeṭalo jeṇe moṭāmāṃ jīva bāṃdhyo hoya tathā je aṃtaramāṃ laḍāī leto hoya tene moṭā dekhe che. ṭhīka varto cho ema kahe che, paṇa jo kharekharuṃ svabhāva upara kahe to jīva khame nahi te sāru moṭā nabhāve che ne lākha janma dharīne je kasara na maṭe te kasara moṭā pāse eka mahino jo kharekharo samāgama kare to ṭaḻī jāya. te upara vāta karī je, pārvatīnā vacane gaṇapatie gāyanī parikramā karī te pṛthvīnī thaī rahī ne kdhayāne varyā. evo to moṭāno mahimā che, paṇa jo koī eka joḍa caraṇāraviṃda āpe to kāśī jāya, paṇa lākha caraṇāraviṃda pūjyānuṃ phaḻa thāya evā moṭā hoya teno samāgama na kare. kema je, ā pragaṭa che ne olyuṃ parokṣa che tethī jīvane parokṣanā jevī pragaṭane viṣe pratīti āvatī nathī e ja ajñāna che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(268) જેટલો જેણે મોટામાં જીવ બાંધ્યો હોય તથા જે અંતરમાં લડાઈ લેતો હોય તેને મોટા દેખે છે. ઠીક વર્તો છો એમ કહે છે, પણ જો ખરેખરું સ્વભાવ ઉપર કહે તો જીવ ખમે નહિ તે સારુ મોટા નભાવે છે ને લાખ જન્મ ધરીને જે કસર ન મટે તે કસર મોટા પાસે એક મહિનો જો ખરેખરો સમાગમ કરે તો ટળી જાય. તે ઉપર વાત કરી જે, પાર્વતીના વચને ગણપતિએ ગાયની પરિક્રમા કરી તે પૃથ્વીની થઈ રહી ને ક્ધયાને વર્યા. એવો તો મોટાનો મહિમા છે, પણ જો કોઈ એક જોડ ચરણારવિંદ આપે તો કાશી જાય, પણ લાખ ચરણારવિંદ પૂજ્યાનું ફળ થાય એવા મોટા હોય તેનો સમાગમ ન કરે. કેમ જે, આ પ્રગટ છે ને ઓલ્યું પરોક્ષ છે તેથી જીવને પરોક્ષના જેવી પ્રગટને વિષે પ્રતીતિ આવતી નથી એ જ અજ્ઞાન છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15267.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Motera to arth upar</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15269.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sau sauni ruchi nonkhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '268');
+            localStorage.setItem('lastVisitedVatFile', 'ch15268.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

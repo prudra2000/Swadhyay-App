@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનના તથા એકાંતિકના - Bhagavanna tatha ekantikna</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanna tatha ekantikna</h1>
+                <div class="gujarati-title">ભગવાનના તથા એકાંતિકના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 2</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(2) bhagavānanā tathā ekāṃtikanā niśrcayanāṃ lakṣaṇa e che je, gharamāṃ so karoḍa maṇa dāṇā hoya tathā rūpiyā hoya to kāḻa paḍe maravānī bīka na rahe tathā be hajāra bakhatariyā bheḻā hoya to lūṃṭāvānī bīka na rahe. tema niśrcayavāḻāne kāḻa, karma ne māyā tenī bīka na rahe ne pūrṇakāma māne ne bhagavāna vinā koīnī apekṣā na rahe. $prakaraṇa 1nī vāta 317</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(2) ભગવાનના તથા એકાંતિકના નિશ્ર્ચયનાં લક્ષણ એ છે જે, ઘરમાં સો કરોડ મણ દાણા હોય તથા રૂપિયા હોય તો કાળ પડે મરવાની બીક ન રહે તથા બે હજાર બખતરિયા ભેળા હોય તો લૂંટાવાની બીક ન રહે. તેમ નિશ્ર્ચયવાળાને કાળ, કર્મ ને માયા તેની બીક ન રહે ને પૂર્ણકામ માને ને ભગવાન વિના કોઈની અપેક્ષા ન રહે. $પ્રકરણ 1ની વાત 317</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5001.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan malay pachhi </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5003.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Divyabhav-manushyabhav ek </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '2');
+            localStorage.setItem('lastVisitedVatFile', 'ch5002.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

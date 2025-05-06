@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રભુ ભજવા આવ્યા  - Prabhu bhajava avya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Prabhu bhajava avya</h1>
+                <div class="gujarati-title">પ્રભુ ભજવા આવ્યા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 261</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(261) prabhu bhajavā āvyā paṇa jñāna nahi te kema pāra paḍe ? ane jñāna vinā to koī padārtha nāśa pāmī jāya tyāre muvā jeṭaluṃ du:kha thāya ne kāṃ to mare paṇa kharo. te rājakoṭanā luvāṇe bāyaḍīnuṃ māthuṃ nadīe dhovā gayela tyāṃ kāpī nākhyuṃ ane teṇe sarakāramāṃ kabūla karyuṃ je, meṃ mārī nāṃkhī. bījāe kahyuṃ ke, nā pāḍa to bacīśa, paṇa teṇe kabūla karyuṃ. pachī trījo hukama muṃbaīthī āvyo te sāṃbhaḻyo tyāre bīḍī pīto hato te hāthamāṃthī paḍī gaī ne pachī phāṃsīe caḍhāvī dīdho. ema jñāna vagara thāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(261) પ્રભુ ભજવા આવ્યા પણ જ્ઞાન નહિ તે કેમ પાર પડે ? અને જ્ઞાન વિના તો કોઈ પદાર્થ નાશ પામી જાય ત્યારે મુવા જેટલું દુ:ખ થાય ને કાં તો મરે પણ ખરો. તે રાજકોટના લુવાણે બાયડીનું માથું નદીએ ધોવા ગયેલ ત્યાં કાપી નાખ્યું અને તેણે સરકારમાં કબૂલ કર્યું જે, મેં મારી નાંખી. બીજાએ કહ્યું કે, ના પાડ તો બચીશ, પણ તેણે કબૂલ કર્યું. પછી ત્રીજો હુકમ મુંબઈથી આવ્યો તે સાંભળ્યો ત્યારે બીડી પીતો હતો તે હાથમાંથી પડી ગઈ ને પછી ફાંસીએ ચઢાવી દીધો. એમ જ્ઞાન વગર થાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16260.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kalthi amane ek</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16262.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavan chhe te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '261');
+            localStorage.setItem('lastVisitedVatFile', 'ch16261.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

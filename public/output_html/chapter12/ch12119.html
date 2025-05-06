@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ત્રણ ગ્રંથ પ્રમાણે  - Trana granth pramane </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Trana granth pramane </h1>
+                <div class="gujarati-title">ત્રણ ગ્રંથ પ્રમાણે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 119</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(119) traṇa graṃtha pramāṇe varatīne mahārājanī bhakti kare te brahmarūpa thaī gayo che ne chāvaṇīmāṃ evī vātuṃno upāḍa karyo, te ekāṃtarā ja rasoī thāya ne ḍāhyo, vivekī, paṃḍita ne buddhivāna kene kahīe ? to deśakāḻādika āṭha vānāṃe karīne mokṣa bagāḍe nahi tene.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(119) ત્રણ ગ્રંથ પ્રમાણે વરતીને મહારાજની ભક્તિ કરે તે બ્રહ્મરૂપ થઈ ગયો છે ને છાવણીમાં એવી વાતુંનો ઉપાડ કર્યો, તે એકાંતરા જ રસોઈ થાય ને ડાહ્યો, વિવેકી, પંડિત ને બુદ્ધિવાન કેને કહીએ ? તો દેશકાળાદિક આઠ વાનાંએ કરીને મોક્ષ બગાડે નહિ તેને.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12118.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tasmad gurun prapadyet</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12120.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Moh ne pramad tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '119');
+            localStorage.setItem('lastVisitedVatFile', 'ch12119.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે જ્ઞાનરૂપી ગરાસ - Maharaje gnanrupi garas</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje gnanrupi garas</h1>
+                <div class="gujarati-title">મહારાજે જ્ઞાનરૂપી ગરાસ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 80</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(80) mahārāje jñānarūpī garāsa āpyo che teno koī kāḻe nāśa nahi thāya ne ā lokano garāsa to nāśa thaī jāśe ane ā lokanuṃ sukha to kevuṃ che? je, sākara cāvī rahyā tyāre thaī rahyuṃ. māṭe e sukha che te, $artha :- ‘he kaunteya ! indriyonā viṣayo sāthenā saṃbaṃdho to ṭāḍha, tāpa, sukha ane du:kha denārā, āvavā javānā svabhāvavāḻā ane anitya che. he bhārata! teone tuṃ sahana kara.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(80) મહારાજે જ્ઞાનરૂપી ગરાસ આપ્યો છે તેનો કોઈ કાળે નાશ નહિ થાય ને આ લોકનો ગરાસ તો નાશ થઈ જાશે અને આ લોકનું સુખ તો કેવું છે? જે, સાકર ચાવી રહ્યા ત્યારે થઈ રહ્યું. માટે એ સુખ છે તે, $અર્થ :- ‘હે કૌન્તેય ! ઇન્દ્રિયોના વિષયો સાથેના સંબંધો તો ટાઢ, તાપ, સુખ અને દુ:ખ દેનારા, આવવા જવાના સ્વભાવવાળા અને અનિત્ય છે. હે ભારત! તેઓને તું સહન કર.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13079.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kariyanima Maharaje kahyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13081.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ame shivanandswamine </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '80');
+            localStorage.setItem('lastVisitedVatFile', 'ch13080.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

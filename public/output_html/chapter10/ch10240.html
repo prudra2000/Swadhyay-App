@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણામાં સારું છે - Apanama saru chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apanama saru chhe</h1>
+                <div class="gujarati-title">આપણામાં સારું છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 240</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(240) āpaṇāmāṃ sāruṃ che paṇa jihvā indriya cūṃthī nākhaśe. nitya varasāda āve tyāre palaḻyā vinā rahe nahi. te śaheranāṃ manuṣya bahu viṣayī, tevāṃ gāmaḍānāṃ nahi. te śuṃ ? je, śaheramāṃ viṣayano saṃbaṃdha bahu, ne mūke ? paṇa kīḍo karakā vinā rahī śake nahi, tema jīva viṣaya vinā rahī śake nahi. ne ā to na maḻe eṭale rahevāya, paṇa maḻe to rahevāya nahi; paṇa jene viveka hoya, vairāgya hoya ne jñāna hoya tene viṣayamāṃ dhīraja rahe.@ 1 soḍhīmāṃ śeno vaghāra ?= raṇamāṃ tela na maḻe eṭale vaghāra śenāthī kare ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(240) આપણામાં સારું છે પણ જિહ્વા ઇન્દ્રિય ચૂંથી નાખશે. નિત્ય વરસાદ આવે ત્યારે પલળ્યા વિના રહે નહિ. તે શહેરનાં મનુષ્ય બહુ વિષયી, તેવાં ગામડાનાં નહિ. તે શું ? જે, શહેરમાં વિષયનો સંબંધ બહુ, ને મૂકે ? પણ કીડો કરકા વિના રહી શકે નહિ, તેમ જીવ વિષય વિના રહી શકે નહિ. ને આ તો ન મળે એટલે રહેવાય, પણ મળે તો રહેવાય નહિ; પણ જેને વિવેક હોય, વૈરાગ્ય હોય ને જ્ઞાન હોય તેને વિષયમાં ધીરજ રહે.@ 1 સોઢીમાં શેનો વઘાર ?= રણમાં તેલ ન મળે એટલે વઘાર શેનાથી કરે ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10239.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jiv to girna andhalani</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10241.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dravyano prasang nikalyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '240');
+            localStorage.setItem('lastVisitedVatFile', 'ch10240.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

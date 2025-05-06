@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનમાં મન રાખે એવા - Bhagavanma man rakhe eva</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanma man rakhe eva</h1>
+                <div class="gujarati-title">ભગવાનમાં મન રાખે એવા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 138</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(138) bhagavānamāṃ mana rākhe evā thoḍā, bākī to ākhā maṃdirano vahevāra calāve evā paṇa kharā ne kadāpi bhagavānamāṃ mana na rahe, to paṇa niraṃtara kathāvārtā karavī ne te kathāvārtāmāṃ mana rākhavuṃ. te paṇa niraṃtara evo saṃga joīe, nīkara to evuṃ na thāya, te sāru kriyā pravartāvī che; te je kare temāṃ bhagavānano saṃbaṃdha, e paṇa māraga che. bākī siddhāṃta to bhagavānamāṃ mana rākhavuṃ e karavānuṃ che, te to maraṇiyo thāya tyāre e vāta thāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(138) ભગવાનમાં મન રાખે એવા થોડા, બાકી તો આખા મંદિરનો વહેવાર ચલાવે એવા પણ ખરા ને કદાપિ ભગવાનમાં મન ન રહે, તો પણ નિરંતર કથાવાર્તા કરવી ને તે કથાવાર્તામાં મન રાખવું. તે પણ નિરંતર એવો સંગ જોઈએ, નીકર તો એવું ન થાય, તે સારુ ક્રિયા પ્રવર્તાવી છે; તે જે કરે તેમાં ભગવાનનો સંબંધ, એ પણ મારગ છે. બાકી સિદ્ધાંત તો ભગવાનમાં મન રાખવું એ કરવાનું છે, તે તો મરણિયો થાય ત્યારે એ વાત થાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2137.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharajni marajithi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2139.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Somalakharanu drushtant je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '138');
+            localStorage.setItem('lastVisitedVatFile', 'ch2138.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

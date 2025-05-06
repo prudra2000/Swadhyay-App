@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવ ત્રણ શરીરમાં - Jiv tran sharirma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jiv tran sharirma</h1>
+                <div class="gujarati-title">જીવ ત્રણ શરીરમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 189</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(189) jīva traṇa śarīramāṃ vyāpe e jīvanuṃ anvayapaṇuṃ che ne sattāmātra rahe te vyatirekapaṇuṃ che ane īśrvaranuṃ , ne māṃ vyāpavuṃ e īśrvaranuṃ anvayapaṇuṃ che ne tethī para varatavuṃ e vyatirekapaṇuṃ che ne brahma je mūḻapuruṣa te prakṛti sāthe joḍāya te anvayapaṇuṃ che, ne potāne svarūpe varate te vyatirekapaṇuṃ che ne puruṣottamanuṃ jīva, īśrvara ne brahmanuṃ niyaṃtāpaṇuṃ che te anvayapaṇuṃ che ne svarāṭa thakā svayaṃ svarūpe akṣaradhāmamāṃ virājī rahyā che te vyatirekapaṇuṃ che.@ 1 virāṭa= īśrvarano deha jīvanā sthūḻa dehanī jema. $2 sūtrātmā= īśrvarano deha jīvanāṃ sūkṣma dehanī jema.$3 avyākṛta= īśrvarano deha jīvanāṃ kāraṇadehanī jema, apragaṭa, nāma ne rūpathī jene ākāra nathī maḻyo tevuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(189) જીવ ત્રણ શરીરમાં વ્યાપે એ જીવનું અન્વયપણું છે ને સત્તામાત્ર રહે તે વ્યતિરેકપણું છે અને ઈશ્ર્વરનું , ને માં વ્યાપવું એ ઈશ્ર્વરનું અન્વયપણું છે ને તેથી પર વરતવું એ વ્યતિરેકપણું છે ને બ્રહ્મ જે મૂળપુરુષ તે પ્રકૃતિ સાથે જોડાય તે અન્વયપણું છે, ને પોતાને સ્વરૂપે વરતે તે વ્યતિરેકપણું છે ને પુરુષોત્તમનું જીવ, ઈશ્ર્વર ને બ્રહ્મનું નિયંતાપણું છે તે અન્વયપણું છે ને સ્વરાટ થકા સ્વયં સ્વરૂપે અક્ષરધામમાં વિરાજી રહ્યા છે તે વ્યતિરેકપણું છે.@ 1 વિરાટ= ઈશ્ર્વરનો દેહ જીવના સ્થૂળ દેહની જેમ. $2 સૂત્રાત્મા= ઈશ્ર્વરનો દેહ જીવનાં સૂક્ષ્મ દેહની જેમ.$3 અવ્યાકૃત= ઈશ્ર્વરનો દેહ જીવનાં કારણદેહની જેમ, અપ્રગટ, નામ ને રૂપથી જેને આકાર નથી મળ્યો તેવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5188.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa vatu anant sanshayne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5190.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa badhi vatu sambhaline</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '189');
+            localStorage.setItem('lastVisitedVatFile', 'ch5189.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

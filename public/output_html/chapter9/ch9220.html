@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સરધારનો કમાનગર - Saradharno kamanagar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Saradharno kamanagar</h1>
+                <div class="gujarati-title">સરધારનો કમાનગર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 220</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(220) saradhārano kamānagara bodo vartamānamāṃthī paḍela tene maṃdiramāṃthī kāḍhī mele to paṇa pagarakhāṃ paḍyā hoya tyāṃ āvīne bese. pachī harijane mahārājane kahyuṃ tyāre mahārāja kahe, ‘ame kahīe tema karaśo ?’ to kahe, ‘hā mahārāja !’ mahārāja kahe, ‘saradhārane olye nāke lūgaḍāṃ melī āṃhīṃ sudhī nāgā āvo.’ eṭale te turata cālī nīkaḻyo ne saradhārane olye nāke lūgaḍāṃ melīne, $(kīrtana muktāvali : 408)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(220) સરધારનો કમાનગર બોદો વર્તમાનમાંથી પડેલ તેને મંદિરમાંથી કાઢી મેલે તો પણ પગરખાં પડ્યા હોય ત્યાં આવીને બેસે. પછી હરિજને મહારાજને કહ્યું ત્યારે મહારાજ કહે, ‘અમે કહીએ તેમ કરશો ?’ તો કહે, ‘હા મહારાજ !’ મહારાજ કહે, ‘સરધારને ઓલ્યે નાકે લૂગડાં મેલી આંહીં સુધી નાગા આવો.’ એટલે તે તુરત ચાલી નીકળ્યો ને સરધારને ઓલ્યે નાકે લૂગડાં મેલીને, $(કીર્તન મુક્તાવલિ : 408)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9219.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kathalalma ramabaine </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9221.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mahatmye sahita </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '220');
+            localStorage.setItem('lastVisitedVatFile', 'ch9220.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

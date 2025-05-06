@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક વખતે ગઢડામાં - Ek vakhate gadhadama </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek vakhate gadhadama </h1>
+                <div class="gujarati-title">એક વખતે ગઢડામાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.8</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 13</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(13) eka vakhate gaḍhaḍāmāṃ mahārāja rātane same sabhā karīne potānā sarvoparī puruṣottamapaṇānī vātuṃ karatā hatā te same je, ekāṃtika jñānavāna saṃta hatā, te to jema camakapāṇamāṃ loḍhuṃ taṇāya tema mahārājanī mūrtimāṃ samagrapaṇe taṇāī jātā tathā jema caṃdramāne dekhīne cakora pakṣī sarva prakāre joḍāya, tema mahārājanā mukhakamaḻarūpī caṃdramā tene viśethī nīkaḻatuṃ evuṃ vacanarūpī amṛta, tenuṃ pāna karavāne viśe che śraddhā jene, evā thakā sarva ekāgra citte karīne joḍāī jatā havā ne evī rīte puruṣottama nirūpaṇanī vātuṃ karatāṃ bāra upara be vāgyānuṃ ṭāṇuṃ thayuṃ paṇa vātuṃmāṃ dṛḍha āsaktie karīne koīne maṭakuṃ paṇa āvyuṃ nahīṃ. 1 pāḻī= vāro.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(13) એક વખતે ગઢડામાં મહારાજ રાતને સમે સભા કરીને પોતાના સર્વોપરી પુરુષોત્તમપણાની વાતું કરતા હતા તે સમે જે, એકાંતિક જ્ઞાનવાન સંત હતા, તે તો જેમ ચમકપાણમાં લોઢું તણાય તેમ મહારાજની મૂર્તિમાં સમગ્રપણે તણાઈ જાતા તથા જેમ ચંદ્રમાને દેખીને ચકોર પક્ષી સર્વ પ્રકારે જોડાય, તેમ મહારાજના મુખકમળરૂપી ચંદ્રમા તેને વિશેથી નીકળતું એવું વચનરૂપી અમૃત, તેનું પાન કરવાને વિશે છે શ્રદ્ધા જેને, એવા થકા સર્વ એકાગ્ર ચિત્તે કરીને જોડાઈ જતા હવા ને એવી રીતે પુરુષોત્તમ નિરૂપણની વાતું કરતાં બાર ઉપર બે વાગ્યાનું ટાણું થયું પણ વાતુંમાં દૃઢ આસક્તિએ કરીને કોઈને મટકું પણ આવ્યું નહીં. 1 પાળી= વારો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter8/ch8012.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek same Maharaj kachchh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter8/ch8014.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shabde karine sadhu thaki</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '8');
+            localStorage.setItem('lastVisitedVat', '13');
+            localStorage.setItem('lastVisitedVatFile', 'ch8013.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

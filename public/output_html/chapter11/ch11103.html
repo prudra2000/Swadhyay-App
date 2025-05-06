@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નિષ્કામી વર્તમાન તો  - Nishkami vartaman to</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Nishkami vartaman to</h1>
+                <div class="gujarati-title">નિષ્કામી વર્તમાન તો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 103</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(103) niṣkāmī vartamāna to koīthī paḻe ja nahi, ne ghaṇāne satsaṃgamāṃ phera paḍela che ne ā to jāṇe je bhagavāṃ karyāṃ te nyāla thaī gayā ! paṇa te to bahu kaṭhaṇa che; māṭe jema rājānā cākara che te ḍhāla, talavāra laīne koīne daravājāmāṃ garavā detā nathī, tema ja khabaradāra raheśe tenuṃ ṭhīka raheśe. ne māthā upara śatru hoya ne phaḍako na hoya te gāphala kahevāya. ne niyamane ekadhārā rākhavā paṇa jema koī līlotarīmāṃ śevāḻa na khāvo, sukāmāṃ kāṃkaro na khāvo, evā niyama le che, tevā niyama na rākhavā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(103) નિષ્કામી વર્તમાન તો કોઈથી પળે જ નહિ, ને ઘણાને સત્સંગમાં ફેર પડેલ છે ને આ તો જાણે જે ભગવાં કર્યાં તે ન્યાલ થઈ ગયા ! પણ તે તો બહુ કઠણ છે; માટે જેમ રાજાના ચાકર છે તે ઢાલ, તલવાર લઈને કોઈને દરવાજામાં ગરવા દેતા નથી, તેમ જ ખબરદાર રહેશે તેનું ઠીક રહેશે. ને માથા ઉપર શત્રુ હોય ને ફડકો ન હોય તે ગાફલ કહેવાય. ને નિયમને એકધારા રાખવા પણ જેમ કોઈ લીલોતરીમાં શેવાળ ન ખાવો, સુકામાં કાંકરો ન ખાવો, એવા નિયમ લે છે, તેવા નિયમ ન રાખવા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11102.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vichar karavo je jem</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11104.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jiv evo krutaghni chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '103');
+            localStorage.setItem('lastVisitedVatFile', 'ch11103.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

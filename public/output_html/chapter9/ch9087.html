@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અવળા સ્વભાવમાત્રનો  - Avala svabhavamatrano</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Avala svabhavamatrano</h1>
+                <div class="gujarati-title">અવળા સ્વભાવમાત્રનો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 87</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(87) avaḻā svabhāvamātrano tyāga karīne saraḻapaṇe varatavuṃ kema je, avaḻā svabhāva mahārāja tathā moṭā saṃtane gamatā nathī. nāgaḍakānī ghoḍīne pāṭu māravāno svabhāva hato, te mahārāja svabhāva mukāvavā sāru vāṃsaḍo laīne ghoḍīnā be paga vacce aḍāḍe ne ghoḍī pāṭu māre. ema karatāṃ bapora thayā ne thāḻa thayo, tyāre mahārāja kahe, ‘koī amārā sāṭe ghoḍīne godā māre to jamīe.’ pachī ema karyuṃ eṭale jamavā ūṭhyā ne jamīne āvyā pachī ema sāṃja sudhī karyuṃ pachī to ghoḍī thākī gaī, te vāṃsaḍāno godo māre to paṇa paga upāḍe nahīṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(87) અવળા સ્વભાવમાત્રનો ત્યાગ કરીને સરળપણે વરતવું કેમ જે, અવળા સ્વભાવ મહારાજ તથા મોટા સંતને ગમતા નથી. નાગડકાની ઘોડીને પાટુ મારવાનો સ્વભાવ હતો, તે મહારાજ સ્વભાવ મુકાવવા સારુ વાંસડો લઈને ઘોડીના બે પગ વચ્ચે અડાડે ને ઘોડી પાટુ મારે. એમ કરતાં બપોર થયા ને થાળ થયો, ત્યારે મહારાજ કહે, ‘કોઈ અમારા સાટે ઘોડીને ગોદા મારે તો જમીએ.’ પછી એમ કર્યું એટલે જમવા ઊઠ્યા ને જમીને આવ્યા પછી એમ સાંજ સુધી કર્યું પછી તો ઘોડી થાકી ગઈ, તે વાંસડાનો ગોદો મારે તો પણ પગ ઉપાડે નહીં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9086.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Muktanandswami ganda</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9088.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek stri bahu vadhakani</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '87');
+            localStorage.setItem('lastVisitedVatFile', 'ch9087.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

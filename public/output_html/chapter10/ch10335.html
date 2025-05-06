@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વિવેકી હોય તે પ્રભુ - Viveki hoy te prabhu </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Viveki hoy te prabhu </h1>
+                <div class="gujarati-title">વિવેકી હોય તે પ્રભુ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 335</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(335) vivekī hoya te prabhu bhaje, mūrakha hoya te śuṃ bhajaśe ? jeṭalo dharma na paḻyo, jeṭalo sādhumāṃ jīva na bāṃdhyo, jeṭalā bhagavāna na jāṇyā; eṭalī khoṭa āvaśe. paṃcaviṣayano māraga koīne śīkhavavo paḍe ema nathī. ne koīe ‘rasikapriyā’ graṃtha nahi bhaṇyo joīe ! e to saheje āvaḍaśe. lālābhāīnā bhāīe satsaṃga na karyo, kalyāṇabhāīnā bhāī prathama mānatā nahi ne pachī satsaṃga karyo. badhī vātuṃnuṃ siddhāṃta e che je, satsaṃga karavo. viṣayathī karoḍa gāunuṃ cheṭuṃ karyuṃ che to paṇa viṣaya haiyāmāṃthī jatā nathī. keṭalāka gharamāṃ rahe che ne viṣayano ghāṭa thāto nathī, e aṭapaṭī vāta che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(335) વિવેકી હોય તે પ્રભુ ભજે, મૂરખ હોય તે શું ભજશે ? જેટલો ધર્મ ન પળ્યો, જેટલો સાધુમાં જીવ ન બાંધ્યો, જેટલા ભગવાન ન જાણ્યા; એટલી ખોટ આવશે. પંચવિષયનો મારગ કોઈને શીખવવો પડે એમ નથી. ને કોઈએ ‘રસિકપ્રિયા’ ગ્રંથ નહિ ભણ્યો જોઈએ ! એ તો સહેજે આવડશે. લાલાભાઈના ભાઈએ સત્સંગ ન કર્યો, કલ્યાણભાઈના ભાઈ પ્રથમ માનતા નહિ ને પછી સત્સંગ કર્યો. બધી વાતુંનું સિદ્ધાંત એ છે જે, સત્સંગ કરવો. વિષયથી કરોડ ગાઉનું છેટું કર્યું છે તો પણ વિષય હૈયામાંથી જતા નથી. કેટલાક ઘરમાં રહે છે ને વિષયનો ઘાટ થાતો નથી, એ અટપટી વાત છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10334.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Loyanu 17mu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10336.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek brahman veragan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '335');
+            localStorage.setItem('lastVisitedVatFile', 'ch10335.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

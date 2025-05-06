@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રાજલક્ષ્મીવાળાને ભાગ્યશાળી - Rajalakshmivalane bhagyashali </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rajalakshmivalane bhagyashali </h1>
+                <div class="gujarati-title">રાજલક્ષ્મીવાળાને ભાગ્યશાળી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 185</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(185) rājalakṣmīvāḻāne bhāgyaśāḻī nathī kahyā. ā prāpti thaī che tene bhāgyaśāḻī kahyā che. ā satsaṃga maḻyo ne moṭāṃ bhāgya nathī manātāṃ, mahimā nathī samajāto ne moṭāno saṃga nathī thato, e paṇa bahu ja moṭī khoṭa che. kāla karavānuṃ hoya te āja karī levuṃ; kema je, dehano niradhāra nathī ne śāstrakāra lakhe che je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(185) રાજલક્ષ્મીવાળાને ભાગ્યશાળી નથી કહ્યા. આ પ્રાપ્તિ થઈ છે તેને ભાગ્યશાળી કહ્યા છે. આ સત્સંગ મળ્યો ને મોટાં ભાગ્ય નથી મનાતાં, મહિમા નથી સમજાતો ને મોટાનો સંગ નથી થતો, એ પણ બહુ જ મોટી ખોટ છે. કાલ કરવાનું હોય તે આજ કરી લેવું; કેમ જે, દેહનો નિરધાર નથી ને શાસ્ત્રકાર લખે છે જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10184.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Lathidad gamma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10186.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsang karata koinu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '185');
+            localStorage.setItem('lastVisitedVatFile', 'ch10185.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

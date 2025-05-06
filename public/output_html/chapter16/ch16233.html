@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કર્તવ્ય હોય તેમાં તત્પર - Kartavy hoy tema tatpar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kartavy hoy tema tatpar</h1>
+                <div class="gujarati-title">કર્તવ્ય હોય તેમાં તત્પર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 233</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(233) kartavya hoya temāṃ tatpara na thāya te ḍāhyo nahi ne buddhimāṃ rajoguṇa, tamoguṇa hoya te āpaṇane na sūjhe to pūchīne vahevāra karavo. paṇa jo vahevāramāṃ buddhi na hoya to jema bilāḍīoe vāṃdarā pāse nyāya karāvyo tema thāya ne ghara khodāi jāya māṭe viveka śīkhavo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(233) કર્તવ્ય હોય તેમાં તત્પર ન થાય તે ડાહ્યો નહિ ને બુદ્ધિમાં રજોગુણ, તમોગુણ હોય તે આપણને ન સૂઝે તો પૂછીને વહેવાર કરવો. પણ જો વહેવારમાં બુદ્ધિ ન હોય તો જેમ બિલાડીઓએ વાંદરા પાસે ન્યાય કરાવ્યો તેમ થાય ને ઘર ખોદાઇ જાય માટે વિવેક શીખવો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16232.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi vate anti padava</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16234.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ahina jevu sansarma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '233');
+            localStorage.setItem('lastVisitedVatFile', 'ch16233.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ખુમાણોમાં સત્સંગ થયો - Khumanoma satsang thayo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Khumanoma satsang thayo</h1>
+                <div class="gujarati-title">ખુમાણોમાં સત્સંગ થયો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 52</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(52) khumāṇomāṃ satsaṃga thayo, te kṛpānaṃdasvāmī tathā gopāḻānaṃda-svāmīne puṇye karīne mahā mahā dākhaḍe satsaṃga thayo che. satsaṃga vadhī bahu jāśe, paṇa āmāṃ jenāthī nahi paḻe te jāto raheśe. eka jaṇa jāvāno thayo te eka mahinā sudhī amārī pāse pecuṭī karāvī, pachī vahyo gayo. māṭe koī jāṇī jāṇīne māṃdā thaśo nahi. kṛpānaṃdasvāmī ane ame, jyāṃ jāte satsaṃga karāvyo che, tyāṃ hajī ḍākaluṃ nathī peṭhuṃ; paṇa bīje badhe pesī gayāṃ, taḻa varatālamāṃ paṇa ḍākalāṃ peṭhāṃ che.@ 1 ḍākalāṃ ne śāstrīpāṭha= tāṃtrikavidyā-malina śāstrano pāṭha.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(52) ખુમાણોમાં સત્સંગ થયો, તે કૃપાનંદસ્વામી તથા ગોપાળાનંદ-સ્વામીને પુણ્યે કરીને મહા મહા દાખડે સત્સંગ થયો છે. સત્સંગ વધી બહુ જાશે, પણ આમાં જેનાથી નહિ પળે તે જાતો રહેશે. એક જણ જાવાનો થયો તે એક મહિના સુધી અમારી પાસે પેચુટી કરાવી, પછી વહ્યો ગયો. માટે કોઈ જાણી જાણીને માંદા થશો નહિ. કૃપાનંદસ્વામી અને અમે, જ્યાં જાતે સત્સંગ કરાવ્યો છે, ત્યાં હજી ડાકલું નથી પેઠું; પણ બીજે બધે પેસી ગયાં, તળ વરતાલમાં પણ ડાકલાં પેઠાં છે.@ 1 ડાકલાં ને શાસ્ત્રીપાઠ= તાંત્રિકવિદ્યા-મલિન શાસ્ત્રનો પાઠ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10051.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aj to tamara jeva</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10053.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jagatna jivne lokma </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '52');
+            localStorage.setItem('lastVisitedVatFile', 'ch10052.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

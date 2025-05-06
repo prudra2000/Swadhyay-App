@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અચ્યુત એવા જે ભગવાન - Achyuta eva je bhagavan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Achyuta eva je bhagavan</h1>
+                <div class="gujarati-title">અચ્યુત એવા જે ભગવાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 1</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā aṣāḍha sudi daśamīne divase svāmīe vāta karī je, $(1)$tatraiva gaṃgā yamunā triveṇī godāvarī siṃdhu sarasvatī ca | $sarvāṇi tīrthāni vasanti tatra yatrācyutodārakathāprasaṃga || $(pāṃḍavagītā : 38) $artha : jyāṃ śrī acyuta bhagavānano udāra kathāprasaṃga-satsaṃga cālato hoya tyāṃ ja gaṃgā, yamunā, triveṇī, godāvarī, siṃdhu, sarasvatī vagere nadīo ane sarva tīrtho vase che. 1 acyuta= avicalita-akhaṃḍa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના અષાઢ સુદિ દશમીને દિવસે સ્વામીએ વાત કરી જે, $(1)$તત્રૈવ ગંગા યમુના ત્રિવેણી ગોદાવરી સિંધુ સરસ્વતી ચ । $સર્વાણિ તીર્થાનિ વસન્તિ તત્ર યત્રાચ્યુતોદારકથાપ્રસંગ ॥ $(પાંડવગીતા : 38) $અર્થ : જ્યાં શ્રી અચ્યુત ભગવાનનો ઉદાર કથાપ્રસંગ-સત્સંગ ચાલતો હોય ત્યાં જ ગંગા, યમુના, ત્રિવેણી, ગોદાવરી, સિંધુ, સરસ્વતી વગેરે નદીઓ અને સર્વ તીર્થો વસે છે. 1 અચ્યુત= અવિચલિત-અખંડ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter8/ch8036.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa panchabhutnu sharir</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9002.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jya vastino bahu dhasaro</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '1');
+            localStorage.setItem('lastVisitedVatFile', 'ch9001.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

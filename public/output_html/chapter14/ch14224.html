@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક પ્રહ્લાદે વિષય  - Ek prahlade vishay</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek prahlade vishay</h1>
+                <div class="gujarati-title">એક પ્રહ્લાદે વિષય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 224</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(224) eka prahlāde viṣaya na māgyā. prahlāde kahyuṃ je, ‘viṣaya māge che te to vāṇiyā jevo che.’ koīkane peḍhī dara peḍhī khāya eṭalā rūpiyā haśe, paṇa bhagavāna bhaje nahi. māṭe kāṃī na joīe evā ṭharāva karī mūkavā, to du:kha nahi rahe. jyāṃ sudhī paṃcaviṣaya joītā haśe, tyāṃ sudhī du:kha nahi maṭe. roṭalā to āpaṇī vṛttimāṃthī bhagavāna āpe che. ā deśamāṃ che te haḻa upara hātha mūkatā nathī, tenuṃ paṇa cālyuṃ jāya che, māṭe prabhu bhajavā hoya tene roṭalā kema nahi maḻe ? paṇa jīvane viśrvāsa nathī. prabhu bhajavāno avakāśa hoya to ya prabhu bhaje nahi, māṭe saṃtoṣa rākhīne prabhu bhajavā. je raḻatā nathī tene roṭalā maḻe che, to āpaṇane bhagavānano viśrvāsa che ne vaḻī thāya teṭaluṃ karavuṃ che, tyāre kalpanā karīne haiyāmāṃ śā sāru du:kha ghālavuṃ joīe? 1 āhīra= bharavāḍa, rabārī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(224) એક પ્રહ્લાદે વિષય ન માગ્યા. પ્રહ્લાદે કહ્યું જે, ‘વિષય માગે છે તે તો વાણિયા જેવો છે.’ કોઈકને પેઢી દર પેઢી ખાય એટલા રૂપિયા હશે, પણ ભગવાન ભજે નહિ. માટે કાંઈ ન જોઈએ એવા ઠરાવ કરી મૂકવા, તો દુ:ખ નહિ રહે. જ્યાં સુધી પંચવિષય જોઈતા હશે, ત્યાં સુધી દુ:ખ નહિ મટે. રોટલા તો આપણી વૃત્તિમાંથી ભગવાન આપે છે. આ દેશમાં છે તે હળ ઉપર હાથ મૂકતા નથી, તેનું પણ ચાલ્યું જાય છે, માટે પ્રભુ ભજવા હોય તેને રોટલા કેમ નહિ મળે ? પણ જીવને વિશ્ર્વાસ નથી. પ્રભુ ભજવાનો અવકાશ હોય તો ય પ્રભુ ભજે નહિ, માટે સંતોષ રાખીને પ્રભુ ભજવા. જે રળતા નથી તેને રોટલા મળે છે, તો આપણને ભગવાનનો વિશ્ર્વાસ છે ને વળી થાય તેટલું કરવું છે, ત્યારે કલ્પના કરીને હૈયામાં શા સારુ દુ:ખ ઘાલવું જોઈએ? 1 આહીર= ભરવાડ, રબારી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14223.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mota motana manasuba</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14225.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prakruti kem tale</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '224');
+            localStorage.setItem('lastVisitedVatFile', 'ch14224.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

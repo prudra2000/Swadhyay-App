@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંત કહે તેમ કરવું - Sant kahe tem karavu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sant kahe tem karavu</h1>
+                <div class="gujarati-title">સંત કહે તેમ કરવું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 57</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(57) saṃta kahe tema karavuṃ te śreṣṭha che ne manadhāryuṃ karavuṃ te kaniṣṭha che ne managamatuṃ karato hoya ne te tyāga rākhato hoya ne ākhā maṃdiranuṃ kāma ekalo karato hoya ne game eṭalā māṇasane satsaṃga karāvato hoya, to paṇa te nyūna che ne tene koīka divasa vighna che. ne je traṇa ṭāṇāṃ khāto hoya ne āḻasu hoya ne ūṃghato hoya, evī rīte doṣeyukta hoya; paṇa jo te potānuṃ managamatuṃ mūkīne saṃta kahe tema kare to te adhika che. ne saṃta kahe ema karavuṃ e che ne managamatuṃ karavuṃ e che. ne ā tyāgī beṭhā che temāṃ paṇa aradhā to managamatuṃ karatā haśe ne gṛhastha paṇa keṭalāka mananuṃ dhāryuṃ kare che ne jenuṃ daśa jaṇa pramāṇa kare te kharo kahevāya; paṇa ekanuṃ kahyuṃ pramāṇa nahīṃ.@ 1 nirguṇa/bhāva= guṇātīta/bhāva, māyānā koī paṇa guṇathī prabhāvita na thayela bhāva. $2 saguṇa= māyānā guṇathī prabhāvita.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(57) સંત કહે તેમ કરવું તે શ્રેષ્ઠ છે ને મનધાર્યું કરવું તે કનિષ્ઠ છે ને મનગમતું કરતો હોય ને તે ત્યાગ રાખતો હોય ને આખા મંદિરનું કામ એકલો કરતો હોય ને ગમે એટલા માણસને સત્સંગ કરાવતો હોય, તો પણ તે ન્યૂન છે ને તેને કોઈક દિવસ વિઘ્ન છે. ને જે ત્રણ ટાણાં ખાતો હોય ને આળસુ હોય ને ઊંઘતો હોય, એવી રીતે દોષેયુક્ત હોય; પણ જો તે પોતાનું મનગમતું મૂકીને સંત કહે તેમ કરે તો તે અધિક છે. ને સંત કહે એમ કરવું એ છે ને મનગમતું કરવું એ છે. ને આ ત્યાગી બેઠા છે તેમાં પણ અરધા તો મનગમતું કરતા હશે ને ગૃહસ્થ પણ કેટલાક મનનું ધાર્યું કરે છે ને જેનું દશ જણ પ્રમાણ કરે તે ખરો કહેવાય; પણ એકનું કહ્યું પ્રમાણ નહીં.@ 1 નિર્ગુણ/ભાવ= ગુણાતીત/ભાવ, માયાના કોઈ પણ ગુણથી પ્રભાવિત ન થયેલ ભાવ. $2 સગુણ= માયાના ગુણથી પ્રભાવિત.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2056.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tapasine jue to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2058.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsangma strino tyag</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '57');
+            localStorage.setItem('lastVisitedVatFile', 'ch2057.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

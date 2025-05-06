@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઈટોલાના હરિભક્તે રસોઈ - Itolana haribhakte rasoi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Itolana haribhakte rasoi</h1>
+                <div class="gujarati-title">ઈટોલાના હરિભક્તે રસોઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 176</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(176) īṭolānā haribhakte rasoī dīdhī te āṭhaso rūpiyānī cāra rasoī dīdhī ne kahe, ‘mahārāja ! āmāṃ to māre āṭhaso rūpiyā joyā.’ pachī mahārāje enā gharano hisāba gaṇāvyo te raḻyuṃ, khapyuṃ badhuṃ gharamāṃ nākhyuṃ tenuṃ kāṃī nahi ne āṭhaso te olyā karatāṃ jhājhāṃ thaī paḍyā ! te āvaradā badhī gharakāmamāṃ kāḍhe che tenuṃ kāṃī nahi ne saṃta samāgamamāṃ pāṃca divasa rahe to kaheśe je, vyavahāra kema cāle? ne lūgaḍāṃ ne khāvāmāṃ āvaradā pūrī kare tenuṃ kāṃī nahi. te e vātuṃnuṃ bhajana thāśe. te upara baravāḻānā avejanī vāta karī. ema jhaṃkhanā thāya.@ 1 ḍacake āvyā sudhī= mṛtyu āvyā sudhī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(176) ઈટોલાના હરિભક્તે રસોઈ દીધી તે આઠસો રૂપિયાની ચાર રસોઈ દીધી ને કહે, ‘મહારાજ ! આમાં તો મારે આઠસો રૂપિયા જોયા.’ પછી મહારાજે એના ઘરનો હિસાબ ગણાવ્યો તે રળ્યું, ખપ્યું બધું ઘરમાં નાખ્યું તેનું કાંઈ નહિ ને આઠસો તે ઓલ્યા કરતાં ઝાઝાં થઈ પડ્યા ! તે આવરદા બધી ઘરકામમાં કાઢે છે તેનું કાંઈ નહિ ને સંત સમાગમમાં પાંચ દિવસ રહે તો કહેશે જે, વ્યવહાર કેમ ચાલે? ને લૂગડાં ને ખાવામાં આવરદા પૂરી કરે તેનું કાંઈ નહિ. તે એ વાતુંનું ભજન થાશે. તે ઉપર બરવાળાના અવેજની વાત કરી. એમ ઝંખના થાય.@ 1 ડચકે આવ્યા સુધી= મૃત્યુ આવ્યા સુધી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15175.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kalyanne marage chalavu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15177.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa to jem lonthae</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '176');
+            localStorage.setItem('lastVisitedVatFile', 'ch15176.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

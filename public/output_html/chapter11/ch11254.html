@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે વચનામૃતમાં - Maharaje vachanamrutma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje vachanamrutma</h1>
+                <div class="gujarati-title">મહારાજે વચનામૃતમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 254</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(254) mahārāje ‘vacanāmṛta’māṃ sādhune sādhurūpe bhagavāna kahyā che. ne ‘harigītā’māṃ mahārāje sādhunāṃ cosaṭha lakṣaṇa kahyāṃ che. te adhyāya hāthamāṃ lo ne bolatā āvo ne ā lakṣaṇa che ke nahi ? ne e lakṣaṇa amārāmāṃ na hoya to pūrāṃ karī āpīe, māṭe cosaṭha lakṣaṇa jemāṃ hoya tevā sādhune bhagavānanuṃ svarūpa jāṇavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(254) મહારાજે ‘વચનામૃત’માં સાધુને સાધુરૂપે ભગવાન કહ્યા છે. ને ‘હરિગીતા’માં મહારાજે સાધુનાં ચોસઠ લક્ષણ કહ્યાં છે. તે અધ્યાય હાથમાં લો ને બોલતા આવો ને આ લક્ષણ છે કે નહિ ? ને એ લક્ષણ અમારામાં ન હોય તો પૂરાં કરી આપીએ, માટે ચોસઠ લક્ષણ જેમાં હોય તેવા સાધુને ભગવાનનું સ્વરૂપ જાણવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11253.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sant sukhi sansarme</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11255.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek guru, mata, pita ne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '254');
+            localStorage.setItem('lastVisitedVatFile', 'ch11254.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

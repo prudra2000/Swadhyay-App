@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વીરા શેલડીયાની વાત  - Vir sheladiyani vat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vir sheladiyani vat</h1>
+                <div class="gujarati-title">વીરા શેલડીયાની વાત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 66</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(66) vīrā śelaḍīyānī vāta karī je, gharamāṃ rūpiyā kharā paṇa teṇe deha mūkyo pachī lakhamaṇane gāma bāro (gāma bahāra) sīmamāṃ teḍī jaīne samajāvyo je rūpiyā daīśa nahi ane ame kahyuṃ je pora rūpiyā karī deśuṃ. te vāḍha vavarāvyā te rūpiyā ja rūpiyā thaī paḍyā ne thāṇāgāloḻanā jasā rājagarane vaṇa vavarāvyānī vāta karī. eṭalī vāta vahevāra upara karī. gopāḻānaṃdasvāmīe harajī ṭhakkara pāse lokane chetaryānī vāta karāvī te prathama jaīne kahe je, amāre tamārī baḻatarā che ane ciṃtā paṇa che. pachī ema kahīne lūṃgaḍā āpīe, dāṇā āpīe, rūpiyā vyāje āpīe ne khaḻuṃ badhuṃ useḍī laīe, ema dhūtavānī rīta che. ema dhīre dhīre satsaṃga karīne mohanāṃ mūḻa ukhāḍī nākhīe. deśakāḻa rūḍā che, deha sājuṃ che, kahenārānuṃ deha sājuṃ che. māṭe hamaṇāṃ sarva prakāre sānukūḻa che, temāṃ ā satsaṃga karī levo. bhagavānane satsaṃga upara najara che ne ā padārtha to badhāṃ,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(66) વીરા શેલડીયાની વાત કરી જે, ઘરમાં રૂપિયા ખરા પણ તેણે દેહ મૂક્યો પછી લખમણને ગામ બારો (ગામ બહાર) સીમમાં તેડી જઈને સમજાવ્યો જે રૂપિયા દઈશ નહિ અને અમે કહ્યું જે પોર રૂપિયા કરી દેશું. તે વાઢ વવરાવ્યા તે રૂપિયા જ રૂપિયા થઈ પડ્યા ને થાણાગાલોળના જસા રાજગરને વણ વવરાવ્યાની વાત કરી. એટલી વાત વહેવાર ઉપર કરી. ગોપાળાનંદસ્વામીએ હરજી ઠક્કર પાસે લોકને છેતર્યાની વાત કરાવી તે પ્રથમ જઈને કહે જે, અમારે તમારી બળતરા છે અને ચિંતા પણ છે. પછી એમ કહીને લૂંગડા આપીએ, દાણા આપીએ, રૂપિયા વ્યાજે આપીએ ને ખળું બધું ઉસેડી લઈએ, એમ ધૂતવાની રીત છે. એમ ધીરે ધીરે સત્સંગ કરીને મોહનાં મૂળ ઉખાડી નાખીએ. દેશકાળ રૂડા છે, દેહ સાજું છે, કહેનારાનું દેહ સાજું છે. માટે હમણાં સર્વ પ્રકારે સાનુકૂળ છે, તેમાં આ સત્સંગ કરી લેવો. ભગવાનને સત્સંગ ઉપર નજર છે ને આ પદાર્થ તો બધાં,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16065.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Chaturvidha bhajante</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16067.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Grahani vat kari</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '66');
+            localStorage.setItem('lastVisitedVatFile', 'ch16066.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ લીધું ને આ લેવું છે - Aa lidhu ne aa levu chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa lidhu ne aa levu chhe</h1>
+                <div class="gujarati-title">આ લીધું ને આ લેવું છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 431</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(431) ā līdhuṃ ne ā levuṃ che, ā dīdhuṃ ne ā devuṃ che, ā karyuṃ ne ā karavuṃ che, ā khādhuṃ ne ā khāvuṃ che; ā joyuṃ ne ā jovuṃ che, e ādika aneka vātuṃno aṃta āve tema nathī. māṭe emāṃthī nivṛtti pāmīne parameśrvarane bhajī levā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(431) આ લીધું ને આ લેવું છે, આ દીધું ને આ દેવું છે, આ કર્યું ને આ કરવું છે, આ ખાધું ને આ ખાવું છે; આ જોયું ને આ જોવું છે, એ આદિક અનેક વાતુંનો અંત આવે તેમ નથી. માટે એમાંથી નિવૃત્તિ પામીને પરમેશ્ર્વરને ભજી લેવા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5430.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ratrie vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5432.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Uttam purush sevya hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '431');
+            localStorage.setItem('lastVisitedVatFile', 'ch5431.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટા સમૈયામાં મોટાં - Mota samaiyama mota</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mota samaiyama mota</h1>
+                <div class="gujarati-title">મોટા સમૈયામાં મોટાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 68</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(68) moṭā samaiyāmāṃ moṭāṃ moṭāṃ keṭalāṃka śaheranā sāmāna āve temāṃthī jīva keṭaluṃka tyāga kare ! ne sāro hoya te paṇa bhogavavā māṃḍe ne tyāga na thāya tenuṃ du:kha paṇa thāya ne jīva māṃhīthī hāra paṇa pāmī jāya, māṭe jeṭaluṃ viṣayathī cheṭuṃ raheśe teṭaluṃ ja sāruṃ raheśe. ne traṇa prakārano tyāga tenī vikti je, kāṃīka vaheṃcāya te āsane beṭhāṃ āpe to le ne bījo to ūṭhīne levā jāya ne trījo to potāne na āve to kaheśe je, ‘mune kema āpyuṃ nahi ?’ e traṇa bheda che. ne maḻe to teno paṇa tyāga kare e bheda cotho che. ne moṭāno saṃga hoya ne viṣayano saṃbaṃdha na hoya to ja ā jīvanuṃ sāruṃ rahe. te moṭā śaheranī kācī rasoī ne bījī pākī rasoī e beya barābara thāya.@ 1 jaṇasa= kīmatī cīja, vastu, padārtha.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(68) મોટા સમૈયામાં મોટાં મોટાં કેટલાંક શહેરના સામાન આવે તેમાંથી જીવ કેટલુંક ત્યાગ કરે ! ને સારો હોય તે પણ ભોગવવા માંડે ને ત્યાગ ન થાય તેનું દુ:ખ પણ થાય ને જીવ માંહીથી હાર પણ પામી જાય, માટે જેટલું વિષયથી છેટું રહેશે તેટલું જ સારું રહેશે. ને ત્રણ પ્રકારનો ત્યાગ તેની વિક્તિ જે, કાંઈક વહેંચાય તે આસને બેઠાં આપે તો લે ને બીજો તો ઊઠીને લેવા જાય ને ત્રીજો તો પોતાને ન આવે તો કહેશે જે, ‘મુને કેમ આપ્યું નહિ ?’ એ ત્રણ ભેદ છે. ને મળે તો તેનો પણ ત્યાગ કરે એ ભેદ ચોથો છે. ને મોટાનો સંગ હોય ને વિષયનો સંબંધ ન હોય તો જ આ જીવનું સારું રહે. તે મોટા શહેરની કાચી રસોઈ ને બીજી પાકી રસોઈ એ બેય બરાબર થાય.@ 1 જણસ= કીમતી ચીજ, વસ્તુ, પદાર્થ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2067.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tran prakarna dukh kahevaya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2069.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shikshapatrima kahyu chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '68');
+            localStorage.setItem('lastVisitedVatFile', 'ch2068.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

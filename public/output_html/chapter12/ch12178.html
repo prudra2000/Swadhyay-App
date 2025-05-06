@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ ને મોટા સંતની - Maharaj ne mota santni</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj ne mota santni</h1>
+                <div class="gujarati-title">મહારાજ ને મોટા સંતની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 178</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(178) mahārāja ne moṭā saṃtanī diśanāṃ pagalāṃ bharavāṃ te lekhe lāge che ne viparīta kriyānuṃ phaḻa viparīta che ne kusaṃgano saṃga thāya tyāre rūḍā guṇamātra jatā rahe che. te ā satsaṃgamāṃ moṭā ākāśa jevaḍā hatā tenuṃ paṇa kusaṃge karīne dhūḍadhāṇī thaī gayuṃ. te niṣkuḻānaṃdasvāmīe kahyuṃ che je, $jenuṃ re mana vana vāṃchatuṃ, ati rahetā udāsajī. $jene re jāgya āgya lāgatī, gamatuṃ nahi sajyā gharajī; $tene re āsanathī ūṭhāḍatāṃ, jāṇe jagāḍyo maṇidharajī. jenuṃ0$(kīrtana muktāvali : 484)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(178) મહારાજ ને મોટા સંતની દિશનાં પગલાં ભરવાં તે લેખે લાગે છે ને વિપરીત ક્રિયાનું ફળ વિપરીત છે ને કુસંગનો સંગ થાય ત્યારે રૂડા ગુણમાત્ર જતા રહે છે. તે આ સત્સંગમાં મોટા આકાશ જેવડા હતા તેનું પણ કુસંગે કરીને ધૂડધાણી થઈ ગયું. તે નિષ્કુળાનંદસ્વામીએ કહ્યું છે જે, $જેનું રે મન વન વાંછતું, અતિ રહેતા ઉદાસજી. $જેને રે જાગ્ય આગ્ય લાગતી, ગમતું નહિ સજ્યા ઘરજી; $તેને રે આસનથી ઊઠાડતાં, જાણે જગાડ્યો મણિધરજી. જેનું0$(કીર્તન મુક્તાવલિ : 484)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12177.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Upasana upar vat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12179.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shanti to avi vatue</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '178');
+            localStorage.setItem('lastVisitedVatFile', 'ch12178.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

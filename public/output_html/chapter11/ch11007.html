@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નિવૃત્તિનું સ્થાનક હોય - Nivruttinu sthanak hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Nivruttinu sthanak hoy</h1>
+                <div class="gujarati-title">નિવૃત્તિનું સ્થાનક હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 7</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(7) nivṛttinuṃ sthānaka hoya tyāṃ ja prabhu bhajāya te evuṃ sthānaka to āṃhīṃ che te bhagavāna ane ā akṣaradhāma pragaṭa pramāṇa darśana de che, vātuṃ kare che, jīvamāṃ anādi kāḻanuṃ mūḻa ajñāna che teno nāśa kare che ane brahmarūpa karī sevāmāṃ rākhe che. āpaṇe sarvene mahārāja pāse jāvuṃ che te koī vāte ākaḻā na thāvuṃ. ā sādhu maḻyā che te mahārāja vagara bījuṃ koī teḍavā āvaśe nahi ane ṭheṭha akṣaradhāmamāṃ ja ā sādhu mahārāja pāse laī jāśe. paṇa āpaṇe ṭharāva karī rākhavo ke mahārāja teḍavā āve tyāre lavajīnī peṭhe nā na pāḍavī ane dhāryuṃ to mahārājanuṃ ja thāśe. amārī prakṛti evī che je, jene upāsanānuṃ ṭhekāṇuṃ nahi ane traṇa gṃratha pāḻe nahi tenī sāthe amāre bane nahi. amāre to akṣaradhāmanā mukta sāthe ja bane che. koī deśakāḻa āve ke koīno deha paḍī jāya temāṃ koī vāte mūṃjhāvuṃ nahi; mahārājanuṃ gamatuṃ thāśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(7) નિવૃત્તિનું સ્થાનક હોય ત્યાં જ પ્રભુ ભજાય તે એવું સ્થાનક તો આંહીં છે તે ભગવાન અને આ અક્ષરધામ પ્રગટ પ્રમાણ દર્શન દે છે, વાતું કરે છે, જીવમાં અનાદિ કાળનું મૂળ અજ્ઞાન છે તેનો નાશ કરે છે અને બ્રહ્મરૂપ કરી સેવામાં રાખે છે. આપણે સર્વેને મહારાજ પાસે જાવું છે તે કોઈ વાતે આકળા ન થાવું. આ સાધુ મળ્યા છે તે મહારાજ વગર બીજું કોઈ તેડવા આવશે નહિ અને ઠેઠ અક્ષરધામમાં જ આ સાધુ મહારાજ પાસે લઈ જાશે. પણ આપણે ઠરાવ કરી રાખવો કે મહારાજ તેડવા આવે ત્યારે લવજીની પેઠે ના ન પાડવી અને ધાર્યું તો મહારાજનું જ થાશે. અમારી પ્રકૃતિ એવી છે જે, જેને ઉપાસનાનું ઠેકાણું નહિ અને ત્રણ ગ્ંરથ પાળે નહિ તેની સાથે અમારે બને નહિ. અમારે તો અક્ષરધામના મુક્ત સાથે જ બને છે. કોઈ દેશકાળ આવે કે કોઈનો દેહ પડી જાય તેમાં કોઈ વાતે મૂંઝાવું નહિ; મહારાજનું ગમતું થાશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11006.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa junagadhnu mandir</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11008.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Prashn uttarma pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '7');
+            localStorage.setItem('lastVisitedVatFile', 'ch11007.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

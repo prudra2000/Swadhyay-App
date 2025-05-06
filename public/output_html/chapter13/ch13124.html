@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એકલશૃંગીના બાળકની  - Ekalashrungina balakni</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ekalashrungina balakni</h1>
+                <div class="gujarati-title">એકલશૃંગીના બાળકની </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 124</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(124) ekalaśṛṃgīnā bāḻakanī vāta karī kahyuṃ je, aiśrvarya to āvela kharuṃ, paṇa jñāne karīne niṣedha karyā vinā mūḻiyāṃ gayāṃ nahotāṃ; eṭale vibhāṃḍaka ṛṣi ekalaśṛṃgīnā bāḻakane joīne narama paḍī gayā; paṇa niṣedha karyo hoya to ḍhīlo paḍe nahi ane tene pāraso āve nahi. niṣkuḻānaṃdasvāmīnā gharanāṃ manuṣye chokarāne pāse mokalyā, tyāre niṣkuḻānaṃdasvāmī kahe, ‘ā bheṃśa nathī te pāraso vāḻe.’ badhe jugala che; paṇa koī ekalā nathī. mahārāja ane ā sādhu sevyā hoya tene evuṃ āgaḻathī sūjhavā māṃḍe je, viṣayane mārage calāya ja nahīṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(124) એકલશૃંગીના બાળકની વાત કરી કહ્યું જે, ઐશ્ર્વર્ય તો આવેલ ખરું, પણ જ્ઞાને કરીને નિષેધ કર્યા વિના મૂળિયાં ગયાં નહોતાં; એટલે વિભાંડક ઋષિ એકલશૃંગીના બાળકને જોઈને નરમ પડી ગયા; પણ નિષેધ કર્યો હોય તો ઢીલો પડે નહિ અને તેને પારસો આવે નહિ. નિષ્કુળાનંદસ્વામીના ઘરનાં મનુષ્યે છોકરાને પાસે મોકલ્યા, ત્યારે નિષ્કુળાનંદસ્વામી કહે, ‘આ ભેંશ નથી તે પારસો વાળે.’ બધે જુગલ છે; પણ કોઈ એકલા નથી. મહારાજ અને આ સાધુ સેવ્યા હોય તેને એવું આગળથી સૂઝવા માંડે જે, વિષયને મારગે ચલાય જ નહીં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13123.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koi jane je mane</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13125.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tamogun jene hoy tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '124');
+            localStorage.setItem('lastVisitedVatFile', 'ch13124.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

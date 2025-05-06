@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામ તેરામાં મહારાજે ઝોળી  - Gam terama Maharaje zoli</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gam terama Maharaje zoli</h1>
+                <div class="gujarati-title">ગામ તેરામાં મહારાજે ઝોળી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 332</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā vadi terasane divase svāmīe prabhāte vāta karī je, $(332) gāma terāmāṃ mahārāje jhoḻī māgavī ema kahyuṃ. temāṃ goviṃdasvāmīne tāṇa je ‘na māgavī.’ eṭale mahārāje pote jhoḻī māgī, pote coḻyuṃ ne jamyā, tyāre bīje coḻyuṃ. tyāra pachī keṭaleka kāḻe kahyuṃ je, ‘ḍośīonā ghaḍela roṭalā na khāvā.’ pachī pote cūlā karāvīne roṭalā ghaḍavā māṃḍyā, paṇa koīne gamyuṃ nahi kema je, jīvane jeṭaluṃ avaḻuṃ che te ja game che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા વદિ તેરસને દિવસે સ્વામીએ પ્રભાતે વાત કરી જે, $(332) ગામ તેરામાં મહારાજે ઝોળી માગવી એમ કહ્યું. તેમાં ગોવિંદસ્વામીને તાણ જે ‘ન માગવી.’ એટલે મહારાજે પોતે ઝોળી માગી, પોતે ચોળ્યું ને જમ્યા, ત્યારે બીજે ચોળ્યું. ત્યાર પછી કેટલેક કાળે કહ્યું જે, ‘ડોશીઓના ઘડેલ રોટલા ન ખાવા.’ પછી પોતે ચૂલા કરાવીને રોટલા ઘડવા માંડ્યા, પણ કોઈને ગમ્યું નહિ કેમ જે, જીવને જેટલું અવળું છે તે જ ગમે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10331.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sabhama vat kare koine </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10333.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Man de te j saru lage</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '332');
+            localStorage.setItem('lastVisitedVatFile', 'ch10332.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

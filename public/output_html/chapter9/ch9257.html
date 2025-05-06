@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પચીસ હજાર આવ્યા - Pachis hajar avya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pachis hajar avya</h1>
+                <div class="gujarati-title">પચીસ હજાર આવ્યા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 257</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(257) pacīsa hajāra āvyā, tyāre be hajāra āpyā; e to sakāmapaṇuṃ kahevāya. eka nāgare rūpiyā sāru mānatā karela, pachī rūpiyā maḻyā eṭale mahādevajīne māthe caḍāvyā ne mānatā pūrī karī. pachī kahe, ‘ā tamārā sevakanāṃ chokarāṃ che te tamārā poṭhyiā che tene āpo.’ ema kahī ḍhagalāmāṃthī khobā bharībharīne chokarāṃne āpyā. pachī kahe, ‘ā tamārī sevakāṇī che tene āpo.’ ema kahī tenī strīnā khoḻāmāṃ khobā bharībharīne nākhyā. pachī kahe, ‘huṃ to tamāro sevaka chuṃ te mane ya tamārī prasādī joīe ne !’ ema kahī badhā pote uharaḍī līdhā ne mānatā karīne vahyo gayo. evuṃ dravyanuṃ baḻavānapaṇuṃ che. māṭe, $(bhagavad gītā : 7/18) $artha : e badhāya uttama che; paraṃtu jñānī to māro ātmā ja che evo māro mata che; kemake te ekāgra cittavāḻo thaī sarvottama gatirūpa mane ja āśraya karī rahyo che. 1 tyāṃ gāḍāṃ choḍavāṃ che= badhī māyānī hāyavoya mūkī nirāṃte jñānīno samāgama karavo che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(257) પચીસ હજાર આવ્યા, ત્યારે બે હજાર આપ્યા; એ તો સકામપણું કહેવાય. એક નાગરે રૂપિયા સારુ માનતા કરેલ, પછી રૂપિયા મળ્યા એટલે મહાદેવજીને માથે ચડાવ્યા ને માનતા પૂરી કરી. પછી કહે, ‘આ તમારા સેવકનાં છોકરાં છે તે તમારા પોઠ્યિા છે તેને આપો.’ એમ કહી ઢગલામાંથી ખોબા ભરીભરીને છોકરાંને આપ્યા. પછી કહે, ‘આ તમારી સેવકાણી છે તેને આપો.’ એમ કહી તેની સ્ત્રીના ખોળામાં ખોબા ભરીભરીને નાખ્યા. પછી કહે, ‘હું તો તમારો સેવક છું તે મને ય તમારી પ્રસાદી જોઈએ ને !’ એમ કહી બધા પોતે ઉહરડી લીધા ને માનતા કરીને વહ્યો ગયો. એવું દ્રવ્યનું બળવાનપણું છે. માટે, $(ભગવદ્ ગીતા : 7/18) $અર્થ : એ બધાય ઉત્તમ છે; પરંતુ જ્ઞાની તો મારો આત્મા જ છે એવો મારો મત છે; કેમકે તે એકાગ્ર ચિત્તવાળો થઈ સર્વોત્તમ ગતિરૂપ મને જ આશ્રય કરી રહ્યો છે. 1 ત્યાં ગાડાં છોડવાં છે= બધી માયાની હાયવોય મૂકી નિરાંતે જ્ઞાનીનો સમાગમ કરવો છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9256.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa sarve dhudano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9258.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bahu shastra na bhanava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '257');
+            localStorage.setItem('lastVisitedVatFile', 'ch9257.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

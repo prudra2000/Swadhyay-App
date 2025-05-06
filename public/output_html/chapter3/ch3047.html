@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક બાવે આવીને કહ્યું જે - Ek bave avine kahyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek bave avine kahyu je</h1>
+                <div class="gujarati-title">એક બાવે આવીને કહ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 47</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(47) eka bāve āvīne kahyuṃ je, ‘he mahārāja ! tame to bahu bhūṃḍuṃ karyuṃ !’ tyāre mahārāje kahyuṃ je, ‘śuṃ bhūṃḍuṃ karyuṃ ?’ tyāre te bolyo je, ‘bāī-bhāīnī sabhā koīe nokhī nahotī karī te tame karī, e bahu bhūṃḍuṃ karyuṃ.’ tyāre mahārāja bolyā je, ‘huṃ anirdeśathī āvyo chuṃ, kahetāṃ huṃ akṣaradhāmamāṃthī puruṣottama āvyo chuṃ ne chuṃ, te mārī sūga caḍī gaī che, nīkara to kāṃī nokhāṃ rahe evāṃ nathī.’ te mahārājanī sūga che tyāṃ sudhī nokhāṃ rahevāya che, nīkara to bhegāṃ thaī jāśe. ne vaḻī koīke pūchyuṃ je, ‘puruṣanuṃ mana kyāṃ rahetuṃ haśe ?’ pachī mahārāja bolyā je, ‘āja ja ame vicāra karyo che je, puruṣanuṃ mana strīnāṃ guhya aṃgamāṃ rahe che ne strīnuṃ mana che te puruṣanāṃ guhya aṃgamāṃ rahe che, e ja jīvane hṛdayagṃrathi kahī che.’ ema sarvenāṃ aṃtara kahī dīdhāṃ.@ 1 sugāvaḻo= jene cītarī caḍe tevo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(47) એક બાવે આવીને કહ્યું જે, ‘હે મહારાજ ! તમે તો બહુ ભૂંડું કર્યું !’ ત્યારે મહારાજે કહ્યું જે, ‘શું ભૂંડું કર્યું ?’ ત્યારે તે બોલ્યો જે, ‘બાઈ-ભાઈની સભા કોઈએ નોખી નહોતી કરી તે તમે કરી, એ બહુ ભૂંડું કર્યું.’ ત્યારે મહારાજ બોલ્યા જે, ‘હું અનિર્દેશથી આવ્યો છું, કહેતાં હું અક્ષરધામમાંથી પુરુષોત્તમ આવ્યો છું ને છું, તે મારી સૂગ ચડી ગઈ છે, નીકર તો કાંઈ નોખાં રહે એવાં નથી.’ તે મહારાજની સૂગ છે ત્યાં સુધી નોખાં રહેવાય છે, નીકર તો ભેગાં થઈ જાશે. ને વળી કોઈકે પૂછ્યું જે, ‘પુરુષનું મન ક્યાં રહેતું હશે ?’ પછી મહારાજ બોલ્યા જે, ‘આજ જ અમે વિચાર કર્યો છે જે, પુરુષનું મન સ્ત્રીનાં ગુહ્ય અંગમાં રહે છે ને સ્ત્રીનું મન છે તે પુરુષનાં ગુહ્ય અંગમાં રહે છે, એ જ જીવને હૃદયગ્ંરથિ કહી છે.’ એમ સર્વેનાં અંતર કહી દીધાં.@ 1 સુગાવળો= જેને ચીતરી ચડે તેવો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3046.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Varatalma amba hetha char</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3048.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Lakh man lodhani lodhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '47');
+            localStorage.setItem('lastVisitedVatFile', 'ch3047.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

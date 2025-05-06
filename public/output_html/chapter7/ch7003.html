@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામ ફણેણીમાં મંદિરની - Gam fanenima mandirni</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gam fanenima mandirni</h1>
+                <div class="gujarati-title">ગામ ફણેણીમાં મંદિરની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 3</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(3) gāma phaṇeṇīmāṃ maṃdiranī jāyagā (jagyā) che, tyāṃ hāla beṭhaka che, tyāṃ rāmānaṃdasvāmī dehatyāga karīne dhāmamāṃ gayā. tyāra pachī śrīsahajānaṃdasvāmī potānā gurunī dehakriyā karīne tenī dharmaṃdhūrā upāḍī letā havā (hatā) ne te svāmīnā je āśrita temanī satśāstranā upadeśe karīne saṃbhāvanā karatā havā ne temane potāno alaukika pratāpa dekhāḍīne potāne viśe temanāṃ cittane tāṇī letā havā ne keṭalāka manuṣyane samādhi karāvatā havā. lojamāṃ te pratāpa joīne vyāpakānaṃdasvāmīne śrījīmahārājanā svarūpano sarvoparī niśrcaya nahoto thāto; tethī te vyāpakānaṃdasvāmīne paṇa samādhi karāvīne akṣaradhāmane viśe anaṃtakoṭi mukte sahita potānuṃ darśana karāvyuṃ, to paṇa niśrcaya na thayo. 1 cakra :- (1) mūlādhāra (2) liṃga (3) nābhi (4) hṛdaya (5) kaṃṭha (6) mūrdha (māthānī khoparī).</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૩) ગામ ફણેણીમાં મંદિરની જાયગા (જગ્યા) છે, ત્યાં હાલ બેઠક છે, ત્યાં રામાનંદસ્વામી દેહત્યાગ કરીને ધામમાં ગયા. ત્યાર પછી શ્રીસહજાનંદસ્વામી પોતાના ગુરુની દેહક્રિયા કરીને તેની ધર્મંધૂરા ઉપાડી લેતા હવા (હતા) ને તે સ્વામીના જે આશ્રિત તેમની સત્શાસ્ત્રના ઉપદેશે કરીને સંભાવના કરતા હવા ને તેમને પોતાનો અલૌકિક પ્રતાપ દેખાડીને પોતાને વિશે તેમનાં ચિત્તને તાણી લેતા હવા ને કેટલાક મનુષ્યને સમાધિ કરાવતા હવા. લોજમાં તે પ્રતાપ જોઈને વ્યાપકાનંદસ્વામીને શ્રીજીમહારાજના સ્વરૂપનો સર્વોપરી નિશ્ર્ચય નહોતો થાતો; તેથી તે વ્યાપકાનંદસ્વામીને પણ સમાધિ કરાવીને અક્ષરધામને વિશે અનંતકોટિ મુક્તે સહિત પોતાનું દર્શન કરાવ્યું, તો પણ નિશ્ર્ચય ન થયો. 1 ચક્ર :- (1) મૂલાધાર (2) લિંગ (3) નાભિ (4) હૃદય (5) કંઠ (6) મૂર્ધ (માથાની ખોપરી).</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7002.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetpurma unad rajane gher</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7004.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shrijimaharajne lojma </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '3');
+            localStorage.setItem('lastVisitedVatFile', 'ch7003.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

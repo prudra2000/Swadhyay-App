@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક જણ એવો હતો કે  - Ek jan evo hato ke</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek jan evo hato ke</h1>
+                <div class="gujarati-title">એક જણ એવો હતો કે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 10</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(10) eka jaṇa evo hato ke kārakhānuṃ cālatuṃ hoya tyāre āghopācho khasī jāya ane kāṃ to baḻadanī koḍhamāṃ pesī jāya ema jīvamāṃ nāgaḍadāī rahī che. te ghera to rāta divasa khuvāra maḻato hoya, to paṇa bāyaḍī chokarāṃ gāḻo de ane āṃhīṃ to bhagavāna bhakti māne che paṇa satsaṃgamāṃ āvīne paṇa svabhāva mūkato nathī. pachī karmavaśathī dehamāṃ maṃdavāḍa āve tyāre rāḍo pāḍe. jo māḻā pherave ane kathā kare ne satsaṃga kare to amāre to kāma karāvavuṃ nathī paṇa navarā beṭhā gapāṭā māre te karatāṃ bhaktimāṃ bhagavānano saṃbaṃdha to kharo ! māṭe mokṣabhāgīe to moṭānī anuvṛtti pāḻavī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(10) એક જણ એવો હતો કે કારખાનું ચાલતું હોય ત્યારે આઘોપાછો ખસી જાય અને કાં તો બળદની કોઢમાં પેસી જાય એમ જીવમાં નાગડદાઈ રહી છે. તે ઘેર તો રાત દિવસ ખુવાર મળતો હોય, તો પણ બાયડી છોકરાં ગાળો દે અને આંહીં તો ભગવાન ભક્તિ માને છે પણ સત્સંગમાં આવીને પણ સ્વભાવ મૂકતો નથી. પછી કર્મવશથી દેહમાં મંદવાડ આવે ત્યારે રાડો પાડે. જો માળા ફેરવે અને કથા કરે ને સત્સંગ કરે તો અમારે તો કામ કરાવવું નથી પણ નવરા બેઠા ગપાટા મારે તે કરતાં ભક્તિમાં ભગવાનનો સંબંધ તો ખરો ! માટે મોક્ષભાગીએ તો મોટાની અનુવૃત્તિ પાળવી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11009.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bayadi roja so khasada</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11011.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Thukavani tumbadi joine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '10');
+            localStorage.setItem('lastVisitedVatFile', 'ch11010.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

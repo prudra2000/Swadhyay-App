@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વ કરતાં ભજન કરવું - Sarva karata bhajan karavu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarva karata bhajan karavu</h1>
+                <div class="gujarati-title">સર્વ કરતાં ભજન કરવું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 201</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(201) sarva karatāṃ bhajana karavuṃ te adhika che ne te karatāṃ smṛti rākhavī te adhika che ne te karatāṃ dhyāna karavuṃ te adhika che ne te karatāṃ potānā ātmāne viśe bhagavānane dhāravā te adhika che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(201) સર્વ કરતાં ભજન કરવું તે અધિક છે ને તે કરતાં સ્મૃતિ રાખવી તે અધિક છે ને તે કરતાં ધ્યાન કરવું તે અધિક છે ને તે કરતાં પોતાના આત્માને વિશે ભગવાનને ધારવા તે અધિક છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1200.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek ek vishay chhe </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1202.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sarvakarta to bhagavan chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '201');
+            localStorage.setItem('lastVisitedVatFile', 'ch1201.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

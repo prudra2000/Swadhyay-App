@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંવત ૧૯૨૦ના - Samvat 1920na </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samvat 1920na </h1>
+                <div class="gujarati-title">સંવત ૧૯૨૦ના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 180</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(180) saṃvata 1920nā bhādaravā sudi bījane divase jūnī dharmaśāḻā ūkheḻīne vāta karī je, kriyā karavī temāṃ māna, krodha ne īrṣā e traṇa to āvavā devāṃ ja nahi ane kriyāmāṃ to māṇasa jaḍāī jāya che; te more eka sādhu uparathī beluṃ nākhatā hatā, te jāṇyuṃ je, koīkanā upara paḍe che ema thātuṃ hatuṃ, tyāṃ turata ja te paḍyā. pachī bhagavāne rakṣā karī, paṇa kriyāmāṃ ema jaḍāī javāya che. māṭe moṭuṃ kāma to dhīre dhīre karavuṃ ne bījuṃ to badhuṃya thāya paṇa ā je ājñā ne vartamāna je pāḻe, te upara mahārājanī niraṃtara dṛṣṭi rahe che, te ājñā ne niyama te śuṃ ? je, traṇa graṃthamāṃ badhuṃ āvī gayuṃ.@ 1 pādharā belā sotā= bārobāra caṇatara māṭe ghaḍela paththarasahita.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૮૦) સંવત ૧૯૨૦ના ભાદરવા સુદિ બીજને દિવસે જૂની ધર્મશાળા ઊખેળીને વાત કરી જે, ક્રિયા કરવી તેમાં માન, ક્રોધ ને ઈર્ષા એ ત્રણ તો આવવા દેવાં જ નહિ અને ક્રિયામાં તો માણસ જડાઈ જાય છે; તે મોરે એક સાધુ ઉપરથી બેલું નાખતા હતા, તે જાણ્યું જે, કોઈકના ઉપર પડે છે એમ થાતું હતું, ત્યાં તુરત જ તે પડ્યા. પછી ભગવાને રક્ષા કરી, પણ ક્રિયામાં એમ જડાઈ જવાય છે. માટે મોટું કામ તો ધીરે ધીરે કરવું ને બીજું તો બધુંય થાય પણ આ જે આજ્ઞા ને વર્તમાન જે પાળે, તે ઉપર મહારાજની નિરંતર દૃષ્ટિ રહે છે, તે આજ્ઞા ને નિયમ તે શું ? જે, ત્રણ ગ્રંથમાં બધું આવી ગયું.@ 1 પાધરા બેલા સોતા= બારોબાર ચણતર માટે ઘડેલ પથ્થરસહિત.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6179.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dehne to shu karavu </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6181.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Varatalma meda upar</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '180');
+            localStorage.setItem('lastVisitedVatFile', 'ch6180.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

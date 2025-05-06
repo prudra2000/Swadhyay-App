@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ દેહ સાજો રહે એ - Aa deh sajo rahe e </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa deh sajo rahe e </h1>
+                <div class="gujarati-title">આ દેહ સાજો રહે એ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 137</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(137) ā deha sājo rahe e puṇya jāṇavuṃ, ā joga maḻī gayo e paṇa puṇya jāṇavuṃ. jaḍabharatano dayāḻu svabhāva tethī vighna āvyuṃ māṭe game tevuṃ vighna āve to paṇa bhagavāna to mūkavā ja nahīṃ. vaiṣṇavano vero māpha karyo eṭale vaiṣṇava vadhī gayā. pachī parīkṣā karavā sāru māṃhī patakāḻāṃ bharī saune kahyuṃ je, ‘kharekharā vaiṣṇava hoya te māṃhī vārāpharatī āvo. āje saunāṃ māthāṃ kāpavāṃ che.’ je māṃhī jāya tene eka kore besārī patakāḻāṃ upara talavārano ghā kare eṭale phaḍāko bole, pachī bījāne bolāve. ema karatāṃ corāśī vaiṣṇava je kharekharā hatā teṇe māthāṃ dīdhāṃ ne bījā badhā bhāgī gayā; tema āje kharekharā satsaṃgī hoya te māthāṃ de che. badhā satsaṃgīnāṃ māthāṃthī vāva bharī daīe to ya ā bhagavāna maḻe nahi, evā bhagavāna moṃghā che, te āja soṃghā thayā che. paṇa jīvane khabara nathī je, ‘śira kaṭe so vāra.’ to ya pūrṇa paramānaṃda kyāṃthī maḻe ?</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(137) આ દેહ સાજો રહે એ પુણ્ય જાણવું, આ જોગ મળી ગયો એ પણ પુણ્ય જાણવું. જડભરતનો દયાળુ સ્વભાવ તેથી વિઘ્ન આવ્યું માટે ગમે તેવું વિઘ્ન આવે તો પણ ભગવાન તો મૂકવા જ નહીં. વૈષ્ણવનો વેરો માફ કર્યો એટલે વૈષ્ણવ વધી ગયા. પછી પરીક્ષા કરવા સારુ માંહી પતકાળાં ભરી સૌને કહ્યું જે, ‘ખરેખરા વૈષ્ણવ હોય તે માંહી વારાફરતી આવો. આજે સૌનાં માથાં કાપવાં છે.’ જે માંહી જાય તેને એક કોરે બેસારી પતકાળાં ઉપર તલવારનો ઘા કરે એટલે ફડાકો બોલે, પછી બીજાને બોલાવે. એમ કરતાં ચોરાશી વૈષ્ણવ જે ખરેખરા હતા તેણે માથાં દીધાં ને બીજા બધા ભાગી ગયા; તેમ આજે ખરેખરા સત્સંગી હોય તે માથાં દે છે. બધા સત્સંગીનાં માથાંથી વાવ ભરી દઈએ તો ય આ ભગવાન મળે નહિ, એવા ભગવાન મોંઘા છે, તે આજ સોંઘા થયા છે. પણ જીવને ખબર નથી જે, ‘શિર કટે સો વાર.’ તો ય પૂર્ણ પરમાનંદ ક્યાંથી મળે ?</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10136.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Anbarish rajane gher</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10138.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa lokma jetala tanana </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '137');
+            localStorage.setItem('lastVisitedVatFile', 'ch10137.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

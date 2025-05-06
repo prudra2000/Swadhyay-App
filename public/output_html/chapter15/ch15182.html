@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તલને ફૂલમાં વાસે છે  - Talne fulma vase chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Talne fulma vase chhe</h1>
+                <div class="gujarati-title">તલને ફૂલમાં વાસે છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 182</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(182) talane phūlamāṃ vāse che tema manane bhagavānanā svarūpamāṃ vāsavuṃ ne jyāre kahevā sāṃbhaḻavā māṃḍe tyāre thāya. te paṇa tevā kahenārā hoya tyāre thāya. pachī to mahārāja jātā rahyā ne saṃta paṇa jātā rahyā ne āpaṇe to lagāre ḍara kyāṃ che ? paṇa jo mahimā hoya to ja ḍara rahe che. yo vetti yugapatsarvaṃ pratyakṣeṇa sadā svataḥ | artha :- je potānī meḻe pratyakṣapaṇe ekī sāthe badhuṃ ja jāṇe che. ema ekakaḻā-vicchina jāṇe che ne je je karīe chīe te badhuṃ dekhe che. ema pratyakṣa potā pāse ūbhā hoya ema samajāya to ḍara rahe paṇa ema kyāṃ samajāya che ?@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(182) તલને ફૂલમાં વાસે છે તેમ મનને ભગવાનના સ્વરૂપમાં વાસવું ને જ્યારે કહેવા સાંભળવા માંડે ત્યારે થાય. તે પણ તેવા કહેનારા હોય ત્યારે થાય. પછી તો મહારાજ જાતા રહ્યા ને સંત પણ જાતા રહ્યા ને આપણે તો લગારે ડર ક્યાં છે ? પણ જો મહિમા હોય તો જ ડર રહે છે. યો વેત્તિ યુગપત્સર્વં પ્રત્યક્ષેણ સદા સ્વતઃ । અર્થ :- જે પોતાની મેળે પ્રત્યક્ષપણે એકી સાથે બધું જ જાણે છે. એમ એકકળા-વિચ્છિન જાણે છે ને જે જે કરીએ છીએ તે બધું દેખે છે. એમ પ્રત્યક્ષ પોતા પાસે ઊભા હોય એમ સમજાય તો ડર રહે પણ એમ ક્યાં સમજાય છે ?@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15181.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ghithi ke telthi lugada</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15183.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishayno sambandh rakhine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '182');
+            localStorage.setItem('lastVisitedVatFile', 'ch15182.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

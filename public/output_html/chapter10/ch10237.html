@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બે મહિના સુધી રસોઈ - Be mahina sudhi rasoi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Be mahina sudhi rasoi</h1>
+                <div class="gujarati-title">બે મહિના સુધી રસોઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 237</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(237) be mahinā sudhī rasoī cāle tyāre āpaṇuṃ ṭhīka na rahe. garamīvāḻāne bājarānā roṭalā garama paḍatā tethī ghauṃnā roṭalā āpavā māṃḍayā. pachī to garamīvāḻā jhājhā thayā eṭale gopāḻānaṃdasvāmīe garamīvāḻā sāru jāra daḻāvī ne jāranā roṭalā āpyā. pachī to khoṭā garamīvāḻā ochā thaī gayā ne jeṭalā kharekharā mūḻa hatā te rahyā. garamīvāḻāne ghī jhājhuṃ āpatā. tyāre ame kahyuṃ je, ‘ghīe viṣaya vadhaśe ke ghaṭaśe ?’ eṭale vaḻī āḻasyā. paṇa je sāruṃ sāruṃ khāya teno deha kūtaruṃ mare tyāre evo thāya, te mahārājane ane kṛpānaṃdasvāmīne na game. māṭe game tema karīne viṣayathī cheṭuṃ rahevuṃ. ā to sālokya mukti che, te bheḻā beṭhā chīe; paṇa samajaṇa nokhī nokhī che.@ 1 suṇe= phūle.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(237) બે મહિના સુધી રસોઈ ચાલે ત્યારે આપણું ઠીક ન રહે. ગરમીવાળાને બાજરાના રોટલા ગરમ પડતા તેથી ઘઉંના રોટલા આપવા માંડયા. પછી તો ગરમીવાળા ઝાઝા થયા એટલે ગોપાળાનંદસ્વામીએ ગરમીવાળા સારુ જાર દળાવી ને જારના રોટલા આપ્યા. પછી તો ખોટા ગરમીવાળા ઓછા થઈ ગયા ને જેટલા ખરેખરા મૂળ હતા તે રહ્યા. ગરમીવાળાને ઘી ઝાઝું આપતા. ત્યારે અમે કહ્યું જે, ‘ઘીએ વિષય વધશે કે ઘટશે ?’ એટલે વળી આળસ્યા. પણ જે સારું સારું ખાય તેનો દેહ કૂતરું મરે ત્યારે એવો થાય, તે મહારાજને અને કૃપાનંદસ્વામીને ન ગમે. માટે ગમે તેમ કરીને વિષયથી છેટું રહેવું. આ તો સાલોક્ય મુક્તિ છે, તે ભેળા બેઠા છીએ; પણ સમજણ નોખી નોખી છે.@ 1 સુણે= ફૂલે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10236.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Haji sudhi sarvene adhuru</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10238.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Klyanma sanshay na rahyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '237');
+            localStorage.setItem('lastVisitedVatFile', 'ch10237.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

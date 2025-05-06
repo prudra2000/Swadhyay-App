@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગંગારામ મલ્લમાં હાથી  - Gangaram mallma hathi </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gangaram mallma hathi </h1>
+                <div class="gujarati-title">ગંગારામ મલ્લમાં હાથી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 129</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(129) gaṃgārāma mallamāṃ hāthī ūbho rākhe evuṃ baḻa hatuṃ, paṇa tenāṃ veśyāe vakhāṇa karyāṃ eṭalāmāṃ lāja gaī. strī che te bhāre viṣaya che, evuṃ baṃdhanakārī bījuṃ nathī. jo vicāro to ene arthe che. $(śrīmad bhāgavata : 5/5/8) $artha :- strī ane puruṣa baṃneno je paraspara dāmpatyabhāva che te ja temanā hṛdayanī durbhedya graṃthi che ā kāraṇathī puruṣane gṛha, kṣetra, putra, svajana ane dhana vageremāṃ ‘ā huṃ chuṃ, māruṃ che.’ evo moha thaī jāya che. $(bhagavad gītā : 18/54) $artha :- brahmabhāvane prāpta thayelo te prasanna citta manuṣya, kaśāno śoka karato nathī ke kaśānī ākāṃkṣā karato nathī ane sarva bhūtomāṃ samabhāvathī raheto thako mārī parama bhaktine pāme che. 1 vahavāyā= cākarī karanārā nīcalī jātinā loko, kevaḻa viṣayabhogamāṃ ja āsakta loko. $2 khevaḍo= ekajātanuṃ ghāsa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(129) ગંગારામ મલ્લમાં હાથી ઊભો રાખે એવું બળ હતું, પણ તેનાં વેશ્યાએ વખાણ કર્યાં એટલામાં લાજ ગઈ. સ્ત્રી છે તે ભારે વિષય છે, એવું બંધનકારી બીજું નથી. જો વિચારો તો એને અર્થે છે. $(શ્રીમદ્ ભાગવત : 5/5/8) $અર્થ :- સ્ત્રી અને પુરુષ બંનેનો જે પરસ્પર દામ્પત્યભાવ છે તે જ તેમના હૃદયની દુર્ભેદ્ય ગ્રંથિ છે આ કારણથી પુરુષને ગૃહ, ક્ષેત્ર, પુત્ર, સ્વજન અને ધન વગેરેમાં ‘આ હું છું, મારું છે.’ એવો મોહ થઈ જાય છે. $(ભગવદ્ ગીતા : 18/54) $અર્થ :- બ્રહ્મભાવને પ્રાપ્ત થયેલો તે પ્રસન્ન ચિત્ત મનુષ્ય, કશાનો શોક કરતો નથી કે કશાની આકાંક્ષા કરતો નથી અને સર્વ ભૂતોમાં સમભાવથી રહેતો થકો મારી પરમ ભક્તિને પામે છે. 1 વહવાયા= ચાકરી કરનારા નીચલી જાતિના લોકો, કેવળ વિષયભોગમાં જ આસક્ત લોકો. $2 ખેવડો= એકજાતનું ઘાસ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10128.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje kahyu hatu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10130.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhundakeralama harijan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '129');
+            localStorage.setItem('lastVisitedVatFile', 'ch10129.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

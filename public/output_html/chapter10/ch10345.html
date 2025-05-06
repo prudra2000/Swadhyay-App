@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વામનજી વધ્યા તે ભેળી - Vamanji vadhya te bheli</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vamanji vadhya te bheli</h1>
+                <div class="gujarati-title">વામનજી વધ્યા તે ભેળી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 345</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(345) vāmanajī vadhyā te bheḻī lākaḍī vadhī, tema moṭāne viśe joḍāśe to moṭānā guṇa āvaśe paṇa sādhane kāṃī thātuṃ nathī. ā samāgama evo che je gṛhasthāśramamāṃ rahe ne svarūpānaṃdasvāmīnā jevī sthiti thāya ! ā samāgame to āma ne āma addhara ūḍavuṃ hoya to uḍāya. māṭe āja jevuṃ bhagavāna bhajavānuṃ sānukūḻa che tevuṃ to mahārāja chatāṃ paṇa nahotuṃ; māṭe āja je sāvadhāna thaī jāśe tene bahu lābha thāśe, pachī ā samāgama maḻavāno nathī. akṣaradhāma mūrtimāna ahīṃ che, paṇa koī oḻakhatā nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(345) વામનજી વધ્યા તે ભેળી લાકડી વધી, તેમ મોટાને વિશે જોડાશે તો મોટાના ગુણ આવશે પણ સાધને કાંઈ થાતું નથી. આ સમાગમ એવો છે જે ગૃહસ્થાશ્રમમાં રહે ને સ્વરૂપાનંદસ્વામીના જેવી સ્થિતિ થાય ! આ સમાગમે તો આમ ને આમ અદ્ધર ઊડવું હોય તો ઉડાય. માટે આજ જેવું ભગવાન ભજવાનું સાનુકૂળ છે તેવું તો મહારાજ છતાં પણ નહોતું; માટે આજ જે સાવધાન થઈ જાશે તેને બહુ લાભ થાશે, પછી આ સમાગમ મળવાનો નથી. અક્ષરધામ મૂર્તિમાન અહીં છે, પણ કોઈ ઓળખતા નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10344.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vasana chhe te bhogavata</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10346.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Guru malya ne jyare </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '345');
+            localStorage.setItem('lastVisitedVatFile', 'ch10345.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન ને તેના જન - Bhagavan ne tena jan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan ne tena jan</h1>
+                <div class="gujarati-title">ભગવાન ને તેના જન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 99</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha sudi navamīnā divase svāmīe vāta karī je, $(99) bhagavāna ne tenā jana vinā deha, loka, bhoga ne pakṣa emāṃ ‘huṃ ne māruṃ’ thāya e vāṃkuṃ ne navadhā bhakti karavī ne ājñā pāḻavī e pādharuṃ che. ā satsaṃga melīne hajāro māṇasa vahyāṃ gayāṃ, māṭe khabara vinā ne vicāra vinā maḻyo satsaṃga melī devāya; māṭe bhagavāna ne tenā janane viśe ātmabuddhi, e jīvanuṃ śreya che ne dehādikane viśe mamatva che, te viparīta che. avidyānuṃ baḻa to ghaṇuṃ che, paṇa jo bhagavānanā bhakta sāthe jīva bāṃdhyo che to jaya ja thāśe. te, $(bhagavad gītā : 18/78) $artha :- jyāṃ yogeśrvara śrīkṛṣṇa che ane jyāṃ dhanurdhārī arjuna che, tyāṃ lakṣmī, vijaya, aiśrvarya ane avicaḻa nīti che, evo māro mata che. 1 māḻavaṇa gāya= ūcī gayela gāya-dūdha detāṃ baṃdha thayela gāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ સુદિ નવમીના દિવસે સ્વામીએ વાત કરી જે, $(99) ભગવાન ને તેના જન વિના દેહ, લોક, ભોગ ને પક્ષ એમાં ‘હું ને મારું’ થાય એ વાંકું ને નવધા ભક્તિ કરવી ને આજ્ઞા પાળવી એ પાધરું છે. આ સત્સંગ મેલીને હજારો માણસ વહ્યાં ગયાં, માટે ખબર વિના ને વિચાર વિના મળ્યો સત્સંગ મેલી દેવાય; માટે ભગવાન ને તેના જનને વિશે આત્મબુદ્ધિ, એ જીવનું શ્રેય છે ને દેહાદિકને વિશે મમત્વ છે, તે વિપરીત છે. અવિદ્યાનું બળ તો ઘણું છે, પણ જો ભગવાનના ભક્ત સાથે જીવ બાંધ્યો છે તો જય જ થાશે. તે, $(ભગવદ્ ગીતા : 18/78) $અર્થ :- જ્યાં યોગેશ્ર્વર શ્રીકૃષ્ણ છે અને જ્યાં ધનુર્ધારી અર્જુન છે, ત્યાં લક્ષ્મી, વિજય, ઐશ્ર્વર્ય અને અવિચળ નીતિ છે, એવો મારો મત છે. 1 માળવણ ગાય= ઊચી ગયેલ ગાય-દૂધ દેતાં બંધ થયેલ ગાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12098.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Simado kadhavo te  </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12100.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gnan ne vivek vina</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '99');
+            localStorage.setItem('lastVisitedVatFile', 'ch12099.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

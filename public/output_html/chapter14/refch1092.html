@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(92) doṣa kema ṭaḻatā nathī ? e praśrna pūchyo teno uttara karyo je, ‘e to che, te khoṭā kema thāśe ? ne jema akṣarānaṃdasvāmīne goḻī daīne kāḍhī nākhī; tema ja kāma-krodhādika ghaṇī rāphīo che te kāḍhī nākhaśe. āpaṇe to ene bājhī paḍavuṃ, eṭaluṃ ja karavuṃ.’@ 1 dhanvaṃtara vaida= dhanvaṃtarī, āyurvedanā pravartaka vaidakanā pahelā ācārya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(92) દોષ કેમ ટળતા નથી ? એ પ્રશ્ર્ન પૂછ્યો તેનો ઉત્તર કર્યો જે, ‘એ તો છે, તે ખોટા કેમ થાશે ? ને જેમ અક્ષરાનંદસ્વામીને ગોળી દઈને કાઢી નાખી; તેમ જ કામ-ક્રોધાદિક ઘણી રાફીઓ છે તે કાઢી નાખશે. આપણે તો એને બાઝી પડવું, એટલું જ કરવું.’@ 1 ધન્વંતર વૈદ= ધન્વંતરી, આયુર્વેદના પ્રવર્તક વૈદકના પહેલા આચાર્ય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

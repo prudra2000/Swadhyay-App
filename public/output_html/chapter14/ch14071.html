@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જૂનાગઢના મહારાજ જમાન  - Junagadhna Maharaj jaman</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Junagadhna Maharaj jaman</h1>
+                <div class="gujarati-title">જૂનાગઢના મહારાજ જમાન </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 71</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(71) jūnāgaḍhanā mahārāja jamāna thayā che tethī saune vātuṃ karīne upāsanā ne ājñā dṛḍha karāvīe chīe. gopāḻānaṃdasvāmī paṇa āṃhīṃ chellī vāre traṇa mahinā rahyā hatā ane raghuvīrajī mahārājane ame kahyuṃ hatuṃ ke, tīrthavāsī thaīne jūnāgaḍha āvo to guṇātīta sthiti karī daīe. tethī badhāyanī uparavaṭa thaīne gaye varase comāsāmāṃ sāḍā traṇa mahinā āṃhīṃ rahī gayā ane ame śrījīmahārājanā sarvoparīpaṇānī, ā akṣarabrahmanī ane akṣararūpa thāvānī ane muktapaṇānī ane ā uddhava saṃpradāyamāṃ śrījīmahārāje potāno parama advaita akṣaramata te bījā ācāryothī utkṛṣṭapaṇe kevī alaukika rīte sthāpana karyo che te saṃbaṃdhī mahā adbhuta vātuṃ karīne puruṣottamapaṇāno ḍaṃko vagāḍyo hato.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(71) જૂનાગઢના મહારાજ જમાન થયા છે તેથી સૌને વાતું કરીને ઉપાસના ને આજ્ઞા દૃઢ કરાવીએ છીએ. ગોપાળાનંદસ્વામી પણ આંહીં છેલ્લી વારે ત્રણ મહિના રહ્યા હતા અને રઘુવીરજી મહારાજને અમે કહ્યું હતું કે, તીર્થવાસી થઈને જૂનાગઢ આવો તો ગુણાતીત સ્થિતિ કરી દઈએ. તેથી બધાયની ઉપરવટ થઈને ગયે વરસે ચોમાસામાં સાડા ત્રણ મહિના આંહીં રહી ગયા અને અમે શ્રીજીમહારાજના સર્વોપરીપણાની, આ અક્ષરબ્રહ્મની અને અક્ષરરૂપ થાવાની અને મુક્તપણાની અને આ ઉદ્ધવ સંપ્રદાયમાં શ્રીજીમહારાજે પોતાનો પરમ અદ્વૈત અક્ષરમત તે બીજા આચાર્યોથી ઉત્કૃષ્ટપણે કેવી અલૌકિક રીતે સ્થાપન કર્યો છે તે સંબંધી મહા અદ્ભુત વાતું કરીને પુરુષોત્તમપણાનો ડંકો વગાડ્યો હતો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14070.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vairagyanand shrvetdharmi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14072.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mote mote agal satsang</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '71');
+            localStorage.setItem('lastVisitedVatFile', 'ch14071.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ છે એમ કહીએ તો  - Jem chhe em kahie to </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem chhe em kahie to </h1>
+                <div class="gujarati-title">જેમ છે એમ કહીએ તો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 300</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(300) jema che ema kahīe to ghera jaī śake nahi ne ghera koī jāya to tyāṃ rahevāya nahi. tyāre lālābhāīe khyuṃ je, ‘he mahārāja ! e marama na samajāyo. te jema che tema śuṃ ?’ tyāre svāmī bolyā je, ‘āma to lo jema che tema kahuṃ je, ā sādhune ā bhagavāna koī divasa ā brahmāṃḍamāṃ āvyā nathī ne have āvaśe nahi ane mahārāja anaṃta bhagavānanā bhagavāna che. ane anaṃta akṣarakoṭi mahāmukto jenī niraṃtara stuti kare che ane mahimā gāya che te paṇa haju sudhī jenā mahimāno koī pāra nathī pāmyā, evā bhagavāna ane ā sādhu mūḻaakṣara te pragaṭa pramāṇa tamane maḻyā che. ema jo jīvamāṃ samajāya to ghera koīthī javāya nahi ne jāya to tyāṃ rahevāya nahi, evo āno mahimā che.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(300) જેમ છે એમ કહીએ તો ઘેર જઈ શકે નહિ ને ઘેર કોઈ જાય તો ત્યાં રહેવાય નહિ. ત્યારે લાલાભાઈએ ક્હ્યું જે, ‘હે મહારાજ ! એ મરમ ન સમજાયો. તે જેમ છે તેમ શું ?’ ત્યારે સ્વામી બોલ્યા જે, ‘આમ તો લો જેમ છે તેમ કહું જે, આ સાધુને આ ભગવાન કોઈ દિવસ આ બ્રહ્માંડમાં આવ્યા નથી ને હવે આવશે નહિ અને મહારાજ અનંત ભગવાનના ભગવાન છે. અને અનંત અક્ષરકોટિ મહામુક્તો જેની નિરંતર સ્તુતિ કરે છે અને મહિમા ગાય છે તે પણ હજુ સુધી જેના મહિમાનો કોઈ પાર નથી પામ્યા, એવા ભગવાન અને આ સાધુ મૂળઅક્ષર તે પ્રગટ પ્રમાણ તમને મળ્યા છે. એમ જો જીવમાં સમજાય તો ઘેર કોઈથી જવાય નહિ ને જાય તો ત્યાં રહેવાય નહિ, એવો આનો મહિમા છે.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11299.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanna janno koi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12001.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhajanma sukh chhe tevu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '300');
+            localStorage.setItem('lastVisitedVatFile', 'ch11300.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

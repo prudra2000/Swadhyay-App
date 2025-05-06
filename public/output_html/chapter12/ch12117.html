@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આવા સમાગમમાં નિવાસ - Aava samagamma nivas</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aava samagamma nivas</h1>
+                <div class="gujarati-title">આવા સમાગમમાં નિવાસ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 117</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(117) āvā samāgamamāṃ nivāsa thayo che, paṇa jīvane suvāṇa nathī thātī ne gopāḻānaṃdasvāmī, krṛpānaṃdasvāmī evā evā bheḻā rātripralaya sudhī rahe tyāre satsaṃga thāya, evo samāgama maḻyo che; te mahārājanā vakhatathī paṇa āja bahu bhāre joga che. paṇa mati alpa ne vāta moṭī maḻī ! māṭe jo rahasya jāṇanāra tevā kharā sādhunā jogamāṃ rahe to jema che tema samajāya ne sukhiyā rahevāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(117) આવા સમાગમમાં નિવાસ થયો છે, પણ જીવને સુવાણ નથી થાતી ને ગોપાળાનંદસ્વામી, ક્રૃપાનંદસ્વામી એવા એવા ભેળા રાત્રિપ્રલય સુધી રહે ત્યારે સત્સંગ થાય, એવો સમાગમ મળ્યો છે; તે મહારાજના વખતથી પણ આજ બહુ ભારે જોગ છે. પણ મતિ અલ્પ ને વાત મોટી મળી ! માટે જો રહસ્ય જાણનાર તેવા ખરા સાધુના જોગમાં રહે તો જેમ છે તેમ સમજાય ને સુખિયા રહેવાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12116.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pratham Maharaj pragatya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12118.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tasmad gurun prapadyet</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '117');
+            localStorage.setItem('lastVisitedVatFile', 'ch12117.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

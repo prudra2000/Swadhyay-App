@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટાનો અવગુણ લે તેનું - Motano avagun le tenu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motano avagun le tenu</h1>
+                <div class="gujarati-title">મોટાનો અવગુણ લે તેનું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 65</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(65) moṭāno avaguṇa le tenuṃ bahu bhūṃḍuṃ thāya ne potāmāṃ to aneka avaguṇa hoya. te eka sādhu roja śāka vaghāre ne eka divasa ātmānaṃdasvāmī māṃdā hatā temaṇe kahyuṃ ke, ‘śāka karo.’ tyāre olye sau āgaḻa ‘ho ho’ karyuṃ. te vāta mahārāja pāse gaī eṭale kahe, “aho ! eṇe enā jīvanuṃ bahu bhūṃḍuṃ karyuṃ je, moṭā sādhumāṃ avaguṇa paraṭhyo.” ne muktānaṃdasvāmī jamatā hatā, te eka jaṇe ema ciṃtavyuṃ je, ‘ā moṭā sādhu āma kema jame che ?’ pachī e je anna dekhe te kīḍā ja dekhāya. te paṃdara divasa lagī ema thayuṃ. pachī dāṃte taraṇāṃ laīne page lāgyo tyāre samuṃ thayuṃ. te māṭe koī sādhuno avaguṇa na levo. are ! keṭalāka to gopāḻānaṃdasvāmīnī vāta khoṭī ema kahetā te gayā, te paṇa dīṭhā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૬૫) મોટાનો અવગુણ લે તેનું બહુ ભૂંડું થાય ને પોતામાં તો અનેક અવગુણ હોય. તે એક સાધુ રોજ શાક વઘારે ને એક દિવસ આત્માનંદસ્વામી માંદા હતા તેમણે કહ્યું કે, ‘શાક કરો.’ ત્યારે ઓલ્યે સૌ આગળ ‘હો હો’ કર્યું. તે વાત મહારાજ પાસે ગઈ એટલે કહે, “અહો ! એણે એના જીવનું બહુ ભૂંડું કર્યું જે, મોટા સાધુમાં અવગુણ પરઠ્યો.” ને મુક્તાનંદસ્વામી જમતા હતા, તે એક જણે એમ ચિંતવ્યું જે, ‘આ મોટા સાધુ આમ કેમ જમે છે ?’ પછી એ જે અન્ન દેખે તે કીડા જ દેખાય. તે પંદર દિવસ લગી એમ થયું. પછી દાંતે તરણાં લઈને પગે લાગ્યો ત્યારે સમું થયું. તે માટે કોઈ સાધુનો અવગુણ ન લેવો. અરે ! કેટલાક તો ગોપાળાનંદસ્વામીની વાત ખોટી એમ કહેતા તે ગયા, તે પણ દીઠા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6064.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj kahe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6066.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Karod rupiya hase te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '65');
+            localStorage.setItem('lastVisitedVatFile', 'ch6065.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

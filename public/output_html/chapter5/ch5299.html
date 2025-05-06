@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રેમી ભગવાનમાં પણ - Premi bhagavanma pan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Premi bhagavanma pan</h1>
+                <div class="gujarati-title">પ્રેમી ભગવાનમાં પણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 299</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(299) premī bhagavānamāṃ paṇa vaḻage ne bīje paṇa vaḻage ne jñānī hoya te bīje vaḻage nahi ne koī āṃṭī āve to jñānī paṇa vaḻage. te upara bhīṣmapitānuṃ dṛṣṭāṃta dīdhuṃ je, e jñānī hatā paṇa pakṣe karīne vaḻagyā. $prakaraṇa 2nī vāta 89</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(299) પ્રેમી ભગવાનમાં પણ વળગે ને બીજે પણ વળગે ને જ્ઞાની હોય તે બીજે વળગે નહિ ને કોઈ આંટી આવે તો જ્ઞાની પણ વળગે. તે ઉપર ભીષ્મપિતાનું દૃષ્ટાંત દીધું જે, એ જ્ઞાની હતા પણ પક્ષે કરીને વળગ્યા. $પ્રકરણ 2ની વાત 89</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5298.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bija koine kalyan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5300.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa suryane jem koini</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '299');
+            localStorage.setItem('lastVisitedVatFile', 'ch5299.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

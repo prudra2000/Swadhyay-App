@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સભામાં વાત સાંભળે  - Sabhama vat sambhale</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sabhama vat sambhale</h1>
+                <div class="gujarati-title">સભામાં વાત સાંભળે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 113</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(113) sabhāmāṃ vāta sāṃbhaḻe tyāre jīvano svabhāva evo je koīka upara nākhe. āja vāta thaī te phalāṇā upara thaī ema kahe paṇa potā upara na le, tene koī vāta samāsa na kare. pachī nī vāta karī je, te varasādamāṃ koro āvyo tyāre pūchyuṃ je, ‘tame kema palaḻyā nahi ?’ to kahe je, ‘huṃ to paṇagā chela chuṃ! te eke paṇago māthe paḍe ja nahi ne āḍo avaḻo tarī jāuṃ !’ tyāre kahe, ‘phaḻiyāmāṃ ūbhā raho ne tīra māruṃ te lāgavā deśo nahīṃ.’ eṭale mānyo je, ‘pāṭiyāmāṃ lūgaḍāṃ bharyāṃ hatāṃ māṭe māraśo mā.’ māṭe koī vāte chela thāvuṃ nahīṃ.@ 1 paṇagā chela= varasatā varasādamāṃ pāṇīnāṃ ṭīpāṃ ne deha para paḍavā dīdhāṃ nathī ne koro āvyo chuṃ evī banāvaṭa karanāra daṃbhī māṇasa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(113) સભામાં વાત સાંભળે ત્યારે જીવનો સ્વભાવ એવો જે કોઈક ઉપર નાખે. આજ વાત થઈ તે ફલાણા ઉપર થઈ એમ કહે પણ પોતા ઉપર ન લે, તેને કોઈ વાત સમાસ ન કરે. પછી ની વાત કરી જે, તે વરસાદમાં કોરો આવ્યો ત્યારે પૂછ્યું જે, ‘તમે કેમ પલળ્યા નહિ ?’ તો કહે જે, ‘હું તો પણગા છેલ છું! તે એકે પણગો માથે પડે જ નહિ ને આડો અવળો તરી જાઉં !’ ત્યારે કહે, ‘ફળિયામાં ઊભા રહો ને તીર મારું તે લાગવા દેશો નહીં.’ એટલે માન્યો જે, ‘પાટિયામાં લૂગડાં ભર્યાં હતાં માટે મારશો મા.’ માટે કોઈ વાતે છેલ થાવું નહીં.@ 1 પણગા છેલ= વરસતા વરસાદમાં પાણીનાં ટીપાં ને દેહ પર પડવા દીધાં નથી ને કોરો આવ્યો છું એવી બનાવટ કરનાર દંભી માણસ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9112.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pota thaki dharmadike</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9114.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje badhi vat </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '113');
+            localStorage.setItem('lastVisitedVatFile', 'ch9113.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

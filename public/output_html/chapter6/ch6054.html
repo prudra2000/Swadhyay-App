@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવનો તો અવળો સ્વભાવ - Jivno to avalo swabhav</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivno to avalo swabhav</h1>
+                <div class="gujarati-title">જીવનો તો અવળો સ્વભાવ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 54</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(54) jīvano to avaḻo svabhāva che, te khāvuṃ, rūpiyā ne viṣaya temāṃ ja maṃḍyo che. jo rūpiyā hoya to te bhāṃgīne ghauṃ levā ne te khāīne prabhu bhajavā. so upāya karīne bājaro bheḻo karavo; te khetīvāḍī karīne, cākarī karīne ke sāthī rahīne paṇa te eka vāra to bheḻo karavo. pachī hāyavoya na karavī ne bhagavāna bhajavā. ane tema na karo to ā maṃdiramāṃ bājaro ghaṇo saḍī jāya che, te cāra mahinā rahīne paṇa bhagavāna bhajavā āvajo. pachī āvo samāgama nahi maḻe ne uttama vaktā che tyāṃ samāgama karī lejo ne pachī to cījuṃ khādhī hoya te saṃbhāravī. te mahārāje ‘śikṣāpatrī’māṃ kahyuṃ che ne ‘vacanāmṛta’māṃ paṇa kahyuṃ che je, “samāgama vinā jñāna na āve.” ne deśakāḻādika āṭhamāṃ saṃgane adhika kahyo che. te olyāṃ sāta bhūṃḍāṃ hoya ne eka saṃga sāro hoya to moṭāpuruṣa sārāṃ karī de. māṭe vāraṃvāra saṃga karavo, temāṃ sarve vāta āvī jāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૫૪) જીવનો તો અવળો સ્વભાવ છે, તે ખાવું, રૂપિયા ને વિષય તેમાં જ મંડ્યો છે. જો રૂપિયા હોય તો તે ભાંગીને ઘઉં લેવા ને તે ખાઈને પ્રભુ ભજવા. સો ઉપાય કરીને બાજરો ભેળો કરવો; તે ખેતીવાડી કરીને, ચાકરી કરીને કે સાથી રહીને પણ તે એક વાર તો ભેળો કરવો. પછી હાયવોય ન કરવી ને ભગવાન ભજવા. અને તેમ ન કરો તો આ મંદિરમાં બાજરો ઘણો સડી જાય છે, તે ચાર મહિના રહીને પણ ભગવાન ભજવા આવજો. પછી આવો સમાગમ નહિ મળે ને ઉત્તમ વક્તા છે ત્યાં સમાગમ કરી લેજો ને પછી તો ચીજું ખાધી હોય તે સંભારવી. તે મહારાજે ‘શિક્ષાપત્રી’માં કહ્યું છે ને ‘વચનામૃત’માં પણ કહ્યું છે જે, “સમાગમ વિના જ્ઞાન ન આવે.” ને દેશકાળાદિક આઠમાં સંગને અધિક કહ્યો છે. તે ઓલ્યાં સાત ભૂંડાં હોય ને એક સંગ સારો હોય તો મોટાપુરુષ સારાં કરી દે. માટે વારંવાર સંગ કરવો, તેમાં સર્વે વાત આવી જાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6053.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Anandji sanghadiyane tya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6055.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Je jene vahalu hoy te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '54');
+            localStorage.setItem('lastVisitedVatFile', 'ch6054.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

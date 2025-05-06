@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંસૃતિના કારણમાત્રની - Sansrutina karanmatrani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sansrutina karanmatrani</h1>
+                <div class="gujarati-title">સંસૃતિના કારણમાત્રની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 121</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi pratipadāne divase svāmīe vāta karī je,$(121) saṃsṛtinā kāraṇamātranī kothaḻī te kāraṇa śarīra che. te ṭāḻyā vinā to vairāṭādikanī sāmarthī ane aiśrvaryane pāme; paṇa te photaruṃ ūtaryā vinā akṣaradhāmamāṃ na javāya. mahārāje bhaṇavānuṃ kahyuṃ, paṇa koīe mānyuṃ nahi. tyāre mahārāja kahe, ‘tame deśamāṃ pharavā jāo.’ pachī dhīre dhīre mānyuṃ ne bhaṇyā, tyāre ā brahmavidyānī pravṛtti thaī. traṇaseṃ bhaṇyā paṇa temāṃ vīsa ja satsaṃganā kāmamāṃ āvyā. māṭe mahārājanā rahasyanā śabdo vicāryā vinā jñāna thāya nahi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ પ્રતિપદાને દિવસે સ્વામીએ વાત કરી જે,$(121) સંસૃતિના કારણમાત્રની કોથળી તે કારણ શરીર છે. તે ટાળ્યા વિના તો વૈરાટાદિકની સામર્થી અને ઐશ્ર્વર્યને પામે; પણ તે ફોતરું ઊતર્યા વિના અક્ષરધામમાં ન જવાય. મહારાજે ભણવાનું કહ્યું, પણ કોઈએ માન્યું નહિ. ત્યારે મહારાજ કહે, ‘તમે દેશમાં ફરવા જાઓ.’ પછી ધીરે ધીરે માન્યું ને ભણ્યા, ત્યારે આ બ્રહ્મવિદ્યાની પ્રવૃત્તિ થઈ. ત્રણસેં ભણ્યા પણ તેમાં વીસ જ સત્સંગના કામમાં આવ્યા. માટે મહારાજના રહસ્યના શબ્દો વિચાર્યા વિના જ્ઞાન થાય નહિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14120.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tran ang sambandhi </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14122.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vadina thuthana drushtante</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '121');
+            localStorage.setItem('lastVisitedVatFile', 'ch14121.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ખાવું, ઊંઘવું ને  - Khavu, unghavu ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Khavu, unghavu ne</h1>
+                <div class="gujarati-title">ખાવું, ઊંઘવું ને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 134</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(134) khāvuṃ, ūṃghavuṃ ne strī e traṇano abhāva na thāya; kema je, e bahu baḻiyā che. māṭe dhīre dhīre vicāra kare to abhāva thāya, paṇa ṭhekaḍā māre abhāva na thāya ne viṣayathī cheṭuṃ kare ne bhagavāna tathā saṃtanuṃ samīpapaṇuṃ kare tyāre sukha thāya ne have to maḻe ne teno tyāga karaśe teno ja tyāga raheśe ne jema dariyānī choḻuṃ āve tema viṣayamātranī choḻuṃ āve che ne viṣayano varasāda thāya che temāṃ palaḻyo e gayo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(134) ખાવું, ઊંઘવું ને સ્ત્રી એ ત્રણનો અભાવ ન થાય; કેમ જે, એ બહુ બળિયા છે. માટે ધીરે ધીરે વિચાર કરે તો અભાવ થાય, પણ ઠેકડા મારે અભાવ ન થાય ને વિષયથી છેટું કરે ને ભગવાન તથા સંતનું સમીપપણું કરે ત્યારે સુખ થાય ને હવે તો મળે ને તેનો ત્યાગ કરશે તેનો જ ત્યાગ રહેશે ને જેમ દરિયાની છોળું આવે તેમ વિષયમાત્રની છોળું આવે છે ને વિષયનો વરસાદ થાય છે તેમાં પલળ્યો એ ગયો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9133.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gruhasth ne tyagi </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9135.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Purvnu pap to koikne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '134');
+            localStorage.setItem('lastVisitedVatFile', 'ch9134.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જુઓને ! આ બીજા  - Juone! Aa bija </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Juone! Aa bija </h1>
+                <div class="gujarati-title">જુઓને ! આ બીજા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 271</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(271) juone ! ā bījā matavādīoe vāḍā karīne jīvane caḍāvī dīdhā che; tevā thayā che ne koī jāṇe bījā mata āgaḻa sārā haśe ! te e to ame vicāryuṃ je, ā bāḻapaṇāmāṃ sāro haśe ? te e to mūḻathī ja bagaḍelo che. ema e prathamathī ja bagaḍelā che, māṭe uddhavamata vinā koīmāṃ māla nathī.@ 1 pāchalo daravājo= gudā, śarīranī viṣṭā nīkaḻavānuṃ dvāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૭૧) જુઓને ! આ બીજા મતવાદીઓએ વાડા કરીને જીવને ચડાવી દીધા છે; તેવા થયા છે ને કોઈ જાણે બીજા મત આગળ સારા હશે ! તે એ તો અમે વિચાર્યું જે, આ બાળપણામાં સારો હશે ? તે એ તો મૂળથી જ બગડેલો છે. એમ એ પ્રથમથી જ બગડેલા છે, માટે ઉદ્ધવમત વિના કોઈમાં માલ નથી.@ 1 પાછલો દરવાજો= ગુદા, શરીરની વિષ્ટા નીકળવાનું દ્વાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6270.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ame to vicharine joyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6272.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek var bahu bhare</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '271');
+            localStorage.setItem('lastVisitedVatFile', 'ch6271.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

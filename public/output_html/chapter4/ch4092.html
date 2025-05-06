@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જે જે લખ્યું તે વાંચ્યું - Je je lakhyu te vanchyu </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Je je lakhyu te vanchyu </h1>
+                <div class="gujarati-title">જે જે લખ્યું તે વાંચ્યું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 92</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(92) je je lakhyuṃ te vāṃcyuṃ nahi to te lakhyuṃ te na lakhyuṃ ne kadāpi vāṃcyuṃ paṇa temāṃ sūrata na rākhī to te vāṃcyuṃ te na vāṃcyuṃ ne kadāpi sūrata rākhī paṇa tema karavāne mārage na calāya, to paṇa śuṃ ? māṭe raja, tama na hoya ne sattvanī pravṛtti hoya tyāre sthira thaīne, sthira mane vāṃcīne manano tapāsa karavo to te samāsa kare. te mananā tapāsanuṃ kahyuṃ che je, śabda sarve judā judā potānā uramāṃ levā ne tapāsavā ne ema thāya che ke nahi, teno tapāsa karīne ema ja karavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(92) જે જે લખ્યું તે વાંચ્યું નહિ તો તે લખ્યું તે ન લખ્યું ને કદાપિ વાંચ્યું પણ તેમાં સૂરત ન રાખી તો તે વાંચ્યું તે ન વાંચ્યું ને કદાપિ સૂરત રાખી પણ તેમ કરવાને મારગે ન ચલાય, તો પણ શું ? માટે રજ, તમ ન હોય ને સત્ત્વની પ્રવૃત્તિ હોય ત્યારે સ્થિર થઈને, સ્થિર મને વાંચીને મનનો તપાસ કરવો તો તે સમાસ કરે. તે મનના તપાસનું કહ્યું છે જે, શબ્દ સર્વે જુદા જુદા પોતાના ઉરમાં લેવા ને તપાસવા ને એમ થાય છે કે નહિ, તેનો તપાસ કરીને એમ જ કરવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4091.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Varatalma vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4093.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jem koikna gharma </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '92');
+            localStorage.setItem('lastVisitedVatFile', 'ch4092.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

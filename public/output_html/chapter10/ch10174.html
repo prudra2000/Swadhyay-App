@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેવું પ્રહ્લાદને માગતાં - Jevu prahladne magata</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jevu prahladne magata</h1>
+                <div class="gujarati-title">જેવું પ્રહ્લાદને માગતાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 174</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(174) jevuṃ prahlādane māgatāṃ āvaḍyuṃ, evuṃ dhruvane māgatāṃ na āvaḍyuṃ, paṇa mālakama sāhebane māgatāṃ āvaḍyuṃ. rājakoṭamāṃ mahārāja cāra boraḍī vacce taṃbumāṃ ūtaryā hatā te vakhate muṃbaīnā garvanara mālakama sāheba rājakoṭamāṃ āvyā hatā. temaṇe mahārājane dīṭhā eṭale ṭopī utārī page paḍyā ne vātacīta karī utāre padhāryā ne mahārājane puchāvyuṃ je, ‘tamane amāre baṃgale padharāvavā che te sādhunī rīte teḍāvīe ke rājānī rīte teḍāvīe ?’ mahārāja kahe, ‘sādhunī rīte āvaśuṃ.’ pachī sāhebe hukama karyo ke, ‘svāminārāyaṇanāṃ jeṭalāṃ māṇasa hoya te badhāṃne āvavā dejo.’ pachī mahārāja, saṃta ne harijana sahita padhāryā. te bījā to vāṭa jotā hatā je, svāminārāyaṇane pakaḍī rākhaśe ne śuṃ ya karaśe, tyāṃ to sāhebe sanmāna karyuṃ ne mahārājane page lāgī prārthanā karī je, ‘amārā ne amārā śatrunā acchā karīo !’ tyāre mahārāje sāhebanāṃ vakhāṇa karyāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(174) જેવું પ્રહ્લાદને માગતાં આવડ્યું, એવું ધ્રુવને માગતાં ન આવડ્યું, પણ માલકમ સાહેબને માગતાં આવડ્યું. રાજકોટમાં મહારાજ ચાર બોરડી વચ્ચે તંબુમાં ઊતર્યા હતા તે વખતે મુંબઈના ગર્વનર માલકમ સાહેબ રાજકોટમાં આવ્યા હતા. તેમણે મહારાજને દીઠા એટલે ટોપી ઉતારી પગે પડ્યા ને વાતચીત કરી ઉતારે પધાર્યા ને મહારાજને પુછાવ્યું જે, ‘તમને અમારે બંગલે પધરાવવા છે તે સાધુની રીતે તેડાવીએ કે રાજાની રીતે તેડાવીએ ?’ મહારાજ કહે, ‘સાધુની રીતે આવશું.’ પછી સાહેબે હુકમ કર્યો કે, ‘સ્વામિનારાયણનાં જેટલાં માણસ હોય તે બધાંને આવવા દેજો.’ પછી મહારાજ, સંત ને હરિજન સહિત પધાર્યા. તે બીજા તો વાટ જોતા હતા જે, સ્વામિનારાયણને પકડી રાખશે ને શું ય કરશે, ત્યાં તો સાહેબે સન્માન કર્યું ને મહારાજને પગે લાગી પ્રાર્થના કરી જે, ‘અમારા ને અમારા શત્રુના અચ્છા કરીઓ !’ ત્યારે મહારાજે સાહેબનાં વખાણ કર્યાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10173.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gaja vina bolavamathi </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10175.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsangine vat karavi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '174');
+            localStorage.setItem('lastVisitedVatFile', 'ch10174.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

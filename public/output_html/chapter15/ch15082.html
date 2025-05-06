@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ તો સૌ સૌના જીવનું  - Aa to sau sauna jivnu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa to sau sauna jivnu</h1>
+                <div class="gujarati-title">આ તો સૌ સૌના જીવનું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 82</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(82) ā to sau saunā jīvanuṃ rūḍuṃ karavā āvyā chīe ne badarināthanāṃ śīkāṃ che te jo koī bhagavadī dubhāṇo to thaī rahyo. gāḻuṃ de, to paṇa ema jāṇavuṃ je, vāḻaṃdano avatāra āvyo haśe, tyāre gāḻuṃ nahi khādhī hoya ? evuṃ jñāna hoya to du:kha na thāya. te upara viśuddhātmānaṃdasvāmīne gāḻa dīdhī te vāta karī. māṭe paṃcamahāpāpathī paṇa bhagavadīnā aparādhanuṃ pāpa vadhu lāge che. te aparādha paṃcaviṣaya, dehābhimāna ne pakṣamāṃthī thāya che. saṃtāpamātra ācāryajī mahārājane āpyo che. māṭe āpaṇe to kleśane na pāmavuṃ. hamaṇāṃ keṭalāke deha mūkī dīdhā ne āpaṇe paṇa āṃhīṃ nahi rahevāya. māṭe pakṣapāte karīne avaguṇa na levo ne bheḻā rahyā te kahevuṃ to paḍe, māṭe bheḻāṃ rahīne kāyāne ghasāro devo paṇa moḍhāmāṃ koḻīyā daīe temāṃ kone ? māṭe sau saunuṃ karavuṃ ā to bheḻuṃ karyuṃ che. 1 pārasaṇuṃ= upakāra mānavo. $2 lāṃpaḍuṃ/lāpaḍāṃ= sūkuṃ ke cīmaḻāyeluṃ nānuṃ ghāsa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(82) આ તો સૌ સૌના જીવનું રૂડું કરવા આવ્યા છીએ ને બદરિનાથનાં શીકાં છે તે જો કોઈ ભગવદી દુભાણો તો થઈ રહ્યો. ગાળું દે, તો પણ એમ જાણવું જે, વાળંદનો અવતાર આવ્યો હશે, ત્યારે ગાળું નહિ ખાધી હોય ? એવું જ્ઞાન હોય તો દુ:ખ ન થાય. તે ઉપર વિશુદ્ધાત્માનંદસ્વામીને ગાળ દીધી તે વાત કરી. માટે પંચમહાપાપથી પણ ભગવદીના અપરાધનું પાપ વધુ લાગે છે. તે અપરાધ પંચવિષય, દેહાભિમાન ને પક્ષમાંથી થાય છે. સંતાપમાત્ર આચાર્યજી મહારાજને આપ્યો છે. માટે આપણે તો ક્લેશને ન પામવું. હમણાં કેટલાકે દેહ મૂકી દીધા ને આપણે પણ આંહીં નહિ રહેવાય. માટે પક્ષપાતે કરીને અવગુણ ન લેવો ને ભેળા રહ્યા તે કહેવું તો પડે, માટે ભેળાં રહીને કાયાને ઘસારો દેવો પણ મોઢામાં કોળીયા દઈએ તેમાં કોને ? માટે સૌ સૌનું કરવું આ તો ભેળું કર્યું છે. 1 પારસણું= ઉપકાર માનવો. $2 લાંપડું/લાપડાં= સૂકું કે ચીમળાયેલું નાનું ઘાસ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15081.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Yachak doshane joto nathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15083.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koine krupae karine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '82');
+            localStorage.setItem('lastVisitedVatFile', 'ch15082.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

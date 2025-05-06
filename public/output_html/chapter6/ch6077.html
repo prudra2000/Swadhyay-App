@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગોપાળાનંદસ્વામીની વાતમાં - Gopalanandswamini vatma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gopalanandswamini vatma</h1>
+                <div class="gujarati-title">ગોપાળાનંદસ્વામીની વાતમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 77</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(77) gopāḻānaṃdasvāmīnī vātamāṃ ema che je, ‘mumukṣu vinā sādhu na oḻakhāya.’ ema amadāvādanā eka sādhu āgaḻa kahyuṃ ne pachī bolyā je, ‘saṃskāra vinā kāṃī thāya nahīṃ. te juone ! āpaṇe paṇa saṃskāre bheḻā thayā chīe. ne meṃ eka kaṇabī vāḍīmāṃ hato tene kahyuṃ je, ‘paṭela bhagavāna bhajaśo?’ tyāre kahe, ‘hā.’ tyāre kahyuṃ je, ‘cālone āṃhīṃ nadīe, amārā moṭā sādhu kṛpānaṃdasvāmī āvyā che.’ pachī tyāṃ jaīne vartamāna dharāvyāṃ. te sādhu thaīne maṇi jevā thayā. te ema saṃskāre vāta thāya che.’ ema kahīne goḍī je, $(kīrtana muktāvali : 706)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૭૭) ગોપાળાનંદસ્વામીની વાતમાં એમ છે જે, ‘મુમુક્ષુ વિના સાધુ ન ઓળખાય.’ એમ અમદાવાદના એક સાધુ આગળ કહ્યું ને પછી બોલ્યા જે, ‘સંસ્કાર વિના કાંઈ થાય નહીં. તે જુઓને ! આપણે પણ સંસ્કારે ભેળા થયા છીએ. ને મેં એક કણબી વાડીમાં હતો તેને કહ્યું જે, ‘પટેલ ભગવાન ભજશો?’ ત્યારે કહે, ‘હા.’ ત્યારે કહ્યું જે, ‘ચાલોને આંહીં નદીએ, અમારા મોટા સાધુ કૃપાનંદસ્વામી આવ્યા છે.’ પછી ત્યાં જઈને વર્તમાન ધરાવ્યાં. તે સાધુ થઈને મણિ જેવા થયા. તે એમ સંસ્કારે વાત થાય છે.’ એમ કહીને ગોડી જે, $(કીર્તન મુક્તાવલિ : ૭૦૬)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6076.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan bhajavama sukh</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6078.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsangijivannu sar Maharaje</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '77');
+            localStorage.setItem('lastVisitedVatFile', 'ch6077.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

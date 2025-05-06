@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણામાંય ખોટ કેટલીક - Apanamay khot ketalik</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apanamay khot ketalik</h1>
+                <div class="gujarati-title">આપણામાંય ખોટ કેટલીક</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 260</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(260) āpaṇāmāṃya khoṭa keṭalīka hoya, te jo kahevā māṃḍīe to khabara paḍe. sūjhe tema, āma tema karīe, paṇa aṃte ema karāvavuṃ che te vātuṃmāṃ kahetā jaīe chīe. ane amāre eka baḻadiyo che tene hamaṇāṃ to sau khavarāvīe chīe, paṇa gāḍuṃ enā kāṃdha upara mūkavuṃ che. aṃte sūjhe tema, phosalāvī kāravīne paṇa mākhīmāṃthī sūraja karavo che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૬૦) આપણામાંય ખોટ કેટલીક હોય, તે જો કહેવા માંડીએ તો ખબર પડે. સૂઝે તેમ, આમ તેમ કરીએ, પણ અંતે એમ કરાવવું છે તે વાતુંમાં કહેતા જઈએ છીએ. અને અમારે એક બળદિયો છે તેને હમણાં તો સૌ ખવરાવીએ છીએ, પણ ગાડું એના કાંધ ઉપર મૂકવું છે. અંતે સૂઝે તેમ, ફોસલાવી કારવીને પણ માખીમાંથી સૂરજ કરવો છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6259.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan, sadhu, </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6261.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jem swarupanandswamie</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '260');
+            localStorage.setItem('lastVisitedVatFile', 'ch6260.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

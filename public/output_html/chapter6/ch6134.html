@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક સાધુએ પ્રસાદી ખાધી - Ek sadhue prasadi khadhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek sadhue prasadi khadhi</h1>
+                <div class="gujarati-title">એક સાધુએ પ્રસાદી ખાધી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 134</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(134) eka sādhue prasādī khādhī te sāru paṃkti bahāra kāḍhela. pachī eka haribhakte mahārāja āgaḻa kahyuṃ ke, ‘kurānamāṃ lakhyuṃ che je, khudā savāranā pahoramāṃ sāda paḍāve che je, koī gunhegāra che ? to choḍī mūkīe.’ ema kahyuṃ, tyāre mahārāja kahe, “e vāta sācī che.” pachī hātha joḍīne olyā sādhu dīna thaī gayā eṭale te upara rājī thaī gayā, tema che. dīna thāvuṃ, to e to sāruṃ karavā ja ūbhā che. pachī olyo kahe, ‘tyāre māpha karajo ne kaheśo ema karavuṃ che ne tamane rājī karavā che, te rūḍuṃ thāya tema mane kahejo.’ pachī kahe, “ṭhīka, bhajana karavā māṃḍo.” juone māre celā che, paga dābe ema che, ḍholo che, gādalāṃ ne khādhānuṃ che ne je huṃ kahuṃ te turata karī de ema che; paṇa huṃ jo te karuṃ ane bījā koīne na karavānuṃ kahuṃ to manāya nahi, ne sau kare. te lakhyuṃ che je, ‘ṛṣabhadeva bhagavāna śikṣāne arthe siddhione na grahaṇa karatā havā.’ ema āpaṇe rahevuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૩૪) એક સાધુએ પ્રસાદી ખાધી તે સારુ પંક્તિ બહાર કાઢેલ. પછી એક હરિભક્તે મહારાજ આગળ કહ્યું કે, ‘કુરાનમાં લખ્યું છે જે, ખુદા સવારના પહોરમાં સાદ પડાવે છે જે, કોઈ ગુન્હેગાર છે ? તો છોડી મૂકીએ.’ એમ કહ્યું, ત્યારે મહારાજ કહે, “એ વાત સાચી છે.” પછી હાથ જોડીને ઓલ્યા સાધુ દીન થઈ ગયા એટલે તે ઉપર રાજી થઈ ગયા, તેમ છે. દીન થાવું, તો એ તો સારું કરવા જ ઊભા છે. પછી ઓલ્યો કહે, ‘ત્યારે માફ કરજો ને કહેશો એમ કરવું છે ને તમને રાજી કરવા છે, તે રૂડું થાય તેમ મને કહેજો.’ પછી કહે, “ઠીક, ભજન કરવા માંડો.” જુઓને મારે ચેલા છે, પગ દાબે એમ છે, ઢોલો છે, ગાદલાં ને ખાધાનું છે ને જે હું કહું તે તુરત કરી દે એમ છે; પણ હું જો તે કરું અને બીજા કોઈને ન કરવાનું કહું તો મનાય નહિ, ને સૌ કરે. તે લખ્યું છે જે, ‘ઋષભદેવ ભગવાન શિક્ષાને અર્થે સિદ્ધિઓને ન ગ્રહણ કરતા હવા.’ એમ આપણે રહેવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6133.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Antarno kusang, baharno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6135.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Paksh ne sneh to </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '134');
+            localStorage.setItem('lastVisitedVatFile', 'ch6134.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

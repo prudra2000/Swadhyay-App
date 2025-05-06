@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મયારામ ભટ્ટે ગોવિંદરામને - Mayaram bhatte govindaramne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mayaram bhatte govindaramne</h1>
+                <div class="gujarati-title">મયારામ ભટ્ટે ગોવિંદરામને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 280</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(280) mayārāma bhaṭṭe goviṃdarāmane kahyuṃ je, ‘māre kyāṃ dīkaro che? huṃ to tārā māṭe herāna thāuṃ chuṃ. huṃ to mahārāja pāse jaīne tyāgī thaī rahīśa. pachī khabara paḍaśe.’ ethī goviṃdarāme to godaḍāṃnī karīne paherīne ghoḍāno māthe mūkī bhaṭṭajīne kahe, ‘bhāī, huṃ to jāuṃ chuṃ. jaya śrī svāminārāyaṇa ! . ane tame to jyāre ghara choḍī sādhu thāśo tyāre kharā ! paṇa māre to vahevāra joīto nathī.’ te joī bhaṭṭajīe ākaḻā thaī kahyuṃ, ‘are goviṃdarāma, āma hoya ! āpaṇī lāja jāya ! āvuṃ thāya ?’ ema goviṃdarāmane ghara mūkavuṃ kaṭhaṇa na paḍe ne bhaṭṭajīne vāra lāge. 1 alaphī= ṭūṃkī bāṃyano lāṃbo jhabhbho. $2 ghoḍāno pāvaro= tobaro-ghoḍānuṃ khāṇa / caṃdībharī ghoḍāne moḍhe bāṃdhavāmāṃ āvato cāmaḍāno thelo. $3 chokarāṃ tamane bhaḻe che= chokarāṃnī javābadārī tamane soṃpī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(280) મયારામ ભટ્ટે ગોવિંદરામને કહ્યું જે, ‘મારે ક્યાં દીકરો છે? હું તો તારા માટે હેરાન થાઉં છું. હું તો મહારાજ પાસે જઈને ત્યાગી થઈ રહીશ. પછી ખબર પડશે.’ એથી ગોવિંદરામે તો ગોદડાંની કરીને પહેરીને ઘોડાનો માથે મૂકી ભટ્ટજીને કહે, ‘ભાઈ, હું તો જાઉં છું. જય શ્રી સ્વામિનારાયણ ! . અને તમે તો જ્યારે ઘર છોડી સાધુ થાશો ત્યારે ખરા ! પણ મારે તો વહેવાર જોઈતો નથી.’ તે જોઈ ભટ્ટજીએ આકળા થઈ કહ્યું, ‘અરે ગોવિંદરામ, આમ હોય ! આપણી લાજ જાય ! આવું થાય ?’ એમ ગોવિંદરામને ઘર મૂકવું કઠણ ન પડે ને ભટ્ટજીને વાર લાગે. 1 અલફી= ટૂંકી બાંયનો લાંબો ઝભ્ભો. $2 ઘોડાનો પાવરો= તોબરો-ઘોડાનું ખાણ / ચંદીભરી ઘોડાને મોઢે બાંધવામાં આવતો ચામડાનો થેલો. $3 છોકરાં તમને ભળે છે= છોકરાંની જવાબદારી તમને સોંપી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11279.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jyare sau sadhune khataras</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11281.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shivanandswamine chalavano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '280');
+            localStorage.setItem('lastVisitedVatFile', 'ch11280.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

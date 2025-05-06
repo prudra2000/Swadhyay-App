@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વચનામૃતમાં જ્યાં - Vachanamrutma jya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vachanamrutma jya</h1>
+                <div class="gujarati-title">વચનામૃતમાં જ્યાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 58</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(58) ‘vacanāmṛta’māṃ jyāṃ svarūpanī vāta āve tyāṃ ema kahe che je, tene kāṃī karavuṃ rahyuṃ nathī, te śuṃ ? je, evo dṛḍhāva kahyo. te kahīe chīe kharā; paṇa tenuṃ śravaṇa, manana ane nididhyāsa nathī thāto. samajaṇa na hoya ne śarīramāṃ maṃdavāḍa āve tyāre samajaṇa paṇa cūṃthāī jāya, ane cākarī na thāya to avaguṇa āve je māruṃ koī karatā nathī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(58) ‘વચનામૃત’માં જ્યાં સ્વરૂપની વાત આવે ત્યાં એમ કહે છે જે, તેને કાંઈ કરવું રહ્યું નથી, તે શું ? જે, એવો દૃઢાવ કહ્યો. તે કહીએ છીએ ખરા; પણ તેનું શ્રવણ, મનન અને નિદિધ્યાસ નથી થાતો. સમજણ ન હોય ને શરીરમાં મંદવાડ આવે ત્યારે સમજણ પણ ચૂંથાઈ જાય, અને ચાકરી ન થાય તો અવગુણ આવે જે મારું કોઈ કરતા નથી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14057.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tran prakarno vayu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14059.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vishayne vishe doshbuddhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '58');
+            localStorage.setItem('lastVisitedVatFile', 'ch14058.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

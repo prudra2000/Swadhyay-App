@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અવિદ્યાએ બળ કર્યું  - Avidyae bal karyu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Avidyae bal karyu</h1>
+                <div class="gujarati-title">અવિદ્યાએ બળ કર્યું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 97</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(97) avidyāe baḻa karyuṃ che, te aṃtakaraṇarūpa māyā ne bahāralī (bahāranī) māyā sarvee baḻa karyuṃ che, te have . māṭe khabaradāra rahevuṃ. satsaṃga to bhūṣaṇarūpa che; paṇa koī pūche je, ‘bhāī tame satsaṃgī cho?’ tyāre, ‘nā, huṃ nathī; paṇa māro kāko satsaṃgī che’, ema je kahe tene satsaṃga dūṣaṇarūpa che.@ 1 vaḍakāṃ levāya che = uddhatāīthī javāba apāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(97) અવિદ્યાએ બળ કર્યું છે, તે અંતકરણરૂપ માયા ને બહારલી (બહારની) માયા સર્વેએ બળ કર્યું છે, તે હવે . માટે ખબરદાર રહેવું. સત્સંગ તો ભૂષણરૂપ છે; પણ કોઈ પૂછે જે, ‘ભાઈ તમે સત્સંગી છો?’ ત્યારે, ‘ના, હું નથી; પણ મારો કાકો સત્સંગી છે’, એમ જે કહે તેને સત્સંગ દૂષણરૂપ છે.@ 1 વડકાં લેવાય છે = ઉદ્ધતાઈથી જવાબ અપાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14096.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Janmya chhie tyanthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14098.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Vatu sambhalie chhie</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '97');
+            localStorage.setItem('lastVisitedVatFile', 'ch14097.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

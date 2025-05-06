@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્યુગમાં અંબરીષની રક્ષા - Satyugma ambarishni raksha</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satyugma ambarishni raksha</h1>
+                <div class="gujarati-title">સત્યુગમાં અંબરીષની રક્ષા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 12</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(12) satyugamāṃ aṃbarīṣanī rakṣā māṭe cakra mūkyuṃ hatuṃ ne āja kaḻiyugamāṃ bhakta kāṃī haśe ? tyāre mahārāje kahyuṃ je, ‘amane cakrano viśrvāsa nathī, rakhene cakra sūī rahe to ? tethī jaṇa jaṇa pratye ‘śikṣāpatrī’ ame āpī che, te ame ja rakṣāmāṃ chīe. māṭe jo ‘śikṣāpatrī’ lopaśe to du:khiyā thāśe.’@ 1 davalā= aḻakhāmaṇā, apriya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(12) સત્યુગમાં અંબરીષની રક્ષા માટે ચક્ર મૂક્યું હતું ને આજ કળિયુગમાં ભક્ત કાંઈ હશે ? ત્યારે મહારાજે કહ્યું જે, ‘અમને ચક્રનો વિશ્ર્વાસ નથી, રખેને ચક્ર સૂઈ રહે તો ? તેથી જણ જણ પ્રત્યે ‘શિક્ષાપત્રી’ અમે આપી છે, તે અમે જ રક્ષામાં છીએ. માટે જો ‘શિક્ષાપત્રી’ લોપશે તો દુ:ખિયા થાશે.’@ 1 દવલા= અળખામણા, અપ્રિય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13011.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shaher sevan ane rupiyama</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13013.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Have badho vahevar thai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '12');
+            localStorage.setItem('lastVisitedVatFile', 'ch13012.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

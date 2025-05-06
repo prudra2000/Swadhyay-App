@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જગતમાં કહે છે જે - Jagatama kahe chhe je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jagatama kahe chhe je</h1>
+                <div class="gujarati-title">જગતમાં કહે છે જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 13</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(13) jagatamāṃ kahe che je, ‘dātaṇa phāṭyāṃ ne pāpa nāṭhyāṃ.’ te jo evuṃ hoya to sutāra to ākhāṃ ne ākhāṃ lākaḍāṃ phāḍī nāṃkhe che tenāṃ ja pāpa ṭaḻe nahi ? je prathāmāṃ raheśe te sāro raheśe ne je prathāmāṃ nahi rahe te game tevo moṭo haśe tenuṃ paṇa kāṃī ṭhekāṇuṃ nahi rahe ne ne nagarā te to kāḍhye ja ṭhīka raheśe. pāna, kerī ne manuṣya te to saṃbhāḻyā ja sārāṃ rahe. niyama pāḻaśe teṭaluṃ sāruṃ rahevāśe ne jevo saṃga tevo raṃga lāgī jāya. te jene rūḍo saṃga tenī rūḍī buddhi thāya, pachī traṇa prakāranā kusaṃganī vāta karī.@ 1 kīḍiyāruṃ= jīvāta paḍī jāya eṭalī hade saḍī javuṃ</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(13) જગતમાં કહે છે જે, ‘દાતણ ફાટ્યાં ને પાપ નાઠ્યાં.’ તે જો એવું હોય તો સુતાર તો આખાં ને આખાં લાકડાં ફાડી નાંખે છે તેનાં જ પાપ ટળે નહિ ? જે પ્રથામાં રહેશે તે સારો રહેશે ને જે પ્રથામાં નહિ રહે તે ગમે તેવો મોટો હશે તેનું પણ કાંઈ ઠેકાણું નહિ રહે ને ને નગરા તે તો કાઢ્યે જ ઠીક રહેશે. પાન, કેરી ને મનુષ્ય તે તો સંભાળ્યા જ સારાં રહે. નિયમ પાળશે તેટલું સારું રહેવાશે ને જેવો સંગ તેવો રંગ લાગી જાય. તે જેને રૂડો સંગ તેની રૂડી બુદ્ધિ થાય, પછી ત્રણ પ્રકારના કુસંગની વાત કરી.@ 1 કીડિયારું= જીવાત પડી જાય એટલી હદે સડી જવું</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16012.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Antar ghat anek bhari</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16014.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bapu shivaramne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '13');
+            localStorage.setItem('lastVisitedVatFile', 'ch16013.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

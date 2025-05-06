@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રજોગુણી તમોગુણીને બુદ્ધિમાં - Rajoguni tamogunine buddhima</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Rajoguni tamogunine buddhima</h1>
+                <div class="gujarati-title">રજોગુણી તમોગુણીને બુદ્ધિમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 114</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(114) rajoguṇī-tamoguṇīne buddhimāṃ samajāya nahi. eka sādhu kahe, ‘brahmānaṃdasvāmī moṭā.’ ne bījo kahe, ‘muktānaṃdasvāmī moṭā.’ ema bolatāṃ bolatāṃ jhīṃjharīne pādara be sādhu vaḍhayā. eka jaṇa cūlo līṃpyā sāru vaḍhyo ne vāsudeviyā ne rādhāramaṇiyā sādhune mahārāje nokhā pāḍyā. eṭale vaḻate divasa vāsudeviyā brāhmaṇa sādhu hatā, temane kūve rādhāramaṇiyāno chāṃṭo ūḍayo eṭale vaḍhyā. te eka divasamāṃ ema thayuṃ ! āgale divasa bheḻā jamyā hatā te bhūlī gayā. māṭe bījī tāṇakheṃca melīne mahārāje kahyuṃ che tema karavuṃ, e pādharuṃ jāṇavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(114) રજોગુણી-તમોગુણીને બુદ્ધિમાં સમજાય નહિ. એક સાધુ કહે, ‘બ્રહ્માનંદસ્વામી મોટા.’ ને બીજો કહે, ‘મુક્તાનંદસ્વામી મોટા.’ એમ બોલતાં બોલતાં ઝીંઝરીને પાદર બે સાધુ વઢયા. એક જણ ચૂલો લીંપ્યા સારુ વઢ્યો ને વાસુદેવિયા ને રાધારમણિયા સાધુને મહારાજે નોખા પાડ્યા. એટલે વળતે દિવસ વાસુદેવિયા બ્રાહ્મણ સાધુ હતા, તેમને કૂવે રાધારમણિયાનો છાંટો ઊડયો એટલે વઢ્યા. તે એક દિવસમાં એમ થયું ! આગલે દિવસ ભેળા જમ્યા હતા તે ભૂલી ગયા. માટે બીજી તાણખેંચ મેલીને મહારાજે કહ્યું છે તેમ કરવું, એ પાધરું જાણવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10113.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetapurne padar bhadarno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10115.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Svarup samajanu hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '114');
+            localStorage.setItem('lastVisitedVatFile', 'ch10114.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

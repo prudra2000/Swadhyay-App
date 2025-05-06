@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મતિ હો મંદ, ખાઈ ખાઈ - Mati ho mand, khai khai</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mati ho mand, khai khai</h1>
+                <div class="gujarati-title">મતિ હો મંદ, ખાઈ ખાઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 283</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(283) ‘mati ho maṃda, khāī khāī dharāīne rahyo, sūī jāgyo tyāre jośe dhana’ e bolyā ne hajī cetīne prabhu bhajī le to sāruṃ che. viśrvabhaṃra che te saunuṃ poṣaṇa kare che te bhūkhyā uṭhāḍe che paṇa bhūkhyā suvāḍatā nathī. te upara lakṣmīnā kapāḻano cokho ḍābalīmāṃ paḍī gayo. te kīḍīe khādho tenī vāta karī. māṭe jeṇe dāṃta dīdhā che te khāvānuṃ āpaśe ne gaḻe pāṇī nahi ūtare tyāre jāṇavuṃ, je have pūruṃ thaī rahyuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(283) ‘મતિ હો મંદ, ખાઈ ખાઈ ધરાઈને રહ્યો, સૂઈ જાગ્યો ત્યારે જોશે ધન’ એ બોલ્યા ને હજી ચેતીને પ્રભુ ભજી લે તો સારું છે. વિશ્ર્વભંર છે તે સૌનું પોષણ કરે છે તે ભૂખ્યા ઉઠાડે છે પણ ભૂખ્યા સુવાડતા નથી. તે ઉપર લક્ષ્મીના કપાળનો ચોખો ડાબલીમાં પડી ગયો. તે કીડીએ ખાધો તેની વાત કરી. માટે જેણે દાંત દીધા છે તે ખાવાનું આપશે ને ગળે પાણી નહિ ઊતરે ત્યારે જાણવું, જે હવે પૂરું થઈ રહ્યું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16282.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Premji sutarne pratham</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16284.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Atalu atalu gnan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '283');
+            localStorage.setItem('lastVisitedVatFile', 'ch16283.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

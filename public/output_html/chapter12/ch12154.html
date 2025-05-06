@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સાધુતા તો વહેવારે  - Sadhuta to vahevare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sadhuta to vahevare</h1>
+                <div class="gujarati-title">સાધુતા તો વહેવારે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 154</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(154) sādhutā to vahevāre kaḻāya. pachī pūchyuṃ je, ‘eka sthiti kema rahe?’ tyāre uttara karyo je, ‘jñāna rahe ne bāḻaka hoya tene koī vaḍhe to paṇa tene kāṃī nahi, tema veṇe karīne tapavuṃ nahi.’ te upara chellānuṃ 9muṃ daravājānuṃ vacanāmṛta vaṃcāvyuṃ ne ‘jeṭalā saṃkalpa ghaṭita hoya te karavā, paṇa aghaṭita na karavā ne thāya to mānavā nahi.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(154) સાધુતા તો વહેવારે કળાય. પછી પૂછ્યું જે, ‘એક સ્થિતિ કેમ રહે?’ ત્યારે ઉત્તર કર્યો જે, ‘જ્ઞાન રહે ને બાળક હોય તેને કોઈ વઢે તો પણ તેને કાંઈ નહિ, તેમ વેણે કરીને તપવું નહિ.’ તે ઉપર છેલ્લાનું 9મું દરવાજાનું વચનામૃત વંચાવ્યું ને ‘જેટલા સંકલ્પ ઘટિત હોય તે કરવા, પણ અઘટિત ન કરવા ને થાય તો માનવા નહિ.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12153.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nishkam, nirlobh, nisvad</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12155.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Netre karine rup manhi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '154');
+            localStorage.setItem('lastVisitedVatFile', 'ch12154.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સગર રાજાના સાઠ  - Sagar rajana sath</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sagar rajana sath</h1>
+                <div class="gujarati-title">સગર રાજાના સાઠ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 228</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(228) sagara rājānā sāṭha (sāṃīṭha) hajāra putrono uddhāra karavā, eka dīkaro thāya pachī tenā vaṃśanā tapa karavā cālī nīkaḻatā. paṇa bhagīratha to kahe, ‘māro vaṃśa rākhavo haśe to bhagavāna rākhaśe.’ ema kahī tapa karavā vahyā gayā. pachī gaṃgājī kahe, ‘huṃ āvuṃ to mārāmāṃ je hoya te āvīne pāpa mūkī jāya, paṇa mārāṃ pāpa koṇa dhove ?’ $(śrīmad bhāgavata : 9/9/6) $artha : eṣaṇā trayane tyāgavāḻā, śānta, brahmaniṣṭha ane lokone pavitra karavāvāḻā (sādhujana) potānā aṃga-saṃgathī tamārā pāpane dūra karī deśe, kāraṇa ke emanāmāṃ pāpa-hārī śrīhari birāje che (rahe che).</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(228) સગર રાજાના સાઠ (સાંઈઠ) હજાર પુત્રોનો ઉદ્ધાર કરવા, એક દીકરો થાય પછી તેના વંશના તપ કરવા ચાલી નીકળતા. પણ ભગીરથ તો કહે, ‘મારો વંશ રાખવો હશે તો ભગવાન રાખશે.’ એમ કહી તપ કરવા વહ્યા ગયા. પછી ગંગાજી કહે, ‘હું આવું તો મારામાં જે હોય તે આવીને પાપ મૂકી જાય, પણ મારાં પાપ કોણ ધોવે ?’ $(શ્રીમદ્ ભાગવત : 9/9/6) $અર્થ : એષણા ત્રયને ત્યાગવાળા, શાન્ત, બ્રહ્મનિષ્ઠ અને લોકોને પવિત્ર કરવાવાળા (સાધુજન) પોતાના અંગ-સંગથી તમારા પાપને દૂર કરી દેશે, કારણ કે એમનામાં પાપ-હારી શ્રીહરિ બિરાજે છે (રહે છે).</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9227.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Damodar amadavadna </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9229.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kam, krodh ave to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '228');
+            localStorage.setItem('lastVisitedVatFile', 'ch9228.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

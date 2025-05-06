@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રભુ ભજવાની તો સૌ  - Prabhu bhajavani to sau</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Prabhu bhajavani to sau</h1>
+                <div class="gujarati-title">પ્રભુ ભજવાની તો સૌ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 415</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(415) prabhu bhajavānī to sau nā pāḍe che. keṭalāka vahālā bhāī che te nā pāḍe, pitarāī nā pāḍe, chokarāṃ, bāyaḍī paṇa nā pāḍe che ne āṃhīṃ āvyā tyāre e kajiyo to badho āḻasī gayo. paṇa īndriyo-aṃta:karaṇa to bheḻāṃ che. teno kajiyo to āhīṃ paṇa che. māṭe īndriyo-aṃta:karaṇano aṃtarāya bahu bhāre che. e to ema ṭharāva kare je evo śabda sāṃbhaḻavo ja nahi, temaja viṣayanuṃ jāṇavuṃ je, indriyono goṭo bheḻo che te jītyā vinā sukha āve nahi. pachī vṛṃdrāvanadāse (vṛṃdāvanadāse) praśrna pūchyo je, aṃta:karaṇarūpa je māmalo te kema jītāya ? tyāre uttara karyo je, dharma, jñānādika cāra ne śūravīrapaṇuṃ hoya to jītāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(415) પ્રભુ ભજવાની તો સૌ ના પાડે છે. કેટલાક વહાલા ભાઈ છે તે ના પાડે, પિતરાઈ ના પાડે, છોકરાં, બાયડી પણ ના પાડે છે ને આંહીં આવ્યા ત્યારે એ કજિયો તો બધો આળસી ગયો. પણ ઈન્દ્રિયો-અંત:કરણ તો ભેળાં છે. તેનો કજિયો તો આહીં પણ છે. માટે ઈન્દ્રિયો-અંત:કરણનો અંતરાય બહુ ભારે છે. એ તો એમ ઠરાવ કરે જે એવો શબ્દ સાંભળવો જ નહિ, તેમજ વિષયનું જાણવું જે, ઇન્દ્રિયોનો ગોટો ભેળો છે તે જીત્યા વિના સુખ આવે નહિ. પછી વૃંદ્રાવનદાસે (વૃંદાવનદાસે) પ્રશ્ર્ન પૂછ્યો જે, અંત:કરણરૂપ જે મામલો તે કેમ જીતાય ? ત્યારે ઉત્તર કર્યો જે, ધર્મ, જ્ઞાનાદિક ચાર ને શૂરવીરપણું હોય તો જીતાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15414.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Svadanu kam pan bhare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15416.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jivnu kamal undhu chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '415');
+            localStorage.setItem('lastVisitedVatFile', 'ch15415.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

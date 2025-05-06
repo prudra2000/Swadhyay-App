@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(18) vahevāra to ṭaḻī jāśe ne rūpiyā jatā raheśe māṭe khabaradāra thaīne prabhu bhajī levā. rūpiyāne mārage cāle to naṃda rājānī peṭhe pācho ja na vaḻe. naṃda rājāe ākhī pṛthvīnuṃ dhana bheḻuṃ karyuṃ. pachī dhana konī pāse che te śodhavā eka ūṃṭa vecavā kāḍhyo. no chokaro kahe, ‘mā mane dokaḍe ūṃṭa vecāya che te laī de.’ tenī mā kahe, ‘dokaḍo nathī.’ chokaro bahu ja rovā lāgyo, tyāre tarakaḍī kahe, ‘tārā dokaḍo laī jā.’ te vātanī naṃda rājāne khabara paḍī, eṭale ghoruṃ badhī khodāvī ne paisā kāḍhī līdhā. naṃda rājā pāse nuṃ hāḍakuṃ hatuṃ, tethī dariyāmāṃ jaīne dravya mūkī āvatā. 1 dokaḍo= rūpiyānā somābhāganī kiṃmatano jūno tāṃbāno muslimakāḻano sikko. $2 tarakaḍī= muslima strī. $3 bāpanī ghoramāṃthī= bāpanī kabaramāṃthī. $4 varāha= paurāṇika mānyatā pramāṇe viṣṇuno trījo avatāra, ḍukkara, suvara. $5 navaghara= mugaṭa-pāgha ke pheṃṭānī jema māthe bāṃdhavānuṃ jariyāna vastra. $6 bhāṭho bharyo= rākhoḍī caḍhela aṃgārā. $7 dhamyuṃ sonuṃ= śuddha sonuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(18) વહેવાર તો ટળી જાશે ને રૂપિયા જતા રહેશે માટે ખબરદાર થઈને પ્રભુ ભજી લેવા. રૂપિયાને મારગે ચાલે તો નંદ રાજાની પેઠે પાછો જ ન વળે. નંદ રાજાએ આખી પૃથ્વીનું ધન ભેળું કર્યું. પછી ધન કોની પાસે છે તે શોધવા એક ઊંટ વેચવા કાઢ્યો. નો છોકરો કહે, ‘મા મને દોકડે ઊંટ વેચાય છે તે લઈ દે.’ તેની મા કહે, ‘દોકડો નથી.’ છોકરો બહુ જ રોવા લાગ્યો, ત્યારે તરકડી કહે, ‘તારા દોકડો લઈ જા.’ તે વાતની નંદ રાજાને ખબર પડી, એટલે ઘોરું બધી ખોદાવી ને પૈસા કાઢી લીધા. નંદ રાજા પાસે નું હાડકું હતું, તેથી દરિયામાં જઈને દ્રવ્ય મૂકી આવતા. 1 દોકડો= રૂપિયાના સોમાભાગની કિંમતનો જૂનો તાંબાનો મુસ્લિમકાળનો સિક્કો. $2 તરકડી= મુસ્લિમ સ્ત્રી. $3 બાપની ઘોરમાંથી= બાપની કબરમાંથી. $4 વરાહ= પૌરાણિક માન્યતા પ્રમાણે વિષ્ણુનો ત્રીજો અવતાર, ડુક્કર, સુવર. $5 નવઘર= મુગટ-પાઘ કે ફેંટાની જેમ માથે બાંધવાનું જરિયાન વસ્ત્ર. $6 ભાઠો ભર્યો= રાખોડી ચઢેલ અંગારા. $7 ધમ્યું સોનું= શુદ્ધ સોનું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

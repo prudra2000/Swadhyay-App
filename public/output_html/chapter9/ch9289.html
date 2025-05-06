@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વચનામૃતની પ્રત  - Vachanamrutni prat</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vachanamrutni prat</h1>
+                <div class="gujarati-title">વચનામૃતની પ્રત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 289</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(289) ‘vacanāmṛta’nī prata maṃḍaḻe maṃḍaḻe thaī ne vaḻī māṇasa māṇasa pratye thāśe paṇa śāṃti nahi thāya. ghoḍe, gāḍe, cele, dharmaśāḻāe, e koī vāte sādhu thayā vinā sukha na thāya; aṃtara to dhagadhagatuṃ rahe, mara paṃḍita hoya to paṇa śāṃti na thāya. samādhi thāya paṇa sādhu thayā vinā sukha na thāya ne samāgama karyā vinā śāṃti na thāya. āma bheḻā besīne vātuṃ karavī te vinā vṛddhi pāmavāno bījo upāya jaṇāto nathī.@ 1 nīṃbhāḍānī peṭhye= kuṃbhāranī bhaṭhṭhīnī jema.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(289) ‘વચનામૃત’ની પ્રત મંડળે મંડળે થઈ ને વળી માણસ માણસ પ્રત્યે થાશે પણ શાંતિ નહિ થાય. ઘોડે, ગાડે, ચેલે, ધર્મશાળાએ, એ કોઈ વાતે સાધુ થયા વિના સુખ ન થાય; અંતર તો ધગધગતું રહે, મર પંડિત હોય તો પણ શાંતિ ન થાય. સમાધિ થાય પણ સાધુ થયા વિના સુખ ન થાય ને સમાગમ કર્યા વિના શાંતિ ન થાય. આમ ભેળા બેસીને વાતું કરવી તે વિના વૃદ્ધિ પામવાનો બીજો ઉપાય જણાતો નથી.@ 1 નીંભાડાની પેઠ્યે= કુંભારની ભઠ્ઠીની જેમ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9288.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maya chhe te nakni</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9290.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Rajoguni hoy ne </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '289');
+            localStorage.setItem('lastVisitedVatFile', 'ch9289.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

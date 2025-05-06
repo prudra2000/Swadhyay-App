@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજ છતાં રામપ્રતાપભાઈ - Maharaj chhata ramapratapabhai</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaj chhata ramapratapabhai</h1>
+                <div class="gujarati-title">મહારાજ છતાં રામપ્રતાપભાઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 119</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(119) mahārāja chatāṃ rāmapratāpabhāī be vakhata dvārakā gayā hatā ne pachī pharīthī dvārakā javā jūnāgaḍha āvyā tyāre ame kahyuṃ ke, ‘kyāṃ jāva cho ?’ tyāre kahe, ‘raṇachoḍa trikamarāya kā darśana karanekuṃ jātā hai.’ pachī ame kahyuṃ ke, ‘āṃhīṃ tamane darśana thāya to ?’ tyāre kahe, ‘taba to bahota acchā!’ pachī rāte mūrtimāna dvārakāmāṃ je mūrtio che temanāṃ rāmapratāpabhāīne darśana thayāṃ. tethī savāre amane kahe ke, ‘hamakuṃ darśana ho gayā!’ pachī ame kahyuṃ ke, ‘āpaṇe tyāṃ badhuṃya che. śuṃ kāma bīje doḍavuṃ paḍe che ? jene pragaṭa bhagavānanī niṣṭhā nathī, te bīje jāya. svāminārāyaṇa sarvoparī puruṣottamanārāyaṇa āpaṇane maḻyā che, ane bījā anaṃta pradhānapuruṣa ne anaṃta avatāro svāminārāyaṇanuṃ āpyuṃ aiśrvarya bhogave che !’ tyāre amane rāmapratāpabhāī kahe, ‘esā mahimā ghanaśyāma kā aba samajyā !’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(119) મહારાજ છતાં રામપ્રતાપભાઈ બે વખત દ્વારકા ગયા હતા ને પછી ફરીથી દ્વારકા જવા જૂનાગઢ આવ્યા ત્યારે અમે કહ્યું કે, ‘ક્યાં જાવ છો ?’ ત્યારે કહે, ‘રણછોડ ત્રિકમરાય કા દર્શન કરનેકું જાતા હૈ.’ પછી અમે કહ્યું કે, ‘આંહીં તમને દર્શન થાય તો ?’ ત્યારે કહે, ‘તબ તો બહોત અચ્છા!’ પછી રાતે મૂર્તિમાન દ્વારકામાં જે મૂર્તિઓ છે તેમનાં રામપ્રતાપભાઈને દર્શન થયાં. તેથી સવારે અમને કહે કે, ‘હમકું દર્શન હો ગયા!’ પછી અમે કહ્યું કે, ‘આપણે ત્યાં બધુંય છે. શું કામ બીજે દોડવું પડે છે ? જેને પ્રગટ ભગવાનની નિષ્ઠા નથી, તે બીજે જાય. સ્વામિનારાયણ સર્વોપરી પુરુષોત્તમનારાયણ આપણને મળ્યા છે, અને બીજા અનંત પ્રધાનપુરુષ ને અનંત અવતારો સ્વામિનારાયણનું આપ્યું ઐશ્ર્વર્ય ભોગવે છે !’ ત્યારે અમને રામપ્રતાપભાઈ કહે, ‘એસા મહિમા ઘનશ્યામ કા અબ સમજ્યા !’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11118.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Panchalama Maharaje amara</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11120.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gopalanandswamina kahevathi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '119');
+            localStorage.setItem('lastVisitedVatFile', 'ch11119.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

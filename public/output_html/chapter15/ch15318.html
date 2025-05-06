@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંસાર મૂકીને આંહી આવે  - Sansar mukine anhi ave</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sansar mukine anhi ave</h1>
+                <div class="gujarati-title">સંસાર મૂકીને આંહી આવે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 318</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(318) saṃsāra mūkīne āṃhī āve che ne kajiyā thātā nathī. e to acaraja vāta che. ā satsaṃga maḻyo che te paṇa kāṃīka puṇya che, te jema khetara sāmuṃ jue to dāṇānāṃ gāḍāṃ ghera āve nahi. tema satsaṃgamāṃ āvyā vinā satsaṃga na thāya. koī vāta āve tyāre moṭerāne pūchavuṃ ne tenuṃ mānavuṃ, ne na māne to khīlīnā jevuṃ thāya. te śuṃ je, paṃca mā-bāpa, paṃca parameraśrvara, paṃca kare te sahī, paṇa mārī khīlī na khase.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(318) સંસાર મૂકીને આંહી આવે છે ને કજિયા થાતા નથી. એ તો અચરજ વાત છે. આ સત્સંગ મળ્યો છે તે પણ કાંઈક પુણ્ય છે, તે જેમ ખેતર સામું જુએ તો દાણાનાં ગાડાં ઘેર આવે નહિ. તેમ સત્સંગમાં આવ્યા વિના સત્સંગ ન થાય. કોઈ વાત આવે ત્યારે મોટેરાને પૂછવું ને તેનું માનવું, ને ન માને તો ખીલીના જેવું થાય. તે શું જે, પંચ મા-બાપ, પંચ પરમેરશ્ર્વર, પંચ કરે તે સહી, પણ મારી ખીલી ન ખસે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15317.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bajaro bhelo karavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15319.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sarvne prarabdh pramane rahe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '318');
+            localStorage.setItem('lastVisitedVatFile', 'ch15318.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

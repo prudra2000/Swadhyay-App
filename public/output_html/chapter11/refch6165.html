@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(165) je divasa te divasa sādhuthī ja mokṣa thāya che, ne jñāna āve che, ne je divasa kāṃīka thayuṃ haśe te paṇa tethī ja thayuṃ che ne thāśe te paṇa tethī ja thāśe. māṭe mokṣanāṃ dvāra ja ā saṃta che; te ā caitanyānaṃdasvāmī ḍholo, khādhānāṃ, vastra ne padārtha pāra vagaranāṃ rākhatā tenuṃ koīthī kahevāṇuṃ nahīṃ. mahārāje eka vāra kahyuṃ hatuṃ te sāru maravā taiyāra thayā hatā. ne śrījīmahārāja āgaḻa koīne padārtha mūkavuṃ hoya to te āgaḻathī potā pāse lāve, tyāra pachī mahārāja pāse mūkavā javāya evuṃ hatuṃ; paṇa bāḻamukuṃdānaṃdasvāmīe ne gopāḻānaṃdasvāmīe vātuṃ karī, tyāre sarveno tyāga karīne paṃgatamāṃ roṭalā khāya ne hātha joḍīne bole, evuṃ sādhu vate thayuṃ. te sabhāmāṃ bolyā je, ‘bāra varasa sadguru ne bāra varasa guru rahyo paṇa satsaṃgī to āja thayo.’ ne ghanaśyāmadāsane to meṃ evī vātuṃ karī je, svabhāvamātra kāḍhī nākhyā; te mahārāja bheḻā paṇa ghoḍā vagara na cālatā ne lūgaḍāṃ ādika padārthanuṃ paṇa tema ja hatuṃ. te have sādhu thaī gayā, ema thāya che; māṭe āvā sāthe jīva bāṃdhavo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૬૫) જે દિવસ તે દિવસ સાધુથી જ મોક્ષ થાય છે, ને જ્ઞાન આવે છે, ને જે દિવસ કાંઈક થયું હશે તે પણ તેથી જ થયું છે ને થાશે તે પણ તેથી જ થાશે. માટે મોક્ષનાં દ્વાર જ આ સંત છે; તે આ ચૈતન્યાનંદસ્વામી ઢોલો, ખાધાનાં, વસ્ત્ર ને પદાર્થ પાર વગરનાં રાખતા તેનું કોઈથી કહેવાણું નહીં. મહારાજે એક વાર કહ્યું હતું તે સારુ મરવા તૈયાર થયા હતા. ને શ્રીજીમહારાજ આગળ કોઈને પદાર્થ મૂકવું હોય તો તે આગળથી પોતા પાસે લાવે, ત્યાર પછી મહારાજ પાસે મૂકવા જવાય એવું હતું; પણ બાળમુકુંદાનંદસ્વામીએ ને ગોપાળાનંદસ્વામીએ વાતું કરી, ત્યારે સર્વેનો ત્યાગ કરીને પંગતમાં રોટલા ખાય ને હાથ જોડીને બોલે, એવું સાધુ વતે થયું. તે સભામાં બોલ્યા જે, ‘બાર વરસ સદ્ગુરુ ને બાર વરસ ગુરુ રહ્યો પણ સત્સંગી તો આજ થયો.’ ને ઘનશ્યામદાસને તો મેં એવી વાતું કરી જે, સ્વભાવમાત્ર કાઢી નાખ્યા; તે મહારાજ ભેળા પણ ઘોડા વગર ન ચાલતા ને લૂગડાં આદિક પદાર્થનું પણ તેમ જ હતું. તે હવે સાધુ થઈ ગયા, એમ થાય છે; માટે આવા સાથે જીવ બાંધવો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

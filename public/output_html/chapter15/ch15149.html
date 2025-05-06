@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સર્વ વાતુંનું એમ સિદ્ધાંત  - Sarv vatunu em siddhant</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarv vatunu em siddhant</h1>
+                <div class="gujarati-title">સર્વ વાતુંનું એમ સિદ્ધાંત </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 149</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(149) sarva vātuṃnuṃ ema siddhāṃta che je, sādhutāmāṃ jevuṃ sukha che tevuṃ bīje kyāṃī nathī, paṇa je jñānī hoya tenā jāṇyāmāṃ āve ne jema phūla che te toḍanāranā hāthane paṇa sugaṃdha āpe che. tema sādhu che, te potāne pīḍe toya pīḍanāranuṃ paṇa hita ja kare che. te jīvaṇā khumāṇanī vāta karī ne bolyā je, ema sādhune to pīḍe toya tenuṃ sāruṃ kare; evā ā sādhu che. māṭe sādhutāmāṃ sukha che evuṃ māṃ nathī. mora verāgīo māratā te paṇa sahana karatā.@ khalatā= dhūrtatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(149) સર્વ વાતુંનું એમ સિદ્ધાંત છે જે, સાધુતામાં જેવું સુખ છે તેવું બીજે ક્યાંઈ નથી, પણ જે જ્ઞાની હોય તેના જાણ્યામાં આવે ને જેમ ફૂલ છે તે તોડનારના હાથને પણ સુગંધ આપે છે. તેમ સાધુ છે, તે પોતાને પીડે તોય પીડનારનું પણ હિત જ કરે છે. તે જીવણા ખુમાણની વાત કરી ને બોલ્યા જે, એમ સાધુને તો પીડે તોય તેનું સારું કરે; એવા આ સાધુ છે. માટે સાધુતામાં સુખ છે એવું માં નથી. મોર વેરાગીઓ મારતા તે પણ સહન કરતા.@ ખલતા= ધૂર્તતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15148.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa sadhuna samagamthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15150.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gnananshnu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '149');
+            localStorage.setItem('lastVisitedVatFile', 'ch15149.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

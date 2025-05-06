@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જોગેશ્ર્વરદાસજી આગળ  - Jogeshrvardasaji agala</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jogeshrvardasaji agala</h1>
+                <div class="gujarati-title">જોગેશ્ર્વરદાસજી આગળ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 59</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(59) jogeśrvaradāsajī āgaḻa vāta karī je, mahārājano svabhāva evo hato je koī māṃdu hoya to tene pote jovā jāya ne te śūravīrapaṇāmāṃthī javāba de to mahārājane heta thāya ne karagare ne roto roto javāba de to na gamatuṃ. māṭe stuti karavī te paṇa śūravīrapaṇāmāṃthī karavī paṇa kāyarapaṇe na karavī ne jīva to śūravīra te bakarā hoya te paṇa vaḍhe che tyāre śūravīra thāya che ne manuṣya paraspara laḍe che tyāre śūravīra thāya che. tyāre bhagavānanī stuti karatāṃ śūravīra kema na thāvuṃ ?@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(59) જોગેશ્ર્વરદાસજી આગળ વાત કરી જે, મહારાજનો સ્વભાવ એવો હતો જે કોઈ માંદુ હોય તો તેને પોતે જોવા જાય ને તે શૂરવીરપણામાંથી જવાબ દે તો મહારાજને હેત થાય ને કરગરે ને રોતો રોતો જવાબ દે તો ન ગમતું. માટે સ્તુતિ કરવી તે પણ શૂરવીરપણામાંથી કરવી પણ કાયરપણે ન કરવી ને જીવ તો શૂરવીર તે બકરા હોય તે પણ વઢે છે ત્યારે શૂરવીર થાય છે ને મનુષ્ય પરસ્પર લડે છે ત્યારે શૂરવીર થાય છે. ત્યારે ભગવાનની સ્તુતિ કરતાં શૂરવીર કેમ ન થાવું ?@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16058.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Parichay hoy teni</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16060.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kusangino sang n karavo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '59');
+            localStorage.setItem('lastVisitedVatFile', 'ch16059.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

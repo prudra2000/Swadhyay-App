@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બજારમાં ને પાડોશમાં - Bajarma ne padoshma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bajarma ne padoshma</h1>
+                <div class="gujarati-title">બજારમાં ને પાડોશમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 73</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(73) bajāramāṃ ne pāḍośamāṃ viṣayanā ḍhola vāge che te sācavavuṃ, nīkara nāka kapāī jāśe. olyā keśodavāḻāne sāṭha hajāra korī daṃḍa bharavo paḍyo. tenī sāṭha bāyaḍī thaī, te eka karī hota to dharma na lopāta. māṭe dharma lopye āma thāya che; māṭe dharma rākhīne prabhu bhajavā ane moṭo annakūṭa karyo tyāre bhaktimātāe pratyakṣa darśana āpyāṃ. tyāre bāīo kahe, ‘mahārāja ! ā bhaktimātā āvyāṃ che.’ tyāre kahe, “rākho, ne jāo pūcho je, raheśo?” pachī ema kahyuṃ eṭale kahe, ‘huṃ to pativratā chuṃ, te jo dharma rākho to huṃ rahuṃ.’ pachī mahārāja kahe, “jo dharma rākhaśo to bhakti raheśe.” māṭe āpaṇe paṇa sau tyāgī-gṛhastha jo dharma rākhaśuṃ to bhakti raheśe; ema siddhāṃta che. ‘</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૭૩) બજારમાં ને પાડોશમાં વિષયના ઢોલ વાગે છે તે સાચવવું, નીકર નાક કપાઈ જાશે. ઓલ્યા કેશોદવાળાને સાઠ હજાર કોરી દંડ ભરવો પડ્યો. તેની સાઠ બાયડી થઈ, તે એક કરી હોત તો ધર્મ ન લોપાત. માટે ધર્મ લોપ્યે આમ થાય છે; માટે ધર્મ રાખીને પ્રભુ ભજવા અને મોટો અન્નકૂટ કર્યો ત્યારે ભક્તિમાતાએ પ્રત્યક્ષ દર્શન આપ્યાં. ત્યારે બાઈઓ કહે, ‘મહારાજ ! આ ભક્તિમાતા આવ્યાં છે.’ ત્યારે કહે, “રાખો, ને જાઓ પૂછો જે, રહેશો?” પછી એમ કહ્યું એટલે કહે, ‘હું તો પતિવ્રતા છું, તે જો ધર્મ રાખો તો હું રહું.’ પછી મહારાજ કહે, “જો ધર્મ રાખશો તો ભક્તિ રહેશે.” માટે આપણે પણ સૌ ત્યાગી-ગૃહસ્થ જો ધર્મ રાખશું તો ભક્તિ રહેશે; એમ સિદ્ધાંત છે. ‘</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6072.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Amadavadma ek eshi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6074.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ekaliyani pan kalakhario</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '73');
+            localStorage.setItem('lastVisitedVatFile', 'ch6073.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

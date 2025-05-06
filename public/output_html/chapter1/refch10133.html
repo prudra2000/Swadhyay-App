@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(133) kuṃtājī du:kha māṃga ke līno, ehī bhakta kī rītive; $viṣaya ānaṃda na lahe supana meṃ jāhī prabhupada prītive. $(pāṃḍava gītā : 52) $artha :- he kṛṣṇa, māro cittarūpī mānasahaṃsa āje ja āpanā śrīcaraṇakamaḻarūpī pāṃjarāmāṃ pūrāī jāo, paṇa jyāre ā śarīranā prāṇanā prayāṇa samaye kapha, vāta ane pittathī gherāīne kaṃṭha ruṃdhāī jaśe tyāre āpanuṃ smaraṇa kyāṃthī thaī śakaśe ? $</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(133) કુંતાજી દુ:ખ માંગ કે લીનો, એહી ભક્ત કી રીતિવે; $વિષય આનંદ ન લહે સુપન મેં જાહી પ્રભુપદ પ્રીતિવે. $(પાંડવ ગીતા : 52) $અર્થ :- હે કૃષ્ણ, મારો ચિત્તરૂપી માનસહંસ આજે જ આપના શ્રીચરણકમળરૂપી પાંજરામાં પૂરાઈ જાઓ, પણ જ્યારે આ શરીરના પ્રાણના પ્રયાણ સમયે કફ, વાત અને પિત્તથી ઘેરાઈને કંઠ રુંધાઈ જશે ત્યારે આપનું સ્મરણ ક્યાંથી થઈ શકશે ? $</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

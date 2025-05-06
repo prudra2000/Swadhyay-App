@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવને તો ખાવું ને સ્ત્રી  - Jivne to khavu ne stri</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivne to khavu ne stri</h1>
+                <div class="gujarati-title">જીવને તો ખાવું ને સ્ત્રી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 51</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(51) jīvane to khāvuṃ ne strī e be vātanuṃ sadāya ālocana thāya che ne bhagavāna to game ja nahi. alaiyokhācara vāto karavā maṃḍyā ne cāraṇane vāta karavāno vakhata maḻyo ja nahi tethī khījīne taḻāvanī pāḻe khāṭalo laīne sūvā gayo. jīvanā svabhāva to evā avaḻā che. anaṃta du:kha bhogave che paṇa satsaṃga karavānuṃ kene sūjhe ? ne janma-maraṇanā du:khane jāṇe to prabhu bhajāya. ā manuṣya deha maḻyo che ne ne moṭā saṃta che tene to e vātano bahu kharakharo rahe che.@ 1 ḍuṃgaḻī, mūḻānāṃ pāḍamāṃ khoī nāṃkhe che.= vyartha khoī nāṃkhe che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(51) જીવને તો ખાવું ને સ્ત્રી એ બે વાતનું સદાય આલોચન થાય છે ને ભગવાન તો ગમે જ નહિ. અલૈયોખાચર વાતો કરવા મંડ્યા ને ચારણને વાત કરવાનો વખત મળ્યો જ નહિ તેથી ખીજીને તળાવની પાળે ખાટલો લઈને સૂવા ગયો. જીવના સ્વભાવ તો એવા અવળા છે. અનંત દુ:ખ ભોગવે છે પણ સત્સંગ કરવાનું કેને સૂઝે ? ને જન્મ-મરણના દુ:ખને જાણે તો પ્રભુ ભજાય. આ મનુષ્ય દેહ મળ્યો છે ને ને મોટા સંત છે તેને તો એ વાતનો બહુ ખરખરો રહે છે.@ 1 ડુંગળી, મૂળાનાં પાડમાં ખોઈ નાંખે છે.= વ્યર્થ ખોઈ નાંખે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15050.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mayana jiv chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15052.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Adharm sarg jenama</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '51');
+            localStorage.setItem('lastVisitedVatFile', 'ch15051.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

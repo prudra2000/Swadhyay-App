@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવનો સ્વભાવ એવો - Jivno swabhav evo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jivno swabhav evo</h1>
+                <div class="gujarati-title">જીવનો સ્વભાવ એવો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 167</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(167) jīvano svabhāva evo che je kāṃī ramūja hoya ke navīna jevuṃ hoya te sāṃbhaḻyāmāṃ ne jovāmāṃ prīti varate ne nagaramāṃ koīka janāvara āvyuṃ, te vīsa vīsa gāuthī māṇasa jovā āvyāṃ ne ā gāmamāṃ geṃḍu āvyuṃ che tene jovā māṇasa ūbhāṃ ja che. ḍāhyo hoya tene bhagavānanāṃ janma, karma gāīne ja divasa kāḍhavā. kathāvārtā vinā to bhagavānamāṃ joḍāto joḍāto viṣayamāṃ joḍāī jāya, evo jīvano svabhāva che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(167) જીવનો સ્વભાવ એવો છે જે કાંઈ રમૂજ હોય કે નવીન જેવું હોય તે સાંભળ્યામાં ને જોવામાં પ્રીતિ વરતે ને નગરમાં કોઈક જનાવર આવ્યું, તે વીસ વીસ ગાઉથી માણસ જોવા આવ્યાં ને આ ગામમાં ગેંડુ આવ્યું છે તેને જોવા માણસ ઊભાં જ છે. ડાહ્યો હોય તેને ભગવાનનાં જન્મ, કર્મ ગાઈને જ દિવસ કાઢવા. કથાવાર્તા વિના તો ભગવાનમાં જોડાતો જોડાતો વિષયમાં જોડાઈ જાય, એવો જીવનો સ્વભાવ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14166.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vahevar karavo ne te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14168.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ekalashrungino bap</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '167');
+            localStorage.setItem('lastVisitedVatFile', 'ch14167.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

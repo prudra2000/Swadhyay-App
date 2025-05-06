@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જૂનાગઢનું મંદિર  - Aa junagadhnu mandir</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa junagadhnu mandir</h1>
+                <div class="gujarati-title">આ જૂનાગઢનું મંદિર </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 6</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha sudi bījane divase svāmīe deśakāḻanī bahu vāta karī je, $(6) ā jūnāgaḍhanuṃ maṃdira koīne thāvā devuṃ nahotuṃ paṇa thayuṃ. kema je, karyuṃ eka mahārājanuṃ ja thāya che te upara vāta karī je, mahārājane māravā kālidatta āvyo hato paṇa pote ja marāyo tathā vaḍodarānā dīvāna viṭhubāne ema je, svāminārāyaṇane māravā tathā lājahīṇa karavā paṇa mahārāje aiśrvarya vāparyuṃ je śiyāḻo hato chatāṃ traṇa divasa ne traṇa rāta megha varasāvyo te koī bahāra nīsarī śakyuṃ ja nahīṃ. viṭhubā vyabhicārī hato tethī potānā avaḻā kṛtyathī bhūṃḍī rīte pote ja māryo gayo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ સુદિ બીજને દિવસે સ્વામીએ દેશકાળની બહુ વાત કરી જે, $(6) આ જૂનાગઢનું મંદિર કોઈને થાવા દેવું નહોતું પણ થયું. કેમ જે, કર્યું એક મહારાજનું જ થાય છે તે ઉપર વાત કરી જે, મહારાજને મારવા કાલિદત્ત આવ્યો હતો પણ પોતે જ મરાયો તથા વડોદરાના દીવાન વિઠુબાને એમ જે, સ્વામિનારાયણને મારવા તથા લાજહીણ કરવા પણ મહારાજે ઐશ્ર્વર્ય વાપર્યું જે શિયાળો હતો છતાં ત્રણ દિવસ ને ત્રણ રાત મેઘ વરસાવ્યો તે કોઈ બહાર નીસરી શક્યું જ નહીં. વિઠુબા વ્યભિચારી હતો તેથી પોતાના અવળા કૃત્યથી ભૂંડી રીતે પોતે જ માર્યો ગયો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11005.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gyananandaswamine zolima</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11007.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nivruttinu sthanak hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '6');
+            localStorage.setItem('lastVisitedVatFile', 'ch11006.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

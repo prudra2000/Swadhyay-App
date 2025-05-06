@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઉત્તમ ભોગની રુચિ - Uttam bhogni ruchi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Uttam bhogni ruchi</h1>
+                <div class="gujarati-title">ઉત્તમ ભોગની રુચિ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 135</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(135) uttama bhoganī ruci sarvene che. te upara gopīcaṃda ane bharatharī laḍyā tenī vāta karī je, beya jaṇa saṃsāra mūkīne parameśrvara bhajavā cālī nīkaḻela te pharatāṃ pharatāṃ eka gāmamāṃ beya jaṇa bheḻā thayā; paṇa koī koīne oḻakhe nahi. te vāṇiyānā āsana karīne eka beṭhela. tyāṃ bījo āvyo tene kahe je, ‘āṃhīṃ māruṃ āsana kālanuṃ che.’ tyāre olyo kahe je, ‘nahi ūṭhuṃ.’ temāṃthī laḍyā. tyāṃ eka ḍośī nīkaḻī, teṇe kahyuṃ je, ‘tyāgī thaīne śuṃ laḍo cho ? dhanya che gopīcaṃda tathā bharatharīne ! jeṇe rājya mūkyāṃ ne ā tame āsana sāruṃ śuṃ kajiyā karo cho ?’ te ekabījāne oḻakhe nahi, paṇa manamāṃ samajī gayā. pachī kahe je, ‘āvo, tame āṃhīṃ āsana karo.’ tyāre kahe, ‘nā, have tame bhale rahyā.’@ 1 hāṭane oṭe= dukānane oṭale.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(135) ઉત્તમ ભોગની રુચિ સર્વેને છે. તે ઉપર ગોપીચંદ અને ભરથરી લડ્યા તેની વાત કરી જે, બેય જણ સંસાર મૂકીને પરમેશ્ર્વર ભજવા ચાલી નીકળેલ તે ફરતાં ફરતાં એક ગામમાં બેય જણ ભેળા થયા; પણ કોઈ કોઈને ઓળખે નહિ. તે વાણિયાના આસન કરીને એક બેઠેલ. ત્યાં બીજો આવ્યો તેને કહે જે, ‘આંહીં મારું આસન કાલનું છે.’ ત્યારે ઓલ્યો કહે જે, ‘નહિ ઊઠું.’ તેમાંથી લડ્યા. ત્યાં એક ડોશી નીકળી, તેણે કહ્યું જે, ‘ત્યાગી થઈને શું લડો છો ? ધન્ય છે ગોપીચંદ તથા ભરથરીને ! જેણે રાજ્ય મૂક્યાં ને આ તમે આસન સારું શું કજિયા કરો છો ?’ તે એકબીજાને ઓળખે નહિ, પણ મનમાં સમજી ગયા. પછી કહે જે, ‘આવો, તમે આંહીં આસન કરો.’ ત્યારે કહે, ‘ના, હવે તમે ભલે રહ્યા.’@ 1 હાટને ઓટે= દુકાનને ઓટલે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12134.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje apanne saral</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12136.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kalo baliyan balinan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '135');
+            localStorage.setItem('lastVisitedVatFile', 'ch12135.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

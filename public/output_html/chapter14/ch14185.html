@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઈ કહે છે મને કામ - Koi kahe chhe mane kam</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Koi kahe chhe mane kam</h1>
+                <div class="gujarati-title">કોઈ કહે છે મને કામ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 185</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(185) koī kahe che mane kāma pīḍe che, koī kahe che mane lobha pīḍe che, koī kahe che mane māna pīḍe che, koī kahe che mane svāda pīḍe che; paṇa tene ghaṭāḍavāno upāya koī karatuṃ nathī; paṇa vadhāravāno upāya to kare che kharā. jema khetīvāḻā maṃḍyā che tema kyāṃ maṃḍyā chīe ? ā to be māḻā pheravī nākhī ne ā beṭhā. ema e kāma kyāṃ thāya evuṃ che ? māṭe bhagavānamāṃ akhaṃḍa vṛtti rākhavī khādhāno saṃkalpa thāvā devo nahi. nāsikāgra vṛtti rākhavī ne kāmādika pāṃca doṣa ṭāḻyāno upāya karavo. jīva, mananuṃ ne indriyuṃnuṃ gamatuṃ karīne pachī prabhu bhaje che. ema, 1 lokaiṣaṇā= jagatamāṃ śreṣṭha/pratiṣṭhita gaṇāvānī icchā. $2 vitteṣaṇā= dhana-saṃpatti meḻavavānī icchā. $3 putraiṣaṇā= putra ke putro thavānī icchā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(185) કોઈ કહે છે મને કામ પીડે છે, કોઈ કહે છે મને લોભ પીડે છે, કોઈ કહે છે મને માન પીડે છે, કોઈ કહે છે મને સ્વાદ પીડે છે; પણ તેને ઘટાડવાનો ઉપાય કોઈ કરતું નથી; પણ વધારવાનો ઉપાય તો કરે છે ખરા. જેમ ખેતીવાળા મંડ્યા છે તેમ ક્યાં મંડ્યા છીએ ? આ તો બે માળા ફેરવી નાખી ને આ બેઠા. એમ એ કામ ક્યાં થાય એવું છે ? માટે ભગવાનમાં અખંડ વૃત્તિ રાખવી ખાધાનો સંકલ્પ થાવા દેવો નહિ. નાસિકાગ્ર વૃત્તિ રાખવી ને કામાદિક પાંચ દોષ ટાળ્યાનો ઉપાય કરવો. જીવ, મનનું ને ઇન્દ્રિયુંનું ગમતું કરીને પછી પ્રભુ ભજે છે. એમ, 1 લોકૈષણા= જગતમાં શ્રેષ્ઠ/પ્રતિષ્ઠિત ગણાવાની ઇચ્છા. $2 વિત્તેષણા= ધન-સંપત્તિ મેળવવાની ઇચ્છા. $3 પુત્રૈષણા= પુત્ર કે પુત્રો થવાની ઇચ્છા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14184.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vahevarama, sambandhima</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14186.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aakrutichitichapalyarahita</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '185');
+            localStorage.setItem('lastVisitedVatFile', 'ch14185.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

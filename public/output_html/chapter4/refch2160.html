@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(160) eka to ākhā divasamāṃ ākho ūbho kare ne eka to te koṭamāṃ eka kāṃkarī nākhe te paḍī jāya, e bemāṃ aṃte caṇanāro thākaśe. tenuṃ siddhāṃta je, ākho divasa vahevāra kare ne eka ghaḍī satpuruṣanī vātuṃ sāṃbhaḻe to tethī sarve khoṭuṃ thaī jāya. (juo prakaraṇa 4nī vāta 4)@ 1 koṭa caṇīne= killānī dīvāla caṇīne.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(160) એક તો આખા દિવસમાં આખો ઊભો કરે ને એક તો તે કોટમાં એક કાંકરી નાખે તે પડી જાય, એ બેમાં અંતે ચણનારો થાકશે. તેનું સિદ્ધાંત જે, આખો દિવસ વહેવાર કરે ને એક ઘડી સત્પુરુષની વાતું સાંભળે તો તેથી સર્વે ખોટું થઈ જાય. (જુઓ પ્રકરણ 4ની વાત 4)@ 1 કોટ ચણીને= કિલ્લાની દીવાલ ચણીને.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પૃથુ રાજાએ કહ્યું જે - Pruthu rajae kahyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pruthu rajae kahyu je</h1>
+                <div class="gujarati-title">પૃથુ રાજાએ કહ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 247</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(247) pṛthu rājāe kahyuṃ je, ‘mārā dhanuṣa thakī nīsaryāṃ je bāṇa teṇe karīne tane mārīne mārā sāmarthye karīne ā sarva jagatane dhāravāne huṃ samartha chuṃ.’ temāṃ śuṃ kahyuṃ ? je, ‘jema śeṭhane baḻe vāṇotara ciṭhṭhī lakhe tema bhagavānane baḻe bhagavānanā parama ekāṃtika bhaktamāṃ evuṃ baḻa hoya.’ viṣayanā khaṃḍana sāru maṃdirano droha karaśe ke, avaḻo cālaśe teno jīva baḻī jāśe. amāre koī pāse svārtha nathī, sevāno paṇa svārtha nathī, paṇa parameśrvaranā bhakta che tenī sevā to karavī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(247) પૃથુ રાજાએ કહ્યું જે, ‘મારા ધનુષ થકી નીસર્યાં જે બાણ તેણે કરીને તને મારીને મારા સામર્થ્યે કરીને આ સર્વ જગતને ધારવાને હું સમર્થ છું.’ તેમાં શું કહ્યું ? જે, ‘જેમ શેઠને બળે વાણોતર ચિઠ્ઠી લખે તેમ ભગવાનને બળે ભગવાનના પરમ એકાંતિક ભક્તમાં એવું બળ હોય.’ વિષયના ખંડન સારુ મંદિરનો દ્રોહ કરશે કે, અવળો ચાલશે તેનો જીવ બળી જાશે. અમારે કોઈ પાસે સ્વાર્થ નથી, સેવાનો પણ સ્વાર્થ નથી, પણ પરમેશ્ર્વરના ભક્ત છે તેની સેવા તો કરવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10246.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Game etala gota valie </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10248.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kusangma koi vyabhicharanu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '247');
+            localStorage.setItem('lastVisitedVatFile', 'ch10247.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એકાગ્ર થઈને જોડાવું  - Ekagr thaine jodavu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ekagr thaine jodavu</h1>
+                <div class="gujarati-title">એકાગ્ર થઈને જોડાવું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 100</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(100) ekāgra thaīne joḍāvuṃ te to ākāśamāṃ ūḍyā jevuṃ kaṭhaṇa che. āṃkha-kāna ādika sarve indriyuṃ bhagavānamāṃ joḍī melavī. āja to gṛhastha paṇa ghaṇākharā aṃbarīṣa jevā che. juone, pakṣī māḻo mūkī śakatāṃ nathī ne ā sarve ghara mūkīne āṃhīṃ beṭhā bhajana kare che māṭe aṃbarīṣathī ochā nathī. sarve harijana maṃdiramāṃ dāṇā nākhavā āvyā ne hājo mera to vīṃṭī laīne āvyo ne gopāḻānaṃdasvāmīne āpī. pachī thayo, tyāre māṃḍamāṃḍa pāchī rākhī. bhagavānano mahimā apāra che, paṇa te to jevuṃ jenī cāṃcamāṃ baḻa te pramāṇe pāṇī pīe; māṭe māṃhī rahīne prabhu bhajī levā. kharekharā ḍāhyā hoya, ne kharekharā bhakta hoya, tene bhagavānanī mūrtinī keḍe pharatā rahevuṃ; vahevāra gauṇa karavo ne bhagavāna mukhya karavā.@ 1 paṃcāṇavā kāḻamāṃ = paṃcāṇuṃnī sālamāṃ $2 sagāḻa= sukāḻa</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(100) એકાગ્ર થઈને જોડાવું તે તો આકાશમાં ઊડ્યા જેવું કઠણ છે. આંખ-કાન આદિક સર્વે ઇન્દ્રિયું ભગવાનમાં જોડી મેલવી. આજ તો ગૃહસ્થ પણ ઘણાખરા અંબરીષ જેવા છે. જુઓને, પક્ષી માળો મૂકી શકતાં નથી ને આ સર્વે ઘર મૂકીને આંહીં બેઠા ભજન કરે છે માટે અંબરીષથી ઓછા નથી. સર્વે હરિજન મંદિરમાં દાણા નાખવા આવ્યા ને હાજો મેર તો વીંટી લઈને આવ્યો ને ગોપાળાનંદસ્વામીને આપી. પછી થયો, ત્યારે માંડમાંડ પાછી રાખી. ભગવાનનો મહિમા અપાર છે, પણ તે તો જેવું જેની ચાંચમાં બળ તે પ્રમાણે પાણી પીએ; માટે માંહી રહીને પ્રભુ ભજી લેવા. ખરેખરા ડાહ્યા હોય, ને ખરેખરા ભક્ત હોય, તેને ભગવાનની મૂર્તિની કેડે ફરતા રહેવું; વહેવાર ગૌણ કરવો ને ભગવાન મુખ્ય કરવા.@ 1 પંચાણવા કાળમાં = પંચાણુંની સાલમાં $2 સગાળ= સુકાળ</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10099.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Uthine bhagavan sambharva</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10101.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj jaman leta </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '100');
+            localStorage.setItem('lastVisitedVatFile', 'ch10100.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

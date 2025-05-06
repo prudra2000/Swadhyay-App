@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વાતું સાંભળીએ છીએ - Vatu sambhalie chhie</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vatu sambhalie chhie</h1>
+                <div class="gujarati-title">વાતું સાંભળીએ છીએ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 98</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(98) vātuṃ sāṃbhaḻīe chīe te koīka śabda rahe che ne koīka nathī rahetā ne bārobāra cālyā jāya che, tenuṃ śuṃ kāraṇa ? to raja, tamamāṃ śabda saṃbhaḻāya te rahe nahi ne sattvamāṃ je saṃbhaḻāya te to rahe che. māṭe e to guṇano bheda che. jyāre guṇātīta thāya tyāre guṇa na vyāpe ne mahimā bahu samaje tene raja, tama thoḍā āve. te mahārāje kahyuṃ je, ‘amāre koīno avaguṇa nathī āvato tenuṃ śuṃ kāraṇa ? je, ame jāṇīe chīe je jīva to bicārā evā ja hoya.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(98) વાતું સાંભળીએ છીએ તે કોઈક શબ્દ રહે છે ને કોઈક નથી રહેતા ને બારોબાર ચાલ્યા જાય છે, તેનું શું કારણ ? તો રજ, તમમાં શબ્દ સંભળાય તે રહે નહિ ને સત્ત્વમાં જે સંભળાય તે તો રહે છે. માટે એ તો ગુણનો ભેદ છે. જ્યારે ગુણાતીત થાય ત્યારે ગુણ ન વ્યાપે ને મહિમા બહુ સમજે તેને રજ, તમ થોડા આવે. તે મહારાજે કહ્યું જે, ‘અમારે કોઈનો અવગુણ નથી આવતો તેનું શું કારણ ? જે, અમે જાણીએ છીએ જે જીવ તો બિચારા એવા જ હોય.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14097.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Avidyae bal karyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14099.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje panchavartamanno</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '98');
+            localStorage.setItem('lastVisitedVatFile', 'ch14098.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક હરિભક્તને રોગ - Ek haribhaktne rog </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek haribhaktne rog </h1>
+                <div class="gujarati-title">એક હરિભક્તને રોગ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 124</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(124) eka haribhaktane roga maṭāḍavā sāru gopāḻānaṃdasvāmīe līmaḍo pāyo tethī roga to maṭī gayo, paṇa līmaḍānuṃ baṃdhāṇa thayuṃ, te na pīve to tāva āve. pachī nitya pīvā māṃḍyāthī ṭaḻī gayuṃ. tema ā loka vaḻagyo che tene ema ṭāḻavo je, maṃdiramāṃ āvavuṃ ne ghera javuṃ ne gharanuṃ kāma chokarāne karavā devuṃ evo abhyāsa karyāthī ṭaḻī jāya.@ 1 pāvaḻuṃ ochuṃ= paḻī ochuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(124) એક હરિભક્તને રોગ મટાડવા સારુ ગોપાળાનંદસ્વામીએ લીમડો પાયો તેથી રોગ તો મટી ગયો, પણ લીમડાનું બંધાણ થયું, તે ન પીવે તો તાવ આવે. પછી નિત્ય પીવા માંડ્યાથી ટળી ગયું. તેમ આ લોક વળગ્યો છે તેને એમ ટાળવો જે, મંદિરમાં આવવું ને ઘેર જવું ને ઘરનું કામ છોકરાને કરવા દેવું એવો અભ્યાસ કર્યાથી ટળી જાય.@ 1 પાવળું ઓછું= પળી ઓછું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5123.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jivno ne dehno vahevar</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5125.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Harisankarbhaina puchhavathi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '124');
+            localStorage.setItem('lastVisitedVatFile', 'ch5124.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

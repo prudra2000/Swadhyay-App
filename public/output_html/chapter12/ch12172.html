@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કહેનારાને વિશે ગુરુબુદ્ધિ - Kahenarane vishe gurubuddhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kahenarane vishe gurubuddhi</h1>
+                <div class="gujarati-title">કહેનારાને વિશે ગુરુબુદ્ધિ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 172</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(172) kahenārāne viśe gurubuddhi na hoya eṭale tenā śabda sārā na lāge. ne raja, tama āve tyāre buddhi pharī jāya che. māṭe sattva hoya tyāre ṭharāva karī mūkavo ne bījā koī saṃgāthe jīva bāṃdhī rākhyo hoya te kahe ne māne to deśakāḻe ṭhīka rahe. vahevārathī sādhu ne dhūṃsarīthī baḻadiyo parakhāya che. te sādhutā haśe to bījāne āpaṇo guṇa āvaśe. ne krodha āve tyāre saṃtano abhāva āve, te upara bhīṣmapitā ādikamāṃ daitye praveśa karyo tenī vāta karī. māyā para thāvuṃ te to bhārata racavā jevuṃ kaṭhaṇa che. jemāṃ kāmādika asura praveśa karī jāya che tyāre jema lāḍavāmāṃ jhera nākhe te jherarūpa thaī jāya, tema tenī buddhi deśakāḻe viparīta thaī jāya che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(172) કહેનારાને વિશે ગુરુબુદ્ધિ ન હોય એટલે તેના શબ્દ સારા ન લાગે. ને રજ, તમ આવે ત્યારે બુદ્ધિ ફરી જાય છે. માટે સત્ત્વ હોય ત્યારે ઠરાવ કરી મૂકવો ને બીજા કોઈ સંગાથે જીવ બાંધી રાખ્યો હોય તે કહે ને માને તો દેશકાળે ઠીક રહે. વહેવારથી સાધુ ને ધૂંસરીથી બળદિયો પરખાય છે. તે સાધુતા હશે તો બીજાને આપણો ગુણ આવશે. ને ક્રોધ આવે ત્યારે સંતનો અભાવ આવે, તે ઉપર ભીષ્મપિતા આદિકમાં દૈત્યે પ્રવેશ કર્યો તેની વાત કરી. માયા પર થાવું તે તો ભારત રચવા જેવું કઠણ છે. જેમાં કામાદિક અસુર પ્રવેશ કરી જાય છે ત્યારે જેમ લાડવામાં ઝેર નાખે તે ઝેરરૂપ થઈ જાય, તેમ તેની બુદ્ધિ દેશકાળે વિપરીત થઈ જાય છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12171.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Deshakalma aa jivne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12173.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jiv karakano kido </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '172');
+            localStorage.setItem('lastVisitedVatFile', 'ch12172.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પરીક્ષિતના નવઘરામાં સોનેરી - Parikshitna navagharama soneri</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Parikshitna navagharama soneri</h1>
+                <div class="gujarati-title">પરીક્ષિતના નવઘરામાં સોનેરી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 48</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(48) parīkṣitanā navagharāmāṃ sonerī tāra hato temāṃ kaḻie praveśa karyo eṭale parīkṣite ṛṣinā gaḻāmāṃ sarapa nākhyo. te ṛṣi to kāṃī bolyā nahi; paṇa tenā dīkarāe śāpa dīdho je, ‘sarapa nākhanāranuṃ sāta divasamāṃ mṛtyu thāo.’ tyāre ṛṣi bolyā je, ‘śāpa devo nahoto. rājā vinā vasatīnuṃ rakṣaṇa koṇa karaśe ? māṭe jā, rājāne śāpanā khabara karī āva.’ pachī te kahī āvyo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(48) પરીક્ષિતના નવઘરામાં સોનેરી તાર હતો તેમાં કળિએ પ્રવેશ કર્યો એટલે પરીક્ષિતે ઋષિના ગળામાં સરપ નાખ્યો. તે ઋષિ તો કાંઈ બોલ્યા નહિ; પણ તેના દીકરાએ શાપ દીધો જે, ‘સરપ નાખનારનું સાત દિવસમાં મૃત્યુ થાઓ.’ ત્યારે ઋષિ બોલ્યા જે, ‘શાપ દેવો નહોતો. રાજા વિના વસતીનું રક્ષણ કોણ કરશે ? માટે જા, રાજાને શાપના ખબર કરી આવ.’ પછી તે કહી આવ્યો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10047.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Guru karava te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10049.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jagatma to eva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '48');
+            localStorage.setItem('lastVisitedVatFile', 'ch10048.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

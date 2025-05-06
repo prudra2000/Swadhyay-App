@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જે ગામમાં રહ્યો હોય  - Je gamma rahyo hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Je gamma rahyo hoy</h1>
+                <div class="gujarati-title">જે ગામમાં રહ્યો હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 260</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(260) je gāmamāṃ rahyo hoya te jāṇe je huṃ ā gāmano ja chuṃ. tema ja jātinuṃ che. ane sādhu thayā to paṇa jīvamāṃ jāti abhimāna rahe che te moṭī khoṭa kahevāya; kema je, jevuṃ jātinuṃ nakkī che tevuṃ sādhupaṇānuṃ nakkī nathī māṭe jeṭalo satsaṃga thayo ne brahmarūpa thayo teṭaluṃ ja sāruṃ che, ne jeṭalo kusaṃgano bhāga che teṭaluṃ bhūṃḍuṃ che. ne mananā līdhā levāīe chīe tathā indriyuṃnā līdhā levāīe chīe teṭalo satsaṃga kāco che. jema bhūṃḍuṃ kulakṣaṇuṃ ghoḍuṃ hoya tenā upara caḍe tenā bhūṃḍā hāla thāya, tema ā indriyuṃ, aṃta:karaṇa ne svabhāva te bhūṃḍī ghoḍīo che. te rāma khumāṇano hātha bhāṃgyo tenī vāta karī je, ghoḍī jaīne ṭhūṃṭhāmāṃ bharāṇīne pāḍyā ne hātha bhāṃgyo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(260) જે ગામમાં રહ્યો હોય તે જાણે જે હું આ ગામનો જ છું. તેમ જ જાતિનું છે. અને સાધુ થયા તો પણ જીવમાં જાતિ અભિમાન રહે છે તે મોટી ખોટ કહેવાય; કેમ જે, જેવું જાતિનું નક્કી છે તેવું સાધુપણાનું નક્કી નથી માટે જેટલો સત્સંગ થયો ને બ્રહ્મરૂપ થયો તેટલું જ સારું છે, ને જેટલો કુસંગનો ભાગ છે તેટલું ભૂંડું છે. ને મનના લીધા લેવાઈએ છીએ તથા ઇન્દ્રિયુંના લીધા લેવાઈએ છીએ તેટલો સત્સંગ કાચો છે. જેમ ભૂંડું કુલક્ષણું ઘોડું હોય તેના ઉપર ચડે તેના ભૂંડા હાલ થાય, તેમ આ ઇન્દ્રિયું, અંત:કરણ ને સ્વભાવ તે ભૂંડી ઘોડીઓ છે. તે રામ ખુમાણનો હાથ ભાંગ્યો તેની વાત કરી જે, ઘોડી જઈને ઠૂંઠામાં ભરાણીને પાડ્યા ને હાથ ભાંગ્યો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11259.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj pragat thaya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11261.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Harijanno avagun ave</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '260');
+            localStorage.setItem('lastVisitedVatFile', 'ch11260.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

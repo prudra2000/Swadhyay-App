@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પાડો માદળામાં પડ્યો - Pado madalama padyo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pado madalama padyo</h1>
+                <div class="gujarati-title">પાડો માદળામાં પડ્યો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 121</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(121) pāḍo mādaḻāmāṃ paḍyo hato tene mākhīo karaḍe eṭale māthuṃ pachāḍe, paṇa bahāra nīsare nahi; tema jīva che te kuṭuṃbarūpī paḍyo che, te nīsarato nathī. mota saṃdeśo mokale che; te śuṃ ? to, dhoḻā movāḻā āvyā, te pahelī kāḻākharī āvī, to paṇa cetyo nahi. pachī dāṃta paḍyā, pachī bahero karyo, pachī āṃdhaḻo karyo; paṇa āṃkha ūghaḍī nahi. ‘ā karyuṃ ne ā karavuṃ.’ teno āloca maṭato ja nathī; māṭe kāḻano jene bhaya che tenāthī ja prabhu bhajāya che. te hamaṇāṃ sukha nathī tene āgaḻa sukha kyāṃ thāśe ? ā bhekha che te pārakā roṭalā khāīne sūī rahe che, te mahārājane game nahi.@ 1 mādaḻāmā/māṃdaṇāmāṃ= mādaṇuṃ-kādava/kīcaḍanāṃ jāḍā ragaḍāvāḻāṃ khābociyāmāṃ-māyika paṃcaviṣayarūpī gaṃdakīnāṃ khābociyāmāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(121) પાડો માદળામાં પડ્યો હતો તેને માખીઓ કરડે એટલે માથું પછાડે, પણ બહાર નીસરે નહિ; તેમ જીવ છે તે કુટુંબરૂપી પડ્યો છે, તે નીસરતો નથી. મોત સંદેશો મોકલે છે; તે શું ? તો, ધોળા મોવાળા આવ્યા, તે પહેલી કાળાખરી આવી, તો પણ ચેત્યો નહિ. પછી દાંત પડ્યા, પછી બહેરો કર્યો, પછી આંધળો કર્યો; પણ આંખ ઊઘડી નહિ. ‘આ કર્યું ને આ કરવું.’ તેનો આલોચ મટતો જ નથી; માટે કાળનો જેને ભય છે તેનાથી જ પ્રભુ ભજાય છે. તે હમણાં સુખ નથી તેને આગળ સુખ ક્યાં થાશે ? આ ભેખ છે તે પારકા રોટલા ખાઈને સૂઈ રહે છે, તે મહારાજને ગમે નહિ.@ 1 માદળામા/માંદણામાં= માદણું-કાદવ/કીચડનાં જાડા રગડાવાળાં ખાબોચિયામાં-માયિક પંચવિષયરૂપી ગંદકીનાં ખાબોચિયામાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13120.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prabhu bhajavama hajaru</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13122.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Amare zaza jivone</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '121');
+            localStorage.setItem('lastVisitedVatFile', 'ch13121.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

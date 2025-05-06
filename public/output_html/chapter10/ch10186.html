@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગ કરતાં કોઈનું - Satsang karata koinu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsang karata koinu</h1>
+                <div class="gujarati-title">સત્સંગ કરતાં કોઈનું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 186</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(186) satsaṃga karatāṃ koīnuṃ bagaḍyuṃ nathī. jema aṃbarīṣanī rakṣāmāṃ cakra mūkyuṃ hatuṃ te durvāsā bagāḍavā gayā to paṇa bagaḍyuṃ nahi, tema jeno āśaro karīe ne jene arthe kriyā karīe te ā loka bagaḍavā de nahi ne paraloka paṇa bagaḍavā de nahi; māṭe satsaṃga kare tenuṃ to bagaḍe ja nahīṃ. juone prahlādanī ne kuṃtājīnī rakṣā karī, draupadīnī lāja rākhī ne garuḍane paṇa mūkī dīdho ne gajane choḍāvyo, ema bhagavāna rakṣā kare che; paṇa jevā moṭā maḻyā che tevo mahimā āpaṇane jaṇāṇo nathī. traṇe avasthānāṃ karma e bhogavāve ne smṛti āpe che; māṭe e vinā jīva kāṃī karī śake nahi evuṃ jyāṃ sudhī nathī samajāṇuṃ, tyāṃ sudhī satsaṃga karyāmāṃ kasara che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(186) સત્સંગ કરતાં કોઈનું બગડ્યું નથી. જેમ અંબરીષની રક્ષામાં ચક્ર મૂક્યું હતું તે દુર્વાસા બગાડવા ગયા તો પણ બગડ્યું નહિ, તેમ જેનો આશરો કરીએ ને જેને અર્થે ક્રિયા કરીએ તે આ લોક બગડવા દે નહિ ને પરલોક પણ બગડવા દે નહિ; માટે સત્સંગ કરે તેનું તો બગડે જ નહીં. જુઓને પ્રહ્લાદની ને કુંતાજીની રક્ષા કરી, દ્રૌપદીની લાજ રાખી ને ગરુડને પણ મૂકી દીધો ને ગજને છોડાવ્યો, એમ ભગવાન રક્ષા કરે છે; પણ જેવા મોટા મળ્યા છે તેવો મહિમા આપણને જણાણો નથી. ત્રણે અવસ્થાનાં કર્મ એ ભોગવાવે ને સ્મૃતિ આપે છે; માટે એ વિના જીવ કાંઈ કરી શકે નહિ એવું જ્યાં સુધી નથી સમજાણું, ત્યાં સુધી સત્સંગ કર્યામાં કસર છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10185.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Rajalakshmivalane bhagyashali </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10187.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jyare varasad tanave</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '186');
+            localStorage.setItem('lastVisitedVatFile', 'ch10186.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

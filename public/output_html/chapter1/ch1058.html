@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણા દોષ તો મહારાજે - Aapana dosh to maharaje</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aapana dosh to maharaje</h1>
+                <div class="gujarati-title">આપણા દોષ તો મહારાજે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 58</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(58) āpaṇā doṣa to mahārāje ṭāḻī nākhyā che ne te doṣanuṃ darśana thāya che e to āpaṇā rūḍāne arthe thāya che; nīkara jīva to thaī jāya evo che ane have to āpaṇe bhagavāna vaśa karavā che ne te bhagavānanā jevuṃ sāmarthya pāmavuṃ che te sāru maṃḍyā chīe.@ 1. unmatta= garviṣṭha, uddhata, gāṃḍo, chākaṭo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(58) આપણા દોષ તો મહારાજે ટાળી નાખ્યા છે ને તે દોષનું દર્શન થાય છે એ તો આપણા રૂડાને અર્થે થાય છે; નીકર જીવ તો થઈ જાય એવો છે અને હવે તો આપણે ભગવાન વશ કરવા છે ને તે ભગવાનના જેવું સામર્થ્ય પામવું છે તે સારુ મંડ્યા છીએ.@ 1. ઉન્મત્ત= ગર્વિષ્ઠ, ઉદ્ધત, ગાંડો, છાકટો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1057.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aava sadhu khasada mare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1059.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Brahmarup manine bhakti</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '58');
+            localStorage.setItem('lastVisitedVatFile', 'ch1058.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

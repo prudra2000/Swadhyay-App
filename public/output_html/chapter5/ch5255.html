@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>રાજા તપ કરવા ગયો - Raja tap karava gayo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Raja tap karava gayo</h1>
+                <div class="gujarati-title">રાજા તપ કરવા ગયો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 255</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(255) rājā tapa karavā gayo tene thāḻa āve ne eka garība tapa karavā gayo tene roṭalo āve. tyāre kahe je, ‘e tapa kare che ne huṃ paṇa tapa karuṃ chuṃ ne mane āvuṃ kema maḻe che ?’ tyāre kahyuṃ je, ‘tane ghera roṭalo maḻato nahi te tapanā pratāpathī roṭalo maḻe che ne rājā to thāḻa mūkīne āvyo che tethī tene thāḻa āpavo paḍe che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(255) રાજા તપ કરવા ગયો તેને થાળ આવે ને એક ગરીબ તપ કરવા ગયો તેને રોટલો આવે. ત્યારે કહે જે, ‘એ તપ કરે છે ને હું પણ તપ કરું છું ને મને આવું કેમ મળે છે ?’ ત્યારે કહ્યું જે, ‘તને ઘેર રોટલો મળતો નહિ તે તપના પ્રતાપથી રોટલો મળે છે ને રાજા તો થાળ મૂકીને આવ્યો છે તેથી તેને થાળ આપવો પડે છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5254.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vishayno ant ave tem</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5256.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek manushyne kahava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '255');
+            localStorage.setItem('lastVisitedVatFile', 'ch5255.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

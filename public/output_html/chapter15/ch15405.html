@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તેરેથી કાગળ લખ્યો  - Terethi kagal lakhyo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Terethi kagal lakhyo</h1>
+                <div class="gujarati-title">તેરેથી કાગળ લખ્યો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 405</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(405) terethī (terā nāmanā gāmathī) kāgaḻa lakhyo tenī vāta karī. māṭe jo āpaṇe mahino mahino samāgama karaśuṃ to ṭhīka raheśe. nahi to vyavahāramāṃ baṃdhāī javāśe; paṇa āpaṇe jo cāra mahinā kathā ne āṭha mahinā pharīe to cāle to kharuṃ paṇa te thāya nahi. prabhu bhajavāno ādara karyo che paṇa samāgama vinā sūjhe nahi; te garība māṇasa jema daḻatāṃ phāke tema āpaṇe paṇa vaḍādarānī peṭhe prabhu bhajī levā. te mānasīpūjā, māḻā, pratimā te badhuṃ māṃhīṃthī karī levuṃ. moṭānī marajīmāṃ rahevuṃ. badhānī ruci nokhī nokhī che. te koīne ā kathā karavī ne koīne kārakhānāṃ karavāṃ. te ekabījāne mūrakha māne che. āṃhī āno ḍhāḻo paḍyo che te thāya che. te mahārājano siddhāṃta to e che je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(405) તેરેથી (તેરા નામના ગામથી) કાગળ લખ્યો તેની વાત કરી. માટે જો આપણે મહિનો મહિનો સમાગમ કરશું તો ઠીક રહેશે. નહિ તો વ્યવહારમાં બંધાઈ જવાશે; પણ આપણે જો ચાર મહિના કથા ને આઠ મહિના ફરીએ તો ચાલે તો ખરું પણ તે થાય નહિ. પ્રભુ ભજવાનો આદર કર્યો છે પણ સમાગમ વિના સૂઝે નહિ; તે ગરીબ માણસ જેમ દળતાં ફાકે તેમ આપણે પણ વડાદરાની પેઠે પ્રભુ ભજી લેવા. તે માનસીપૂજા, માળા, પ્રતિમા તે બધું માંહીંથી કરી લેવું. મોટાની મરજીમાં રહેવું. બધાની રુચિ નોખી નોખી છે. તે કોઈને આ કથા કરવી ને કોઈને કારખાનાં કરવાં. તે એકબીજાને મૂરખ માને છે. આંહી આનો ઢાળો પડ્યો છે તે થાય છે. તે મહારાજનો સિદ્ધાંત તો એ છે જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15404.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Panchalana motibhaine kahyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15406.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gharoghar vishayna kajiya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '405');
+            localStorage.setItem('lastVisitedVatFile', 'ch15405.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શાસ્ત્રમાં દશમો, વીસમો  - Shastrma dashmo, vismo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shastrma dashmo, vismo</h1>
+                <div class="gujarati-title">શાસ્ત્રમાં દશમો, વીસમો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 32</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(32) śāstramāṃ daśamo, vīsamo bhāga kāḍhavānuṃ kahyuṃ che, te to dhanavāna hoya te kāḍhe; paṇa je nirdhana hoya teṇe to daśamo, vīsamo bhāga dehano kāḍhavo, te śuṃ? je, dehe karīne eṭalā bhagavāna bhajī levā ne samāgama karavo; daśamo, vīsamo bhāga āvaradāno kāḍhavo ane vadhu śraddhāvāna hoya teṇe to dehane aradho aradha .@ 1 svāhā karavo= homī devo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(32) શાસ્ત્રમાં દશમો, વીસમો ભાગ કાઢવાનું કહ્યું છે, તે તો ધનવાન હોય તે કાઢે; પણ જે નિર્ધન હોય તેણે તો દશમો, વીસમો ભાગ દેહનો કાઢવો, તે શું? જે, દેહે કરીને એટલા ભગવાન ભજી લેવા ને સમાગમ કરવો; દશમો, વીસમો ભાગ આવરદાનો કાઢવો અને વધુ શ્રદ્ધાવાન હોય તેણે તો દેહને અરધો અરધ .@ 1 સ્વાહા કરવો= હોમી દેવો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14031.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ravan sauno shok</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14033.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tyagi hoy te ladava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '32');
+            localStorage.setItem('lastVisitedVatFile', 'ch14032.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

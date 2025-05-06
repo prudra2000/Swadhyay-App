@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સત્સંગની ક્રિયા લોકના - Aa satsangni kriya lokna</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa satsangni kriya lokna</h1>
+                <div class="gujarati-title">આ સત્સંગની ક્રિયા લોકના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 172</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(172) ā satsaṃganī kriyā lokanā jevī jaṇāya che paṇa emāṃ bahu lābha rahyo che. ne ekāṃtika bheḻuṃ nivāsa karīne rahevuṃ te sattārūpe rahevā karatāṃ paṇa adhika che; kāṃ je, ātmārūpe rahe tethī deha bheḻuṃ to na bhaḻāya, paṇa jñānanī vṛddhi pāmavī te to ekāṃtikanā saṃgamāṃ che. ne sattārūpe varate temāṃ to pote sukhiyo rahe, paṇa bījāne satsaṃganuṃ sukha na maḻe. māṭe ekāṃtikanā saṃgamāṃ rahyāthī sarva prakāre vṛddhi pamāya che, evo mahimā ‘vacanāmṛta’māṃ kahyo che; māṭe evo lābha maḻyo ne viṣaya sāru valakhāṃ thāya che, te ajñāna che ne paśubuddhi che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(172) આ સત્સંગની ક્રિયા લોકના જેવી જણાય છે પણ એમાં બહુ લાભ રહ્યો છે. ને એકાંતિક ભેળું નિવાસ કરીને રહેવું તે સત્તારૂપે રહેવા કરતાં પણ અધિક છે; કાં જે, આત્મારૂપે રહે તેથી દેહ ભેળું તો ન ભળાય, પણ જ્ઞાનની વૃદ્ધિ પામવી તે તો એકાંતિકના સંગમાં છે. ને સત્તારૂપે વરતે તેમાં તો પોતે સુખિયો રહે, પણ બીજાને સત્સંગનું સુખ ન મળે. માટે એકાંતિકના સંગમાં રહ્યાથી સર્વ પ્રકારે વૃદ્ધિ પમાય છે, એવો મહિમા ‘વચનામૃત’માં કહ્યો છે; માટે એવો લાભ મળ્યો ને વિષય સારુ વલખાં થાય છે, તે અજ્ઞાન છે ને પશુબુદ્ધિ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11171.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aho ! aa vatu kevi chhe ! </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11173.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shrimad bhagavat shastr chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '172');
+            localStorage.setItem('lastVisitedVatFile', 'ch11172.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

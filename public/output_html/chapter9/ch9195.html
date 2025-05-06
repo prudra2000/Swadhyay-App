@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બાહ્યદૃષ્ટિએ વરતવું - Bahyadrushtie varatavu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bahyadrushtie varatavu</h1>
+                <div class="gujarati-title">બાહ્યદૃષ્ટિએ વરતવું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 195</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(195) bāhyadṛṣṭie varatavuṃ tyāre bhagavānanī mūrtinuṃ ciṃtavana karavuṃ ne jyāre aṃtaradṛṣṭi karavī tyāre saṃkalpa sāmuṃ joī rahevuṃ ne māna, rasāsvāda ne lobha e traṇa gāṃṭhuṃ hoya tene aṃtaradṛṣṭi na thāya, paṇa aṃtaradṛṣṭi karatāṃ karatāṃ viṣaya khoṭā thaī jāya ne te vinā to doṣa kaḻāya nahīṃ. jema aṃdhārī rāta hoya temāṃ kāṃī dekhāya nahi paṇa jyāre besīne jue tyāre jaṇāya je, māṇasa che ke paśu che tema jyāre pāchī vṛtti vāḻe, tyāre bhagavānanā bhajanamāṃ je āḍuṃ āve te jaṇāya, pachī tene vicāre karīne ṭāḻī nākhe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(195) બાહ્યદૃષ્ટિએ વરતવું ત્યારે ભગવાનની મૂર્તિનું ચિંતવન કરવું ને જ્યારે અંતરદૃષ્ટિ કરવી ત્યારે સંકલ્પ સામું જોઈ રહેવું ને માન, રસાસ્વાદ ને લોભ એ ત્રણ ગાંઠું હોય તેને અંતરદૃષ્ટિ ન થાય, પણ અંતરદૃષ્ટિ કરતાં કરતાં વિષય ખોટા થઈ જાય ને તે વિના તો દોષ કળાય નહીં. જેમ અંધારી રાત હોય તેમાં કાંઈ દેખાય નહિ પણ જ્યારે બેસીને જુએ ત્યારે જણાય જે, માણસ છે કે પશુ છે તેમ જ્યારે પાછી વૃત્તિ વાળે, ત્યારે ભગવાનના ભજનમાં જે આડું આવે તે જણાય, પછી તેને વિચારે કરીને ટાળી નાખે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9194.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Janma, mrutyu, garbhavas</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9196.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Krupanandswami, gopalanandswami</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '195');
+            localStorage.setItem('lastVisitedVatFile', 'ch9195.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

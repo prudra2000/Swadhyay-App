@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગોપાળાનંદસ્વામી, સ્વરૂપાનંદ - Gopalanandswami, svarupanand</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gopalanandswami, svarupanand</h1>
+                <div class="gujarati-title">ગોપાળાનંદસ્વામી, સ્વરૂપાનંદ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 283</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>bapore vāta karī je, $(283) gopāḻānaṃdasvāmī, svarūpānaṃdasvāmī, kṛpānaṃdasvāmī, saccidānaṃdasvāmī e sarve prītivāḻā, temāṃ gopāḻānaṃdasvāmī evā je vyavahāra paṇa kare ne bhagavānamāṃ akhaṃḍa vṛtti rākhe ne maṃḍaḻa karyuṃ je, mārā sādhu jene joīe te laī jāo. pachī mahārāje brahmānaṃdasvāmīne kahyuṃ je tameya maṃḍaḻa harāja karo. tyāre te kahe, ‘e to jogī che te emane kāṃī nahi ne amāre to pāchuṃ bāṃdhavuṃ paṇa kaṭhaṇa paḍe. te paramānaṃdasvāmīne varaso varasa navuṃ maṃḍaḻa bāṃdhavuṃ paḍe. badhāe akṣaranā mukta che. evī sthiti to gopāḻānaṃdasvāmī ne svarūpānaṃdasvāmī e bene ja che ne bījā to celā sāru kajiyā kare che. te sarvanāṃ aiśrvarya dabāvīne manuṣya jevā karyā che. te manuṣya jevā na karyā hota to viśrvasvarūpānaṃdanī peṭhe koīne gaṇe ja nahi.@ 1 harāja karavuṃ= harājī karavī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>બપોરે વાત કરી જે, $(283) ગોપાળાનંદસ્વામી, સ્વરૂપાનંદસ્વામી, કૃપાનંદસ્વામી, સચ્ચિદાનંદસ્વામી એ સર્વે પ્રીતિવાળા, તેમાં ગોપાળાનંદસ્વામી એવા જે વ્યવહાર પણ કરે ને ભગવાનમાં અખંડ વૃત્તિ રાખે ને મંડળ કર્યું જે, મારા સાધુ જેને જોઈએ તે લઈ જાઓ. પછી મહારાજે બ્રહ્માનંદસ્વામીને કહ્યું જે તમેય મંડળ હરાજ કરો. ત્યારે તે કહે, ‘એ તો જોગી છે તે એમને કાંઈ નહિ ને અમારે તો પાછું બાંધવું પણ કઠણ પડે. તે પરમાનંદસ્વામીને વરસો વરસ નવું મંડળ બાંધવું પડે. બધાએ અક્ષરના મુક્ત છે. એવી સ્થિતિ તો ગોપાળાનંદસ્વામી ને સ્વરૂપાનંદસ્વામી એ બેને જ છે ને બીજા તો ચેલા સારુ કજિયા કરે છે. તે સર્વનાં ઐશ્ર્વર્ય દબાવીને મનુષ્ય જેવા કર્યા છે. તે મનુષ્ય જેવા ન કર્યા હોત તો વિશ્ર્વસ્વરૂપાનંદની પેઠે કોઈને ગણે જ નહિ.@ 1 હરાજ કરવું= હરાજી કરવી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15282.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Lugada hoy ne paherya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15284.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Manno kansar karine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '283');
+            localStorage.setItem('lastVisitedVatFile', 'ch15283.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેને માથે મોટા શત્રુ - Jene mathe mota shatru</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jene mathe mota shatru</h1>
+                <div class="gujarati-title">જેને માથે મોટા શત્રુ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 284</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(284) jene māthe moṭā śatru hoya teṇe ūṃghavuṃ nahi ne jeṇe karyuṃ hoya tene paṇa ūṃgha āve nahīṃ. tema kāma, krodha ne lobhādika śatru māthe che tyāṃ sudhī ūṃghavuṃ nahīṃ. ne je je vacana kahyāṃ che tene visārī devāṃ nahīṃ. te jo ekāṃte besīne vicāre to sāṃbharyā kare. $artha : ātatāyī du:kha denāra manuṣyanā cha prakāra che : āga cāṃpanāra, viṣa āpanāra, śastra dhāraṇa karanāra, dravya coranāra, jamīna pacāvanāra, strīnuṃ apaharaṇa karanāra.@ 1 ātatāyī karma :- du:kha denāra karma, ātatāyī karmanā cha prakāra :- (1) āga cāṃpanāra (2) jhera āpanāra (3) śastre māranāra (4) dravya coranāra (5) jamīna pacāvanāra (6) strīnuṃ apaharaṇa karanāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૮૪) જેને માથે મોટા શત્રુ હોય તેણે ઊંઘવું નહિ ને જેણે કર્યું હોય તેને પણ ઊંઘ આવે નહીં. તેમ કામ, ક્રોધ ને લોભાદિક શત્રુ માથે છે ત્યાં સુધી ઊંઘવું નહીં. ને જે જે વચન કહ્યાં છે તેને વિસારી દેવાં નહીં. તે જો એકાંતે બેસીને વિચારે તો સાંભર્યા કરે. $અર્થ : આતતાયી દુ:ખ દેનાર મનુષ્યના છ પ્રકાર છે : આગ ચાંપનાર, વિષ આપનાર, શસ્ત્ર ધારણ કરનાર, દ્રવ્ય ચોરનાર, જમીન પચાવનાર, સ્ત્રીનું અપહરણ કરનાર.@ 1 આતતાયી કર્મ :- દુ:ખ દેનાર કર્મ, આતતાયી કર્મના છ પ્રકાર :- (૧) આગ ચાંપનાર (૨) ઝેર આપનાર (૩) શસ્ત્રે મારનાર (૪) દ્રવ્ય ચોરનાર (૫) જમીન પચાવનાર (૬) સ્ત્રીનું અપહરણ કરનાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6283.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Strivale mahino</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6285.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek garib bavano chhokaro</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '284');
+            localStorage.setItem('lastVisitedVatFile', 'ch6284.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

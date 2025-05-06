@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનમાં અતિશે સ્નેહ - Bhagavanma atishe sneh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanma atishe sneh</h1>
+                <div class="gujarati-title">ભગવાનમાં અતિશે સ્નેહ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 104</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(104) bhagavānamāṃ atiśe sneha hoya, tyāganuṃ aṃga hoya, vairāgya hoya, game evā guṇa hoya, paṇa ahaṃkāra bhagavānanā bhaktane na joīe. evo svabhāva parvatabhāīno hato ne tevā hāla kalyāṇabhāī che ne pūṃjo ḍoḍīo mahārājane darśane āvyā, te ghanaśyāmadāsane mahārāje kahyuṃ je, ‘ene roṭalā khavarāvo.’ tyāre te kahe, ‘evā cīṃthariyāne roṭalā śuṃ khavarāve ?’ paṇa garība jevo hoya te mahāsamartha hoya paṇa koīne oḻakhāya nahi. te upara vāta karī je, akho jevāṃ tevāṃ lūgaḍāṃ paherīne havelīmāṃ gayo tyāre pesavā na dīdho ne pachī sārāṃ lūgaḍāṃ paherīne gayo tyāre pesavā dīdho.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(104) ભગવાનમાં અતિશે સ્નેહ હોય, ત્યાગનું અંગ હોય, વૈરાગ્ય હોય, ગમે એવા ગુણ હોય, પણ અહંકાર ભગવાનના ભક્તને ન જોઈએ. એવો સ્વભાવ પર્વતભાઈનો હતો ને તેવા હાલ કલ્યાણભાઈ છે ને પૂંજો ડોડીઓ મહારાજને દર્શને આવ્યા, તે ઘનશ્યામદાસને મહારાજે કહ્યું જે, ‘એને રોટલા ખવરાવો.’ ત્યારે તે કહે, ‘એવા ચીંથરિયાને રોટલા શું ખવરાવે ?’ પણ ગરીબ જેવો હોય તે મહાસમર્થ હોય પણ કોઈને ઓળખાય નહિ. તે ઉપર વાત કરી જે, અખો જેવાં તેવાં લૂગડાં પહેરીને હવેલીમાં ગયો ત્યારે પેસવા ન દીધો ને પછી સારાં લૂગડાં પહેરીને ગયો ત્યારે પેસવા દીધો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12103.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje badhu mukine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12105.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Panchavishaymathi ek pan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '104');
+            localStorage.setItem('lastVisitedVatFile', 'ch12104.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઇન્દ્રિયું અંત:કરણ છે - Indriyu antakaran chhe </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Indriyu antakaran chhe </h1>
+                <div class="gujarati-title">ઇન્દ્રિયું અંત:કરણ છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 93</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(93) indriyuṃ-aṃta:karaṇa che te mahāśatru che, te maṃdirano, sādhuno, ācāryano ne satsaṃgīno avaguṇa levarāve evāṃ che. ne mokṣa bagaḍyo tyāre śuṃ sudharyuṃ ? ne jagatamāṃ roṭalā sāru bāpane koī rākhatuṃ nathī ne kadāpi roṭalā maḻyā to paśune khāṇa maḻe che tema gaṇavuṃ; te paṇa paśu bheḻo paśu che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(93) ઇન્દ્રિયું-અંત:કરણ છે તે મહાશત્રુ છે, તે મંદિરનો, સાધુનો, આચાર્યનો ને સત્સંગીનો અવગુણ લેવરાવે એવાં છે. ને મોક્ષ બગડ્યો ત્યારે શું સુધર્યું ? ને જગતમાં રોટલા સારુ બાપને કોઈ રાખતું નથી ને કદાપિ રોટલા મળ્યા તો પશુને ખાણ મળે છે તેમ ગણવું; તે પણ પશુ ભેળો પશુ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12092.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nak kapavi nath paheravi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12094.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Potane je dosh na </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '93');
+            localStorage.setItem('lastVisitedVatFile', 'ch12093.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હાલતે ચાલતે ભગવાનની - Halate chalate bhagavanni</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Halate chalate bhagavanni</h1>
+                <div class="gujarati-title">હાલતે ચાલતે ભગવાનની</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 293</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(293) hālate cālate bhagavānanī smṛti nathī rahetī e moṭī khoṭa che ne e nathī thātuṃ, paṇa nāmaraṭaṇa karavānī ṭeva pāḍe to paḍe kharī. paṇa te raṭaṇeya pūruṃ nathī thātuṃ ne mahārājanāṃ svarūpamāṃ akhaṃḍa vṛtti rākhe to rahe. ame be gāu cālyā tyāṃ sudhī . ne roṭalo ghaḍe che temāṃ vṛtti na rākhe to baḻī jāya ne akṣara lakhavāmāṃ paṇa ema ja che; tema jeṭalo jīva ghālyo hoya teṭaluṃ thāya. te prathamanāṃ 18 viṣaya khaṃḍananā vacanāmṛtamāṃ kahyuṃ che je, gāphalāī rahe che je bhagavāna maḻyā che te have kāṃī karavuṃ rahyuṃ nathī; paṇa prabhu maḻyā pachī ghaṇuṃ badhuṃ karavānuṃ che. jevā che tevā jāṇavā ne mānavā, ne jīva sāthe jaḍī rākhavā, ne anuvṛtti pāḻavī ne bhagavadīno prasaṃga rākhavo ne ājñā pāḻavī.@ 1 cicoḍe rāga badalyo nahi= dehe karīne satata bhagavānanī smṛti ne nāmasmaraṇa karavānuṃ cālu ja rākhyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(293) હાલતે ચાલતે ભગવાનની સ્મૃતિ નથી રહેતી એ મોટી ખોટ છે ને એ નથી થાતું, પણ નામરટણ કરવાની ટેવ પાડે તો પડે ખરી. પણ તે રટણેય પૂરું નથી થાતું ને મહારાજનાં સ્વરૂપમાં અખંડ વૃત્તિ રાખે તો રહે. અમે બે ગાઉ ચાલ્યા ત્યાં સુધી . ને રોટલો ઘડે છે તેમાં વૃત્તિ ન રાખે તો બળી જાય ને અક્ષર લખવામાં પણ એમ જ છે; તેમ જેટલો જીવ ઘાલ્યો હોય તેટલું થાય. તે પ્રથમનાં 18 વિષય ખંડનના વચનામૃતમાં કહ્યું છે જે, ગાફલાઈ રહે છે જે ભગવાન મળ્યા છે તે હવે કાંઈ કરવું રહ્યું નથી; પણ પ્રભુ મળ્યા પછી ઘણું બધું કરવાનું છે. જેવા છે તેવા જાણવા ને માનવા, ને જીવ સાથે જડી રાખવા, ને અનુવૃત્તિ પાળવી ને ભગવદીનો પ્રસંગ રાખવો ને આજ્ઞા પાળવી.@ 1 ચિચોડે રાગ બદલ્યો નહિ= દેહે કરીને સતત ભગવાનની સ્મૃતિ ને નામસ્મરણ કરવાનું ચાલુ જ રાખ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11292.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koino deh rahevano nathi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11294.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ketalaka janmana puny bhela</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '293');
+            localStorage.setItem('lastVisitedVatFile', 'ch11293.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

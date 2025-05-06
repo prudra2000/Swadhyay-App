@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જ્યારે સૌ સાધુને ખટરસ - Jyare sau sadhune khataras</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jyare sau sadhune khataras</h1>
+                <div class="gujarati-title">જ્યારે સૌ સાધુને ખટરસ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 279</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(279) jyāre sau sādhune khaṭarasa vartamāna hatāṃ. tyāre gaḍhaḍāmāṃ dādākhācaranā darabāramāṃ ḍośīo saune khaṭarasanāṃ vartamāna hatāṃ. paṇa koī mahemāna ane paradeśanā harijana āvatā, tene dāḻa roṭalā āpatāṃ. evī sevā karatāṃ paṇa mahemāne temanā avaguṇa līdhā, te pāpe karī temanā jīvanuṃ bhūṃḍuṃ thayuṃ che; kema ke, pote kevaḻa loṭa pāṇī ḍoīne pīe. ne mahemāna māṭe dāḻa roṭalā āpe, evī sevā koīthī na thāya; paṇa mahemānane miṣṭānna joīe ne te na maḻe, tethī avaguṇa le. tema ja āja je maṃdirano avaguṇa le che tenuṃ bhūṃḍuṃ thāśe. ame je khāīe te khavarāvīe chīe. vaḻī tethī sāruṃ khavarāvīe to paṇa avaguṇa le, tenuṃ kema sāruṃ thāya ?@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(279) જ્યારે સૌ સાધુને ખટરસ વર્તમાન હતાં. ત્યારે ગઢડામાં દાદાખાચરના દરબારમાં ડોશીઓ સૌને ખટરસનાં વર્તમાન હતાં. પણ કોઈ મહેમાન અને પરદેશના હરિજન આવતા, તેને દાળ રોટલા આપતાં. એવી સેવા કરતાં પણ મહેમાને તેમના અવગુણ લીધા, તે પાપે કરી તેમના જીવનું ભૂંડું થયું છે; કેમ કે, પોતે કેવળ લોટ પાણી ડોઈને પીએ. ને મહેમાન માટે દાળ રોટલા આપે, એવી સેવા કોઈથી ન થાય; પણ મહેમાનને મિષ્ટાન્ન જોઈએ ને તે ન મળે, તેથી અવગુણ લે. તેમ જ આજ જે મંદિરનો અવગુણ લે છે તેનું ભૂંડું થાશે. અમે જે ખાઈએ તે ખવરાવીએ છીએ. વળી તેથી સારું ખવરાવીએ તો પણ અવગુણ લે, તેનું કેમ સારું થાય ?@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11278.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Zinabhai gnani hata</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11280.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mayaram bhatte govindaramne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '279');
+            localStorage.setItem('lastVisitedVatFile', 'ch11279.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાક ઘી, ગોળ ખાતા - Ketalak ghi, gol khata</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalak ghi, gol khata</h1>
+                <div class="gujarati-title">કેટલાક ઘી, ગોળ ખાતા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 188</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(188) keṭalāka ghī, goḻa khātā nathī e vāta paṇa kaṭhaṇa jāṇavī ne evo tyāga pāḻe to paṇa kathāvārtāmāṃ na āve, e moṭī khoṭa che. pahelāṃ maṃdiranī kriyā āpaṇe māthe hatī ne have gṛhasthane māthe che. te rūpiyā enā ne chokarā enā te āpaṇāṃ pattara dhuve. māṭe have e vātanī ciṃtā rahī nathī. māṭe sadjñāna vaḍe āpaṇe gṛhasthanī sevā karavī; paṇa tema nathī thātuṃ ne roga vadhe che teno ṭaṃṭo rahyo. māṭe evā śabdanā āghāta lagāḍavā ke dehano anādara thāya, jñāna kathavuṃ hoya to brahmāṃḍa phoḍī nākhe, paṇa dehano anādara thāya nahi. vāṇiyo rājānā pāyakhānāmāṃ paḍyo tenī vāta karī; paṇa garbhavāsa to khāḍā karatāṃ paṇa bhūṃḍo che. paṇa bhaya vinā prīti thāya nahi; bhaya vinā viṣaya tajāya nahi. viṣayamāṃ du:kha dekhātāṃ nathī ne guru ane śāstranuṃ vacana manātuṃ nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(188) કેટલાક ઘી, ગોળ ખાતા નથી એ વાત પણ કઠણ જાણવી ને એવો ત્યાગ પાળે તો પણ કથાવાર્તામાં ન આવે, એ મોટી ખોટ છે. પહેલાં મંદિરની ક્રિયા આપણે માથે હતી ને હવે ગૃહસ્થને માથે છે. તે રૂપિયા એના ને છોકરા એના તે આપણાં પત્તર ધુવે. માટે હવે એ વાતની ચિંતા રહી નથી. માટે સદ્જ્ઞાન વડે આપણે ગૃહસ્થની સેવા કરવી; પણ તેમ નથી થાતું ને રોગ વધે છે તેનો ટંટો રહ્યો. માટે એવા શબ્દના આઘાત લગાડવા કે દેહનો અનાદર થાય, જ્ઞાન કથવું હોય તો બ્રહ્માંડ ફોડી નાખે, પણ દેહનો અનાદર થાય નહિ. વાણિયો રાજાના પાયખાનામાં પડ્યો તેની વાત કરી; પણ ગર્ભવાસ તો ખાડા કરતાં પણ ભૂંડો છે. પણ ભય વિના પ્રીતિ થાય નહિ; ભય વિના વિષય તજાય નહિ. વિષયમાં દુ:ખ દેખાતાં નથી ને ગુરુ અને શાસ્ત્રનું વચન મનાતું નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14187.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tyagi thaya chhie pan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14189.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje gam terethi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '188');
+            localStorage.setItem('lastVisitedVatFile', 'ch14188.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

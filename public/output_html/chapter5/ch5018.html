@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચોકી બેઠી હોય ત્યાં કોઈ - Choki bethi hoy tya koi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Choki bethi hoy tya koi</h1>
+                <div class="gujarati-title">ચોકી બેઠી હોય ત્યાં કોઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 18</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(18) cokī beṭhī hoya tyāṃ koī āvī śake nahi, e dṛṣṭāṃtanuṃ siddhāṃta e che je, ‘moṭā sādhu saṃgāthe māhātmya jāṇīne jīva joḍyo hoya, to tenāthī tenī marajī uparāṃta cheṭe jāya; paṇa viṣaya bhogavāya nahi ne viṣaya ene lopī śake nahīṃ.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(18) ચોકી બેઠી હોય ત્યાં કોઈ આવી શકે નહિ, એ દૃષ્ટાંતનું સિદ્ધાંત એ છે જે, ‘મોટા સાધુ સંગાથે માહાત્મ્ય જાણીને જીવ જોડ્યો હોય, તો તેનાથી તેની મરજી ઉપરાંત છેટે જાય; પણ વિષય ભોગવાય નહિ ને વિષય એને લોપી શકે નહીં.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5017.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nami vina matra namthi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5019.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota sadhuna samagamthi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '18');
+            localStorage.setItem('lastVisitedVatFile', 'ch5018.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

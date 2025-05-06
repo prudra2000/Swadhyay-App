@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તિલક, કંઠી રાખે અને  - Tilak, kanthi rakhe ane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tilak, kanthi rakhe ane</h1>
+                <div class="gujarati-title">તિલક, કંઠી રાખે અને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 84</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(84) tilaka, kaṃṭhī rākhe ane māṃhī kusaṃgī hoya che. karoḍa janma dharīne ghara bāṃdhyāṃ che, māḻā ghālyā che, have to ā janme karīne satsaṃga karī levo. avaḻī samajaṇa te śuṃ ? je, gharanāṃ manuṣya sāthe vera, ane pārakāṃ sāthe heta. tenuṃ siddhāṃta je, mahārāja ane ā saṃta sāthe heta nahi ane dehamāṃ heta, e samajaṇa avaḻī che; te moṭā saṃta maḻe to kare savaḻī. sarva jīva viṣayanā kīḍā che, te marīne tene ja pāmaśe; jīvamātrane vāsanā paṇa tenī ja che. sṛṣṭi karatāṃ āvaḍe, bījānā peśāba baṃdha karatāṃ āvaḍe, paṇa potānā svabhāva ṭāḻatāṃ na āvaḍe; māṭe svabhāva ṭāḻīne mahārājane saṃbhārīe to aṃtaramāṃ ṭāḍhuṃ thāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(84) તિલક, કંઠી રાખે અને માંહી કુસંગી હોય છે. કરોડ જન્મ ધરીને ઘર બાંધ્યાં છે, માળા ઘાલ્યા છે, હવે તો આ જન્મે કરીને સત્સંગ કરી લેવો. અવળી સમજણ તે શું ? જે, ઘરનાં મનુષ્ય સાથે વેર, અને પારકાં સાથે હેત. તેનું સિદ્ધાંત જે, મહારાજ અને આ સંત સાથે હેત નહિ અને દેહમાં હેત, એ સમજણ અવળી છે; તે મોટા સંત મળે તો કરે સવળી. સર્વ જીવ વિષયના કીડા છે, તે મરીને તેને જ પામશે; જીવમાત્રને વાસના પણ તેની જ છે. સૃષ્ટિ કરતાં આવડે, બીજાના પેશાબ બંધ કરતાં આવડે, પણ પોતાના સ્વભાવ ટાળતાં ન આવડે; માટે સ્વભાવ ટાળીને મહારાજને સંભારીએ તો અંતરમાં ટાઢું થાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13083.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bijane Purushottam kaho</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13085.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj bhela nana, mota</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '84');
+            localStorage.setItem('lastVisitedVatFile', 'ch13084.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

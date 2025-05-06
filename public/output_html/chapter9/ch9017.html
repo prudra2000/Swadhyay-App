@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ધર્મ તો કોઈ ઠેકાણે - Dharm to koi thekane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dharm to koi thekane</h1>
+                <div class="gujarati-title">ધર્મ તો કોઈ ઠેકાણે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 17</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(17) dharma to koī ṭhekāṇe rahyo nathī. te upara porabaṃdaranā bāvānī chokarīnī vāta karī, māṭe jhājhuṃ kahye jībha tūṭī paḍe evī vātuṃ che paṇa kayāṃya dharma rahyo nathī ne ā to mahārāje nokhuṃ pāḍyuṃ. ā niyama paṇa nahotā te mahārāje pragaṭa karyā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(17) ધર્મ તો કોઈ ઠેકાણે રહ્યો નથી. તે ઉપર પોરબંદરના બાવાની છોકરીની વાત કરી, માટે ઝાઝું કહ્યે જીભ તૂટી પડે એવી વાતું છે પણ કયાંય ધર્મ રહ્યો નથી ને આ તો મહારાજે નોખું પાડ્યું. આ નિયમ પણ નહોતા તે મહારાજે પ્રગટ કર્યા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9016.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jivne jo rupiya male</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9018.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apani avarada sarve</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '17');
+            localStorage.setItem('lastVisitedVatFile', 'ch9017.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

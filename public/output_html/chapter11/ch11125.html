@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શ્રીકૃષ્ણના ભક્ત સુધન્વા ને - Shrikrushnna bhakt sudhanva ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shrikrushnna bhakt sudhanva ne</h1>
+                <div class="gujarati-title">શ્રીકૃષ્ણના ભક્ત સુધન્વા ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 125</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(125) śrīkṛṣṇanā bhakta sudhanvā ne arjuna banne hatā, temāṃ sudhanvā dharmavāḻo ne niṣṭhāmāṃ paṇa caḍe evo hato; paṇa śrīkṛṣṇano abhiprāya na samajyo, to paṃḍe śrīkṛṣṇe arjunanī paḍakhe rahī sudhanvāne marāvyo, ane arjunanī rakṣā karī jitāḍyo māṭe āpaṇe mahārājano je abhiprāya je, akṣara ne puruṣottama beya svarūpanuṃ pragaṭa pramāṇa jñāna karāvī, samajāvī pravartāvavāno che temāṃ bhaḻī jāvuṃ ane ā maḻyā che te ja akṣaradhāmamāṃ laī jāśe, te pṛthvīnuṃ vejuṃ che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(125) શ્રીકૃષ્ણના ભક્ત સુધન્વા ને અર્જુન બન્ને હતા, તેમાં સુધન્વા ધર્મવાળો ને નિષ્ઠામાં પણ ચડે એવો હતો; પણ શ્રીકૃષ્ણનો અભિપ્રાય ન સમજ્યો, તો પંડે શ્રીકૃષ્ણે અર્જુનની પડખે રહી સુધન્વાને મરાવ્યો, અને અર્જુનની રક્ષા કરી જિતાડ્યો માટે આપણે મહારાજનો જે અભિપ્રાય જે, અક્ષર ને પુરુષોત્તમ બેય સ્વરૂપનું પ્રગટ પ્રમાણ જ્ઞાન કરાવી, સમજાવી પ્રવર્તાવવાનો છે તેમાં ભળી જાવું અને આ મળ્યા છે તે જ અક્ષરધામમાં લઈ જાશે, તે પૃથ્વીનું વેજું છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11124.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Keshavajivandasji amane kahe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11126.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek divas jaga bhakt</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '125');
+            localStorage.setItem('lastVisitedVatFile', 'ch11125.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

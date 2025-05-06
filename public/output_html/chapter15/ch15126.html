@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઈ સારો ન હોય  - Koi saro na hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Koi saro na hoy</h1>
+                <div class="gujarati-title">કોઈ સારો ન હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 126</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(126) koī sāro na hoya tene sāro to koī kahe ja nahi. te upara vāta karī je, ame savāramāṃ ūṭhīne kāma-krodhādika doṣanuṃ khaṃḍana karīe ne bījā vahelā ūṭhīne nāhīne āve to paṇa ame to khaṃḍana karatā hoīe. te amane joīne tenā śiṣya kahe je, jo masāṇiyā beṭhā che. te savāranā pahoramāṃ, $snānaṃ viśuddhaṃ pracurābhiradri: śrīnilakaṇthaṃ hṛdi cintayāmi || $(śrī nīlakaṃṭha cintanāṣṭakam) $artha :- brāhmamuhūrtamāṃ pathārīno tyāga karīne hṛdayamāṃ potānā svarūpanuṃ ciṃtana karīne, vipula jaḻathī śuddha snāna karīne hṛdayamāṃ śrī nīlakaṃṭha bhagavānanuṃ huṃ ciṃtana karuṃ chuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(126) કોઈ સારો ન હોય તેને સારો તો કોઈ કહે જ નહિ. તે ઉપર વાત કરી જે, અમે સવારમાં ઊઠીને કામ-ક્રોધાદિક દોષનું ખંડન કરીએ ને બીજા વહેલા ઊઠીને નાહીને આવે તો પણ અમે તો ખંડન કરતા હોઈએ. તે અમને જોઈને તેના શિષ્ય કહે જે, જો મસાણિયા બેઠા છે. તે સવારના પહોરમાં, $સ્નાનં વિશુદ્ધં પ્રચુરાભિરદ્રિ: શ્રીનિલકણ્થં હૃદિ ચિન્તયામિ ॥ $(શ્રી નીલકંઠ ચિન્તનાષ્ટકમ્) $અર્થ :- બ્રાહ્મમુહૂર્તમાં પથારીનો ત્યાગ કરીને હૃદયમાં પોતાના સ્વરૂપનું ચિંતન કરીને, વિપુલ જળથી શુદ્ધ સ્નાન કરીને હૃદયમાં શ્રી નીલકંઠ ભગવાનનું હું ચિંતન કરું છું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15125.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Svabhav padya chhe te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15127.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mitr hoy ne murkh hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '126');
+            localStorage.setItem('lastVisitedVatFile', 'ch15126.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

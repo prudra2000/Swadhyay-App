@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સારંગપુરનું બીજું  - Sarangapurnu biju</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sarangapurnu biju</h1>
+                <div class="gujarati-title">સારંગપુરનું બીજું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 73</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(73) sāraṃgapuranuṃ bījuṃ vacanāmṛta vaṃcāvīne vāta karī je, jīvane darśana karatāṃ āvaḍe nahi ne bhajana-smaraṇa ke, dāna karatāṃ paṇa āvaḍe nahi ne puṇya kare to ‘āpā’nā jevuṃ kare. koīnī bhāībaṃdhāī rākhavī, joḍa rākhavī, garaja rākhavī, paṇa begarajuṃ thāvuṃ nahi. maṃdira pūrāṃ thaī rahyāṃ, rahevānī jāyagā pūrī thaī, ṭhākorajīne ghareṇāṃ pūrāṃ thaī rahyāṃ; paṇa tyāgī thayā ne svabhāva rahyā; te jema agarājīne peṭamāṃ bhāloḍuṃ rahyuṃ hatuṃ tema jhīṇā jhīṇā svabhāva rahī gayā. cyavana khokhuṃ thaī gayā hatā to paṇa svabhāva rahyā; māṭe have to svabhāva sāthe sāmī laḍāī līdhe rahevuṃ ne temāṃ yogabhraṣṭa thāśe to paṇa aṃte sāruṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(73) સારંગપુરનું બીજું વચનામૃત વંચાવીને વાત કરી જે, જીવને દર્શન કરતાં આવડે નહિ ને ભજન-સ્મરણ કે, દાન કરતાં પણ આવડે નહિ ને પુણ્ય કરે તો ‘આપા’ના જેવું કરે. કોઈની ભાઈબંધાઈ રાખવી, જોડ રાખવી, ગરજ રાખવી, પણ બેગરજું થાવું નહિ. મંદિર પૂરાં થઈ રહ્યાં, રહેવાની જાયગા પૂરી થઈ, ઠાકોરજીને ઘરેણાં પૂરાં થઈ રહ્યાં; પણ ત્યાગી થયા ને સ્વભાવ રહ્યા; તે જેમ અગરાજીને પેટમાં ભાલોડું રહ્યું હતું તેમ ઝીણા ઝીણા સ્વભાવ રહી ગયા. ચ્યવન ખોખું થઈ ગયા હતા તો પણ સ્વભાવ રહ્યા; માટે હવે તો સ્વભાવ સાથે સામી લડાઈ લીધે રહેવું ને તેમાં યોગભ્રષ્ટ થાશે તો પણ અંતે સારું છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14072.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mote mote agal satsang</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14074.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Anek jivna kalyan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '73');
+            localStorage.setItem('lastVisitedVatFile', 'ch14073.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

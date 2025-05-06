@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પોતાની પ્રવૃત્તિમાંથી શેર - Potani pravruttimathi sher</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Potani pravruttimathi sher</h1>
+                <div class="gujarati-title">પોતાની પ્રવૃત્તિમાંથી શેર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 156</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha vadi cothane divase svāmīe vāta karī je, $(156) potānī pravṛttimāṃthī śera anna pedā karīne prabhu bhajavā, evī to jīvane dānata nathī. bhagavānane nathī bhajatā te sarve janāvara che. māṇasano to ākāramātra che. jema ḍhorane śīṃgaḍuṃ ne pūṃcha tema ene dāḍhī ne mūcha; paṇa jevā sīdī bhāvaḍā evā māṇasa che. te koīnā hāthamāṃ kuhāḍo, koīnā hāthamāṃ paroṇo, koīnā hāthamāṃ soya, koīnā hāthamāṃ kalama, paṇa koīnā hāthamāṃ māḻā nathī. $(śrīmad bhāgavata : 9/4/18) $artha:- potānā manane śrīkṛṣṇacaṃdranā caraṇāviṃdamāṃ, vāṇīne bhagavānanā guṇagānamāṃ, hāthone (be hāthane) śrīharinā maṃdirane mārjana vageremāṃ, kānane śrī acyutanā kathā śravaṇamāṃ, netrone bhagavānanī mūrti ane maṃdiranā saphāī karavāmāṃ, kānane viṣṇunā kathāmāṃ ā pramāṇe bhagavat sevāmāṃ lagāḍī dīdhā hatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ વદિ ચોથને દિવસે સ્વામીએ વાત કરી જે, $(156) પોતાની પ્રવૃત્તિમાંથી શેર અન્ન પેદા કરીને પ્રભુ ભજવા, એવી તો જીવને દાનત નથી. ભગવાનને નથી ભજતા તે સર્વે જનાવર છે. માણસનો તો આકારમાત્ર છે. જેમ ઢોરને શીંગડું ને પૂંછ તેમ એને દાઢી ને મૂછ; પણ જેવા સીદી ભાવડા એવા માણસ છે. તે કોઈના હાથમાં કુહાડો, કોઈના હાથમાં પરોણો, કોઈના હાથમાં સોય, કોઈના હાથમાં કલમ, પણ કોઈના હાથમાં માળા નથી. $(શ્રીમદ્ ભાગવત : 9/4/18) $અર્થ:- પોતાના મનને શ્રીકૃષ્ણચંદ્રના ચરણાવિંદમાં, વાણીને ભગવાનના ગુણગાનમાં, હાથોને (બે હાથને) શ્રીહરિના મંદિરને માર્જન વગેરેમાં, કાનને શ્રી અચ્યુતના કથા શ્રવણમાં, નેત્રોને ભગવાનની મૂર્તિ અને મંદિરના સફાઈ કરવામાં, કાનને વિષ્ણુના કથામાં આ પ્રમાણે ભગવત્ સેવામાં લગાડી દીધા હતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12155.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Netre karine rup manhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12157.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sau pasethi ekuko</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '156');
+            localStorage.setItem('lastVisitedVatFile', 'ch12156.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

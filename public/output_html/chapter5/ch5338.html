@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પામર તો પરચા માગે - Pamar to paracha mage</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pamar to paracha mage</h1>
+                <div class="gujarati-title">પામર તો પરચા માગે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 338</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(338) pāmara to paracā māge, paṇa eka śrīkṛṣṇane ūrdhvaretā kahyā che ne naranārāyaṇane kahyā che, evā to āja mūḻajī brahmacārī ne mayārāma bhaṭṭa te śera ghī jame ne thāya nahi ne be hajāra māṇasa strīo sahita bheḻā rahetā to paṇa kāmano ghāṭa thāya nahīṃ. jitendriya, śāstramāṃ lakṣmaṇajī ādika be kahyā che ne anuvṛttivāḻā kṛṣṇāvatāramāṃ traṇa kahyā che ne bhīḍo khamyāmāṃ traṇa kahyā che ne āja to ākho satsaṃga e traṇa guṇe jukta che; e ja moṭo paraco che, māṭe jema che tema oḻakhavuṃ.@ 1 ghāṭa= māyika sukha bhogavavāno saṃkalpa, vikārano saṃkalpa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(338) પામર તો પરચા માગે, પણ એક શ્રીકૃષ્ણને ઊર્ધ્વરેતા કહ્યા છે ને નરનારાયણને કહ્યા છે, એવા તો આજ મૂળજી બ્રહ્મચારી ને મયારામ ભટ્ટ તે શેર ઘી જમે ને થાય નહિ ને બે હજાર માણસ સ્ત્રીઓ સહિત ભેળા રહેતા તો પણ કામનો ઘાટ થાય નહીં. જિતેન્દ્રિય, શાસ્ત્રમાં લક્ષ્મણજી આદિક બે કહ્યા છે ને અનુવૃત્તિવાળા કૃષ્ણાવતારમાં ત્રણ કહ્યા છે ને ભીડો ખમ્યામાં ત્રણ કહ્યા છે ને આજ તો આખો સત્સંગ એ ત્રણ ગુણે જુક્ત છે; એ જ મોટો પરચો છે, માટે જેમ છે તેમ ઓળખવું.@ 1 ઘાટ= માયિક સુખ ભોગવવાનો સંકલ્પ, વિકારનો સંકલ્પ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5337.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satsang, sadhu ane bhagavan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5339.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Satsangma ketalak lambo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '338');
+            localStorage.setItem('lastVisitedVatFile', 'ch5338.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

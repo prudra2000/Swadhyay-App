@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જે ખરેખરા હોય તેને  - Je kharekhara hoy tene</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Je kharekhara hoy tene</h1>
+                <div class="gujarati-title">જે ખરેખરા હોય તેને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 114</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(114) je kharekharā hoya tene ā lokamāṃ koī padārthamāṃ moha na pāmavuṃ ane kyāṃya lobhāvuṃ nahi. jagatamāṃ kyāṃya kalyāṇa nathī. pūjā rākhe te peṭa sāru rākhe. eka kacchī bāvo hato, te tribhaṃgī mūrtine eka hāthe pāgha baṃdhāvato hato ane bīje hāthe hoko pīto hato. tyāṃ paṭelanuṃ gāḍuṃ sīmamāṃ laṇavā jāvā nīkaḻyuṃ. te bāvo maṃgaḻā karī gāḍe na besī jāya to doḍha gāu cālavuṃ paḍe, tethī jhaṭa maṃgaḻā karī gāḍe besavānī tāṇa ane hokānī talapa pūrī lāgelī. vaḻī lālajīnuṃ māthuṃ līsuṃ te pāgha rahe nahi, eṭale lālajīne dhola mārī kahyuṃ, ‘tejo kaṃdha jhūre, matho samo rakha !’ ema peṭa sāru pūjā kare temāṃ kāṃī pāke nahi.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(114) જે ખરેખરા હોય તેને આ લોકમાં કોઈ પદાર્થમાં મોહ ન પામવું અને ક્યાંય લોભાવું નહિ. જગતમાં ક્યાંય કલ્યાણ નથી. પૂજા રાખે તે પેટ સારુ રાખે. એક કચ્છી બાવો હતો, તે ત્રિભંગી મૂર્તિને એક હાથે પાઘ બંધાવતો હતો અને બીજે હાથે હોકો પીતો હતો. ત્યાં પટેલનું ગાડું સીમમાં લણવા જાવા નીકળ્યું. તે બાવો મંગળા કરી ગાડે ન બેસી જાય તો દોઢ ગાઉ ચાલવું પડે, તેથી ઝટ મંગળા કરી ગાડે બેસવાની તાણ અને હોકાની તલપ પૂરી લાગેલી. વળી લાલજીનું માથું લીસું તે પાઘ રહે નહિ, એટલે લાલજીને ધોલ મારી કહ્યું, ‘તેજો કંધ ઝૂરે, મથો સમો રખ !’ એમ પેટ સારુ પૂજા કરે તેમાં કાંઈ પાકે નહિ.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13113.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koino tiraskar karavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13115.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Pramad ane moh jya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '114');
+            localStorage.setItem('lastVisitedVatFile', 'ch13114.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

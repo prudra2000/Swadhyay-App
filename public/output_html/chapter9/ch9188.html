@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તાવ આવે ત્યારે ભોજન  - Tava ave tyare bhojan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tava ave tyare bhojan</h1>
+                <div class="gujarati-title">તાવ આવે ત્યારે ભોજન </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 188</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(188) tāva āve tyāre bhojana na bhāve, tema viṣayano abhāva thāya to bhagavānanuṃ sukha āve. dhrāphāno rājā baṃdhāṇī thaīne marī gayo māṭe jāṇapaṇāmāṃ rahīne ātmārūpa thaī bhajana kare to sukha thāya. sādhane karīne sukha to thāya, paṇa te deśakāḻe ṭaḻī jāya. jāṇapaṇāmāṃ rahyā thake je sukha thāya che te sukha nāśa nathī pāmatuṃ māṭe jāṇapaṇāmāṃ rahevā māṃḍe tyāre potānā hṛdayamāṃ ema jaṇāya je, mārāmāṃ āṭalā doṣa che, āṭalā guṇa che ne āṭalā raja-tama varate che. āvā joga vinā bījā game teṭalā upāya kare paṇa vāsanā ṭaḻatī nathī. $soso baṃdhana hota, mokṣa rīti nahi jānī. $khātahe jhaṃpāpāta, jāyahī māre garahī; $keśaluṃchana karnacheda, aṃga bāghaṃbara dharahī. $śira jaṭā khākha tana lagāya ke, phirata paśuvata phūla he; $kahe brahmamuni hari pragaṭa bina, saba sādhana bhrama mūla he. $(brahmānaṃda kāvya : cānaka ko aṃga)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(188) તાવ આવે ત્યારે ભોજન ન ભાવે, તેમ વિષયનો અભાવ થાય તો ભગવાનનું સુખ આવે. ધ્રાફાનો રાજા બંધાણી થઈને મરી ગયો માટે જાણપણામાં રહીને આત્મારૂપ થઈ ભજન કરે તો સુખ થાય. સાધને કરીને સુખ તો થાય, પણ તે દેશકાળે ટળી જાય. જાણપણામાં રહ્યા થકે જે સુખ થાય છે તે સુખ નાશ નથી પામતું માટે જાણપણામાં રહેવા માંડે ત્યારે પોતાના હૃદયમાં એમ જણાય જે, મારામાં આટલા દોષ છે, આટલા ગુણ છે ને આટલા રજ-તમ વરતે છે. આવા જોગ વિના બીજા ગમે તેટલા ઉપાય કરે પણ વાસના ટળતી નથી. $સોસો બંધન હોત, મોક્ષ રીતિ નહિ જાની. $ખાતહે ઝંપાપાત, જાયહી મારે ગરહી; $કેશલુંછન કર્નછેદ, અંગ બાઘંબર ધરહી. $શિર જટા ખાખ તન લગાય કે, ફિરત પશુવત ફૂલ હે; $કહે બ્રહ્મમુનિ હરિ પ્રગટ બિન, સબ સાધન ભ્રમ મૂલ હે. $(બ્રહ્માનંદ કાવ્ય : ચાનક કો અંગ)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9187.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Atmarupe varatavu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9189.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kothalima rupiya bharya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '188');
+            localStorage.setItem('lastVisitedVatFile', 'ch9188.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

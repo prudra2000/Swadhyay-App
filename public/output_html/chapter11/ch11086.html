@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજનો અભિપ્રાય જેવો - Maharajno abhipray jevo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharajno abhipray jevo</h1>
+                <div class="gujarati-title">મહારાજનો અભિપ્રાય જેવો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 86</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(86) mahārājano abhiprāya jevo asura, jhīṇī buddhivāḻā samaje che tevo āpaṇe paṇa samajī śakatā nathī. ā rūganātharāya che, teṇe koī divasa āpaṇuṃ maṃdira joyuṃ nathī ane maṃdira to kaheto nathī, paṇa maṭha kahe che. paraṃtu jevo mahārājano siddhāṃta te jāṇe che evo āpaṇe jāṇavo joīe; paṇa jāṇī śakatā nathī. te śuṃ? to, e ema samaje che ke, ‘jo enā svāminārāyaṇa gaḍhaḍethī kāgaḻa lakhī mokale je, mūrtiyuṃ ṭhekāṇe mūkīne tame āṃhīṃ āvatā rahejo, to e mahārājanā samācāra āvyethī, āpaṇe mūrtiyuṃne mūkī daīne savāramāṃ gaḍhaḍe pahoṃcīe, ema āpaṇe śrījīmahārāja sāthe baṃdhāṇā chīe; paṇa mūrtiyuṃ padharāvavāmāṃ baṃdhāṇā nathī.’ paṇa āvuṃ je rahasya te āpaṇāmāṃnā samajatā nathī, paṇa e ghera beṭhāṃ ema samaje che; māṭe āpaṇe svāminārāyaṇanā kahevāīe chīe, paṇa teno siddhāṃta haju nathī samajatā.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(86) મહારાજનો અભિપ્રાય જેવો અસુર, ઝીણી બુદ્ધિવાળા સમજે છે તેવો આપણે પણ સમજી શકતા નથી. આ રૂગનાથરાય છે, તેણે કોઈ દિવસ આપણું મંદિર જોયું નથી અને મંદિર તો કહેતો નથી, પણ મઠ કહે છે. પરંતુ જેવો મહારાજનો સિદ્ધાંત તે જાણે છે એવો આપણે જાણવો જોઈએ; પણ જાણી શકતા નથી. તે શું? તો, એ એમ સમજે છે કે, ‘જો એના સ્વામિનારાયણ ગઢડેથી કાગળ લખી મોકલે જે, મૂર્તિયું ઠેકાણે મૂકીને તમે આંહીં આવતા રહેજો, તો એ મહારાજના સમાચાર આવ્યેથી, આપણે મૂર્તિયુંને મૂકી દઈને સવારમાં ગઢડે પહોંચીએ, એમ આપણે શ્રીજીમહારાજ સાથે બંધાણા છીએ; પણ મૂર્તિયું પધરાવવામાં બંધાણા નથી.’ પણ આવું જે રહસ્ય તે આપણામાંના સમજતા નથી, પણ એ ઘેર બેઠાં એમ સમજે છે; માટે આપણે સ્વામિનારાયણના કહેવાઈએ છીએ, પણ તેનો સિદ્ધાંત હજુ નથી સમજતા.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11085.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gyan vina to potano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11087.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kathana prasangma swamie</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '86');
+            localStorage.setItem('lastVisitedVatFile', 'ch11086.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

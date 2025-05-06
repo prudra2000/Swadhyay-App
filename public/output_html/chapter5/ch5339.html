@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગમાં કેટલાક લાંબો - Satsangma ketalak lambo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsangma ketalak lambo</h1>
+                <div class="gujarati-title">સત્સંગમાં કેટલાક લાંબો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 339</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(339) satsaṃgamāṃ keṭalāka lāṃbo paga karīne sūtā nahi, tathā maṭakāṃ jītatā tathā khaṃjoḻavuṃ nahi tathā prasādīnuṃ paṇa gaḻyuṃ, cīkaṇuṃ khādhuṃ nahi tathā saṃkalpa thāvā dīdhā nahi e sarve kaṭhaṇa vāta che ne e raste koīthī calāya nahi ne tene manuṣya na kahevāya. to paṇa te jñānīnī barābara na kahevāya ne deśakāḻa lāgyā ne thāḻa bīje gayo ane jenī āgaḻa ūṃce śabde bolāya nahi tene vacana kahyāṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(339) સત્સંગમાં કેટલાક લાંબો પગ કરીને સૂતા નહિ, તથા મટકાં જીતતા તથા ખંજોળવું નહિ તથા પ્રસાદીનું પણ ગળ્યું, ચીકણું ખાધું નહિ તથા સંકલ્પ થાવા દીધા નહિ એ સર્વે કઠણ વાત છે ને એ રસ્તે કોઈથી ચલાય નહિ ને તેને મનુષ્ય ન કહેવાય. તો પણ તે જ્ઞાનીની બરાબર ન કહેવાય ને દેશકાળ લાગ્યા ને થાળ બીજે ગયો અને જેની આગળ ઊંચે શબ્દે બોલાય નહિ તેને વચન કહ્યાં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5338.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pamar to paracha mage</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5340.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mahuvana khumbharne so</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '339');
+            localStorage.setItem('lastVisitedVatFile', 'ch5339.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

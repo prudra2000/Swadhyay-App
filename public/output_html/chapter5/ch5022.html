@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનની આજ્ઞાથી પ્રવૃત્તિમા - Bhagavanni agnathi pravrutima</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanni agnathi pravrutima</h1>
+                <div class="gujarati-title">ભગવાનની આજ્ઞાથી પ્રવૃત્તિમા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 22</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(22) bhagavānanī ājñāthī pravṛttimāṃ joḍāya to paṇa baṃdhāya to kharo, paṇa ājñā pāḻyethī prasannatā thāya. tyāṃ dṛṣṭāṃta dīdhuṃ je, rājānī ājñāthī sipāī kūvāmāṃ sāta vāra ūtaryo ne palaḻīne āvyo to paṇa gāma āpyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(22) ભગવાનની આજ્ઞાથી પ્રવૃત્તિમાં જોડાય તો પણ બંધાય તો ખરો, પણ આજ્ઞા પાળ્યેથી પ્રસન્નતા થાય. ત્યાં દૃષ્ટાંત દીધું જે, રાજાની આજ્ઞાથી સિપાઈ કૂવામાં સાત વાર ઊતર્યો ને પલળીને આવ્યો તો પણ ગામ આપ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5021.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavannu tatha aa sadhunu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5023.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Nivrutima rahe to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '22');
+            localStorage.setItem('lastVisitedVatFile', 'ch5022.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

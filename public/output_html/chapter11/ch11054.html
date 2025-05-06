@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંપૂર્ણ સત્સંગનું કહ્યું જે - Sampurn satsangnu kahyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sampurn satsangnu kahyu je</h1>
+                <div class="gujarati-title">સંપૂર્ણ સત્સંગનું કહ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 54</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(54) saṃpūrṇa satsaṃganuṃ kahyuṃ je, jyāre ā sādhumāṃ mana, karma, vacane joḍāśe ne sādhunāṃ sarve lakṣaṇa āvaśe; ne akṣaradhāmamāṃ che te ja ā ane āṃhīṃ che te ja mūrti dhāmamāṃ che evuṃ aparokṣa jñāna mahārājane viśe thāśe tyāre ja sāco satsaṃga maḻyo che ne samajāṇo ema jāṇavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(54) સંપૂર્ણ સત્સંગનું કહ્યું જે, જ્યારે આ સાધુમાં મન, કર્મ, વચને જોડાશે ને સાધુનાં સર્વે લક્ષણ આવશે; ને અક્ષરધામમાં છે તે જ આ અને આંહીં છે તે જ મૂર્તિ ધામમાં છે એવું અપરોક્ષ જ્ઞાન મહારાજને વિશે થાશે ત્યારે જ સાચો સત્સંગ મળ્યો છે ને સમજાણો એમ જાણવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11053.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Je vatma veg lage</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11055.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Je sadhu hashe te j</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '54');
+            localStorage.setItem('lastVisitedVatFile', 'ch11054.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

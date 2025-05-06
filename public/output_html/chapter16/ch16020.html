@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલેક ઠેકાણે  - Ketalek thekane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalek thekane</h1>
+                <div class="gujarati-title">કેટલેક ઠેકાણે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 20</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(20) keṭaleka ṭhekāṇe ‘huṃ te tuṃ, ne tuṃ te huṃ’ evuṃ che. koīka karmakāṃḍamāṃ maṃḍyā che. te siddhapuramāṃ nadīmāṃ be jaṇa pāṇī uḍāḍatā uḍāḍatā pūra āvyuṃ te marī gayā ne keṭalāka mātā mātā kare che. āṭalī āṭalī vātuṃ mahārāje karī che te āpaṇā sāru karī che. te jyāṃ tyāṃ khādhāmāṃ ne lugaḍāṃmāṃ ke meḍīmāṃ ke strīmāṃ gūṃcāī raheśuṃ to e vātuṃ nahi samajāya. māṭe saheje saheje thāya teṭalo vahevāra karavo paṇa hāyavoya karavuṃ nahi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(20) કેટલેક ઠેકાણે ‘હું તે તું, ને તું તે હું’ એવું છે. કોઈક કર્મકાંડમાં મંડ્યા છે. તે સિદ્ધપુરમાં નદીમાં બે જણ પાણી ઉડાડતા ઉડાડતા પૂર આવ્યું તે મરી ગયા ને કેટલાક માતા માતા કરે છે. આટલી આટલી વાતું મહારાજે કરી છે તે આપણા સારુ કરી છે. તે જ્યાં ત્યાં ખાધામાં ને લુગડાંમાં કે મેડીમાં કે સ્ત્રીમાં ગૂંચાઈ રહેશું તો એ વાતું નહિ સમજાય. માટે સહેજે સહેજે થાય તેટલો વહેવાર કરવો પણ હાયવોય કરવું નહિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16019.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj nam ganata hata</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16021.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jivne aa lokno</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '20');
+            localStorage.setItem('lastVisitedVatFile', 'ch16020.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(186) sonuṃ ne strī e bemāṃ doṣabuddhi karavī. jema saṃbaṃdhīmāṃ jīva baṃdhāya che ema ā sādhumāṃ jīva bāṃdhavo. ne ā sādhumāṃthī mana nokhuṃ paḍe tene bheḻe rahyāthī paṇa samāsa nahi; kema je, tene ā vātuṃ sarve avaḻī paḍe. māṭe e be vātuṃ avaśya śīkhavānī che. ne ātmaniṣṭhā ne upāsanā to pachī śīkhāya; paṇa ā sādhu joḍe jīva bāṃdhavo e pāyo kahevāya, e pāyā upara kāma cāle. māṭe eka viṣayanuṃ tucchapaṇuṃ ne bījuṃ sādhumāṃ jīva bāṃdhavo ethī aṃtare sukha rahe ne guru āgaḻa to vinaya kare tyāre vidyā āvaḍe. śrīkṛṣṇa paṇa sāṃdipanī gurune prasanna karavā sāru lākaḍāṃnā bhārā levā gayā hatā. te gurunī anuvṛtti ane anugrahathī vidyā āvaḍe che. be jaṇa sāthe to jarūra jīva bāṃdhavo ne bījuṃ viṣayamāṃ vairāgya pāmavo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(186) સોનું ને સ્ત્રી એ બેમાં દોષબુદ્ધિ કરવી. જેમ સંબંધીમાં જીવ બંધાય છે એમ આ સાધુમાં જીવ બાંધવો. ને આ સાધુમાંથી મન નોખું પડે તેને ભેળે રહ્યાથી પણ સમાસ નહિ; કેમ જે, તેને આ વાતું સર્વે અવળી પડે. માટે એ બે વાતું અવશ્ય શીખવાની છે. ને આત્મનિષ્ઠા ને ઉપાસના તો પછી શીખાય; પણ આ સાધુ જોડે જીવ બાંધવો એ પાયો કહેવાય, એ પાયા ઉપર કામ ચાલે. માટે એક વિષયનું તુચ્છપણું ને બીજું સાધુમાં જીવ બાંધવો એથી અંતરે સુખ રહે ને ગુરુ આગળ તો વિનય કરે ત્યારે વિદ્યા આવડે. શ્રીકૃષ્ણ પણ સાંદિપની ગુરુને પ્રસન્ન કરવા સારુ લાકડાંના ભારા લેવા ગયા હતા. તે ગુરુની અનુવૃત્તિ અને અનુગ્રહથી વિદ્યા આવડે છે. બે જણ સાથે તો જરૂર જીવ બાંધવો ને બીજું વિષયમાં વૈરાગ્ય પામવો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

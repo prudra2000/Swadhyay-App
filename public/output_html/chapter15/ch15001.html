@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>નૃસિંહાનંદસ્વામીએ મહારાજને  - Nrusinhanandaswamie Maharajne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Nrusinhanandaswamie Maharajne</h1>
+                <div class="gujarati-title">નૃસિંહાનંદસ્વામીએ મહારાજને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 1</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(1) nṛsiṃhānaṃdasvāmīe mahārājane page lāgīne kahyuṃ je he kṛpānātha ! bhagavānanī mūrti akhaṃḍa rahe evī kāṃīka vāta karo tyāre mahārāja śrloka bolyā je, $artha :- brahmabhāvane prāpta thayelo te prasanna citta manuṣya kaśāno śoka karato nathī ke kaśānī ākāṃkṣā karato nathī ane sarva bhūtomāṃ samabhāvathī raheto thako mārī parama bhaktine pāme che. 1 golakamāṃ= īndriyonuṃ adhiṣṭhāna. $2 camaka= lohacuṃbaka. $3 gāṃṭhanī = potānī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(1) નૃસિંહાનંદસ્વામીએ મહારાજને પગે લાગીને કહ્યું જે હે કૃપાનાથ ! ભગવાનની મૂર્તિ અખંડ રહે એવી કાંઈક વાત કરો ત્યારે મહારાજ શ્ર્લોક બોલ્યા જે, $અર્થ :- બ્રહ્મભાવને પ્રાપ્ત થયેલો તે પ્રસન્ન ચિત્ત મનુષ્ય કશાનો શોક કરતો નથી કે કશાની આકાંક્ષા કરતો નથી અને સર્વ ભૂતોમાં સમભાવથી રહેતો થકો મારી પરમ ભક્તિને પામે છે. 1 ગોલકમાં= ઈન્દ્રિયોનું અધિષ્ઠાન. $2 ચમક= લોહચુંબક. $3 ગાંઠની = પોતાની.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14230.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sarv shastrnu siddhant</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15002.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kam, lobh, rasaswad </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '1');
+            localStorage.setItem('lastVisitedVatFile', 'ch15001.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણને તો ભગવાને રાજી - Apanane to bhagavane raji </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apanane to bhagavane raji </h1>
+                <div class="gujarati-title">આપણને તો ભગવાને રાજી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 52</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(52) āpaṇane to bhagavāne rājī thaīne potānuṃ akṣaradhāma āpyuṃ che ne bhagavāna evā udāra che je, jenā upara rājī thāya che, tene potānuṃ dhāma bakṣisa āpī de che. ne satsaṃga to pachavāḍethī (pāchaḻathī) daśa hajāra ghaṇo thāśe, paṇa ā sādhu ne ā vātuṃ nahi maḻe ne mahārāja pragaṭa thayā tyāre ā sādhu dīṭhā, nahi to ā sādhu bīje hoya nahīṃ.@ 1 bakṣisa= bheṭa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(52) આપણને તો ભગવાને રાજી થઈને પોતાનું અક્ષરધામ આપ્યું છે ને ભગવાન એવા ઉદાર છે જે, જેના ઉપર રાજી થાય છે, તેને પોતાનું ધામ બક્ષિસ આપી દે છે. ને સત્સંગ તો પછવાડેથી (પાછળથી) દશ હજાર ઘણો થાશે, પણ આ સાધુ ને આ વાતું નહિ મળે ને મહારાજ પ્રગટ થયા ત્યારે આ સાધુ દીઠા, નહિ તો આ સાધુ બીજે હોય નહીં.@ 1 બક્ષિસ= ભેટ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4051.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Papino vayaro ave to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4053.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Gam vakiyama bahu j </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '52');
+            localStorage.setItem('lastVisitedVatFile', 'ch4052.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

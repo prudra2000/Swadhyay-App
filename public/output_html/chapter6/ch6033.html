@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજે પ્રથમ નિત્યાનંદસ્વામી - Maharaje pratham nityanandswami</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharaje pratham nityanandswami</h1>
+                <div class="gujarati-title">મહારાજે પ્રથમ નિત્યાનંદસ્વામી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 33</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(33) mahārāje prathama nityānaṃdasvāmīne potānuṃ puruṣottamapaṇuṃ kahela. te jyāre ‘satsaṃgijīvana’ karyo tyāre upāsanāno prasaṃga nākhyo temāṃ śrīkṛṣṇanī upamā devā māṃḍī; tyāre svāmī kahe je, ‘bādaśāhane kāṃī cākaranī upamā devāya? na devāya.’ evī rīte sāta divasa lagaṇa kajiyo cālyo tyāre mahārāja kahe, “ema ja lakhāya, tame śuṃ jāṇo ?” ne keṭaluṃka khījyā, to paṇa na mānyuṃ; ne kahyuṃ je, ‘caritra meḻavo je, mahārāje kīdhāṃ che te teṇe kīdhāṃ che ?’ ema keṭaluṃka thayuṃ ne ekalā kāḍhyā ne mahārāja paṇa bījā sādhu bheḻā bhaḻī gayā, to paṇa na mānyuṃ. pachī mahārāje kahyuṃ je, “amāro rahasya to ā sādhu jāṇe che.” ema kahīne nityānaṃdasvāmīne hāra āpyo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૩૩) મહારાજે પ્રથમ નિત્યાનંદસ્વામીને પોતાનું પુરુષોત્તમપણું કહેલ. તે જ્યારે ‘સત્સંગિજીવન’ કર્યો ત્યારે ઉપાસનાનો પ્રસંગ નાખ્યો તેમાં શ્રીકૃષ્ણની ઉપમા દેવા માંડી; ત્યારે સ્વામી કહે જે, ‘બાદશાહને કાંઈ ચાકરની ઉપમા દેવાય? ન દેવાય.’ એવી રીતે સાત દિવસ લગણ કજિયો ચાલ્યો ત્યારે મહારાજ કહે, “એમ જ લખાય, તમે શું જાણો ?” ને કેટલુંક ખીજ્યા, તો પણ ન માન્યું; ને કહ્યું જે, ‘ચરિત્ર મેળવો જે, મહારાજે કીધાં છે તે તેણે કીધાં છે ?’ એમ કેટલુંક થયું ને એકલા કાઢ્યા ને મહારાજ પણ બીજા સાધુ ભેળા ભળી ગયા, તો પણ ન માન્યું. પછી મહારાજે કહ્યું જે, “અમારો રહસ્ય તો આ સાધુ જાણે છે.” એમ કહીને નિત્યાનંદસ્વામીને હાર આપ્યો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6032.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Atmanishtha ave tene karine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6034.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Svapnma gopalanandswamine </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '33');
+            localStorage.setItem('lastVisitedVatFile', 'ch6033.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

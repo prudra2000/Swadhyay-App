@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવના હૈયામાં દેહ - Aa jivna haiyama deh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jivna haiyama deh</h1>
+                <div class="gujarati-title">આ જીવના હૈયામાં દેહ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 151</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi cothane divase svāmīe vāta karī je,$(151) ā jīvanā haiyāmāṃ deha, loka, bhoga ne pakṣa tenuṃ ja bhajana thayā kare che; paṇa te vinā bījo saṃkalpa nathī. jema kamānamāṃthī tīra nīsare tema svarga, mṛtyu ne pātāḻa sudhī sau viṣayanā ja vegamāṃ che. ‘khodavo ḍuṃgara ne māravo uṃdara,’ tema eka śera anna khāvuṃ ne āṭalā saṃkalpa kare che te paśubuddhi che. jīvanī buddhi ne indriyuṃ, te sarve parameśrvarane mārage jaḍatāne pāmī gaī che; āṃkho āṃdhaḻī thaī che, kāna phūṭī gayā che, jībha ṭūṃkī thaī che, paga bhāṃgī gayā che; paṇa vahevāra māragamāṃ to hāṃkohāṃka cāle che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ ચોથને દિવસે સ્વામીએ વાત કરી જે,$(151) આ જીવના હૈયામાં દેહ, લોક, ભોગ ને પક્ષ તેનું જ ભજન થયા કરે છે; પણ તે વિના બીજો સંકલ્પ નથી. જેમ કમાનમાંથી તીર નીસરે તેમ સ્વર્ગ, મૃત્યુ ને પાતાળ સુધી સૌ વિષયના જ વેગમાં છે. ‘ખોદવો ડુંગર ને મારવો ઉંદર,’ તેમ એક શેર અન્ન ખાવું ને આટલા સંકલ્પ કરે છે તે પશુબુદ્ધિ છે. જીવની બુદ્ધિ ને ઇન્દ્રિયું, તે સર્વે પરમેશ્ર્વરને મારગે જડતાને પામી ગઈ છે; આંખો આંધળી થઈ છે, કાન ફૂટી ગયા છે, જીભ ટૂંકી થઈ છે, પગ ભાંગી ગયા છે; પણ વહેવાર મારગમાં તો હાંકોહાંક ચાલે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14150.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bar koshe boli badale</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14152.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Chanpathalna savadas</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '151');
+            localStorage.setItem('lastVisitedVatFile', 'ch14151.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

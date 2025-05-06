@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટાની આજ્ઞાએ કરીને - Motani  Aagnae karine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motani  Aagnae karine</h1>
+                <div class="gujarati-title">મોટાની આજ્ઞાએ કરીને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 26</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(26) moṭānī ājñāe karīne karavuṃ, te to jema gaṇapatie gāyanī pradakṣiṇā karī evuṃ che. ne mananuṃ gamatuṃ karavuṃ te to kārtikasvāmīnī peṭhe pṛthvīnī pradakṣiṇā karavā jevuṃ che māṭe ājñāe thoḍuṃ kare to paṇa ghaṇuṃ thāya che ne managamatuṃ jhājhuṃ kare to paṇa thoḍuṃ thāya che. ne ājñāmāṃ dharmane ghasāro āvato hoya evī ājñāmāṃ to ghaṭe ema karavuṃ. $(juo prakaraṇa 6nī vāta 55)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(26) મોટાની આજ્ઞાએ કરીને કરવું, તે તો જેમ ગણપતિએ ગાયની પ્રદક્ષિણા કરી એવું છે. ને મનનું ગમતું કરવું તે તો કાર્તિકસ્વામીની પેઠે પૃથ્વીની પ્રદક્ષિણા કરવા જેવું છે માટે આજ્ઞાએ થોડું કરે તો પણ ઘણું થાય છે ને મનગમતું ઝાઝું કરે તો પણ થોડું થાય છે. ને આજ્ઞામાં ધર્મને ઘસારો આવતો હોય એવી આજ્ઞામાં તો ઘટે એમ કરવું. $(જુઓ પ્રકરણ 6ની વાત 55)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2025.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek jan ek mandirma</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2027.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shivji, parvati ne pothiyana</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '26');
+            localStorage.setItem('lastVisitedVatFile', 'ch2026.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

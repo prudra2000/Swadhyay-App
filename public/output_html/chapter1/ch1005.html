@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવ સાધન તે શું કરશે - A jiv sadhan te shun karashe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>A jiv sadhan te shun karashe</h1>
+                <div class="gujarati-title">આ જીવ સાધન તે શું કરશે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 5</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(5) ā jīva te śuṃ karaśe ? e to jema temāṃ ghaṇo dākhaḍo; kema je, tene ḍhora khāī jāya, paṃkhī khāī jāya, tema sādhana vaḍe kalyāṇa thāvuṃ te evuṃ che ne bhagavānanī prāpti vaḍe kevuṃ thāya che ? to, jema ākhī pṛthvīmāṃ varasāda varase ne dāṇā pāke che; pachī tene ḍhora khāya, paṃkhī khāya, cora laī jāya to paṇa khūṭe nahīṃ. ne kūvā, taḻāva, ne nadīo khūṭe paṇa samudra na khūṭe, tema bhagavāna vaḍe kalyāṇa te evuṃ che ne ā to bahu ja durlabha che paṇa mahimā samajāto nathī.@ 1 sādhana= guṇātīta evā satpuruṣane oḻakhī temanuṃ sevana karavuṃ, samāgama karavo te.;</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(5) આ જીવ તે શું કરશે ? એ તો જેમ તેમાં ઘણો દાખડો; કેમ જે, તેને ઢોર ખાઈ જાય, પંખી ખાઈ જાય, તેમ સાધન વડે કલ્યાણ થાવું તે એવું છે ને ભગવાનની પ્રાપ્તિ વડે કેવું થાય છે ? તો, જેમ આખી પૃથ્વીમાં વરસાદ વરસે ને દાણા પાકે છે; પછી તેને ઢોર ખાય, પંખી ખાય, ચોર લઈ જાય તો પણ ખૂટે નહીં. ને કૂવા, તળાવ, ને નદીઓ ખૂટે પણ સમુદ્ર ન ખૂટે, તેમ ભગવાન વડે કલ્યાણ તે એવું છે ને આ તો બહુ જ દુર્લભ છે પણ મહિમા સમજાતો નથી.@ 1 સાધન= ગુણાતીત એવા સત્પુરુષને ઓળખી તેમનું સેવન કરવું, સમાગમ કરવો તે.;</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1004.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavanni motai jena</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1006.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Motane sevya hoy ne tena gun</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '5');
+            localStorage.setItem('lastVisitedVatFile', 'ch1005.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

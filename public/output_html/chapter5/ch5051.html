@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઘણા જીવને મોક્ષને મારગે - Ghana jive mokshne marage</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ghana jive mokshne marage</h1>
+                <div class="gujarati-title">ઘણા જીવને મોક્ષને મારગે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 51</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(51) ghaṇā jīvane mokṣane mārage caḍhāvavā che tethī niyama-dharmanī vātuṃ ghaṇī thāya ne māhātmyanī vātuṃ jhājhī thāya nahīṃ. mahārāje māhātmyanī vātuṃ ghaṇī karī eṭale kupātra jīve dharma mūkī dīdhā; tethī mahārāje potāne hāthe māhātmyanī vātuṃ upara līṭā mūkyā, paṇa māhātmya jāṇyethī ja śāṃti che; paṇa jīva pātra nahi tethī māhātmyanī vātuṃ thātī nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(51) ઘણા જીવને મોક્ષને મારગે ચઢાવવા છે તેથી નિયમ-ધર્મની વાતું ઘણી થાય ને માહાત્મ્યની વાતું ઝાઝી થાય નહીં. મહારાજે માહાત્મ્યની વાતું ઘણી કરી એટલે કુપાત્ર જીવે ધર્મ મૂકી દીધા; તેથી મહારાજે પોતાને હાથે માહાત્મ્યની વાતું ઉપર લીટા મૂક્યા, પણ માહાત્મ્ય જાણ્યેથી જ શાંતિ છે; પણ જીવ પાત્ર નહિ તેથી માહાત્મ્યની વાતું થાતી નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5050.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sparshadik uttam vishay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5052.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Deh Indriyu mayik chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '51');
+            localStorage.setItem('lastVisitedVatFile', 'ch5051.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

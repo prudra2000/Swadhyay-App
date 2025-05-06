@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંકલ્પ થાય છે તે - Sankalp thay chhe te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sankalp thay chhe te</h1>
+                <div class="gujarati-title">સંકલ્પ થાય છે તે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 103</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(103) saṃkalpa thāya che te māṃhī rāga che, te thāya che. ne joyāṃ che te āgaḻa āvīne naḍe che ne kalakattā nathī joyuṃ to svapnamāṃ paṇa nathī āvatuṃ. jhera khādhānā ke aphīṇa pīdhānā saṃkalpa thāya che ? bhaṭṭajīne kahe, ‘havelī bāḻyānā ne chokarāṃ bāḻyānā saṃkalpa kyāṃ thāya che ?’ māṭe niyamamāṃ rahīne khāvuṃ, jovuṃ ne moṭā sādhune vinaya karīne kahevuṃ, to dhīre dhīre ṭaḻaśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૦૩) સંકલ્પ થાય છે તે માંહી રાગ છે, તે થાય છે. ને જોયાં છે તે આગળ આવીને નડે છે ને કલકત્તા નથી જોયું તો સ્વપ્નમાં પણ નથી આવતું. ઝેર ખાધાના કે અફીણ પીધાના સંકલ્પ થાય છે ? ભટ્ટજીને કહે, ‘હવેલી બાળ્યાના ને છોકરાં બાળ્યાના સંકલ્પ ક્યાં થાય છે ?’ માટે નિયમમાં રહીને ખાવું, જોવું ને મોટા સાધુને વિનય કરીને કહેવું, તો ધીરે ધીરે ટળશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6102.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vavyo mol saro tya </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6104.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa satsangmathi padavano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '103');
+            localStorage.setItem('lastVisitedVatFile', 'ch6103.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

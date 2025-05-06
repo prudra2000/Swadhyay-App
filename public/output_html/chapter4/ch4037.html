@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રગટ ભગવાન વિના કરોડ - Pragat bhagavan vina karod</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pragat bhagavan vina karod</h1>
+                <div class="gujarati-title">પ્રગટ ભગવાન વિના કરોડ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 37</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(37) pragaṭa bhagavāna vinā karoḍa niyama pāḻe paṇa kalyāṇa na thāya ane pragaṭa bhagavāna ne ā pragaṭa sādhunī ājñāthī eka niyama rākhe to kalyāṇa thāya. ne āja to āpī che, te mojanuṃ hoya nahīṃ. māṭe agiyāra niyama pāḻavā ne mahārājane bhagavāna puruṣottama sarvanā kāraṇa samajavā, evī jñānanī dṛḍhatā karavī tene kāṃī karavuṃ rahyuṃ nathī. bhajana ochuṃ thāśe, tīrtha ochāṃ thāśe tenī phikara nathī. 1 moja= rājīpānā phaḻasvarūpe maḻela ināma, bakṣisa. $2 mūla= mūlya, kiṃmata.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(37) પ્રગટ ભગવાન વિના કરોડ નિયમ પાળે પણ કલ્યાણ ન થાય અને પ્રગટ ભગવાન ને આ પ્રગટ સાધુની આજ્ઞાથી એક નિયમ રાખે તો કલ્યાણ થાય. ને આજ તો આપી છે, તે મોજનું હોય નહીં. માટે અગિયાર નિયમ પાળવા ને મહારાજને ભગવાન પુરુષોત્તમ સર્વના કારણ સમજવા, એવી જ્ઞાનની દૃઢતા કરવી તેને કાંઈ કરવું રહ્યું નથી. ભજન ઓછું થાશે, તીર્થ ઓછાં થાશે તેની ફિકર નથી. 1 મોજ= રાજીપાના ફળસ્વરૂપે મળેલ ઇનામ, બક્ષિસ. $2 મૂલ= મૂલ્ય, કિંમત.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4036.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apane to atma chhie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4038.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Swaminarayan namthi kalo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '37');
+            localStorage.setItem('lastVisitedVatFile', 'ch4037.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

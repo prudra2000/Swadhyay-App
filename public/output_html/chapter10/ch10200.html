@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગાડું કે ઘોડું રાખશો - Gadu ke ghodu rakhasho</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gadu ke ghodu rakhasho</h1>
+                <div class="gujarati-title">ગાડું કે ઘોડું રાખશો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 200</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(200) gāḍuṃ ke ghoḍuṃ rākhaśo to jīvamāṃ tenuṃ ja bhajana thāśe ne jīvamāṃ coṃṭī jāśe. nadīne kāṃṭhe saune dhyānamāṃ besāryā, tyāre bhojabhāīe kahyuṃ je, ‘mane bhūtaḍī ghoḍī dekhāṇī.’ bījāne strī dekhāṇī ne koīne kāṃī dekhāṇuṃ māṭe padārtha hoya paṇa māṃhī makoḍānī peṭhe coṃṭavuṃ nahi, saheja svabhāve rākhavuṃ, nahi to kaleśa thāśe. padārthano koī meḻa nahi, e to āve ne jāya; māṭe bhagavānane śuṃ game che teno vicāra karavo. kāma, lobha, īrṣā, svāda ne māna mahārājane gamatāṃ nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(200) ગાડું કે ઘોડું રાખશો તો જીવમાં તેનું જ ભજન થાશે ને જીવમાં ચોંટી જાશે. નદીને કાંઠે સૌને ધ્યાનમાં બેસાર્યા, ત્યારે ભોજભાઈએ કહ્યું જે, ‘મને ભૂતડી ઘોડી દેખાણી.’ બીજાને સ્ત્રી દેખાણી ને કોઈને કાંઈ દેખાણું માટે પદાર્થ હોય પણ માંહી મકોડાની પેઠે ચોંટવું નહિ, સહેજ સ્વભાવે રાખવું, નહિ તો કલેશ થાશે. પદાર્થનો કોઈ મેળ નહિ, એ તો આવે ને જાય; માટે ભગવાનને શું ગમે છે તેનો વિચાર કરવો. કામ, લોભ, ઈર્ષા, સ્વાદ ને માન મહારાજને ગમતાં નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10199.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vishay bhogavavana sankalp</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10201.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Harijan hoy te </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '200');
+            localStorage.setItem('lastVisitedVatFile', 'ch10200.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

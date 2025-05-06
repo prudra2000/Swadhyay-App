@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જ્ઞાને કરીને સ્થિતિ કરવી - Gnane karine sthiti karavi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gnane karine sthiti karavi</h1>
+                <div class="gujarati-title">જ્ઞાને કરીને સ્થિતિ કરવી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 229</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(229) jñāne karīne sthiti karavī te dekhavā karatāṃ paṇa adhika che ne parvatabhāī, kṛpānaṃdasvāmī tathā muktānaṃdasvāmī emane samādhi nahotī; paṇa mūrtine dekhatā kharā ne parvatabhāī hamaṇāṃ āpaṇe samajīe chīe tema samajatā. māṭe brahmarūpa mānīne bhagavāna māṃhī rahyā che ema mānavuṃ e jñānanī sthiti che, te adhika che ne temāṃ vighna nathī. ne te vinā to saccidānaṃdasvāmī samādhivāḻāne paṇa du:kha āvatāṃ, māṭe premī na thāvuṃ ne jñānī thāvuṃ ne potānī samajaṇa chupāvī rākhavī, kṛpānaṃdasvāmīnī peṭhe (jema). (juo prakaraṇa 5nī vāta 164)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(229) જ્ઞાને કરીને સ્થિતિ કરવી તે દેખવા કરતાં પણ અધિક છે ને પર્વતભાઈ, કૃપાનંદસ્વામી તથા મુક્તાનંદસ્વામી એમને સમાધિ નહોતી; પણ મૂર્તિને દેખતા ખરા ને પર્વતભાઈ હમણાં આપણે સમજીએ છીએ તેમ સમજતા. માટે બ્રહ્મરૂપ માનીને ભગવાન માંહી રહ્યા છે એમ માનવું એ જ્ઞાનની સ્થિતિ છે, તે અધિક છે ને તેમાં વિઘ્ન નથી. ને તે વિના તો સચ્ચિદાનંદસ્વામી સમાધિવાળાને પણ દુ:ખ આવતાં, માટે પ્રેમી ન થાવું ને જ્ઞાની થાવું ને પોતાની સમજણ છુપાવી રાખવી, કૃપાનંદસ્વામીની પેઠે (જેમ). (જુઓ પ્રકરણ 5ની વાત 164)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1228.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jivne mayathi nirleppanu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1230.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Padachhayane pahonchaya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '229');
+            localStorage.setItem('lastVisitedVatFile', 'ch1229.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

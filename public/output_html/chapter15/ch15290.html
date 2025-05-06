@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કીર્તને કરીને ભગવાનને  - Kirtane karine bhagavanne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kirtane karine bhagavanne</h1>
+                <div class="gujarati-title">કીર્તને કરીને ભગવાનને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 290</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(290) kīrtane karīne bhagavānane saṃbhāravā te yogayajña kahevāya. jñāne karīne bhagavānane saṃbhāravā te jñānayajña kahevāya ne je sāṃbharī āve, sphurī āve, tene daravājāvāḻā dekhe paṇa jñāna che te eka divasamāṃ dekhāya nahi. pachī rājāno dīkaro hoya paṇa eka divasamāṃ dīkaro vṛddhi pāme nahi. te to kāḻe karīne vṛddhi pāme, bāra varasano thāya tyāre paṃdara varasano lāge. tema samāgame karīne jīva baḻiyo thāya. joga vinā rasoī na thāya ne vidyā paṇa na bhaṇāya. tema joga vinā bhagavāna na bhajāya. āṭalā haribhakta na hoya to ame kene vāto karīe ? ne vagaḍāmāṃ rahīne to potepotānī meḻe dhyāna karīe paṇa jñāna thāya nahi ne satsaṃgano raṃga caḍe nahi. jñāna vinā to khāīne sūī rahevāya paṇa ājakāla to sādhu thaye chūṭako che ne dharmaniyama pāḻaśe tenāthī satsaṃgamāṃ rahevāśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(290) કીર્તને કરીને ભગવાનને સંભારવા તે યોગયજ્ઞ કહેવાય. જ્ઞાને કરીને ભગવાનને સંભારવા તે જ્ઞાનયજ્ઞ કહેવાય ને જે સાંભરી આવે, સ્ફુરી આવે, તેને દરવાજાવાળા દેખે પણ જ્ઞાન છે તે એક દિવસમાં દેખાય નહિ. પછી રાજાનો દીકરો હોય પણ એક દિવસમાં દીકરો વૃદ્ધિ પામે નહિ. તે તો કાળે કરીને વૃદ્ધિ પામે, બાર વરસનો થાય ત્યારે પંદર વરસનો લાગે. તેમ સમાગમે કરીને જીવ બળિયો થાય. જોગ વિના રસોઈ ન થાય ને વિદ્યા પણ ન ભણાય. તેમ જોગ વિના ભગવાન ન ભજાય. આટલા હરિભક્ત ન હોય તો અમે કેને વાતો કરીએ ? ને વગડામાં રહીને તો પોતેપોતાની મેળે ધ્યાન કરીએ પણ જ્ઞાન થાય નહિ ને સત્સંગનો રંગ ચડે નહિ. જ્ઞાન વિના તો ખાઈને સૂઈ રહેવાય પણ આજકાલ તો સાધુ થયે છૂટકો છે ને ધર્મનિયમ પાળશે તેનાથી સત્સંગમાં રહેવાશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15289.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa deh to keval garano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15291.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ganadevi, navasari gaya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '290');
+            localStorage.setItem('lastVisitedVatFile', 'ch15290.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

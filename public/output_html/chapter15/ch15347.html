@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવદીના અવગુણ લેવા  - Bhagavadina avagun leva</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavadina avagun leva</h1>
+                <div class="gujarati-title">ભગવદીના અવગુણ લેવા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 347</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(347) bhagavadīnā avaguṇa levā māṃḍe ne vāṃkuṃ bolavā māṃḍe tyāre jāṇavuṃ je satsaṃgamāṃthī jāvānā prasthānāṃ mūkavā māṃḍyā. te sarva padārtha vighna karanārāṃ che ne ā to jema tema karīne kāma sādhī levuṃ ne na māne te guru che, te koīnā śiṣya nahi thāya tyāre moṭā guṇa te kema āvaśe ? koīne ahaṃkāra na rākhavo je mārāthī koī ḍāhyā nathī ne evā to āpaṇāmāṃ muktānaṃdasvāmīne lakhyā, te game tevo māra māra karato āve tene śītaḻa karī mūke ne udyogaprasāda (te nāma) satsaṃgamāṃ pesī gayo te māṃḍa māṃḍa kāḍhyo. māna hoya ne moṭapa āvī tene ā vātuṃ samāsa na kare. rajoguṇa, tamoguṇamāṃ to avaḻuṃ ja hoya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(347) ભગવદીના અવગુણ લેવા માંડે ને વાંકું બોલવા માંડે ત્યારે જાણવું જે સત્સંગમાંથી જાવાના પ્રસ્થાનાં મૂકવા માંડ્યા. તે સર્વ પદાર્થ વિઘ્ન કરનારાં છે ને આ તો જેમ તેમ કરીને કામ સાધી લેવું ને ન માને તે ગુરુ છે, તે કોઈના શિષ્ય નહિ થાય ત્યારે મોટા ગુણ તે કેમ આવશે ? કોઈને અહંકાર ન રાખવો જે મારાથી કોઈ ડાહ્યા નથી ને એવા તો આપણામાં મુક્તાનંદસ્વામીને લખ્યા, તે ગમે તેવો માર માર કરતો આવે તેને શીતળ કરી મૂકે ને ઉદ્યોગપ્રસાદ (તે નામ) સત્સંગમાં પેસી ગયો તે માંડ માંડ કાઢ્યો. માન હોય ને મોટપ આવી તેને આ વાતું સમાસ ન કરે. રજોગુણ, તમોગુણમાં તો અવળું જ હોય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15346.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mokshne upayogi koi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15348.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Madhyanu oganatrismu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '347');
+            localStorage.setItem('lastVisitedVatFile', 'ch15347.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

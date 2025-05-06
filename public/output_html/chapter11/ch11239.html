@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વરતાલનું પહેલું વચનામૃત - Varatalnu pahelu vachanamrut</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varatalnu pahelu vachanamrut</h1>
+                <div class="gujarati-title">વરતાલનું પહેલું વચનામૃત</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 239</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(239) varatālanuṃ paheluṃ vacanāmṛta vaṃcāvīne niśrcayanā dṛḍhāva upara vāta karī je, ā kalyāṇabhāīne kahīe je, ‘tame sākhe jhālāvāḍiyā nahi te keṭalāka rūpiyā detāṃ ṭaḻe ?’ ne kadāpi māra devā māṃḍyo hoya to uparathī to kahe je nā; paṇa aṃdarathī hā paḍe nahi; tema mahārāja sarvoparī puruṣottama che ane ā sādhu anādi mūḻaakṣara che, evuṃ nakkī thāya, tyāre niśrcaya kahevāya. agatrāyamāṃ dhoḻiyā āṃbā heṭhe mahārāje ḍheḍhanā chokarāne so vāra ātmā kahevarāvyuṃ paṇa kahe, ‘ḍheḍha chuṃ.’ tema mahārājane viśe bhagavānapaṇānī graṃthi paḍī jāya tyāre nakkī kahevāya ne śuddhapaṇe upāsanānuṃ nakkī to thoḍākane che. te upara vāta karī je, śrī vaiṣṇava to kahevāya; paṇa mātānī mānatā kare, tathā ‘bhoya vācharā’nī, ne ‘āpā pālaṇa’ ḍheḍhanī vāta karī. ema āpaṇāmāṃ paṇa upāsanānuṃ evuṃ che je, avatārane laīne mahārājane kahe che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(239) વરતાલનું પહેલું વચનામૃત વંચાવીને નિશ્ર્ચયના દૃઢાવ ઉપર વાત કરી જે, આ કલ્યાણભાઈને કહીએ જે, ‘તમે સાખે ઝાલાવાડિયા નહિ તે કેટલાક રૂપિયા દેતાં ટળે ?’ ને કદાપિ માર દેવા માંડ્યો હોય તો ઉપરથી તો કહે જે ના; પણ અંદરથી હા પડે નહિ; તેમ મહારાજ સર્વોપરી પુરુષોત્તમ છે અને આ સાધુ અનાદિ મૂળઅક્ષર છે, એવું નક્કી થાય, ત્યારે નિશ્ર્ચય કહેવાય. અગત્રાયમાં ધોળિયા આંબા હેઠે મહારાજે ઢેઢના છોકરાને સો વાર આત્મા કહેવરાવ્યું પણ કહે, ‘ઢેઢ છું.’ તેમ મહારાજને વિશે ભગવાનપણાની ગ્રંથિ પડી જાય ત્યારે નક્કી કહેવાય ને શુદ્ધપણે ઉપાસનાનું નક્કી તો થોડાકને છે. તે ઉપર વાત કરી જે, શ્રી વૈષ્ણવ તો કહેવાય; પણ માતાની માનતા કરે, તથા ‘ભોય વાછરા’ની, ને ‘આપા પાલણ’ ઢેઢની વાત કરી. એમ આપણામાં પણ ઉપાસનાનું એવું છે જે, અવતારને લઈને મહારાજને કહે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11238.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Upendranandswamino deh bar</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11240.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Moksh upar tan chhe eva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '239');
+            localStorage.setItem('lastVisitedVatFile', 'ch11239.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>લીલાની વાત કરી - Lilani vat kari</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Lilani vat kari</h1>
+                <div class="gujarati-title">લીલાની વાત કરી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 254</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(254) līlānī vāta karī, temāṃ kahyuṃ je, ‘mahārāja ānī upara bahu rājī thayā, ema paṇa rājī kahevāya, paṇa e judī rītanuṃ ne je siddhāṃtano rājīpo te to prathamanā 19mā vacanāmṛta pramāṇe; te ājñā, upāsanā ne mūrtimāṃ joḍāvuṃ. te āja karo ke lākha janme karo, jyāre karaśo tyāre mahārāja pāse rahevāśe. ne mahārāja paṇa bījī je je vāta kahe, te paṇa tyāṃ jatī ūbhī rākhe, e siddhāṃta che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૫૪) લીલાની વાત કરી, તેમાં કહ્યું જે, ‘મહારાજ આની ઉપર બહુ રાજી થયા, એમ પણ રાજી કહેવાય, પણ એ જુદી રીતનું ને જે સિદ્ધાંતનો રાજીપો તે તો પ્રથમના ૧૯મા વચનામૃત પ્રમાણે; તે આજ્ઞા, ઉપાસના ને મૂર્તિમાં જોડાવું. તે આજ કરો કે લાખ જન્મે કરો, જ્યારે કરશો ત્યારે મહારાજ પાસે રહેવાશે. ને મહારાજ પણ બીજી જે જે વાત કહે, તે પણ ત્યાં જતી ઊભી રાખે, એ સિદ્ધાંત છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6253.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sadhu thavu etale </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6255.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shravan vadi navmi ne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '254');
+            localStorage.setItem('lastVisitedVatFile', 'ch6254.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

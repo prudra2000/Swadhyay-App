@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કર્મવાળાઓ કહે છે જે  - Karmavalao kahe chhe je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Karmavalao kahe chhe je</h1>
+                <div class="gujarati-title">કર્મવાળાઓ કહે છે જે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 54</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvat 1919nā bījā śrāvaṇa sudi dvādaśīne divase svāmīe vāta karī je, $(54) karmavāḻāo kahe che je aputrasya gatirnāsti (putrahīnanī sadgati thatī nathī) tyāre agiyāra hajāra muṃḍāṇā tenī gati nahi thaī hoya? ne jema ahīṃ viṣaya che tema ja devalokamāṃ paṇa che, paraṇe che tyāre ne mūke che ne nāgara to gharanā poṭhiyā che tema badhā poṭhiyā che.@ 1 ravāyo = chāśa valovavāno ravaiyo $2 dhūsaṇuṃ= baḻadanī dhūṃsarī</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત્ 1919ના બીજા શ્રાવણ સુદિ દ્વાદશીને દિવસે સ્વામીએ વાત કરી જે, $(54) કર્મવાળાઓ કહે છે જે અપુત્રસ્ય ગતિર્નાસ્તિ (પુત્રહીનની સદ્ગતિ થતી નથી) ત્યારે અગિયાર હજાર મુંડાણા તેની ગતિ નહિ થઈ હોય? ને જેમ અહીં વિષય છે તેમ જ દેવલોકમાં પણ છે, પરણે છે ત્યારે ને મૂકે છે ને નાગર તો ઘરના પોઠિયા છે તેમ બધા પોઠિયા છે.@ 1 રવાયો = છાશ વલોવવાનો રવૈયો $2 ધૂસણું= બળદની ધૂંસરી</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16053.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ruchi pratham jo sari</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16055.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Machchhimarnu pap kahyu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '54');
+            localStorage.setItem('lastVisitedVatFile', 'ch16054.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

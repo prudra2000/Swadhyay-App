@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મુક્તાનંદસ્વામી પ્રથમ  - Muktanandswami pratham</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Muktanandswami pratham</h1>
+                <div class="gujarati-title">મુક્તાનંદસ્વામી પ્રથમ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 211</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(211) muktānaṃdasvāmī prathama māragīnā paṃthamāṃ hatā paṇa mumukṣu hatā tethī pragaṭa bhagavānane gotavā nīkaḻyā ne akhaṃḍa brahmacarya rākhavānuṃ bahu tāna, tethī dṛḍha brahmacarya paḻāve evā maḻe to tenī pāse rahevuṃ. cālatāṃ cālatāṃ prathama dhrāṃgadhrāmāṃ dvārakādāsa bāvā pāse gayā. tyāṃ teṇe kahyuṃ je, ‘vāṃkāneramāṃ vṛddha ne vidvāna bāvo kalyāṇadāsa che, te brahmacarya paḻāvaśe.’ 1 phāragatī= chūṭācheḍā līdhānī kabulātanī ciṭhṭhī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(211) મુક્તાનંદસ્વામી પ્રથમ મારગીના પંથમાં હતા પણ મુમુક્ષુ હતા તેથી પ્રગટ ભગવાનને ગોતવા નીકળ્યા ને અખંડ બ્રહ્મચર્ય રાખવાનું બહુ તાન, તેથી દૃઢ બ્રહ્મચર્ય પળાવે એવા મળે તો તેની પાસે રહેવું. ચાલતાં ચાલતાં પ્રથમ ધ્રાંગધ્રામાં દ્વારકાદાસ બાવા પાસે ગયા. ત્યાં તેણે કહ્યું જે, ‘વાંકાનેરમાં વૃદ્ધ ને વિદ્વાન બાવો કલ્યાણદાસ છે, તે બ્રહ્મચર્ય પળાવશે.’ 1 ફારગતી= છૂટાછેડા લીધાની કબુલાતની ચિઠ્ઠી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9210.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Machhiyavna rajani kuvarine </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9212.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhaga shethne rasoi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '211');
+            localStorage.setItem('lastVisitedVatFile', 'ch9211.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

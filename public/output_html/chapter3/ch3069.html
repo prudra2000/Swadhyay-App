@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગરીબને કલ્પાવશે તે - Garibne kalpavashe te</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Garibne kalpavashe te</h1>
+                <div class="gujarati-title">ગરીબને કલ્પાવશે તે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 69</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(69) garībane kalpāvaśe te bhagavāna khamī nahi śake; kema je, garvagaṃjana bhagavāna che, te game te dvāre pragaṭa thaīne garvane ṭāḻaśe. e vāta vistāre karīne bolyā je, ‘āpaṇe to prabhu bhajī levā, kāṃī ciṃtā rākhavī nahi ane je dhīrajavāna puruṣa che tene $artha : jenā hāthamāṃ kṣamārūpī śastra che tene durjana śuṃ karī śakavāno hato? ghāsa vinānī jamīna para paḍelo agni āpoāpa śamī jāya che. $jenī jībhe roḻī karyo rāṃka, māne to phajetī kīdhī re. $(kīrtana muktāvali : 1072) $e to phogaṭa phūlyo che phopa, samajo e saṃta śāno re. $(kīrtana muktāvali : 1077)</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(69) ગરીબને કલ્પાવશે તે ભગવાન ખમી નહિ શકે; કેમ જે, ગર્વગંજન ભગવાન છે, તે ગમે તે દ્વારે પ્રગટ થઈને ગર્વને ટાળશે. એ વાત વિસ્તારે કરીને બોલ્યા જે, ‘આપણે તો પ્રભુ ભજી લેવા, કાંઈ ચિંતા રાખવી નહિ અને જે ધીરજવાન પુરુષ છે તેને $અર્થ : જેના હાથમાં ક્ષમારૂપી શસ્ત્ર છે તેને દુર્જન શું કરી શકવાનો હતો? ઘાસ વિનાની જમીન પર પડેલો અગ્નિ આપોઆપ શમી જાય છે. $જેની જીભે રોળી કર્યો રાંક, માને તો ફજેતી કીધી રે. $(કીર્તન મુક્તાવલિ : 1072) $એ તો ફોગટ ફૂલ્યો છે ફોપ, સમજો એ સંત શાનો રે. $(કીર્તન મુક્તાવલિ : 1077)</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3068.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Hajar varasno khijado hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3070.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Swamie vanathali jata</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '69');
+            localStorage.setItem('lastVisitedVatFile', 'ch3069.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જીવ તો ગાફલ છે  - Jiv to gafala chhe </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jiv to gafala chhe </h1>
+                <div class="gujarati-title">જીવ તો ગાફલ છે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 61</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(61) jīva to gāphala che ne ā jīvane dehano ne jātino ahaṃkāra che e ja moha che. pādaśāhe pūnā-satārā līdhuṃ, ema eka jaṇe dhoḻakāmāṃ pīṃjārāne kahyuṃ tyāre pīṃjāro bolyo je, ‘pūnā-satārā kyuṃ na leve ? pūnā-satārā kyuṃ na leve ? hama sarīkhe bhāī !’ ema kahīne māṃ dhoko baḻathī māryo eṭale tāṃta tūṭī gaī ne pīṃjato āḻasī gayo; ema ā jīva to jyāṃ bharāṇo tyāṃ bharāṇo, paṇa pāchuṃ vāḻī na jue.@ 1 tāṃta= āṃtaraḍāmāṃthī banāvela pīṃjārānī pīṃjaṇanī dorī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(61) જીવ તો ગાફલ છે ને આ જીવને દેહનો ને જાતિનો અહંકાર છે એ જ મોહ છે. પાદશાહે પૂના-સતારા લીધું, એમ એક જણે ધોળકામાં પીંજારાને કહ્યું ત્યારે પીંજારો બોલ્યો જે, ‘પૂના-સતારા ક્યું ન લેવે ? પૂના-સતારા ક્યું ન લેવે ? હમ સરીખે ભાઈ !’ એમ કહીને માં ધોકો બળથી માર્યો એટલે તાંત તૂટી ગઈ ને પીંજતો આળસી ગયો; એમ આ જીવ તો જ્યાં ભરાણો ત્યાં ભરાણો, પણ પાછું વાળી ન જુએ.@ 1 તાંત= આંતરડામાંથી બનાવેલ પીંજારાની પીંજણની દોરી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9060.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jetalo gol nakhie tetalu </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9062.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Krodh ave tyare </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '61');
+            localStorage.setItem('lastVisitedVatFile', 'ch9061.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

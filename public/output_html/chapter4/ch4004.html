@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આખો દિવસ એક જણ કોટ ચણે - Akho divas ek jan kot chane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Akho divas ek jan kot chane</h1>
+                <div class="gujarati-title">આખો દિવસ એક જણ કોટ ચણે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 4</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(4) ākho divasa eka jaṇa koṭa caṇe ne eka jaṇa eka kāṃkarī nākhe eṭalāmāṃ paḍī jāya. temāṃ aṃte caṇanāro thākaśe. te kāṃkarī te śuṃ ? je, ākhā dahāḍāmāṃ saṃkalpa karī karīne koṭa ūbho kare ne pachī sāṃje sādhu pāse āve; pachī sādhu vāta kare je, ‘jo tuṃ jugate karī, deha tāro nathī.’ evī rīte khoṭuṃ karī nākhe. ne ā sādhu to hareka rītathī upaśama karāvīne viṣayane bhulāḍī de ne viṣaya bhogavavā hoya to tene paṇa bhulāḍī de ne nahi to chellī bākī bhakti karāvīne upaśama karāve ne kāṃī sāṃbharavā de nahīṃ. ne ā sādhu to aneka prakārathī jīvane brahmarūpa karī de, te ene khabara paḍe nahi; jema che te ene khabara paḍe nahi ne aḍatāmāṃ ja kāpī nākhe, ema jñānīne anaṃta locana che. 1 aṃgrejanāṃ loḍhāṃ= lokhaṃḍanāṃ tīkṣṇa dhāradāra hathiyāro, baṃdūko.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(4) આખો દિવસ એક જણ કોટ ચણે ને એક જણ એક કાંકરી નાખે એટલામાં પડી જાય. તેમાં અંતે ચણનારો થાકશે. તે કાંકરી તે શું ? જે, આખા દહાડામાં સંકલ્પ કરી કરીને કોટ ઊભો કરે ને પછી સાંજે સાધુ પાસે આવે; પછી સાધુ વાત કરે જે, ‘જો તું જુગતે કરી, દેહ તારો નથી.’ એવી રીતે ખોટું કરી નાખે. ને આ સાધુ તો હરેક રીતથી ઉપશમ કરાવીને વિષયને ભુલાડી દે ને વિષય ભોગવવા હોય તો તેને પણ ભુલાડી દે ને નહિ તો છેલ્લી બાકી ભક્તિ કરાવીને ઉપશમ કરાવે ને કાંઈ સાંભરવા દે નહીં. ને આ સાધુ તો અનેક પ્રકારથી જીવને બ્રહ્મરૂપ કરી દે, તે એને ખબર પડે નહિ; જેમ છે તે એને ખબર પડે નહિ ને અડતામાં જ કાપી નાખે, એમ જ્ઞાનીને અનંત લોચન છે. 1 અંગ્રેજનાં લોઢાં= લોખંડનાં તીક્ષ્ણ ધારદાર હથિયારો, બંદૂકો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4003.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje amane var apyo chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4005.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Purvna sanskarthi vasana bijrup</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '4');
+            localStorage.setItem('lastVisitedVatFile', 'ch4004.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

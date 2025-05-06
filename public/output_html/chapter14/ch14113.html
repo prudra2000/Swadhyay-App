@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વાઘજીભાઈએ પૂછ્યું જે - Vaghajibhaie puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vaghajibhaie puchhyu je</h1>
+                <div class="gujarati-title">વાઘજીભાઈએ પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 113</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(113) vāghajībhāīe pūchyuṃ je, ‘uttama bhogamāṃthī rāga kema ṭaḻe? tyāre kahyuṃ je, ‘emāṃ doṣa jue, corāśīnāṃ du:khane jāṇe, dehanā svarūpane jāṇe ne viṣayanā rūpane jāṇe, tyāre emāṃ kāṃī māla na jaṇāya; pachī rāga ṭaḻī jāya.’@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(113) વાઘજીભાઈએ પૂછ્યું જે, ‘ઉત્તમ ભોગમાંથી રાગ કેમ ટળે? ત્યારે કહ્યું જે, ‘એમાં દોષ જુએ, ચોરાશીનાં દુ:ખને જાણે, દેહના સ્વરૂપને જાણે ને વિષયના રૂપને જાણે, ત્યારે એમાં કાંઈ માલ ન જણાય; પછી રાગ ટળી જાય.’@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14112.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Govindswami, yogeshvardas</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14114.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dajibhaie puchhyu je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '113');
+            localStorage.setItem('lastVisitedVatFile', 'ch14113.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

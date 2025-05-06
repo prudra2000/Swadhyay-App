@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પોતાને તેજે કરીને  - Potane teje karine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Potane teje karine</h1>
+                <div class="gujarati-title">પોતાને તેજે કરીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 40</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(40) potāne teje karīne bhagavānanāṃ darśana thāya to paṇa ema jāṇe je ‘āpaṇā svāmīnuṃ che.’ ā to śāḻāmāṃ āvyā nathī ne e vāta karavī nathī ne ūṃgha āve che. mūḻubhāīnī āṃgaḻī kamāḍamāṃ pilāī gaī paṇa arara kahyuṃ nahi! tema śūravīrapaṇuṃ hoya tenā jīvamāṃ kāṃṭo āve. , te śāḻā vinā evuṃ kema thāya ? bhamarī iyaḻane caṭakā bhare che ne iyaḻa khame che, to iyaḻanī bhamarī thāya che. tema āma ne āma karavā māṃḍīe to śuṃ na thāya ? sādhu sevana karyāṃ hoya te kāṃī śahera jovā jāya nahi. bharavāḍa, rabārī ane ne bhaṇāvyā to pustaka vāṃce che. eka kuṃbhārane siṃhāvalokī savaiyā ame bhaṇāvyā, te eka cāraṇane bolavā ja na dīdho. 1 saṃsāramāṃthī jīva nīkaḻī jāya.= jīvano māyika saṃsārapratyeno rāga jato rahe. $2 khāṃṭa= dhūrta, khāṃṭa nāmanī eka jñāti.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(40) પોતાને તેજે કરીને ભગવાનનાં દર્શન થાય તો પણ એમ જાણે જે ‘આપણા સ્વામીનું છે.’ આ તો શાળામાં આવ્યા નથી ને એ વાત કરવી નથી ને ઊંઘ આવે છે. મૂળુભાઈની આંગળી કમાડમાં પિલાઈ ગઈ પણ અરર કહ્યું નહિ! તેમ શૂરવીરપણું હોય તેના જીવમાં કાંટો આવે. , તે શાળા વિના એવું કેમ થાય ? ભમરી ઇયળને ચટકા ભરે છે ને ઇયળ ખમે છે, તો ઇયળની ભમરી થાય છે. તેમ આમ ને આમ કરવા માંડીએ તો શું ન થાય ? સાધુ સેવન કર્યાં હોય તે કાંઈ શહેર જોવા જાય નહિ. ભરવાડ, રબારી અને ને ભણાવ્યા તો પુસ્તક વાંચે છે. એક કુંભારને સિંહાવલોકી સવૈયા અમે ભણાવ્યા, તે એક ચારણને બોલવા જ ન દીધો. 1 સંસારમાંથી જીવ નીકળી જાય.= જીવનો માયિક સંસારપ્રત્યેનો રાગ જતો રહે. $2 ખાંટ= ધૂર્ત, ખાંટ નામની એક જ્ઞાતિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10039.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Upasana, het ne dhyan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10041.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koine rupiya ganavano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '40');
+            localStorage.setItem('lastVisitedVatFile', 'ch10040.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

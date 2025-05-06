@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સ્વભાવ ટોકાય ત્યારે  - Svabhav tokay tyare </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Svabhav tokay tyare </h1>
+                <div class="gujarati-title">સ્વભાવ ટોકાય ત્યારે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 65</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(65) svabhāva ṭokāya tyāre avaguṇa le ne jyāre avaguṇa āve tyāre buddhi bhraṣṭa thāya. $(skaṃdapurāṇa) $artha : anyakṣetramāṃ kareluṃ pāpa tīrthakṣetramāṃ naṣṭa thāya che, tīrthakṣetramāṃ kareluṃ pāpa vajralepa jema kāyamanuṃ rahe che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(65) સ્વભાવ ટોકાય ત્યારે અવગુણ લે ને જ્યારે અવગુણ આવે ત્યારે બુદ્ધિ ભ્રષ્ટ થાય. $(સ્કંદપુરાણ) $અર્થ : અન્યક્ષેત્રમાં કરેલું પાપ તીર્થક્ષેત્રમાં નષ્ટ થાય છે, તીર્થક્ષેત્રમાં કરેલું પાપ વજ્રલેપ જેમ કાયમનું રહે છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9064.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vishayma atishay asakti</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9066.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koi sara sadhuma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '65');
+            localStorage.setItem('lastVisitedVatFile', 'ch9065.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

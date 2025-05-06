@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક જણ આંબલીના વૃક્ષ - Ek jan anbalina vruksh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek jan anbalina vruksh</h1>
+                <div class="gujarati-title">એક જણ આંબલીના વૃક્ષ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 37</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(37) eka jaṇa āṃbalīnā vṛkṣa nīce besīne tapa karato hato. tyāṃ nāradajī nīkaḻyā tyāre kahe, ‘mahārāja kyāṃ jāva cho ?’ to kahe, ‘vaikuṃṭhamāṃ.’ tyāre kahe, ‘māruṃ pūchajo je tene darśana kyāre deśo ?’ nāradajī āgaḻa cālyā. eka jaṇa pīpaḻā taḻe besīne tapa karato hato teṇe paṇa kahyuṃ ke, māruṃ pūchajo ke tene darśana kyāre deśo ? nāradajīe pūchyuṃ to bhagavāne kahyuṃ ke, āṃbalīvāḻāne āṃbalīnā pāṃdaḍāṃnā jeṭalāṃ varasa tapa karaśe tyāre darśana daīśa ne pīpaḻāvāḻāne pīpaḻānā jeṭalāṃ pāṃdaḍāṃ che teṭalāṃ varasa tapa karaśe tyāre darśana daīśa. nāradajīe āvīne vāta karī te āṃbalīvāḻo to rājī thayo ne ṭhekaḍo māravā māṃḍyo ne kahe, ‘eṭalā varase darśana to deśe ne!’ tyāṃ to bhagavāne darśana dīdhāṃ. nāradajī kahe, tame kahetā hatā ne tarata kema darśana dīdhā? to kahe,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(37) એક જણ આંબલીના વૃક્ષ નીચે બેસીને તપ કરતો હતો. ત્યાં નારદજી નીકળ્યા ત્યારે કહે, ‘મહારાજ ક્યાં જાવ છો ?’ તો કહે, ‘વૈકુંઠમાં.’ ત્યારે કહે, ‘મારું પૂછજો જે તેને દર્શન ક્યારે દેશો ?’ નારદજી આગળ ચાલ્યા. એક જણ પીપળા તળે બેસીને તપ કરતો હતો તેણે પણ કહ્યું કે, મારું પૂછજો કે તેને દર્શન ક્યારે દેશો ? નારદજીએ પૂછ્યું તો ભગવાને કહ્યું કે, આંબલીવાળાને આંબલીના પાંદડાંના જેટલાં વરસ તપ કરશે ત્યારે દર્શન દઈશ ને પીપળાવાળાને પીપળાના જેટલાં પાંદડાં છે તેટલાં વરસ તપ કરશે ત્યારે દર્શન દઈશ. નારદજીએ આવીને વાત કરી તે આંબલીવાળો તો રાજી થયો ને ઠેકડો મારવા માંડ્યો ને કહે, ‘એટલા વરસે દર્શન તો દેશે ને!’ ત્યાં તો ભગવાને દર્શન દીધાં. નારદજી કહે, તમે કહેતા હતા ને તરત કેમ દર્શન દીધા? તો કહે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16036.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek haidarabadno vaniyo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16038.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa lokma  agnane</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '37');
+            localStorage.setItem('lastVisitedVatFile', 'ch16037.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

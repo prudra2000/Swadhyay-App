@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેને પ્રભુ ભજવા  - Jene prabhu bhajava</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jene prabhu bhajava</h1>
+                <div class="gujarati-title">જેને પ્રભુ ભજવા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 255</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(255) jene prabhu bhajavā hoya tene ramaṇīya padārtha to jovuṃ ja nahi ne jue to enā āghāta lāge. bahu kriyāe karīne sthūḻabhāva āvī jāya pachī kathāvārtāmāṃ paṇa mana rahe nahi māṭe āpaṇe ema śīkhavuṃ je, kriyā karavī paṇa temāṃ mana vaḻagavā devuṃ nahīṃ. ghanaśyāmānaṃdasvāmī phāḻako pheravatāṃ mānasīpūjā karatā. sarve kriyā bhagavāna parāyaṇa karī melavī. dehano to anādara ja karī rākhavo, jo ādara kare to caḍī bese. jīvane dehābhimānarūpa jīna vaḻagyuṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(255) જેને પ્રભુ ભજવા હોય તેને રમણીય પદાર્થ તો જોવું જ નહિ ને જુએ તો એના આઘાત લાગે. બહુ ક્રિયાએ કરીને સ્થૂળભાવ આવી જાય પછી કથાવાર્તામાં પણ મન રહે નહિ માટે આપણે એમ શીખવું જે, ક્રિયા કરવી પણ તેમાં મન વળગવા દેવું નહીં. ઘનશ્યામાનંદસ્વામી ફાળકો ફેરવતાં માનસીપૂજા કરતા. સર્વે ક્રિયા ભગવાન પરાયણ કરી મેલવી. દેહનો તો અનાદર જ કરી રાખવો, જો આદર કરે તો ચડી બેસે. જીવને દેહાભિમાનરૂપ જીન વળગ્યું છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9254.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Agna pale, smruti rahe </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9256.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa sarve dhudano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '255');
+            localStorage.setItem('lastVisitedVatFile', 'ch9255.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

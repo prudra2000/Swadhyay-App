@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેટલો ગોળ નાખીએ તેટલું - Jetalo gol nakhie tetalu </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jetalo gol nakhie tetalu </h1>
+                <div class="gujarati-title">જેટલો ગોળ નાખીએ તેટલું</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 60</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(60) jeṭalo goḻa nākhīe teṭaluṃ gaḻyuṃ thāya, tema jeṭalo satsaṃga karīe teṭaluṃ haiyāmāṃthī ajñāna jāya. vaḻī eka dahīṃno bhāvika hato, te dūdhano dariyo āvyo tyāre potā pāse thoḍī hatī te dahīṃ karavā sāru dariyāmāṃ nākhī te dahīṃ to thayuṃ nahi ne mūḻagī tenī ācha gaī; tema thoḍoka samāgama karīe to jñāna na thāya. baḻirājā eṭalo kāraso khamyā ne mūrti rākhī to bhagavāna jāṇapaṇārūpa daravāje akhaṃḍa rahe che māṭe jeṭalo vahevāra che teṭalo karavo ne prabhu bhajavā.@ 1 chāsanī ācha= meḻavaṇa-chāsa uparanuṃ pāṇī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(60) જેટલો ગોળ નાખીએ તેટલું ગળ્યું થાય, તેમ જેટલો સત્સંગ કરીએ તેટલું હૈયામાંથી અજ્ઞાન જાય. વળી એક દહીંનો ભાવિક હતો, તે દૂધનો દરિયો આવ્યો ત્યારે પોતા પાસે થોડી હતી તે દહીં કરવા સારુ દરિયામાં નાખી તે દહીં તો થયું નહિ ને મૂળગી તેની આછ ગઈ; તેમ થોડોક સમાગમ કરીએ તો જ્ઞાન ન થાય. બળિરાજા એટલો કારસો ખમ્યા ને મૂર્તિ રાખી તો ભગવાન જાણપણારૂપ દરવાજે અખંડ રહે છે માટે જેટલો વહેવાર છે તેટલો કરવો ને પ્રભુ ભજવા.@ 1 છાસની આછ= મેળવણ-છાસ ઉપરનું પાણી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9059.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketaluk vahevarnu gnan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9061.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jiv to gafala chhe </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '60');
+            localStorage.setItem('lastVisitedVatFile', 'ch9060.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગામ અરણેજથી ધોળકે જતાં - Gam aranejthi dholake jata</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gam aranejthi dholake jata</h1>
+                <div class="gujarati-title">ગામ અરણેજથી ધોળકે જતાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 86</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(86) gāma araṇejathī dhoḻake jatāṃ rastāmāṃ memaranī vāva ne talāvaḍī mūkyā pachī vāta karī je, ‘sanakādikane kaniṣṭha kahīe ne śukajīne adhika kahīe, to kaheśe je sādhunī niṃdā karī; paṇa sanakādikane vairāṭanī upāsanā che tethī te kaniṣṭha che ne śukajīne śrīkṛṣṇanī upāsanā che tethī te adhika che, ema mahārāje kharaḍāmāṃ lakhāvyuṃ che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(86) ગામ અરણેજથી ધોળકે જતાં રસ્તામાં મેમરની વાવ ને તલાવડી મૂક્યા પછી વાત કરી જે, ‘સનકાદિકને કનિષ્ઠ કહીએ ને શુકજીને અધિક કહીએ, તો કહેશે જે સાધુની નિંદા કરી; પણ સનકાદિકને વૈરાટની ઉપાસના છે તેથી તે કનિષ્ઠ છે ને શુકજીને શ્રીકૃષ્ણની ઉપાસના છે તેથી તે અધિક છે, એમ મહારાજે ખરડામાં લખાવ્યું છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4085.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaje anek prakarna sadhan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4087.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota sadhuno avagun nahi</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '86');
+            localStorage.setItem('lastVisitedVatFile', 'ch4086.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

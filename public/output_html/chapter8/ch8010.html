@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક દિવસ શિવલાલભાઈ - Ek divas shivalalbhai</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek divas shivalalbhai</h1>
+                <div class="gujarati-title">એક દિવસ શિવલાલભાઈ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.8</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 10</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(10) eka divasa śivalālabhāī gopāḻānaṃdasvāmīnī vātuṃ vicāratā hatā, temāṃ vāta āvī je, ‘upāsya, upāsaka ne dhāma e traṇanī śuddhie karīne mumukṣu je te utkṛṣṭa jñānane pāmīne mokṣane pāme che.’ tyāre svāmī bolyā je, ‘satpuruṣono saṃga ne satśāstra e be vinā e traṇanī śuddhi thātī nathī; kema je, satpuruṣano saṃga che te to sūryane ṭhekāṇe che ne satśāstra che te darpaṇane ṭhekāṇe che ne potāno sadvicāra che te netrane ṭhekāṇe che māṭe sūrya ne darpaṇa vinā ekalāṃ netra śuṃ kāmanāṃ? māṭe satśāstramāṃthī satpuruṣa prakāśī āpe che tyāre ja upāsyamūrti je mahārāja tathā temanuṃ dhāma je mūḻaakṣara tathā upāsaka je upāsanāno karanāro; e traṇanī śuddhi thāya che māṭe upāsya, upāsaka, dhāma, saṃga ne śāstra, e pāṃceyanī śuddhie karīne jīva je te ātyaṃtika jñāna pāmīne ātyaṃtika mokṣa je akṣaradhāma tene sākṣāt pāme che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(10) એક દિવસ શિવલાલભાઈ ગોપાળાનંદસ્વામીની વાતું વિચારતા હતા, તેમાં વાત આવી જે, ‘ઉપાસ્ય, ઉપાસક ને ધામ એ ત્રણની શુદ્ધિએ કરીને મુમુક્ષુ જે તે ઉત્કૃષ્ટ જ્ઞાનને પામીને મોક્ષને પામે છે.’ ત્યારે સ્વામી બોલ્યા જે, ‘સત્પુરુષોનો સંગ ને સત્શાસ્ત્ર એ બે વિના એ ત્રણની શુદ્ધિ થાતી નથી; કેમ જે, સત્પુરુષનો સંગ છે તે તો સૂર્યને ઠેકાણે છે ને સત્શાસ્ત્ર છે તે દર્પણને ઠેકાણે છે ને પોતાનો સદ્વિચાર છે તે નેત્રને ઠેકાણે છે માટે સૂર્ય ને દર્પણ વિના એકલાં નેત્ર શું કામનાં? માટે સત્શાસ્ત્રમાંથી સત્પુરુષ પ્રકાશી આપે છે ત્યારે જ ઉપાસ્યમૂર્તિ જે મહારાજ તથા તેમનું ધામ જે મૂળઅક્ષર તથા ઉપાસક જે ઉપાસનાનો કરનારો; એ ત્રણની શુદ્ધિ થાય છે માટે ઉપાસ્ય, ઉપાસક, ધામ, સંગ ને શાસ્ત્ર, એ પાંચેયની શુદ્ધિએ કરીને જીવ જે તે આત્યંતિક જ્ઞાન પામીને આત્યંતિક મોક્ષ જે અક્ષરધામ તેને સાક્ષાત્ પામે છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter8/ch8009.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan ne bhagavanna </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter8/ch8011.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje ath mahina sudhi </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '8');
+            localStorage.setItem('lastVisitedVat', '10');
+            localStorage.setItem('lastVisitedVatFile', 'ch8010.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

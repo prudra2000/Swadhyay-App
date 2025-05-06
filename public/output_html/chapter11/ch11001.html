@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેનો જીવ ત્યાગી ન હોય - Jeno jiv tyagi na hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jeno jiv tyagi na hoy</h1>
+                <div class="gujarati-title">જેનો જીવ ત્યાગી ન હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 1</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā sudi paḍavāne divase svāmīe vāta karī je, $(1) jeno jīva tyāgī na hoya tene padārtha bheḻāṃ thāya teno phaḍako na hoya paṇa jeno jīva tyāgī hoya tene to jema padārtha bheḻāṃ thāvā māṃḍe tema paḍavā māṃḍe ne sukhe nidrā paṇa na āve te upara nārāyaṇadāsanī vāta karī je te pāse rākhatā te sākara vāṭī dūdhamāṃ pīdhī tyāre mahārāje pūchyuṃ je, ‘śuṃ pīdhuṃ ?’ eṭale kahe je, ‘peṭamāṃ baḻe che tethī chāśa ne mīṭhu pīdhuṃ.’ pachī mahārāje bījā sādhu āgaḻa caṭāḍī, tyāre temaṇe kahyuṃ je, ‘gaḻyuṃ che,’ te rāmaiyāthī jaṇāṇuṃ.@ 1 phaḍako= dhrāsako, bhayanī dhrujārī. $2 rāmaiyo= rāmapātara, moṭuṃ śakoruṃ, baṭeruṃ. $3 chīpara= vāṭavā vagerenā kāmamāṃ āve tevī paththaranī ghaḍelī lāṃbī, sāṃkaḍī pāṭa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા સુદિ પડવાને દિવસે સ્વામીએ વાત કરી જે, $(1) જેનો જીવ ત્યાગી ન હોય તેને પદાર્થ ભેળાં થાય તેનો ફડકો ન હોય પણ જેનો જીવ ત્યાગી હોય તેને તો જેમ પદાર્થ ભેળાં થાવા માંડે તેમ પડવા માંડે ને સુખે નિદ્રા પણ ન આવે તે ઉપર નારાયણદાસની વાત કરી જે તે પાસે રાખતા તે સાકર વાટી દૂધમાં પીધી ત્યારે મહારાજે પૂછ્યું જે, ‘શું પીધું ?’ એટલે કહે જે, ‘પેટમાં બળે છે તેથી છાશ ને મીઠુ પીધું.’ પછી મહારાજે બીજા સાધુ આગળ ચટાડી, ત્યારે તેમણે કહ્યું જે, ‘ગળ્યું છે,’ તે રામૈયાથી જણાણું.@ 1 ફડકો= ધ્રાસકો, ભયની ધ્રુજારી. $2 રામૈયો= રામપાતર, મોટું શકોરું, બટેરું. $3 છીપર= વાટવા વગેરેના કામમાં આવે તેવી પથ્થરની ઘડેલી લાંબી, સાંકડી પાટ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10353.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shabde karine jivnu mathu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11002.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mota akhandanand brahmacharie</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '1');
+            localStorage.setItem('lastVisitedVatFile', 'ch11001.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

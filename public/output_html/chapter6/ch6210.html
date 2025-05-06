@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઉપશમ કરે તે મને - Upasam kare te mane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Upasam kare te mane</h1>
+                <div class="gujarati-title">ઉપશમ કરે તે મને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 210</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(210) upaśama kare te mane game ne huṃ rājī thāuṃ ne je je kriyā vinā na cāle evī hoya te karavī paṇa pachī ; saṃkalpa karyā na karavā. ā to markaṭanī ghoḍye che, te eka būḍhiyo vāṃdaro tene bījāe vāṃdarī pāsethī kāḍhī mūkyo; pachī nākhe. ema āpaṇane paṇa viṣayamāṃthī du:kha upaje che ne bokāsāṃ nākhīe chīe. māṭe viṣayathī cheṭe rahevuṃ.@ 1 dhaba paḍī melavī= tarata paḍatī mūkavī. $2 bokāsāṃ= raḍavānī bhārī moṭī cīso.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૧૦) ઉપશમ કરે તે મને ગમે ને હું રાજી થાઉં ને જે જે ક્રિયા વિના ન ચાલે એવી હોય તે કરવી પણ પછી ; સંકલ્પ કર્યા ન કરવા. આ તો મર્કટની ઘોડ્યે છે, તે એક બૂઢિયો વાંદરો તેને બીજાએ વાંદરી પાસેથી કાઢી મૂક્યો; પછી નાખે. એમ આપણને પણ વિષયમાંથી દુ:ખ ઉપજે છે ને બોકાસાં નાખીએ છીએ. માટે વિષયથી છેટે રહેવું.@ 1 ધબ પડી મેલવી= તરત પડતી મૂકવી. $2 બોકાસાં= રડવાની ભારી મોટી ચીસો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6209.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Vaishakh vadi ekadashie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6211.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek bhakte puchhyu je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '210');
+            localStorage.setItem('lastVisitedVatFile', 'ch6210.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

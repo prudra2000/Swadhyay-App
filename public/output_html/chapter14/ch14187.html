@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ત્યાગી થયા છીએ પણ - Tyagi thaya chhie pan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tyagi thaya chhie pan</h1>
+                <div class="gujarati-title">ત્યાગી થયા છીએ પણ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 187</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bhādaravā vadi chaṭhane divase svāmīe vāta karī je, $(187) tyāgī thayā chīe paṇa dehanā anādaranā śabda ke viṣayamāṃ doṣadhyānanā śabda te ghara karatā nathī. te śuṃ ? je, evā saṃskāra nahi, tethī jñāna vairāgyanā śabda sārā na lāge. koī gṛhastha hoya tenā gharamāṃ to ghaṇuṃ khāvānuṃ hoya; paṇa roga thāya to kāṃī khavāya nahi; tema bhagavānamāṃ heta che, paṇa 1 oḍhānuṃ aradha che= māyika vṛttinuṃ aḍadhoaḍadha jora che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના ભાદરવા વદિ છઠને દિવસે સ્વામીએ વાત કરી જે, $(187) ત્યાગી થયા છીએ પણ દેહના અનાદરના શબ્દ કે વિષયમાં દોષધ્યાનના શબ્દ તે ઘર કરતા નથી. તે શું ? જે, એવા સંસ્કાર નહિ, તેથી જ્ઞાન વૈરાગ્યના શબ્દ સારા ન લાગે. કોઈ ગૃહસ્થ હોય તેના ઘરમાં તો ઘણું ખાવાનું હોય; પણ રોગ થાય તો કાંઈ ખવાય નહિ; તેમ ભગવાનમાં હેત છે, પણ 1 ઓઢાનું અરધ છે= માયિક વૃત્તિનું અડધોઅડધ જોર છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14186.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aakrutichitichapalyarahita</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14188.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ketalak ghi, gol khata</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '187');
+            localStorage.setItem('lastVisitedVatFile', 'ch14187.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

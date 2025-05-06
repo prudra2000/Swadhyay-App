@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ સુતારનું મન - Jem sutarnu man </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem sutarnu man </h1>
+                <div class="gujarati-title">જેમ સુતારનું મન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 105</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(105) jema ‘sutāranuṃ mana bāvaḻiye’ ne jema ‘dūbaḻā vāṇiyāne ajame hātha’ ema bhagavānane rājī karavā bhajana karavuṃ ne have to kriyāne gauṇa rākhavī ne bhagavānane pradhāna rākhavā ne kathāne ne kriyāne vera che, māṭe beya bheḻuṃ to thāya ja nahi ne kare to vṛtti sthira rahe ja nahīṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૦૫) જેમ ‘સુતારનું મન બાવળિયે’ ને જેમ ‘દૂબળા વાણિયાને અજમે હાથ’ એમ ભગવાનને રાજી કરવા ભજન કરવું ને હવે તો ક્રિયાને ગૌણ રાખવી ને ભગવાનને પ્રધાન રાખવા ને કથાને ને ક્રિયાને વેર છે, માટે બેય ભેળું તો થાય જ નહિ ને કરે તો વૃત્તિ સ્થિર રહે જ નહીં.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6104.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa satsangmathi padavano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6106.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Samvat 1919 aso masma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '105');
+            localStorage.setItem('lastVisitedVatFile', 'ch6105.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

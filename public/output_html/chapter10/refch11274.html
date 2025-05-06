@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(274) tyāgīne to grāmyakathā thāya ja nahi paṇa gṛhasthāśramī jo grāmyakathā kare to teno jīva paṇa coṃṭī jāya che ne aṃtara bagaḍī jāya che. te upara bārapaṭoḻīnā ālā bhaktanī vāta karī je, kṛpānaṃdasvāmīe tene tyāgī thāvuṃ hatuṃ paṇa nā pāḍī. te royo to paṇa tyāgī na karyo. ne be varasa sudhī to amārī vāṃse pharyo, paṇa grāmyavārtā karyā kare tethī saṃga lāgyo nahi ne have be-traṇa chokarāṃ thayāṃ to paṇa darśane āvato nathī. māṭe badhāṃ kāma bagāḍīne satsaṃga karavo paṇa kusaṃga je grāmyavārtā karaśe to ṭhekāṇuṃ nahi rahe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(274) ત્યાગીને તો ગ્રામ્યકથા થાય જ નહિ પણ ગૃહસ્થાશ્રમી જો ગ્રામ્યકથા કરે તો તેનો જીવ પણ ચોંટી જાય છે ને અંતર બગડી જાય છે. તે ઉપર બારપટોળીના આલા ભક્તની વાત કરી જે, કૃપાનંદસ્વામીએ તેને ત્યાગી થાવું હતું પણ ના પાડી. તે રોયો તો પણ ત્યાગી ન કર્યો. ને બે વરસ સુધી તો અમારી વાંસે ફર્યો, પણ ગ્રામ્યવાર્તા કર્યા કરે તેથી સંગ લાગ્યો નહિ ને હવે બે-ત્રણ છોકરાં થયાં તો પણ દર્શને આવતો નથી. માટે બધાં કામ બગાડીને સત્સંગ કરવો પણ કુસંગ જે ગ્રામ્યવાર્તા કરશે તો ઠેકાણું નહિ રહે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

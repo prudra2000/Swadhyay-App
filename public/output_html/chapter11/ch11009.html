@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બાયડી રોજ સો ખાસડાં  - Bayadi roja so khasada</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bayadi roja so khasada</h1>
+                <div class="gujarati-title">બાયડી રોજ સો ખાસડાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 9</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(9) bāyaḍī roja so khāsaḍāṃ māre to paṇa abhāva āvato nathī evī satsaṃgamāṃ ātmabuddhi karavī. heta hoya teno avaguṇa na āve ane kahyuṃ manāya te upara vāta karī je, eka sādhune bāṃdhatāṃ āvaḍe tethī moṭerāe tene bāṃdhavā kahyuṃ tathā bījā ghaṇāe bāṃdhavā kahyuṃ paṇa na bāṃdhī. pachī ame śivānaṃdane kahyuṃ ke, ‘tāro bhāībaṃdha kaṃpī bāṃdhato nathī ne badhāne kāma karatāṃ khoṭī kare che te tuṃ tene kahe eṭale bāṃdhe.’ pachī śivānaṃde tene kahyuṃ je, ‘ūṭha, māḻā koḻakā ! āvaḍe che ne kema bāṃdhato nathī ?’ eṭale turata ūṭhīne kaṃpī bāṃdhī dīdhī.@ 1 kaṃpī= bāṃdhakāma, samārakāma, raṃgakāma karavā māṭe bāṃdhavāmāṃ āvato māṃcaḍo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(9) બાયડી રોજ સો ખાસડાં મારે તો પણ અભાવ આવતો નથી એવી સત્સંગમાં આત્મબુદ્ધિ કરવી. હેત હોય તેનો અવગુણ ન આવે અને કહ્યું મનાય તે ઉપર વાત કરી જે, એક સાધુને બાંધતાં આવડે તેથી મોટેરાએ તેને બાંધવા કહ્યું તથા બીજા ઘણાએ બાંધવા કહ્યું પણ ન બાંધી. પછી અમે શિવાનંદને કહ્યું કે, ‘તારો ભાઈબંધ કંપી બાંધતો નથી ને બધાને કામ કરતાં ખોટી કરે છે તે તું તેને કહે એટલે બાંધે.’ પછી શિવાનંદે તેને કહ્યું જે, ‘ઊઠ, માળા કોળકા ! આવડે છે ને કેમ બાંધતો નથી ?’ એટલે તુરત ઊઠીને કંપી બાંધી દીધી.@ 1 કંપી= બાંધકામ, સમારકામ, રંગકામ કરવા માટે બાંધવામાં આવતો માંચડો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11008.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prashn uttarma pan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11010.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek jan evo hato ke</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '9');
+            localStorage.setItem('lastVisitedVatFile', 'ch11009.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

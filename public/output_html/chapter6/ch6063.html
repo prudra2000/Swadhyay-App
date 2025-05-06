@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>શાસ્ત્રમાં મુખ્ય અહિંસા - Shastrama mukhy ahinsa</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Shastrama mukhy ahinsa</h1>
+                <div class="gujarati-title">શાસ્ત્રમાં મુખ્ય અહિંસા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 63</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(63) śāstramāṃ mukhya ahiṃsā ne brahmacarya e be dharma kahyā che. te ahiṃsā te śuṃ ? to kāṃīka padārtha joītuṃ hoya ne gṛhastha pāse māgīe ne tenāthī na apāya to hiṃsā thaī ne koī padārtha na joīe tyāre ahiṃsā paḻe; ne koīeya na kacavāya te ahiṃsā. ne brahmacarya to netra, kāna, nāka, hātha, paga ādika aṃga sācavīe tyāre paḻe. ne hātha, paga ādika indriyuṃ sahita āvo deha kyāṃthī maḻe ? ā to che. te vṛthā khoī nākhavo nahi; tene ḍāhyo kahyo che, nīkara to paśu jevo jāṇavo ane ā deha to hamaṇāṃ paḍyo jāṇavo ne jema ā ghaḍiyāḻanā ḍaṃkā vāge che, tema kāḻa āvaradāne khāī jāya che, paṇa ā jīva to bhūlī gayo che. te upara $(kīrtanasāra sāgara : 216) 1 bhagavāna bhajyāno sāja= bhagavāna bhajavānāṃ sādhana. $2 lekhe lagāḍe= sārthaka kare.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૬૩) શાસ્ત્રમાં મુખ્ય અહિંસા ને બ્રહ્મચર્ય એ બે ધર્મ કહ્યા છે. તે અહિંસા તે શું ? તો કાંઈક પદાર્થ જોઈતું હોય ને ગૃહસ્થ પાસે માગીએ ને તેનાથી ન અપાય તો હિંસા થઈ ને કોઈ પદાર્થ ન જોઈએ ત્યારે અહિંસા પળે; ને કોઈએય ન કચવાય તે અહિંસા. ને બ્રહ્મચર્ય તો નેત્ર, કાન, નાક, હાથ, પગ આદિક અંગ સાચવીએ ત્યારે પળે. ને હાથ, પગ આદિક ઇન્દ્રિયું સહિત આવો દેહ ક્યાંથી મળે ? આ તો છે. તે વૃથા ખોઈ નાખવો નહિ; તેને ડાહ્યો કહ્યો છે, નીકર તો પશુ જેવો જાણવો અને આ દેહ તો હમણાં પડ્યો જાણવો ને જેમ આ ઘડિયાળના ડંકા વાગે છે, તેમ કાળ આવરદાને ખાઈ જાય છે, પણ આ જીવ તો ભૂલી ગયો છે. તે ઉપર $(કીર્તનસાર સાગર : ૨૧૬) 1 ભગવાન ભજ્યાનો સાજ= ભગવાન ભજવાનાં સાધન. $2 લેખે લગાડે= સાર્થક કરે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6062.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa bhagavan to jem</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6064.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj kahe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '63');
+            localStorage.setItem('lastVisitedVatFile', 'ch6063.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

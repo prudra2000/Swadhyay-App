@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કુસંગમાંથી સત્સંગ કરવો  - Kusangmathi satsang karavo </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kusangmathi satsang karavo </h1>
+                <div class="gujarati-title">કુસંગમાંથી સત્સંગ કરવો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 46</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(46) kusaṃgamāṃthī satsaṃga karavo ne emāṃthī ekāṃtikanī samajaṇa śīkhavī te paṇa evuṃ ja kaṭhaṇa che. have koī tyāge vairāgye pahoṃce ema nathī paṇa ekāṃtika thāvuṃ e bākī rahyuṃ che. āja kriyamāṇa thāya che te saṃskāra baṃdhāya che. karavuṃ hoya tene saṃganī kasara to rahe ema jaṇātuṃ nathī, paṇa dehe, mane varataśuṃ tyāre e guṇa āvaśe; ā to pāṭha līdhā jevuṃ che te bhagavadānaṃdasvāmī gaḍhaḍāmāṃ liṃboyuṃmāṃ jaīne ghoṣa karatā tyāre vidyā āvaḍī māṭe kare to ja thāya e siddhāṃta che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(46) કુસંગમાંથી સત્સંગ કરવો ને એમાંથી એકાંતિકની સમજણ શીખવી તે પણ એવું જ કઠણ છે. હવે કોઈ ત્યાગે વૈરાગ્યે પહોંચે એમ નથી પણ એકાંતિક થાવું એ બાકી રહ્યું છે. આજ ક્રિયમાણ થાય છે તે સંસ્કાર બંધાય છે. કરવું હોય તેને સંગની કસર તો રહે એમ જણાતું નથી, પણ દેહે, મને વરતશું ત્યારે એ ગુણ આવશે; આ તો પાઠ લીધા જેવું છે તે ભગવદાનંદસ્વામી ગઢડામાં લિંબોયુંમાં જઈને ઘોષ કરતા ત્યારે વિદ્યા આવડી માટે કરે તો જ થાય એ સિદ્ધાંત છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10045.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prabuddh rushie vat kari</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10047.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Guru karava te</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '46');
+            localStorage.setItem('lastVisitedVatFile', 'ch10046.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

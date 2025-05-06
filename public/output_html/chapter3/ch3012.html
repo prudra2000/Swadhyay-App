@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહારાજને પુરુષોત્તમ જાણ્યા - Maharajne purushottam Janya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Maharajne purushottam Janya</h1>
+                <div class="gujarati-title">મહારાજને પુરુષોત્તમ જાણ્યા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 12</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(12) mahārājane puruṣottama jāṇyā vinā akṣaradhāmamāṃ javāya nahi ne brahmarūpa thayā vinā mahārājanī sevāmāṃ rahevāya nahīṃ. tyāre śivalāle praśrna pūchyo je, ‘puruṣottama kema jāṇavā ? ne brahmarūpa kema thāvāya ?’ tyāre kahyuṃ je, ‘mahārāja to sarvoparī ne sarva avatāranā avatārī, sarva kāraṇanā kāraṇa che.’ te upara madhyanuṃ 9muṃ ne chellānuṃ 38muṃ vacanāmṛta vaṃcāvīne kahyuṃ je, ‘āja to satsaṃgamāṃ sādhu, ācārya, maṃdira ne mūrtiyuṃ te sarvoparī che, to mahārāja sarvoparī hoya temāṃ śuṃ kahevuṃ? e to sarvoparī ja che ema samajavuṃ ane brahmarūpa to ema thāvāya che je, āvā sādhune brahmarūpa jāṇīne mana, karma, vacane saṃga kare che, te brahmarūpa thāya che.’ te upara varatālanuṃ 11muṃ vacanāmṛta vaṃcāvīne kahyuṃ je, ‘āvo thāya che tyāre puruṣottamanī sevāmāṃ rahevāya che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(12) મહારાજને પુરુષોત્તમ જાણ્યા વિના અક્ષરધામમાં જવાય નહિ ને બ્રહ્મરૂપ થયા વિના મહારાજની સેવામાં રહેવાય નહીં. ત્યારે શિવલાલે પ્રશ્ર્ન પૂછ્યો જે, ‘પુરુષોત્તમ કેમ જાણવા ? ને બ્રહ્મરૂપ કેમ થાવાય ?’ ત્યારે કહ્યું જે, ‘મહારાજ તો સર્વોપરી ને સર્વ અવતારના અવતારી, સર્વ કારણના કારણ છે.’ તે ઉપર મધ્યનું 9મું ને છેલ્લાનું 38મું વચનામૃત વંચાવીને કહ્યું જે, ‘આજ તો સત્સંગમાં સાધુ, આચાર્ય, મંદિર ને મૂર્તિયું તે સર્વોપરી છે, તો મહારાજ સર્વોપરી હોય તેમાં શું કહેવું? એ તો સર્વોપરી જ છે એમ સમજવું અને બ્રહ્મરૂપ તો એમ થાવાય છે જે, આવા સાધુને બ્રહ્મરૂપ જાણીને મન, કર્મ, વચને સંગ કરે છે, તે બ્રહ્મરૂપ થાય છે.’ તે ઉપર વરતાલનું 11મું વચનામૃત વંચાવીને કહ્યું જે, ‘આવો થાય છે ત્યારે પુરુષોત્તમની સેવામાં રહેવાય છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3011.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek vakhat gam Jaliyama</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3013.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek harijane char-panch</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '12');
+            localStorage.setItem('lastVisitedVatFile', 'ch3012.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

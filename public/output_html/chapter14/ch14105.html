@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જડભરત એવા મોટા  - Jadabharat eva mota</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jadabharat eva mota</h1>
+                <div class="gujarati-title">જડભરત એવા મોટા </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 105</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(105) jaḍabharata evā moṭā hatā ne rājya mūkī dīdhuṃ, paṇa temaṇe vaḻī mṛgalīmāṃ āsakti karī. tema tyāgī thayā che ne ema koīka padārthamāṃ sneha rahe te kahevāya. jaḍabharate kahyuṃ, ‘pārthiva! pārthiva !’ ema je, badhā pṛthvīnā ja vikāra jāṇe ne jāṇe, to tene moha śuṃ thāya? 1 sonānī thāḻīmāṃ loḍhānī mekha= aneka sadguṇo paṇa eka avaguṇathī jhāṃkhā paḍe. $2 kākhanā movāḻā= bagalanā vāḻa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(105) જડભરત એવા મોટા હતા ને રાજ્ય મૂકી દીધું, પણ તેમણે વળી મૃગલીમાં આસક્તિ કરી. તેમ ત્યાગી થયા છે ને એમ કોઈક પદાર્થમાં સ્નેહ રહે તે કહેવાય. જડભરતે કહ્યું, ‘પાર્થિવ! પાર્થિવ !’ એમ જે, બધા પૃથ્વીના જ વિકાર જાણે ને જાણે, તો તેને મોહ શું થાય? 1 સોનાની થાળીમાં લોઢાની મેખ= અનેક સદ્ગુણો પણ એક અવગુણથી ઝાંખા પડે. $2 કાખના મોવાળા= બગલના વાળ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14104.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bap, guru ne raja</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14106.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aama je chhe tene</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '105');
+            localStorage.setItem('lastVisitedVatFile', 'ch14105.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

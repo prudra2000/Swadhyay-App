@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણે ભગવાન ભજવાનો  - Apane bhagavan bhajavano</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apane bhagavan bhajavano</h1>
+                <div class="gujarati-title">આપણે ભગવાન ભજવાનો </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 394</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(394) āpaṇe bhagavāna bhajavāno ādara karavo tyāre kenāka (koīnā) kajiyā māthe laīne na pharīe. hajī koīne pūruṃ thayuṃ nathī, khādhānuṃ sukha āvyuṃ nathī ne lūgaḍāṃ-ghareṇāṃno tāla āvyo nathī. māṭe āpaṇe kajiyo uchīno levo nahi ne kahevuṃ je amane to evo nyāya āvaḍe ja nahi. āṭalī vāta karī, te śā sāru ? je, have tame cālanāra cho te vahevāranī vāta karī. te āṭalī vāta rākhaśo to jyāṃ jāśuṃ tyāṃ bheḻā ja chīe.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(394) આપણે ભગવાન ભજવાનો આદર કરવો ત્યારે કેનાક (કોઈના) કજિયા માથે લઈને ન ફરીએ. હજી કોઈને પૂરું થયું નથી, ખાધાનું સુખ આવ્યું નથી ને લૂગડાં-ઘરેણાંનો તાલ આવ્યો નથી. માટે આપણે કજિયો ઉછીનો લેવો નહિ ને કહેવું જે અમને તો એવો ન્યાય આવડે જ નહિ. આટલી વાત કરી, તે શા સારુ ? જે, હવે તમે ચાલનાર છો તે વહેવારની વાત કરી. તે આટલી વાત રાખશો તો જ્યાં જાશું ત્યાં ભેળા જ છીએ.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15393.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Brahmarup thaya vina</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15395.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apamano Na Kartavyo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '394');
+            localStorage.setItem('lastVisitedVatFile', 'ch15394.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

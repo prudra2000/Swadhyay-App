@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દેહથી નોખું પડવું એવો - Dehthi nokhu padavu evo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dehthi nokhu padavu evo</h1>
+                <div class="gujarati-title">દેહથી નોખું પડવું એવો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 212</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(212) dehathī nokhuṃ paḍavuṃ evo ṭharāva ḍāhyo hoya teṇe karavo, ne bījāne to sādhu kahe tema karavuṃ. ne ā sādhu na hoya to jīva vṛddhi na pāme. artha upara hoya te to doṣa hoya tene paṇa dekhe nahi. ācāryajīne gopāḻānaṃdasvāmīe kahyuṃ je, ‘narasā māṇasane kāḍho.’ tyāre māṃḍa pāṃca daśa māṇasa kāḍhyāṃ; kema ke, āpaṇe to āpaṇā artha upara najara na rākhavī. te gopāḻānaṃdasvāmīnī vātuṃmāṃ kahyuṃ che je, eka to dhūḍathī khāḍā pūre ne kāṃī paṇa deśamāṃthī lāve nahi paṇa te dharmavāḻo hoya, ne bījā to rūpiyāthī khāḍā pūre paṇa te dharmamāṃ na hoya, to paṇa tene na kāḍhe; kāraṇa ke, artha upara najara che, paṇa āpaṇe to mahārājanī ājñānuṃ anusaṃdhāna rākhavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(212) દેહથી નોખું પડવું એવો ઠરાવ ડાહ્યો હોય તેણે કરવો, ને બીજાને તો સાધુ કહે તેમ કરવું. ને આ સાધુ ન હોય તો જીવ વૃદ્ધિ ન પામે. અર્થ ઉપર હોય તે તો દોષ હોય તેને પણ દેખે નહિ. આચાર્યજીને ગોપાળાનંદસ્વામીએ કહ્યું જે, ‘નરસા માણસને કાઢો.’ ત્યારે માંડ પાંચ દશ માણસ કાઢ્યાં; કેમ કે, આપણે તો આપણા અર્થ ઉપર નજર ન રાખવી. તે ગોપાળાનંદસ્વામીની વાતુંમાં કહ્યું છે જે, એક તો ધૂડથી ખાડા પૂરે ને કાંઈ પણ દેશમાંથી લાવે નહિ પણ તે ધર્મવાળો હોય, ને બીજા તો રૂપિયાથી ખાડા પૂરે પણ તે ધર્મમાં ન હોય, તો પણ તેને ન કાઢે; કારણ કે, અર્થ ઉપર નજર છે, પણ આપણે તો મહારાજની આજ્ઞાનું અનુસંધાન રાખવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11211.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek sadhu varatalma chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11213.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dubala dhornu kushake man</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '212');
+            localStorage.setItem('lastVisitedVatFile', 'ch11212.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

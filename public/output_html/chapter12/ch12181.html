@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ સત્સંગ મળ્યો છે - Aa satsang malyo chhe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa satsang malyo chhe</h1>
+                <div class="gujarati-title">આ સત્સંગ મળ્યો છે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 181</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(181) ā satsaṃga maḻyo che te āṃdhaḻānā hāthamāṃ jema hīro āvyo. te bīje kahyuṃ je, ‘ī to kāṃkaro che ne hīro to gaḻyo hoya māṭe cākhī jo.’ pachī cākhīne nākhī dīdho. ema kusaṃgathī hāthamāṃ āvelo hīro gayo, tema ā jīva satsaṃgane khoī nākhe che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(181) આ સત્સંગ મળ્યો છે તે આંધળાના હાથમાં જેમ હીરો આવ્યો. તે બીજે કહ્યું જે, ‘ઈ તો કાંકરો છે ને હીરો તો ગળ્યો હોય માટે ચાખી જો.’ પછી ચાખીને નાખી દીધો. એમ કુસંગથી હાથમાં આવેલો હીરો ગયો, તેમ આ જીવ સત્સંગને ખોઈ નાખે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12180.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa deh padi jashe ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12182.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Potanu deh kohavayalu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '181');
+            localStorage.setItem('lastVisitedVatFile', 'ch12181.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

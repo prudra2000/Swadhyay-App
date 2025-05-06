@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ઉપાસના સમજવી જે - Upasana samajavi je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Upasana samajavi je</h1>
+                <div class="gujarati-title">ઉપાસના સમજવી જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.2</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 171</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(171) upāsanā samajavī je, koṭānakoṭi bhagavānanā avatāra je, śrīkṛṣṇa, rāmacaṃdrajī, vāsudeva, naranārāyaṇa ityādika sarvenā kāraṇa śrījīmahārāja che. ne pūrve avatāra thaī gayā evā to āja satsaṃgī ne sādhu che; paṇa āpaṇane mahimā pūro samajāto nathī. ne śrīkṛṣṇe keṭaluṃ jñāna karyuṃ tyāre eka uddhave tyāga karyo ne āja to vīsa-vīsa varasanā saṃsāra mūkīne cālyā āve che. ne pūrve śāstramāṃ strī to koī tyāgī thaī sāṃbhaḻī nathī ne āja to hajāro bāīo tyāgī thāya che. ne pūrve bhagavāna be-traṇane teḍavā āvyā te śāstramāṃ lakhyuṃ che ne āja to gharoghara bhagavāna teḍavā āve che. ne bījā avatāra moṭā moṭā te jevā che ne puruṣottama to che.@ 1 pārasamaṇi= sparśathī lokhaṃḍanuṃ sonuṃ karanāra maṇi. $2 ciṃtāmaṇi= icchā pūrī kare tevo divya maṇi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(171) ઉપાસના સમજવી જે, કોટાનકોટિ ભગવાનના અવતાર જે, શ્રીકૃષ્ણ, રામચંદ્રજી, વાસુદેવ, નરનારાયણ ઇત્યાદિક સર્વેના કારણ શ્રીજીમહારાજ છે. ને પૂર્વે અવતાર થઈ ગયા એવા તો આજ સત્સંગી ને સાધુ છે; પણ આપણને મહિમા પૂરો સમજાતો નથી. ને શ્રીકૃષ્ણે કેટલું જ્ઞાન કર્યું ત્યારે એક ઉદ્ધવે ત્યાગ કર્યો ને આજ તો વીસ-વીસ વરસના સંસાર મૂકીને ચાલ્યા આવે છે. ને પૂર્વે શાસ્ત્રમાં સ્ત્રી તો કોઈ ત્યાગી થઈ સાંભળી નથી ને આજ તો હજારો બાઈઓ ત્યાગી થાય છે. ને પૂર્વે ભગવાન બે-ત્રણને તેડવા આવ્યા તે શાસ્ત્રમાં લખ્યું છે ને આજ તો ઘરોઘર ભગવાન તેડવા આવે છે. ને બીજા અવતાર મોટા મોટા તે જેવા છે ને પુરુષોત્તમ તો છે.@ 1 પારસમણિ= સ્પર્શથી લોખંડનું સોનું કરનાર મણિ. $2 ચિંતામણિ= ઇચ્છા પૂરી કરે તેવો દિવ્ય મણિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter2/ch2170.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Varatalma katha thai</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter2/ch2172.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavannu svarup nirdosh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '2');
+            localStorage.setItem('lastVisitedVat', '171');
+            localStorage.setItem('lastVisitedVatFile', 'ch2171.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

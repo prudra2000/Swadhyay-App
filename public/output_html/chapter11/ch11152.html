@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વરતાલમાં મહારાજ પાસે  - Varatalma Maharaj pase</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varatalma Maharaj pase</h1>
+                <div class="gujarati-title">વરતાલમાં મહારાજ પાસે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 152</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(152) varatālamāṃ mahārāja pāse pāṭīdāra āvyā. temaṇe pūchyuṃ je, ‘jīvamātranuṃ mana kyāṃ rahe che ?’ teno uttara mahārāje karyo je, ‘strīne puruṣanā ne puruṣane strīnā aṃgamāṃ rahe che.’ māṭe e viṣaya to koīthī mukāya evo nathī, ā to mahārāje ja niṣkāmī vartamāna paḻāvyuṃ che. āṃhīṃ nāgara āvyā, temaṇe kahyuṃ je, ‘tamārā vartamāne to amāruṃ kāḻajuṃ kāpī nākhyuṃ che!’ e viṣaya bahu baḻavāna che te upara vāta karī je, eka gāmamāṃ musalamāna bhāī-bāī rahe te temane sāṃdho thayo, pachī bāī pāse jāya; ema ghaṇuṃ cālyuṃ. pachī te bāīne ṭūṃṭiyuṃ thāvāthī deha mūkī gaī, te vātanī khabara paḍī; ne bhāī to viṣayī te bahu akaḻāyo, ne ghora pāse gayo, ne strīnā maḍadāne kāḍhīne saṃga karyo. māṭe ā sādhunā saṃgathī ja āṭaluṃ śuddha rahevāya che.@ 1 pāṭiyuṃ mūkīne= cālu kāmakāja paḍatuṃ mūkīne.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(152) વરતાલમાં મહારાજ પાસે પાટીદાર આવ્યા. તેમણે પૂછ્યું જે, ‘જીવમાત્રનું મન ક્યાં રહે છે ?’ તેનો ઉત્તર મહારાજે કર્યો જે, ‘સ્ત્રીને પુરુષના ને પુરુષને સ્ત્રીના અંગમાં રહે છે.’ માટે એ વિષય તો કોઈથી મુકાય એવો નથી, આ તો મહારાજે જ નિષ્કામી વર્તમાન પળાવ્યું છે. આંહીં નાગર આવ્યા, તેમણે કહ્યું જે, ‘તમારા વર્તમાને તો અમારું કાળજું કાપી નાખ્યું છે!’ એ વિષય બહુ બળવાન છે તે ઉપર વાત કરી જે, એક ગામમાં મુસલમાન ભાઈ-બાઈ રહે તે તેમને સાંધો થયો, પછી બાઈ પાસે જાય; એમ ઘણું ચાલ્યું. પછી તે બાઈને ટૂંટિયું થાવાથી દેહ મૂકી ગઈ, તે વાતની ખબર પડી; ને ભાઈ તો વિષયી તે બહુ અકળાયો, ને ઘોર પાસે ગયો, ને સ્ત્રીના મડદાને કાઢીને સંગ કર્યો. માટે આ સાધુના સંગથી જ આટલું શુદ્ધ રહેવાય છે.@ 1 પાટિયું મૂકીને= ચાલુ કામકાજ પડતું મૂકીને.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11151.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jem chil chade asman</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11153.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaje shaligram pujava</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '152');
+            localStorage.setItem('lastVisitedVatFile', 'ch11152.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

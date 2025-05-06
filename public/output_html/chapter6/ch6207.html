@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચોવીસ વરસ થયાં - Chovis varas thaya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chovis varas thaya</h1>
+                <div class="gujarati-title">ચોવીસ વરસ થયાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 207</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(207) covīsa varasa thayāṃ āvaradā nathī ne ā deha vātuṃ sāru ja rahyo che, paṇa trīsa varasa thayāṃ kriyā uparāuparī āvī che, te pūrī vātuṃ thātī nathī. āma jo āgraha rākhīe to dhyāna thaī jāya ne samādhi thaī jāya paṇa pūrī , evī vātuṃ karātī nathī; mananāṃ rahī jāya che.@ 1 sodarī vaḻe-vaḻaśe= dharāī gayānī-saṃtoṣanī lāgaṇī thavī. $2 hāma= aphasosa, asaṃtoṣa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૦૭) ચોવીસ વરસ થયાં આવરદા નથી ને આ દેહ વાતું સારુ જ રહ્યો છે, પણ ત્રીસ વરસ થયાં ક્રિયા ઉપરાઉપરી આવી છે, તે પૂરી વાતું થાતી નથી. આમ જો આગ્રહ રાખીએ તો ધ્યાન થઈ જાય ને સમાધિ થઈ જાય પણ પૂરી , એવી વાતું કરાતી નથી; મનનાં રહી જાય છે.@ 1 સોદરી વળે-વળશે= ધરાઈ ગયાની-સંતોષની લાગણી થવી. $2 હામ= અફસોસ, અસંતોષ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6206.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pangatma besine melavine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6208.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sadhu thaya ne bhekh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '207');
+            localStorage.setItem('lastVisitedVatFile', 'ch6207.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

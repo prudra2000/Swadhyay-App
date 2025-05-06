@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક વરસે ઘેલામાં  - Ek varase ghelama</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek varase ghelama</h1>
+                <div class="gujarati-title">એક વરસે ઘેલામાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 192</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(192) eka varase ghelāmāṃ moṭuṃ pūra āvyuṃ hatuṃ, tyāre mahārāje kahyuṃ hatuṃ ke, ‘he saṃto, ā pūranī jema jīvamāṃ kāmādika doṣanāṃ pūra āve che, ane emāṃ rāta-divasa te taṇāyā kare che māṭe e badhā doṣathī mukta thāvānuṃ ṭhekāṇuṃ to ā saṃta samāgama che.’ ema kahī gāmaḍāṃnā haribhaktone kahyuṃ je, ‘ā tame sarve ahīṃ āvyā te moṭāṃ bhāgya mānavāṃ je, gayā to sādhunāṃ darśana thayāṃ.’ ācāryajī mahārājanāṃ darśana thayāṃ, evo vicāra jene hoya tene ānaṃda rahe; ne ema vicāra na hoya te vaghārela ke, manadhāryuṃ na maḻe to du:khāī jāya; paṇa jīve tyāṃ sudhī ghī, sākara maḻe to śuṃ mokṣa thāya che ? bhekhadhārī māge tyāre lūgaḍāṃ ne khāvānuṃ maḻe; paṇa be kosa vāḍīnī bhoṃ maḻe nahi.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(192) એક વરસે ઘેલામાં મોટું પૂર આવ્યું હતું, ત્યારે મહારાજે કહ્યું હતું કે, ‘હે સંતો, આ પૂરની જેમ જીવમાં કામાદિક દોષનાં પૂર આવે છે, અને એમાં રાત-દિવસ તે તણાયા કરે છે માટે એ બધા દોષથી મુક્ત થાવાનું ઠેકાણું તો આ સંત સમાગમ છે.’ એમ કહી ગામડાંના હરિભક્તોને કહ્યું જે, ‘આ તમે સર્વે અહીં આવ્યા તે મોટાં ભાગ્ય માનવાં જે, ગયા તો સાધુનાં દર્શન થયાં.’ આચાર્યજી મહારાજનાં દર્શન થયાં, એવો વિચાર જેને હોય તેને આનંદ રહે; ને એમ વિચાર ન હોય તે વઘારેલ કે, મનધાર્યું ન મળે તો દુ:ખાઈ જાય; પણ જીવે ત્યાં સુધી ઘી, સાકર મળે તો શું મોક્ષ થાય છે ? ભેખધારી માગે ત્યારે લૂગડાં ને ખાવાનું મળે; પણ બે કોસ વાડીની ભોં મળે નહિ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10191.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Rajakotna rajane erandiyu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10193.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanne raji karava </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '192');
+            localStorage.setItem('lastVisitedVatFile', 'ch10192.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

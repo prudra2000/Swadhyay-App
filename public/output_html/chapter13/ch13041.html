@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આપણે ધર્મમાં રહીને  - Apane dharmma rahine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Apane dharmma rahine</h1>
+                <div class="gujarati-title">આપણે ધર્મમાં રહીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 41</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(41) āpaṇe dharmamāṃ rahīne āvaradā pūrī karavī. muktane viṣaya game ja nahīṃ. mahārājanī śuddha upāsanā hoya teno jīva laḍathaḍe nahi, ema upāsanānī moṭāī samajavī. dharmādika doṣanuṃ prāyaśrcita kahyuṃ che, paṇa rasika bhaktanā viṣayanuṃ muktānaṃdasvāmī jevā saṃta khaṃḍana kare to śastre karīne māthuṃ kāpī nākhe eṭalo droha kare, te pāpanuṃ nivāraṇa kahyuṃ nathī; māṭe ānī āgaḻa bījā doṣane alpa kahyā che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(41) આપણે ધર્મમાં રહીને આવરદા પૂરી કરવી. મુક્તને વિષય ગમે જ નહીં. મહારાજની શુદ્ધ ઉપાસના હોય તેનો જીવ લડથડે નહિ, એમ ઉપાસનાની મોટાઈ સમજવી. ધર્માદિક દોષનું પ્રાયશ્ર્ચિત કહ્યું છે, પણ રસિક ભક્તના વિષયનું મુક્તાનંદસ્વામી જેવા સંત ખંડન કરે તો શસ્ત્રે કરીને માથું કાપી નાખે એટલો દ્રોહ કરે, તે પાપનું નિવારણ કહ્યું નથી; માટે આની આગળ બીજા દોષને અલ્પ કહ્યા છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13040.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Prathamnu 71mu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13042.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Anant avatar thai gaya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '41');
+            localStorage.setItem('lastVisitedVatFile', 'ch13041.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

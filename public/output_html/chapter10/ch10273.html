@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>દક્ષિણી મોટેરો હોય  - Dakshini motero hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Dakshini motero hoy</h1>
+                <div class="gujarati-title">દક્ષિણી મોટેરો હોય </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 273</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(273) dakṣiṇī moṭero hoya to bījā sarve dakṣiṇī enī vāṃse khotarī khāya ne kaṇabī moṭero hoya to bījā kaṇabīnī jamīna upara caḍāvo kare, kāṃ kajiyā kare pachī darabāre caḍe eṭale darabāra to vāṃdarānā jevo nyāya kare te be bilāḍī eka roṭalo vaheṃcavā beṭhī tyāre nānā moṭā kaṭakā thayā. eṭale eka kahe, ‘huṃ moṭo lauṃ,’ ne bījī kahe, ‘huṃ moṭo lauṃ.’ pachī vāṃdarā pāse nyāya karāvavā gaī te vāṃdare trājavāmāṃ ekeko kaṭako mūkī toḻyo. pachī je moṭo kaṭako hato temāṃthī baṭakuṃ bharyuṃ. pachī roṭalo toḻyo to nāno kaṭako bhāre thayo. eṭale temāṃthī baṭakuṃ bharyuṃ to te nāno thayo. ema karatāṃ karatāṃ beya kaṭakā khāī gayo. ne kahyuṃ je, ‘jāo, have tamāro kajiyo pāra paḍī gayo !’ evo nyāya darabāre caḍaśe tene maḻaśe; māṭe kaṇabī na thavuṃ ne dakṣiṇīnī peṭhe chānāmānā roṭalā khāīne bhajana karavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(273) દક્ષિણી મોટેરો હોય તો બીજા સર્વે દક્ષિણી એની વાંસે ખોતરી ખાય ને કણબી મોટેરો હોય તો બીજા કણબીની જમીન ઉપર ચડાવો કરે, કાં કજિયા કરે પછી દરબારે ચડે એટલે દરબાર તો વાંદરાના જેવો ન્યાય કરે તે બે બિલાડી એક રોટલો વહેંચવા બેઠી ત્યારે નાના મોટા કટકા થયા. એટલે એક કહે, ‘હું મોટો લઉં,’ ને બીજી કહે, ‘હું મોટો લઉં.’ પછી વાંદરા પાસે ન્યાય કરાવવા ગઈ તે વાંદરે ત્રાજવામાં એકેકો કટકો મૂકી તોળ્યો. પછી જે મોટો કટકો હતો તેમાંથી બટકું ભર્યું. પછી રોટલો તોળ્યો તો નાનો કટકો ભારે થયો. એટલે તેમાંથી બટકું ભર્યું તો તે નાનો થયો. એમ કરતાં કરતાં બેય કટકા ખાઈ ગયો. ને કહ્યું જે, ‘જાઓ, હવે તમારો કજિયો પાર પડી ગયો !’ એવો ન્યાય દરબારે ચડશે તેને મળશે; માટે કણબી ન થવું ને દક્ષિણીની પેઠે છાનામાના રોટલા ખાઈને ભજન કરવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10272.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Be divas pachhi ahithi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10274.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jo saru ichchho to </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '273');
+            localStorage.setItem('lastVisitedVatFile', 'ch10273.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

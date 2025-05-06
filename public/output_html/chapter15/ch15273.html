@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હમણાં શી વાત કરવી  - Hamana shi vat karavi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Hamana shi vat karavi</h1>
+                <div class="gujarati-title">હમણાં શી વાત કરવી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 273</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(273) hamaṇāṃ śī vāta karavī je, potapotānā niyama hoya te rākhavāṃ ne gṛhasthāśramamāṃ rahevuṃ tene vyavahāra karavo ne tyāgī thavuṃ tene to vyavahāra bagaḍe to ṭhīka, paṇa jeṇe vyavahāra rākhyo teṇe to vyavahāranuṃ kāmakāja karavuṃ. te upara boḍakānā kuṃbhāranī vāta karī je, dhūḻano dhaṃdho karīne paṇa satsaṃga karyo. māṭe sahu sahuno dhaṃdho rākhavo, niyama rākhavā, satsaṃgī sāthe suhṛdapaṇuṃ rākhavuṃ ne bhagavānanī marajī jāṇato hoya te thakī vāraṃvāra śravaṇa karīne nakkī karavuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(273) હમણાં શી વાત કરવી જે, પોતપોતાના નિયમ હોય તે રાખવાં ને ગૃહસ્થાશ્રમમાં રહેવું તેને વ્યવહાર કરવો ને ત્યાગી થવું તેને તો વ્યવહાર બગડે તો ઠીક, પણ જેણે વ્યવહાર રાખ્યો તેણે તો વ્યવહારનું કામકાજ કરવું. તે ઉપર બોડકાના કુંભારની વાત કરી જે, ધૂળનો ધંધો કરીને પણ સત્સંગ કર્યો. માટે સહુ સહુનો ધંધો રાખવો, નિયમ રાખવા, સત્સંગી સાથે સુહૃદપણું રાખવું ને ભગવાનની મરજી જાણતો હોય તે થકી વારંવાર શ્રવણ કરીને નક્કી કરવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15272.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhadakavano garasiyo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15274.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanno tatha mota</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '273');
+            localStorage.setItem('lastVisitedVatFile', 'ch15273.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

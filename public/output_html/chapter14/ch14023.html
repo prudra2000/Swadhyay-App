@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ગોંડળના દરબારનો કોઠારી - Gondalna darabarno kothari</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gondalna darabarno kothari</h1>
+                <div class="gujarati-title">ગોંડળના દરબારનો કોઠારી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 23</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(23) goṃḍaḻanā darabārano koṭhārī mahārājanā cophāḻamāṃthī be korī khāī gayo; pachī bhūkha bheḻo thaī gayo. teṇe te vāta gopāḻānaṃdasvāmīne karī tyāre vyāja sāthe e korī ṭhākorajī āgaḻa mukāvī, pachī tenuṃ sāruṃ thayuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(23) ગોંડળના દરબારનો કોઠારી મહારાજના ચોફાળમાંથી બે કોરી ખાઈ ગયો; પછી ભૂખ ભેળો થઈ ગયો. તેણે તે વાત ગોપાળાનંદસ્વામીને કરી ત્યારે વ્યાજ સાથે એ કોરી ઠાકોરજી આગળ મુકાવી, પછી તેનું સારું થયું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14022.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dravyma ane strima</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14024.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dehma asakti evi chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '23');
+            localStorage.setItem('lastVisitedVatFile', 'ch14023.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

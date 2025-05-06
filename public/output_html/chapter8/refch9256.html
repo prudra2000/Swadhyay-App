@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(256) ‘ā sarve dhūḍano vikāra che, sarve padārtha dhūḍanāṃ che.’ ema jāṇyā pachī paṇa eno joga thāvā devo nahi ne niyama moḻā paḍavā devā nahīṃ. niyama moḻā paḍe to nārada ne parvatanā jevuṃ thāya. aṃbarīṣane dīkarī paraṇāvavī hatī. tethī nārada tathā parvatane kdhayāno hātha dekhāḍyo ne kahyuṃ je, ‘juo, āne kevo vara maḻaśe?’ pachī kahe, ‘āne to bhāre rekhā che; te bhagavāna jevā varaśe !’ paṇa hātha jotāṃ jotāṃ banneyane paraṇavānuṃ mana thayuṃ. eṭale kahe, ‘ā kdhayā amane paraṇāvo.’ aṃbarīṣa kahe, ‘tame tyāgī thaīne śuṃ bolo cho ?’ eṭale kahe, ‘have amāre gṛhasthāśrama karavo che.’ tyāre aṃbarīṣa kahe, ‘tame be, ne kdhayā eka, te kema thāya ? paṇa tamāre varavuṃ hoya to savāre svayaṃvaramāṃ āvajo.’ $artha : he putra, tane muktinī icchā hoya to viṣayone viṣanī jema tyāga kara. kṣamā, saraḻatā, dayā, saṃtoṣa ane śīla ā guṇono amṛtanī māphaka āśraya kara.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(256) ‘આ સર્વે ધૂડનો વિકાર છે, સર્વે પદાર્થ ધૂડનાં છે.’ એમ જાણ્યા પછી પણ એનો જોગ થાવા દેવો નહિ ને નિયમ મોળા પડવા દેવા નહીં. નિયમ મોળા પડે તો નારદ ને પર્વતના જેવું થાય. અંબરીષને દીકરી પરણાવવી હતી. તેથી નારદ તથા પર્વતને ક્ધયાનો હાથ દેખાડ્યો ને કહ્યું જે, ‘જુઓ, આને કેવો વર મળશે?’ પછી કહે, ‘આને તો ભારે રેખા છે; તે ભગવાન જેવા વરશે !’ પણ હાથ જોતાં જોતાં બન્નેયને પરણવાનું મન થયું. એટલે કહે, ‘આ ક્ધયા અમને પરણાવો.’ અંબરીષ કહે, ‘તમે ત્યાગી થઈને શું બોલો છો ?’ એટલે કહે, ‘હવે અમારે ગૃહસ્થાશ્રમ કરવો છે.’ ત્યારે અંબરીષ કહે, ‘તમે બે, ને ક્ધયા એક, તે કેમ થાય ? પણ તમારે વરવું હોય તો સવારે સ્વયંવરમાં આવજો.’ $અર્થ : હે પુત્ર, તને મુક્તિની ઇચ્છા હોય તો વિષયોને વિષની જેમ ત્યાગ કર. ક્ષમા, સરળતા, દયા, સંતોષ અને શીલ આ ગુણોનો અમૃતની માફક આશ્રય કર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

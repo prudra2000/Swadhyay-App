@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અયોધ્યાપ્રસાદજી મહારાજે  - Ayodhyaprasadji Maharaje</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ayodhyaprasadji Maharaje</h1>
+                <div class="gujarati-title">અયોધ્યાપ્રસાદજી મહારાજે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 42</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(42) ayodhyāprasādajī mahārāje vaṇathaḻīvāḻā becara śrīmāḻī bhaṭṭane pūchayuṃ je, ‘guṇātītānaṃdasvāmī bahu vātuṃ kare che ?’ tyāre becara bhaṭṭa kahe, ‘temāṃ tamane śuṃ kaṭhaṇa paḍayuṃ ? tamārā bāpanā guṇa gāya che ! bījuṃ kāṃī kahetā nathī !’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(42) અયોધ્યાપ્રસાદજી મહારાજે વણથળીવાળા બેચર શ્રીમાળી ભટ્ટને પૂછયું જે, ‘ગુણાતીતાનંદસ્વામી બહુ વાતું કરે છે ?’ ત્યારે બેચર ભટ્ટ કહે, ‘તેમાં તમને શું કઠણ પડયું ? તમારા બાપના ગુણ ગાય છે ! બીજું કાંઈ કહેતા નથી !’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10041.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koine rupiya ganavano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10043.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sankhyadiknu madhyanu 24mu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '42');
+            localStorage.setItem('lastVisitedVatFile', 'ch10042.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

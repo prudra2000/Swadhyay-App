@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જ્ઞાનાનંદસ્વામીને ઝોળીમાં - Gyananandaswamine zolima</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Gyananandaswamine zolima</h1>
+                <div class="gujarati-title">જ્ઞાનાનંદસ્વામીને ઝોળીમાં</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 5</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(5) jñānānaṃdasvāmīne jhoḻīmāṃ padārtha ghaṇā thayā ane niṣkuḻānaṃdasvāmīe niṣedhanī vāta karī tyāre te sādhue hātha joḍīne kahyuṃ ke, ‘mārāthī padārtha bhegāṃ thayāṃ che te kema karuṃ ?’ tyāre niṣkuḻānaṃdasvāmīe bhāṃḍanā paḍiyānī vāta karī je, eka śāhukāra garībane paḍiyā bharīne khāvānuṃ āpato hato. te bhāṃḍe eka paḍiyo līdho paṇa jāṇe je koṇa oḻakhe che ? te bījo levā gayo ane prathamano paḍiyo denāra na dekhe tema pachavāḍe saṃtāḍyo; paṇa āpanāra kahe je, ‘tane āpyuṃ che,’ eṭalāmāṃ pāchaḻano paḍiyo hāthamāṃthī kūtaro laī gayo, ema banne khoyā, te upara bolyā je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(5) જ્ઞાનાનંદસ્વામીને ઝોળીમાં પદાર્થ ઘણા થયા અને નિષ્કુળાનંદસ્વામીએ નિષેધની વાત કરી ત્યારે તે સાધુએ હાથ જોડીને કહ્યું કે, ‘મારાથી પદાર્થ ભેગાં થયાં છે તે કેમ કરું ?’ ત્યારે નિષ્કુળાનંદસ્વામીએ ભાંડના પડિયાની વાત કરી જે, એક શાહુકાર ગરીબને પડિયા ભરીને ખાવાનું આપતો હતો. તે ભાંડે એક પડિયો લીધો પણ જાણે જે કોણ ઓળખે છે ? તે બીજો લેવા ગયો અને પ્રથમનો પડિયો દેનાર ન દેખે તેમ પછવાડે સંતાડ્યો; પણ આપનાર કહે જે, ‘તને આપ્યું છે,’ એટલામાં પાછળનો પડિયો હાથમાંથી કૂતરો લઈ ગયો, એમ બન્ને ખોયા, તે ઉપર બોલ્યા જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11004.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Surakhacharanu dudha ane</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11006.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa junagadhnu mandir</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '5');
+            localStorage.setItem('lastVisitedVatFile', 'ch11005.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

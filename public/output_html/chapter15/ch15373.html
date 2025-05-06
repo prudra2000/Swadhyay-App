@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સમાગમ વિના તો માથે  - Samagam vina to mathe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samagam vina to mathe</h1>
+                <div class="gujarati-title">સમાગમ વિના તો માથે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 373</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(373) samāgama vinā to māthe oḍhīne mā-bāpane saṃbhāre tevuṃ che. te upara vāta karī je, ogaṇoterā kāḻamāṃ kāṭhīnāṃ chokarāṃne varasa gujāravā, sādhu bheḻā rākhela. te sādhu māgī māgīne khavarāvatā ne sādhu dhyāna karavā bese tyāre kāṭhīnā chokarā paṇa māthe oḍhīne bese; eṭale sādhune vicāra thayo je ā chokarā māthe oḍhīne śuṃ karatāṃ haśe ? pachī temane pūchī joyuṃ to kahe, ‘tame śuṃ karo cho ?’ tyāre sādhu kahe, ‘ame to amārā māvatarane saṃbhārīe chīe.’ tyāre kāṭhīnā chokarā kahe, ‘ame paṇa amārāṃ mā-bāpane saṃbhārīe chīe je kyāṃ haśe ? śuṃ karatāṃ haśe? ane kyāre bheḻā thāśuṃ ?’ ema satsaṃga śuṃ karavā karyo che tenī khabara nathī. te paṇa evuṃ che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(373) સમાગમ વિના તો માથે ઓઢીને મા-બાપને સંભારે તેવું છે. તે ઉપર વાત કરી જે, ઓગણોતેરા કાળમાં કાઠીનાં છોકરાંને વરસ ગુજારવા, સાધુ ભેળા રાખેલ. તે સાધુ માગી માગીને ખવરાવતા ને સાધુ ધ્યાન કરવા બેસે ત્યારે કાઠીના છોકરા પણ માથે ઓઢીને બેસે; એટલે સાધુને વિચાર થયો જે આ છોકરા માથે ઓઢીને શું કરતાં હશે ? પછી તેમને પૂછી જોયું તો કહે, ‘તમે શું કરો છો ?’ ત્યારે સાધુ કહે, ‘અમે તો અમારા માવતરને સંભારીએ છીએ.’ ત્યારે કાઠીના છોકરા કહે, ‘અમે પણ અમારાં મા-બાપને સંભારીએ છીએ જે ક્યાં હશે ? શું કરતાં હશે? અને ક્યારે ભેળા થાશું ?’ એમ સત્સંગ શું કરવા કર્યો છે તેની ખબર નથી. તે પણ એવું છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15372.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Atala manushy dharm</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15374.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ath thekane dahyo hoy</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '373');
+            localStorage.setItem('lastVisitedVatFile', 'ch15373.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

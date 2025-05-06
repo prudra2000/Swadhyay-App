@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંતમાંથી ને સત્સંગીમાંથી - Santmathi ne satsangimathi </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Santmathi ne satsangimathi </h1>
+                <div class="gujarati-title">સંતમાંથી ને સત્સંગીમાંથી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 157</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(157) saṃtamāṃthī ne satsaṃgīmāṃthī paḍyo te bhagavānamāṃthī paṇa paḍī gayo ema jāṇavuṃ. $caḍhe to cākhe premarasa, gire to cakanācūra. $(kabīrasāhebanī sākhīo : 7) $(subhāṣita) $artha : so kāma mūkīne khāvuṃ, hajāra kāma mūkīne nahāvuṃ, lākha kāma mūkīne dāna āpavuṃ ane karoḍa kāma mūkīne harine bhajavā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(157) સંતમાંથી ને સત્સંગીમાંથી પડ્યો તે ભગવાનમાંથી પણ પડી ગયો એમ જાણવું. $ચઢે તો ચાખે પ્રેમરસ, ગિરે તો ચકનાચૂર. $(કબીરસાહેબની સાખીઓ : 7) $(સુભાષિત) $અર્થ : સો કામ મૂકીને ખાવું, હજાર કામ મૂકીને નહાવું, લાખ કામ મૂકીને દાન આપવું અને કરોડ કામ મૂકીને હરિને ભજવા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9156.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavatma dash lakshan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9158.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Damodarne kanthe karodo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '157');
+            localStorage.setItem('lastVisitedVatFile', 'ch9157.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

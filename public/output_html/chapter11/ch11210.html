@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વહેવાર છે તે જેમ કરીએ  - Vahevar chhe te jem karie</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Vahevar chhe te jem karie</h1>
+                <div class="gujarati-title">વહેવાર છે તે જેમ કરીએ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 210</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(210) vahevāra che te jema karīe tema vadhavā māṃḍe ne jo nāmuṃ vāḻe to badhuṃe pūruṃ thaī rahyuṃ che. māṭe have karavuṃ te saheje karavuṃ, paṇa ati vega lagāḍīne na karavuṃ. ne jīvanā haiyāmāṃ satsaṃga ghālavo ne ghera vātuṃ na saṃbhaḻāya; māṭe mahino mahino sādhu pāse rahe, tyāre vātuṃ samajāya. ne ame mūkīe tyāre nirvikalpa samādhi thāya che, ne ā deśamāṃ savikalpa samādhi rahe che; kema je, āṃhīṃ koī harijana, sādhunuṃ rākhavuṃ paḍe; ne ā badhā che temāṃ ghaṇā oḻakhāya nahi, māṭe garība hoya tenī pāse paṇa vātuṃ sāṃbhaḻavī ne karavī. ne karavuṃ to e ja che je bheḻā thaīne pragaṭa bhagavānamāṃ joḍāvuṃ, ne temanuṃ jñāna śīkhavuṃ, ane dharma vairāgya śīkhavā.@ 1 rādhāramaṇano deśa= jūnāgaḍha pradeśa.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(210) વહેવાર છે તે જેમ કરીએ તેમ વધવા માંડે ને જો નામું વાળે તો બધુંએ પૂરું થઈ રહ્યું છે. માટે હવે કરવું તે સહેજે કરવું, પણ અતિ વેગ લગાડીને ન કરવું. ને જીવના હૈયામાં સત્સંગ ઘાલવો ને ઘેર વાતું ન સંભળાય; માટે મહિનો મહિનો સાધુ પાસે રહે, ત્યારે વાતું સમજાય. ને અમે મૂકીએ ત્યારે નિર્વિકલ્પ સમાધિ થાય છે, ને આ દેશમાં સવિકલ્પ સમાધિ રહે છે; કેમ જે, આંહીં કોઈ હરિજન, સાધુનું રાખવું પડે; ને આ બધા છે તેમાં ઘણા ઓળખાય નહિ, માટે ગરીબ હોય તેની પાસે પણ વાતું સાંભળવી ને કરવી. ને કરવું તો એ જ છે જે ભેળા થઈને પ્રગટ ભગવાનમાં જોડાવું, ને તેમનું જ્ઞાન શીખવું, અને ધર્મ વૈરાગ્ય શીખવા.@ 1 રાધારમણનો દેશ= જૂનાગઢ પ્રદેશ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11209.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Satshastr, sacha sant ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11211.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek sadhu varatalma chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '210');
+            localStorage.setItem('lastVisitedVatFile', 'ch11210.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

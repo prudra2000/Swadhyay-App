@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પાંચાળ દેશમાં એક ગામ - Panchal deshma ek gam</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Panchal deshma ek gam</h1>
+                <div class="gujarati-title">પાંચાળ દેશમાં એક ગામ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 227</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(227) pāṃcāḻa deśamāṃ eka gāma che temāṃ eka cāraṇa hato; te mānane līdhe telano ḍagalo paherīne hoko pīte pīte, ūbho ūbho baḻī mūo. te sau kahe, ‘page dyo bhāgī jāya nahīṃ.’ eṭale e kahe, ‘are bhāge śuṃ? hāṃu ?’ ema ne ema baḻī mūo. kaho, have emāṃ thoḍuṃ du:kha thayuṃ haśe? evuṃ jene dekhāya tene to viṣayamāṃ du:kha che; te jo viṣaya āja mūkīe to mukāya ema che ne mahine, be mahine, varase, so varase ne so janme paṇa je divasa mūkīe te divasa mukāya ema che ne mūkyā vinā aṃte chūṭako nathī, māṭe kalama mūkī che je, $artha : viṣayone jheranī jema tyajo. 1 ḍāmaṇī= beḍī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૨૭) પાંચાળ દેશમાં એક ગામ છે તેમાં એક ચારણ હતો; તે માનને લીધે તેલનો ડગલો પહેરીને હોકો પીતે પીતે, ઊભો ઊભો બળી મૂઓ. તે સૌ કહે, ‘પગે દ્યો ભાગી જાય નહીં.’ એટલે એ કહે, ‘અરે ભાગે શું? હાંઉ ?’ એમ ને એમ બળી મૂઓ. કહો, હવે એમાં થોડું દુ:ખ થયું હશે? એવું જેને દેખાય તેને તો વિષયમાં દુ:ખ છે; તે જો વિષય આજ મૂકીએ તો મુકાય એમ છે ને મહિને, બે મહિને, વરસે, સો વરસે ને સો જન્મે પણ જે દિવસ મૂકીએ તે દિવસ મુકાય એમ છે ને મૂક્યા વિના અંતે છૂટકો નથી, માટે કલમ મૂકી છે જે, $અર્થ : વિષયોને ઝેરની જેમ ત્યજો. 1 ડામણી= બેડી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6226.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa lok to dukhrup chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6228.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Posh vadi ekame vat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '227');
+            localStorage.setItem('lastVisitedVatFile', 'ch6227.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

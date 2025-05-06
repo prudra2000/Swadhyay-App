@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પાંચ રૂપિયા હોય - Panch rupiya hoya</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Panch rupiya hoya</h1>
+                <div class="gujarati-title">પાંચ રૂપિયા હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 19</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(19) pāṃca rūpiyā hoya ne beṭhāṃ beṭhāṃ khāīne satsaṃga kare to te rūpiyā tene sukhadāī thāya che ne thoḍā ja rūpiyā hoya to paṇa jo bahu āsakti hoya to sāpa thāvuṃ paḍe māṭe āpaṇane rūpiyā che te mokṣane arthe che ne bījāne baṃdhanane arthe che. koīka hajāro rūpiyā vahevāramāṃ kharacī nākhe che paṇa e jīvanā kāmamāṃ kaśuṃ nathī, jeṭaluṃ satsaṃganā upayogamāṃ āve che eṭaluṃ mokṣane arthe thāya che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(19) પાંચ રૂપિયા હોય ને બેઠાં બેઠાં ખાઈને સત્સંગ કરે તો તે રૂપિયા તેને સુખદાઈ થાય છે ને થોડા જ રૂપિયા હોય તો પણ જો બહુ આસક્તિ હોય તો સાપ થાવું પડે માટે આપણને રૂપિયા છે તે મોક્ષને અર્થે છે ને બીજાને બંધનને અર્થે છે. કોઈક હજારો રૂપિયા વહેવારમાં ખરચી નાખે છે પણ એ જીવના કામમાં કશું નથી, જેટલું સત્સંગના ઉપયોગમાં આવે છે એટલું મોક્ષને અર્થે થાય છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9018.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Apani avarada sarve</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9020.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kamy karm karine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '19');
+            localStorage.setItem('lastVisitedVatFile', 'ch9019.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

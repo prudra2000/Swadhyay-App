@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સુખી થાવાના પ્રકાર - Sukhi thavana prakar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sukhi thavana prakar</h1>
+                <div class="gujarati-title">સુખી થાવાના પ્રકાર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 370</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(370) sukhī thāvānā prakāra. eka to koī rīte karīne bhagavānamāṃ joḍāyā hoya tathā saṃtamāṃ joḍāyā hoya tathā ātmajñāne karīne indriyuṃ niyamamāṃ karī hoya tathā bhagavānanā niśrcaya sahita vairāgya hoya tathā saṃskārī jīva hoya, e pāṃca prakārathī sukhī rahevāya; māṭe potānuṃ taḻa tapāsī jovuṃ je, emāṃthī māre kayuṃ aṃga che, te vicārī sukhī rahevuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(370) સુખી થાવાના પ્રકાર. એક તો કોઈ રીતે કરીને ભગવાનમાં જોડાયા હોય તથા સંતમાં જોડાયા હોય તથા આત્મજ્ઞાને કરીને ઇન્દ્રિયું નિયમમાં કરી હોય તથા ભગવાનના નિશ્ર્ચય સહિત વૈરાગ્ય હોય તથા સંસ્કારી જીવ હોય, એ પાંચ પ્રકારથી સુખી રહેવાય; માટે પોતાનું તળ તપાસી જોવું જે, એમાંથી મારે કયું અંગ છે, તે વિચારી સુખી રહેવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5369.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Junagadhma jetala chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5371.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Bhagavanna akshardham</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '370');
+            localStorage.setItem('lastVisitedVatFile', 'ch5370.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

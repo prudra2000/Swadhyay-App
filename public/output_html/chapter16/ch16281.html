@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલીક જાણપણાની વાતું  - Ketalik janapanani vatu</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalik janapanani vatu</h1>
+                <div class="gujarati-title">કેટલીક જાણપણાની વાતું </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 281</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(281) keṭalīka jāṇapaṇānī vātuṃ evī jāṇavī joīe je keṭalāka vacana mānatā hoya ne māṃhī jhājhuṃ na hoya ne keṭalāka vacana na mānatā hoya tema lāgatuṃ hoya ne kharā satsaṃgī hoya ne keṭalāṃka maṃḍaḻa evā hoya je jyāṃ pharavā jāya tyāṃ vimukha karī āve. te amane eka haribhakte pacheḍī āpī te joīne bhajanānaṃde pacheḍīno āgraha karyo te vimukha karyo ne nitya mahemāna thāya teno bhāra rahe nahi ne māge tyāre tenuṃ mūla thaī jāya ne jaṇāī jāya je āṭalā sāru ja ā kare che te upara dakṣiṇīnī vāta karī je, vātuṃ karīe tyāre āṃkhamāṃ āṃsuṃ āve evo hato tyāre jāṇyuṃ je mumukṣu che, pachī pākā sīdhā māgyāṃ eṭale tenuṃ rūpa jaṇāī gayuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(281) કેટલીક જાણપણાની વાતું એવી જાણવી જોઈએ જે કેટલાક વચન માનતા હોય ને માંહી ઝાઝું ન હોય ને કેટલાક વચન ન માનતા હોય તેમ લાગતું હોય ને ખરા સત્સંગી હોય ને કેટલાંક મંડળ એવા હોય જે જ્યાં ફરવા જાય ત્યાં વિમુખ કરી આવે. તે અમને એક હરિભક્તે પછેડી આપી તે જોઈને ભજનાનંદે પછેડીનો આગ્રહ કર્યો તે વિમુખ કર્યો ને નિત્ય મહેમાન થાય તેનો ભાર રહે નહિ ને માગે ત્યારે તેનું મૂલ થઈ જાય ને જણાઈ જાય જે આટલા સારુ જ આ કરે છે તે ઉપર દક્ષિણીની વાત કરી જે, વાતું કરીએ ત્યારે આંખમાં આંસું આવે એવો હતો ત્યારે જાણ્યું જે મુમુક્ષુ છે, પછી પાકા સીધા માગ્યાં એટલે તેનું રૂપ જણાઈ ગયું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16280.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Lobhano veg lagi jaya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16282.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Premji sutarne pratham</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '281');
+            localStorage.setItem('lastVisitedVatFile', 'ch16281.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

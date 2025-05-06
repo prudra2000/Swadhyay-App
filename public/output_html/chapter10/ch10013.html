@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પૂર્વના આઘાત લાગ્યા હોય - Purvana aghata lagya hoy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Purvana aghata lagya hoy</h1>
+                <div class="gujarati-title">પૂર્વના આઘાત લાગ્યા હોય</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 13</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1918nā bhādaravā sudi paṃcamīne divase svāmīe vāta karī je, $(13) pūrvanā āghāta lāgyā hoya te sāṃbhara sāṃbhara kare che paṇa koī divasa rūḍā saṃskāra lagāḍayā nathī. jaḍabharatane āghāta lāgyā hatā to mṛganā dehamāṃ paṇa smṛti rahī, ne ūnāvāḻā nāgara gṛhastha hatā paṇa evā vairāgyavāna hatā je, lokanī gaṇatī rākhī ja nahi paṇa eke paiso khāya nahi ne lāvī lāvīne poṣaṇa kare, tene kema baṃdhana chūṭe ? māṭe jene bhagavāna bhajavā hoya teṇe jāṇīne gāṃḍuṃ thāvuṃ. vijītātmānaṃdasvāmīne tyāgī thāvuṃ hatuṃ paṇa māvatara thāvā de nahi. pachī gharanā ūmarā vacce kūvo khodavā māṃḍayo ne kahe je, ‘huṃ jevo dīkaro ne mārī māne pāṇī bharavā bahāra jāvuṃ paḍe, to huṃ dīkaro śā kāmano ?’ pachī māvatara jāṇe ā gāṃḍo thaī gayo che te bhale vahyo jāya, āpaṇe have teḍavā jāvuṃ nahi pachī tyāgī thaī gayā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1918ના ભાદરવા સુદિ પંચમીને દિવસે સ્વામીએ વાત કરી જે, $(13) પૂર્વના આઘાત લાગ્યા હોય તે સાંભર સાંભર કરે છે પણ કોઈ દિવસ રૂડા સંસ્કાર લગાડયા નથી. જડભરતને આઘાત લાગ્યા હતા તો મૃગના દેહમાં પણ સ્મૃતિ રહી, ને ઊનાવાળા નાગર ગૃહસ્થ હતા પણ એવા વૈરાગ્યવાન હતા જે, લોકની ગણતી રાખી જ નહિ પણ એકે પૈસો ખાય નહિ ને લાવી લાવીને પોષણ કરે, તેને કેમ બંધન છૂટે ? માટે જેને ભગવાન ભજવા હોય તેણે જાણીને ગાંડું થાવું. વિજીતાત્માનંદસ્વામીને ત્યાગી થાવું હતું પણ માવતર થાવા દે નહિ. પછી ઘરના ઊમરા વચ્ચે કૂવો ખોદવા માંડયો ને કહે જે, ‘હું જેવો દીકરો ને મારી માને પાણી ભરવા બહાર જાવું પડે, તો હું દીકરો શા કામનો ?’ પછી માવતર જાણે આ ગાંડો થઈ ગયો છે તે ભલે વહ્યો જાય, આપણે હવે તેડવા જાવું નહિ પછી ત્યાગી થઈ ગયા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10012.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Hajaro kriya karine </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10014.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharajno rahasya abhipraya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '13');
+            localStorage.setItem('lastVisitedVatFile', 'ch10013.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

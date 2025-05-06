@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>તેરા ગામમાં મહારાજે  - Tera gamma Maharaje</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Tera gamma Maharaje</h1>
+                <div class="gujarati-title">તેરા ગામમાં મહારાજે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 148</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(148) terā gāmamāṃ mahārāje vāta karī je, rājāe saṃdhīnāṃ nāka kāpyāṃ. te badhā nakaṭāe āgaḻa jaī gāma vasāvyuṃ. temane chokarāṃ thayāṃ te to nākavāḻāṃ. te chokarāṃe potānāṃ māvatarane pūchvā māṃḍyuṃ je, ‘amāre nāka ne tamāre nāka kema nahi ?’ pachī olyā śaramāṇā; eṭale chokarāṃnāṃ nāka kāpī nākhyāṃ, ne bījāṃ janme ke turata nāka kāpī nākhe; ema potā jevā karavāmāṃ saune tāna che. ema satsaṃgamāṃ pāpī bharāṇā che te pote narakamāṃ jāśe ne bījāne narakamāṃ nākhaśe; te keṭalāka bhūtayonine pāmaśe. atyāre to khele che ane satsaṃga vagove che, te tene śuṃ? paṇa āvo mahānirmaḻa ne niṣkalaṃka ujjavaḻa satsaṃga che tene kalaṃka lagāḍe che ane sārāne saṃtāpe che; paṇa ‘koyalāne ḍāghano bhaya nathī.’, māṭe sārāe sāvadhāna thaī satsaṃga rākhavo.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(148) તેરા ગામમાં મહારાજે વાત કરી જે, રાજાએ સંધીનાં નાક કાપ્યાં. તે બધા નકટાએ આગળ જઈ ગામ વસાવ્યું. તેમને છોકરાં થયાં તે તો નાકવાળાં. તે છોકરાંએ પોતાનાં માવતરને પૂછ્વા માંડ્યું જે, ‘અમારે નાક ને તમારે નાક કેમ નહિ ?’ પછી ઓલ્યા શરમાણા; એટલે છોકરાંનાં નાક કાપી નાખ્યાં, ને બીજાં જન્મે કે તુરત નાક કાપી નાખે; એમ પોતા જેવા કરવામાં સૌને તાન છે. એમ સત્સંગમાં પાપી ભરાણા છે તે પોતે નરકમાં જાશે ને બીજાને નરકમાં નાખશે; તે કેટલાક ભૂતયોનિને પામશે. અત્યારે તો ખેલે છે અને સત્સંગ વગોવે છે, તે તેને શું? પણ આવો મહાનિર્મળ ને નિષ્કલંક ઉજ્જવળ સત્સંગ છે તેને કલંક લગાડે છે અને સારાને સંતાપે છે; પણ ‘કોયલાને ડાઘનો ભય નથી.’, માટે સારાએ સાવધાન થઈ સત્સંગ રાખવો.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11147.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gruhasthne ne tyagine</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11149.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Matapanthrupi vada todine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '148');
+            localStorage.setItem('lastVisitedVatFile', 'ch11148.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

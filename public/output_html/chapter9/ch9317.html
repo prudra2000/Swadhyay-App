@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક સાધુએ મહારાજને  - Ek sadhue Maharajne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek sadhue Maharajne</h1>
+                <div class="gujarati-title">એક સાધુએ મહારાજને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 317</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(317) eka sādhue mahārājane kahyuṃ je, ‘māre maṃḍaḻa joītuṃ nathī ne sadguru thāvuṃ nathī māṭe bījā maṃḍaḻamāṃ mūko.’ mahārāja kahe, ‘śā sāru ?’ eṭale te kahe, ‘aḍabaṃgā jevā sādhu āpyā che te māruṃ mānatā nathī.’ tyāre mahārāja kahe, ‘tamane kapiladeva jevā sādhu āpīe to kema ?’ to kahe, ‘bahu sāru mahārāja !’ mahārāja kahe, ‘dattātreya, rāmacaṃdrajī ne śrīkṛṣṇa jevā āpīe to kema ?’ tyāre te sādhu kahe, ‘to to bahu ja sāru !’ mahārāja kahe, ‘e badhā evā che, te tamāruṃ śenā māne ? paṇa ame emanāṃ aiśrvarya dabāvī dīdhāṃ che māṭe tamārā bheḻā rahe che, nīkara to rahe evā nathī; māṭe te kahe tema karo ne maṃḍaḻa calāvo.”</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(317) એક સાધુએ મહારાજને કહ્યું જે, ‘મારે મંડળ જોઈતું નથી ને સદ્ગુરુ થાવું નથી માટે બીજા મંડળમાં મૂકો.’ મહારાજ કહે, ‘શા સારુ ?’ એટલે તે કહે, ‘અડબંગા જેવા સાધુ આપ્યા છે તે મારું માનતા નથી.’ ત્યારે મહારાજ કહે, ‘તમને કપિલદેવ જેવા સાધુ આપીએ તો કેમ ?’ તો કહે, ‘બહુ સારુ મહારાજ !’ મહારાજ કહે, ‘દત્તાત્રેય, રામચંદ્રજી ને શ્રીકૃષ્ણ જેવા આપીએ તો કેમ ?’ ત્યારે તે સાધુ કહે, ‘તો તો બહુ જ સારુ !’ મહારાજ કહે, ‘એ બધા એવા છે, તે તમારું શેના માને ? પણ અમે એમનાં ઐશ્ર્વર્ય દબાવી દીધાં છે માટે તમારા ભેળા રહે છે, નીકર તો રહે એવા નથી; માટે તે કહે તેમ કરો ને મંડળ ચલાવો.”</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9316.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kuberae mava bhakt</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9318.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ketalak kahe chhe je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '317');
+            localStorage.setItem('lastVisitedVatFile', 'ch9317.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

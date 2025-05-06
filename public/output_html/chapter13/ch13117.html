@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક સંકલ્પનો વહેવાર  - Ek sankalpno vahevar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek sankalpno vahevar</h1>
+                <div class="gujarati-title">એક સંકલ્પનો વહેવાર </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 117</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā bījā śrāvaṇa vadi daśamane divase svāmīe vāta karī je, $(117) eka saṃkalpano vahevāra ane bījo dehano vahevāra. temāṃ je baṃdhāṇā che tethī prabhu nathī bhajātā ane karavī te kahevāya. māṭe vicāra karavo je, ā kriyāmāṃthī śo māla nīkaśe ? kharekharo āśrayano ānaṃda āve to bhagavāna āpaṇā sāru brahmāṃḍano pralaya karī nākhe; paṇa evo ānaṃda raheto nathī. māṭe du:kha pāmīe chīe.@ 1 paṃcātuṃ= nirarthaka carcā, ūhāpoha, bhāṃjagaḍa, nakāmī māthākūṭa. $2 jalpavāda= bakavāda, lavāro.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના બીજા શ્રાવણ વદિ દશમને દિવસે સ્વામીએ વાત કરી જે, $(117) એક સંકલ્પનો વહેવાર અને બીજો દેહનો વહેવાર. તેમાં જે બંધાણા છે તેથી પ્રભુ નથી ભજાતા અને કરવી તે કહેવાય. માટે વિચાર કરવો જે, આ ક્રિયામાંથી શો માલ નીકશે ? ખરેખરો આશ્રયનો આનંદ આવે તો ભગવાન આપણા સારુ બ્રહ્માંડનો પ્રલય કરી નાખે; પણ એવો આનંદ રહેતો નથી. માટે દુ:ખ પામીએ છીએ.@ 1 પંચાતું= નિરર્થક ચર્ચા, ઊહાપોહ, ભાંજગડ, નકામી માથાકૂટ. $2 જલ્પવાદ= બકવાદ, લવારો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13116.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Gher rahe ane kahe je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13118.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jetala bayadivala chhe </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '117');
+            localStorage.setItem('lastVisitedVatFile', 'ch13117.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

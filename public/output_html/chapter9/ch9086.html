@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મુક્તાનંદસ્વામી ગાંડા - Muktanandswami ganda</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Muktanandswami ganda</h1>
+                <div class="gujarati-title">મુક્તાનંદસ્વામી ગાંડા</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 86</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(86) muktānaṃdasvāmī gāṃḍā thayā tyāre te nīkaḻāṇuṃ. asvāra paḍī jāya tyāre jātavāḻuṃ ghoḍuṃ hoya te suṃghīne pāse ūbhuṃ rahe paṇa vayuṃ jāya nahīṃ. tenuṃ siddhāṃta kahyuṃ je, ‘kharekharo samāgama kare to saṃsāranī diśa bhulāvī de.’ evā ā saṃta che. 1 pāsalāmāṃthī= baṃdhanamāṃthī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(86) મુક્તાનંદસ્વામી ગાંડા થયા ત્યારે તે નીકળાણું. અસ્વાર પડી જાય ત્યારે જાતવાળું ઘોડું હોય તે સુંઘીને પાસે ઊભું રહે પણ વયું જાય નહીં. તેનું સિદ્ધાંત કહ્યું જે, ‘ખરેખરો સમાગમ કરે તો સંસારની દિશ ભુલાવી દે.’ એવા આ સંત છે. 1 પાસલામાંથી= બંધનમાંથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9085.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ant leva upar vat</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9087.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Avala svabhavamatrano</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '86');
+            localStorage.setItem('lastVisitedVatFile', 'ch9086.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

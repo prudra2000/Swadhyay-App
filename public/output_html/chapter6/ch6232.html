@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેવા ભગવાન - Jeva bhagavan </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jeva bhagavan </h1>
+                <div class="gujarati-title">જેવા ભગવાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 232</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(232) jevā bhagavāna akṣaradhāmamāṃ che tevā ja āṃhīṃ āvīne beṭhā hoya ne pachī te manuṣyacaritra kare tyāre bhāva pharī jāya, paṇa te bhāva pharavā devo nahīṃ. juone suṃdarajī sutāranī dīkarī moṭī thaī eṭale enā bhāīne kahe je, ‘āne mahārājane paraṇāvaśuṃ ?’ tyāre kahe, ‘are, bola mā, bola mā!’ tyāre olyo kahe, ‘kāṃ sutārathī to ā bhagavāna che ne ?’ ema bhaktamāṃ bheda che. nīkara bhagavāna to beu jāṇatā hatā. are ! āpaṇe paṇa jo koīkanī bahena-dīkarīne bhagavāna laī jāya to niśrcaya na rahe, evī hajāruṃ vātuṃ che. keṭalīka kahīe ? eve same dhīraja rahe ne jāṇe je, “aho ! bahu līlā karī! te kharo.” e to brahmāne paṇa moha thaī gayo ke, ‘na hoya, na hoya parabrahma; govāḻiyo che !’ ema kahyuṃ ne śrīkṛṣṇa avataryā ṭāṇe stuti paṇa pote ja karī gayā hatā; paṇa caritra joīne evuṃ na rahyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૩૨) જેવા ભગવાન અક્ષરધામમાં છે તેવા જ આંહીં આવીને બેઠા હોય ને પછી તે મનુષ્યચરિત્ર કરે ત્યારે ભાવ ફરી જાય, પણ તે ભાવ ફરવા દેવો નહીં. જુઓને સુંદરજી સુતારની દીકરી મોટી થઈ એટલે એના ભાઈને કહે જે, ‘આને મહારાજને પરણાવશું ?’ ત્યારે કહે, ‘અરે, બોલ મા, બોલ મા!’ ત્યારે ઓલ્યો કહે, ‘કાં સુતારથી તો આ ભગવાન છે ને ?’ એમ ભક્તમાં ભેદ છે. નીકર ભગવાન તો બેઉ જાણતા હતા. અરે ! આપણે પણ જો કોઈકની બહેન-દીકરીને ભગવાન લઈ જાય તો નિશ્ર્ચય ન રહે, એવી હજારું વાતું છે. કેટલીક કહીએ ? એવે સમે ધીરજ રહે ને જાણે જે, “અહો ! બહુ લીલા કરી! તે ખરો.” એ તો બ્રહ્માને પણ મોહ થઈ ગયો કે, ‘ન હોય, ન હોય પરબ્રહ્મ; ગોવાળિયો છે !’ એમ કહ્યું ને શ્રીકૃષ્ણ અવતર્યા ટાણે સ્તુતિ પણ પોતે જ કરી ગયા હતા; પણ ચરિત્ર જોઈને એવું ન રહ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6231.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aho! Ame nana hata</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6233.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Biji vat juo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '232');
+            localStorage.setItem('lastVisitedVatFile', 'ch6232.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

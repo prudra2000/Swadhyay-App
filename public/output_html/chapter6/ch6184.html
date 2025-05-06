@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હે પરમહંસો ! - He paramhanso !</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>He paramhanso !</h1>
+                <div class="gujarati-title">હે પરમહંસો !</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 184</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(184) he paramahaṃso ! śāṃti to eka nārāyaṇanā caraṇāraviṃdamāṃ ja che. te māṭe te sāmuṃ joī rahevuṃ. jemāṃ nidrā āvavī joīe temāṃ nathī āvatī, ā che temāṃ nathī āvatī ne jo māḻā pheravavā bese to badhāyane āve, paṇa dhīre dhīre bhagavānane saṃbhāratā jāya ne ṭoḍāṃ lāvatā jāya to ema ja thāya; marane eka ṭoḍuṃ ochuṃ āve, paṇa evā svabhāva pāḍela nahīṃ. āvāṃ to brahmāṃḍamāṃ eka lākha, karoḍa kārakhānāṃ cālatāṃ haśe. emāṃ śuṃ pākyuṃ ! āgrāmāṃ aḍhāra karoḍa rūpiyānuṃ eka kabarastāna che, teṇe śuṃ thayuṃ ? māṭe bhagavāna bhajyāmāṃ sukha che.@ 1 ṭoḍāṃ sāre= aṇaghaḍa paththara eka ṭhekāṇethī ūṃcakī bīje mūkavo.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૮૪) હે પરમહંસો ! શાંતિ તો એક નારાયણના ચરણારવિંદમાં જ છે. તે માટે તે સામું જોઈ રહેવું. જેમાં નિદ્રા આવવી જોઈએ તેમાં નથી આવતી, આ છે તેમાં નથી આવતી ને જો માળા ફેરવવા બેસે તો બધાયને આવે, પણ ધીરે ધીરે ભગવાનને સંભારતા જાય ને ટોડાં લાવતા જાય તો એમ જ થાય; મરને એક ટોડું ઓછું આવે, પણ એવા સ્વભાવ પાડેલ નહીં. આવાં તો બ્રહ્માંડમાં એક લાખ, કરોડ કારખાનાં ચાલતાં હશે. એમાં શું પાક્યું ! આગ્રામાં અઢાર કરોડ રૂપિયાનું એક કબરસ્તાન છે, તેણે શું થયું ? માટે ભગવાન ભજ્યામાં સુખ છે.@ 1 ટોડાં સારે= અણઘડ પથ્થર એક ઠેકાણેથી ઊંચકી બીજે મૂકવો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6183.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">He paramhanso !</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6185.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aso vadi athame vat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '184');
+            localStorage.setItem('lastVisitedVatFile', 'ch6184.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

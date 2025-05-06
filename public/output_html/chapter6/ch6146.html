@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક કડિયે મહારાજની મૂર્તિ - Ek kadiye Maharajni murti</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek kadiye Maharajni murti</h1>
+                <div class="gujarati-title">એક કડિયે મહારાજની મૂર્તિ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 146</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(146) eka kaḍiye mahārājanī mūrti karī te sau kahe, ‘bhāre kalama che !’ tyāre svāmī kahe, ‘hā, e to bahu sāruṃ, paṇa meṃ to badhuṃe joyuṃ, temāṃ niṣkāmīpaṇānī kalama sauthī bhāre jaṇāṇī, te koīthī na rahe māṭe e rākhavī.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૪૬) એક કડિયે મહારાજની મૂર્તિ કરી તે સૌ કહે, ‘ભારે કલમ છે !’ ત્યારે સ્વામી કહે, ‘હા, એ તો બહુ સારું, પણ મેં તો બધુંએ જોયું, તેમાં નિષ્કામીપણાની કલમ સૌથી ભારે જણાણી, તે કોઈથી ન રહે માટે એ રાખવી.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6145.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Nrusinhanandswamine Maharaje</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6147.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa netrathi aa sadhuna</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '146');
+            localStorage.setItem('lastVisitedVatFile', 'ch6146.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

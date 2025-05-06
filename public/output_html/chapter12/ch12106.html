@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચૂડાના કરસનજીની પેઠે  - Chudana karasanajini pethe</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chudana karasanajini pethe</h1>
+                <div class="gujarati-title">ચૂડાના કરસનજીની પેઠે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 106</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha sudi daśamīne divase svāmīe vāta karī je, $(106) cūḍānā karasanajīnī peṭhe āpaṇane dehano, lokano ne bhogano abhiniveśa thayo che. tyāre pūchyuṃ je, ‘te ṭāḻyāno śo upāya che ?’ tyāre kahe je, ‘aphīṇa khādhāno āpaṇane ghāṭa nathī ne sāpane svapnāmāṃ paṇa jhalāto nathī, tema jene evuṃ jñāna thayuṃ je, emāṃ to du:kha ja che tene to ghāṭa na thāya.’ ne jema tarapha vahāṇavāḻā jāya ja nahi, tema ājñā bahāra to ghāṭa ja karavo nahi ne saṃbaṃdhī, loka, bhoga, deha, meḍī, havelī temāṃ ajñāne karīne sukha manāṇuṃ che. 1 sikaṃdaranī pūtaḻī= dīvādāṃḍī, jatāṃ/āvatāṃ vahāṇane cetavavā māṭe samudramāṃ khaḍaka upara bāṃdhelo dīvāvāḻo mināro.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ સુદિ દશમીને દિવસે સ્વામીએ વાત કરી જે, $(106) ચૂડાના કરસનજીની પેઠે આપણને દેહનો, લોકનો ને ભોગનો અભિનિવેશ થયો છે. ત્યારે પૂછ્યું જે, ‘તે ટાળ્યાનો શો ઉપાય છે ?’ ત્યારે કહે જે, ‘અફીણ ખાધાનો આપણને ઘાટ નથી ને સાપને સ્વપ્નામાં પણ ઝલાતો નથી, તેમ જેને એવું જ્ઞાન થયું જે, એમાં તો દુ:ખ જ છે તેને તો ઘાટ ન થાય.’ ને જેમ તરફ વહાણવાળા જાય જ નહિ, તેમ આજ્ઞા બહાર તો ઘાટ જ કરવો નહિ ને સંબંધી, લોક, ભોગ, દેહ, મેડી, હવેલી તેમાં અજ્ઞાને કરીને સુખ મનાણું છે. 1 સિકંદરની પૂતળી= દીવાદાંડી, જતાં/આવતાં વહાણને ચેતવવા માટે સમુદ્રમાં ખડક ઉપર બાંધેલો દીવાવાળો મિનારો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12105.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Panchavishaymathi ek pan</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12107.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sarve bhagavannu karyu thay</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '106');
+            localStorage.setItem('lastVisitedVatFile', 'ch12106.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

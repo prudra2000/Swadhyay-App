@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક હરિભક્તને અમે સત્સંગ  - Ek haribhaktne ame satsang</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek haribhaktne ame satsang</h1>
+                <div class="gujarati-title">એક હરિભક્તને અમે સત્સંગ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.13</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 14</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(14) eka haribhaktane ame satsaṃga karāvela, tene bāyaḍīe avaḻuṃ samajāvīne satsaṃga mukāvyo. pachī ame tene bolāvīne ṭhapako daīne mūṃḍī nākhyo. ema bāyaḍīnuṃ rahevā na dīdhuṃ. eka vakhata āpaṇā maṃdiranā baḻada khovāyā hatā. te ame vāreghaḍīe pūchatā hatā ke, ‘baḻada āvyā ?’ tyāre eka sādhu kahe, ‘juone, baḻadamāṃ jīva coṃṭī gayo che !’ te ja sādhunī kalama upara amāro paga āvavāthī bhāṃgī gaī; te sāru avaguṇa laī satsaṃgamāṃthī gayo ane āpaṇe samajaṇa vinā kuṭāīe chīe ne gharamāṃ baṃdhāī rahyā chīe ne jene khapa hoya teṇe śuṃ na thāya ? ne harajī ṭhakkara aradhā lākhanī ugharāṇī khoṭī karīne mahārāja pāse āvīne rahyā ne pāṃcaseṃ sādhu eka sāmaṭā āvyā temane koṇe kāgaḻa lakhyā hatā ? jema khāṃḍa upara kīḍīo bhegī thāya tema khapavāḻā mumukṣuthī badhī vāta thāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(14) એક હરિભક્તને અમે સત્સંગ કરાવેલ, તેને બાયડીએ અવળું સમજાવીને સત્સંગ મુકાવ્યો. પછી અમે તેને બોલાવીને ઠપકો દઈને મૂંડી નાખ્યો. એમ બાયડીનું રહેવા ન દીધું. એક વખત આપણા મંદિરના બળદ ખોવાયા હતા. તે અમે વારેઘડીએ પૂછતા હતા કે, ‘બળદ આવ્યા ?’ ત્યારે એક સાધુ કહે, ‘જુઓને, બળદમાં જીવ ચોંટી ગયો છે !’ તે જ સાધુની કલમ ઉપર અમારો પગ આવવાથી ભાંગી ગઈ; તે સારુ અવગુણ લઈ સત્સંગમાંથી ગયો અને આપણે સમજણ વિના કુટાઈએ છીએ ને ઘરમાં બંધાઈ રહ્યા છીએ ને જેને ખપ હોય તેણે શું ન થાય ? ને હરજી ઠક્કર અરધા લાખની ઉઘરાણી ખોટી કરીને મહારાજ પાસે આવીને રહ્યા ને પાંચસેં સાધુ એક સામટા આવ્યા તેમને કોણે કાગળ લખ્યા હતા ? જેમ ખાંડ ઉપર કીડીઓ ભેગી થાય તેમ ખપવાળા મુમુક્ષુથી બધી વાત થાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter13/ch13013.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Have badho vahevar thai</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter13/ch13015.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Naimisharanyanu vachanamrut</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '13');
+            localStorage.setItem('lastVisitedVat', '14');
+            localStorage.setItem('lastVisitedVatFile', 'ch13014.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

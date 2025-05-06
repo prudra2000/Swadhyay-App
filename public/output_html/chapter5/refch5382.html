@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(382) saṃvata 1919nā bhādaravā sudi pūnamane divase vaṃḍānī vāḍīmāṃ eka haribhakte svāmīne kahyuṃ je, ‘pūchavuṃ che.’ tyāre svāmī ūṭhīne oraḍīmāṃ āvyā. tyāṃ pūchyuṃ je, ‘tamane pūchīe tenuṃ samādhāna karī āpo cho, paṇa vaḻī ema thāya che je kema thāśe ? te du:kha rahe che. māṭe jema sukha thāya tema ṭharāva karī āpo.’ tyāre svāmī kahe, ‘sukha to āṃhīṃ ja thāśe. śatru pīḍe to paṇa āṃhīṃ sukha thāśe ne kriyā potāthī thāya evī evī haḻavī kriyā karavī ne moṭā kāmamāṃ bharāvuṃ nahi ne kahevuṃ je, e mārāthī thāya nahīṃ. ne maṃdiramāṃ to māṇasano khapa che, te saune rākhe ne moṭā kāmamāṃ to sukha na rahe ne du:kha āve; māṭe loḍhāṃ, kodāḻī, pāvaḍā e sācavavāṃ, tāḻā-kūṃcīmāṃ rākhavāṃ ne devāṃ ane saṃbhāḻīne levāṃ, evuṃ kāma karavuṃ; nīkara maṃḍaḻamāṃ pharavā javuṃ tathā śodhavānuṃ... evāṃ kāma karīe. ne deha pāḍavo te konā hāthamāṃ che?’ ema bolyā tyāre kahyuṃ je, ‘e to tamārā hāthamāṃ che.’ pote kahe, ‘e to mahārājanā hāthamāṃ che.’ pharī pūchyuṃ je, ‘āvā rūḍā deśakāḻamāṃ māṃhīthī ne bahārathī dhakkā lāge che, tyāre pachavāḍe satsaṃga kema raheśe ?’ svāmī kahe, ‘deśakāḻe karīne kāṃī satsaṃga jato nahi rahe.’ $vaca. va. 11</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(382) સંવત 1919ના ભાદરવા સુદિ પૂનમને દિવસે વંડાની વાડીમાં એક હરિભક્તે સ્વામીને કહ્યું જે, ‘પૂછવું છે.’ ત્યારે સ્વામી ઊઠીને ઓરડીમાં આવ્યા. ત્યાં પૂછ્યું જે, ‘તમને પૂછીએ તેનું સમાધાન કરી આપો છો, પણ વળી એમ થાય છે જે કેમ થાશે ? તે દુ:ખ રહે છે. માટે જેમ સુખ થાય તેમ ઠરાવ કરી આપો.’ ત્યારે સ્વામી કહે, ‘સુખ તો આંહીં જ થાશે. શત્રુ પીડે તો પણ આંહીં સુખ થાશે ને ક્રિયા પોતાથી થાય એવી એવી હળવી ક્રિયા કરવી ને મોટા કામમાં ભરાવું નહિ ને કહેવું જે, એ મારાથી થાય નહીં. ને મંદિરમાં તો માણસનો ખપ છે, તે સૌને રાખે ને મોટા કામમાં તો સુખ ન રહે ને દુ:ખ આવે; માટે લોઢાં, કોદાળી, પાવડા એ સાચવવાં, તાળા-કૂંચીમાં રાખવાં ને દેવાં અને સંભાળીને લેવાં, એવું કામ કરવું; નીકર મંડળમાં ફરવા જવું તથા શોધવાનું... એવાં કામ કરીએ. ને દેહ પાડવો તે કોના હાથમાં છે?’ એમ બોલ્યા ત્યારે કહ્યું જે, ‘એ તો તમારા હાથમાં છે.’ પોતે કહે, ‘એ તો મહારાજના હાથમાં છે.’ ફરી પૂછ્યું જે, ‘આવા રૂડા દેશકાળમાં માંહીથી ને બહારથી ધક્કા લાગે છે, ત્યારે પછવાડે સત્સંગ કેમ રહેશે ?’ સ્વામી કહે, ‘દેશકાળે કરીને કાંઈ સત્સંગ જતો નહિ રહે.’ $વચ. વ. 11</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

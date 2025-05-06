@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગીજીવન ગ્રંથ નહોતો - Satsangijivan granth nahoto</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsangijivan granth nahoto</h1>
+                <div class="gujarati-title">સત્સંગીજીવન ગ્રંથ નહોતો</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 75</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(75) ‘satsaṃgījīvana’ graṃtha nahoto sāṃbhaḻyo tyāṃ sudhī ema rahetuṃ ke bahu sāro haśe paṇa temāṃ moralī che. līlācaritra āve te amane to ānaṃda; paṇa jeṇe nathī dīṭhuṃ tene to ‘mahārāja śrīkṛṣṇano avatāra che’ ema ṭhasī jāya. ā gṃratha nityānaṃdasvāmīe sāta divasa baṃdha rakhāvyo hato. ne chevaṭe mahārāje hāra paherāvī temanī upāsanānāṃ vakhāṇa karyāṃ. sarvoparī upāsanānī vāta koṇa jāṇe che ? paṇa śukamuni ne dīnānāthe te nākhyuṃ. pachī lālobhāī kahe, ‘mahārājanā mahimā ne svarūpaniṣṭhānāṃ śāstra to haju have thāśe. temāṃ kaḍīe kaḍīe, ne śrloke śrloke mahārāja sarvoparī sarva avatāranā ne akṣaranā svāmī ema āvaśe.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(75) ‘સત્સંગીજીવન’ ગ્રંથ નહોતો સાંભળ્યો ત્યાં સુધી એમ રહેતું કે બહુ સારો હશે પણ તેમાં મોરલી છે. લીલાચરિત્ર આવે તે અમને તો આનંદ; પણ જેણે નથી દીઠું તેને તો ‘મહારાજ શ્રીકૃષ્ણનો અવતાર છે’ એમ ઠસી જાય. આ ગ્ંરથ નિત્યાનંદસ્વામીએ સાત દિવસ બંધ રખાવ્યો હતો. ને છેવટે મહારાજે હાર પહેરાવી તેમની ઉપાસનાનાં વખાણ કર્યાં. સર્વોપરી ઉપાસનાની વાત કોણ જાણે છે ? પણ શુકમુનિ ને દીનાનાથે તે નાખ્યું. પછી લાલોભાઈ કહે, ‘મહારાજના મહિમા ને સ્વરૂપનિષ્ઠાનાં શાસ્ત્ર તો હજુ હવે થાશે. તેમાં કડીએ કડીએ, ને શ્ર્લોકે શ્ર્લોકે મહારાજ સર્વોપરી સર્વ અવતારના ને અક્ષરના સ્વામી એમ આવશે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11074.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jena haiyama nishtha hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11076.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa brahmandno vairat</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '75');
+            localStorage.setItem('lastVisitedVatFile', 'ch11075.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભટ્ટજી નાનામોટાની  - Bhattji nanamotani</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhattji nanamotani</h1>
+                <div class="gujarati-title">ભટ્ટજી નાનામોટાની </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 276</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(276) bhaṭṭajī nānāmoṭānī khabara rākhe ne vaḻī kyāṃī na levāya. te nāraṇajīe darpaṇa māgyuṃ tyāre kahe, ā to svāminārāyaṇanuṃ che te cāra dokaḍā āpa to āpuṃ. te alaiyānā bāpe alaiyāne kahyuṃ je, svāminārāyaṇa to bhoḻo che ne muktānaṃda ane brahmānaṃda paṃtha calāve che. te kāṃī bheṭa āve to ṭhāboḻī lāvaje eṭale āpaṇe melī kāramāṃ kāma āvaśe; tyāre alaiye kahyuṃ je badhāne mūṃḍī nākhyā ne rājagādīyuṃ mukāvī dīdhī ne tyāgī karī dīdhā toye haju svāminārāyaṇa bhoḻo che? te e paṇa manuṣya ne bhaṭṭajī paṇa manuṣya temāṃ bheda che. te ekane dekhīne bhagavāna sāṃbhare ne ekane dekhīne bhulāya. te eka veṇa draupadīnuṃ ne eka veṇa vidurajīnuṃ, emāṃ paṇa bheda che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(276) ભટ્ટજી નાનામોટાની ખબર રાખે ને વળી ક્યાંઈ ન લેવાય. તે નારણજીએ દર્પણ માગ્યું ત્યારે કહે, આ તો સ્વામિનારાયણનું છે તે ચાર દોકડા આપ તો આપું. તે અલૈયાના બાપે અલૈયાને કહ્યું જે, સ્વામિનારાયણ તો ભોળો છે ને મુક્તાનંદ અને બ્રહ્માનંદ પંથ ચલાવે છે. તે કાંઈ ભેટ આવે તો ઠાબોળી લાવજે એટલે આપણે મેલી કારમાં કામ આવશે; ત્યારે અલૈયે કહ્યું જે બધાને મૂંડી નાખ્યા ને રાજગાદીયું મુકાવી દીધી ને ત્યાગી કરી દીધા તોયે હજુ સ્વામિનારાયણ ભોળો છે? તે એ પણ મનુષ્ય ને ભટ્ટજી પણ મનુષ્ય તેમાં ભેદ છે. તે એકને દેખીને ભગવાન સાંભરે ને એકને દેખીને ભુલાય. તે એક વેણ દ્રૌપદીનું ને એક વેણ વિદુરજીનું, એમાં પણ ભેદ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15275.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sangh chalyo jay chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15277.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dhrutarashtre jem lodhana</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '276');
+            localStorage.setItem('lastVisitedVatFile', 'ch15276.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

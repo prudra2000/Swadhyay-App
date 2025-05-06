@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રબુદ્ધ ઋષિએ વાત કરી - Prabuddh rushie vat kari</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Prabuddh rushie vat kari</h1>
+                <div class="gujarati-title">પ્રબુદ્ધ ઋષિએ વાત કરી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 45</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(45) prabuddha ṛṣie vāta karī, te bījā āṭheya bhāī jhāṃkhā paḍī gayā. te śā sāru ? je, āṭheyanā manamāṃ ema thayuṃ je prabuddha ṛṣi āpaṇāthī sarasa thaī gayā ne badhāya temāṃ ja taṇāya che. āpaṇī pāse to koī besatuṃ paṇa nathī tethī āṭheya jaṇā prabuddha ṛṣine gāṃṭhaḍīmāṃ bāṃdhīne kūvāmāṃ nākhavā cālyā. tyāre prabuddha ṛṣi bolyā je, ‘mārā śo vāṃka che ?’ tyāre kahe je, ‘tamārāmāṃ sarve taṇāī jāya che ne amārī pāse koī āvatuṃ nathī, tethī amāruṃ apamāna thāya che.’ pachī prabuddha ṛṣi kahe, ‘ā eka vāra māpha karo, have huṃ vāta nahi karuṃ,’ tyāre jīvatā rahyā. ema ā to āpaṇuṃ saunāthī sarasa ane jñānamāṃ, dhyānamāṃ, tapamāṃ ne upāsanāmāṃ koī pahoṃcī śake nahi ne khamī paṇa śake nahi eṭale bījā āpaṇī īrṣā kare che, paṇa emāṃ bījuṃ kāṃī nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(45) પ્રબુદ્ધ ઋષિએ વાત કરી, તે બીજા આઠેય ભાઈ ઝાંખા પડી ગયા. તે શા સારુ ? જે, આઠેયના મનમાં એમ થયું જે પ્રબુદ્ધ ઋષિ આપણાથી સરસ થઈ ગયા ને બધાય તેમાં જ તણાય છે. આપણી પાસે તો કોઈ બેસતું પણ નથી તેથી આઠેય જણા પ્રબુદ્ધ ઋષિને ગાંઠડીમાં બાંધીને કૂવામાં નાખવા ચાલ્યા. ત્યારે પ્રબુદ્ધ ઋષિ બોલ્યા જે, ‘મારા શો વાંક છે ?’ ત્યારે કહે જે, ‘તમારામાં સર્વે તણાઈ જાય છે ને અમારી પાસે કોઈ આવતું નથી, તેથી અમારું અપમાન થાય છે.’ પછી પ્રબુદ્ધ ઋષિ કહે, ‘આ એક વાર માફ કરો, હવે હું વાત નહિ કરું,’ ત્યારે જીવતા રહ્યા. એમ આ તો આપણું સૌનાથી સરસ અને જ્ઞાનમાં, ધ્યાનમાં, તપમાં ને ઉપાસનામાં કોઈ પહોંચી શકે નહિ ને ખમી પણ શકે નહિ એટલે બીજા આપણી ઈર્ષા કરે છે, પણ એમાં બીજું કાંઈ નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10044.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Varatalvala dharmatanaydasjie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10046.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kusangmathi satsang karavo </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '45');
+            localStorage.setItem('lastVisitedVatFile', 'ch10045.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

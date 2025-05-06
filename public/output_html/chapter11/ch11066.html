@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કામ, ક્રોધ આવે ત્યારે  - Kam, krodh ave tyare</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kam, krodh ave tyare</h1>
+                <div class="gujarati-title">કામ, ક્રોધ આવે ત્યારે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 66</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha sudi aṣṭamīne divase svāmīe vāta karī je, $(66) kāma, krodha āve tyāre khabara rahevā de nahi ane māna ne lobha to śāhukāra cora che. ane dehābhimāna ne rasāsvāda te to dūdha pāīne nāga pāḻyo che te jarūra karaḍaśe, māṭe satsaṃga karī ā sādhu thakī brahmarūpa thāśo tyāre aṃtaraśatru naḍaśe nahi; ane sukhiyā rahī bījāne śāṃti pamāḍaśo. ā sahelo ne sugama rasto che, paṇa ā sādhumāṃ manuṣyabhāva rahe che jethī manātuṃ nathī. mahārāja akṣarātīta bhagavāna che ne ā mūrtimāna akṣara che paṇa ‘dehadarśī dekhe potā jevā saṃsārī;’ te ‘bhagavāṃ karī ṭopī ghālī,’ te jāṇe bāvo che, paṇa ā to akṣaradhāma pote ja che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ સુદિ અષ્ટમીને દિવસે સ્વામીએ વાત કરી જે, $(66) કામ, ક્રોધ આવે ત્યારે ખબર રહેવા દે નહિ અને માન ને લોભ તો શાહુકાર ચોર છે. અને દેહાભિમાન ને રસાસ્વાદ તે તો દૂધ પાઈને નાગ પાળ્યો છે તે જરૂર કરડશે, માટે સત્સંગ કરી આ સાધુ થકી બ્રહ્મરૂપ થાશો ત્યારે અંતરશત્રુ નડશે નહિ; અને સુખિયા રહી બીજાને શાંતિ પમાડશો. આ સહેલો ને સુગમ રસ્તો છે, પણ આ સાધુમાં મનુષ્યભાવ રહે છે જેથી મનાતું નથી. મહારાજ અક્ષરાતીત ભગવાન છે ને આ મૂર્તિમાન અક્ષર છે પણ ‘દેહદર્શી દેખે પોતા જેવા સંસારી;’ તે ‘ભગવાં કરી ટોપી ઘાલી,’ તે જાણે બાવો છે, પણ આ તો અક્ષરધામ પોતે જ છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11065.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ati vahali vastu hoy</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11067.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek harijane gondalna</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '66');
+            localStorage.setItem('lastVisitedVatFile', 'ch11066.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

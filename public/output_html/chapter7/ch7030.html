@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>વરતાલે ઉગમણા બંગલાને - Varatale ugamana bangalane</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Varatale ugamana bangalane</h1>
+                <div class="gujarati-title">વરતાલે ઉગમણા બંગલાને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 30</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(30) varatāle ugamaṇā baṃgalāne viśe śrījīmahārājane jhavera bhakte pūchyuṃ je, ‘he mahārāja ! akṣaradhāmane viśe bhagavānanī mūrti kevī haśe?’ tyāre śrījīmahārāja bolyā je, “ā pratyakṣa ame beṭhā chīe tevī ja akṣaradhāmane viśe bhagavānanī mūrti che.” tyāra pachī te bhakte pharīne pūchyuṃ je, ‘he mahārāja ! kṛpā karīne jevī akṣaradhāmane viśe mūrti che tevī dekhāḍo.’ tyāre te bhaktane śrījīmahārāje samādhi karāvīne akṣaradhāmane viśe potānī mūrtinuṃ pratyakṣa pramāṇa darśana karāvyuṃ ne anaṃtakoṭi mukta tathā anaṃta aiśrvarya tathā anaṃta śakti tenuṃ darśana karāvīne potānā svarūpano pratyakṣapaṇe sarvoparī niśrcaya karāvyo. evī rīte śrījīmahārāje jhavera bhaktane potānuṃ aiśrvarya dekhāḍyuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૩૦) વરતાલે ઉગમણા બંગલાને વિશે શ્રીજીમહારાજને ઝવેર ભક્તે પૂછ્યું જે, ‘હે મહારાજ ! અક્ષરધામને વિશે ભગવાનની મૂર્તિ કેવી હશે?’ ત્યારે શ્રીજીમહારાજ બોલ્યા જે, “આ પ્રત્યક્ષ અમે બેઠા છીએ તેવી જ અક્ષરધામને વિશે ભગવાનની મૂર્તિ છે.” ત્યાર પછી તે ભક્તે ફરીને પૂછ્યું જે, ‘હે મહારાજ ! કૃપા કરીને જેવી અક્ષરધામને વિશે મૂર્તિ છે તેવી દેખાડો.’ ત્યારે તે ભક્તને શ્રીજીમહારાજે સમાધિ કરાવીને અક્ષરધામને વિશે પોતાની મૂર્તિનું પ્રત્યક્ષ પ્રમાણ દર્શન કરાવ્યું ને અનંતકોટિ મુક્ત તથા અનંત ઐશ્ર્વર્ય તથા અનંત શક્તિ તેનું દર્શન કરાવીને પોતાના સ્વરૂપનો પ્રત્યક્ષપણે સર્વોપરી નિશ્ર્ચય કરાવ્યો. એવી રીતે શ્રીજીમહારાજે ઝવેર ભક્તને પોતાનું ઐશ્ર્વર્ય દેખાડ્યું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7029.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Harikrushn Purushottam te</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7031.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tran dehthi par</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '30');
+            localStorage.setItem('lastVisitedVatFile', 'ch7030.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

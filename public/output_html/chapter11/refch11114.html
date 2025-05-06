@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Transliteration</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        
+        
+        <div id="iastBlock">
+            <pre>(114) gopāḻānaṃdasvāmīe paracā karī varasāda varasāvyo ityādika aiśrvarya batāvyuṃ te jīvone satsaṃgamāṃ vāḻavāne māṭe ane vaḻī keṭalāka sāpa vīṃchīnā maṃtra jaṃtra paṇa karyā, ane bhūta kāḍhavā māṭe hanumāna paṇa besāryā ane temāṃ bījuṃ paṇa hatuṃ je, sāraṃgapura rastānuṃ gāma ane sādhunī āva-jā bahu ane vāghākhācara gharanā dūbaḻā te bahu mūṃjhavaṇa rahetī. pachī vāghākhācaranā bhāī karī hanumāna besāryā ane te hanumānanī āvakamāṃthī sādhune dāḻa-roṭalā āpatā. ema bhaktanī sahāya māṭe nimitta ūbhuṃ karyuṃ; paṇa temāṃ keṭalākane hanumānanī upāsanā thaī gaī che māṭe ame to evuṃ kāṃī karyuṃ ja nathī, ane eka mahārāja vinā bīje kyāṃya joḍatā nathī.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(114) ગોપાળાનંદસ્વામીએ પરચા કરી વરસાદ વરસાવ્યો ઇત્યાદિક ઐશ્ર્વર્ય બતાવ્યું તે જીવોને સત્સંગમાં વાળવાને માટે અને વળી કેટલાક સાપ વીંછીના મંત્ર જંત્ર પણ કર્યા, અને ભૂત કાઢવા માટે હનુમાન પણ બેસાર્યા અને તેમાં બીજું પણ હતું જે, સારંગપુર રસ્તાનું ગામ અને સાધુની આવ-જા બહુ અને વાઘાખાચર ઘરના દૂબળા તે બહુ મૂંઝવણ રહેતી. પછી વાઘાખાચરના ભાઈ કરી હનુમાન બેસાર્યા અને તે હનુમાનની આવકમાંથી સાધુને દાળ-રોટલા આપતા. એમ ભક્તની સહાય માટે નિમિત્ત ઊભું કર્યું; પણ તેમાં કેટલાકને હનુમાનની ઉપાસના થઈ ગઈ છે માટે અમે તો એવું કાંઈ કર્યું જ નથી, અને એક મહારાજ વિના બીજે ક્યાંય જોડતા નથી.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+                <span class="nav-label">Index</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '');
+            localStorage.setItem('lastVisitedVat', '');
+            localStorage.setItem('lastVisitedVatFile', '');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

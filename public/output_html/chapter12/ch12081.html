@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ જીવને શૂળીએ - Aa jivne shulie</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa jivne shulie</h1>
+                <div class="gujarati-title">આ જીવને શૂળીએ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.12</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 81</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā aṣāḍha sudi āṭhamane divase svāmīe vāta karī je, $(81) ā jīvane śūḻīe caḍavuṃ hoya to caḍe paṇa bhagavāna ne sādhu kahe tema na kare, ne hamaṇāṃ vartamāna kāḻe evī vāta che je, kharekharā bhagavānanā bhaktanā gamatāmāṃ rahe to tene kāṃī karavuṃ rahe nahi; paṇa ‘gamatāmāṃ rahevuṃ’ ema jīve pote dhāryuṃ nathī, māṭe bhagavāna tathā saṃta kahe (ema kare) e ja nivṛtti che ne bhagavānanā ‘gamatā bahāra’ (thāya e ja) pravṛtti che. te khīmiyānaṃde thāḻa na līdho, te dhāraṇāṃ pāraṇāṃ karato hato. mahārāja kahe, ‘tārāṃ dhāraṇāṃ pāraṇāṃ pūrāṃ thaī rahyāṃ.’ tyāre kahe, ‘thāḻarūpe māyā āvī !’ ema kahī na mānyuṃ; māṭe jema che tema na samajāya.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના અષાઢ સુદિ આઠમને દિવસે સ્વામીએ વાત કરી જે, $(81) આ જીવને શૂળીએ ચડવું હોય તો ચડે પણ ભગવાન ને સાધુ કહે તેમ ન કરે, ને હમણાં વર્તમાન કાળે એવી વાત છે જે, ખરેખરા ભગવાનના ભક્તના ગમતામાં રહે તો તેને કાંઈ કરવું રહે નહિ; પણ ‘ગમતામાં રહેવું’ એમ જીવે પોતે ધાર્યું નથી, માટે ભગવાન તથા સંત કહે (એમ કરે) એ જ નિવૃત્તિ છે ને ભગવાનના ‘ગમતા બહાર’ (થાય એ જ) પ્રવૃત્તિ છે. તે ખીમિયાનંદે થાળ ન લીધો, તે ધારણાં પારણાં કરતો હતો. મહારાજ કહે, ‘તારાં ધારણાં પારણાં પૂરાં થઈ રહ્યાં.’ ત્યારે કહે, ‘થાળરૂપે માયા આવી !’ એમ કહી ન માન્યું; માટે જેમ છે તેમ ન સમજાય.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter12/ch12080.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Man chhe te undaradini</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter12/ch12082.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Potana kapalma chandalo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '12');
+            localStorage.setItem('lastVisitedVat', '81');
+            localStorage.setItem('lastVisitedVatFile', 'ch12081.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

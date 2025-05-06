@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જે અક્ષરાતીત પ્રત્યક્ષ - Je aksharatit pratyaksh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Je aksharatit pratyaksh</h1>
+                <div class="gujarati-title">જે અક્ષરાતીત પ્રત્યક્ષ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.7</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 24</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(24) je akṣarātīta pratyakṣa puruṣottama śrīsahajānaṃdajī mahārāja te sarve upāsakane eka ja upāsyamūrti che, sarva ānaṃdarūpa che, sarva sāranā sārarūpa che, sarva tattvanā tattvarūpa che, sarva daivatamāṃ daivatakārī che, sarva maṃgaḻamāṃ maṃgaḻakārī che, sarva kṣetramāṃ sarva kṣetrajña che, sarva ādhāranā ādhāra che, sarva pāvanamāṃ pāvanakārī che, sarva guhyamāṃ guhyarūpa che, sarva guṇīnā guṇī che, sarva dhāmanā dhāmī che, sarva kāraṇanā kāraṇa che, sarva avatāranā avatārī che ne sarva nāmanā nāmī che.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૪) જે અક્ષરાતીત પ્રત્યક્ષ પુરુષોત્તમ શ્રીસહજાનંદજી મહારાજ તે સર્વે ઉપાસકને એક જ ઉપાસ્યમૂર્તિ છે, સર્વ આનંદરૂપ છે, સર્વ સારના સારરૂપ છે, સર્વ તત્ત્વના તત્ત્વરૂપ છે, સર્વ દૈવતમાં દૈવતકારી છે, સર્વ મંગળમાં મંગળકારી છે, સર્વ ક્ષેત્રમાં સર્વ ક્ષેત્રજ્ઞ છે, સર્વ આધારના આધાર છે, સર્વ પાવનમાં પાવનકારી છે, સર્વ ગુહ્યમાં ગુહ્યરૂપ છે, સર્વ ગુણીના ગુણી છે, સર્વ ધામના ધામી છે, સર્વ કારણના કારણ છે, સર્વ અવતારના અવતારી છે ને સર્વ નામના નામી છે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter7/ch7023.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Shrijimaharaje santne potano</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter7/ch7025.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shri Sahajanandswami </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '7');
+            localStorage.setItem('lastVisitedVat', '24');
+            localStorage.setItem('lastVisitedVatFile', 'ch7024.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

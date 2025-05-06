@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>જેમ નાતનો, નામનો ને - Jem natno, namno ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Jem natno, namno ne</h1>
+                <div class="gujarati-title">જેમ નાતનો, નામનો ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 98</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(98) jema nātano, nāmano ne gāmano niśrcaya thayo che, tema ja evo abhyāsa kare je, huṃ ātmā chuṃ, brahmarūpa chuṃ, sukharūpa chuṃ ne huṃ bhagavānano bhakta chuṃ, paṇa deha te huṃ nahi ema kare to te paṇa thāya ne ā deha āpaṇane nitye naraka cūṃthāve che ethī bhūṃḍuṃ śuṃ? paṇa jñāna vinā tenī gama nathī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(98) જેમ નાતનો, નામનો ને ગામનો નિશ્ર્ચય થયો છે, તેમ જ એવો અભ્યાસ કરે જે, હું આત્મા છું, બ્રહ્મરૂપ છું, સુખરૂપ છું ને હું ભગવાનનો ભક્ત છું, પણ દેહ તે હું નહિ એમ કરે તો તે પણ થાય ને આ દેહ આપણને નિત્યે નરક ચૂંથાવે છે એથી ભૂંડું શું? પણ જ્ઞાન વિના તેની ગમ નથી.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1097.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Sankhyani dradhata kem </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1099.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Akshardhamna jevu sukh</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '98');
+            localStorage.setItem('lastVisitedVatFile', 'ch1098.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

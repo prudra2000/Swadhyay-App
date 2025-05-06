@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રભુ ભજે તેને આવરણ  - Prabhu bhaje tene avaran</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Prabhu bhaje tene avaran</h1>
+                <div class="gujarati-title">પ્રભુ ભજે તેને આવરણ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 249</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvata 1919nā jeṭha vadi chaṭhane divase svāmīe vāta karī je, $(249) prabhu bhaje tene āvaraṇa āḍāṃ āve che. te āvaraṇa te śuṃ ? je, jeṭalāṃ padārtha che te sarve prabhu bhajavāmāṃ āḍāṃ āvanārāṃ che. te gaṃgājī āḍo eka kāḻo parvata āvyo; paṇa ā to śabda, sparśa, rūpa, rasa ne gaṃdha e pāṃca parvata jevāṃ anaṃta āvaraṇa. te jeṭalā ramaṇīya sārā padārtha che te sarve āvaraṇarūpa che ne strīrūpa māyā te to jhāḍa sudhī pūgī che. te strī keṭalāka jhāḍane jue to ja phaḻe ne keṭalāka jhāḍane strī pāṭuṃ māre to ja phaḻe che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત 1919ના જેઠ વદિ છઠને દિવસે સ્વામીએ વાત કરી જે, $(249) પ્રભુ ભજે તેને આવરણ આડાં આવે છે. તે આવરણ તે શું ? જે, જેટલાં પદાર્થ છે તે સર્વે પ્રભુ ભજવામાં આડાં આવનારાં છે. તે ગંગાજી આડો એક કાળો પર્વત આવ્યો; પણ આ તો શબ્દ, સ્પર્શ, રૂપ, રસ ને ગંધ એ પાંચ પર્વત જેવાં અનંત આવરણ. તે જેટલા રમણીય સારા પદાર્થ છે તે સર્વે આવરણરૂપ છે ને સ્ત્રીરૂપ માયા તે તો ઝાડ સુધી પૂગી છે. તે સ્ત્રી કેટલાક ઝાડને જુએ તો જ ફળે ને કેટલાક ઝાડને સ્ત્રી પાટું મારે તો જ ફળે છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11248.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Madhynu 56mu vachanamrut</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11250.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ketalak dukha sanjog</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '249');
+            localStorage.setItem('lastVisitedVatFile', 'ch11249.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

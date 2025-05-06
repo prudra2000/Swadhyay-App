@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંવત 1859ની ઊતરતી - Samvat 1859ni utarati</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samvat 1859ni utarati</h1>
+                <div class="gujarati-title">સંવત 1859ની ઊતરતી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.4</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 23</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(23) saṃvata 1859nī ūtaratī mosamamāṃ alaiyā gāmamāṃ prathama pahelāṃ mahārājanāṃ amane darśana thayāṃ, te be ghaḍī sāmasāmāṃ joī rahyā; eṭalāmāṃ niśrcaya thaī gayo, du:kha ṭaḻī gayuṃ, mahimā samajāī gayo ne badhuṃya kāma thaī rahyuṃ ! māṭe guṇātīta evā je bhagavāna tenāṃ jīva darśana kare to brahmarūpa thaī jāya, paṇa bhagavānanī māyānuṃ baḻa evuṃ che je, koī darśana paṇa na kare.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(23) સંવત 1859ની ઊતરતી મોસમમાં અલૈયા ગામમાં પ્રથમ પહેલાં મહારાજનાં અમને દર્શન થયાં, તે બે ઘડી સામસામાં જોઈ રહ્યા; એટલામાં નિશ્ર્ચય થઈ ગયો, દુ:ખ ટળી ગયું, મહિમા સમજાઈ ગયો ને બધુંય કામ થઈ રહ્યું ! માટે ગુણાતીત એવા જે ભગવાન તેનાં જીવ દર્શન કરે તો બ્રહ્મરૂપ થઈ જાય, પણ ભગવાનની માયાનું બળ એવું છે જે, કોઈ દર્શન પણ ન કરે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter4/ch4022.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek upasana, biji agna</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter4/ch4024.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Maharaj tatha mota sadhu</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '4');
+            localStorage.setItem('lastVisitedVat', '23');
+            localStorage.setItem('lastVisitedVatFile', 'ch4023.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાનની સ્મૃતિ રાખવી - Bhagavanni smruti rakhavi </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavanni smruti rakhavi </h1>
+                <div class="gujarati-title">ભગવાનની સ્મૃતિ રાખવી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 297</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(297) bhagavānanī smṛti rākhavī e sarva śāstrano che. $(śrīmadbhāgavata : 10/21/5) $artha :- moramukuṭa dhāraṇa karīne, kānamāṃ kareṇa phula lagāvīne, suvarṇanī jema prakāśamāna pītāmbara paherīne ane gaḻāmāṃ vaijantīmāḻā dhāraṇa karīne, naṭavara veśadhārī śrīkṛṣṇae vāṃsaḻī (baṃsarī)nāṃ chidrane potānā adharāmṛta (hoṭha)thī pūrṇa karīne potānā caraṇacinhothī suśobhita vṛndāvanamāṃ bāḻa-gopālakonī sāthe, emanā mukhathī potāno suyaśa sāṃbhaḻatā sāṃbhaḻatā praveśa karyo haśe. $artha :- ā śikṣāpatrī lakhyānuṃ je kāraṇa che te sarve temaṇe ekāgra mane karīne dhāravuṃ ane ā śikṣāpatrī je ame lakhī che te sarvenā jīvanā hitanī karanārī che. 1 galitārtha= parama sāra, spaṣṭa thato bhāvārtha. $2 sālokya mukti= bhagavānanā dhāmamāṃ rahevuṃ te.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(297) ભગવાનની સ્મૃતિ રાખવી એ સર્વ શાસ્ત્રનો છે. $(શ્રીમદ્ભાગવત : 10/21/5) $અર્થ :- મોરમુકુટ ધારણ કરીને, કાનમાં કરેણ ફુલ લગાવીને, સુવર્ણની જેમ પ્રકાશમાન પીતામ્બર પહેરીને અને ગળામાં વૈજન્તીમાળા ધારણ કરીને, નટવર વેશધારી શ્રીકૃષ્ણએ વાંસળી (બંસરી)નાં છિદ્રને પોતાના અધરામૃત (હોઠ)થી પૂર્ણ કરીને પોતાના ચરણચિન્હોથી સુશોભિત વૃન્દાવનમાં બાળ-ગોપાલકોની સાથે, એમના મુખથી પોતાનો સુયશ સાંભળતા સાંભળતા પ્રવેશ કર્યો હશે. $અર્થ :- આ શિક્ષાપત્રી લખ્યાનું જે કારણ છે તે સર્વે તેમણે એકાગ્ર મને કરીને ધારવું અને આ શિક્ષાપત્રી જે અમે લખી છે તે સર્વેના જીવના હિતની કરનારી છે. 1 ગલિતાર્થ= પરમ સાર, સ્પષ્ટ થતો ભાવાર્થ. $2 સાલોક્ય મુક્તિ= ભગવાનના ધામમાં રહેવું તે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10296.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Deh hoya te ekado </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10298.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ukarada upar thakoraji</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '297');
+            localStorage.setItem('lastVisitedVatFile', 'ch10297.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

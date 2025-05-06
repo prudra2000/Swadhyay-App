@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સંવત ૧૯૨૩ના અષાઢ - Samvat 1923na ashadh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Samvat 1923na ashadh</h1>
+                <div class="gujarati-title">સંવત ૧૯૨૩ના અષાઢ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 266</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(266) saṃvata 1923nā aṣāḍha sudimāṃ vāta karī je, ‘niṣkāmī vartamānamāṃ ghasāro lāge, te vāta mahārājane na game; kāṃ je, e ja dṛḍha karāvavā sāru potāno avatāra che. te pote paraṇyā nahi ne tyāgīnā dharma pāḻyā; te māṭe moṭero je rīte cāle, te vāṃse badhāṃ māṇasa cāle. te kahyuṃ che je, $artha : śreṣṭha manuṣya je je ācaraṇa kare che tenuṃ anukaraṇa bījā loko kare che, te jene pramāṇa banāve che te anusāra loko varte che. 1 bhāgeḍu= sainika hovā chatāṃ laḍavāthī dūra nāsato pharanāra. $2 pādharo= bārobāra.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૨૬૬) સંવત ૧૯૨૩ના અષાઢ સુદિમાં વાત કરી જે, ‘નિષ્કામી વર્તમાનમાં ઘસારો લાગે, તે વાત મહારાજને ન ગમે; કાં જે, એ જ દૃઢ કરાવવા સારુ પોતાનો અવતાર છે. તે પોતે પરણ્યા નહિ ને ત્યાગીના ધર્મ પાળ્યા; તે માટે મોટેરો જે રીતે ચાલે, તે વાંસે બધાં માણસ ચાલે. તે કહ્યું છે જે, $અર્થ : શ્રેષ્ઠ મનુષ્ય જે જે આચરણ કરે છે તેનું અનુકરણ બીજા લોકો કરે છે, તે જેને પ્રમાણ બનાવે છે તે અનુસાર લોકો વર્તે છે. 1 ભાગેડુ= સૈનિક હોવા છતાં લડવાથી દૂર નાસતો ફરનાર. $2 પાધરો= બારોબાર.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6265.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ame koi divas </span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6267.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Swami kahe, jena</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '266');
+            localStorage.setItem('lastVisitedVatFile', 'ch6266.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

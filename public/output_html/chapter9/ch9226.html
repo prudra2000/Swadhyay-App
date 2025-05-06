@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સુરતના ભાલચંદ્ર શેઠને  - Suratna bhalchandra shethne </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Suratna bhalchandra shethne </h1>
+                <div class="gujarati-title">સુરતના ભાલચંદ્ર શેઠને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.9</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 226</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(226) suratanā bhālacaṃdra śeṭhane mahārājanī pākī niṣṭhā hatī. aradeśara koṭavāla, bhālacaṃdra śeṭhanā bhāībaṃdha hatā. aradeśara musāpharīe gayā haśe tyāṃthī kapūranā hāra vagere laī āvela te bhālacaṃdra śeṭhane yādagīrīrūpe āpyā. bhālacaṃdra śeṭhe te mahārājane dharāvyā hatā. aradeśarabhāīne mahārājano mahimā kahī niṣṭhā karāvī hatī ane suratamāṃ mahārājane dhāmadhūmathī padharāvyā hatā. jyāre agaṇyotero kāḻa paḍyo, tyāre ā deśanā ghaṇā haribhaktone bhālacaṃdra śeṭhe surata teḍāvīne nabhāvyā hatā. evā pakṣavāḻā hatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(226) સુરતના ભાલચંદ્ર શેઠને મહારાજની પાકી નિષ્ઠા હતી. અરદેશર કોટવાલ, ભાલચંદ્ર શેઠના ભાઈબંધ હતા. અરદેશર મુસાફરીએ ગયા હશે ત્યાંથી કપૂરના હાર વગેરે લઈ આવેલ તે ભાલચંદ્ર શેઠને યાદગીરીરૂપે આપ્યા. ભાલચંદ્ર શેઠે તે મહારાજને ધરાવ્યા હતા. અરદેશરભાઈને મહારાજનો મહિમા કહી નિષ્ઠા કરાવી હતી અને સુરતમાં મહારાજને ધામધૂમથી પધરાવ્યા હતા. જ્યારે અગણ્યોતેરો કાળ પડ્યો, ત્યારે આ દેશના ઘણા હરિભક્તોને ભાલચંદ્ર શેઠે સુરત તેડાવીને નભાવ્યા હતા. એવા પક્ષવાળા હતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter9/ch9225.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bochasanna patidar</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter9/ch9227.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Damodar amadavadna </span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '9');
+            localStorage.setItem('lastVisitedVat', '226');
+            localStorage.setItem('lastVisitedVatFile', 'ch9226.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

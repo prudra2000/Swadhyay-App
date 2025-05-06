@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કેટલાકને ભગવાનના  - Ketalakne bhagavanna </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ketalakne bhagavanna </h1>
+                <div class="gujarati-title">કેટલાકને ભગવાનના </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 245</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(245) keṭalākane bhagavānanā tathā sādhunā saṃbaṃdhanuṃ sukha āvatuṃ hoya; te kenī peṭhe ne kema samaje to sukha āve ? e praśrnano uttara karyo je, ‘e to sādhutā śīkhe to āve; te vinā to doṣa pīḍe, te sukha na āve.’ pachī pūchyuṃ je, ‘keṭalākane svapnamāṃ sukha āvatuṃ hoya te kema āve ?’ teno uttara karyo je, ‘eno to niradhāra nahi; kema je, svapnamāṃ bhagavāna dekhāya ne bījuṃ paṇa dekhāya ne jñāne karīne thāya e ja sācuṃ che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(245) કેટલાકને ભગવાનના તથા સાધુના સંબંધનું સુખ આવતું હોય; તે કેની પેઠે ને કેમ સમજે તો સુખ આવે ? એ પ્રશ્ર્નનો ઉત્તર કર્યો જે, ‘એ તો સાધુતા શીખે તો આવે; તે વિના તો દોષ પીડે, તે સુખ ન આવે.’ પછી પૂછ્યું જે, ‘કેટલાકને સ્વપ્નમાં સુખ આવતું હોય તે કેમ આવે ?’ તેનો ઉત્તર કર્યો જે, ‘એનો તો નિરધાર નહિ; કેમ જે, સ્વપ્નમાં ભગવાન દેખાય ને બીજું પણ દેખાય ને જ્ઞાને કરીને થાય એ જ સાચું છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1244.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavannu ane sadhunu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1246.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jem chhe em kahevay</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '245');
+            localStorage.setItem('lastVisitedVatFile', 'ch1245.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

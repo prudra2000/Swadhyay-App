@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સારો દેશ, સારો કાળ - Saro desh, saro kal</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Saro desh, saro kal</h1>
+                <div class="gujarati-title">સારો દેશ, સારો કાળ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 41</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(41) sāro deśa, sāro kāḻa, sāro saṃga ne sārī śraddhā hoya tyāre utkṛṣṭa jñāna thāya. āṭalī vātuṃ sāṃbhaḻī ne haiyāmāṃ rākhī teṭalī kāma āve ne te vinā to,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(41) સારો દેશ, સારો કાળ, સારો સંગ ને સારી શ્રદ્ધા હોય ત્યારે ઉત્કૃષ્ટ જ્ઞાન થાય. આટલી વાતું સાંભળી ને હૈયામાં રાખી તેટલી કામ આવે ને તે વિના તો,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14040.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Karod vara vishay</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14042.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Deh ne dehna sambandhine</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '41');
+            localStorage.setItem('lastVisitedVatFile', 'ch14041.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

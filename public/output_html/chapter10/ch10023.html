@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટાઈમાંથી અતિ દુ:ખ આવે  - Motaimathi ati dukh ave</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motaimathi ati dukh ave</h1>
+                <div class="gujarati-title">મોટાઈમાંથી અતિ દુ:ખ આવે </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 23</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(23) moṭāīmāṃthī ati du:kha āve che māṭe leābha, kāma, ne māna paṇa vadhavā devuṃ nahi. jo māna vadhe to paṃḍe sukāī jāya ne māna jāḍuṃ thatuṃ jāya. te upara vāta karī je, eka jaṇa tapa karavā beṭho te divasathī bilāḍo paṇa tenī sāmo āvīne beṭho. te thoḍā divasa thayā tyāṃ bilāḍo jāḍo thaī gayo. tyāre tapasvīe pūchayuṃ je, ‘tuṃ āvo jāḍo thaī gayo te śuṃ khāvā maḻe che ?’ tyāre bilāḍo kahe, ‘huṃ to tamāruṃ māna chuṃ te tame sukāī gayā ne tamane māna vadhī gayuṃ tethī huṃ jāḍo thaī gayo chuṃ.’ jeṭalī ‘śikṣāpatrī’ lopāśe teṭaluṃ du:kha jarūra āvaśe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(23) મોટાઈમાંથી અતિ દુ:ખ આવે છે માટે લેાભ, કામ, ને માન પણ વધવા દેવું નહિ. જો માન વધે તો પંડે સુકાઈ જાય ને માન જાડું થતું જાય. તે ઉપર વાત કરી જે, એક જણ તપ કરવા બેઠો તે દિવસથી બિલાડો પણ તેની સામો આવીને બેઠો. તે થોડા દિવસ થયા ત્યાં બિલાડો જાડો થઈ ગયો. ત્યારે તપસ્વીએ પૂછયું જે, ‘તું આવો જાડો થઈ ગયો તે શું ખાવા મળે છે ?’ ત્યારે બિલાડો કહે, ‘હું તો તમારું માન છું તે તમે સુકાઈ ગયા ને તમને માન વધી ગયું તેથી હું જાડો થઈ ગયો છું.’ જેટલી ‘શિક્ષાપત્રી’ લોપાશે તેટલું દુ:ખ જરૂર આવશે.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10022.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Utaratano sang male to</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10024.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koik vate jo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '23');
+            localStorage.setItem('lastVisitedVatFile', 'ch10023.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

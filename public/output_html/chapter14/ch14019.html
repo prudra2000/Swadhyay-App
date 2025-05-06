@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કથામાં શ્રૃંગી ઋષિની  - Kathama shrungi rushini</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kathama shrungi rushini</h1>
+                <div class="gujarati-title">કથામાં શ્રૃંગી ઋષિની </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 19</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(19) kathāmāṃ śrṛṃgī ṛṣinī vāta āvī, tyāre vāta karī je, ‘āpaṇe bhoḻapa hoya, gāphalāī hoya ne viṣayano saṃbaṃdha thāya, to āpaṇā paṇa evā hāla jāṇajo ! jyāṃ jeṭalo strīno prasaṃga haśe teṭalo gaḍabaḍāṭa thāśe, thāśe ne thāśe ja.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(19) કથામાં શ્રૃંગી ઋષિની વાત આવી, ત્યારે વાત કરી જે, ‘આપણે ભોળપ હોય, ગાફલાઈ હોય ને વિષયનો સંબંધ થાય, તો આપણા પણ એવા હાલ જાણજો ! જ્યાં જેટલો સ્ત્રીનો પ્રસંગ હશે તેટલો ગડબડાટ થાશે, થાશે ને થાશે જ.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14018.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Petma osad jay tyare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14020.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tyagine rupiyano ne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '19');
+            localStorage.setItem('lastVisitedVatFile', 'ch14019.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

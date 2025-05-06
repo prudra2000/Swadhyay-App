@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મહાનુભાવાનંદસ્વામી  - Mahanubhavanandswami</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Mahanubhavanandswami</h1>
+                <div class="gujarati-title">મહાનુભાવાનંદસ્વામી </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 350</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(350) mahānubhāvānaṃdasvāmī gopāḻānaṃdasvāmīnuṃ vāṃkuṃ bolyā je ‘e ja āma kare che bahota jalatā hai.’ paṇa dhīrajavāḻā che ne ema ṭharāva hoya je, māre to bhale, koī apamāna kare to bhale, paṇa je karavānuṃ che te moḻuṃ na paḍo. āpaṇe mokṣa sāru bheḻā thayā chīe te mokṣa sudhāravo paṇa bījā koīne arthe nathī. raghuvīrajī mahārājane kahyuṃ je tamārī joḍe koī bījī bāḻakī hoya to tamane maṃdiramāṃ na pesavā daīe; tyāre raghuvīrajī mahārāja kahe, ‘hāṃu ? eṭaluṃ ja heta ?’ pachī ame kahyuṃ je, ‘mahārājanī ājñā pramāṇe raho to ja heta rahe.’ māṭe potānuṃ tapāsīne cālavuṃ.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(350) મહાનુભાવાનંદસ્વામી ગોપાળાનંદસ્વામીનું વાંકું બોલ્યા જે ‘એ જ આમ કરે છે બહોત જલતા હૈ.’ પણ ધીરજવાળા છે ને એમ ઠરાવ હોય જે, મારે તો ભલે, કોઈ અપમાન કરે તો ભલે, પણ જે કરવાનું છે તે મોળું ન પડો. આપણે મોક્ષ સારુ ભેળા થયા છીએ તે મોક્ષ સુધારવો પણ બીજા કોઈને અર્થે નથી. રઘુવીરજી મહારાજને કહ્યું જે તમારી જોડે કોઈ બીજી બાળકી હોય તો તમને મંદિરમાં ન પેસવા દઈએ; ત્યારે રઘુવીરજી મહારાજ કહે, ‘હાંઉ ? એટલું જ હેત ?’ પછી અમે કહ્યું જે, ‘મહારાજની આજ્ઞા પ્રમાણે રહો તો જ હેત રહે.’ માટે પોતાનું તપાસીને ચાલવું.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15349.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj kahe amare</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15351.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa sadhuni seva</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '350');
+            localStorage.setItem('lastVisitedVatFile', 'ch15350.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

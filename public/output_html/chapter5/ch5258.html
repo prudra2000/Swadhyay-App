@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઠારમાં હરિશંકરભાઈએ - Kotharma harishankarbhaie</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Kotharma harishankarbhaie</h1>
+                <div class="gujarati-title">કોઠારમાં હરિશંકરભાઈએ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 258</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(258) koṭhāramāṃ hariśaṃkarabhāīe pūchyuṃ je, ‘he mahārāja ! āśarānuṃ śuṃ rūpa che ?’ tyāre uttara karyo je, ‘bāyaḍī-chokarāṃno āśaro che tema tathā rūpiyā haśe to bhūkhe nahi marāya e āśaro, tema ja bhagavāna vinā bījāmāṃ māla na māne e āśarānuṃ rūpa. ne evo āśaro hoya tene bhagavāna rūḍā sādhuno saṃga āpī, jñāna āpīne potānī pāse rākhe ne evā bhaktanī phikara bhagavānane che; jema āpaṇā maṃdiramāṃ āja koī māṇasa āvyuṃ hoya ne kāla māṃduṃ paḍe ane vīsa varasa sudhī māṃduṃ rahe, to paṇa tenī cākarī āpaṇe karavī paḍe ne tenī phikara āpaṇane hoya tema.’ vaḻī pūchyuṃ je, ‘bhagavāna maḻyā pachī bhagavānanā bhakta sāthe ahaṃkāra kema rahe che ?’ tyāre uttara karyo je, ‘e to rajoguṇamāṃ ema rahe ja.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(258) કોઠારમાં હરિશંકરભાઈએ પૂછ્યું જે, ‘હે મહારાજ ! આશરાનું શું રૂપ છે ?’ ત્યારે ઉત્તર કર્યો જે, ‘બાયડી-છોકરાંનો આશરો છે તેમ તથા રૂપિયા હશે તો ભૂખે નહિ મરાય એ આશરો, તેમ જ ભગવાન વિના બીજામાં માલ ન માને એ આશરાનું રૂપ. ને એવો આશરો હોય તેને ભગવાન રૂડા સાધુનો સંગ આપી, જ્ઞાન આપીને પોતાની પાસે રાખે ને એવા ભક્તની ફિકર ભગવાનને છે; જેમ આપણા મંદિરમાં આજ કોઈ માણસ આવ્યું હોય ને કાલ માંદું પડે અને વીસ વરસ સુધી માંદું રહે, તો પણ તેની ચાકરી આપણે કરવી પડે ને તેની ફિકર આપણને હોય તેમ.’ વળી પૂછ્યું જે, ‘ભગવાન મળ્યા પછી ભગવાનના ભક્ત સાથે અહંકાર કેમ રહે છે ?’ ત્યારે ઉત્તર કર્યો જે, ‘એ તો રજોગુણમાં એમ રહે જ.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5257.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa jiv chhe te jya sudhi</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5259.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Koi betho bhagavan bhaje</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '258');
+            localStorage.setItem('lastVisitedVatFile', 'ch5258.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

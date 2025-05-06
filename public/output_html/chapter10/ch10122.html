@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>પ્રથમ ઘોડે ચડે ને - Pratham ghode chade ne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Pratham ghode chade ne</h1>
+                <div class="gujarati-title">પ્રથમ ઘોડે ચડે ને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 122</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(122) prathama ghoḍe caḍe ne pachī ghoḍuṃ ene māthe caḍe, e du:kha koīne kaḻāya nahi. jamanāvaḍavāḻā dādābhāīne mahārāja kahe je, ‘ghoḍāṃ thoḍāṃ rākho.’ tyāre kahe, ‘amāre ghoḍāṃ vagara na cāle.’ pachī agaṇyotero kāḻa paḍyo, te gharanī saṃpatta khāīne chevaṭa ghoḍāṃ marī gayāṃ ne du:kha āvyuṃ. tema āpaṇe dehābhimāne karīne, vidyāe karīne tathā guṇe karīne jeṭaluṃ avaḻuṃ varatāya te sarve dādābhāīnī peṭhe thāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(122) પ્રથમ ઘોડે ચડે ને પછી ઘોડું એને માથે ચડે, એ દુ:ખ કોઈને કળાય નહિ. જમનાવડવાળા દાદાભાઈને મહારાજ કહે જે, ‘ઘોડાં થોડાં રાખો.’ ત્યારે કહે, ‘અમારે ઘોડાં વગર ન ચાલે.’ પછી અગણ્યોતેરો કાળ પડ્યો, તે ઘરની સંપત્ત ખાઈને છેવટ ઘોડાં મરી ગયાં ને દુ:ખ આવ્યું. તેમ આપણે દેહાભિમાને કરીને, વિદ્યાએ કરીને તથા ગુણે કરીને જેટલું અવળું વરતાય તે સર્વે દાદાભાઈની પેઠે થાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10121.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Kal avaradane kape chhe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10123.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ek chore baladiyo choryo</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '122');
+            localStorage.setItem('lastVisitedVatFile', 'ch10122.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

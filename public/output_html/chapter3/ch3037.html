@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક દિવસ સ્વામીએ અરધી - Ek divas Swamie aradhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek divas Swamie aradhi</h1>
+                <div class="gujarati-title">એક દિવસ સ્વામીએ અરધી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.3</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 37</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(37) eka divasa svāmīe aradhī rātrie ūṭhīne ema vāta karī je, ‘keṭalāka ema jāṇe che je, svāmī amārī kora (bāju) che ne keṭalāka ema jāṇe che ke svāmī amārī kora che; paṇa amāro abhiprāya to moṭā moṭā sadguru paṇa jāṇī śakyā nathī, to āja tame śuṃ jāṇaśo ?’ tyāre pūchyuṃ je, ‘bahu moṭā hoya teno abhiprāya nāno hoya te jāṇe ke na jāṇe ?’ tyāre svāmī bolyā je, ‘śuṃ dhūḍa jāṇe ? ane je pataṃgiyo hoya te sūryano abhiprāya jāṇe che ? nathī jāṇato; tema moṭāno abhiprāya to jaṇāya ja nahi. e siddhāṃta vāta che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(37) એક દિવસ સ્વામીએ અરધી રાત્રિએ ઊઠીને એમ વાત કરી જે, ‘કેટલાક એમ જાણે છે જે, સ્વામી અમારી કોર (બાજુ) છે ને કેટલાક એમ જાણે છે કે સ્વામી અમારી કોર છે; પણ અમારો અભિપ્રાય તો મોટા મોટા સદ્ગુરુ પણ જાણી શક્યા નથી, તો આજ તમે શું જાણશો ?’ ત્યારે પૂછ્યું જે, ‘બહુ મોટા હોય તેનો અભિપ્રાય નાનો હોય તે જાણે કે ન જાણે ?’ ત્યારે સ્વામી બોલ્યા જે, ‘શું ધૂડ જાણે ? અને જે પતંગિયો હોય તે સૂર્યનો અભિપ્રાય જાણે છે ? નથી જાણતો; તેમ મોટાનો અભિપ્રાય તો જણાય જ નહિ. એ સિદ્ધાંત વાત છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter3/ch3036.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ek divas Swami suta hata</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter3/ch3038.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">More to Maharajno anek</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '3');
+            localStorage.setItem('lastVisitedVat', '37');
+            localStorage.setItem('lastVisitedVatFile', 'ch3037.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

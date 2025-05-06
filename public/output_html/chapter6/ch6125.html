@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અહો ! અહો ! ભગવાન - Aho! aho! Bhagavan</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aho! aho! Bhagavan</h1>
+                <div class="gujarati-title">અહો ! અહો ! ભગવાન</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.6</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 125</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(125) aho ! aho ! bhagavāna saṃghāthe āma karavuṃ, te amāro to evo ṭharāva je, $so māthāṃ jātāṃ re soṃghā chogāḻā, $eka śira ke vāste kyuṃ ḍarata he gamāra ? $ḍolariyā ghoḻyo re ke tama upara ā dehaḍo ! $evā ṭharāva karavā tyāre bhagavāna rājī thāya; $artha : ‘māro dhāryo artha huṃ siddha karīśa athavā dehano pāta (nāśa) karīśa’ evo aḍaga niśrcaya hovo joīe.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(૧૨૫) અહો ! અહો ! ભગવાન સંઘાથે આમ કરવું, તે અમારો તો એવો ઠરાવ જે, $સો માથાં જાતાં રે સોંઘા છોગાળા, $એક શિર કે વાસ્તે ક્યું ડરત હે ગમાર ? $ડોલરિયા ઘોળ્યો રે કે તમ ઉપર આ દેહડો ! $એવા ઠરાવ કરવા ત્યારે ભગવાન રાજી થાય; $અર્થ : ‘મારો ધાર્યો અર્થ હું સિદ્ધ કરીશ અથવા દેહનો પાત (નાશ) કરીશ’ એવો અડગ નિશ્ર્ચય હોવો જોઈએ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter6/ch6124.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Maharaj kahe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter6/ch6126.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ava sadhune kai</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '6');
+            localStorage.setItem('lastVisitedVat', '125');
+            localStorage.setItem('lastVisitedVatFile', 'ch6125.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સત્સંગિજીવનમાં  - Satsangijivanma</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Satsangijivanma</h1>
+                <div class="gujarati-title">સત્સંગિજીવનમાં </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 421</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(421) ‘satsaṃgijīvana’māṃ puruṣottamane ṭhekāṇe moralī ghāle te amane na game ne tene śāstra āḍāṃ phare. māṭe jene moṭā sādhuno viśrvāsa haśe tene ja pādharuṃ paḍaśe. moṭerāne to hajāra kāma levāṃ, te dravyamāṃ joḍaśe ne dravyamāṃ to strī paṇa rahī che, te arthī doṣān na paśyati| (artha : lālacu māṇasa viṣayonā doṣane joto nathī.) e mahārāja bahu bolatā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(421) ‘સત્સંગિજીવન’માં પુરુષોત્તમને ઠેકાણે મોરલી ઘાલે તે અમને ન ગમે ને તેને શાસ્ત્ર આડાં ફરે. માટે જેને મોટા સાધુનો વિશ્ર્વાસ હશે તેને જ પાધરું પડશે. મોટેરાને તો હજાર કામ લેવાં, તે દ્રવ્યમાં જોડશે ને દ્રવ્યમાં તો સ્ત્રી પણ રહી છે, તે અર્થી દોષાન્ ન પશ્યતિ। (અર્થ : લાલચુ માણસ વિષયોના દોષને જોતો નથી.) એ મહારાજ બહુ બોલતા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5420.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Koti krushn taha</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5422.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Janm thaya mor</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '421');
+            localStorage.setItem('lastVisitedVatFile', 'ch5421.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ચોમલા ચાવડાની બરછી - Chomala chavadani barachhi</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Chomala chavadani barachhi</h1>
+                <div class="gujarati-title">ચોમલા ચાવડાની બરછી</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 305</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(305) comalā cāvaḍānī barachī be tasu vāge to paṇa jīve nahi, tema moṭānī vātuṃnā śabda jene haiyāmāṃ peṭhā hoya tenā haiyāmāṃ jagata rahe nahi. $(bhagavadgītā : samarpaṇa - 3) $artha :- he devonā deva ! māre mātā paṇa āpa cho ane pitā paṇa āpa cho; baṃdhu paṇa āpa cho ane mitra paṇa āpa cho; vidyā paṇa āpa cho ane dravya paṇa āpa cho. ṭūṃkamāṃ he sarveśrvara ! māruṃ to sarva kāṃī eka āpa ja cho.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(305) ચોમલા ચાવડાની બરછી બે તસુ વાગે તો પણ જીવે નહિ, તેમ મોટાની વાતુંના શબ્દ જેને હૈયામાં પેઠા હોય તેના હૈયામાં જગત રહે નહિ. $(ભગવદ્ગીતા : સમર્પણ - 3) $અર્થ :- હે દેવોના દેવ ! મારે માતા પણ આપ છો અને પિતા પણ આપ છો; બંધુ પણ આપ છો અને મિત્ર પણ આપ છો; વિદ્યા પણ આપ છો અને દ્રવ્ય પણ આપ છો. ટૂંકમાં હે સર્વેશ્ર્વર ! મારું તો સર્વ કાંઈ એક આપ જ છો.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10304.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dadakhacharthi zinabhainu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10306.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Tran mota dukh chhe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '305');
+            localStorage.setItem('lastVisitedVatFile', 'ch10305.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

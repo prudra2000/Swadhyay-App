@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>હરિશંકરભાઈએ પૂછ્યું જે - Harisankarbhaie puchhyu je</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Harisankarbhaie puchhyu je</h1>
+                <div class="gujarati-title">હરિશંકરભાઈએ પૂછ્યું જે</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.5</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 134</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(134) hariśaṃkarabhāīe pūchyuṃ je, ‘vacanāmṛtamāṃ batāvyā che te sādhu oḻakhāṇā nahīṃ. tenuṃ kema karavuṃ ?’ tyāre bolyā je, ‘e vāta kahevāya nahi, kahīe to māra paḍe ne avaguṇa āve; māṭe samajo cho tema samajavuṃ. ne phaḻiyāmāṃ ghoḍo pheravī levo te śuṃ ? je, yajña karanārā daśe diśāomāṃ ghoḍo pheravīne jīta karīne yajñanī pūrṇāhuti kare che. tema jeṇe daśa indriyorūpa daśa diśāo jītī che, kahetāṃ jenī vṛtti koī viṣayamāṃ levātī nathī, tevā saṃtamāṃ joḍāya tyāre teno jñānayajña pūro thaī rahyo ne te phaḻiyāmāṃ ghoḍo pheravīne yajña karyā jevuṃ che.’</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(134) હરિશંકરભાઈએ પૂછ્યું જે, ‘વચનામૃતમાં બતાવ્યા છે તે સાધુ ઓળખાણા નહીં. તેનું કેમ કરવું ?’ ત્યારે બોલ્યા જે, ‘એ વાત કહેવાય નહિ, કહીએ તો માર પડે ને અવગુણ આવે; માટે સમજો છો તેમ સમજવું. ને ફળિયામાં ઘોડો ફેરવી લેવો તે શું ? જે, યજ્ઞ કરનારા દશે દિશાઓમાં ઘોડો ફેરવીને જીત કરીને યજ્ઞની પૂર્ણાહુતિ કરે છે. તેમ જેણે દશ ઇન્દ્રિયોરૂપ દશ દિશાઓ જીતી છે, કહેતાં જેની વૃત્તિ કોઈ વિષયમાં લેવાતી નથી, તેવા સંતમાં જોડાય ત્યારે તેનો જ્ઞાનયજ્ઞ પૂરો થઈ રહ્યો ને તે ફળિયામાં ઘોડો ફેરવીને યજ્ઞ કર્યા જેવું છે.’</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter5/ch5133.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bhagavan tatha santno</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter5/ch5135.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Mahapujama besati vakhate</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '5');
+            localStorage.setItem('lastVisitedVat', '134');
+            localStorage.setItem('lastVisitedVatFile', 'ch5134.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

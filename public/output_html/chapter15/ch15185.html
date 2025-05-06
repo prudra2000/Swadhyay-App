@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સોઢીના રણ જેવું અંતર  - Sodhina ran jevu antar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sodhina ran jevu antar</h1>
+                <div class="gujarati-title">સોઢીના રણ જેવું અંતર </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 185</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(185) soḍhīnā raṇa jevuṃ aṃtara thaī gayuṃ hoya to paṇa grāmyavārtārūpī kāṃpa āve tyāre kāmādika rūpa jhāḍa thāya ne je eka aṃga che temāṃthī vege caḍe to bījāno avaguṇa āve. pachī temāṃthī bhraṣṭa thāya ne nīkaḻī jāya ne loṭiyāne ame cāra vāra jamyā temāṃ avaguṇa āvyo te nīkaḻī gayā. māṭe ekale dhyānane vege caḍe to paṇa āgaḻa vighna che.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(185) સોઢીના રણ જેવું અંતર થઈ ગયું હોય તો પણ ગ્રામ્યવાર્તારૂપી કાંપ આવે ત્યારે કામાદિક રૂપ ઝાડ થાય ને જે એક અંગ છે તેમાંથી વેગે ચડે તો બીજાનો અવગુણ આવે. પછી તેમાંથી ભ્રષ્ટ થાય ને નીકળી જાય ને લોટિયાને અમે ચાર વાર જમ્યા તેમાં અવગુણ આવ્યો તે નીકળી ગયા. માટે એકલે ધ્યાનને વેગે ચડે તો પણ આગળ વિઘ્ન છે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15184.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Mota hoy tya maya</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15186.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Dadamavala nathu Maharajne</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '185');
+            localStorage.setItem('lastVisitedVatFile', 'ch15185.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

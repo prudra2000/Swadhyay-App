@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આ વાતુંમાંથી તો બ્રહ્મરૂપ - Aa vatumathi to brahmarup</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aa vatumathi to brahmarup</h1>
+                <div class="gujarati-title">આ વાતુંમાંથી તો બ્રહ્મરૂપ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.1</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 33</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(33) ā vātuṃmāṃthī to thāvāśe ne bāḻa, jobana ne vṛddha e traṇa prakāranī strīo ne kacaro ne e sarve sarakhuṃ thaī jāśe ne kāṃī dīṭhuṃ nahi game evuṃ thāśe. tyāre kaheśo je, vātuṃ sāṃbhaḻīe chīe ne kema thātuṃ nathī? te to āja āṃbo vāve ne kāle kerīo kema thāya ? paṇa e ja āṃbo daśa varasano thāya tyāre emāṃ kerīo thāya che, ema thāvānuṃ che. $( vaca.kā. 12 )@ 1 brahmarūpa= brahma ne parabrahmanā ākāre, brahmātmaka, brahmamaya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(33) આ વાતુંમાંથી તો થાવાશે ને બાળ, જોબન ને વૃદ્ધ એ ત્રણ પ્રકારની સ્ત્રીઓ ને કચરો ને એ સર્વે સરખું થઈ જાશે ને કાંઈ દીઠું નહિ ગમે એવું થાશે. ત્યારે કહેશો જે, વાતું સાંભળીએ છીએ ને કેમ થાતું નથી? તે તો આજ આંબો વાવે ને કાલે કેરીઓ કેમ થાય ? પણ એ જ આંબો દશ વરસનો થાય ત્યારે એમાં કેરીઓ થાય છે, એમ થાવાનું છે. $( વચ.કા. 12 )@ 1 બ્રહ્મરૂપ= બ્રહ્મ ને પરબ્રહ્મના આકારે, બ્રહ્માત્મક, બ્રહ્મમય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter1/ch1032.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Tyag, vairagya, niyam ne</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter1/ch1034.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Apane tapas karavo je</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '1');
+            localStorage.setItem('lastVisitedVat', '33');
+            localStorage.setItem('lastVisitedVatFile', 'ch1033.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

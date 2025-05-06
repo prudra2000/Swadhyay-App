@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન અને અક્ષરધામ - Bhagavan ane aksharadham</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan ane aksharadham</h1>
+                <div class="gujarati-title">ભગવાન અને અક્ષરધામ</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 160</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(160) bhagavāna ane akṣaradhāma vinā kyāṃya ṭharavānuṃ nathī. ne jīva to potānuṃ bagāḍavā taiyāra thayo che je, bhagavānathī nokho rahe, moṭā sādhuthī nokho rahe ne kusaṃgano joga rākhe. te upara bolyā je,</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(160) ભગવાન અને અક્ષરધામ વિના ક્યાંય ઠરવાનું નથી. ને જીવ તો પોતાનું બગાડવા તૈયાર થયો છે જે, ભગવાનથી નોખો રહે, મોટા સાધુથી નોખો રહે ને કુસંગનો જોગ રાખે. તે ઉપર બોલ્યા જે,</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11159.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Jyare potane gnana thashe</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11161.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Sevak sukha chahe</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '160');
+            localStorage.setItem('lastVisitedVatFile', 'ch11160.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

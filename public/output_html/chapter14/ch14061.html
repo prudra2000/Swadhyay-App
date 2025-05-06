@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>અજ્ઞાને કરી જીવને - Agnane kari jivne</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Agnane kari jivne</h1>
+                <div class="gujarati-title">અજ્ઞાને કરી જીવને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.14</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 61</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(61) ajñāne karī jīvane māna rahe je, huṃ āvo ḍāhyo; vaḻī bhaṇelo, ne mane āma kahyuṃ ? mahārājano siddhāṃta je, paṃcaviṣayamāṃ doṣabuddhi karavī, te doṣabuddhi kema thāya ? to tenā doṣa kahevā ne sāṃbhaḻavā māṃḍe to ema karatāṃ doṣabuddhi āve. māṭe eka vṛttie vahevāra karavo ne eka vṛttie bhagavānanā māragamāṃ rahevuṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(61) અજ્ઞાને કરી જીવને માન રહે જે, હું આવો ડાહ્યો; વળી ભણેલો, ને મને આમ કહ્યું ? મહારાજનો સિદ્ધાંત જે, પંચવિષયમાં દોષબુદ્ધિ કરવી, તે દોષબુદ્ધિ કેમ થાય ? તો તેના દોષ કહેવા ને સાંભળવા માંડે તો એમ કરતાં દોષબુદ્ધિ આવે. માટે એક વૃત્તિએ વહેવાર કરવો ને એક વૃત્તિએ ભગવાનના મારગમાં રહેવું.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter14/ch14060.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ketalak bayadi vanse</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter14/ch14062.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Kharekharu gnan thay to</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '14');
+            localStorage.setItem('lastVisitedVat', '61');
+            localStorage.setItem('lastVisitedVatFile', 'ch14061.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

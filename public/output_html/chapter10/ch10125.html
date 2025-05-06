@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>એક વરસાદે મોલ  - Ek varasade mol </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Ek varasade mol </h1>
+                <div class="gujarati-title">એક વરસાદે મોલ </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.10</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 125</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>rātre vāta karī je,$(125) eka varasāde mola na pāke, tema eka śabde jñāna na thāya. eka śabde to pūṃjābhāīne thāya. te caૉre bhagavāṃ dīṭhāṃ, eṭale caૉrā upara āvīne teṇe pūchayuṃ je, ‘āmāṃ bhagavāna koṇa che ? mane ākāśavāṇī thaī che je, jā ghera, bhagavāna maḻaśe.’ tyāre kṛpānaṃdasvāmī kahe, ‘ame bhagavāna nathī, paṇa amane bhagavāna maḻyā che, te tamane meḻavaśuṃ.’ pachī ame vātuṃ karīne bhagavānapaṇānī niṣṭhā karāvī. ema eka śabde evāne jñāna thāya.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>રાત્રે વાત કરી જે,$(125) એક વરસાદે મોલ ન પાકે, તેમ એક શબ્દે જ્ઞાન ન થાય. એક શબ્દે તો પૂંજાભાઈને થાય. તે ચૉરે ભગવાં દીઠાં, એટલે ચૉરા ઉપર આવીને તેણે પૂછયું જે, ‘આમાં ભગવાન કોણ છે ? મને આકાશવાણી થઈ છે જે, જા ઘેર, ભગવાન મળશે.’ ત્યારે કૃપાનંદસ્વામી કહે, ‘અમે ભગવાન નથી, પણ અમને ભગવાન મળ્યા છે, તે તમને મેળવશું.’ પછી અમે વાતું કરીને ભગવાનપણાની નિષ્ઠા કરાવી. એમ એક શબ્દે એવાને જ્ઞાન થાય.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter10/ch10124.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Bijane upadesh karie</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter10/ch10126.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Shaherna sukhadani aa</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '10');
+            localStorage.setItem('lastVisitedVat', '125');
+            localStorage.setItem('lastVisitedVatFile', 'ch10125.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ભગવાન, સાધુ ને સત્સંગીના - Bhagavan, sadhu ne satsangina</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Bhagavan, sadhu ne satsangina</h1>
+                <div class="gujarati-title">ભગવાન, સાધુ ને સત્સંગીના</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 232</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(232) bhagavāna, sādhu ne satsaṃgīnā jogamāṃ rahevuṃ. ā je āpaṇe beṭhā chīe te sarve pravṛttine dabāvīne beṭhā chīe, paṇa keṭalāṃka kāma bagaḍatāṃ haśe. māṭe marane bhagavānano dīkaro hoya, to paṇa vahevāramāṃ jo jīva ghāle to kathā na thāya; ne prabhu to kyāṃthī ja sāṃbhare ? ne karī tyāre kāṃī kharaca māthe na paḍyuṃ; mūḻagā rūpiyā vadhyā, paṇa tema have kathā na thāya. ne amāre manasūbo to thāya che je, badhā sādhune rākhīne vātuṃ karīe ne kathā karāvīe, paṇa āpaṇe garība māṇasa te haḻave haḻave karaśuṃ. kāṃ je pharavānuṃ to che ja, paṇa māro deha paḍī jāya to vātuṃ rahī jāya māṭe brahmacārīne rākhīne kathā karāvīe. te jema gayā comāsāmāṃ raghuvīrajī mahārāja āṃhīṃ āvyā, tyāre cāra māsa kathā ane vātuṃ ja karī hatī.@ 1 chāvaṇī= kathāvārtānī śibira ne te māṭe karela vyavasthānī jagyā.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(232) ભગવાન, સાધુ ને સત્સંગીના જોગમાં રહેવું. આ જે આપણે બેઠા છીએ તે સર્વે પ્રવૃત્તિને દબાવીને બેઠા છીએ, પણ કેટલાંક કામ બગડતાં હશે. માટે મરને ભગવાનનો દીકરો હોય, તો પણ વહેવારમાં જો જીવ ઘાલે તો કથા ન થાય; ને પ્રભુ તો ક્યાંથી જ સાંભરે ? ને કરી ત્યારે કાંઈ ખરચ માથે ન પડ્યું; મૂળગા રૂપિયા વધ્યા, પણ તેમ હવે કથા ન થાય. ને અમારે મનસૂબો તો થાય છે જે, બધા સાધુને રાખીને વાતું કરીએ ને કથા કરાવીએ, પણ આપણે ગરીબ માણસ તે હળવે હળવે કરશું. કાં જે ફરવાનું તો છે જ, પણ મારો દેહ પડી જાય તો વાતું રહી જાય માટે બ્રહ્મચારીને રાખીને કથા કરાવીએ. તે જેમ ગયા ચોમાસામાં રઘુવીરજી મહારાજ આંહીં આવ્યા, ત્યારે ચાર માસ કથા અને વાતું જ કરી હતી.@ 1 છાવણી= કથાવાર્તાની શિબિર ને તે માટે કરેલ વ્યવસ્થાની જગ્યા.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11231.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pratham ek niradhar karavo</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11233.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Manohardas meghapur dangar</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '232');
+            localStorage.setItem('lastVisitedVatFile', 'ch11232.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

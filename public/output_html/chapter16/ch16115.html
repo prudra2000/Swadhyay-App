@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>સાધુ થયા વિના  - Sadhu thaya vina </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Sadhu thaya vina </h1>
+                <div class="gujarati-title">સાધુ થયા વિના </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.16</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 115</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(115) sādhu thayā vinā chūṭako nathī ne je vāta karavānī che te karaśuṃ tyāre ja sukha thāśe. te eka asvāra be ghoḍe na caḍhe ne eka kdhayā be sāsare jāya ja nahi. ne niṣedha karyā vinā to karoḍa janme e ṭaḻanāruṃ nahi; māṭe du:kha, doṣa ne nāśavaṃtapaṇuṃ emanuṃ ema joyā ja karavuṃ. koīnā doṣa kahevā, sāṃbhaḻavāne mārage cāle tyāre aṃtara gobaruṃ thaī jāya ne pachī ājñā lopavā māṃḍe tyāre aṃtare sukha paṇa rahe nahi ne jīva baḻavā lāge ne uparathī to sāruṃ jaṇāya paṇa jema ghauṃ sārā hoya ne māṃhī hīma paḍe ne bīja baḻī jāya, tema tenā aṃtaramāṃthī sukha jatuṃ rahe che te bīja baḻī gayuṃ kahevāya. pachī moṭānī marajī paṇa tene māthethī ūtarī jāya che ne tyāra keḍe aṃtara bhraṣṭa thaī jāya che. 1 osāṇa= yāda, smaraṇa</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(115) સાધુ થયા વિના છૂટકો નથી ને જે વાત કરવાની છે તે કરશું ત્યારે જ સુખ થાશે. તે એક અસ્વાર બે ઘોડે ન ચઢે ને એક ક્ધયા બે સાસરે જાય જ નહિ. ને નિષેધ કર્યા વિના તો કરોડ જન્મે એ ટળનારું નહિ; માટે દુ:ખ, દોષ ને નાશવંતપણું એમનું એમ જોયા જ કરવું. કોઈના દોષ કહેવા, સાંભળવાને મારગે ચાલે ત્યારે અંતર ગોબરું થઈ જાય ને પછી આજ્ઞા લોપવા માંડે ત્યારે અંતરે સુખ પણ રહે નહિ ને જીવ બળવા લાગે ને ઉપરથી તો સારું જણાય પણ જેમ ઘઉં સારા હોય ને માંહી હીમ પડે ને બીજ બળી જાય, તેમ તેના અંતરમાંથી સુખ જતું રહે છે તે બીજ બળી ગયું કહેવાય. પછી મોટાની મરજી પણ તેને માથેથી ઊતરી જાય છે ને ત્યાર કેડે અંતર ભ્રષ્ટ થઈ જાય છે. 1 ઓસાણ= યાદ, સ્મરણ</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter16/ch16114.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Ghasara vina to svabhav</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter16/ch16116.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Aa jiv chhe te dehma</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '16');
+            localStorage.setItem('lastVisitedVat', '115');
+            localStorage.setItem('lastVisitedVatFile', 'ch16115.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

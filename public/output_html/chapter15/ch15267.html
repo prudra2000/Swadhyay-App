@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મોટેરા તો અર્થ ઉપર - Motera to arth upar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Motera to arth upar</h1>
+                <div class="gujarati-title">મોટેરા તો અર્થ ઉપર</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 267</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(267) moṭerā to artha upara beṭhā che te arthī doṣān na paśyati | artha:- yācaka (koīpaṇa) doṣane joto nathī. artha upara beṭhā hoya tene doṣa sūjhe nahi. ekalaśṛṃgīnā bāpa vibhāṃḍaka jevā hoya ne vyavahāramāṃ joḍāī jāya. vibhāṃḍaka ṛṣi lomapāda nāme aṃgadeśanā rājāne śāpa devā jatā hatā, paṇa tenā rājyamāṃ gāmogāma sanmāna thayuṃ ne svārīe sahita rājā sāmā gāma gayā ne daṃḍavat praṇāma karī page lāgyā ne ekalaśṛṃgīnā dīkarāne śaṇagārī page lagāḍyā. tyāre pūchyuṃ je ā koṇa ? to kahe, ‘tamārā ekalaśṛṃgīnā dīkarā.’ e sāṃbhaḻīne vibhāṃḍika ṛṣie teḍī līdhā ne khoḻāmāṃ besārīne ramāḍyā to krodha ūtarī gayo ne rājyamāṃ gayā. evuṃ sanmāne karīne thayuṃ. mānamāṃthī ahaṃkāra āve to pachī enuṃ ūṃdhuṃ vaḻe ne pakṣe karīne moṭānuṃ vāṃkuṃ bole to paṇa ūṃdhuṃ vaḻe.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(267) મોટેરા તો અર્થ ઉપર બેઠા છે તે અર્થી દોષાન્ ન પશ્યતિ । અર્થ:- યાચક (કોઈપણ) દોષને જોતો નથી. અર્થ ઉપર બેઠા હોય તેને દોષ સૂઝે નહિ. એકલશૃંગીના બાપ વિભાંડક જેવા હોય ને વ્યવહારમાં જોડાઈ જાય. વિભાંડક ઋષિ લોમપાદ નામે અંગદેશના રાજાને શાપ દેવા જતા હતા, પણ તેના રાજ્યમાં ગામોગામ સન્માન થયું ને સ્વારીએ સહિત રાજા સામા ગામ ગયા ને દંડવત્ પ્રણામ કરી પગે લાગ્યા ને એકલશૃંગીના દીકરાને શણગારી પગે લગાડ્યા. ત્યારે પૂછ્યું જે આ કોણ ? તો કહે, ‘તમારા એકલશૃંગીના દીકરા.’ એ સાંભળીને વિભાંડિક ઋષિએ તેડી લીધા ને ખોળામાં બેસારીને રમાડ્યા તો ક્રોધ ઊતરી ગયો ને રાજ્યમાં ગયા. એવું સન્માને કરીને થયું. માનમાંથી અહંકાર આવે તો પછી એનું ઊંધું વળે ને પક્ષે કરીને મોટાનું વાંકું બોલે તો પણ ઊંધું વળે.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15266.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Dasi thaine raheje tu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15268.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Jetalo jene motama jiv</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '267');
+            localStorage.setItem('lastVisitedVatFile', 'ch15267.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

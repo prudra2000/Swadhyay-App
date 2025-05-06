@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>આમ સવારમાં ઊઠીને - Aam savarma uthine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Aam savarma uthine</h1>
+                <div class="gujarati-title">આમ સવારમાં ઊઠીને</div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.11</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 227</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>(227) āma savāramāṃ ūṭhīne kathā karavī evo kene ādara che ? ne trilokamāṃ jyāṃ jyāṃ sabhāo che tyāṃ sarva ṭhekāṇe viṣayanī ja vātuṃ che, māṭe bhagavāna bhajavāno ādara rākhavo. jema vivāha kare che, kāyaṭāṃ kare che tyāṃ kāṃī gharanāṃ kāma melī de che ? khetī mūkī de che ? ke, vāḍhanā kosa choḍī mūke che? e to vivāha thāto jāya ne gharanuṃ bījuṃ kāma paṇa thātuṃ jāya, tema bhagavāna bhajātā jāya ne bījāṃ kāma paṇa thātāṃ jāya; ame vātuṃ karīe chīe temāṃ keṭalīya kāmanī upekṣā rākhīe chīe tyāre vātuṃ thāya che. māṭe kathā, kīrtana, vārtā ane dhyāna eno keḍo melavo ja nahīṃ.@</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>(227) આમ સવારમાં ઊઠીને કથા કરવી એવો કેને આદર છે ? ને ત્રિલોકમાં જ્યાં જ્યાં સભાઓ છે ત્યાં સર્વ ઠેકાણે વિષયની જ વાતું છે, માટે ભગવાન ભજવાનો આદર રાખવો. જેમ વિવાહ કરે છે, કાયટાં કરે છે ત્યાં કાંઈ ઘરનાં કામ મેલી દે છે ? ખેતી મૂકી દે છે ? કે, વાઢના કોસ છોડી મૂકે છે? એ તો વિવાહ થાતો જાય ને ઘરનું બીજું કામ પણ થાતું જાય, તેમ ભગવાન ભજાતા જાય ને બીજાં કામ પણ થાતાં જાય; અમે વાતું કરીએ છીએ તેમાં કેટલીય કામની ઉપેક્ષા રાખીએ છીએ ત્યારે વાતું થાય છે. માટે કથા, કીર્તન, વાર્તા અને ધ્યાન એનો કેડો મેલવો જ નહીં.@</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter11/ch11226.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Pachhi biji vat kari je</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter11/ch11228.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Ame tyagi thava avya</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '11');
+            localStorage.setItem('lastVisitedVat', '227');
+            localStorage.setItem('lastVisitedVatFile', 'ch11227.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>

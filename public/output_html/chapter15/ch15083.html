@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>કોઈને કૃપાએ કરીને  - Koine krupae karine</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <header class="compact-header">
+            <div class="vat-info">
+                <h1>Koine krupae karine</h1>
+                <div class="gujarati-title">કોઈને કૃપાએ કરીને </div>
+            </div>
+            <div class="vat-meta">
+                <span class="meta-item">P.15</span>
+                <span class="meta-divider">•</span>
+                <span class="meta-item">Vat 83</span>
+            </div>
+        </header>
+        
+        <div id="iastBlock">
+            <pre>saṃvat 1919nā śrāvaṇa pahelā sudi saptamīne divase svāmīe vāta karī je, $(83) koīne kṛpāe karīne ātmā dekhāī jāya to paṇa saṃpūrṇa thayuṃ kahevāya nahi. te upara vāta karī je, svarūpānaṃdasvāmīne ātmā dekhāto hato eṭale ātmāmāṃ ja rahetā hatā, paṇa jyāre ākhā śarīre baḻatarā thāvā māṃḍī tyāre mahārāje caṃdana ghasīne copaḍāvyuṃ, ṭāḍhuṃ pāṇī chaṃṭāvyuṃ ne vāhara nakhāvyo paṇa śāṃti thaī nahi. eṭale mahārāje kahyuṃ je, svarūpānaṃdasvāmī ! tame to ātmāne dekho cho te ātmāmāṃ jatā raho. pachī svarūpānaṃdasvāmī bolyā je, tuma āḍā khaḍā ho te kahāṃ jāve ? pachī to bahu baḻatarā thaī ne muṃjhāṇā. tyāre mahārāje kahyuṃ je, bāhyadṛṣṭie karīne pragaṭa bhagavāna ne pragaṭa saṃta tenā saṃbaṃdhane pāmelā je oraḍā, osarī, naḻiyāṃ ne līṃbaḍo enuṃ dhyāna karo to śāṃti thāśe. pachī jyāre ema karyuṃ tyāre śāṃti thaī.</pre>
+        </div>
+
+        <div id="gujaratiBlock" class="hidden">
+            <pre>સંવત્ 1919ના શ્રાવણ પહેલા સુદિ સપ્તમીને દિવસે સ્વામીએ વાત કરી જે, $(83) કોઈને કૃપાએ કરીને આત્મા દેખાઈ જાય તો પણ સંપૂર્ણ થયું કહેવાય નહિ. તે ઉપર વાત કરી જે, સ્વરૂપાનંદસ્વામીને આત્મા દેખાતો હતો એટલે આત્મામાં જ રહેતા હતા, પણ જ્યારે આખા શરીરે બળતરા થાવા માંડી ત્યારે મહારાજે ચંદન ઘસીને ચોપડાવ્યું, ટાઢું પાણી છંટાવ્યું ને વાહર નખાવ્યો પણ શાંતિ થઈ નહિ. એટલે મહારાજે કહ્યું જે, સ્વરૂપાનંદસ્વામી ! તમે તો આત્માને દેખો છો તે આત્મામાં જતા રહો. પછી સ્વરૂપાનંદસ્વામી બોલ્યા જે, તુમ આડા ખડા હો તે કહાં જાવે ? પછી તો બહુ બળતરા થઈ ને મુંઝાણા. ત્યારે મહારાજે કહ્યું જે, બાહ્યદૃષ્ટિએ કરીને પ્રગટ ભગવાન ને પ્રગટ સંત તેના સંબંધને પામેલા જે ઓરડા, ઓસરી, નળિયાં ને લીંબડો એનું ધ્યાન કરો તો શાંતિ થાશે. પછી જ્યારે એમ કર્યું ત્યારે શાંતિ થઈ.</pre>
+        </div>
+
+        <button onclick="toggleText()">Show Gujarati</button>
+        
+        
+        <div class="navigation-container">
+            
+            <a href="../chapter15/ch15082.html" class="nav-button prev-button">
+                <span class="nav-icon">«</span>
+                <div class="nav-info">
+                    <span class="nav-label">Previous</span>
+                    <span class="nav-title">Aa to sau sauna jivnu</span>
+                </div>
+            </a>
+            <a href="../index.html" class="nav-button home-button">
+                <span class="nav-icon">⌂</span>
+            </a>
+            
+            <a href="../chapter15/ch15084.html" class="nav-button next-button">
+                <div class="nav-info">
+                    <span class="nav-label">Next</span>
+                    <span class="nav-title">Uddhavna jevu gnan</span>
+                </div>
+                <span class="nav-icon">»</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Save current vat position to localStorage when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            localStorage.setItem('lastVisitedChapter', '15');
+            localStorage.setItem('lastVisitedVat', '83');
+            localStorage.setItem('lastVisitedVatFile', 'ch15083.html');
+        });
+    
+        let showingIAST = true;
+
+        function toggleText() {
+            showingIAST = !showingIAST;
+            document.getElementById('iastBlock').classList.toggle('hidden', !showingIAST);
+            document.getElementById('gujaratiBlock').classList.toggle('hidden', showingIAST);
+            document.querySelector('button').textContent = showingIAST ? 'Show Gujarati' : 'Show Transliteration';
+        }
+    </script>
+</body>
+</html>
